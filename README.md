@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Sensify Lab: Community Comms Project, MTurk Survey Tool
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
