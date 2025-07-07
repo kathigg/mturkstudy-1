@@ -113,8 +113,8 @@ export default function NewsAnnotationTool() {
 
     const articleId = articles[currentArticleIndex]?.id;
   
-    const countWords = (text) => {
-      return text.trim().split(/\s+/).filter(Boolean).length;
+    const countCharacters = (text) => {
+      return text.trim().length;
     };
 
 const autoSaveAnnotation = (category, subcategory) => {
@@ -560,7 +560,7 @@ const handleSubcategoryChange = (e) => {
   3. Why did you tag this way? What made it stand out?
 </label>
 <p className="text-sm text-gray-600 mb-1">
-  Word count: {countWords(openFeedback)} (minimum 5 words)
+  Word count: {countCharacters(openFeedback)} (minimum 100 characters)
 </p>
 <textarea
   value={openFeedback}
@@ -576,7 +576,7 @@ const handleSubcategoryChange = (e) => {
   disabled={
     confidence === 0 ||
     bias === 0 ||
-    countWords(openFeedback) < 5
+    countCharacters(openFeedback) < 100
   }
 >
   {currentArticleIndex < articles.length - 1
