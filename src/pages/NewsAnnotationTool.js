@@ -6,6 +6,9 @@ import Papa from "papaparse";
 
 import { database, ref, push } from "../firebaseConfig";
 
+// Utility to fix misencoded characters, where any characters not from English
+// would be changed through UTF-8 encoding, leaving characters like é mangled as √©. 
+// The CSV file is already encoded incorrectly, so this code is trying to fix that. 
 // adds paragraph breaks after 100 words. 
 function paragraphAdd(text) {
   const words = text.split(/\s+/);
@@ -235,7 +238,7 @@ const handleSubcategoryChange = (e) => {
 
     // HARD-CODED ARTICLE SELECTION
     useEffect(() => {
-        fetch("/new_filtered_news_300_700_words.csv")
+        fetch("public/test3_encoding_fixed_300_700_words.csv")
         .then((response) => response.text())
         .then((csvText) => {
           Papa.parse(csvText, {
@@ -250,7 +253,7 @@ const handleSubcategoryChange = (e) => {
             
             // Select three specific articles by their indices (0-based)
             // You can change these indices to select different articles
-            const selectedIndices = [21, 121, 469]; // Change these to select different articles
+            const selectedIndices = [22, 122, 470]; // Change these to select different articles
             const hardCodedArticles = selectedIndices.map(index => parsedArticles[index]).filter(Boolean);
             
             // Fallback to random selection if hard-coded articles don't exist
