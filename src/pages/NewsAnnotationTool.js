@@ -463,6 +463,12 @@ const handleSubcategoryChange = (e) => {
                     <DropdownItem icon=" " title="Straw-Man">Misrepresenting someone's argument to make it easier to attack.</DropdownItem>
                     </ul>
                 </div>
+                <div className="bg-green-100 p-2 rounded mb-6">
+                  <strong className="text-green-600 text-center block mb-3 mt-3">No manipulative language</strong>
+                  <ul className="text-s text-center ml-2">
+                    <DropdownItem icon=" " title="No manipulative language">No manipulative language</DropdownItem>
+                  </ul>
+                </div>
             
                 <Button onClick={() => 
                   setShowRightInstructions(false)} className="bg-gray-600 text-white w-full">Close Guide</Button>
