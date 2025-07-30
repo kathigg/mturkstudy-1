@@ -499,7 +499,7 @@ const handleSubcategoryChange = (e) => {
                         Persuasive Propaganda
                     </Button>
                     <Button onClick={() => handleCategoryButtonClick("No manipulative language")} className="bg-green-500">
-                        Misinformation
+                        No manipulative language
                     </Button>
                 </div>
 
