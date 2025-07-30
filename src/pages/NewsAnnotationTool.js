@@ -97,11 +97,26 @@ export default function NewsAnnotationTool() {
     const handleCategoryButtonClick = (categoryKey) => {
       setSelectedCategory(categoryKey);
       setSelectedSubcategory(""); // Clear the subcategory so user chooses it fresh
+      
+      // If "No manipulative language" is selected, automatically save it as an annotation
+      if (categoryKey === "No_Manipulative_Language") {
+        const articleId = articles[currentArticleIndex]?.id;
+        if (articleId) {
+          setTextAnnotations((prevAnnotations) => ({
+            ...prevAnnotations,
+            [articleId]: [
+              ...(prevAnnotations[articleId] || []),
+              { text: "No manipulative language selected", category: "No_Manipulative_Language", subcategory: "No manipulative language" },
+            ],
+          }));
+        }
+      }
     };
 
     const categoryOptions = {
       Persuasive_Propaganda: ["Repetition", "Exaggeration", "Flag-Waving", "Slogans", "Bandwagon", "Causal Oversimplification", "Doubt"],
       Inflammatory_Language: ["Demonization", "Name-Calling", "Hyperbole", "Straw Man Arguments"],
+      "No_Manipulative_Language": ["No manipulative language"],
   };
 
     const [showSurvey, setShowSurvey] = useState(false);
@@ -118,19 +133,25 @@ export default function NewsAnnotationTool() {
     };
 
 const autoSaveAnnotation = (category, subcategory) => {
-  if (selectedText && category && subcategory && articleId) {
-    setTextAnnotations((prevAnnotations) => ({
-      ...prevAnnotations,
-      [articleId]: [
-        ...(prevAnnotations[articleId] || []),
-        { text: selectedText, category, subcategory },
-      ],
-    }));
+  if (category && subcategory && articleId) {
+    // For "No manipulative language", we don't require selected text
+    const textToSave = category === "No_Manipulative_Language" 
+      ? "No manipulative language selected" 
+      : selectedText;
     
-    setSelectedText("");
-    setSelectedCategory("");
-    setSelectedSubcategory("");
-    
+    if (category === "No_Manipulative_Language" || selectedText) {
+      setTextAnnotations((prevAnnotations) => ({
+        ...prevAnnotations,
+        [articleId]: [
+          ...(prevAnnotations[articleId] || []),
+          { text: textToSave, category, subcategory },
+        ],
+      }));
+      
+      setSelectedText("");
+      setSelectedCategory("");
+      setSelectedSubcategory("");
+    }
   }
 };
 
@@ -138,7 +159,7 @@ const autoSaveAnnotation = (category, subcategory) => {
 const handleCategoryChange = (e) => {
   const newCategory = e.target.value;
   setSelectedCategory(newCategory);
-  if (selectedText && selectedSubcategory) {
+  if (selectedSubcategory && (selectedText || newCategory === "No_Manipulative_Language")) {
     autoSaveAnnotation(newCategory, selectedSubcategory);
   }
 };
@@ -146,7 +167,7 @@ const handleCategoryChange = (e) => {
 const handleSubcategoryChange = (e) => {
   const newSubcategory = e.target.value;
   setSelectedSubcategory(newSubcategory);
-  if (selectedText && selectedCategory) {
+  if (selectedCategory && (selectedText || selectedCategory === "No_Manipulative_Language")) {
     autoSaveAnnotation(selectedCategory, newSubcategory);
   }
 };
@@ -285,12 +306,18 @@ const handleSubcategoryChange = (e) => {
             }
 
                 // Validate that there is at least one valid annotation
+                // OR that "No manipulative language" has been selected
 
             const articleId = articles[currentArticleIndex]?.id;
             const annotationsForArticle = textAnnotations[articleId] || [];
+            
+            // Check if "No manipulative language" has been selected for this article
+            const hasNoManipulativeLanguage = annotationsForArticle.some(
+              (a) => a.category === "No_Manipulative_Language" && a.subcategory === "No manipulative language"
+            );
 
-            if (annotationsForArticle.length === 0) {
-                alert("Please annotate at least one phrase before continuing.");
+            if (annotationsForArticle.length === 0 && !hasNoManipulativeLanguage) {
+                alert("Please annotate at least one phrase or select 'No manipulative language' before continuing.");
                 return;
               }
           
@@ -347,13 +374,17 @@ const handleSubcategoryChange = (e) => {
     };
 
     const handleTextAnnotation = () => {
-        if (selectedText && selectedCategory && selectedSubcategory) {
+        if (selectedCategory && selectedSubcategory && (selectedText || selectedCategory === "No_Manipulative_Language")) {
             const articleId = articles[currentArticleIndex]?.id;
+            const textToSave = selectedCategory === "No_Manipulative_Language" 
+              ? "No manipulative language selected" 
+              : selectedText;
+            
             setTextAnnotations((prevAnnotations) => ({
                 ...prevAnnotations,
                 [articleId]: [
                     ...(prevAnnotations[articleId] || []),
-                    { text: selectedText, category: selectedCategory, subcategory: selectedSubcategory },
+                    { text: textToSave, category: selectedCategory, subcategory: selectedSubcategory },
                 ],
             }));
             setSelectedText("");
@@ -504,7 +535,7 @@ const handleSubcategoryChange = (e) => {
                     <Button onClick={() => handleCategoryButtonClick("Persuasive_Propaganda")} className="bg-yellow-500">
                         Persuasive Propaganda
                     </Button>
-                    <Button onClick={() => handleCategoryButtonClick("No manipulative language")} className="bg-green-500">
+                    <Button onClick={() => handleCategoryButtonClick("No_Manipulative_Language")} className="bg-green-500">
                         No manipulative language
                     </Button>
                 </div>
