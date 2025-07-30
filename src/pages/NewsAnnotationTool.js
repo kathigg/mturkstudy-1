@@ -207,10 +207,46 @@ const handleSubcategoryChange = (e) => {
       
     
 
+    // RANDOM ARTICLE SELECTION (COMMENTED OUT)
     // useEffect(() => {
     //     setArticles(shuffleArray([...sampleArticles]));
     // }, []);
 
+    // HARD-CODED ARTICLE SELECTION
+    useEffect(() => {
+        fetch("/new_filtered_news_300_700_words.csv")
+        .then((response) => response.text())
+        .then((csvText) => {
+          Papa.parse(csvText, {
+            header: true,
+            skipEmptyLines: true,
+            complete: function (results) {
+              const parsedArticles = results.data.map((item, index) => ({
+                id: index + 1,
+                title: item["Headline"],
+                content: item["News body"],
+            }));
+            
+            // Select three specific articles by their indices (0-based)
+            // You can change these indices to select different articles
+            const selectedIndices = [119, 180, 354]; // Change these to select different articles
+            const hardCodedArticles = selectedIndices.map(index => parsedArticles[index]).filter(Boolean);
+            
+            // Fallback to random selection if hard-coded articles don't exist
+            if (hardCodedArticles.length < 3) {
+              console.warn("Some hard-coded articles not found, falling back to random selection");
+              const randomArticles = shuffleArray(parsedArticles).slice(0, 3);
+              setArticles(randomArticles);
+            } else {
+              setArticles(hardCodedArticles);
+            }
+            },
+          });
+        });
+    }, []);
+    
+    // ORIGINAL RANDOM SELECTION (COMMENTED OUT)
+    /*
     useEffect(() => {
         fetch("/new_filtered_news_300_700_words.csv")
         .then((response) => response.text())
@@ -230,6 +266,7 @@ const handleSubcategoryChange = (e) => {
           });
         });
     }, []);
+    */
     /*
         setArticles(shuffleArray([...sampleArticles.slice(0, 3)]));
       }, []);
@@ -460,6 +497,9 @@ const handleSubcategoryChange = (e) => {
                     </Button>
                     <Button onClick={() => handleCategoryButtonClick("Persuasive_Propaganda")} className="bg-yellow-500">
                         Persuasive Propaganda
+                    </Button>
+                    <Button onClick={() => handleCategoryButtonClick("No manipulative language")} className="bg-green-500">
+                        Misinformation
                     </Button>
                 </div>
 
