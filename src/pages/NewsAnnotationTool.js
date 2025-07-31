@@ -238,7 +238,7 @@ const handleSubcategoryChange = (e) => {
 
     // HARD-CODED ARTICLE SELECTION
     useEffect(() => {
-        fetch("public/test3_encoding_fixed_300_700_words.csv")
+        fetch("/test3_encoding_fixed_300_700_words.csv")
         .then((response) => response.text())
         .then((csvText) => {
           Papa.parse(csvText, {
