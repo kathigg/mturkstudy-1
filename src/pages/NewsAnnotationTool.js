@@ -253,7 +253,7 @@ const handleSubcategoryChange = (e) => {
             
             // Select three specific articles by their indices (0-based)
             // You can change these indices to select different articles
-            const selectedIndices = [22, 122, 470]; // Change these to select different articles
+            const selectedIndices = [24, 124, 472]; // Change these to select different articles
             const hardCodedArticles = selectedIndices.map(index => parsedArticles[index]).filter(Boolean);
             
             // Fallback to random selection if hard-coded articles don't exist
