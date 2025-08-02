@@ -1,0 +1,186 @@
+{
+  "-OWb9bC1LMEZ4EN7Co9w": {
+    "articleTitles": [
+      {
+        "id": 25,
+        "title": "Mueller agrees to testify before 2 House panels next month"
+      },
+      {
+        "id": 125,
+        "title": "Google's new AI can help you speak another language in your own voice"
+      },
+      {
+        "id": 473,
+        "title": "atlanta mayor endorses joe biden for president"
+      }
+    ],
+    "completionCode": "MTURK-ULKCY3",
+    "surveyResponses": {
+      "25": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "I tagged the selected text as containing no flame rhetoric or persuasive propaganda because it presents the information in a neutral, fact-based, and balanced manner. Here’s what made it stand out:\n\nTone and Language:\nThe article uses measured, professional language without emotional exaggeration, slurs, or sarcasm. Phrases like “resisted taking the witness stand” and “subpoenas compelling Mueller to appear” describe events plainly, not provocatively.\n\nBalanced Presentation of Political Sides:\nIt fairly represents both Democratic and Republican perspectives. For example:\n\n“Democrats eager to employ him to build a case…”\n\n“Republicans eager to argue for the president’s innocence…”\nThis dual mention avoids the bias typical of propaganda.\n\nFactual Structure:\nThe passage sticks to verifiable details—dates, names, official actions (like subpoenas), and historical context (Mueller's past public silence). There’s no use of emotionally charged or misleading phrasing.\n\nNo Call to Action or Manipulation:\nPropaganda often includes persuasive devices, like appeals to fear, nationalism, or morality. This excerpt lacks such cues and instead reads like informational reporting."
+      },
+      "125": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "The article is a straightforward tech report on Google’s new AI tool, Translatotron. It uses neutral, factual language to explain what the tool does, how it works, and what limitations it currently has. There is no emotionally charged language, no exaggeration of the tool’s capabilities, and no attempts to influence the reader’s opinion. The only personal remark—“I, for one, am looking forward to trying it out though”—is mild and clearly framed as subjective, without being persuasive. These characteristics made it clear that the article contains no flame rhetoric or propaganda."
+      },
+      "473": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "The article maintains a neutral and factual tone throughout. It presents direct quotes from Kamala Harris and Joe Biden, clearly attributing statements and describing their debate exchange without using emotionally charged language. It does not attempt to persuade the reader or distort facts. Instead, it reports political developments, including an endorsement and a policy dispute, in a straightforward and balanced way. The article includes both criticism and defense, offers context for the reader, and avoids manipulative rhetoric. This transparency and even-handed reporting made the tagging decision clear."
+      }
+    },
+    "textAnnotations": {
+      "25": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "WASHINGTON Robert S. Mueller III, the special counsel, will testify in public before Congress on July 17 about his investigation into Russia's election interference and possible obstruction of justice by President Trump, House Democrats announced on Tuesday night. Coming nearly three months after the release of Mueller's report, the back-to-back hearings before the House Judiciary and Intelligence committees promise to be must-see television and hold the potential to reshape the political landscape around Trump's presidency and a possible impeachment by the House. Mueller, who has spoken publicly only once about his work, resisted taking the witness stand, where he will face questions both from Democrats eager to employ him to build a case against Trump and Republicans eager to argue for the president's innocence. In the end, the two committees were forced to issue subpoenas compelling Mueller to appear. The chairmen of the panels, Representatives Jerrold Nadler of New York and Adam Schiff of California, wrote in a letter to Mueller on Tuesday that they understood he had reservations about appearing on Capitol Hill, but they were insistent he do so, anyway."
+        }
+      ],
+      "125": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        }
+      ],
+      "473": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        }
+      ]
+    },
+    "timestamp": "2025-08-01T19:44:52.028Z"
+  },
+  "-OWbH3baup4kHhvXrnUw": {
+    "articleTitles": [
+      {
+        "id": 25,
+        "title": "Mueller agrees to testify before 2 House panels next month"
+      },
+      {
+        "id": 125,
+        "title": "Google's new AI can help you speak another language in your own voice"
+      },
+      {
+        "id": 473,
+        "title": "atlanta mayor endorses joe biden for president"
+      }
+    ],
+    "completionCode": "MTURK-E3HPGF",
+    "surveyResponses": {
+      "25": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "This article stands out because it covers a pivotal political development: Robert Mueller's agreement to publicly testify before Congress. It highlights the tension between branches of government, the stakes for President Trump regarding possible impeachment, and the bipartisan interest in Mueller's investigation. The forced subpoenas and Mueller's reluctance to testify reflect the gravity and contentiousness of the situation. The article also signals a potentially historic moment in U.S. politics, with implications for transparency. accountability, and public trust-making it a major newsworthy event."
+      },
+      "125": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "This article stands out because it highlights a major advancement in artificial intelligence and language"
+      },
+      "473": {
+        "bias": 4,
+        "confidence": 3,
+        "openFeedback": "This article stands out because it captures a critical moment in the 2020 Democratic presidential race-Atlanta Mayor Keisha Lance Bottoms endorsing Joe Biden amid a high-stakes debate performance where his leadership and past policies were being publicly challenged. The endorsement is significant because Bottoms is a prominent Black leader whose support could help Biden connect with key voter demographics. At the same time, Kamala Harris's pointed confrontation over Biden's civil rights record adds political drama and historical weight to the moment. The clash between generations and ideologies within the party makes the story especially compelling."
+      }
+    },
+    "textAnnotations": {
+      "25": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Mueller Agrees to Testify Before 2 House Panels Next Month\nWASHINGTON Robert S. Mueller III, the special counsel, will testify in public before Congress on July 17 about his investigation into Russia's election interference and possible obstruction of justice by President Trump, House Democrats announced on Tuesday night. Coming nearly three months after the release of Mueller's report, the back-to-back hearings before the House Judiciary and Intelligence committees promise to be must-see television and hold the potential to reshape the political landscape around Trump's presidency and a possible impeachment by the House. Mueller, who has spoken publicly only once about his work, resisted taking the witness stand, where he will face questions both from Democrats eager to employ him to build a case against Trump and Republicans eager to argue for the president's innocence. In the end, the two committees were forced to issue subpoenas compelling Mueller to appear. The chairmen of the panels, Representatives Jerrold Nadler of New York and Adam Schiff of California, wrote in a letter to Mueller on Tuesday that they understood he had reservations about appearing on Capitol Hill, but they were insistent he do so, anyway.\n\n\"The American public deserves to hear directly from you about your investigation and conclusions,\" the chairmen wrote. \"We will work with you to address legitimate concerns about preserving the integrity of your work, but we expect that you will appear before our committees as scheduled.\" The White House declined to comment Tuesday night. Schiff told reporters shortly after the announcement that he expected his committee to meet privately with members of Mueller's staff after his testimony to answer additional questions. As special counsel, Mueller employed a large team of prosecutors and FBI agents whose detailed knowledge of the case could be as valuable to House investigators as Mueller's public statements. It was not immediately clear which committee Mueller would appear before first on July 17, though a copy of the subpoena issued by Nadler indicated that he was to show up before the Judiciary Committee at 9 a.m. The committee leaders have been under intense pressure from Democratic activists and their own rank-and-file members alike to secure an appearance by Mueller.\n\nBoth Nadler and Schiff initially invited the special counsel to testify voluntarily in April, but discussions proved thorny and protracted. Mueller and his team of prosecutors wanted to avoid a public spectacle, asked to limit his remarks to closed sessions with lawmakers and insisted that their 448-page report would best speak for itself. As of now, it does not appear that Mueller will participate in a hearing before the Republican-controlled Senate, where lawmakers in the majority were less insistent he appear. Nicholas Fandos is a New York Times writer."
+        }
+      ],
+      "125": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        }
+      ],
+      "473": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        },
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Atlanta Mayor Endorses Joe Biden for President\nATLANTA -- Mayor Keisha Lance Bottoms has endorsed Democrat Joe Biden for president. Bottoms was a guest of Biden's during Thursday night's Democrat debate, a debate in which some observers are calling a poor showing from the former vice president. Bottoms informed the Associated Press of her endorsement prior to her formal announcement, set for later Friday. Biden appeared with several other Democrats during Thursday night's debate, along with U.S. Sens. Bernie Sanders, Kamala Harris and Kirsten Gillibrand. Harris, who is black, challenged Biden to explain his decades-old position with respect to school desegregation, one which she characterized as being against busing. \"I did not oppose busing in America. What I opposed was busing ordered by the Department of Education,\" Biden countered. Harris, the former prosecutor turned California senator, said she didn't think the former vice president \"was a racist.\" But she criticized him for recently \"defending segregationists\" in the Senate and for once opposing mandatory busing of students to desegregated public schools.\n\nHarris described a young girl in the 1970s who boarded such buses before dramatically offering, \"That little girl was me.\" The moment was as powerful as it was unexpected, a searing line of attack against Biden, who served as vice president to the first black president. Biden entered back-to-back nights of Democratic presidential debates in Miami as the leading Democratic candidate. In deeply personal tones, Harris hammered Biden for policy choices that she suggested betrayed the spirit of the civil rights movement, if not directly opposing all it stood for. Then she really hit her stride, exhibiting the controlled force of a practiced cross-examiner. \"Do you agree today that you were wrong to oppose busing in America?\" Harris asked. A visibly angry Biden responded that his record was mischaracterized. But he was left denying Harris' comments on a technicality, saying he didn't oppose public school busing, just it being ordered by the Department of Education decrying federal intervention on the issue on behalf of states.\n\nHarris shot back, \"There are moments in history where states fail to support the civil rights of people.\" Biden offered only curt responses after that and was so flustered that he failed to lean on his time as Barack Obama's vice president seeming unsure of himself for prolonged stretches on national television. Senior advisers to Biden insisted afterward that they weren't surprised by the confrontation with Harris and were satisfied with his response in the time allowed. They noted that while he dismissed Harris' characterization of his relationship with segregationist senators in his early years in the Senate more than 45 years ago, Biden appeared to be listening while she criticized his position on busing. A total of 20 presidential candidates took the stage over the course of the two nights 10 candidates on Wednesday and another 10 on Thursday. All 10 of the candidates on Thursday's stage raised their hands when NBC's Savannah Guthrie asked if they would support providing health care for the nation's estimated 11 million undocumented immigrants.\n\nWhile touting the diversity of their party, some of the younger candidates suggested it may be time for the older generation of leaders to pass the torch, a clear dig aimed at the 76-year-old Biden. The Associated Press contributed to this report."
+        }
+      ]
+    },
+    "timestamp": "2025-08-01T20:17:27.517Z"
+  },
+  "-OWbK17Gc9NZVwzUvogS": {
+    "articleTitles": [
+      {
+        "id": 25,
+        "title": "Mueller agrees to testify before 2 House panels next month"
+      },
+      {
+        "id": 125,
+        "title": "Google's new AI can help you speak another language in your own voice"
+      },
+      {
+        "id": 473,
+        "title": "atlanta mayor endorses joe biden for president"
+      }
+    ],
+    "completionCode": "MTURK-T4EZNU",
+    "surveyResponses": {
+      "25": {
+        "bias": 2,
+        "confidence": 4,
+        "openFeedback": "The language is crafted to create a sense of drama and political maneuvering rather than a straightforward description of a political process, which is a common tactic in persuasive propaganda to shape reader perception."
+      },
+      "125": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "Google AI blog post, is a straightforward explanation of the new technology's features and benefits. The language is technical and descriptive, detailing the advantages of the 'Translatotron' system over older models. It lists specific benefits like \"faster inference speed,\" \"avoiding compounding errors,\" and \"retaining the voice of the original speaker.\" "
+      },
+      "473": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "The text describes a debate exchange between Kamala Harris and Joe Biden, but it does so in a way that creates doubt about Biden's past actions and record without definitively labeling him as a racist."
+      }
+    },
+    "textAnnotations": {
+      "25": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Mueller, who has spoken publicly only once about his work, resisted taking the witness stand, where he will face questions both from Democrats eager to employ him to build a case against Trump and Republicans eager to argue for the president's innocence."
+        }
+      ],
+      "125": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        }
+      ],
+      "473": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Doubt",
+          "text": "Harris, who is black, challenged Biden to explain his decades-old position with respect to school desegregation, one which she characterized as being against busing. \"I did not oppose busing in America. What I opposed was busing ordered by the Department of Education,\" Biden countered. Harris, the former prosecutor turned California senator, said she didn't think the former vice president \"was a racist.\" But she criticized him for recently \"defending segregationists\" in the Senate and for once opposing mandatory busing of students to desegregated public schools."
+        }
+      ]
+    },
+    "timestamp": "2025-08-01T20:30:23.759Z"
+  }
+}
