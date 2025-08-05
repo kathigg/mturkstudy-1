@@ -117,7 +117,7 @@ export default function NewsAnnotationTool() {
     };
 
     const categoryOptions = {
-      Persuasive_Propaganda: ["Repetition", "Exaggeration", "Flag-Waving", "Slogans", "Bandwagon", "Causal Oversimplification", "Doubt"],
+      Persuasive_Propaganda: ["Repetition", "Exaggeration", "Slogans", "Bandwagon", "Causal Oversimplification", "Doubt"],
       Inflammatory_Language: ["Demonization", "Name-Calling", "Hyperbole", "Straw Man Arguments"],
       "No_Manipulative_Language": ["No manipulative language"],
   };
@@ -480,7 +480,6 @@ const handleSubcategoryChange = (e) => {
                     <strong className="text-yellow-600 text-center block mb-2 text-base">Persuasive Propaganda</strong>
                     <DropdownItem icon=" " title="Repetition">Reinforcing a message by repeating it.</DropdownItem>
                     <DropdownItem icon=" " title="Exaggeration">Overstating or distorting facts.</DropdownItem>
-                    <DropdownItem icon=" " title="Flag-Waving">Linking a message to patriotism or national pride.</DropdownItem>
                     <DropdownItem icon=" " title="Slogans">Catchy, emotional phrases designed to influence opinions.</DropdownItem>
                     <DropdownItem icon=" " title="Bandwagon">Encouraging action by claiming "everyone is doing it."</DropdownItem>
                     <DropdownItem icon=" " title="Casual Oversimplification">Reducing a complex issue to a single cause or solution.</DropdownItem>
