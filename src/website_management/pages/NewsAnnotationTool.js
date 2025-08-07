@@ -4,7 +4,14 @@ import { Card } from "../components/Card";
 import { CardContent } from "../components/CardContent";
 import Papa from "papaparse";
 
-import { database, ref, push } from "../firebaseConfig";
+import { database, ref, push } from "../../firebaseConfig";
+
+// --- Selection constraints ---
+const MIN_WORDS = 4;
+const MAX_WORDS = 10;
+
+const countWords = (t = "") => (t.trim() ? t.trim().split(/\s+/).length : 0);
+
 
 // Utility to fix misencoded characters, where any characters not from English
 // would be changed through UTF-8 encoding, leaving characters like é mangled as √©. 

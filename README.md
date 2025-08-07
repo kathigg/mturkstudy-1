@@ -3,13 +3,21 @@
 **Principal Developer:** Kathleen Higgins
 **Principal Investigator:** Prerana Khatiwada (PhD) and Professor Matthew Mauriello
 
+This project is divided into several sections. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents: 
+- News Annotation Platform
+- Annotation Aggregation Scripts 
+- LLM Scripts
+- LLM vs Turker Comparison Process 
 
-ABOUT THE TOOL
-# News Annotation Tool
+
+# News Annotation Platform 
 
 This is a browser-based annotation platform for labeling persuasive propaganda, inflammatory language, and misleading content in news articles. Designed for MTurk and human-subject studies.
+
+## Location: 
+/mturkstudy/src/website_management
 
 ## 🚀 Features
 
@@ -50,3 +58,10 @@ This tool was created for a human-subject study but is reusable across research 
 
 MIT License
 
+# Annotation Aggregation Scripts 
+
+## Location: 
+/mturkstudy/src/gold_standard_dataset
+
+## About:
+Contains code that aggregates the work of different annotators into a single dataset that contains confidence scores that can be compared to LLMs. 
