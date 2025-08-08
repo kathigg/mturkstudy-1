@@ -1,0 +1,22 @@
+{
+  "25": [
+    {
+      "text": "mueller who has spoken publicly only once about his work resisted taking the witness stand where he will face questions both from democrats eager to employ him to build a case against trump and republicans eager to argue for the presidents innocence",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 1.0,
+      "num_supporters": 3,
+      "label_consistent": true
+    }
+  ],
+  "473": [
+    {
+      "text": "harris who is black challenged biden to explain his decadesold position with respect to school desegregation one which she characterized as being against busing i did not oppose busing in america what i opposed was busing ordered by the department of education biden countered harris the former prosecutor turned california senator said she didnt think the former vice president was a racist but she criticized him for recently defending segregationists in the senate and for once opposing mandatory busing of students to desegregated public schools",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false
+    }
+  ]
+}
