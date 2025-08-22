@@ -1,5 +1,5 @@
 import React from "react";
-import NewsAnnotationTool from "./pages/NewsAnnotationTool"; // Ensure this path is correct
+import NewsAnnotationTool from "./website_management/pages/NewsAnnotationTool";
 
 function App() {
   return (
