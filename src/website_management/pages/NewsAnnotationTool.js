@@ -8,7 +8,7 @@ import { database, ref, push } from "../../firebaseConfig";
 
 // --- Selection constraints ---
 const MIN_WORDS = 4;
-const MAX_WORDS = 10;
+const MAX_WORDS = 25;
 
 const countWords = (t = "") => (t.trim() ? t.trim().split(/\s+/).length : 0);
 
