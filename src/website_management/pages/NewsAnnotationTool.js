@@ -116,7 +116,10 @@ export default function NewsAnnotationTool() {
             ...prevAnnotations,
             [articleId]: [
               ...(prevAnnotations[articleId] || []),
-              { text: "No manipulative language selected", category: "No_Manipulative_Language", subcategory: "No manipulative language" },
+              { title: articles[currentArticleIndex]?.title || "", 
+                text: "No manipulative language selected", 
+                category: "No_Manipulative_Language", 
+                subcategory: "No manipulative language" },
             ],
           }));
         }
@@ -394,7 +397,10 @@ const handleSubcategoryChange = (e) => {
                 ...prevAnnotations,
                 [articleId]: [
                     ...(prevAnnotations[articleId] || []),
-                    { text: textToSave, category: selectedCategory, subcategory: selectedSubcategory },
+                    { title: articles[currentArticleIndex]?.title || "", 
+                      text: textToSave, 
+                      category: selectedCategory, 
+                      subcategory: selectedSubcategory },
                 ],
             }));
             setSelectedText("");
