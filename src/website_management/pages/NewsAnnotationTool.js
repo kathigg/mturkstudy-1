@@ -154,7 +154,7 @@ const autoSaveAnnotation = (category, subcategory) => {
         ...prevAnnotations,
         [articleId]: [
           ...(prevAnnotations[articleId] || []),
-          { text: textToSave, category, subcategory },
+          { Headline, text: textToSave, category, subcategory },
         ],
       }));
       
