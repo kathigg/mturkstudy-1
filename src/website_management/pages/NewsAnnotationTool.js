@@ -108,7 +108,7 @@ export default function NewsAnnotationTool() {
       setSelectedCategory(categoryKey);
       setSelectedSubcategory(""); // Clear the subcategory so user chooses it fresh
       
-      // If "No manipulative language" is selected, automatically save it as an annotation
+      // If "No bias" is selected, automatically save it as an annotation
       if (categoryKey === "No_Manipulative_Language") {
         const articleId = articles[currentArticleIndex]?.id;
         if (articleId) {
@@ -117,9 +117,9 @@ export default function NewsAnnotationTool() {
             [articleId]: [
               ...(prevAnnotations[articleId] || []),
               { title: articles[currentArticleIndex]?.title || "", 
-                text: "No manipulative language selected", 
+                text: "No bias selected", 
                 category: "No_Manipulative_Language", 
-                subcategory: "No manipulative language" },
+                subcategory: "No bias" },
             ],
           }));
         }
@@ -129,7 +129,7 @@ export default function NewsAnnotationTool() {
     const categoryOptions = {
       Persuasive_Propaganda: ["Repetition", "Exaggeration", "Slogans", "Bandwagon", "Causal Oversimplification", "Doubt"],
       Inflammatory_Language: ["Demonization", "Name-Calling", "Hyperbole", "Straw Man Arguments"],
-      "No_Manipulative_Language": ["No manipulative language"],
+      "No_Manipulative_Language": ["No bias"],
   };
 
     const [showSurvey, setShowSurvey] = useState(false);
@@ -147,9 +147,9 @@ export default function NewsAnnotationTool() {
 
 const autoSaveAnnotation = (category, subcategory) => {
   if (category && subcategory && articleId) {
-    // For "No manipulative language", we don't require selected text
+    // For "No bias", we don't require selected text
     const textToSave = category === "No_Manipulative_Language" 
-      ? "No manipulative language selected" 
+      ? "No bias selected" 
       : selectedText;
     
     if (category === "No_Manipulative_Language" || selectedText) {
@@ -319,18 +319,18 @@ const handleSubcategoryChange = (e) => {
             }
 
                 // Validate that there is at least one valid annotation
-                // OR that "No manipulative language" has been selected
+                // OR that "No bias" has been selected
 
             const articleId = articles[currentArticleIndex]?.id;
             const annotationsForArticle = textAnnotations[articleId] || [];
             
-            // Check if "No manipulative language" has been selected for this article
+            // Check if "No bias" has been selected for this article
             const hasNoManipulativeLanguage = annotationsForArticle.some(
-              (a) => a.category === "No_Manipulative_Language" && a.subcategory === "No manipulative language"
+              (a) => a.category === "No_Manipulative_Language" && a.subcategory === "No bias"
             );
 
             if (annotationsForArticle.length === 0 && !hasNoManipulativeLanguage) {
-                alert("Please annotate at least one phrase or select 'No manipulative language' before continuing.");
+                alert("Please annotate at least one phrase or select 'No bias' before continuing.");
                 return;
               }
           
@@ -390,7 +390,7 @@ const handleSubcategoryChange = (e) => {
         if (selectedCategory && selectedSubcategory && (selectedText || selectedCategory === "No_Manipulative_Language")) {
             const articleId = articles[currentArticleIndex]?.id;
             const textToSave = selectedCategory === "No_Manipulative_Language" 
-              ? "No manipulative language selected" 
+              ? "No bias selected" 
               : selectedText;
             
             setTextAnnotations((prevAnnotations) => ({
@@ -545,7 +545,7 @@ const handleSubcategoryChange = (e) => {
                         Persuasive Propaganda
                     </Button>
                     <Button onClick={() => handleCategoryButtonClick("No_Manipulative_Language")} className="bg-green-500">
-                        No manipulative language
+                        No bias
                     </Button>
                 </div>
 
