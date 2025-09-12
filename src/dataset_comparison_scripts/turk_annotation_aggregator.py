@@ -158,7 +158,7 @@ def process_annotation_file(input_path, output_path):
     with open(output_path, "w") as f:
         json.dump(gold_standard, f, indent=2)
 
-    print(f"✅ Gold standard saved to: {output_path}")
+    print(f"Gold standard saved to: {output_path}")
 
 # ------------------------
 # Execute
