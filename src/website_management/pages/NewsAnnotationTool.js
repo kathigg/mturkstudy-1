@@ -240,7 +240,7 @@ const handleSubcategoryChange = (e) => {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-      };
+  };
       
     
 
@@ -249,7 +249,49 @@ const handleSubcategoryChange = (e) => {
     //     setArticles(shuffleArray([...sampleArticles]));
     // }, []);
 
+    // function getThreeUniqueInts() {
+    //   const numbers = new Set();
+    
+    //   while (numbers.size < 3) {
+    //     const rand = Math.floor(Math.random() * (552 - 2 + 1)) + 2;
+    //     numbers.add(rand); // Set ensures uniqueness
+    //   }
+    
+    //   return Array.from(numbers);
+    // }
+
+    // console.log(getThreeUniqueInts());
+
+    // const dict = {};
+    // for (let i = 2; i <= 552; i++) {
+    //   dict[i.toString()] = 0;
+    // }
+
+    // console.log(dict);
+
+    // const testRef = ref(database, "test");
+    // push(testRef, dict)
+    //   .then(() => {
+    //     console.log("Test data saved to Firebase");
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error saving to Firebase:", error);
+    //   });
+
+
+    // const submissionsRef = ref(database, "submissions");
+    // push(submissionsRef, data)
+    //   .then(() => {
+    //     console.log("Submission saved to Firebase");
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error saving to Firebase:", error);
+    //   });
+
+    
+
     // HARD-CODED ARTICLE SELECTION
+
     useEffect(() => {
         fetch("/article_dataset_versions/test3_encoding_fixed_300_700_words.csv")
         .then((response) => response.text())
