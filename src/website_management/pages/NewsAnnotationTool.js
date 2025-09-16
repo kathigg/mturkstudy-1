@@ -529,7 +529,7 @@ const handleSubcategoryChange = (e) => {
     return (
         <div className="flex w-full justify-center items-start min-h-screen bg-gray-100">
             {/* Instructions Sidebar */}
-            <div className={`w-1/4 p-4 bg-blue-200 shadow-md transition-all duration-300 ${showRightInstructions ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"}`}>
+            <div className={`w-1/4 p-4 bg-gray-200 shadow-md transition-all duration-300 ${showRightInstructions ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"}`}>
                 <h3 className="text-lg font-bold mb-2">Annotation Guide</h3>
                 <p className="text-sm mb-2">Use the following categories for labeling:</p>
                 <div className="bg-yellow-100 p-2 rounded mb-2">
