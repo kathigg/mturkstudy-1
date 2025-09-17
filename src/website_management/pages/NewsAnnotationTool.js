@@ -104,7 +104,16 @@ export default function NewsAnnotationTool() {
     const [selectedCategory, setSelectedCategory] = useState("");
     const [selectedSubcategory, setSelectedSubcategory] = useState("");
     const [showRightInstructions, setShowRightInstructions] = useState(true);
+    const [wordCount, setWordCount] = useState(0);
     const handleCategoryButtonClick = (categoryKey) => {
+      const wc = countWords(selectedText);
+
+      // Block all categories (including No bias) if out of range
+      if (wc < MIN_WORDS || wc > MAX_WORDS) {
+        alert(`Please select between ${MIN_WORDS} and ${MAX_WORDS} words before annotating.`);
+        return;
+      }
+
       setSelectedCategory(categoryKey);
       setSelectedSubcategory(""); // Clear the subcategory so user chooses it fresh
       
@@ -125,6 +134,17 @@ export default function NewsAnnotationTool() {
         }
       }
     };
+
+    // Live word count only
+useEffect(() => {
+  const handleSelectionChange = () => {
+    const selection = window.getSelection();
+    setWordCount(countWords(selection.toString().trim()));
+  };
+
+  document.addEventListener("selectionchange", handleSelectionChange);
+  return () => document.removeEventListener("selectionchange", handleSelectionChange);
+}, []);
 
     const categoryOptions = {
       Persuasive_Propaganda: ["Repetition", "Exaggeration", "Slogans", "Bandwagon", "Causal Oversimplification", "Doubt"],
@@ -595,9 +615,24 @@ const handleSubcategoryChange = (e) => {
                 </div>
 
 
-{selectedText && (
+{selectedText &&  (
   <div className="mt-4 flex flex-col items-center">
-    <p className="text-sm text-gray-700 mb-2">Selected Text: "{selectedText}"</p>
+   {/* Old code that displays selected text and word count above annotation buttons
+   
+   <p className="text-sm text-gray-700 mb-2">
+      Selected Text: "{selectedText}"
+    </p>
+    {wordCount > 0 && (
+    <p
+      className={`text-xs mb-2 ${
+        wordCount < MIN_WORDS || wordCount > MAX_WORDS
+          ? "text-red-600"
+          : "text-green-600"
+      }`}
+    >
+      Word Count: {wordCount} (must be {MIN_WORDS}–{MAX_WORDS})
+    </p>
+   )} */}
     <select
       className="p-2 border border-gray-300 rounded-md mb-2"
       value={selectedCategory}
@@ -760,6 +795,29 @@ const handleSubcategoryChange = (e) => {
     Make sure your highlights are thoughtful and fall within the required word range—your input helps us better understand how people detect biased or misleading content.
   </p>
 </div>
+
+{/* Sticky Selected Text & Word Count */}
+{(selectedText || wordCount > 0) && (
+  <div className="fixed bottom-4 right-4 bg-white shadow-lg rounded-lg p-4 border border-gray-300 w-64 z-50">
+    {selectedText && (
+      <p className="text-sm text-gray-700 mb-2 break-words">
+        <strong>Selected:</strong> "{selectedText}"
+      </p>
+    )}
+    {wordCount > 0 && (
+      <p
+        className={`text-xs ${
+          wordCount < MIN_WORDS || wordCount > MAX_WORDS
+            ? "text-red-600"
+            : "text-green-600"
+        }`}
+      >
+        Word Count: {wordCount} (must be {MIN_WORDS}–{MAX_WORDS})
+      </p>
+    )}
+  </div>
+)}
+
         </div>
     );
   }
