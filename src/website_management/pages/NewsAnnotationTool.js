@@ -96,6 +96,7 @@ const DropdownItem = ({ icon, title, children }) => {
 
 
 export default function NewsAnnotationTool() {
+    console.log("YAY Loaded NewsAnnotationTool");
     const [articles, setArticles] = useState([]);
     const [currentArticleIndex, setCurrentArticleIndex] = useState(0);
     const [annotations, setAnnotations] = useState({});
@@ -105,6 +106,8 @@ export default function NewsAnnotationTool() {
     const [selectedSubcategory, setSelectedSubcategory] = useState("");
     const [showRightInstructions, setShowRightInstructions] = useState(true);
     const [wordCount, setWordCount] = useState(0);
+
+
     const handleCategoryButtonClick = (categoryKey) => {
       const wc = countWords(selectedText);
 
@@ -134,6 +137,7 @@ export default function NewsAnnotationTool() {
         }
       }
     };
+    
 
     // Live word count only
 useEffect(() => {
@@ -759,7 +763,7 @@ const handleSubcategoryChange = (e) => {
 
 
 {/* Instructions Panel on Right */}
-<div className={`w-1/4 p-4 bg-white transition-all duration-300 ${showRightInstructions ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"}`}>
+<div className={`w-1/4 p-4 bg-blue transition-all duration-300 ${showRightInstructions ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"}`}>
     <h3 className="text-lg font-bold mb-3">Instructions</h3>
     <p className="text-sm">
     You will annotate <strong>3 news articles</strong>. For each article, please follow these steps:
