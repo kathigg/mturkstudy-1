@@ -1,6 +1,6 @@
 # Sensify Lab: Community Comms Project, MTurk Survey Tool
 
-**Principal Developer:** Kathleen Higgins
+**Principal Developer:** Kathleen Higgins (Summer 2025)
 **Principal Investigator:** Prerana Khatiwada (PhD) and Professor Matthew Mauriello
 
 This project is divided into several sections. 
