@@ -1,5 +1,5 @@
 import React from "react";
-import NewsAnnotationTool from "./website_management/pages/NewsAnnotationTool";
+import NewsAnnotationTool from "./website_management/pages/NewsAnnotationTool.js";
 
 function App() {
   return (
