@@ -148,7 +148,7 @@ useEffect(() => {
 
     const categoryOptions = {
       Persuasive_Propaganda: ["Repetition", "Exaggeration", "Slogans", "Bandwagon", "Causal Oversimplification", "Doubt"],
-      Inflammatory_Language: ["Demonization", "Name-Calling", "Hyperbole", "Straw Man Arguments"],
+      Inflammatory_Language: ["Demonization", "Name-Calling", "Hyperbole", "Scapegoating"],
       "No_Manipulative_Language": ["No bias"],
   };
 
@@ -571,7 +571,7 @@ const handleSubcategoryChange = (e) => {
                     <DropdownItem icon=" " title="Name-Calling">Using demeaning labels or insults to discredit opponents.</DropdownItem>
                     <DropdownItem icon=" " title="Hyperbole">Exaggerating to provoke fear, anger, or excitement.</DropdownItem>
                     <DropdownItem icon=" " title="Demonization">Portraying individuals or groups as evil, immoral, or dangerous.</DropdownItem>
-                    <DropdownItem icon=" " title="Straw-Man">Misrepresenting someone's argument to make it easier to attack.</DropdownItem>
+                    <DropdownItem icon=" " title="Scapegoating">Blaming a person or group for problems they may not be responsible for.</DropdownItem>
                     </ul>
                 </div>
             
