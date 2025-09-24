@@ -62,11 +62,13 @@ def match_annotation(llm_ann, gold_ann):
 # Flatten helpers
 # ------------------------
 def flatten_llm(llm_json):
-    """Flatten LLM annotations into {title: [annotations...]} dict."""
+    """Flatten LLM annotations into {title: [annotations...]} dict.
+       Supports both 'items' (GPT-5) and 'annotations' (older format)."""
     article_map = defaultdict(list)
     for article in llm_json:
         title = article.get("title", "UNKNOWN_TITLE")
-        for ann in article.get("annotations", []):
+        anns = article.get("items") or article.get("annotations") or []
+        for ann in anns:
             article_map[title].append(
                 {
                     "text": ann.get("text", ""),

@@ -644,12 +644,12 @@ const handleSubcategoryChange = (e) => {
                 {/* Annotation Buttons */}
                 <div className="mt-4 flex justify-center space-x-4">
                     <Button onClick={() => handleCategoryButtonClick("Inflammatory_Language")} className="bg-red-500">
-                        Flame Rhetoric
+                      Flame Rhetoric 
                     </Button>
-                    <Button onClick={() => handleCategoryButtonClick("Persuasive_Propaganda")} className="bg-yellow-500">
+                    <Button onClick={() => handleCategoryButtonClick("Persuasive_Propaganda")} className="!bg-yellow-500">
                         Persuasive Propaganda
                     </Button>
-                    <Button onClick={() => handleCategoryButtonClick("No_Polarizing_Language")} className="bg-green-500">
+                    <Button onClick={() => handleCategoryButtonClick("No_Polarizing_Language")} className="!bg-emerald-700/60">
                         No polarizing language
                     </Button>
                 </div>

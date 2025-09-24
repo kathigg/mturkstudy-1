@@ -1,11 +1,20 @@
 {
   "overall": {
-    "precision": 0,
-    "recall": 0,
-    "f1": 0,
-    "correct_matches": 0,
-    "total_llm": 0,
-    "total_gold": 0
+    "precision": 0.3333333333333333,
+    "recall": 0.5,
+    "f1": 0.4,
+    "correct_matches": 1,
+    "total_llm": 3,
+    "total_gold": 2
   },
-  "per_article": {}
+  "per_article": {
+    "Mueller agrees to testify before 2 House panels next month": {
+      "precision": 0.333,
+      "recall": 0.5,
+      "f1": 0.4,
+      "correct_matches": 1,
+      "total_llm": 3,
+      "total_gold": 2
+    }
+  }
 }
