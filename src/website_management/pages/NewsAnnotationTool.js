@@ -610,10 +610,10 @@ const handleSubcategoryChange = (e) => {
                     <Button onClick={() => handleCategoryButtonClick("Inflammatory_Language")} className="bg-red-500">
                       Flame Rhetoric 
                     </Button>
-                    <Button onClick={() => handleCategoryButtonClick("Persuasive_Propaganda")} className="bg-[#f2a100]">
+                    <Button onClick={() => handleCategoryButtonClick("Persuasive_Propaganda")} className="!bg-yellow-500">
                         Persuasive Propaganda
                     </Button>
-                    <Button onClick={() => handleCategoryButtonClick("No_Polarizing_Language")} className="bg-[#82b588] p-4">
+                    <Button onClick={() => handleCategoryButtonClick("No_Polarizing_Language")} className="!bg-emerald-700/60">
                         No polarizing language
                     </Button>
                 </div>
