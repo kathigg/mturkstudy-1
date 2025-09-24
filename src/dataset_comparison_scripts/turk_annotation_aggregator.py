@@ -144,7 +144,7 @@ def process_annotation_file(input_path, output_path):
     for worker_id, entry in raw_data.items():
         for article_id, annotations in entry["textAnnotations"].items():
             for ann in annotations:
-                if ann["text"] == "No bias selected":
+                if ann["text"] == "no polarizing language selected":
                     continue
                 annotated_spans[article_id].append({
                     "text": ann["text"],

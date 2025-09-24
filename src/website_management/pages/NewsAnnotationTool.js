@@ -111,7 +111,7 @@ export default function NewsAnnotationTool() {
     const handleCategoryButtonClick = (categoryKey) => {
       const wc = countWords(selectedText);
 
-      // Block all categories (including No bias) if out of range
+      // Block all categories (including no polarizing language) if out of range
       if (wc < MIN_WORDS || wc > MAX_WORDS) {
         alert(`Please select between ${MIN_WORDS} and ${MAX_WORDS} words before annotating.`);
         return;
@@ -120,8 +120,8 @@ export default function NewsAnnotationTool() {
       setSelectedCategory(categoryKey);
       setSelectedSubcategory(""); // Clear the subcategory so user chooses it fresh
       
-      // If "No bias" is selected, automatically save it as an annotation
-      if (categoryKey === "No_Manipulative_Language") {
+      // If "no polarizing language" is selected, automatically save it as an annotation
+      if (categoryKey === "No_Polarizing_Language") {
         const articleId = articles[currentArticleIndex]?.id;
         if (articleId) {
           setTextAnnotations((prevAnnotations) => ({
@@ -129,9 +129,9 @@ export default function NewsAnnotationTool() {
             [articleId]: [
               ...(prevAnnotations[articleId] || []),
               { title: articles[currentArticleIndex]?.title || "", 
-                text: "No bias selected", 
-                category: "No_Manipulative_Language", 
-                subcategory: "No bias" },
+                text: "No polarizing language selected", 
+                category: "No_Polarizing_Language", 
+                subcategory: "no polarizing language" },
             ],
           }));
         }
@@ -153,7 +153,7 @@ useEffect(() => {
     const categoryOptions = {
       Persuasive_Propaganda: ["Repetition", "Exaggeration", "Slogans", "Bandwagon", "Causal Oversimplification", "Doubt"],
       Inflammatory_Language: ["Demonization", "Name-Calling", "Hyperbole", "Scapegoating"],
-      "No_Manipulative_Language": ["No bias"],
+      "No_Polarizing_Language": ["No polarizing language"],
   };
 
     const [showSurvey, setShowSurvey] = useState(false);
@@ -171,12 +171,12 @@ useEffect(() => {
 
 const autoSaveAnnotation = (category, subcategory) => {
   if (category && subcategory && articleId) {
-    // For "No bias", we don't require selected text
-    const textToSave = category === "No_Manipulative_Language" 
-      ? "No bias selected" 
+    // For "no polarizing language", we don't require selected text
+    const textToSave = category === "No_Polarizing_Language" 
+      ? "no polarizing language selected" 
       : selectedText;
     
-    if (category === "No_Manipulative_Language" || selectedText) {
+    if (category === "No_Polarizing_Language" || selectedText) {
       setTextAnnotations((prevAnnotations) => ({
         ...prevAnnotations,
         [articleId]: [
@@ -199,7 +199,7 @@ const autoSaveAnnotation = (category, subcategory) => {
 const handleCategoryChange = (e) => {
   const newCategory = e.target.value;
   setSelectedCategory(newCategory);
-  if (selectedSubcategory && (selectedText || newCategory === "No_Manipulative_Language")) {
+  if (selectedSubcategory && (selectedText || newCategory === "No_Polarizing_Language")) {
     autoSaveAnnotation(newCategory, selectedSubcategory);
   }
 };
@@ -207,7 +207,7 @@ const handleCategoryChange = (e) => {
 const handleSubcategoryChange = (e) => {
   const newSubcategory = e.target.value;
   setSelectedSubcategory(newSubcategory);
-  if (selectedCategory && (selectedText || selectedCategory === "No_Manipulative_Language")) {
+  if (selectedCategory && (selectedText || selectedCategory === "No_Polarizing_Language")) {
     autoSaveAnnotation(selectedCategory, newSubcategory);
   }
 };
@@ -388,18 +388,18 @@ const handleSubcategoryChange = (e) => {
             }
 
                 // Validate that there is at least one valid annotation
-                // OR that "No bias" has been selected
+                // OR that "no polarizing language" has been selected
 
             const articleId = articles[currentArticleIndex]?.id;
             const annotationsForArticle = textAnnotations[articleId] || [];
             
-            // Check if "No bias" has been selected for this article
-            const hasNoManipulativeLanguage = annotationsForArticle.some(
-              (a) => a.category === "No_Manipulative_Language" && a.subcategory === "No bias"
+            // Check if "no polarizing language" has been selected for this article
+            const hasNoPolarizingLanguage = annotationsForArticle.some(
+              (a) => a.category === "No_Polarizing_Language" && a.subcategory === "no polarizing language"
             );
 
-            if (annotationsForArticle.length === 0 && !hasNoManipulativeLanguage) {
-                alert("Please annotate at least one phrase or select 'No bias' before continuing.");
+            if (annotationsForArticle.length === 0 && !hasNoPolarizingLanguage) {
+                alert("Please annotate at least one phrase or select 'no polarizing language' before continuing.");
                 return;
               }
           
@@ -456,10 +456,10 @@ const handleSubcategoryChange = (e) => {
     };
 
     const handleTextAnnotation = () => {
-        if (selectedCategory && selectedSubcategory && (selectedText || selectedCategory === "No_Manipulative_Language")) {
+        if (selectedCategory && selectedSubcategory && (selectedText || selectedCategory === "No_Polarizing_Language")) {
             const articleId = articles[currentArticleIndex]?.id;
-            const textToSave = selectedCategory === "No_Manipulative_Language" 
-              ? "No bias selected" 
+            const textToSave = selectedCategory === "No_Polarizing_Language" 
+              ? "no polarizing language selected" 
               : selectedText;
             
             setTextAnnotations((prevAnnotations) => ({
@@ -613,8 +613,8 @@ const handleSubcategoryChange = (e) => {
                     <Button onClick={() => handleCategoryButtonClick("Persuasive_Propaganda")} className="bg-yellow-500">
                         Persuasive Propaganda
                     </Button>
-                    <Button onClick={() => handleCategoryButtonClick("No_Manipulative_Language")} className="bg-green-500">
-                        No bias
+                    <Button onClick={() => handleCategoryButtonClick("No_Polarizing_Language")} className="bg-green-500">
+                        No polarizing language
                     </Button>
                 </div>
 
@@ -772,7 +772,7 @@ const handleSubcategoryChange = (e) => {
   <div className="h-4" />
   <ul className="list-decimal list-inside text-sm space-y-1">
     <li>
-      <strong>Highlight a section of text</strong> between [] and [] words that you want to annotate.
+      <strong>Highlight a section of text</strong> between 4 and 25 words that you want to annotate.
     </li>
     <div className="h-3" />
     <li>
