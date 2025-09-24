@@ -5,6 +5,7 @@ import { CardContent } from "../components/CardContent";
 import Papa from "papaparse";
 
 import { database, ref, push } from "../../firebaseConfig";
+import { get, update } from "firebase/database";
 
 // --- Selection constraints ---
 const MIN_WORDS = 4;
@@ -316,37 +317,7 @@ const handleSubcategoryChange = (e) => {
 
     // HARD-CODED ARTICLE SELECTION
 
-    useEffect(() => {
-        fetch("/article_dataset_versions/test3_encoding_fixed_300_700_words.csv")
-        .then((response) => response.text())
-        .then((csvText) => {
-          Papa.parse(csvText, {
-            header: true,
-            skipEmptyLines: true,
-            complete: function (results) {
-              const parsedArticles = results.data.map((item, index) => ({
-                id: index + 1,
-                title: item["Headline"],
-                content: item["News body"],
-            }));
-            
-            // Select three specific articles by their indices (0-based)
-            // You can change these indices to select different articles
-            const selectedIndices = [24, 124, 472]; // Change these to select different articles
-            const hardCodedArticles = selectedIndices.map(index => parsedArticles[index]).filter(Boolean);
-            
-            // Fallback to random selection if hard-coded articles don't exist
-            if (hardCodedArticles.length < 3) {
-              console.warn("Some hard-coded articles not found, falling back to random selection");
-              const randomArticles = shuffleArray(parsedArticles).slice(0, 3);
-              setArticles(randomArticles);
-            } else {
-              setArticles(hardCodedArticles);
-            }
-            },
-          });
-        });
-    }, []);
+
     
     // ORIGINAL RANDOM SELECTION (COMMENTED OUT)
     /*
@@ -374,6 +345,71 @@ const handleSubcategoryChange = (e) => {
         setArticles(shuffleArray([...sampleArticles.slice(0, 3)]));
       }, []);
     */
+
+      async function getThreeRandomIndices() {
+        const usageRef = ref(database, "articleUsage");
+        const snapshot = await get(usageRef);
+        let usageData = snapshot.exists() ? snapshot.val() : {};
+    
+        // Initialize counts for first 12 articles
+        for (let i = 0; i < 12; i++) {
+          if (usageData[i] === undefined) {
+            usageData[i] = 0;
+          }
+        }
+    
+        // Filter only articles with < 3 views
+        const available = Object.keys(usageData)
+          .map((k) => parseInt(k))
+          .filter((i) => usageData[i] < 3);
+    
+        if (available.length < 3) {
+          console.warn("Not enough available articles left.");
+          return [];
+        }
+    
+        // Shuffle and pick first 3
+        const shuffled = available.sort(() => Math.random() - 0.5);
+        const chosen = shuffled.slice(0, 3);
+    
+        // Update usage counts in Firebase
+        const updates = {};
+        chosen.forEach((i) => {
+          updates[i] = usageData[i] + 1;
+        });
+        await update(usageRef, updates);
+        console.log("Updated article usage counts:", updates);
+    
+        return chosen;
+      }
+    
+      useEffect(() => {
+      fetch("/article_dataset_versions/test3_encoding_fixed_300_700_words.csv")
+        .then((response) => response.text())
+        .then(async (csvText) => {
+          Papa.parse(csvText, {
+            header: true,
+            skipEmptyLines: true,
+            complete: async function (results) {
+              const parsedArticles = results.data.map((item, index) => ({
+                id: index + 1,
+                title: item["Headline"],
+                content: item["News body"],
+              }));
+    
+              // Fetch random indices with usage tracking
+              const selectedIndices = await getThreeRandomIndices();
+    
+              const selectedArticles = selectedIndices
+                .map((index) => parsedArticles[index])
+                .filter(Boolean);
+    
+              setArticles(selectedArticles);
+            },
+          });
+        });
+      }, []);
+  
 
     const handleNextArticle = () => {
         if (showSurvey) {
