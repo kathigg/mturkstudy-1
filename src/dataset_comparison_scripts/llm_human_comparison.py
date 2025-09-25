@@ -57,6 +57,14 @@ def match_annotation(llm_ann, gold_ann):
         and normalize_label(llm_ann["subcategory"]) == normalize_label(gold_ann["subcategory"])
     )
 
+def match_category(llm_ann, gold_ann):
+    """Return True if category/subcategory match."""
+    if (overlap(llm_ann["text"], gold_ann["text"])):
+        return (
+            normalize_label(llm_ann["category"]) == normalize_label(gold_ann["category"])
+            and normalize_label(llm_ann["subcategory"]) == normalize_label(gold_ann["subcategory"])
+        )
+    return 
 
 # ------------------------
 # Flatten helpers
@@ -94,7 +102,19 @@ def flatten_gold(gold_json):
             )
     return article_map
 
-
+def num_of_overlap(llm_ann, gold_ann):
+    """Compare annotations for a single article and return number of matching."""
+    correct = 0
+    used_gold = set()
+    for llm in llm_ann:
+        for i, gold in enumerate(gold_ann):
+            if i in used_gold:
+                continue
+            if match_annotation(llm, gold):
+                correct += 1
+                used_gold.add(i)
+                break
+    return correct
 # ------------------------
 # Comparison
 # ------------------------
@@ -124,6 +144,34 @@ def compare_article(llm_annotations, gold_annotations):
         "total_gold": len(gold_annotations),
     }
 
+def compare_category(llm_annotations, gold_annotations):
+    """Compare annotations for a single article and return metrics."""
+    # number of annotations that both humans and LLM found 
+    total_shared = num_of_overlap(llm_annotations, gold_annotations)
+
+    correct = 0
+    used_gold = set()
+    for llm in llm_annotations:
+        for i, gold in enumerate(gold_annotations):
+            if i in used_gold:
+                continue
+            if match_category(llm, gold):
+                correct += 1
+                used_gold.add(i)
+                break
+
+    precision = correct / total_shared if llm_annotations else 0
+    recall = correct / total_shared if gold_annotations else 0
+    f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) else 0
+
+    return {
+        "precision": round(precision, 3),
+        "recall": round(recall, 3),
+        "f1": round(f1, 3),
+        "correct_matches": correct,
+        "total_matches": total_shared,
+    }
+
 
 def compare_all(llm_json, gold_json):
     llm_map = flatten_llm(llm_json)
@@ -136,32 +184,60 @@ def compare_all(llm_json, gold_json):
     for title in common_titles:
         llm_annotations = llm_map[title]
         gold_annotations = gold_map[title]
-        scores = compare_article(llm_annotations, gold_annotations)
-        all_results[title] = scores
 
-    # compute overall only on common titles
-    total_correct = sum(r["correct_matches"] for r in all_results.values())
-    total_llm = sum(r["total_llm"] for r in all_results.values())
-    total_gold = sum(r["total_gold"] for r in all_results.values())
+        # Results from both metrics
+        match_scores = compare_article(llm_annotations, gold_annotations)
+        cat_scores = compare_category(llm_annotations, gold_annotations)
 
-    precision = total_correct / total_llm if total_llm else 0
-    recall = total_correct / total_gold if total_gold else 0
-    f1 = (
-        2 * precision * recall / (precision + recall)
-        if (precision + recall) > 0
-        else 0
-    )
+        all_results[title] = {
+            "article_match": match_scores,
+            "category_match": cat_scores,
+        }
 
-    overall = {
-        "precision": precision,
-        "recall": recall,
-        "f1": f1,
-        "correct_matches": total_correct,
+    # ---- Overall scores ----
+    # Article-level overall
+    total_correct_article = sum(r["article_match"]["correct_matches"] for r in all_results.values())
+    total_llm = sum(r["article_match"]["total_llm"] for r in all_results.values())
+    total_gold = sum(r["article_match"]["total_gold"] for r in all_results.values())
+
+    precision_article = total_correct_article / total_llm if total_llm else 0
+    recall_article = total_correct_article / total_gold if total_gold else 0
+    f1_article = (2 * precision_article * recall_article / (precision_article + recall_article)
+                  if (precision_article + recall_article) else 0)
+
+    overall_article = {
+        "precision": round(precision_article, 3),
+        "recall": round(recall_article, 3),
+        "f1": round(f1_article, 3),
+        "correct_matches": total_correct_article,
         "total_llm": total_llm,
         "total_gold": total_gold,
     }
 
-    return {"overall": overall, "per_article": all_results}
+    # Category-level overall
+    total_correct_cat = sum(r["category_match"]["correct_matches"] for r in all_results.values())
+    total_shared = sum(r["category_match"]["total_matches"] for r in all_results.values())
+
+    precision_cat = total_correct_cat / total_shared if total_shared else 0
+    recall_cat = total_correct_cat / total_shared if total_shared else 0
+    f1_cat = (2 * precision_cat * recall_cat / (precision_cat + recall_cat)
+              if (precision_cat + recall_cat) else 0)
+
+    overall_cat = {
+        "precision": round(precision_cat, 3),
+        "recall": round(recall_cat, 3),
+        "f1": round(f1_cat, 3),
+        "correct_matches": total_correct_cat,
+        "total_matches": total_shared,
+    }
+
+    return {
+        "overall": {
+            "article_match": overall_article,
+            "category_match": overall_cat,
+        },
+        "per_article": all_results,
+    }
 
 
 # ------------------------
@@ -177,4 +253,7 @@ if __name__ == "__main__":
     with open(output_file, "w") as f:
         json.dump(results, f, indent=2)
 
-    print(f"Results saved to {output_file}")
+    print("=== Overall Results ===")
+    print("Article Match:", results["overall"]["article_match"])
+    print("Category Match:", results["overall"]["category_match"])
+    print(f"\nDetailed results saved to {output_file}")
