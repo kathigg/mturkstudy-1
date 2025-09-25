@@ -346,69 +346,72 @@ const handleSubcategoryChange = (e) => {
       }, []);
     */
 
-      async function getThreeRandomIndices() {
-        const usageRef = ref(database, "articleUsage");
-        const snapshot = await get(usageRef);
-        let usageData = snapshot.exists() ? snapshot.val() : {};
-    
-        // Initialize counts for first 12 articles
-        for (let i = 0; i < 12; i++) {
-          if (usageData[i] === undefined) {
-            usageData[i] = 0;
-          }
-        }
-    
-        // Filter only articles with < 3 views
-        const available = Object.keys(usageData)
-          .map((k) => parseInt(k))
-          .filter((i) => usageData[i] < 3);
-    
-        if (available.length < 3) {
-          console.warn("Not enough available articles left.");
-          return [];
-        }
-    
-        // Shuffle and pick first 3
-        const shuffled = available.sort(() => Math.random() - 0.5);
-        const chosen = shuffled.slice(0, 3);
-    
-        // Update usage counts in Firebase
-        const updates = {};
-        chosen.forEach((i) => {
-          updates[i] = usageData[i] + 1;
-        });
-        await update(usageRef, updates);
-        console.log("Updated article usage counts:", updates);
-    
-        return chosen;
+async function getThreeRandomIndices() {
+    const usageRef = ref(database, "articleUsage");
+    const snapshot = await get(usageRef);
+    let usageData = snapshot.exists() ? snapshot.val() : {};
+
+    // Initialize counts for first 12 articles
+    for (let i = 0; i < 12; i++) {
+      if (usageData[i] === undefined) {
+        usageData[i] = 0;
       }
-    
-      useEffect(() => {
-      fetch("/article_dataset_versions/test3_encoding_fixed_300_700_words.csv")
-        .then((response) => response.text())
-        .then(async (csvText) => {
-          Papa.parse(csvText, {
-            header: true,
-            skipEmptyLines: true,
-            complete: async function (results) {
-              const parsedArticles = results.data.map((item, index) => ({
-                id: index + 1,
-                title: item["Headline"],
-                content: item["News body"],
-              }));
-    
-              // Fetch random indices with usage tracking
-              const selectedIndices = await getThreeRandomIndices();
-    
-              const selectedArticles = selectedIndices
-                .map((index) => parsedArticles[index])
-                .filter(Boolean);
-    
-              setArticles(selectedArticles);
-            },
-          });
+    }
+
+    // Find articles with < 3 uses
+    const available = Object.keys(usageData)
+      .map((k) => parseInt(k))
+      .filter((i) => usageData[i] < 3);
+
+    if (available.length === 0) {
+      console.warn("No available articles left.");
+      return [];
+    }
+
+    // Shuffle available
+    const shuffled = available.sort(() => Math.random() - 0.5);
+
+    // Pick up to 3 (but could be 1 or 2)
+    const chosen = shuffled.slice(0, Math.min(3, available.length));
+
+    // Update usage counts
+    const updates = {};
+    chosen.forEach((i) => {
+      updates[i] = usageData[i] + 1;
+    });
+    await update(usageRef, updates);
+
+    console.log(`Chosen indices: ${chosen}, updated usage:`, updates);
+
+    return chosen;
+  }
+
+  useEffect(() => {
+    fetch("/article_dataset_versions/test3_encoding_fixed_300_700_words.csv")
+      .then((response) => response.text())
+      .then(async (csvText) => {
+        Papa.parse(csvText, {
+          header: true,
+          skipEmptyLines: true,
+          complete: async function (results) {
+            const parsedArticles = results.data.map((item, index) => ({
+              id: index + 1,
+              title: item["Headline"],
+              content: item["News body"],
+            }));
+
+            // Fetch random indices with usage tracking
+            const selectedIndices = await getThreeRandomIndices();
+
+            const selectedArticles = selectedIndices
+              .map((index) => parsedArticles[index])
+              .filter(Boolean);
+
+            setArticles(selectedArticles);
+          },
         });
-      }, []);
+      });
+  }, []);
   
 
     const handleNextArticle = () => {
