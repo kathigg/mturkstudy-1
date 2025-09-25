@@ -596,9 +596,10 @@ const handleSubcategoryChange = (e) => {
                     <div></div>
                   <div className="bg-yellow-100 p-3 rounded mb-3">
                     <strong className="text-yellow-600 text-center block mb-2 text-base">Persuasive Propaganda</strong>
-                    <DropdownItem icon=" " title="Repetition">Reinforcing a message by repeating it.</DropdownItem>
-                    <DropdownItem icon=" " title="Exaggeration">Overstating or distorting facts.</DropdownItem>
-                    <DropdownItem icon=" " title="Slogans">Catchy, emotional phrases designed to influence opinions.</DropdownItem>
+                    <DropdownItem icon=" " title="Exaggeration">When something is made to sound much bigger, better, or worse than it really is — or, the opposite, made to sound smaller or less serious than it actually is.
+                    </DropdownItem>
+                    <DropdownItem icon=" " title="Slogans">A short and catchy phrase that tries to get an emotional reaction or support for a political cause. 
+                    .</DropdownItem>
                     <DropdownItem icon=" " title="Bandwagon">Encouraging action by claiming "everyone is doing it."</DropdownItem>
                     <DropdownItem icon=" " title="Casual Oversimplification">Reducing a complex issue to a single cause or solution.</DropdownItem>
                     <DropdownItem icon=" " title="Doubt">Sowing uncertainty or questioning the credibility of evidence.</DropdownItem>
@@ -609,7 +610,6 @@ const handleSubcategoryChange = (e) => {
                     <strong className="text-red-600 text-center block mb-3 mt-3">Inflammatory Language</strong>
                     <ul className="text-s text-center ml-2">
                     <DropdownItem icon=" " title="Name-Calling">Using demeaning labels or insults to discredit opponents.</DropdownItem>
-                    <DropdownItem icon=" " title="Hyperbole">Exaggerating to provoke fear, anger, or excitement.</DropdownItem>
                     <DropdownItem icon=" " title="Demonization">Portraying individuals or groups as evil, immoral, or dangerous.</DropdownItem>
                     <DropdownItem icon=" " title="Scapegoating">Blaming a person or group for problems they may not be responsible for.</DropdownItem>
                     </ul>
