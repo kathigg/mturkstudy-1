@@ -152,8 +152,8 @@ useEffect(() => {
 }, []);
 
     const categoryOptions = {
-      Persuasive_Propaganda: ["Repetition", "Exaggeration", "Slogans", "Bandwagon", "Causal Oversimplification", "Doubt"],
-      Inflammatory_Language: ["Demonization", "Name-Calling", "Hyperbole", "Scapegoating"],
+      Persuasive_Propaganda: ["Exaggeration", "Slogans", "Bandwagon", "Causal Oversimplification", "Doubt"],
+      Inflammatory_Language: ["Demonization", "Name-Calling", "Scapegoating"],
       "No_Polarizing_Language": ["No polarizing language"],
   };
 
@@ -601,7 +601,7 @@ async function getThreeRandomIndices() {
                     <strong className="text-yellow-600 text-center block mb-2 text-base">Persuasive Propaganda</strong>
                     <DropdownItem icon=" " title="Exaggeration">When something is made to sound much bigger, better, or worse than it really is — or, the opposite, made to sound smaller or less serious than it actually is.
                     </DropdownItem>
-                    <DropdownItem icon=" " title="Slogans">A short and catchy phrase that tries to get an emotional reaction or support for a political cause. 
+                    <DropdownItem icon=" " title="Slogans">A short and catchy phrase that tries to get an emotional reaction or support for a political cause.They may be positive or negative in tone, and are commonly used across the political spectrum.
                     .</DropdownItem>
                     <DropdownItem icon=" " title="Bandwagon">Encouraging action by claiming "everyone is doing it."</DropdownItem>
                     <DropdownItem icon=" " title="Casual Oversimplification">Reducing a complex issue to a single cause or solution.</DropdownItem>
@@ -612,9 +612,9 @@ async function getThreeRandomIndices() {
                 <div className="bg-red-100 p-2 rounded mb-6">
                     <strong className="text-red-600 text-center block mb-3 mt-3">Inflammatory Language</strong>
                     <ul className="text-s text-center ml-2">
-                    <DropdownItem icon=" " title="Name-Calling">Using demeaning labels or insults to discredit opponents.</DropdownItem>
-                    <DropdownItem icon=" " title="Demonization">Portraying individuals or groups as evil, immoral, or dangerous.</DropdownItem>
-                    <DropdownItem icon=" " title="Scapegoating">Blaming a person or group for problems they may not be responsible for.</DropdownItem>
+                    <DropdownItem icon=" " title="Name-Calling">Using demeaning labels or insults to discredit opponents. Instead of giving reasons or evidence, the speaker tries to shape opinion with a word that carries strong emotion. </DropdownItem>
+                    <DropdownItem icon=" " title="Demonization">Portraying individuals or groups as evil, immoral, or dangerous. Demonization goes beyond simple name calling by framing the target as a threat to society, morality, or survival.  </DropdownItem>
+                    <DropdownItem icon=" " title="Scapegoating">Assigning blame to a group for broader societal problems or crises, often regardless of their actual responsibility. Unlike other inflammatory techniques, scapegoating specifically targets entire groups (e.g., ethnic, religious, political, or social groups) and portrays them as the cause of larger challenges such as economic decline, crime, or cultural change.</DropdownItem>
                     </ul>
                 </div>
             
