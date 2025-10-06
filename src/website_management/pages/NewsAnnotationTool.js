@@ -98,6 +98,7 @@ const DropdownItem = ({ icon, title, children }) => {
 
 export default function NewsAnnotationTool() {
     console.log("YAY Loaded NewsAnnotationTool");
+    const [allArticles, setAllArticles] = useState([]);
     const [articles, setArticles] = useState([]);
     const [currentArticleIndex, setCurrentArticleIndex] = useState(0);
     const [annotations, setAnnotations] = useState({});
@@ -346,133 +347,141 @@ const handleSubcategoryChange = (e) => {
       }, []);
     */
 
-async function getThreeRandomIndices() {
-    const usageRef = ref(database, "articleUsage");
-    const snapshot = await get(usageRef);
-    let usageData = snapshot.exists() ? snapshot.val() : {};
+async function getOneRandomIndex() {
+  const usageRef = ref(database, "articleUsage");
+  const snapshot = await get(usageRef);
+  let usageData = snapshot.exists() ? snapshot.val() : {};
 
-    // Initialize counts for first 12 articles
-    for (let i = 0; i < 12; i++) {
-      if (usageData[i] === undefined) {
-        usageData[i] = 0;
-      }
+  // Initialize counts for first 12 articles
+  for (let i = 0; i < 12; i++) {
+    if (usageData[i] === undefined) {
+      usageData[i] = 0;
     }
-
-    // Find articles with < 3 uses
-    const available = Object.keys(usageData)
-      .map((k) => parseInt(k))
-      .filter((i) => usageData[i] < 3);
-
-    if (available.length === 0) {
-      console.warn("No available articles left.");
-      return [];
-    }
-
-    // Shuffle available
-    const shuffled = available.sort(() => Math.random() - 0.5);
-
-    // Pick up to 3 (but could be 1 or 2)
-    const chosen = shuffled.slice(0, Math.min(3, available.length));
-
-    // Update usage counts
-    const updates = {};
-    chosen.forEach((i) => {
-      updates[i] = usageData[i] + 1;
-    });
-    await update(usageRef, updates);
-
-    console.log(`Chosen indices: ${chosen}, updated usage:`, updates);
-
-    return chosen;
   }
 
+  // Filter available (< 3 uses)
+  const available = Object.keys(usageData)
+    .map((k) => parseInt(k))
+    .filter((i) => usageData[i] < 1);
+
+  if (available.length === 0) {
+    console.warn("No available articles left.");
+    return null;
+  }
+
+  // Pick 1 random index
+  const randIndex = available[Math.floor(Math.random() * available.length)];
+
+  // Update Firebase
+  await update(usageRef, { [randIndex]: usageData[randIndex] + 1 });
+
+  console.log(`Chosen index: ${randIndex}, new count: ${usageData[randIndex] + 1}`);
+  return randIndex;
+}
+
   useEffect(() => {
-    fetch("/article_dataset_versions/test3_encoding_fixed_300_700_words.csv")
-      .then((response) => response.text())
-      .then(async (csvText) => {
-        Papa.parse(csvText, {
-          header: true,
-          skipEmptyLines: true,
-          complete: async function (results) {
-            const parsedArticles = results.data.map((item, index) => ({
-              id: index + 1,
-              title: item["Headline"],
-              content: item["News body"],
-            }));
+  fetch("/article_dataset_versions/test3_encoding_fixed_300_700_words.csv")
+    .then((response) => response.text())
+    .then(async (csvText) => {
+      Papa.parse(csvText, {
+        header: true,
+        skipEmptyLines: true,
+        complete: async function (results) {
+          const parsedArticles = results.data.map((item, index) => ({
+            id: index + 1,
+            title: item["Headline"],
+            content: item["News body"],
+          }));
 
-            // Fetch random indices with usage tracking
-            const selectedIndices = await getThreeRandomIndices();
+          // Store all parsed articles for later
+          setAllArticles(parsedArticles);
 
-            const selectedArticles = selectedIndices
-              .map((index) => parsedArticles[index])
-              .filter(Boolean);
-
-            setArticles(selectedArticles);
-          },
-        });
+          // Get the first random article
+          const idx = await getOneRandomIndex();
+          if (idx !== null) {
+            setArticles([parsedArticles[idx]]);
+          }
+        },
       });
-  }, []);
+    });
+}, []);
   
 
-    const handleNextArticle = () => {
-        if (showSurvey) {
-            //validate survey responses here
-            if (
-              confidence === 0 ||
-              bias === 0 ||
-              openFeedback.trim() === ""
-            ) {
-              alert("Please answer all survey questions before continuing.");
-              return;
-            }
+    const handleNextArticle = async () => {
+      console.log("ARTICLE LENGTH:", articles.length);
+      if(articles.length > 1){
+        return;
+      }
+  if (showSurvey) {
+    // validate survey responses
+    if (confidence === 0 || bias === 0 || openFeedback.trim() === "") {
+      alert("Please answer all survey questions before continuing.");
+      return;
+    }
 
-                // Validate that there is at least one valid annotation
-                // OR that "no polarizing language" has been selected
+    const articleId = articles[currentArticleIndex]?.id;
+    const annotationsForArticle = textAnnotations[articleId] || [];
 
-            const articleId = articles[currentArticleIndex]?.id;
-            const annotationsForArticle = textAnnotations[articleId] || [];
-            
-            // Check if "no polarizing language" has been selected for this article
-            const hasNoPolarizingLanguage = annotationsForArticle.some(
-              (a) => a.category === "No_Polarizing_Language" && a.subcategory === "no polarizing language"
-            );
+    // Check if "no polarizing language" has been selected
+    const hasNoPolarizingLanguage = annotationsForArticle.some(
+      (a) =>
+        a.category === "No_Polarizing_Language" &&
+        a.subcategory === "no polarizing language"
+    );
 
-            if (annotationsForArticle.length === 0 && !hasNoPolarizingLanguage) {
-                alert("Please annotate at least one phrase or select 'no polarizing language' before continuing.");
-                return;
-              }
-          
-              const anyInvalid = annotationsForArticle.some(
-                (a) => !a.category || !a.subcategory
-              );
-          
-              if (anyInvalid) {
-                alert("Each annotation must include a category and subcategory.");
-                return;
-              }
-    // Save survey responses and continue
+    if (annotationsForArticle.length === 0 && !hasNoPolarizingLanguage) {
+      alert(
+        "Please annotate at least one phrase or select 'no polarizing language' before continuing."
+      );
+      return;
+    }
 
-            setSurveyResponses((prev) => ({
-              ...prev,
-              [articleId]: { confidence, bias, openFeedback },
-            }));
-      
-            if (currentArticleIndex < articles.length - 1) {
-              setCurrentArticleIndex(currentArticleIndex + 1);
-              setSelectedText("");
-              setSelectedCategory("");
-              setSelectedSubcategory("");
-              setShowSurvey(false);
-              setConfidence(0);
-              setBias(0);
-              setOpenFeedback("");
-            } else {
-              setShowThankYou(true);
-            }
-          } else {
-            setShowSurvey(true);
-          }
-        };
+    const anyInvalid = annotationsForArticle.some(
+      (a) => !a.category || !a.subcategory
+    );
+
+    if (anyInvalid) {
+      alert("Each annotation must include a category and subcategory.");
+      return;
+    }
+
+    // Save survey responses
+    setSurveyResponses((prev) => ({
+      ...prev,
+      [articleId]: { confidence, bias, openFeedback },
+    }));
+
+    // reset survey UI state
+    setSelectedText("");
+    setSelectedCategory("");
+    setSelectedSubcategory("");
+    setShowSurvey(false);
+    setConfidence(0);
+    setBias(0);
+    setOpenFeedback("");
+
+    // If user already did 1 article, stop (no "thank you" screen)
+    if (articles.length >= 1) {
+      console.log("User has completed 1 articles this session.");
+      setShowThankYou(true);
+      return;
+    } else {
+      // Otherwise fetch another article
+      const nextIdx = await getOneRandomIndex();
+      if (nextIdx !== null && allArticles[nextIdx]) {
+        setArticles((prev) => [...prev, allArticles[nextIdx]]);
+        setCurrentArticleIndex((prev) => prev + 1);
+      } else {
+        // If Firebase runs out before 1, then show thank-you
+        setShowThankYou(true);
+      }
+    }
+  } else {
+    // flip to survey view
+    setShowSurvey(true);
+  }
+};
+
     
 
     const handleAnnotation = (label) => {
