@@ -1,0 +1,788 @@
+{
+  "-OWb9bC1LMEZ4EN7Co9w": {
+    "articleTitles": [
+      {
+        "id": 25,
+        "title": "Mueller agrees to testify before 2 House panels next month"
+      },
+      {
+        "id": 125,
+        "title": "Google's new AI can help you speak another language in your own voice"
+      },
+      {
+        "id": 473,
+        "title": "atlanta mayor endorses joe biden for president"
+      }
+    ],
+    "completionCode": "MTURK-ULKCY3",
+    "surveyResponses": {
+      "25": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "I tagged the selected text as containing no flame rhetoric or persuasive propaganda because it presents the information in a neutral, fact-based, and balanced manner. Here’s what made it stand out:\n\nTone and Language:\nThe article uses measured, professional language without emotional exaggeration, slurs, or sarcasm. Phrases like “resisted taking the witness stand” and “subpoenas compelling Mueller to appear” describe events plainly, not provocatively.\n\nBalanced Presentation of Political Sides:\nIt fairly represents both Democratic and Republican perspectives. For example:\n\n“Democrats eager to employ him to build a case…”\n\n“Republicans eager to argue for the president’s innocence…”\nThis dual mention avoids the bias typical of propaganda.\n\nFactual Structure:\nThe passage sticks to verifiable details—dates, names, official actions (like subpoenas), and historical context (Mueller's past public silence). There’s no use of emotionally charged or misleading phrasing.\n\nNo Call to Action or Manipulation:\nPropaganda often includes persuasive devices, like appeals to fear, nationalism, or morality. This excerpt lacks such cues and instead reads like informational reporting."
+      },
+      "125": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "The article is a straightforward tech report on Google’s new AI tool, Translatotron. It uses neutral, factual language to explain what the tool does, how it works, and what limitations it currently has. There is no emotionally charged language, no exaggeration of the tool’s capabilities, and no attempts to influence the reader’s opinion. The only personal remark—“I, for one, am looking forward to trying it out though”—is mild and clearly framed as subjective, without being persuasive. These characteristics made it clear that the article contains no flame rhetoric or propaganda."
+      },
+      "473": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "The article maintains a neutral and factual tone throughout. It presents direct quotes from Kamala Harris and Joe Biden, clearly attributing statements and describing their debate exchange without using emotionally charged language. It does not attempt to persuade the reader or distort facts. Instead, it reports political developments, including an endorsement and a policy dispute, in a straightforward and balanced way. The article includes both criticism and defense, offers context for the reader, and avoids manipulative rhetoric. This transparency and even-handed reporting made the tagging decision clear."
+      }
+    },
+    "textAnnotations": {
+      "25": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "WASHINGTON Robert S. Mueller III, the special counsel, will testify in public before Congress on July 17 about his investigation into Russia's election interference and possible obstruction of justice by President Trump, House Democrats announced on Tuesday night. Coming nearly three months after the release of Mueller's report, the back-to-back hearings before the House Judiciary and Intelligence committees promise to be must-see television and hold the potential to reshape the political landscape around Trump's presidency and a possible impeachment by the House. Mueller, who has spoken publicly only once about his work, resisted taking the witness stand, where he will face questions both from Democrats eager to employ him to build a case against Trump and Republicans eager to argue for the president's innocence. In the end, the two committees were forced to issue subpoenas compelling Mueller to appear. The chairmen of the panels, Representatives Jerrold Nadler of New York and Adam Schiff of California, wrote in a letter to Mueller on Tuesday that they understood he had reservations about appearing on Capitol Hill, but they were insistent he do so, anyway."
+        }
+      ],
+      "125": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        }
+      ],
+      "473": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        }
+      ]
+    },
+    "timestamp": "2025-08-01T19:44:52.028Z"
+  },
+  "-OWbH3baup4kHhvXrnUw": {
+    "articleTitles": [
+      {
+        "id": 25,
+        "title": "Mueller agrees to testify before 2 House panels next month"
+      },
+      {
+        "id": 125,
+        "title": "Google's new AI can help you speak another language in your own voice"
+      },
+      {
+        "id": 473,
+        "title": "atlanta mayor endorses joe biden for president"
+      }
+    ],
+    "completionCode": "MTURK-E3HPGF",
+    "surveyResponses": {
+      "25": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "This article stands out because it covers a pivotal political development: Robert Mueller's agreement to publicly testify before Congress. It highlights the tension between branches of government, the stakes for President Trump regarding possible impeachment, and the bipartisan interest in Mueller's investigation. The forced subpoenas and Mueller's reluctance to testify reflect the gravity and contentiousness of the situation. The article also signals a potentially historic moment in U.S. politics, with implications for transparency. accountability, and public trust-making it a major newsworthy event."
+      },
+      "125": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "This article stands out because it highlights a major advancement in artificial intelligence and language"
+      },
+      "473": {
+        "bias": 4,
+        "confidence": 3,
+        "openFeedback": "This article stands out because it captures a critical moment in the 2020 Democratic presidential race-Atlanta Mayor Keisha Lance Bottoms endorsing Joe Biden amid a high-stakes debate performance where his leadership and past policies were being publicly challenged. The endorsement is significant because Bottoms is a prominent Black leader whose support could help Biden connect with key voter demographics. At the same time, Kamala Harris's pointed confrontation over Biden's civil rights record adds political drama and historical weight to the moment. The clash between generations and ideologies within the party makes the story especially compelling."
+      }
+    },
+    "textAnnotations": {
+      "25": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Mueller Agrees to Testify Before 2 House Panels Next Month\nWASHINGTON Robert S. Mueller III, the special counsel, will testify in public before Congress on July 17 about his investigation into Russia's election interference and possible obstruction of justice by President Trump, House Democrats announced on Tuesday night. Coming nearly three months after the release of Mueller's report, the back-to-back hearings before the House Judiciary and Intelligence committees promise to be must-see television and hold the potential to reshape the political landscape around Trump's presidency and a possible impeachment by the House. Mueller, who has spoken publicly only once about his work, resisted taking the witness stand, where he will face questions both from Democrats eager to employ him to build a case against Trump and Republicans eager to argue for the president's innocence. In the end, the two committees were forced to issue subpoenas compelling Mueller to appear. The chairmen of the panels, Representatives Jerrold Nadler of New York and Adam Schiff of California, wrote in a letter to Mueller on Tuesday that they understood he had reservations about appearing on Capitol Hill, but they were insistent he do so, anyway.\n\n\"The American public deserves to hear directly from you about your investigation and conclusions,\" the chairmen wrote. \"We will work with you to address legitimate concerns about preserving the integrity of your work, but we expect that you will appear before our committees as scheduled.\" The White House declined to comment Tuesday night. Schiff told reporters shortly after the announcement that he expected his committee to meet privately with members of Mueller's staff after his testimony to answer additional questions. As special counsel, Mueller employed a large team of prosecutors and FBI agents whose detailed knowledge of the case could be as valuable to House investigators as Mueller's public statements. It was not immediately clear which committee Mueller would appear before first on July 17, though a copy of the subpoena issued by Nadler indicated that he was to show up before the Judiciary Committee at 9 a.m. The committee leaders have been under intense pressure from Democratic activists and their own rank-and-file members alike to secure an appearance by Mueller.\n\nBoth Nadler and Schiff initially invited the special counsel to testify voluntarily in April, but discussions proved thorny and protracted. Mueller and his team of prosecutors wanted to avoid a public spectacle, asked to limit his remarks to closed sessions with lawmakers and insisted that their 448-page report would best speak for itself. As of now, it does not appear that Mueller will participate in a hearing before the Republican-controlled Senate, where lawmakers in the majority were less insistent he appear. Nicholas Fandos is a New York Times writer."
+        }
+      ],
+      "125": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        }
+      ],
+      "473": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        },
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Atlanta Mayor Endorses Joe Biden for President\nATLANTA -- Mayor Keisha Lance Bottoms has endorsed Democrat Joe Biden for president. Bottoms was a guest of Biden's during Thursday night's Democrat debate, a debate in which some observers are calling a poor showing from the former vice president. Bottoms informed the Associated Press of her endorsement prior to her formal announcement, set for later Friday. Biden appeared with several other Democrats during Thursday night's debate, along with U.S. Sens. Bernie Sanders, Kamala Harris and Kirsten Gillibrand. Harris, who is black, challenged Biden to explain his decades-old position with respect to school desegregation, one which she characterized as being against busing. \"I did not oppose busing in America. What I opposed was busing ordered by the Department of Education,\" Biden countered. Harris, the former prosecutor turned California senator, said she didn't think the former vice president \"was a racist.\" But she criticized him for recently \"defending segregationists\" in the Senate and for once opposing mandatory busing of students to desegregated public schools.\n\nHarris described a young girl in the 1970s who boarded such buses before dramatically offering, \"That little girl was me.\" The moment was as powerful as it was unexpected, a searing line of attack against Biden, who served as vice president to the first black president. Biden entered back-to-back nights of Democratic presidential debates in Miami as the leading Democratic candidate. In deeply personal tones, Harris hammered Biden for policy choices that she suggested betrayed the spirit of the civil rights movement, if not directly opposing all it stood for. Then she really hit her stride, exhibiting the controlled force of a practiced cross-examiner. \"Do you agree today that you were wrong to oppose busing in America?\" Harris asked. A visibly angry Biden responded that his record was mischaracterized. But he was left denying Harris' comments on a technicality, saying he didn't oppose public school busing, just it being ordered by the Department of Education decrying federal intervention on the issue on behalf of states.\n\nHarris shot back, \"There are moments in history where states fail to support the civil rights of people.\" Biden offered only curt responses after that and was so flustered that he failed to lean on his time as Barack Obama's vice president seeming unsure of himself for prolonged stretches on national television. Senior advisers to Biden insisted afterward that they weren't surprised by the confrontation with Harris and were satisfied with his response in the time allowed. They noted that while he dismissed Harris' characterization of his relationship with segregationist senators in his early years in the Senate more than 45 years ago, Biden appeared to be listening while she criticized his position on busing. A total of 20 presidential candidates took the stage over the course of the two nights 10 candidates on Wednesday and another 10 on Thursday. All 10 of the candidates on Thursday's stage raised their hands when NBC's Savannah Guthrie asked if they would support providing health care for the nation's estimated 11 million undocumented immigrants.\n\nWhile touting the diversity of their party, some of the younger candidates suggested it may be time for the older generation of leaders to pass the torch, a clear dig aimed at the 76-year-old Biden. The Associated Press contributed to this report."
+        }
+      ]
+    },
+    "timestamp": "2025-08-01T20:17:27.517Z"
+  },
+  "-OWbK17Gc9NZVwzUvogS": {
+    "articleTitles": [
+      {
+        "id": 25,
+        "title": "Mueller agrees to testify before 2 House panels next month"
+      },
+      {
+        "id": 125,
+        "title": "Google's new AI can help you speak another language in your own voice"
+      },
+      {
+        "id": 473,
+        "title": "atlanta mayor endorses joe biden for president"
+      }
+    ],
+    "completionCode": "MTURK-T4EZNU",
+    "surveyResponses": {
+      "25": {
+        "bias": 2,
+        "confidence": 4,
+        "openFeedback": "The language is crafted to create a sense of drama and political maneuvering rather than a straightforward description of a political process, which is a common tactic in persuasive propaganda to shape reader perception."
+      },
+      "125": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "Google AI blog post, is a straightforward explanation of the new technology's features and benefits. The language is technical and descriptive, detailing the advantages of the 'Translatotron' system over older models. It lists specific benefits like \"faster inference speed,\" \"avoiding compounding errors,\" and \"retaining the voice of the original speaker.\" "
+      },
+      "473": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "The text describes a debate exchange between Kamala Harris and Joe Biden, but it does so in a way that creates doubt about Biden's past actions and record without definitively labeling him as a racist."
+      }
+    },
+    "textAnnotations": {
+      "25": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Mueller, who has spoken publicly only once about his work, resisted taking the witness stand, where he will face questions both from Democrats eager to employ him to build a case against Trump and Republicans eager to argue for the president's innocence."
+        }
+      ],
+      "125": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        }
+      ],
+      "473": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Doubt",
+          "text": "Harris, who is black, challenged Biden to explain his decades-old position with respect to school desegregation, one which she characterized as being against busing. \"I did not oppose busing in America. What I opposed was busing ordered by the Department of Education,\" Biden countered. Harris, the former prosecutor turned California senator, said she didn't think the former vice president \"was a racist.\" But she criticized him for recently \"defending segregationists\" in the Senate and for once opposing mandatory busing of students to desegregated public schools."
+        }
+      ]
+    },
+    "timestamp": "2025-08-01T20:30:23.759Z"
+  },
+  "-Oa5b5jGVTJcPX7FJVLP": {
+    "articleTitles": [
+      {
+        "id": 3,
+        "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+      },
+      {
+        "id": 1,
+        "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+      },
+      {
+        "id": 2,
+        "title": "Frozen sperm bank could be set up in space, study suggests"
+      }
+    ],
+    "completionCode": "MTURK-DCEQUA",
+    "surveyResponses": [
+      null,
+      {
+        "bias": 5,
+        "confidence": 4,
+        "openFeedback": " Therefore, when answering this question, emphasize your leadership skills and how they have contributed to the success of your previous roles or projects. Highlight any major achievements or accolades you have received and how they demonstrate your ability to excel in this position"
+      },
+      {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "suggests a review of a previously created content or a system, asking for the rationale behind the specific \"tagging\" (labeling or categorization) method used and what made the content or the method itself distinct or noteworthy. Without the context of what was tagged, a precise answer is impossible, but generally, one might explain that the tags were chosen for their specificity, relevance to the content's core themes, or abilit"
+      },
+      {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "specific reasons for choosing a particular tag and what made it unique or memorable compared to other possible tags. To answer this, you need to explain the logic behind your tag choice and highlight the distinctive qualities of the tagged item, perhaps by referencing specific features or context. "
+      }
+    ],
+    "textAnnotations": [
+      null,
+      [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        }
+      ],
+      [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        }
+      ],
+      [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Slogans",
+          "text": "Phoenix Police Chief Jeri Williams apologized for her department's handling of an alleged shoplifting incident involving a 4-year-old girl and her parents , saying Sunday the confrontation that was captured on video was \"unacceptable.\" \"What we saw in that video isn't in keeping with good policing,\" Williams said in an interview with NBC affiliate KPNX . \"This is not what should have happened in that circumstance.\" The child's parents, Dravon Ames and Iesha Harper, filed notice of a $10 million claim last week over the incident, which occurred on May 29 after the couple said they realized their daughter had taken a doll from a dollar store. Video showed officers appearing to push and kick a handcuffed man believed to be Ames and handcuffing Harper, who is pregnant, after an unidentified woman came to take care of the couples' two young daughters. At one point, an officer screams at Ames and says: \"\"When I tell you to do something, you f------ do it!\" The officers then pick up Ames who apologizes and appears to be complying and throws him against a police vehicle. The couple and authorities offered different accounts of what happened before the confrontation. Ames and Harper said they were driving their girls to a babysitter when police approached them in an apartment complex parking lot. Williams said Sunday that they fled from police after a Family Dollar manager alerted authorities to \"adults\" stealing from the store. In a police report, officers said the girl took a boxed doll, while Ames took a pair of underwear and a woman who'd been with the couple at the dollar store also allegedly stole something. Once the car was parked, the report says, Ames allegedly reached toward the car's center console and yelled that he hadn't done anything wrong. Williams said Sunday that police \"shouldn't have reacted the way that we reacted.\" Williams said that the officers who appeared in the video were placed on desk duty. An internal investigation was looking at discrepancies between the police report that documented the incident and the cell phone video that showed the confrontation. On Saturday, Ames told Al Sharpton on MSNBC that he was glad the incident was caught on video by a bystander so people could see how he and his family were treated. \"I felt like I did everything I could to show the officer that I was complying,\" he said, adding that the experience was traumatizing for him and his young children. \"I looked the barrel in the eyes, my kids looked the barrel in the eyes.",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        }
+      ]
+    ],
+    "timestamp": "2025-09-26T15:20:16.957Z"
+  },
+  "-Oa5bBqQ07yUY3PwGuA6": {
+    "articleTitles": [
+      {
+        "id": 5,
+        "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+      },
+      {
+        "id": 6,
+        "title": "get these trending washington restaurants on your radar today"
+      },
+      {
+        "id": 7,
+        "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+      }
+    ],
+    "completionCode": "MTURK-3SSRGV",
+    "surveyResponses": {
+      "5": {
+        "bias": 5,
+        "confidence": 4,
+        "openFeedback": "the specific tag, the context in which it was used (like a blog post, a product listing, a social media post, or a job application), and the goal of that tag (such as attracting viewers, conveying a message, or helping with search engine optimization) are needed"
+      },
+      "6": {
+        "bias": 5,
+        "confidence": 5,
+        "openFeedback": "implies an action of \"tagging\" is being referenced, which could refer to applying hashtags on social media, tagging someone in a post, or using \"tags\" in a general sense to describe unique characteristics"
+      },
+      "7": {
+        "bias": 5,
+        "confidence": 5,
+        "openFeedback": "\"Why did you tag this way? What made it stand out?\" asks about the specific reason for a tag and its unique characteristics. The term \"tag\" can refer to a keyword for social media content, a descriptive phrase for products, or an identifier on a platform"
+      }
+    },
+    "textAnnotations": {
+      "5": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        }
+      ],
+      "6": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        }
+      ],
+      "7": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T15:20:34.468Z"
+  },
+  "-Oa5bWDY9IkjS7xO5VYU": {
+    "articleTitles": [
+      {
+        "id": 10,
+        "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+      },
+      {
+        "id": 4,
+        "title": "Four top residencies now offered to local artists, thanks to Oolite"
+      },
+      {
+        "id": 5,
+        "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+      }
+    ],
+    "completionCode": "MTURK-QD35AM",
+    "surveyResponses": {
+      "4": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "It calls for action to help the artists to pay for their rent."
+      },
+      "5": {
+        "bias": 3,
+        "confidence": 2,
+        "openFeedback": "The legal issue has litigations ,it is also involved in asking the judge to overturn the decision."
+      },
+      "10": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "The man fell off makes me feel it is over simplifying the issue."
+      }
+    },
+    "textAnnotations": {
+      "4": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Bandwagon",
+          "text": "We need to help artists pay their rent at home while they're gone",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        }
+      ],
+      "5": [
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Scapegoating",
+          "text": "A port spokesman declined to comment, citing the pending litigation",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        }
+      ],
+      "10": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Causal Oversimplification",
+          "text": "The man was pinned under a Jeep after the vehicle fell off its jacks following the quake.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T15:22:11.562Z"
+  },
+  "-Oa5bXX-EEJDgnXUh0E0": {
+    "articleTitles": [
+      {
+        "id": 7,
+        "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+      },
+      {
+        "id": 2,
+        "title": "Frozen sperm bank could be set up in space, study suggests"
+      },
+      {
+        "id": 1,
+        "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+      }
+    ],
+    "completionCode": "MTURK-IWNJL6",
+    "surveyResponses": {
+      "1": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "Whatever it takes to win” looks like a  slogan. “Find common ground” makes tough politics feel . the article uses emotional lines without proof"
+      },
+      "2": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "I tagged these parts because they  sound bigger than it is and  Saying sperm banks could be in space is not real"
+      },
+      "7": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "i choose this because 90% missing cases was not explained. it made the story feel sad but i think its propaganda "
+      }
+    },
+    "textAnnotations": {
+      "1": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Slogans",
+          "text": "We will do whatever it takes to win",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Causal Oversimplification",
+          "text": "he'll be able to find common ground on some issues with the Democrats who control the legislature",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        }
+      ],
+      "2": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "open the possibility of creating a human sperm bank outside of Earth",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Slogans",
+          "text": "Sperm banks could one day be set up in space",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        }
+      ],
+      "7": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "90% of missing persons cases, it doesn't end well",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Slogans",
+          "text": "People are very negative about the police, but there are good police officers",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Causal Oversimplification",
+          "text": "My heart is going out for her. We should help this woman,",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T15:22:16.177Z"
+  },
+  "-Oa5cIFB2BgrXN7PkW56": {
+    "articleTitles": [
+      {
+        "id": 11,
+        "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+      },
+      {
+        "id": 8,
+        "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+      },
+      {
+        "id": 2,
+        "title": "Frozen sperm bank could be set up in space, study suggests"
+      }
+    ],
+    "completionCode": "MTURK-X5XJ9K",
+    "surveyResponses": {
+      "2": {
+        "bias": 4,
+        "confidence": 3,
+        "openFeedback": "The article presents a speculative future, downplaying the need for more research and the current limitations of the study, which makes it seem overly optimistic and potentially misleading."
+      },
+      "8": {
+        "bias": 4,
+        "confidence": 3,
+        "openFeedback": "The article presented a somewhat unclear and unconvincing explanation, leaving some doubts about the full context and motivations behind the events described."
+      },
+      "11": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "This news article presents information that appears to be deliberately misleading or biased, potentially manipulating the reader's understanding of the situation through selective reporting and questionable claims."
+      }
+    },
+    "textAnnotations": {
+      "2": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "open the possibility of creating a human sperm bank outside of Earth",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Doubt",
+          "text": "Our best option will be to perform the experiment using real spaceflight but access is very limited,",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        }
+      ],
+      "8": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "ill-gotten gains to gamble at casinos in Joliet",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Doubt",
+          "text": "In 1997, former Posen Mayor James Adamek Jr. pleaded guilty to stealing more than $180,000",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        }
+      ],
+      "11": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Doubt",
+          "text": "banned most petrol and diesel cars",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Donald Trump's rollback of environmental policies",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T15:25:37.266Z"
+  },
+  "-Oa5iqQiAnnxoQhq-kHq": {
+    "articleTitles": [
+      {
+        "id": 1,
+        "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+      },
+      {
+        "id": 8,
+        "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+      },
+      {
+        "id": 11,
+        "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+      }
+    ],
+    "completionCode": "MTURK-FCUZKT",
+    "surveyResponses": {
+      "1": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "There is no article at all. Showing only instructions and others. Kindly guide me how to annotate and complete task."
+      },
+      "8": {
+        "bias": 1,
+        "confidence": 1,
+        "openFeedback": "There is no article at all. Showing only instructions and others. Kindly guide me how to annotate and complete task."
+      },
+      "11": {
+        "bias": 1,
+        "confidence": 1,
+        "openFeedback": "There is no article at all. Showing only instructions and others. Kindly guide me how to annotate and complete task."
+      }
+    },
+    "textAnnotations": {
+      "1": [
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Name-Calling",
+          "text": "ew state senator for the 10th District. Local Democratic committeemen, including Martwick himself, selected him to replace former Sen. John Mulroe, a Chicago Democrat who stepped down earlier this month after being appointed a Cook County judge.",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        }
+      ],
+      "8": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Bandwagon",
+          "text": "ce. Schupek is scheduled to be sentenced Sept. 12. Posen's current mayor Frank Podbielniak did not immediately respond to a request for comment on Schupek. Podbielniak said at the time of Schupek's arrest in January that he learned of possible embezzlement shortly after taking office in May 2017 and immediately reported it the FBI.",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        }
+      ],
+      "11": [
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Name-Calling",
+          "text": "conservative People's Party suspended fines on cars entering the currently restricted area of around five sq km (two sq miles) from July 1, while it reviews the plan to make it \"compatible with citizens' mobility needs\". \"As far as I know at the European level there's no precedent in ending a car traffic restriction,\" said Lara Lazaro, researcher of the Real Instituto Elcano. The European Commission has warned Spain that it wou",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T15:54:12.673Z"
+  },
+  "-Oa5lyPdth0b9lapeN1x": {
+    "articleTitles": [
+      {
+        "id": 9,
+        "title": "rosemount recreation center plan gets positive response so far"
+      },
+      {
+        "id": 12,
+        "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+      }
+    ],
+    "completionCode": "MTURK-CUASK4",
+    "surveyResponses": {
+      "9": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "Rosemount's City Council is moving forward with a potential new recreation center, with early study results and community feedback indicating strong positive support, particularly for the growing need for more fitness spaces. The project, planned by 292 Design Group, would be an 87,000-square-foot facility costing $28.9 million and would include recreational, wellness, and community gathering areas."
+      },
+      "12": {
+        "bias": 5,
+        "confidence": 4,
+        "openFeedback": "likely asking about the use of hashtags in a social media context or the concept of a tagline or headline in branding or professional profiles"
+      }
+    },
+    "textAnnotations": {
+      "9": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        }
+      ],
+      "12": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T16:07:32.854Z"
+  },
+  "-Oa5mKZN-m_JDFdxiiUb": {
+    "articleTitles": [
+      {
+        "id": 9,
+        "title": "rosemount recreation center plan gets positive response so far"
+      }
+    ],
+    "completionCode": "MTURK-06AM2M",
+    "surveyResponses": {
+      "9": {
+        "bias": 2,
+        "confidence": 4,
+        "openFeedback": "Nothing seems to mislead as it seems for good cause and I tag this way and it is quite interesting too"
+      }
+    },
+    "textAnnotations": {
+      "9": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T16:09:27.058Z"
+  },
+  "-Oa7C11yGcl1iBK-La8T": {
+    "articleTitles": [
+      {
+        "id": 4,
+        "title": "Four top residencies now offered to local artists, thanks to Oolite"
+      },
+      {
+        "id": 12,
+        "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+      },
+      {
+        "id": 9,
+        "title": "rosemount recreation center plan gets positive response so far"
+      }
+    ],
+    "completionCode": "MTURK-LJKUGN",
+    "surveyResponses": {
+      "4": {
+        "bias": 2,
+        "confidence": 4,
+        "openFeedback": "i think that the language used was to elicit support and made the program seem much more than it is in reality. "
+      },
+      "9": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "the article is straightforward and there is nothing controversial about it at all. "
+      },
+      "12": {
+        "bias": 1,
+        "confidence": 3,
+        "openFeedback": "i think that the article was trying to present each side but was a little heavy handed. "
+      }
+    },
+    "textAnnotations": {
+      "4": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Causal Oversimplification",
+          "text": "\"But one of the biggest issues is the economics of going off the grid for five weeks. We need to help artists pay their rent at home while they're gone.",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "master curators and artists",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        }
+      ],
+      "9": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        }
+      ],
+      "12": [
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Scapegoating",
+          "text": "\"at least one incident in which patient safety was gravely compromised,\" \"failed surgical abortions in which women remained pregnant,\"",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "In the latest legal whiplash in the case",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T22:45:38.995Z"
+  }
+}
