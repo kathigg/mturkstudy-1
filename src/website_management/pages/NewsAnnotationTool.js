@@ -108,6 +108,7 @@ export default function NewsAnnotationTool() {
     const [selectedSubcategory, setSelectedSubcategory] = useState("");
     const [showRightInstructions, setShowRightInstructions] = useState(true);
     const [wordCount, setWordCount] = useState(0);
+    const [selectedIdx, setSelectedIdx] = useState(null);
 
 
     const handleCategoryButtonClick = (categoryKey) => {
@@ -347,36 +348,38 @@ const handleSubcategoryChange = (e) => {
       }, []);
     */
 
-async function getOneRandomIndex() {
+async function selectOneRandomIndex() {
   const usageRef = ref(database, "articleUsage");
   const snapshot = await get(usageRef);
   let usageData = snapshot.exists() ? snapshot.val() : {};
 
   // Initialize counts for first 12 articles
   for (let i = 0; i < 12; i++) {
-    if (usageData[i] === undefined) {
-      usageData[i] = 0;
-    }
+    if (usageData[i] === undefined) usageData[i] = 0;
   }
 
   // Filter available (< 3 uses)
   const available = Object.keys(usageData)
     .map((k) => parseInt(k))
-    .filter((i) => usageData[i] < 1);
+    .filter((i) => usageData[i] < 3);
 
   if (available.length === 0) {
     console.warn("No available articles left.");
     return null;
   }
 
-  // Pick 1 random index
+  // Pick 1 random index (no Firebase update here)
   const randIndex = available[Math.floor(Math.random() * available.length)];
-
-  // Update Firebase
-  await update(usageRef, { [randIndex]: usageData[randIndex] + 1 });
-
-  console.log(`Chosen index: ${randIndex}, new count: ${usageData[randIndex] + 1}`);
+  console.log(`Chosen index (not yet logged): ${randIndex}`);
   return randIndex;
+}
+async function logArticleUsage(index) {
+  const usageRef = ref(database, "articleUsage");
+  const snapshot = await get(usageRef);
+  const usageData = snapshot.exists() ? snapshot.val() : {};
+  const current = usageData[index] ?? 0;
+  await update(usageRef, { [index]: current + 1 });
+  console.log(`Logged usage for index ${index}. New count: ${current + 1}`);
 }
 
   useEffect(() => {
@@ -392,13 +395,11 @@ async function getOneRandomIndex() {
             title: item["Headline"],
             content: item["News body"],
           }));
-
-          // Store all parsed articles for later
           setAllArticles(parsedArticles);
 
-          // Get the first random article
-          const idx = await getOneRandomIndex();
+          const idx = await selectOneRandomIndex();
           if (idx !== null) {
+            setSelectedIdx(idx);             // remember chosen index
             setArticles([parsedArticles[idx]]);
           }
         },
@@ -407,11 +408,12 @@ async function getOneRandomIndex() {
 }, []);
   
 
-    const handleNextArticle = async () => {
-      console.log("ARTICLE LENGTH:", articles.length);
-      if(articles.length > 1){
-        return;
-      }
+const handleNextArticle = async () => {
+  console.log("ARTICLE LENGTH:", articles.length);
+  if (articles.length > 1) {
+    return;
+  }
+
   if (showSurvey) {
     // validate survey responses
     if (confidence === 0 || bias === 0 || openFeedback.trim() === "") {
@@ -460,15 +462,23 @@ async function getOneRandomIndex() {
     setBias(0);
     setOpenFeedback("");
 
-    // If user already did 1 article, stop (no "thank you" screen)
+    // If user already did 1 article, log usage now and show thank-you
     if (articles.length >= 1) {
+      try {
+        if (selectedIdx !== null) {
+          await logArticleUsage(selectedIdx); // <-- increment only on Finish
+        }
+      } catch (e) {
+        console.error("Failed to log article usage:", e);
+      }
       console.log("User has completed 1 articles this session.");
       setShowThankYou(true);
       return;
     } else {
-      // Otherwise fetch another article
-      const nextIdx = await getOneRandomIndex();
+      // Otherwise fetch another article; remember index but log on that article's Finish
+      const nextIdx = await selectOneRandomIndex();
       if (nextIdx !== null && allArticles[nextIdx]) {
+        setSelectedIdx(nextIdx);
         setArticles((prev) => [...prev, allArticles[nextIdx]]);
         setCurrentArticleIndex((prev) => prev + 1);
       } else {
