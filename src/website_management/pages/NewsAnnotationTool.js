@@ -5,6 +5,7 @@ import { CardContent } from "../components/CardContent";
 import Papa from "papaparse";
 
 import { database, ref, push } from "../../firebaseConfig";
+import { get, update } from "firebase/database";
 
 // --- Selection constraints ---
 const MIN_WORDS = 4;
@@ -151,8 +152,8 @@ useEffect(() => {
 }, []);
 
     const categoryOptions = {
-      Persuasive_Propaganda: ["Repetition", "Exaggeration", "Slogans", "Bandwagon", "Causal Oversimplification", "Doubt"],
-      Inflammatory_Language: ["Demonization", "Name-Calling", "Hyperbole", "Scapegoating"],
+      Persuasive_Propaganda: ["Exaggeration", "Slogans", "Bandwagon", "Causal Oversimplification", "Doubt"],
+      Inflammatory_Language: ["Demonization", "Name-Calling", "Scapegoating"],
       "No_Polarizing_Language": ["No polarizing language"],
   };
 
@@ -316,37 +317,7 @@ const handleSubcategoryChange = (e) => {
 
     // HARD-CODED ARTICLE SELECTION
 
-    useEffect(() => {
-        fetch("/article_dataset_versions/test3_encoding_fixed_300_700_words.csv")
-        .then((response) => response.text())
-        .then((csvText) => {
-          Papa.parse(csvText, {
-            header: true,
-            skipEmptyLines: true,
-            complete: function (results) {
-              const parsedArticles = results.data.map((item, index) => ({
-                id: index + 1,
-                title: item["Headline"],
-                content: item["News body"],
-            }));
-            
-            // Select three specific articles by their indices (0-based)
-            // You can change these indices to select different articles
-            const selectedIndices = [24, 124, 472]; // Change these to select different articles
-            const hardCodedArticles = selectedIndices.map(index => parsedArticles[index]).filter(Boolean);
-            
-            // Fallback to random selection if hard-coded articles don't exist
-            if (hardCodedArticles.length < 3) {
-              console.warn("Some hard-coded articles not found, falling back to random selection");
-              const randomArticles = shuffleArray(parsedArticles).slice(0, 3);
-              setArticles(randomArticles);
-            } else {
-              setArticles(hardCodedArticles);
-            }
-            },
-          });
-        });
-    }, []);
+
     
     // ORIGINAL RANDOM SELECTION (COMMENTED OUT)
     /*
@@ -374,6 +345,74 @@ const handleSubcategoryChange = (e) => {
         setArticles(shuffleArray([...sampleArticles.slice(0, 3)]));
       }, []);
     */
+
+async function getThreeRandomIndices() {
+    const usageRef = ref(database, "articleUsage");
+    const snapshot = await get(usageRef);
+    let usageData = snapshot.exists() ? snapshot.val() : {};
+
+    // Initialize counts for first 12 articles
+    for (let i = 0; i < 12; i++) {
+      if (usageData[i] === undefined) {
+        usageData[i] = 0;
+      }
+    }
+
+    // Find articles with < 3 uses
+    const available = Object.keys(usageData)
+      .map((k) => parseInt(k))
+      .filter((i) => usageData[i] < 3);
+
+    if (available.length === 0) {
+      console.warn("No available articles left.");
+      return [];
+    }
+
+    // Shuffle available
+    const shuffled = available.sort(() => Math.random() - 0.5);
+
+    // Pick up to 3 (but could be 1 or 2)
+    const chosen = shuffled.slice(0, Math.min(3, available.length));
+
+    // Update usage counts
+    const updates = {};
+    chosen.forEach((i) => {
+      updates[i] = usageData[i] + 1;
+    });
+    await update(usageRef, updates);
+
+    console.log(`Chosen indices: ${chosen}, updated usage:`, updates);
+
+    return chosen;
+  }
+
+  useEffect(() => {
+    fetch("/article_dataset_versions/test3_encoding_fixed_300_700_words.csv")
+      .then((response) => response.text())
+      .then(async (csvText) => {
+        Papa.parse(csvText, {
+          header: true,
+          skipEmptyLines: true,
+          complete: async function (results) {
+            const parsedArticles = results.data.map((item, index) => ({
+              id: index + 1,
+              title: item["Headline"],
+              content: item["News body"],
+            }));
+
+            // Fetch random indices with usage tracking
+            const selectedIndices = await getThreeRandomIndices();
+
+            const selectedArticles = selectedIndices
+              .map((index) => parsedArticles[index])
+              .filter(Boolean);
+
+            setArticles(selectedArticles);
+          },
+        });
+      });
+  }, []);
+  
 
     const handleNextArticle = () => {
         if (showSurvey) {
@@ -560,9 +599,10 @@ const handleSubcategoryChange = (e) => {
                     <div></div>
                   <div className="bg-yellow-100 p-3 rounded mb-3">
                     <strong className="text-yellow-600 text-center block mb-2 text-base">Persuasive Propaganda</strong>
-                    <DropdownItem icon=" " title="Repetition">Reinforcing a message by repeating it.</DropdownItem>
-                    <DropdownItem icon=" " title="Exaggeration">Overstating or distorting facts.</DropdownItem>
-                    <DropdownItem icon=" " title="Slogans">Catchy, emotional phrases designed to influence opinions.</DropdownItem>
+                    <DropdownItem icon=" " title="Exaggeration">When something is made to sound much bigger, better, or worse than it really is — or, the opposite, made to sound smaller or less serious than it actually is.
+                    </DropdownItem>
+                    <DropdownItem icon=" " title="Slogans">A short and catchy phrase that tries to get an emotional reaction or support for a political cause.They may be positive or negative in tone, and are commonly used across the political spectrum.
+                    .</DropdownItem>
                     <DropdownItem icon=" " title="Bandwagon">Encouraging action by claiming "everyone is doing it."</DropdownItem>
                     <DropdownItem icon=" " title="Casual Oversimplification">Reducing a complex issue to a single cause or solution.</DropdownItem>
                     <DropdownItem icon=" " title="Doubt">Sowing uncertainty or questioning the credibility of evidence.</DropdownItem>
@@ -572,10 +612,9 @@ const handleSubcategoryChange = (e) => {
                 <div className="bg-red-100 p-2 rounded mb-6">
                     <strong className="text-red-600 text-center block mb-3 mt-3">Inflammatory Language</strong>
                     <ul className="text-s text-center ml-2">
-                    <DropdownItem icon=" " title="Name-Calling">Using demeaning labels or insults to discredit opponents.</DropdownItem>
-                    <DropdownItem icon=" " title="Hyperbole">Exaggerating to provoke fear, anger, or excitement.</DropdownItem>
-                    <DropdownItem icon=" " title="Demonization">Portraying individuals or groups as evil, immoral, or dangerous.</DropdownItem>
-                    <DropdownItem icon=" " title="Scapegoating">Blaming a person or group for problems they may not be responsible for.</DropdownItem>
+                    <DropdownItem icon=" " title="Name-Calling">Using demeaning labels or insults to discredit opponents. Instead of giving reasons or evidence, the speaker tries to shape opinion with a word that carries strong emotion. </DropdownItem>
+                    <DropdownItem icon=" " title="Demonization">Portraying individuals or groups as evil, immoral, or dangerous. Demonization goes beyond simple name calling by framing the target as a threat to society, morality, or survival.  </DropdownItem>
+                    <DropdownItem icon=" " title="Scapegoating">Assigning blame to a group for broader societal problems or crises, often regardless of their actual responsibility. Unlike other inflammatory techniques, scapegoating specifically targets entire groups (e.g., ethnic, religious, political, or social groups) and portrays them as the cause of larger challenges such as economic decline, crime, or cultural change.</DropdownItem>
                     </ul>
                 </div>
             
@@ -608,7 +647,7 @@ const handleSubcategoryChange = (e) => {
                 {/* Annotation Buttons */}
                 <div className="mt-4 flex justify-center space-x-4">
                     <Button onClick={() => handleCategoryButtonClick("Inflammatory_Language")} className="bg-red-500">
-                      Flame Rhetoric 
+                      Inflammatory Language
                     </Button>
                     <Button onClick={() => handleCategoryButtonClick("Persuasive_Propaganda")} className="!bg-yellow-500">
                         Persuasive Propaganda
