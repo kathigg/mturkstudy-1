@@ -5,8 +5,11 @@ from collections import defaultdict, Counter
 # ------------------------
 # Manual input/output path
 # ------------------------
-INPUT_FILE = "../mturk_results/cisc475database-default-rtdb-submissions-export.json"
-OUTPUT_FILE = "/Users/kathleenhiggins/mturkstudy/src/mturk_results/gold_standard_output.json"
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/mturkhit2.json")
+OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/2nd_hit_gold_standard_output.json")
 
 # ------------------------
 # Constants
