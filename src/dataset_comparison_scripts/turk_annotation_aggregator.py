@@ -140,21 +140,61 @@ def build_gold_standard_with_intersection(annotations_by_article, pad=2):
 # Main Function
 # ------------------------
 def process_annotation_file(input_path, output_path):
+    import os, json
+    from collections import defaultdict
+
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    input_path = os.path.join(base_dir, "../mturk_results/mturkhit2.json")
+    output_path = os.path.join(base_dir, "../mturk_results/2nd_hit_gold_standard_output.json")
+
     with open(input_path, "r") as f:
         raw_data = json.load(f)
 
     annotated_spans = defaultdict(list)
+
     for worker_id, entry in raw_data.items():
-        for article_id, annotations in entry["textAnnotations"].items():
-            for ann in annotations:
-                if ann["text"] == "no polarizing language selected":
+        ta = entry.get("textAnnotations")
+
+        if not ta:
+            continue
+
+        # Case 1: textAnnotations is a dict (normal case)
+        if isinstance(ta, dict):
+            for article_id, annotations in ta.items():
+                if not isinstance(annotations, list):
                     continue
-                annotated_spans[article_id].append({
-                    "text": ann["text"],
-                    "category": ann["category"],
-                    "subcategory": ann["subcategory"],
-                    "worker": worker_id
-                })
+                for ann in annotations:
+                    if not isinstance(ann, dict):
+                        continue
+                    text = ann.get("text", "")
+                    if "no polarizing language" in text.lower() or "no manipulative language" in text.lower():
+                        continue
+                    annotated_spans[str(article_id)].append({
+                        "text": text,
+                        "category": ann.get("category"),
+                        "subcategory": ann.get("subcategory"),
+                        "worker": worker_id
+                    })
+
+        # Case 2: textAnnotations is a list (some later entries)
+        elif isinstance(ta, list):
+            for i, annotations in enumerate(ta):
+                if not annotations or not isinstance(annotations, list):
+                    continue
+                # Some entries don't have IDs; we can use index as fallback
+                article_id = str(i)
+                for ann in annotations:
+                    if not isinstance(ann, dict):
+                        continue
+                    text = ann.get("text", "")
+                    if "no polarizing language" in text.lower() or "no manipulative language" in text.lower():
+                        continue
+                    annotated_spans[article_id].append({
+                        "text": text,
+                        "category": ann.get("category"),
+                        "subcategory": ann.get("subcategory"),
+                        "worker": worker_id
+                    })
 
     gold_standard = build_gold_standard_with_intersection(annotated_spans)
 
