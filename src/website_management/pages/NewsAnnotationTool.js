@@ -152,7 +152,7 @@ useEffect(() => {
 }, []);
 
     const categoryOptions = {
-      Persuasive_Propaganda: ["Exaggeration", "Slogans", "Bandwagon", "Causal Oversimplification", "Doubt"],
+      Persuasive_Propaganda: ["Exaggeration", "Slogans", "Bandwagon", "Casual Oversimplification", "Doubt"],
       Inflammatory_Language: ["Demonization", "Name-Calling", "Scapegoating"],
       "No_Polarizing_Language": ["No polarizing language"],
   };

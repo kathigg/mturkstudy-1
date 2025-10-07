@@ -9,7 +9,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/mturkhit2.json")
-OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/2nd_hit_gold_standard_output.json")
+OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/v2_2nd_hit_gold_standard_output.json")
 
 # ------------------------
 # Constants
@@ -87,9 +87,57 @@ def compute_confidence(num_supporters, label_consistent):
 # ------------------------
 # Gold Standard Builder
 # ------------------------
-def build_gold_standard_with_intersection(annotations_by_article, pad=2):
+from collections import Counter, defaultdict
+
+# ------------------------
+# Gold Standard Builder
+# ------------------------
+from collections import Counter, defaultdict
+
+def build_gold_standard_with_intersection(
+    annotations_by_article,
+    database_record=None,  # full record OR top-level dict
+    pad=2
+):
+    """
+    Builds a gold-standard annotations set grouped by overlapping spans.
+    Adds article titles using the provided database structure.
+
+    Parameters
+    ----------
+    annotations_by_article : dict
+        {article_id: [ {text, category, subcategory, ...}, ... ]}
+    database_record : dict, optional
+        The full record that may include "articleTitles".
+    pad : int
+        Padding used when extracting intersections.
+    """
     gold_standard = defaultdict(list)
 
+    # --- STEP 1: Extract {id: title} mapping robustly ---
+    article_titles = {}
+
+    if database_record:
+        # Case 1: direct record with "articleTitles"
+        if "articleTitles" in database_record:
+            for entry in database_record["articleTitles"]:
+                # Ensure string keys since annotation IDs may be strings
+                article_titles[str(entry["id"])] = entry["title"]
+
+        # Case 2: upper-level dict with multiple records
+        else:
+            for key, value in database_record.items():
+                if isinstance(value, dict) and "articleTitles" in value:
+                    for entry in value["articleTitles"]:
+                        article_titles[str(entry["id"])] = entry["title"]
+
+    # Debugging: show extracted mapping
+    print("\n--- Title Mapping Extracted ---")
+    for k, v in article_titles.items():
+        print(f"{k} → {v}")
+    print("-------------------------------\n")
+
+    # --- STEP 2: Build gold standard ---
     for article_id, spans in annotations_by_article.items():
         grouped = []
         used = set()
@@ -111,6 +159,7 @@ def build_gold_standard_with_intersection(annotations_by_article, pad=2):
         for group in grouped:
             if not group:
                 continue
+
             categories = [g["category"] for g in group]
             subcategories = [g["subcategory"] for g in group]
 
@@ -125,13 +174,21 @@ def build_gold_standard_with_intersection(annotations_by_article, pad=2):
             num_supporters = len(group)
             confidence = compute_confidence(num_supporters, label_consistent)
 
+            # Lookup title — check both int and string
+            title = (
+                article_titles.get(str(article_id))
+                or article_titles.get(int(article_id))
+                or "UNKNOWN_TITLE"
+            )
+
             gold_standard[article_id].append({
                 "text": text,
                 "category": most_common_cat,
                 "subcategory": most_common_subcat,
                 "confidence": confidence,
                 "num_supporters": num_supporters,
-                "label_consistent": label_consistent
+                "label_consistent": label_consistent,
+                "title": title,
             })
 
     return gold_standard
@@ -145,7 +202,7 @@ def process_annotation_file(input_path, output_path):
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
     input_path = os.path.join(base_dir, "../mturk_results/mturkhit2.json")
-    output_path = os.path.join(base_dir, "../mturk_results/2nd_hit_gold_standard_output.json")
+    output_path = os.path.join(base_dir, "../mturk_results/v2_2nd_hit_gold_standard_output.json")
 
     with open(input_path, "r") as f:
         raw_data = json.load(f)
