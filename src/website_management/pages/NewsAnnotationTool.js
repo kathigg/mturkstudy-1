@@ -98,6 +98,7 @@ const DropdownItem = ({ icon, title, children }) => {
 
 export default function NewsAnnotationTool() {
     console.log("YAY Loaded NewsAnnotationTool");
+    const [completionCode, setCompletionCode] = useState("");
     const [allArticles, setAllArticles] = useState([]);
     const [articles, setArticles] = useState([]);
     const [currentArticleIndex, setCurrentArticleIndex] = useState(0);
@@ -557,10 +558,12 @@ const handleNextArticle = async () => {
     //     }
     //   }, [showThankYou]);
     const generateCode = () => `MTURK-${Math.random().toString(36).substring(2, 8).toUpperCase()}`;
-        const completionCode = generateCode();
 
     useEffect(() => {
         if (showThankYou) {
+
+          const code = generateCode();
+          setCompletionCode(code);
             const articleTitles = articles.map((article) => ({
                 id: article.id,
                 title: article.title,
