@@ -209,9 +209,18 @@ def compare_all(llm_json, gold_json):
     llm_map = flatten_llm(llm_json)
     gold_map = flatten_gold(gold_json)
 
-    # --- FIX: match numeric gold IDs to LLM titles ---
-    # If no shared titles, try fallback by comparing all pairs
-    if not (set(llm_map.keys()) & set(gold_map.keys())):
+    # --- Normalize gold titles by removing "ARTICLE_" prefix if present ---
+    cleaned_gold_map = {}
+    for title, anns in gold_map.items():
+        normalized_title = title
+        if title.startswith("ARTICLE_"):
+            normalized_title = title.replace("ARTICLE_", "", 1).strip()
+        cleaned_gold_map[normalized_title] = anns
+    gold_map = cleaned_gold_map
+
+    shared_titles = set(llm_map.keys()) & set(gold_map.keys())
+
+    if not shared_titles:
         print("⚠️ No direct title matches found. Using fallback comparison mode.")
         all_results = {}
         total_correct_article = total_llm = total_gold = 0
@@ -219,7 +228,6 @@ def compare_all(llm_json, gold_json):
 
         for g_title, g_anns in gold_map.items():
             for l_title, l_anns in llm_map.items():
-                # Compare every gold article to every LLM article (slower but robust)
                 result = compare_article(l_anns, g_anns)
                 cat_result = compare_category(l_anns, g_anns)
 
@@ -234,16 +242,15 @@ def compare_all(llm_json, gold_json):
                 total_correct_cat += cat_result["correct_matches"]
                 total_shared += cat_result["total_matches"]
 
-        # Aggregate results
         precision_article = total_correct_article / total_llm if total_llm else 0
         recall_article = total_correct_article / total_gold if total_gold else 0
-        f1_article = (2 * precision_article * recall_article / (precision_article + recall_article)
-                      if (precision_article + recall_article) else 0)
+        f1_article = (2 * precision_article * recall_article /
+                      (precision_article + recall_article)) if (precision_article + recall_article) else 0
 
         precision_cat = total_correct_cat / total_shared if total_shared else 0
         recall_cat = total_correct_cat / total_shared if total_shared else 0
-        f1_cat = (2 * precision_cat * recall_cat / (precision_cat + recall_cat)
-                  if (precision_cat + recall_cat) else 0)
+        f1_cat = (2 * precision_cat * recall_cat /
+                  (precision_cat + recall_cat)) if (precision_cat + recall_cat) else 0
 
         return {
             "overall": {
@@ -265,6 +272,60 @@ def compare_all(llm_json, gold_json):
             },
             "per_article": all_results,
         }
+
+    # --- Normal case: direct matches exist ---
+    all_results = {}
+    total_correct_article = total_llm = total_gold = 0
+    total_correct_cat = total_shared = 0
+
+    for title in shared_titles:
+        l_anns = llm_map[title]
+        g_anns = gold_map[title]
+
+        result = compare_article(l_anns, g_anns)
+        cat_result = compare_category(l_anns, g_anns)
+
+        all_results[title] = {
+            "article_match": result,
+            "category_match": cat_result,
+        }
+
+        total_correct_article += result["correct_matches"]
+        total_llm += result["total_llm"]
+        total_gold += result["total_gold"]
+        total_correct_cat += cat_result["correct_matches"]
+        total_shared += cat_result["total_matches"]
+
+    precision_article = total_correct_article / total_llm if total_llm else 0
+    recall_article = total_correct_article / total_gold if total_gold else 0
+    f1_article = (2 * precision_article * recall_article /
+                  (precision_article + recall_article)) if (precision_article + recall_article) else 0
+
+    precision_cat = total_correct_cat / total_shared if total_shared else 0
+    recall_cat = total_correct_cat / total_shared if total_shared else 0
+    f1_cat = (2 * precision_cat * recall_cat /
+              (precision_cat + recall_cat)) if (precision_cat + recall_cat) else 0
+
+    return {
+        "overall": {
+            "article_match": {
+                "precision": round(precision_article, 3),
+                "recall": round(recall_article, 3),
+                "f1": round(f1_article, 3),
+                "correct_matches": total_correct_article,
+                "total_llm": total_llm,
+                "total_gold": total_gold,
+            },
+            "category_match": {
+                "precision": round(precision_cat, 3),
+                "recall": round(recall_cat, 3),
+                "f1": round(f1_cat, 3),
+                "correct_matches": total_correct_cat,
+                "total_matches": total_shared,
+            },
+        },
+        "per_article": all_results,
+    }
 
 # ------------------------
 # Main
