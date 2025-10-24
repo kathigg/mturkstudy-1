@@ -6,6 +6,7 @@ import Papa from "papaparse";
 
 import { database, ref, push } from "../../firebaseConfig";
 import { get, update } from "firebase/database";
+import instructionVid from "../../Videos/Instruction-Video.mov";
 
 // --- Selection constraints ---
 const MIN_WORDS = 4;
@@ -639,6 +640,18 @@ const handleNextArticle = async () => {
                     <DropdownItem icon=" " title="Scapegoating">Assigning blame to a group for broader societal problems or crises, often regardless of their actual responsibility. Unlike other inflammatory techniques, scapegoating specifically targets entire groups (e.g., ethnic, religious, political, or social groups) and portrays them as the cause of larger challenges such as economic decline, crime, or cultural change.</DropdownItem>
                     </ul>
                 </div>
+
+                <h3 className="text-lg font-bold mb-2">Video Tool Guide</h3>
+                <video
+                        src={instructionVid}
+                        controls
+                        autoPlay
+                        muted
+                        playsInline
+                        width="600"
+                        height="300"
+                        className="block mx-auto"
+                      />
             
                 <Button onClick={() => 
                   setShowRightInstructions(false)} className="bg-gray-600 text-white w-full">Close Guide</Button>
