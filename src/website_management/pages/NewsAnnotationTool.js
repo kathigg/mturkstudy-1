@@ -830,7 +830,7 @@ const handleNextArticle = async () => {
           </div>
         ) : (
           <div className="mt-6">
-            <Button onClick={handleNextArticle} className="bg-blue-500">Next Article</Button>
+            <Button onClick={handleNextArticle} className="bg-blue-500">Submit</Button>
           </div>
         )}
             </div>
