@@ -76,29 +76,55 @@ const shuffleArray = (array) => {
   return array.sort(() => Math.random() - 0.5);
 };
 
-const DropdownItem = ({ icon, title, children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const DropdownItem = ({ icon, title, children, openTitle, setOpenTitle, color }) => {
+  const isOpen = openTitle === title;
+  const handleClick = () => setOpenTitle(isOpen ? null : title);
+
+  const borderColor =
+    color === "yellow"
+      ? "border-yellow-400"
+      : color === "red"
+      ? "border-red-400"
+      : "border-blue-400";
+
   return (
-      <div className="mb-1">
-          <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center justify-between w-full text-left text-sm font-bold text-gray-800 hover:text-blue-600 focus:outline-none"
-          >
-              <span>{icon} {title}</span>
-              <span>{isOpen ? "−" : "+"}</span>
-          </button>
-          {isOpen && (
-              <div className="mt-1 ml-4 text-xs text-gray-700 transition-all duration-200">
-                  {children}
-              </div>
-          )}
-      </div>
+    <div
+      className={`mb-3 rounded-lg transition-all duration-300 ${
+        isOpen
+          ? `bg-white/70 ${borderColor} border-l-4 shadow-sm`
+          : "hover:bg-gray-50"
+      }`}
+    >
+      <button
+        onClick={handleClick}
+        className="flex items-center justify-between w-full text-left text-base font-semibold text-gray-900 hover:text-blue-600 focus:outline-none px-2 py-2"
+      >
+        <span className="flex items-center space-x-2">
+          {icon && <span>{icon}</span>}
+          <span>{title}</span>
+        </span>
+        <span
+          className={`text-xl leading-none transition-transform duration-300 ${
+            isOpen ? "rotate-90 text-blue-500" : "rotate-0 text-gray-500"
+          }`}
+        >
+          {isOpen ? "−" : "+"}
+        </span>
+      </button>
+
+      {isOpen && (
+        <div className="mt-2 ml-3 mr-2 text-left text-gray-800 transition-all duration-300 space-y-2 leading-relaxed">
+          {children}
+        </div>
+      )}
+    </div>
   );
 };
 
 
 export default function NewsAnnotationTool() {
     console.log("YAY Loaded NewsAnnotationTool");
+    const [openDropdown, setOpenDropdown] = useState(null); 
     const [completionCode, setCompletionCode] = useState("");
     const [allArticles, setAllArticles] = useState([]);
     const [articles, setArticles] = useState([]);
@@ -618,28 +644,163 @@ const handleNextArticle = async () => {
             <div className={`w-1/4 p-4 bg-gray-200 shadow-md transition-all duration-300 ${showRightInstructions ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"}`}>
                 <h3 className="text-lg font-bold mb-2">Annotation Guide</h3>
                 <p className="text-sm mb-2">Use the following categories for labeling:</p>
-                <div className="bg-yellow-100 p-2 rounded mb-2">
-                    <div></div>
-                  <div className="bg-yellow-100 p-3 rounded mb-3">
-                    <strong className="text-yellow-600 text-center block mb-2 text-base">Persuasive Propaganda</strong>
-                    <DropdownItem icon=" " title="Exaggeration">When something is made to sound much bigger, better, or worse than it really is — or, the opposite, made to sound smaller or less serious than it actually is.
-                    </DropdownItem>
-                    <DropdownItem icon=" " title="Slogans">A short and catchy phrase that tries to get an emotional reaction or support for a political cause.They may be positive or negative in tone, and are commonly used across the political spectrum.
-                    .</DropdownItem>
-                    <DropdownItem icon=" " title="Bandwagon">Encouraging action by claiming "everyone is doing it."</DropdownItem>
-                    <DropdownItem icon=" " title="Casual Oversimplification">Reducing a complex issue to a single cause or solution.</DropdownItem>
-                    <DropdownItem icon=" " title="Doubt">Sowing uncertainty or questioning the credibility of evidence.</DropdownItem>
-                </div>
 
-                </div>
-                <div className="bg-red-100 p-2 rounded mb-6">
-                    <strong className="text-red-600 text-center block mb-3 mt-3">Inflammatory Language</strong>
-                    <ul className="text-s text-center ml-2">
-                    <DropdownItem icon=" " title="Name-Calling">Using demeaning labels or insults to discredit opponents. Instead of giving reasons or evidence, the speaker tries to shape opinion with a word that carries strong emotion. </DropdownItem>
-                    <DropdownItem icon=" " title="Demonization">Portraying individuals or groups as evil, immoral, or dangerous. Demonization goes beyond simple name calling by framing the target as a threat to society, morality, or survival.  </DropdownItem>
-                    <DropdownItem icon=" " title="Scapegoating">Assigning blame to a group for broader societal problems or crises, often regardless of their actual responsibility. Unlike other inflammatory techniques, scapegoating specifically targets entire groups (e.g., ethnic, religious, political, or social groups) and portrays them as the cause of larger challenges such as economic decline, crime, or cultural change.</DropdownItem>
-                    </ul>
-                </div>
+      {/* Persuasive Propaganda Section */}
+<div className="bg-yellow-100 p-4 rounded mb-4">
+  <strong className="text-yellow-700 text-center block mb-4 text-lg font-semibold">
+    Persuasive Propaganda
+  </strong>
+
+  <DropdownItem title="Exaggeration" openTitle={openDropdown} setOpenTitle={setOpenDropdown} color="yellow">
+    <div className="mt-2 ml-4 text-left text-gray-800 space-y-2 py-3">
+      <p className="text-base leading-relaxed">
+        When something is made to sound artificially much bigger, better, or worse
+        than it really is — or, the opposite, made to sound smaller or less serious
+        than it actually is.
+      </p>
+      <div className="text-sm leading-relaxed text-gray-700">
+        <p className="font-semibold">Examples:</p>
+        <ul className="list-disc list-outside ml-5 space-y-1">
+          <li>“A local protest ignited waves of outrage and sent shockwaves through the nation.”</li>
+          <li>“This minor disagreement has become a national catastrophe, easily the worst of the modern era.”</li>
+          <li>“The present scandal is nothing — just political theater — and most Americans aren’t even aware of it.”</li>
+        </ul>
+      </div>
+    </div>
+  </DropdownItem>
+
+  <DropdownItem title="Slogans" openTitle={openDropdown} setOpenTitle={setOpenDropdown} color="yellow">
+    <div className="mt-2 ml-4 text-left text-gray-800 space-y-2 py-3">
+      <p className="text-base leading-relaxed">
+        A short, memorable phrase used to spark emotion or support a cause.
+        Slogans simplify complex ideas into a few words and can promote unity,
+        nationalism, or other sentiments. They can be positive or negative in tone.
+      </p>
+      <div className="text-sm leading-relaxed text-gray-700">
+        <p className="font-semibold">Examples:</p>
+        <ul className="list-disc list-outside ml-5 space-y-1">
+          <li>“Make America Great Again” / “America First”</li>
+          <li>“No Justice, No Peace”</li>
+          <li>“Occupy Wall Street — We Are the 99%”</li>
+        </ul>
+      </div>
+    </div>
+  </DropdownItem>
+
+  <DropdownItem title="Bandwagon" openTitle={openDropdown} setOpenTitle={setOpenDropdown} color="yellow">
+    <div className="mt-2 ml-4 text-left text-gray-800 space-y-2 py-3">
+      <p className="text-base leading-relaxed">
+        When people are told to support something just because “everyone else”
+        already supports it. The message is: if many others believe it, you should too.
+        This relies on social pressure and popularity, not evidence.
+      </p>
+      <div className="text-sm leading-relaxed text-gray-700">
+        <p className="font-semibold">Examples:</p>
+        <ul className="list-disc list-outside ml-5 space-y-1">
+          <li>“Most Americans back this plan, polls show.”</li>
+          <li>“As the Senator emphasized, ‘every true Republican supports this cause.’”</li>
+          <li>“No serious economist still believes raising taxes is a good idea.”</li>
+        </ul>
+      </div>
+    </div>
+  </DropdownItem>
+
+  <DropdownItem title="Casual Oversimplification" openTitle={openDropdown} setOpenTitle={setOpenDropdown} color="yellow">
+    <div className="mt-2 ml-4 text-left text-gray-800 space-y-2 py-3">
+      <p className="text-base leading-relaxed">
+        When a complex issue is blamed on just one cause or explained with one
+        simple answer, ignoring all the other factors that are probably involved.
+      </p>
+      <div className="text-sm leading-relaxed text-gray-700">
+        <p className="font-semibold">Examples:</p>
+        <ul className="list-disc list-outside ml-5 space-y-1">
+          <li>“The media is the only reason the nation is divided.”</li>
+          <li>“Inflation rose solely because of the president’s policies.”</li>
+          <li>“Crime is up because of progressive prosecutors.”</li>
+        </ul>
+      </div>
+    </div>
+  </DropdownItem>
+
+  <DropdownItem title="Doubt" openTitle={openDropdown} setOpenTitle={setOpenDropdown} color="yellow">
+    <div className="mt-2 ml-4 text-left text-gray-800 space-y-2 py-3">
+      <p className="text-base leading-relaxed">
+        Language that tries to make the audience question whether a person,
+        group, or institution is competent, honest, or legitimate.
+      </p>
+      <div className="text-sm leading-relaxed text-gray-700">
+        <p className="font-semibold">Examples:</p>
+        <ul className="list-disc list-outside ml-5 space-y-1">
+          <li>“Is he really ready to be the Mayor?”</li>
+          <li>“Is this leader even capable of running the country?”</li>
+          <li>“Some experts question whether the agency’s data can be trusted.”</li>
+        </ul>
+      </div>
+    </div>
+  </DropdownItem>
+</div>
+
+{/* Inflammatory Language Section */}
+<div className="bg-red-100 p-4 rounded mb-6">
+  <strong className="text-red-700 text-center block mb-4 text-lg font-semibold">
+    Inflammatory Language
+  </strong>
+
+  <DropdownItem title="Name-Calling" openTitle={openDropdown} setOpenTitle={setOpenDropdown} color="red">
+    <div className="mt-2 ml-4 text-left text-gray-800 space-y-2 py-3">
+      <p className="text-base leading-relaxed">
+        Using a loaded positive or negative label to shape how the audience feels
+        about a person, group, or idea. Instead of giving evidence, the speaker
+        uses emotionally charged wording to discredit or glorify.
+      </p>
+      <div className="text-sm leading-relaxed text-gray-700">
+        <p className="font-semibold">Examples:</p>
+        <ul className="list-disc list-outside ml-5 space-y-1">
+          <li>“The movement, composed largely of radical extremists, has demanded sweeping reform.”</li>
+          <li>“Big-money interests continue to profit during the crisis.”</li>
+          <li>“The oft-labeled terrorist sympathizers took to the streets in the latest wave of protests.”</li>
+        </ul>
+      </div>
+    </div>
+  </DropdownItem>
+
+  <DropdownItem title="Demonization" openTitle={openDropdown} setOpenTitle={setOpenDropdown} color="red">
+    <div className="mt-2 ml-4 text-left text-gray-800 space-y-2 py-3">
+      <p className="text-base leading-relaxed">
+        Describing people or groups as evil, dangerous, corrupt, disgusting,
+        or less than human. The goal is to turn the audience against the target
+        by making them sound like a threat to society.
+      </p>
+      <div className="text-sm leading-relaxed text-gray-700">
+        <p className="font-semibold">Examples:</p>
+        <ul className="list-disc list-outside ml-5 space-y-1">
+          <li>“The nation’s bureaucrats are bleeding taxpayers dry.”</li>
+          <li>“Migrants are parasites stealing American jobs.”</li>
+          <li>“These politicians are eating away at the heart of this nation from within.”</li>
+        </ul>
+      </div>
+    </div>
+  </DropdownItem>
+
+  <DropdownItem title="Scapegoating" openTitle={openDropdown} setOpenTitle={setOpenDropdown} color="red">
+    <div className="mt-2 ml-4 text-left text-gray-800 space-y-2 py-3">
+      <p className="text-base leading-relaxed">
+        Blaming an entire group for a broad problem or crisis. The group is
+        framed as the main cause of widespread harm or decline. This is almost
+        always aimed at groups (not individuals) and links them to larger
+        social, economic, or moral problems.
+      </p>
+      <div className="text-sm leading-relaxed text-gray-700">
+        <p className="font-semibold">Examples:</p>
+        <ul className="list-disc list-outside ml-5 space-y-1">
+          <li>“The rising rents — driven as always by greedy landlords — represent a severe strain on families.”</li>
+          <li>“Teachers’ unions are the reason kids are failing in school.”</li>
+          <li>“Homelessness continues to rise because city officials refuse to enforce basic laws.”</li>
+        </ul>
+      </div>
+    </div>
+  </DropdownItem>
+</div>
                 
                 <h3 className="text-lg font-bold mb-2">Video Tool Guide</h3>
                 <video
