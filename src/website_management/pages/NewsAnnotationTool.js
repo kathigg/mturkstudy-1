@@ -927,7 +927,7 @@ const handleNextArticle = async () => {
           <div className="mt-8 text-left">
             <h3 className="text-lg font-semibold mb-2">🧠 Post-Annotation Survey</h3>
 
-            <label className="block mt-4">1. How confident are you in your tagging decisions?</label>
+            <label className="block mt-4">1. How confident are you that there is polarizing language (either persuasive propaganda or inflammatory language) in this article?</label>
             <div className="mt-2 space-y-1">
   {[1, 2, 3, 4, 5].map((val) => (
     <label key={val} className="block text-sm">
