@@ -1100,12 +1100,12 @@ const handleNextArticle = async () => {
 {/* Instructions Panel on Right */}
 <div className={`w-1/4 p-4 bg-blue transition-all duration-300 ${showRightInstructions ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"}`}>
     <h3 className="text-lg font-bold mb-3">Instructions</h3>
-    <p className="text-sm">
+    <p className="text-sm ml-3 text-left">
     You will annotate <strong>3 news articles</strong>. For each article, please follow these steps:
   </p>
-  <div className="h-4" />
-  <div className="h-4" />
-  <ul className="list-decimal list-inside text-sm space-y-1">
+  <div className="h-4 text-left" />
+  <div className="h-4 text-left" />
+  <ul className="list-decimal text-left ml-5 list-inside text-sm space-y-1">
     <li>
       <strong>Highlight a section of text</strong> between 4 and 25 words that you want to annotate.
     </li>
@@ -1164,7 +1164,7 @@ const handleNextArticle = async () => {
 
 // Wrapper component that gates the tool behind the intro video
 export default function NewsAnnotationTool() {
-  const [introDone, setIntroDone] = useState(false);
+  const [introDone, setIntroDone] = useState(true);
 
   // // Uncomment to only require video once per session:
   // useEffect(() => {
