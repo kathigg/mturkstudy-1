@@ -536,6 +536,11 @@ const handleNextArticle = async () => {
   if (articles.length > 1) {
     return;
   }
+  const articleId = articles[currentArticleIndex]?.id;
+  if((textAnnotations[articleId] || []).length < 1){
+    alert("Please Annotate Before Submitting");
+    return;
+  }
 
   if (showSurvey) {
     // validate survey responses
