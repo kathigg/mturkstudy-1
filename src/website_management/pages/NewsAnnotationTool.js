@@ -1078,7 +1078,7 @@ const handleNextArticle = async () => {
   ))}
 </div>
 
-            <label className="block mt-4">2. To what extent is the article misleading or biased?</label>
+            <label className="block mt-4">2. To what extent does this article seem biased, one-sided, or misleading in how it presents information?</label>
             <div className="mt-2 space-y-1">
   {[1, 2, 3, 4, 5].map((val) => (
     <label key={val} className="block text-sm"> 
@@ -1090,7 +1090,7 @@ const handleNextArticle = async () => {
         onChange={() => setBias(val)}
         className="mr-2"
       />
-      {val} – {["Not at all", "Slightly", "Moderately", "Very much", "Extremely"][val - 1]}
+      {val} – {["Not at all biased", "Slightly biased", "Moderately biased", "Very biased", "Extremely biased"][val - 1]}
     </label>
   ))}
 </div>
