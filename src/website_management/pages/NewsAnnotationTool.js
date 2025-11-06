@@ -1,12 +1,89 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import { CardContent } from "../components/CardContent";
 import Papa from "papaparse";
 
 import { database, ref, push } from "../../firebaseConfig";
-import { get, update } from "firebase/database";
+import { get, update, runTransaction } from "firebase/database";
 import instructionVid from "../../Videos/Instruction-Video.mov";
+
+
+function IntroScreen({ onDone }) {
+  const [videoReady, setVideoReady] = useState(false);
+  const [videoDuration, setVideoDuration] = useState(0);
+  const [watchedEnough, setWatchedEnough] = useState(false);
+  const videoRef = useRef(null);
+  const watchedSecondsRef = useRef(new Set());
+
+  const handleTimeUpdate = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    const t = Math.floor(v.currentTime);
+    watchedSecondsRef.current.add(t);
+    if (videoDuration > 0) {
+      const ratio = watchedSecondsRef.current.size / Math.max(1, Math.floor(videoDuration));
+      if (ratio >= 0.98) setWatchedEnough(true);
+    }
+  };
+
+  const handleLoadedMeta = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    setVideoDuration(v.duration || 0);
+    setVideoReady(true);
+  };
+
+  return (
+    <div className="min-h-screen w-full flex items-center justify-center bg-gray-100">
+      <div className="w-full max-w-3xl bg-white rounded-xl shadow p-6">
+        <h1 className="text-2xl font-bold text-center mb-4">
+          Video Tool Guide (Please watch before continuing)
+        </h1>
+
+        <video
+          ref={videoRef}
+          src={instructionVid}
+          controls
+          playsInline
+          className="block mx-auto w-full rounded-lg"
+          onLoadedMetadata={handleLoadedMeta}
+          onTimeUpdate={handleTimeUpdate}
+          onEnded={() => setWatchedEnough(true)}
+        />
+
+        <div className="mt-4 text-sm text-gray-600 text-center">
+          {videoReady
+            ? `Progress: ${Math.min(
+                100,
+                Math.round(
+                  (watchedSecondsRef.current.size / Math.max(1, Math.floor(videoDuration))) * 100
+                )
+              )}%`
+            : "Loading video…"}
+        </div>
+
+        <div className="mt-6 flex justify-center">
+          <button
+            className={
+              watchedEnough
+                ? "px-5 py-2 rounded text-white bg-blue-600 hover:bg-blue-700"
+                : "px-5 py-2 rounded text-white bg-gray-400 cursor-not-allowed"
+            }
+            disabled={!watchedEnough}
+            onClick={onDone}
+          >
+            Next: Start the Annotation Tool
+          </button>
+        </div>
+
+        <p className="mt-3 text-xs text-center text-gray-500">
+          You must watch the full video before continuing.
+        </p>
+      </div>
+    </div>
+  );
+}
 
 // --- Selection constraints ---
 const MIN_WORDS = 4;
@@ -122,7 +199,7 @@ const DropdownItem = ({ icon, title, children, openTitle, setOpenTitle, color })
 };
 
 
-export default function NewsAnnotationTool() {
+function ToolMain() {
     console.log("YAY Loaded NewsAnnotationTool");
     const [openDropdown, setOpenDropdown] = useState(null); 
     const [completionCode, setCompletionCode] = useState("");
@@ -376,38 +453,70 @@ const handleSubcategoryChange = (e) => {
       }, []);
     */
 
-async function selectOneRandomIndex() {
+const MAX_PER_ARTICLE = 3;
+async function pickAndClaimIndex() {
   const usageRef = ref(database, "articleUsage");
-  const snapshot = await get(usageRef);
-  let usageData = snapshot.exists() ? snapshot.val() : {};
+  const claimedRef = ref(database, "claimedArticles");
 
-  // Initialize counts for first 12 articles
+  const [usageSnap, claimedSnap] = await Promise.all([get(usageRef), get(claimedRef)]);
+  let usage = usageSnap.exists() ? usageSnap.val() : {};
+  let claimed = claimedSnap.exists() ? claimedSnap.val() : {};
+
+  // Initialize first 12 indices to 0 if missing
   for (let i = 0; i < 12; i++) {
-    if (usageData[i] === undefined) usageData[i] = 0;
+    if (usage[i] === undefined) usage[i] = 0;
+    if (claimed[i] === undefined) claimed[i] = 0;
   }
 
-  // Filter available (< 3 uses)
-  const available = Object.keys(usageData)
-    .map((k) => parseInt(k))
-    .filter((i) => usageData[i] < 3);
+  // Candidates must be under both caps
+  const candidates = Object.keys(usage)
+    .map(Number)
+    .filter((i) => usage[i] < MAX_PER_ARTICLE && (claimed[i] ?? 0) < MAX_PER_ARTICLE);
 
-  if (available.length === 0) {
+  if (candidates.length === 0) {
     console.warn("No available articles left.");
     return null;
   }
 
-  // Pick 1 random index (no Firebase update here)
-  const randIndex = available[Math.floor(Math.random() * available.length)];
-  console.log(`Chosen index (not yet logged): ${randIndex}`);
-  return randIndex;
+  // Try in random order; atomically claim the first that succeeds
+  const shuffled = candidates.sort(() => Math.random() - 0.5);
+  for (const i of shuffled) {
+    const ok = await tryClaimIndex(i);
+    if (ok) {
+      console.log(`Chosen & claimed index: ${i}`);
+      return i;
+    }
+  }
+
+  console.warn("All candidates were claimed concurrently. Try again.");
+  return null;
 }
+
+// Atomically try to claim an index: increment claimedArticles[i] iff it's < MAX_PER_ARTICLE
+async function tryClaimIndex(i) {
+  const idxRef = ref(database, `claimedArticles/${i}`);
+  const result = await runTransaction(idxRef, (curr) => {
+    const v = curr ?? 0;
+    if (v >= MAX_PER_ARTICLE) return; // abort transaction
+    return v + 1;                      // commit v+1
+  });
+  return result.committed; // true if we successfully claimed
+}
+
+// Decrement claim counter (never below 0)
+async function unclaimArticle(i) {
+  const idxRef = ref(database, `claimedArticles/${i}`);
+  await runTransaction(idxRef, (curr) => {
+    const v = curr ?? 0;
+    return v > 0 ? v - 1 : 0;
+  });
+}
+
+// Use transactions for logging usage too (safer under contention)
 async function logArticleUsage(index) {
-  const usageRef = ref(database, "articleUsage");
-  const snapshot = await get(usageRef);
-  const usageData = snapshot.exists() ? snapshot.val() : {};
-  const current = usageData[index] ?? 0;
-  await update(usageRef, { [index]: current + 1 });
-  console.log(`Logged usage for index ${index}. New count: ${current + 1}`);
+  const usageIdxRef = ref(database, `articleUsage/${index}`);
+  await runTransaction(usageIdxRef, (curr) => (curr ?? 0) + 1);
+  console.log(`Logged usage for index ${index}.`);
 }
 
   useEffect(() => {
@@ -425,7 +534,7 @@ async function logArticleUsage(index) {
           }));
           setAllArticles(parsedArticles);
 
-          const idx = await selectOneRandomIndex();
+          const idx = await pickAndClaimIndex();
           if (idx !== null) {
             setSelectedIdx(idx);             // remember chosen index
             setArticles([parsedArticles[idx]]);
@@ -495,6 +604,7 @@ const handleNextArticle = async () => {
       try {
         if (selectedIdx !== null) {
           await logArticleUsage(selectedIdx); // <-- increment only on Finish
+          await unclaimArticle(selectedIdx);
         }
       } catch (e) {
         console.error("Failed to log article usage:", e);
@@ -504,7 +614,7 @@ const handleNextArticle = async () => {
       return;
     } else {
       // Otherwise fetch another article; remember index but log on that article's Finish
-      const nextIdx = await selectOneRandomIndex();
+      const nextIdx = await pickAndClaimIndex();
       if (nextIdx !== null && allArticles[nextIdx]) {
         setSelectedIdx(nextIdx);
         setArticles((prev) => [...prev, allArticles[nextIdx]]);
@@ -1060,3 +1170,24 @@ const handleNextArticle = async () => {
         </div>
     );
   }
+
+
+// Wrapper component that gates the tool behind the intro video
+export default function NewsAnnotationTool() {
+  const [introDone, setIntroDone] = useState(false);
+
+  // // Uncomment to only require video once per session:
+  // useEffect(() => {
+  //   const seen = sessionStorage.getItem("introWatched") === "1";
+  //   if (seen) setIntroDone(true);
+  // }, []);
+  // useEffect(() => {
+  //   if (introDone) sessionStorage.setItem("introWatched", "1");
+  // }, [introDone]);
+
+  if (!introDone) {
+    return <IntroScreen onDone={() => setIntroDone(true)} />;
+  }
+  return <ToolMain />;
+}
+
