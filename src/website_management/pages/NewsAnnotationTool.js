@@ -15,6 +15,8 @@ function IntroScreen({ onDone }) {
   const [watchedEnough, setWatchedEnough] = useState(false);
   const videoRef = useRef(null);
   const watchedSecondsRef = useRef(new Set());
+  const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
+const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false);
 
   const handleTimeUpdate = () => {
     const v = videoRef.current;
@@ -192,6 +194,8 @@ const DropdownItem = ({ icon, title, children, openTitle, setOpenTitle, color })
 function ToolMain() {
     console.log("YAY Loaded NewsAnnotationTool");
     const [openDropdown, setOpenDropdown] = useState(null); 
+    const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
+    const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false);
     const [completionCode, setCompletionCode] = useState("");
     const [allArticles, setAllArticles] = useState([]);
     const [articles, setArticles] = useState([]);
@@ -208,32 +212,24 @@ function ToolMain() {
 
     const handleCategoryButtonClick = (categoryKey) => {
       const wc = countWords(selectedText);
-
-      // Block all categories (including no polarizing language) if out of range
-      if (wc < MIN_WORDS || wc > MAX_WORDS) {
+    
+      // For all categories except "No_Polarizing_Language", enforce the word-count rule
+      if (categoryKey !== "No_Polarizing_Language" && (wc < MIN_WORDS || wc > MAX_WORDS)) {
         alert(`Please select between ${MIN_WORDS} and ${MAX_WORDS} words before annotating.`);
         return;
       }
-
+    
       setSelectedCategory(categoryKey);
-      setSelectedSubcategory(""); // Clear the subcategory so user chooses it fresh
-      
-      // If "no polarizing language" is selected, automatically save it as an annotation
+      setSelectedSubcategory("");
+    
+      // Trigger popup overlay for "No polarizing language"
       if (categoryKey === "No_Polarizing_Language") {
-        const articleId = articles[currentArticleIndex]?.id;
-        if (articleId) {
-          setTextAnnotations((prevAnnotations) => ({
-            ...prevAnnotations,
-            [articleId]: [
-              ...(prevAnnotations[articleId] || []),
-              { title: articles[currentArticleIndex]?.title || "", 
-                text: "No polarizing language selected", 
-                category: "No_Polarizing_Language", 
-                subcategory: "no polarizing language" },
-            ],
-          }));
-        }
+        setPendingNoPolarizingConfirm(true);
+        setShowNoPolarizingPopup(true);
+        return;
       }
+    
+      // Regular categories behave normally
     };
     
 
@@ -715,31 +711,69 @@ const handleNextArticle = async () => {
         }
       }, [showThankYou]);
 
+    
 
-    if (showThankYou) {
+      
+      return (
+        <div className="flex w-full justify-center items-start min-h-screen bg-gray-100 relative">
+          {/* --- No Polarizing Language Confirmation Overlay --- */}
+          {showNoPolarizingPopup && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm transition-opacity duration-300">
+              <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full text-center animate-fadeIn">
+                <h2 className="text-2xl font-bold mb-3 text-gray-900">Are you sure?</h2>
+                <p className="text-sm text-gray-700 mb-6 leading-relaxed">
+                  Selecting this option will trigger a closer review of your work.
+                  <br /><br />
+                  If the article truly contains <em>no polarizing language</em>,
+                  click <strong>“I’m sure.”</strong> Otherwise, review the text again before submitting.
+                </p>
+      
+                <div className="flex justify-center space-x-4">
+                <Button
+                  onClick={() => {
+                    // Close popup
+                    setShowNoPolarizingPopup(false);
+                    setPendingNoPolarizingConfirm(false);
 
-
-        return (
-          <div className="w-full h-screen flex items-center justify-center bg-white">
-            <div className="max-w-xl text-center p-6 border border-gray-300 rounded shadow">
-              <h2 className="text-2xl font-bold mb-4">🎉 Thank You!</h2>
-              <p className="mb-4 text-gray-700">Thank you for taking part in this study. Your responses have been recorded.</p>
-              <p className="mb-4 text-gray-700">Please copy and paste the following completion code into MTurk:</p>
-              <div className="bg-gray-100 text-lg font-mono p-4 rounded border border-dashed border-gray-400 mb-4">{completionCode}</div>
-              <p className="text-sm text-gray-500">You may now close this window or return to the task page.</p>
-              {process.env.NODE_ENV !== "production" && (
-            <Button onClick={() => downloadAnnotations(annotations, textAnnotations, surveyResponses)} className="mt-4 bg-purple-600 text-white">
-              Download All Responses (JSON)
-            </Button>
-          )
-  }          
+                    // Clear any "No Polarizing Language" selection
+                    if (selectedCategory === "No_Polarizing_Language") {
+                      setSelectedCategory("");
+                      setSelectedSubcategory("");
+                    }
+                  }}
+                  className="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded"
+                >
+                  Cancel
+                </Button>
+                  <Button
+                    onClick={() => {
+                      const articleId = articles[currentArticleIndex]?.id;
+                      if (articleId) {
+                        setTextAnnotations((prev) => ({
+                          ...prev,
+                          [articleId]: [
+                            ...(prev[articleId] || []),
+                            {
+                              title: articles[currentArticleIndex]?.title || "",
+                              text: "No polarizing language selected",
+                              category: "No_Polarizing_Language",
+                              subcategory: "no polarizing language",
+                            },
+                          ],
+                        }));
+                      }
+                      setShowNoPolarizingPopup(false);
+                      setPendingNoPolarizingConfirm(false);
+                    }}
+                    className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded"
+                  >
+                    I’m sure
+                  </Button>
+                </div>
+              </div>
             </div>
-          </div>
-        );
-      }
-
-    return (
-        <div className="flex w-full justify-center items-start min-h-screen bg-gray-100">
+          )}
+          
             {/* Instructions Sidebar */}
             <div className={`w-1/4 p-4 bg-gray-200 shadow-md transition-all duration-300 ${showRightInstructions ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"}`}>
                 <h3 className="text-lg font-bold mb-2">Annotation Guide</h3>
@@ -1039,7 +1073,7 @@ const handleNextArticle = async () => {
         onChange={() => setConfidence(val)}
         className="mr-2"
       />
-      {val} – {["Not at all confident", "Slightly confident", "Moderately confident", "Very confident", "Extremely confident"][val - 1]}
+      {val} – {["Not at all confident", "Slightly confident", "Moderately confident that there is polarizing language", "Very confident that there is polarizing language", "Extremely confident that there is polarizing language"][val - 1]}
     </label>
   ))}
 </div>
@@ -1047,7 +1081,7 @@ const handleNextArticle = async () => {
             <label className="block mt-4">2. To what extent is the article misleading or biased?</label>
             <div className="mt-2 space-y-1">
   {[1, 2, 3, 4, 5].map((val) => (
-    <label key={val} className="block text-sm">
+    <label key={val} className="block text-sm"> 
       <input
         type="radio"
         name="bias"
@@ -1062,7 +1096,7 @@ const handleNextArticle = async () => {
 </div>
 
 <label className="block mt-4">
-  3. Why did you tag this way? What made it stand out?
+  3. Why did you tag this way? What specific phrases, tone choices, or examples made it stand out to you? You might reference particular sentences, framing choices, or emotional wording that influenced your decision.
 </label>
 <p className="text-sm text-gray-600 mb-1">
   Word count: {countCharacters(openFeedback)} (minimum 100 characters)
