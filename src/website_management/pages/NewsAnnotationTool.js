@@ -52,17 +52,7 @@ function IntroScreen({ onDone }) {
           onEnded={() => setWatchedEnough(true)}
         />
 
-        <div className="mt-4 text-sm text-gray-600 text-center">
-          {videoReady
-            ? `Progress: ${Math.min(
-                100,
-                Math.round(
-                  (watchedSecondsRef.current.size / Math.max(1, Math.floor(videoDuration))) * 100
-                )
-              )}%`
-            : "Loading video…"}
-        </div>
-
+        
         <div className="mt-6 flex justify-center">
           <button
             className={

@@ -1,6 +1,6 @@
 import React from "react";
 import NewsAnnotationTool from "./website_management/pages/NewsAnnotationTool.js";
-import instructionVid from "./Videos/Instruction-Video.mov";
+
 
 function App() {
   return (
