@@ -718,7 +718,38 @@ const handleNextArticle = async () => {
 
     
 
-      
+      if (showThankYou) {
+  return (
+    <div className="w-full h-screen flex items-center justify-center bg-white">
+      <div className="max-w-xl text-center p-6 border border-gray-300 rounded shadow">
+        <h2 className="text-2xl font-bold mb-4">🎉 Thank You!</h2>
+        <p className="mb-4 text-gray-700">
+          Thank you for taking part in this study. Your responses have been recorded.
+        </p>
+        <p className="mb-4 text-gray-700">
+          Please copy and paste the following completion code into MTurk:
+        </p>
+        <div className="bg-gray-100 text-lg font-mono p-4 rounded border border-dashed border-gray-400 mb-4">
+          {completionCode}
+        </div>
+        <p className="text-sm text-gray-500">
+          You may now close this window or return to the task page.
+        </p>
+
+        {process.env.NODE_ENV !== "production" && (
+          <Button
+            onClick={() =>
+              downloadAnnotations(annotations, textAnnotations, surveyResponses)
+            }
+            className="mt-4 bg-purple-600 text-white"
+          >
+            Download All Responses (JSON)
+          </Button>
+        )}
+      </div>
+    </div>
+  );
+}
       return (
         <div className="flex w-full justify-center items-start min-h-screen bg-gray-100 relative">
           {/* --- No Polarizing Language Confirmation Overlay --- */}
