@@ -16,7 +16,7 @@ function IntroScreen({ onDone }) {
   const videoRef = useRef(null);
   const watchedSecondsRef = useRef(new Set());
   const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
-const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false);
+  const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false);
 
   const handleTimeUpdate = () => {
     const v = videoRef.current;
@@ -1203,7 +1203,7 @@ const handleNextArticle = async () => {
 
 // Wrapper component that gates the tool behind the intro video
 export default function NewsAnnotationTool() {
-  const [introDone, setIntroDone] = useState(true);
+  const [introDone, setIntroDone] = useState(false);
 
   // // Uncomment to only require video once per session:
   // useEffect(() => {
