@@ -667,7 +667,7 @@ const handleNextArticle = async () => {
             setSelectedCategory("");
             setSelectedSubcategory("");
         } else {
-            alert("Please select a high-level category and a subcategory.");
+            alert("Please select xa high-level category and a subcategory.");
         }
     };
 
@@ -706,7 +706,7 @@ const handleNextArticle = async () => {
             surveyResponses,
             articleTitles,
             timestamp: new Date().toISOString(),
-            completionCode,
+            code,
           };
     
           const submissionsRef = ref(database, "submissions");
@@ -1113,7 +1113,7 @@ const handleNextArticle = async () => {
         onChange={() => setConfidence(val)}
         className="mr-2"
       />
-      {val} – {["Not at all confident", "Slightly confident", "Moderately confident that there is polarizing language", "Very confident that there is polarizing language", "Extremely confident that there is polarizing language"][val - 1]}
+      {val} – {["Not at all confident that there is polarizing language", "Slightly confident that there is polarizing language", "Moderately confident that there is polarizing language", "Very confident that there is polarizing language", "Extremely confident that there is polarizing language"][val - 1]}
     </label>
   ))}
 </div>
