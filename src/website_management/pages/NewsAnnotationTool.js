@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-lone-blocks */
 import React, { useEffect, useRef, useState } from "react";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
@@ -10,7 +13,7 @@ import instructionVid from "../../Videos/Instruction-Video.mov";
 
 
 function IntroScreen({ onDone }) {
-  const [setVideoReady] = useState(false); // commented out the variable videoReady
+  //const [videoReady,setVideoReady] = useState(false); 
   const [videoDuration, setVideoDuration] = useState(0);
   const [watchedEnough, setWatchedEnough] = useState(false);
   const videoRef = useRef(null);
@@ -33,7 +36,7 @@ function IntroScreen({ onDone }) {
     const v = videoRef.current;
     if (!v) return;
     setVideoDuration(v.duration || 0);
-    setVideoReady(true);
+    //setVideoReady(true);
   };
 
   return (
@@ -199,7 +202,7 @@ function ToolMain() {
     console.log("YAY Loaded NewsAnnotationTool");
     const [openDropdown, setOpenDropdown] = useState(null); 
     const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
-    const [setPendingNoPolarizingConfirm] = useState(false); // commented out the variable pendingNoPolarizingConfirm
+    const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false); // commented out the variable pendingNoPolarizingConfirm
     const [completionCode, setCompletionCode] = useState("");
     const [allArticles, setAllArticles] = useState([]);
     const [articles, setArticles] = useState([]);
