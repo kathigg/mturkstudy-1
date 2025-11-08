@@ -5,18 +5,18 @@ import { CardContent } from "../components/CardContent";
 import Papa from "papaparse";
 
 import { database, ref, push } from "../../firebaseConfig";
-import { get, update, runTransaction } from "firebase/database";
+import { get, runTransaction } from "firebase/database";
 import instructionVid from "../../Videos/Instruction-Video.mov";
 
 
 function IntroScreen({ onDone }) {
-  const [videoReady, setVideoReady] = useState(false);
+  const [setVideoReady] = useState(false); // commented out the variable videoReady
   const [videoDuration, setVideoDuration] = useState(0);
   const [watchedEnough, setWatchedEnough] = useState(false);
   const videoRef = useRef(null);
   const watchedSecondsRef = useRef(new Set());
-  const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
-  const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false);
+  // const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
+  // const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false);
 
   const handleTimeUpdate = () => {
     const v = videoRef.current;
@@ -141,9 +141,13 @@ function titleCapitalization(title){
 }
 
 // Function to shuffle array randomly
+
+/*
+TEMPORARILY COMMENTED OUT WHILE WE MANUALLY SET ARTICLES FOR TESTING :) 
 const shuffleArray = (array) => {
   return array.sort(() => Math.random() - 0.5);
 };
+*/
 
 const DropdownItem = ({ icon, title, children, openTitle, setOpenTitle, color }) => {
   const isOpen = openTitle === title;
@@ -195,7 +199,7 @@ function ToolMain() {
     console.log("YAY Loaded NewsAnnotationTool");
     const [openDropdown, setOpenDropdown] = useState(null); 
     const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
-    const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false);
+    const [setPendingNoPolarizingConfirm] = useState(false); // commented out the variable pendingNoPolarizingConfirm
     const [completionCode, setCompletionCode] = useState("");
     const [allArticles, setAllArticles] = useState([]);
     const [articles, setArticles] = useState([]);
