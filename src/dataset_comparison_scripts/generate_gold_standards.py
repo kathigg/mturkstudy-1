@@ -7,7 +7,7 @@ from collections import defaultdict, Counter
 # Manual input/output path
 # ------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/mturkhit2.json")
+INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/cisc475database-default-rtdb-submissions-export (4).json")
 OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/v2_2nd_hit_gold_standard_output.json")
 
 # ------------------------
