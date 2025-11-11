@@ -1,0 +1,546 @@
+[
+  {
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "\"Brad Stephens will be able to deliver for his district on day one,\"",
+        "openFeedback": "Overconfident promise of immediate results inflates capability without evidence.",
+        "_wordCount": 13,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "text": "called the proposal for a 21-member board \"unwieldy.\"",
+        "openFeedback": "Applies a negative label to the proposal to shape perception rather than argue substance.",
+        "_wordCount": 8,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "text": "\"We will do whatever it takes to win,\"",
+        "openFeedback": "Short, rallying phrase aimed at motivating supporters, not providing specifics.",
+        "_wordCount": 8,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "text": "a welcome addition to the House Republican Caucus.",
+        "openFeedback": "Uses a positive label to glorify the individual instead of offering concrete evidence.",
+        "_wordCount": 8,
+        "_spanLengthOK": true
+      }
+    ],
+    "title": "Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat",
+    "topic": "nan",
+    "source": "nan",
+    "rating": "nan"
+  },
+  {
+    "annotations": [
+      {
+        "category": "No Polarizing Language",
+        "subcategory": "None",
+        "text": "Sperm banks could one day be set up in space, scientists have predicted.",
+        "openFeedback": "Neutral, cautiously worded science reporting without inflammatory or persuasive propaganda techniques.",
+        "_wordCount": 13,
+        "_spanLengthOK": true
+      }
+    ],
+    "title": "Frozen Sperm Bank Could Be Set up in Space, Study Suggests",
+    "topic": "nan",
+    "source": "nan",
+    "rating": "nan"
+  },
+  {
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "text": "the most insane attacks on a black family, or any family, that I've ever seen law enforcement engage in",
+        "openFeedback": "Portrays law enforcement as committing “insane attacks,” casting them as dangerous/evil rather than arguing with evidence.",
+        "_wordCount": 19,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "text": "I, like many others, am sick over what I have seen in the video",
+        "openFeedback": "Invokes that “many others” share the sentiment, appealing to popularity to validate the reaction.",
+        "_wordCount": 14,
+        "_spanLengthOK": true
+      }
+    ],
+    "title": "Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'",
+    "topic": "nan",
+    "source": "nan",
+    "rating": "nan"
+  },
+  {
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "a new opportunity to superpower their careers.",
+        "openFeedback": "Uses hyperbolic language to magnify the impact of the opportunity.",
+        "_wordCount": 7,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "text": "four prestigious programs Anderson Ranch Arts Center, Atlantic Center for the Arts",
+        "openFeedback": "Applies a loaded positive label (“prestigious”) to shape perception of the programs.",
+        "_wordCount": 12,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "Residencies can be a defining moment in an artist's career",
+        "openFeedback": "Frames residencies as having outsized, singular importance, amplifying their impact.",
+        "_wordCount": 10,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "text": "meet with master curators and artists",
+        "openFeedback": "Uses the loaded label “master” to elevate and glorify the curators.",
+        "_wordCount": 6,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "text": "the highly competitive Yaddo residency",
+        "openFeedback": "Employs a positive, status-laden descriptor to confer prestige.",
+        "_wordCount": 5,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "text": "these kinds of prestigious residencies",
+        "openFeedback": "Uses the loaded positive label “prestigious” to glorify the residencies.",
+        "_wordCount": 5,
+        "_spanLengthOK": true
+      }
+    ],
+    "title": "Four Top Residencies Now Offered to Local Artists, Thanks to Oolite",
+    "topic": "nan",
+    "source": "nan",
+    "rating": "nan"
+  },
+  {
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "they [ILWU] run the Port",
+        "openFeedback": "Hyperbolic claim implying total control by the union to amplify its power.",
+        "_wordCount": 5,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Scapegoating",
+        "text": "a green, job-creating project is stymied by a single entity for their own narrow reasons",
+        "openFeedback": "Blames one group for blocking a beneficial project, assigning broad blame to a single entity.",
+        "_wordCount": 15,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "another battle at the port",
+        "openFeedback": "War-like metaphor dramatizes routine policy or administrative disputes.",
+        "_wordCount": 5,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "text": "didn't provide a reason for ending the agreement",
+        "openFeedback": "Suggests a lack of transparency to undermine confidence in the official’s decision.",
+        "_wordCount": 8,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Causal Oversimplification",
+        "text": "would ultimately ease congestion at the port",
+        "openFeedback": "Presents a complex issue as solvable by a single project, ignoring other factors.",
+        "_wordCount": 7,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "text": "none of our decision makers will step in to try to resolve it",
+        "openFeedback": "Portrays officials as unwilling or incompetent, inviting skepticism about their leadership.",
+        "_wordCount": 13,
+        "_spanLengthOK": true
+      }
+    ],
+    "title": "Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility",
+    "topic": "nan",
+    "source": "nan",
+    "rating": "nan"
+  },
+  {
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "Washington's buzziest local spots",
+        "openFeedback": "Uses hype (“buzziest”) to amplify excitement beyond neutral description.",
+        "_wordCount": 4,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "riding a trend, right now.",
+        "openFeedback": "Creates urgency and hype about popularity rather than sticking to neutral wording.",
+        "_wordCount": 5,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "a substantial 116.7% increase",
+        "openFeedback": "Adds evaluative framing (“substantial”) to numerical data to heighten impact.",
+        "_wordCount": 4,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "is a hot topic according to Yelp review data.",
+        "openFeedback": "“Hot topic” is hype language that dramatizes interest beyond neutral reporting.",
+        "_wordCount": 9,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "bagged a staggering 141.7% increase in new reviews",
+        "openFeedback": "The word “staggering” inflates the significance of the increase for dramatic effect.",
+        "_wordCount": 8,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "maintaining a superior four-star rating.",
+        "openFeedback": "“Superior” is value-laden and glorifies the rating beyond a neutral statement.",
+        "_wordCount": 5,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "is also making waves.",
+        "openFeedback": "Metaphorical hype that suggests outsized impact without specific evidence.",
+        "_wordCount": 4,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "more than one hot spot trending",
+        "openFeedback": "“Hot spot” and “trending” are promotional buzzwords that inflate excitement.",
+        "_wordCount": 6,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "is the city's buzziest traditional American spot by the numbers.",
+        "openFeedback": "“Buzziest” is hype that amplifies popularity, even when paired with data framing.",
+        "_wordCount": 10,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "is currently on the upswing",
+        "openFeedback": "Positive spin suggesting momentum rather than neutrally stating review changes.",
+        "_wordCount": 5,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "it's maintained a solid 4.5-star rating",
+        "openFeedback": "“Solid” is evaluative language that adds promotional framing to the rating.",
+        "_wordCount": 6,
+        "_spanLengthOK": true
+      }
+    ],
+    "title": "Get These Trending Washington Restaurants on Your Radar Today",
+    "topic": "nan",
+    "source": "nan",
+    "rating": "nan"
+  },
+  {
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "The pictures and footage only scratch the surface of the tale",
+        "openFeedback": "Overstates the insufficiency of visuals to heighten drama and emotional impact.",
+        "_wordCount": 11,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "came to the rescue",
+        "openFeedback": "Heroic framing inflates the journalist’s role, adding dramatic flair.",
+        "_wordCount": 4,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "he'd go the extra thousands of miles again in his car in a heartbeat",
+        "openFeedback": "Hyperbolic language magnifies dedication beyond literal accuracy.",
+        "_wordCount": 14,
+        "_spanLengthOK": true
+      }
+    ],
+    "title": "South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away",
+    "topic": "nan",
+    "source": "nan",
+    "rating": "nan"
+  },
+  {
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "text": "who allege Schupek used the ill-gotten gains to gamble at casinos in Joliet",
+        "openFeedback": "The phrase “ill-gotten gains” is a loaded negative label that frames the money in morally charged terms, influencing perception beyond neutral reporting.",
+        "_wordCount": 13,
+        "_spanLengthOK": true
+      }
+    ],
+    "title": "Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds",
+    "topic": "nan",
+    "source": "nan",
+    "rating": "nan"
+  },
+  {
+    "annotations": [
+      {
+        "category": "No Polarizing Language",
+        "subcategory": "No Polarizing Language",
+        "text": "In September, the Rosemount City Council hired a consultant to study the necessity of a center and how it could be funded.",
+        "openFeedback": "The article maintains a neutral, informational tone without inflammatory or propagandistic techniques.",
+        "_wordCount": 22,
+        "_spanLengthOK": true
+      }
+    ],
+    "title": "Rosemount Recreation Center Plan Gets Positive Response so Far",
+    "topic": "nan",
+    "source": "nan",
+    "rating": "nan"
+  },
+  {
+    "annotations": [
+      {
+        "category": "No Polarizing Language",
+        "subcategory": "No Polarizing Language",
+        "text": "The Advanced Rapid Imaging and Analysis team at NASA's Jet Propulsion Laboratory in Pasadena, California,",
+        "openFeedback": "Neutral, factual reporting without inflammatory or persuasive techniques.",
+        "_wordCount": 15,
+        "_spanLengthOK": true
+      }
+    ],
+    "title": "Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite",
+    "topic": "nan",
+    "source": "nan",
+    "rating": "nan"
+  },
+  {
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "text": "the new conservative city hall",
+        "openFeedback": "Uses a political label that can shape reader sentiment toward the officials.",
+        "_wordCount": 5,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "text": "Madrid's then far-left government banned most petrol and diesel cars",
+        "openFeedback": "Applies a loaded ideological label to the previous administration to frame it.",
+        "_wordCount": 10,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "text": "Yes we can, I do want Madrid central,",
+        "openFeedback": "A chant that functions as a catchy, emotive rallying slogan.",
+        "_wordCount": 8,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "text": "I want to breathe free",
+        "openFeedback": "Short, memorable phrase designed to evoke emotion and support.",
+        "_wordCount": 5,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "text": "We aspire to have a Madrid without smoke",
+        "openFeedback": "A simplified, rallying message to promote a cause.",
+        "_wordCount": 8,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "We have to save (the planet) starting at the local and small level",
+        "openFeedback": "Grandiose framing exaggerates the impact of a local policy on the entire planet.",
+        "_wordCount": 13,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Causal Oversimplification",
+        "text": "the first thing is Madrid's center",
+        "openFeedback": "Reduces a complex global environmental problem to one simple local priority.",
+        "_wordCount": 6,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "raising fears that environmental rollbacks seen in the United States may be spreading to Europe",
+        "openFeedback": "Speculates a broader trend from a single event, amplifying perceived threat.",
+        "_wordCount": 15,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "slashed air pollution levels from car emissions in the center to record lows",
+        "openFeedback": "Uses dramatic language to amplify impact without presenting specific data.",
+        "_wordCount": 13,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "there's no precedent in ending a car traffic restriction",
+        "openFeedback": "Asserts unprecedented status, potentially inflating significance without comprehensive evidence.",
+        "_wordCount": 9,
+        "_spanLengthOK": true
+      }
+    ],
+    "title": "Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars",
+    "topic": "nan",
+    "source": "nan",
+    "rating": "nan"
+  },
+  {
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "text": "the embattled health center",
+        "openFeedback": "Uses a loaded label that frames the clinic as beleaguered, influencing sentiment without evidence.",
+        "_wordCount": 4,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "text": "Today is a victory for women",
+        "openFeedback": "Short, emotive catchphrase aimed at rallying support and framing the outcome positively.",
+        "_wordCount": 6,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "very, very difficult to access abortion in Missouri",
+        "openFeedback": "Intensifiers amplify the difficulty without providing proportional evidence.",
+        "_wordCount": 8,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "text": "medically unnecessary hoops and regulations",
+        "openFeedback": "Derisive label (“hoops”) discredits regulations with emotional wording instead of argument.",
+        "_wordCount": 5,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "at least one incident in which patient safety was gravely compromised",
+        "openFeedback": "Dramatic phrasing heightens severity and emotional impact.",
+        "_wordCount": 11,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Causal Oversimplification",
+        "text": "part of a greater anti-abortion effort by the state's administration",
+        "openFeedback": "Attributes the licensing dispute to a single overarching cause, ignoring other factors.",
+        "_wordCount": 10,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Causal Oversimplification",
+        "text": "to whittle down Missouri residents' access to abortion",
+        "openFeedback": "Simplifies regulatory motives to one intent, overlooking complex policy considerations.",
+        "_wordCount": 8,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "text": "calls multiple pelvic exams for women seeking abortion \"unwarranted.\"",
+        "openFeedback": "Labels the practice negatively, a value-laden judgment rather than neutral description.",
+        "_wordCount": 9,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "stringent and perpetually evolving requirements",
+        "openFeedback": "Suggests continuous, severe change in rules, amplifying burden with sweeping wording.",
+        "_wordCount": 5,
+        "_spanLengthOK": true
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "text": "a slew of recent anti-abortion legislation across the country",
+        "openFeedback": "“Slew” inflates the volume to heighten a sense of scale and urgency.",
+        "_wordCount": 9,
+        "_spanLengthOK": true
+      }
+    ],
+    "title": "Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds",
+    "topic": "nan",
+    "source": "nan",
+    "rating": "nan"
+  }
+]

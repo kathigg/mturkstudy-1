@@ -7,8 +7,8 @@ from collections import defaultdict
 # Paths for JSON files
 # ------------------------
 BASE_DIR = Path(__file__).resolve().parent.parent
-LLM_PATH = BASE_DIR / "llm_annotation_results/GPT-5-annotations.json"
-GOLD_PATH = BASE_DIR / "mturk_results/v2_2nd_hit_gold_standard_output.json"
+LLM_PATH = BASE_DIR / "mturk_results/gpt-5-twelve_article_annotations.json"
+GOLD_PATH = BASE_DIR / "mturk_results/v3_2nd_hit_gold_standard_output.json"
 # GOLD_PATH = BASE_DIR / "mturk_results/gold_standard_output.json"
 
 # ------------------------
@@ -26,10 +26,8 @@ def load_json(path):
 
 
 def normalize_text(text):
-    """Lowercase, remove punctuation, strip."""
-    text = text.lower()
-    text = re.sub(r"[^\w\s]", "", text)
-    return text.strip()
+    """Lowercase and strip, keep punctuation for overlap."""
+    return text.lower().strip()
 
 
 def normalize_label(label):
@@ -44,10 +42,13 @@ def tokenize(text):
 
 
 def overlap(span1, span2, min_overlap=2):
-    """Check if there are at least min_overlap shared words."""
     tokens1 = set(tokenize(span1))
     tokens2 = set(tokenize(span2))
-    return len(tokens1 & tokens2) >= min_overlap
+    # token overlap OR substring overlap
+    if len(tokens1 & tokens2) >= min_overlap:
+        return True
+    norm1, norm2 = span1.lower(), span2.lower()
+    return norm1 in norm2 or norm2 in norm1
 
 
 def match_annotation(llm_ann, gold_ann):
