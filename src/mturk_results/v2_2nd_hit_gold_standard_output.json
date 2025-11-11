@@ -12,9 +12,9 @@
   ],
   "Google's new AI can help you speak another language in your own voice": [
     {
-      "text": "no polarizing language selected",
-      "category": "No_polarizing_Language",
-      "subcategory": "No polarizing language",
+      "text": "no manipulative language selected",
+      "category": "No_Manipulative_Language",
+      "subcategory": "No manipulative language",
       "confidence": 1.0,
       "num_supporters": 3,
       "label_consistent": true,
@@ -23,9 +23,9 @@
   ],
   "atlanta mayor endorses joe biden for president": [
     {
-      "text": "no polarizing language selected",
-      "category": "No_polarizing_Language",
-      "subcategory": "No polarizing language",
+      "text": "no manipulative language selected",
+      "category": "No_Manipulative_Language",
+      "subcategory": "No manipulative language",
       "confidence": 1.0,
       "num_supporters": 3,
       "label_consistent": true,
@@ -46,36 +46,27 @@
       "text": "no polarizing language selected",
       "category": "No_Polarizing_Language",
       "subcategory": "No polarizing language",
-      "confidence": 0.33,
-      "num_supporters": 1,
-      "label_consistent": true,
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
       "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
     },
     {
-      "text": "We will do whatever it takes to win",
+      "text": "we will do whatever it takes to win",
       "category": "Persuasive_Propaganda",
       "subcategory": "Slogans",
-      "confidence": 0.33,
-      "num_supporters": 1,
-      "label_consistent": true,
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
       "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
     },
     {
-      "text": "he'll be able to find common ground on some issues with the Democrats who control the legislature",
+      "text": "hell be able to find common ground on some issues with the democrats who control the legislature",
       "category": "Persuasive_Propaganda",
       "subcategory": "Causal Oversimplification",
-      "confidence": 0.33,
-      "num_supporters": 1,
-      "label_consistent": true,
-      "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
-    },
-    {
-      "text": "ew state senator for the 10th District. Local Democratic committeemen, including Martwick himself, selected him to replace former Sen. John Mulroe, a Chicago Democrat who stepped down earlier this month after being appointed a Cook County judge.",
-      "category": "Inflammatory_Language",
-      "subcategory": "Name-Calling",
-      "confidence": 0.33,
-      "num_supporters": 1,
-      "label_consistent": true,
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
       "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
     }
   ],
@@ -84,9 +75,9 @@
       "text": "no polarizing language selected",
       "category": "No_Polarizing_Language",
       "subcategory": "No polarizing language",
-      "confidence": 0.33,
-      "num_supporters": 1,
-      "label_consistent": true,
+      "confidence": 1.0,
+      "num_supporters": 3,
+      "label_consistent": false,
       "title": "Frozen sperm bank could be set up in space, study suggests"
     },
     {
@@ -115,13 +106,58 @@
       "num_supporters": 1,
       "label_consistent": true,
       "title": "Frozen sperm bank could be set up in space, study suggests"
+    },
+    {
+      "text": "The researchers used sperm from 10 healthy donors, exposing some of the samples to microgravity using a small aerobatic aircraft.",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Bandwagon",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "Frozen sperm bank could be set up in space, study suggests"
+    },
+    {
+      "text": "The lack of differences observed in the sperm characteristics between frozen samples exposed to microgravity and those maintained in ground conditions open the possibility of safely transporting male gametes to space and considering the possibility of creating a human sperm bank outside of Earth,",
+      "category": "Inflammatory_Language",
+      "subcategory": "Demonization",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "Frozen sperm bank could be set up in space, study suggests"
     }
   ],
   "phoenix chief says police response to incident with 4-year-old is 'unacceptable'": [
     {
-      "text": "Phoenix Police Chief Jeri Williams apologized for her department's handling of an alleged shoplifting incident involving a 4-year-old girl and her parents , saying Sunday the confrontation that was captured on video was \"unacceptable.\" \"What we saw in that video isn't in keeping with good policing,\" Williams said in an interview with NBC affiliate KPNX . \"This is not what should have happened in that circumstance.\" The child's parents, Dravon Ames and Iesha Harper, filed notice of a $10 million claim last week over the incident, which occurred on May 29 after the couple said they realized their daughter had taken a doll from a dollar store. Video showed officers appearing to push and kick a handcuffed man believed to be Ames and handcuffing Harper, who is pregnant, after an unidentified woman came to take care of the couples' two young daughters. At one point, an officer screams at Ames and says: \"\"When I tell you to do something, you f------ do it!\" The officers then pick up Ames who apologizes and appears to be complying and throws him against a police vehicle. The couple and authorities offered different accounts of what happened before the confrontation. Ames and Harper said they were driving their girls to a babysitter when police approached them in an apartment complex parking lot. Williams said Sunday that they fled from police after a Family Dollar manager alerted authorities to \"adults\" stealing from the store. In a police report, officers said the girl took a boxed doll, while Ames took a pair of underwear and a woman who'd been with the couple at the dollar store also allegedly stole something. Once the car was parked, the report says, Ames allegedly reached toward the car's center console and yelled that he hadn't done anything wrong. Williams said Sunday that police \"shouldn't have reacted the way that we reacted.\" Williams said that the officers who appeared in the video were placed on desk duty. An internal investigation was looking at discrepancies between the police report that documented the incident and the cell phone video that showed the confrontation. On Saturday, Ames told Al Sharpton on MSNBC that he was glad the incident was caught on video by a bystander so people could see how he and his family were treated. \"I felt like I did everything I could to show the officer that I was complying,\" he said, adding that the experience was traumatizing for him and his young children. \"I looked the barrel in the eyes, my kids looked the barrel in the eyes.",
+      "text": "traumatizing for him and his young children",
       "category": "Persuasive_Propaganda",
       "subcategory": "Slogans",
+      "confidence": 1.0,
+      "num_supporters": 3,
+      "label_consistent": false,
+      "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+    },
+    {
+      "text": "i thought they were gonna start shooting",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
+      "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+    },
+    {
+      "text": "I have seen in the video\" and \"I am deeply sorry for what this family went through.\" The mayor vowed to speed up i",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Bandwagon",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+    },
+    {
+      "text": "this is one of the most insane attacks on a black family, or any family, that I've ever seen law enforcement engage in.",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
       "confidence": 0.33,
       "num_supporters": 1,
       "label_consistent": true,
@@ -146,6 +182,42 @@
       "num_supporters": 1,
       "label_consistent": true,
       "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+    },
+    {
+      "text": "told the company that the facility was \"infeasible.\" Seroka didn't provide a reason for ending the agreement,",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Casual Oversimplification",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+    },
+    {
+      "text": "unexpected curveball thrown at us",
+      "category": "Inflammatory_Language",
+      "subcategory": "Demonization",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+    },
+    {
+      "text": "they [ILWU] run the Port",
+      "category": "Inflammatory_Language",
+      "subcategory": "Demonization",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+    },
+    {
+      "text": "stymied by a single entity",
+      "category": "Inflammatory_Language",
+      "subcategory": "Demonization",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "port of l.a. sued after canceling agreement for a shipping container facility"
     }
   ],
   "get these trending washington restaurants on your radar today": [
@@ -156,6 +228,51 @@
       "confidence": 0.5,
       "num_supporters": 2,
       "label_consistent": false,
+      "title": "get these trending washington restaurants on your radar today"
+    },
+    {
+      "text": "Washington's buzziest local spots",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "get these trending washington restaurants on your radar today"
+    },
+    {
+      "text": "Astoria DC bagged a staggering 141.7% increase",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "get these trending washington restaurants on your radar today"
+    },
+    {
+      "text": "Rooster & Owl Columbia Heights' Rooster & Owl is also making waves",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "get these trending washington restaurants on your radar today"
+    },
+    {
+      "text": "Read on to see which spots are riding a trend, right now.",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Bandwagon",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "get these trending washington restaurants on your radar today"
+    },
+    {
+      "text": "increased its new review count by 16.7% over the past month",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
       "title": "get these trending washington restaurants on your radar today"
     }
   ],
@@ -195,6 +312,24 @@
       "num_supporters": 1,
       "label_consistent": true,
       "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+    },
+    {
+      "text": "family's breadwinner",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Slogans",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+    },
+    {
+      "text": "he pictures and footage only scratch the surface",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
     }
   ],
   "Four top residencies now offered to local artists, thanks to Oolite": [
@@ -215,6 +350,15 @@
       "num_supporters": 1,
       "label_consistent": true,
       "title": "Four top residencies now offered to local artists, thanks to Oolite"
+    },
+    {
+      "text": "No polarizing language selected",
+      "category": "No_Polarizing_Language",
+      "subcategory": "no polarizing language",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "Four top residencies now offered to local artists, thanks to Oolite"
     }
   ],
   "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite": [
@@ -226,24 +370,42 @@
       "num_supporters": 1,
       "label_consistent": true,
       "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+    },
+    {
+      "text": "did have residents of nearby trona calif worrying about their towns future",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
+      "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+    },
+    {
+      "text": "Authorities are investigating whether the death of a man 95 miles away in Pahrump, Nev., was tied to the earthquake.",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Doubt",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
     }
   ],
   "Ex-Posen mayor pleads guilty to embezzling village funds": [
     {
-      "text": "ill-gotten gains to gamble at casinos in Joliet",
+      "text": "illgotten gains to gamble at casinos in joliet",
       "category": "Persuasive_Propaganda",
       "subcategory": "Exaggeration",
-      "confidence": 0.33,
-      "num_supporters": 1,
-      "label_consistent": true,
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
       "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
     },
     {
-      "text": "No polarizing language selected",
+      "text": "no polarizing language selected",
       "category": "No_Polarizing_Language",
       "subcategory": "no polarizing language",
-      "confidence": 0.33,
-      "num_supporters": 1,
+      "confidence": 0.67,
+      "num_supporters": 2,
       "label_consistent": true,
       "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
     },
@@ -257,9 +419,18 @@
       "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
     },
     {
-      "text": "ce. Schupek is scheduled to be sentenced Sept. 12. Posen's current mayor Frank Podbielniak did not immediately respond to a request for comment on Schupek. Podbielniak said at the time of Schupek's arrest in January that he learned of possible embezzlement shortly after taking office in May 2017 and immediately reported it the FBI.",
+      "text": "used the ill-gotten gains",
       "category": "Persuasive_Propaganda",
-      "subcategory": "Bandwagon",
+      "subcategory": "Slogans",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+    },
+    {
+      "text": "entered the plea due to the facts of the case and his health situation",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Casual Oversimplification",
       "confidence": 0.33,
       "num_supporters": 1,
       "label_consistent": true,
@@ -271,17 +442,17 @@
       "text": "banned most petrol and diesel cars",
       "category": "Persuasive_Propaganda",
       "subcategory": "Doubt",
-      "confidence": 0.33,
-      "num_supporters": 1,
-      "label_consistent": true,
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
       "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
     },
     {
-      "text": "No polarizing language selected",
+      "text": "no polarizing language selected",
       "category": "No_Polarizing_Language",
       "subcategory": "no polarizing language",
-      "confidence": 0.33,
-      "num_supporters": 1,
+      "confidence": 1.0,
+      "num_supporters": 3,
       "label_consistent": true,
       "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
     },
@@ -289,15 +460,6 @@
       "text": "Donald Trump's rollback of environmental policies",
       "category": "Persuasive_Propaganda",
       "subcategory": "Exaggeration",
-      "confidence": 0.33,
-      "num_supporters": 1,
-      "label_consistent": true,
-      "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
-    },
-    {
-      "text": "conservative People's Party suspended fines on cars entering the currently restricted area of around five sq km (two sq miles) from July 1, while it reviews the plan to make it \"compatible with citizens' mobility needs\". \"As far as I know at the European level there's no precedent in ending a car traffic restriction,\" said Lara Lazaro, researcher of the Real Instituto Elcano. The European Commission has warned Spain that it wou",
-      "category": "Inflammatory_Language",
-      "subcategory": "Name-Calling",
       "confidence": 0.33,
       "num_supporters": 1,
       "label_consistent": true,
@@ -313,6 +475,15 @@
       "num_supporters": 5,
       "label_consistent": false,
       "title": "rosemount recreation center plan gets positive response so far"
+    },
+    {
+      "text": "The number of people taking part in area recreation and leisure activities is growing and there is a desire for more fitness spaces",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Bandwagon",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "rosemount recreation center plan gets positive response so far"
     }
   ],
   "Missouri's only abortion clinic to remain open after judge's injunction holds": [
@@ -320,8 +491,8 @@
       "text": "no polarizing language selected",
       "category": "No_Polarizing_Language",
       "subcategory": "no polarizing language",
-      "confidence": 0.5,
-      "num_supporters": 2,
+      "confidence": 1.0,
+      "num_supporters": 3,
       "label_consistent": false,
       "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
     },
