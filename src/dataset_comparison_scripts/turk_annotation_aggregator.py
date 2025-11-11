@@ -8,8 +8,8 @@ from collections import defaultdict, Counter
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/mturkhit2.json")
-OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/v2_2nd_hit_gold_standard_output.json")
+INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/11-9HIT.json")
+OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/v3_2nd_hit_gold_standard_output.json")
 
 # ------------------------
 # Constants
@@ -35,12 +35,12 @@ STOP_WORDS = {
 # Text Utility Functions
 # ------------------------
 def normalize(text):
-    text = text.lower()
-    text = re.sub(r'[^\w\s]', '', text)
-    return text.strip()
+    # keep all characters, only lowercase and strip whitespace
+    return text.lower().strip()
 
 def tokenize(text):
-    return normalize(text).split()
+    # split only on whitespace, don't remove punctuation
+    return text.lower().split()
 
 def non_stopword_overlap(span1, span2):
     tokens1 = set(tokenize(span1)) - STOP_WORDS
@@ -181,6 +181,10 @@ def build_gold_standard_with_intersection(
                 or "UNKNOWN_TITLE"
             )
 
+            # Skip if all annotators agreed on No_Polarizing_Language
+            if most_common_cat.lower().replace("_", " ") == "no polarizing language" and label_consistent and num_supporters == 3:
+                continue
+
             gold_standard[article_id].append({
                 "text": text,
                 "category": most_common_cat,
@@ -201,8 +205,8 @@ def process_annotation_file(input_path, output_path):
     from collections import defaultdict
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    input_path = os.path.join(base_dir, "../mturk_results/mturkhit2.json")
-    output_path = os.path.join(base_dir, "../mturk_results/v2_2nd_hit_gold_standard_output.json")
+    input_path = os.path.join(base_dir, "../mturk_results/11-9HIT.json")
+    output_path = os.path.join(base_dir, "../mturk_results/v3_2nd_hit_gold_standard_output.json")
 
     with open(input_path, "r") as f:
         raw_data = json.load(f)
@@ -255,8 +259,27 @@ def process_annotation_file(input_path, output_path):
 
     gold_standard = build_gold_standard_with_intersection(annotated_spans)
 
+    # --- Convert gold_standard dict to list-of-articles format for LLM comparison ---
+    output_list = []
+    for article_id, anns in gold_standard.items():
+        if not anns:
+            continue
+        title = anns[0].get("title", f"ARTICLE_{article_id}")
+        title = title.strip().title()
+        output_list.append({
+            "title": title,
+            "annotations": [
+                {
+                    "text": ann["text"],
+                    "category": ann["category"].replace("_", " "),
+                    "subcategory": ann["subcategory"].replace("_", " "),
+                }
+                for ann in anns
+            ]
+        })
+
     with open(output_path, "w") as f:
-        json.dump(gold_standard, f, indent=2)
+        json.dump(output_list, f, indent=2)
 
     print(f"Gold standard saved to: {output_path}")
 

@@ -1,0 +1,408 @@
+{
+  "25": [
+    {
+      "text": "mueller, who has spoken publicly only once about his work, resisted taking the witness stand, where he will face questions both from democrats eager to employ him to build a case against trump and republicans eager to argue for the president's innocence.",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 1.0,
+      "num_supporters": 3,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "473": [
+    {
+      "text": "harris, who is black, challenged biden to explain his decades-old position with respect to school desegregation, one which she characterized as being against busing. \"i did not oppose busing in america. what i opposed was busing ordered by the department of education,\" biden countered. harris, the former prosecutor turned california senator, said she didn't think the former vice president \"was a racist.\" but she criticized him for recently \"defending segregationists\" in the senate and for once opposing mandatory busing of students to desegregated public schools.",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "3": [
+    {
+      "text": "traumatizing for him and his young children",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Slogans",
+      "confidence": 1.0,
+      "num_supporters": 3,
+      "label_consistent": false,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "i thought they were gonna start shooting",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "I have seen in the video\" and \"I am deeply sorry for what this family went through.\" The mayor vowed to speed up i",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Bandwagon",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "this is one of the most insane attacks on a black family, or any family, that I've ever seen law enforcement engage in.",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "4": [
+    {
+      "text": "we need to help artists pay their rent at home while they're gone",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Bandwagon",
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "master curators and artists",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "5": [
+    {
+      "text": "A port spokesman declined to comment, citing the pending litigation",
+      "category": "Inflammatory_Language",
+      "subcategory": "Scapegoating",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "told the company that the facility was \"infeasible.\" Seroka didn't provide a reason for ending the agreement,",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Casual Oversimplification",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "unexpected curveball thrown at us",
+      "category": "Inflammatory_Language",
+      "subcategory": "Demonization",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "they [ILWU] run the Port",
+      "category": "Inflammatory_Language",
+      "subcategory": "Demonization",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "stymied by a single entity",
+      "category": "Inflammatory_Language",
+      "subcategory": "Demonization",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "10": [
+    {
+      "text": "The man was pinned under a Jeep after the vehicle fell off its jacks following the quake.",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Causal Oversimplification",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "did have residents of nearby trona, calif. worrying about their town's future",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "Authorities are investigating whether the death of a man 95 miles away in Pahrump, Nev., was tied to the earthquake.",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Doubt",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "1": [
+    {
+      "text": "we will do whatever it takes to win",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Slogans",
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "he'll be able to find common ground on some issues with the democrats who control the legislature",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Causal Oversimplification",
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "2": [
+    {
+      "text": "open the possibility of creating a human sperm bank outside of earth",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.67,
+      "num_supporters": 2,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "Sperm banks could one day be set up in space",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Slogans",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "Our best option will be to perform the experiment using real spaceflight but access is very limited,",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Doubt",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "The researchers used sperm from 10 healthy donors, exposing some of the samples to microgravity using a small aerobatic aircraft.",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Bandwagon",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "The lack of differences observed in the sperm characteristics between frozen samples exposed to microgravity and those maintained in ground conditions open the possibility of safely transporting male gametes to space and considering the possibility of creating a human sperm bank outside of Earth,",
+      "category": "Inflammatory_Language",
+      "subcategory": "Demonization",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "7": [
+    {
+      "text": "90% of missing persons cases, it doesn't end well",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "People are very negative about the police, but there are good police officers",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Slogans",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "My heart is going out for her. We should help this woman,",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Causal Oversimplification",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "family's breadwinner",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Slogans",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "he pictures and footage only scratch the surface",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "8": [
+    {
+      "text": "ill-gotten gains to gamble at casinos in joliet",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "In 1997, former Posen Mayor James Adamek Jr. pleaded guilty to stealing more than $180,000",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Doubt",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "used the ill-gotten gains",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Slogans",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "entered the plea due to the facts of the case and his health situation",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Casual Oversimplification",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "11": [
+    {
+      "text": "banned most petrol and diesel cars",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Doubt",
+      "confidence": 0.5,
+      "num_supporters": 2,
+      "label_consistent": false,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "Donald Trump's rollback of environmental policies",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "12": [
+    {
+      "text": "\"at least one incident in which patient safety was gravely compromised,\" \"failed surgical abortions in which women remained pregnant,\"",
+      "category": "Inflammatory_Language",
+      "subcategory": "Scapegoating",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "In the latest legal whiplash in the case",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "6": [
+    {
+      "text": "Washington's buzziest local spots",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "Astoria DC bagged a staggering 141.7% increase",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "Rooster & Owl Columbia Heights' Rooster & Owl is also making waves",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "Read on to see which spots are riding a trend, right now.",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Bandwagon",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    },
+    {
+      "text": "increased its new review count by 16.7% over the past month",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Exaggeration",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    }
+  ],
+  "9": [
+    {
+      "text": "The number of people taking part in area recreation and leisure activities is growing and there is a desire for more fitness spaces",
+      "category": "Persuasive_Propaganda",
+      "subcategory": "Bandwagon",
+      "confidence": 0.33,
+      "num_supporters": 1,
+      "label_consistent": true,
+      "title": "UNKNOWN_TITLE"
+    }
+  ]
+}

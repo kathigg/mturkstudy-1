@@ -1,64 +1,30 @@
 {
   "overall": {
     "article_match": {
-      "precision": 0.041,
-      "recall": 0.1,
-      "f1": 0.058,
-      "correct_matches": 3,
-      "total_llm": 74,
-      "total_gold": 30
+      "precision": 0.05,
+      "recall": 0.077,
+      "f1": 0.061,
+      "correct_matches": 39,
+      "total_llm": 784,
+      "total_gold": 504
     },
     "category_match": {
       "precision": 1.0,
       "recall": 1.0,
       "f1": 1.0,
-      "correct_matches": 3,
-      "total_matches": 3
+      "correct_matches": 39,
+      "total_matches": 39
     }
   },
   "per_article": {
-    "Four top residencies now offered to local artists, thanks to Oolite": {
+    "25 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
       "article_match": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_llm": 3,
-        "total_gold": 2
-      },
-      "category_match": {
-        "precision": 0,
-        "recall": 0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_matches": 0
-      }
-    },
-    "Frozen sperm bank could be set up in space, study suggests": {
-      "article_match": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_llm": 4,
-        "total_gold": 4
-      },
-      "category_match": {
-        "precision": 0,
-        "recall": 0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_matches": 0
-      }
-    },
-    "atlanta mayor endorses joe biden for president": {
-      "article_match": {
-        "precision": 0.091,
-        "recall": 0.5,
-        "f1": 0.154,
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
         "correct_matches": 1,
-        "total_llm": 11,
-        "total_gold": 2
+        "total_llm": 4,
+        "total_gold": 1
       },
       "category_match": {
         "precision": 1.0,
@@ -68,30 +34,13 @@
         "total_matches": 1
       }
     },
-    "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away": {
+    "25 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
       "article_match": {
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0,
         "correct_matches": 0,
-        "total_llm": 4,
-        "total_gold": 4
-      },
-      "category_match": {
-        "precision": 0,
-        "recall": 0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_matches": 0
-      }
-    },
-    "phoenix chief says police response to incident with 4-year-old is 'unacceptable'": {
-      "article_match": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_llm": 4,
+        "total_llm": 1,
         "total_gold": 1
       },
       "category_match": {
@@ -102,7 +51,7 @@
         "total_matches": 0
       }
     },
-    "rosemount recreation center plan gets positive response so far": {
+    "25 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
       "article_match": {
         "precision": 0.0,
         "recall": 0.0,
@@ -119,13 +68,30 @@
         "total_matches": 0
       }
     },
-    "get these trending washington restaurants on your radar today": {
+    "25 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.167,
+        "recall": 1.0,
+        "f1": 0.286,
+        "correct_matches": 1,
+        "total_llm": 6,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "25 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
       "article_match": {
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0,
         "correct_matches": 0,
-        "total_llm": 10,
+        "total_llm": 6,
         "total_gold": 1
       },
       "category_match": {
@@ -136,7 +102,432 @@
         "total_matches": 0
       }
     },
-    "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat": {
+    "25 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.091,
+        "recall": 1.0,
+        "f1": 0.167,
+        "correct_matches": 1,
+        "total_llm": 11,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "25 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "article_match": {
+        "precision": 0.333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "correct_matches": 1,
+        "total_llm": 3,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "25 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "25 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "25 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "25 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 1.0,
+        "f1": 0.182,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "25 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 1.0,
+        "f1": 0.182,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "473 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "correct_matches": 1,
+        "total_llm": 4,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "473 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "473 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 2,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "473 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.167,
+        "recall": 1.0,
+        "f1": 0.286,
+        "correct_matches": 1,
+        "total_llm": 6,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "473 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "473 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.091,
+        "recall": 1.0,
+        "f1": 0.167,
+        "correct_matches": 1,
+        "total_llm": 11,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "473 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "article_match": {
+        "precision": 0.333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "correct_matches": 1,
+        "total_llm": 3,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "473 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "473 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "473 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "473 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 1.0,
+        "f1": 0.182,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "473 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 1.0,
+        "f1": 0.182,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "3 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.25,
+        "recall": 0.25,
+        "f1": 0.25,
+        "correct_matches": 1,
+        "total_llm": 4,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "3 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "3 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.333,
+        "correct_matches": 1,
+        "total_llm": 2,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "3 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.167,
+        "recall": 0.25,
+        "f1": 0.2,
+        "correct_matches": 1,
+        "total_llm": 6,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "3 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "3 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.091,
+        "recall": 0.25,
+        "f1": 0.133,
+        "correct_matches": 1,
+        "total_llm": 11,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "3 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
       "article_match": {
         "precision": 0.333,
         "recall": 0.25,
@@ -153,13 +544,13 @@
         "total_matches": 1
       }
     },
-    "Protest in Madrid as conservatives suspend ban on most polluting cars": {
+    "3 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
       "article_match": {
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0,
         "correct_matches": 0,
-        "total_llm": 10,
+        "total_llm": 1,
         "total_gold": 4
       },
       "category_match": {
@@ -170,14 +561,14 @@
         "total_matches": 0
       }
     },
-    "Google's new AI can help you speak another language in your own voice": {
+    "3 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
       "article_match": {
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0,
         "correct_matches": 0,
-        "total_llm": 5,
-        "total_gold": 1
+        "total_llm": 1,
+        "total_gold": 4
       },
       "category_match": {
         "precision": 0,
@@ -187,13 +578,64 @@
         "total_matches": 0
       }
     },
-    "port of l.a. sued after canceling agreement for a shipping container facility": {
+    "3 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
       "article_match": {
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0,
         "correct_matches": 0,
-        "total_llm": 5,
+        "total_llm": 1,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "3 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 0.25,
+        "f1": 0.143,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "3 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 0.25,
+        "f1": 0.143,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "4 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 4,
         "total_gold": 2
       },
       "category_match": {
@@ -204,7 +646,568 @@
         "total_matches": 0
       }
     },
-    "Missouri's only abortion clinic to remain open after judge's injunction holds": {
+    "4 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "4 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 2,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "4 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "4 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "4 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 11,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "4 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 3,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "4 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "4 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "4 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "4 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "4 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "5 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 4,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "5 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "5 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 2,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "5 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "5 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "5 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 11,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "5 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 3,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "5 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "5 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "5 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "5 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "5 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "10 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 4,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "10 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "10 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 2,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "10 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "10 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.167,
+        "recall": 0.333,
+        "f1": 0.222,
+        "correct_matches": 1,
+        "total_llm": 6,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "10 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 11,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "10 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "10 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "10 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "10 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "10 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
       "article_match": {
         "precision": 0.0,
         "recall": 0.0,
@@ -221,13 +1224,1492 @@
         "total_matches": 0
       }
     },
-    "Mueller agrees to testify before 2 House panels next month": {
+    "10 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 0.333,
+        "f1": 0.154,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "1 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.25,
+        "recall": 0.5,
+        "f1": 0.333,
+        "correct_matches": 1,
+        "total_llm": 4,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "1 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "1 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 2,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "1 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "1 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "1 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 11,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "1 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 3,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "1 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "1 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "1 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "1 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 0.5,
+        "f1": 0.167,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "1 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "2 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 4,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "2 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "2 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.5,
+        "recall": 0.2,
+        "f1": 0.286,
+        "correct_matches": 1,
+        "total_llm": 2,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "2 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "2 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.167,
+        "recall": 0.2,
+        "f1": 0.182,
+        "correct_matches": 1,
+        "total_llm": 6,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "2 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 11,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "2 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
       "article_match": {
         "precision": 0.333,
-        "recall": 1.0,
-        "f1": 0.5,
+        "recall": 0.2,
+        "f1": 0.25,
         "correct_matches": 1,
         "total_llm": 3,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "2 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "2 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "2 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "2 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "2 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 0.2,
+        "f1": 0.133,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "7 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 4,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "7 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "7 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 2,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "7 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "7 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "7 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 11,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "7 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "article_match": {
+        "precision": 0.333,
+        "recall": 0.2,
+        "f1": 0.25,
+        "correct_matches": 1,
+        "total_llm": 3,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "7 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "7 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "7 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "7 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 0.2,
+        "f1": 0.133,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "7 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "8 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 4,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "8 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "8 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 2,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "8 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "8 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.167,
+        "recall": 0.25,
+        "f1": 0.2,
+        "correct_matches": 1,
+        "total_llm": 6,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "8 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 11,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "8 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 3,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "8 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "8 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "8 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "8 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 0.25,
+        "f1": 0.143,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "8 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 0.25,
+        "f1": 0.143,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "11 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 4,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "11 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "11 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 2,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "11 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "11 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "11 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 11,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "11 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 3,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "11 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "11 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "11 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "11 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "11 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "12 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 4,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "12 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "12 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 2,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "12 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "12 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "12 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 11,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "12 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "article_match": {
+        "precision": 0.333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "correct_matches": 1,
+        "total_llm": 3,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "12 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "12 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "12 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "12 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.1,
+        "recall": 0.5,
+        "f1": 0.167,
+        "correct_matches": 1,
+        "total_llm": 10,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      }
+    },
+    "12 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "6 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 4,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "6 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "6 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 2,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "6 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "6 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "6 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.364,
+        "recall": 0.8,
+        "f1": 0.5,
+        "correct_matches": 4,
+        "total_llm": 11,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 4,
+        "total_matches": 4
+      }
+    },
+    "6 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 3,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "6 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "6 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "6 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "6 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "6 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "9 \u2194 Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 4,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "9 \u2194 Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "9 \u2194 Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.667,
+        "correct_matches": 1,
+        "total_llm": 2,
         "total_gold": 1
       },
       "category_match": {
@@ -236,6 +2718,159 @@
         "f1": 1.0,
         "correct_matches": 1,
         "total_matches": 1
+      }
+    },
+    "9 \u2194 Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "9 \u2194 Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 6,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "9 \u2194 Get These Trending Washington Restaurants on Your Radar Today": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 11,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "9 \u2194 South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 3,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "9 \u2194 Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "9 \u2194 Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "9 \u2194 Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "9 \u2194 Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      }
+    },
+    "9 \u2194 Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 10,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
       }
     }
   }
