@@ -183,6 +183,15 @@ def build_gold_standard_with_intersection(
 
             # Skip if all annotators agreed on No_Polarizing_Language
             if most_common_cat.lower().replace("_", " ") == "no polarizing language" and label_consistent and num_supporters == 3:
+                gold_standard[article_id].append({
+                    "text": "No Polarizing Language",
+                    "category": most_common_cat,
+                    "subcategory": "None",
+                    "confidence": 1.0,
+                    "num_supporters": 3,
+                    "label_consistent": True,
+                    "title": title,
+                })
                 continue
 
             gold_standard[article_id].append({
@@ -257,7 +266,10 @@ def process_annotation_file(input_path, output_path):
                         "worker": worker_id
                     })
 
-    gold_standard = build_gold_standard_with_intersection(annotated_spans)
+    gold_standard = build_gold_standard_with_intersection(
+        annotated_spans,
+        database_record=raw_data  # pass the full MTurk file so title mapping works
+        )
 
     # --- Convert gold_standard dict to list-of-articles format for LLM comparison ---
     output_list = []
@@ -269,13 +281,16 @@ def process_annotation_file(input_path, output_path):
         output_list.append({
             "title": title,
             "annotations": [
-                {
-                    "text": ann["text"],
-                    "category": ann["category"].replace("_", " "),
-                    "subcategory": ann["subcategory"].replace("_", " "),
-                }
-                for ann in anns
-            ]
+            {
+                "text": ann["text"],
+                "category": ann["category"].replace("_", " "),
+                "subcategory": ann["subcategory"].replace("_", " "),
+                "confidence": ann.get("confidence"),
+                "num_supporters": ann.get("num_supporters"),
+                "label_consistent": ann.get("label_consistent"),
+            }
+  for ann in anns
+]
         })
 
     with open(output_path, "w") as f:
