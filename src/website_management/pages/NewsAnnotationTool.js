@@ -277,7 +277,19 @@ useEffect(() => {
     const [showThankYou, setShowThankYou] = useState(false);
 
     const articleId = articles[currentArticleIndex]?.id;
-  
+
+    // Annotations for current article and paragraph-based progress
+    const annotationsForArticle = articleId ? (textAnnotations[articleId] || []) : [];
+    const paragraphsAnnotated = new Set(
+      annotationsForArticle
+        .filter((a) => a.paragraphIndex !== undefined && a.paragraphIndex !== null)
+        .map((a) => a.paragraphIndex)
+    );
+    const hasAnnotationInCurrentParagraph = paragraphsAnnotated.has(currentParagraphIndex);
+    const allParagraphsAnnotated =
+      paragraphs.length > 0 &&
+      paragraphs.every((_, idx) => paragraphsAnnotated.has(idx));
+
     const countCharacters = (text) => {
       return text.trim().length;
     };
@@ -550,6 +562,14 @@ async function logArticleUsage(index) {
 
 const handleNextArticle = async () => {
   console.log("ARTICLE LENGTH:", articles.length);
+
+  // Require at least one annotation on each paragraph before allowing submit
+  if (!allParagraphsAnnotated) {
+    alert("Please make at least one annotation on each paragraph before submitting.");
+    return;
+  }
+
+  // Also ensure the user has stepped through all paragraphs
   if (hasMoreParagraphs) {
     alert("Please read and annotate each paragraph before submitting the article.");
     return;
@@ -1060,7 +1080,7 @@ const handleNextArticle = async () => {
                     </Card>
                 )}
 
-                {hasMoreParagraphs && (
+                {hasMoreParagraphs && hasAnnotationInCurrentParagraph && (
                   <div className="mt-4 flex justify-center">
                     <Button
                       onClick={handleUnlockNextParagraph}
@@ -1221,9 +1241,11 @@ const handleNextArticle = async () => {
 </Button>
           </div>
         ) : (
-          <div className="mt-6">
-            <Button onClick={handleNextArticle} className="bg-blue-500">Submit</Button>
-          </div>
+          allParagraphsAnnotated && (
+            <div className="mt-6">
+              <Button onClick={handleNextArticle} className="bg-blue-500">Submit</Button>
+            </div>
+          )
         )}
             </div>
 
