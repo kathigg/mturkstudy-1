@@ -45,7 +45,7 @@ function IntroScreen({ onDone }) {
         <h1 className="text-2xl font-bold text-center mb-4">
           Video Tool Guide (Please watch before continuing)
         </h1>
-
+        
         <video
           ref={videoRef}
           src={instructionVid}
@@ -1039,7 +1039,7 @@ const handleNextArticle = async () => {
 </div>
                 
                 <h3 className="text-lg font-bold mb-2">Video Tool Guide</h3>
-                <video
+                { <video
                         src={instructionVid}
                         controls
                         autoPlay
@@ -1049,7 +1049,7 @@ const handleNextArticle = async () => {
                         height="300"
                         className="block mx-auto"
                       />
-            
+             }
                 <Button onClick={() => 
                   setShowRightInstructions(false)} className="bg-gray-600 text-white w-full">Close Guide</Button>
             </div>
@@ -1254,7 +1254,7 @@ const handleNextArticle = async () => {
 <div className={`w-1/4 p-4 bg-blue transition-all duration-300 ${showRightInstructions ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"}`}>
     <h3 className="text-lg font-bold mb-3">Instructions</h3>
     <p className="text-sm ml-3 text-left">
-    You will annotate <strong>3 news articles</strong>. For each article, please follow these steps:
+    You will annotate <strong>1 news article</strong>. Please follow these steps for each paragraph:
   </p>
   <div className="h-4 text-left" />
   <div className="h-4 text-left" />
@@ -1272,11 +1272,11 @@ const handleNextArticle = async () => {
     </li>
     <div className="h-3" />
     <li>
-      Click <strong>"Next Article"</strong> to complete the brief post-article survey.
+      Click <strong>"Submit & show next paragraph"</strong> to move to the next paragraph.
     </li>
     <div className="h-3" />
     <li>
-      Select <strong>"Submit Survey and Load Next Article"</strong> to move on to the next article.
+      After making at least 1 annotation per paragraph select <strong>"Submit"</strong> to move on to the post-annotation survey.
     </li>
     <div className="h-3" />
   </ul>
