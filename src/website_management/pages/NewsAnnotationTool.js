@@ -215,6 +215,12 @@ function ToolMain() {
     const [showRightInstructions, setShowRightInstructions] = useState(true);
     const [wordCount, setWordCount] = useState(0);
     const [selectedIdx, setSelectedIdx] = useState(null);
+    const [currentParagraphIndex, setCurrentParagraphIndex] = useState(0);
+    const [selectionParagraphIndex, setSelectionParagraphIndex] = useState(null);
+
+    const currentArticle = articles[currentArticleIndex];
+    const paragraphs = currentArticle ? paragraphAdd(currentArticle.content) : [];
+    const hasMoreParagraphs = currentArticle ? currentParagraphIndex < paragraphs.length - 1 : false;
 
 
     const handleCategoryButtonClick = (categoryKey) => {
@@ -251,6 +257,12 @@ useEffect(() => {
   return () => document.removeEventListener("selectionchange", handleSelectionChange);
 }, []);
 
+    useEffect(() => {
+      setCurrentParagraphIndex(0);
+      setSelectionParagraphIndex(null);
+      setSelectedText("");
+    }, [currentArticleIndex]);
+
     const categoryOptions = {
       Persuasive_Propaganda: ["Exaggeration", "Slogans", "Bandwagon", "Casual Oversimplification", "Doubt"],
       Inflammatory_Language: ["Demonization", "Name-Calling", "Scapegoating"],
@@ -285,7 +297,8 @@ const autoSaveAnnotation = (category, subcategory) => {
           { title: articles[currentArticleIndex]?.title || "", 
             text: textToSave, 
             category, 
-            subcategory },
+            subcategory,
+            paragraphIndex: selectionParagraphIndex ?? currentParagraphIndex },
         ],
       }));
       
@@ -537,6 +550,10 @@ async function logArticleUsage(index) {
 
 const handleNextArticle = async () => {
   console.log("ARTICLE LENGTH:", articles.length);
+  if (hasMoreParagraphs) {
+    alert("Please read and annotate each paragraph before submitting the article.");
+    return;
+  }
   if (articles.length > 1) {
     return;
   }
@@ -639,10 +656,34 @@ const handleNextArticle = async () => {
         alert(`Article labeled as: ${label}`);
     };
 
-    const handleTextSelection = () => {
+    const handleTextSelection = (paragraphIndex = null) => {
         const selection = window.getSelection();
-        if (selection.toString().trim() !== "") {
-            setSelectedText(selection.toString().trim());
+        const text = selection.toString().trim();
+        if (text !== "") {
+            setSelectedText(text);
+            setSelectionParagraphIndex(paragraphIndex);
+        }
+    };
+
+    const handleUnlockNextParagraph = () => {
+        const articleId = articles[currentArticleIndex]?.id;
+        if (!articleId) return;
+
+        const annotationsForArticle = textAnnotations[articleId] || [];
+
+        const hasAnnotationInCurrentParagraph = annotationsForArticle.some(
+            (a) => a.paragraphIndex === currentParagraphIndex
+        );
+
+        if (!hasAnnotationInCurrentParagraph) {
+            alert("Please make at least one annotation in this paragraph before moving on.");
+            return;
+        }
+
+        if (currentParagraphIndex < paragraphs.length - 1) {
+            setCurrentParagraphIndex((prev) => prev + 1);
+            setSelectedText("");
+            setSelectionParagraphIndex(null);
         }
     };
 
@@ -798,6 +839,7 @@ const handleNextArticle = async () => {
                               text: "No polarizing language selected",
                               category: "No_Polarizing_Language",
                               subcategory: "no polarizing language",
+                              paragraphIndex: currentParagraphIndex,
                             },
                           ],
                         }));
@@ -1005,13 +1047,28 @@ const handleNextArticle = async () => {
                             {titleCapitalization(articles[currentArticleIndex]?.title)}
                         </h2>
                         <CardContent>
-                        {paragraphAdd(articles[currentArticleIndex]?.content).map((para, idx) => (
-  <p key={idx} className="text-gray-700 mb-4" onMouseUp={handleTextSelection}>
+                        {paragraphs.slice(0, currentParagraphIndex + 1).map((para, idx) => (
+  <p
+    key={idx}
+    className="text-gray-700 mb-4"
+    onMouseUp={() => handleTextSelection(idx)}
+  >
     {para}
   </p>
 ))}
                         </CardContent>
                     </Card>
+                )}
+
+                {hasMoreParagraphs && (
+                  <div className="mt-4 flex justify-center">
+                    <Button
+                      onClick={handleUnlockNextParagraph}
+                      className="bg-gray-800 text-white"
+                    >
+                      Submit &amp; show next paragraph
+                    </Button>
+                  </div>
                 )}
 
                 {/* Annotation Buttons */}
