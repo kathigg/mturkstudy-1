@@ -7,7 +7,9 @@ from collections import defaultdict
 # Paths for JSON files
 # ------------------------
 BASE_DIR = Path(__file__).resolve().parent.parent
-LLM_PATH = BASE_DIR / "mturk_results/gpt-5-twelve_article_annotations.json"
+# LLM_PATH = BASE_DIR / "dataset_comparison_scripts/LLM_Commitee_test_2.json"
+# LLM_PATH = BASE_DIR / "mturk_results/gpt-5-twelve_article_annotations.json"
+LLM_PATH = BASE_DIR / "dataset_comparison_scripts/Consensus_Annotations.json"
 GOLD_PATH = BASE_DIR / "mturk_results/v3_2nd_hit_gold_standard_output.json"
 # GOLD_PATH = BASE_DIR / "mturk_results/gold_standard_output.json"
 
