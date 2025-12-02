@@ -8,8 +8,8 @@ from collections import defaultdict, Counter
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/11-9HIT.json")
-OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/v3_2nd_hit_gold_standard_output.json")
+INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/11-20HIT.json")
+OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/11-20_hit_gold_standard_output.json")
 
 # ------------------------
 # Constants
@@ -213,10 +213,6 @@ def process_annotation_file(input_path, output_path):
     import os, json
     from collections import defaultdict
 
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    input_path = os.path.join(base_dir, "../mturk_results/11-9HIT.json")
-    output_path = os.path.join(base_dir, "../mturk_results/v3_2nd_hit_gold_standard_output.json")
-
     with open(input_path, "r") as f:
         raw_data = json.load(f)
 
@@ -293,10 +289,10 @@ def process_annotation_file(input_path, output_path):
 ]
         })
 
-    with open(output_path, "w") as f:
+    with open(OUTPUT_FILE, "w") as f:
         json.dump(output_list, f, indent=2)
 
-    print(f"Gold standard saved to: {output_path}")
+    print(f"Gold standard saved to: {OUTPUT_FILE}")
 
 # ------------------------
 # Execute
