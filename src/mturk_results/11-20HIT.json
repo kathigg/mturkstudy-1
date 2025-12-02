@@ -1,0 +1,3756 @@
+{
+  "-OWb9bC1LMEZ4EN7Co9w": {
+    "articleTitles": [
+      {
+        "id": 25,
+        "title": "Mueller agrees to testify before 2 House panels next month"
+      },
+      {
+        "id": 125,
+        "title": "Google's new AI can help you speak another language in your own voice"
+      },
+      {
+        "id": 473,
+        "title": "atlanta mayor endorses joe biden for president"
+      }
+    ],
+    "completionCode": "MTURK-ULKCY3",
+    "surveyResponses": {
+      "25": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "I tagged the selected text as containing no flame rhetoric or persuasive propaganda because it presents the information in a neutral, fact-based, and balanced manner. Here’s what made it stand out:\n\nTone and Language:\nThe article uses measured, professional language without emotional exaggeration, slurs, or sarcasm. Phrases like “resisted taking the witness stand” and “subpoenas compelling Mueller to appear” describe events plainly, not provocatively.\n\nBalanced Presentation of Political Sides:\nIt fairly represents both Democratic and Republican perspectives. For example:\n\n“Democrats eager to employ him to build a case…”\n\n“Republicans eager to argue for the president’s innocence…”\nThis dual mention avoids the bias typical of propaganda.\n\nFactual Structure:\nThe passage sticks to verifiable details—dates, names, official actions (like subpoenas), and historical context (Mueller's past public silence). There’s no use of emotionally charged or misleading phrasing.\n\nNo Call to Action or Manipulation:\nPropaganda often includes persuasive devices, like appeals to fear, nationalism, or morality. This excerpt lacks such cues and instead reads like informational reporting."
+      },
+      "125": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "The article is a straightforward tech report on Google’s new AI tool, Translatotron. It uses neutral, factual language to explain what the tool does, how it works, and what limitations it currently has. There is no emotionally charged language, no exaggeration of the tool’s capabilities, and no attempts to influence the reader’s opinion. The only personal remark—“I, for one, am looking forward to trying it out though”—is mild and clearly framed as subjective, without being persuasive. These characteristics made it clear that the article contains no flame rhetoric or propaganda."
+      },
+      "473": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "The article maintains a neutral and factual tone throughout. It presents direct quotes from Kamala Harris and Joe Biden, clearly attributing statements and describing their debate exchange without using emotionally charged language. It does not attempt to persuade the reader or distort facts. Instead, it reports political developments, including an endorsement and a policy dispute, in a straightforward and balanced way. The article includes both criticism and defense, offers context for the reader, and avoids manipulative rhetoric. This transparency and even-handed reporting made the tagging decision clear."
+      }
+    },
+    "textAnnotations": {
+      "25": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "WASHINGTON Robert S. Mueller III, the special counsel, will testify in public before Congress on July 17 about his investigation into Russia's election interference and possible obstruction of justice by President Trump, House Democrats announced on Tuesday night. Coming nearly three months after the release of Mueller's report, the back-to-back hearings before the House Judiciary and Intelligence committees promise to be must-see television and hold the potential to reshape the political landscape around Trump's presidency and a possible impeachment by the House. Mueller, who has spoken publicly only once about his work, resisted taking the witness stand, where he will face questions both from Democrats eager to employ him to build a case against Trump and Republicans eager to argue for the president's innocence. In the end, the two committees were forced to issue subpoenas compelling Mueller to appear. The chairmen of the panels, Representatives Jerrold Nadler of New York and Adam Schiff of California, wrote in a letter to Mueller on Tuesday that they understood he had reservations about appearing on Capitol Hill, but they were insistent he do so, anyway."
+        }
+      ],
+      "125": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        }
+      ],
+      "473": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        }
+      ]
+    },
+    "timestamp": "2025-08-01T19:44:52.028Z"
+  },
+  "-OWbH3baup4kHhvXrnUw": {
+    "articleTitles": [
+      {
+        "id": 25,
+        "title": "Mueller agrees to testify before 2 House panels next month"
+      },
+      {
+        "id": 125,
+        "title": "Google's new AI can help you speak another language in your own voice"
+      },
+      {
+        "id": 473,
+        "title": "atlanta mayor endorses joe biden for president"
+      }
+    ],
+    "completionCode": "MTURK-E3HPGF",
+    "surveyResponses": {
+      "25": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "This article stands out because it covers a pivotal political development: Robert Mueller's agreement to publicly testify before Congress. It highlights the tension between branches of government, the stakes for President Trump regarding possible impeachment, and the bipartisan interest in Mueller's investigation. The forced subpoenas and Mueller's reluctance to testify reflect the gravity and contentiousness of the situation. The article also signals a potentially historic moment in U.S. politics, with implications for transparency. accountability, and public trust-making it a major newsworthy event."
+      },
+      "125": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "This article stands out because it highlights a major advancement in artificial intelligence and language"
+      },
+      "473": {
+        "bias": 4,
+        "confidence": 3,
+        "openFeedback": "This article stands out because it captures a critical moment in the 2020 Democratic presidential race-Atlanta Mayor Keisha Lance Bottoms endorsing Joe Biden amid a high-stakes debate performance where his leadership and past policies were being publicly challenged. The endorsement is significant because Bottoms is a prominent Black leader whose support could help Biden connect with key voter demographics. At the same time, Kamala Harris's pointed confrontation over Biden's civil rights record adds political drama and historical weight to the moment. The clash between generations and ideologies within the party makes the story especially compelling."
+      }
+    },
+    "textAnnotations": {
+      "25": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Mueller Agrees to Testify Before 2 House Panels Next Month\nWASHINGTON Robert S. Mueller III, the special counsel, will testify in public before Congress on July 17 about his investigation into Russia's election interference and possible obstruction of justice by President Trump, House Democrats announced on Tuesday night. Coming nearly three months after the release of Mueller's report, the back-to-back hearings before the House Judiciary and Intelligence committees promise to be must-see television and hold the potential to reshape the political landscape around Trump's presidency and a possible impeachment by the House. Mueller, who has spoken publicly only once about his work, resisted taking the witness stand, where he will face questions both from Democrats eager to employ him to build a case against Trump and Republicans eager to argue for the president's innocence. In the end, the two committees were forced to issue subpoenas compelling Mueller to appear. The chairmen of the panels, Representatives Jerrold Nadler of New York and Adam Schiff of California, wrote in a letter to Mueller on Tuesday that they understood he had reservations about appearing on Capitol Hill, but they were insistent he do so, anyway.\n\n\"The American public deserves to hear directly from you about your investigation and conclusions,\" the chairmen wrote. \"We will work with you to address legitimate concerns about preserving the integrity of your work, but we expect that you will appear before our committees as scheduled.\" The White House declined to comment Tuesday night. Schiff told reporters shortly after the announcement that he expected his committee to meet privately with members of Mueller's staff after his testimony to answer additional questions. As special counsel, Mueller employed a large team of prosecutors and FBI agents whose detailed knowledge of the case could be as valuable to House investigators as Mueller's public statements. It was not immediately clear which committee Mueller would appear before first on July 17, though a copy of the subpoena issued by Nadler indicated that he was to show up before the Judiciary Committee at 9 a.m. The committee leaders have been under intense pressure from Democratic activists and their own rank-and-file members alike to secure an appearance by Mueller.\n\nBoth Nadler and Schiff initially invited the special counsel to testify voluntarily in April, but discussions proved thorny and protracted. Mueller and his team of prosecutors wanted to avoid a public spectacle, asked to limit his remarks to closed sessions with lawmakers and insisted that their 448-page report would best speak for itself. As of now, it does not appear that Mueller will participate in a hearing before the Republican-controlled Senate, where lawmakers in the majority were less insistent he appear. Nicholas Fandos is a New York Times writer."
+        }
+      ],
+      "125": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        }
+      ],
+      "473": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        },
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Atlanta Mayor Endorses Joe Biden for President\nATLANTA -- Mayor Keisha Lance Bottoms has endorsed Democrat Joe Biden for president. Bottoms was a guest of Biden's during Thursday night's Democrat debate, a debate in which some observers are calling a poor showing from the former vice president. Bottoms informed the Associated Press of her endorsement prior to her formal announcement, set for later Friday. Biden appeared with several other Democrats during Thursday night's debate, along with U.S. Sens. Bernie Sanders, Kamala Harris and Kirsten Gillibrand. Harris, who is black, challenged Biden to explain his decades-old position with respect to school desegregation, one which she characterized as being against busing. \"I did not oppose busing in America. What I opposed was busing ordered by the Department of Education,\" Biden countered. Harris, the former prosecutor turned California senator, said she didn't think the former vice president \"was a racist.\" But she criticized him for recently \"defending segregationists\" in the Senate and for once opposing mandatory busing of students to desegregated public schools.\n\nHarris described a young girl in the 1970s who boarded such buses before dramatically offering, \"That little girl was me.\" The moment was as powerful as it was unexpected, a searing line of attack against Biden, who served as vice president to the first black president. Biden entered back-to-back nights of Democratic presidential debates in Miami as the leading Democratic candidate. In deeply personal tones, Harris hammered Biden for policy choices that she suggested betrayed the spirit of the civil rights movement, if not directly opposing all it stood for. Then she really hit her stride, exhibiting the controlled force of a practiced cross-examiner. \"Do you agree today that you were wrong to oppose busing in America?\" Harris asked. A visibly angry Biden responded that his record was mischaracterized. But he was left denying Harris' comments on a technicality, saying he didn't oppose public school busing, just it being ordered by the Department of Education decrying federal intervention on the issue on behalf of states.\n\nHarris shot back, \"There are moments in history where states fail to support the civil rights of people.\" Biden offered only curt responses after that and was so flustered that he failed to lean on his time as Barack Obama's vice president seeming unsure of himself for prolonged stretches on national television. Senior advisers to Biden insisted afterward that they weren't surprised by the confrontation with Harris and were satisfied with his response in the time allowed. They noted that while he dismissed Harris' characterization of his relationship with segregationist senators in his early years in the Senate more than 45 years ago, Biden appeared to be listening while she criticized his position on busing. A total of 20 presidential candidates took the stage over the course of the two nights 10 candidates on Wednesday and another 10 on Thursday. All 10 of the candidates on Thursday's stage raised their hands when NBC's Savannah Guthrie asked if they would support providing health care for the nation's estimated 11 million undocumented immigrants.\n\nWhile touting the diversity of their party, some of the younger candidates suggested it may be time for the older generation of leaders to pass the torch, a clear dig aimed at the 76-year-old Biden. The Associated Press contributed to this report."
+        }
+      ]
+    },
+    "timestamp": "2025-08-01T20:17:27.517Z"
+  },
+  "-OWbK17Gc9NZVwzUvogS": {
+    "articleTitles": [
+      {
+        "id": 25,
+        "title": "Mueller agrees to testify before 2 House panels next month"
+      },
+      {
+        "id": 125,
+        "title": "Google's new AI can help you speak another language in your own voice"
+      },
+      {
+        "id": 473,
+        "title": "atlanta mayor endorses joe biden for president"
+      }
+    ],
+    "completionCode": "MTURK-T4EZNU",
+    "surveyResponses": {
+      "25": {
+        "bias": 2,
+        "confidence": 4,
+        "openFeedback": "The language is crafted to create a sense of drama and political maneuvering rather than a straightforward description of a political process, which is a common tactic in persuasive propaganda to shape reader perception."
+      },
+      "125": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "Google AI blog post, is a straightforward explanation of the new technology's features and benefits. The language is technical and descriptive, detailing the advantages of the 'Translatotron' system over older models. It lists specific benefits like \"faster inference speed,\" \"avoiding compounding errors,\" and \"retaining the voice of the original speaker.\" "
+      },
+      "473": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "The text describes a debate exchange between Kamala Harris and Joe Biden, but it does so in a way that creates doubt about Biden's past actions and record without definitively labeling him as a racist."
+      }
+    },
+    "textAnnotations": {
+      "25": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Mueller, who has spoken publicly only once about his work, resisted taking the witness stand, where he will face questions both from Democrats eager to employ him to build a case against Trump and Republicans eager to argue for the president's innocence."
+        }
+      ],
+      "125": [
+        {
+          "category": "No_Manipulative_Language",
+          "subcategory": "No manipulative language",
+          "text": "No manipulative language selected"
+        }
+      ],
+      "473": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Doubt",
+          "text": "Harris, who is black, challenged Biden to explain his decades-old position with respect to school desegregation, one which she characterized as being against busing. \"I did not oppose busing in America. What I opposed was busing ordered by the Department of Education,\" Biden countered. Harris, the former prosecutor turned California senator, said she didn't think the former vice president \"was a racist.\" But she criticized him for recently \"defending segregationists\" in the Senate and for once opposing mandatory busing of students to desegregated public schools."
+        }
+      ]
+    },
+    "timestamp": "2025-08-01T20:30:23.759Z"
+  },
+  "-Oa5b5jGVTJcPX7FJVLP": {
+    "articleTitles": [
+      {
+        "id": 3,
+        "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+      },
+      {
+        "id": 1,
+        "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+      },
+      {
+        "id": 2,
+        "title": "Frozen sperm bank could be set up in space, study suggests"
+      }
+    ],
+    "completionCode": "MTURK-DCEQUA",
+    "surveyResponses": [
+      null,
+      {
+        "bias": 5,
+        "confidence": 4,
+        "openFeedback": " Therefore, when answering this question, emphasize your leadership skills and how they have contributed to the success of your previous roles or projects. Highlight any major achievements or accolades you have received and how they demonstrate your ability to excel in this position"
+      },
+      {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "suggests a review of a previously created content or a system, asking for the rationale behind the specific \"tagging\" (labeling or categorization) method used and what made the content or the method itself distinct or noteworthy. Without the context of what was tagged, a precise answer is impossible, but generally, one might explain that the tags were chosen for their specificity, relevance to the content's core themes, or abilit"
+      },
+      {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "specific reasons for choosing a particular tag and what made it unique or memorable compared to other possible tags. To answer this, you need to explain the logic behind your tag choice and highlight the distinctive qualities of the tagged item, perhaps by referencing specific features or context. "
+      }
+    ],
+    "textAnnotations": [
+      null,
+      [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        }
+      ],
+      [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        }
+      ],
+      [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Slogans",
+          "text": "Phoenix Police Chief Jeri Williams apologized for her department's handling of an alleged shoplifting incident involving a 4-year-old girl and her parents , saying Sunday the confrontation that was captured on video was \"unacceptable.\" \"What we saw in that video isn't in keeping with good policing,\" Williams said in an interview with NBC affiliate KPNX . \"This is not what should have happened in that circumstance.\" The child's parents, Dravon Ames and Iesha Harper, filed notice of a $10 million claim last week over the incident, which occurred on May 29 after the couple said they realized their daughter had taken a doll from a dollar store. Video showed officers appearing to push and kick a handcuffed man believed to be Ames and handcuffing Harper, who is pregnant, after an unidentified woman came to take care of the couples' two young daughters. At one point, an officer screams at Ames and says: \"\"When I tell you to do something, you f------ do it!\" The officers then pick up Ames who apologizes and appears to be complying and throws him against a police vehicle. The couple and authorities offered different accounts of what happened before the confrontation. Ames and Harper said they were driving their girls to a babysitter when police approached them in an apartment complex parking lot. Williams said Sunday that they fled from police after a Family Dollar manager alerted authorities to \"adults\" stealing from the store. In a police report, officers said the girl took a boxed doll, while Ames took a pair of underwear and a woman who'd been with the couple at the dollar store also allegedly stole something. Once the car was parked, the report says, Ames allegedly reached toward the car's center console and yelled that he hadn't done anything wrong. Williams said Sunday that police \"shouldn't have reacted the way that we reacted.\" Williams said that the officers who appeared in the video were placed on desk duty. An internal investigation was looking at discrepancies between the police report that documented the incident and the cell phone video that showed the confrontation. On Saturday, Ames told Al Sharpton on MSNBC that he was glad the incident was caught on video by a bystander so people could see how he and his family were treated. \"I felt like I did everything I could to show the officer that I was complying,\" he said, adding that the experience was traumatizing for him and his young children. \"I looked the barrel in the eyes, my kids looked the barrel in the eyes.",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        }
+      ]
+    ],
+    "timestamp": "2025-09-26T15:20:16.957Z"
+  },
+  "-Oa5bBqQ07yUY3PwGuA6": {
+    "articleTitles": [
+      {
+        "id": 5,
+        "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+      },
+      {
+        "id": 6,
+        "title": "get these trending washington restaurants on your radar today"
+      },
+      {
+        "id": 7,
+        "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+      }
+    ],
+    "completionCode": "MTURK-3SSRGV",
+    "surveyResponses": {
+      "5": {
+        "bias": 5,
+        "confidence": 4,
+        "openFeedback": "the specific tag, the context in which it was used (like a blog post, a product listing, a social media post, or a job application), and the goal of that tag (such as attracting viewers, conveying a message, or helping with search engine optimization) are needed"
+      },
+      "6": {
+        "bias": 5,
+        "confidence": 5,
+        "openFeedback": "implies an action of \"tagging\" is being referenced, which could refer to applying hashtags on social media, tagging someone in a post, or using \"tags\" in a general sense to describe unique characteristics"
+      },
+      "7": {
+        "bias": 5,
+        "confidence": 5,
+        "openFeedback": "\"Why did you tag this way? What made it stand out?\" asks about the specific reason for a tag and its unique characteristics. The term \"tag\" can refer to a keyword for social media content, a descriptive phrase for products, or an identifier on a platform"
+      }
+    },
+    "textAnnotations": {
+      "5": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        }
+      ],
+      "6": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        }
+      ],
+      "7": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T15:20:34.468Z"
+  },
+  "-Oa5bWDY9IkjS7xO5VYU": {
+    "articleTitles": [
+      {
+        "id": 10,
+        "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+      },
+      {
+        "id": 4,
+        "title": "Four top residencies now offered to local artists, thanks to Oolite"
+      },
+      {
+        "id": 5,
+        "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+      }
+    ],
+    "completionCode": "MTURK-QD35AM",
+    "surveyResponses": {
+      "4": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "It calls for action to help the artists to pay for their rent."
+      },
+      "5": {
+        "bias": 3,
+        "confidence": 2,
+        "openFeedback": "The legal issue has litigations ,it is also involved in asking the judge to overturn the decision."
+      },
+      "10": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "The man fell off makes me feel it is over simplifying the issue."
+      }
+    },
+    "textAnnotations": {
+      "4": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Bandwagon",
+          "text": "We need to help artists pay their rent at home while they're gone",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        }
+      ],
+      "5": [
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Scapegoating",
+          "text": "A port spokesman declined to comment, citing the pending litigation",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        }
+      ],
+      "10": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Causal Oversimplification",
+          "text": "The man was pinned under a Jeep after the vehicle fell off its jacks following the quake.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T15:22:11.562Z"
+  },
+  "-Oa5bXX-EEJDgnXUh0E0": {
+    "articleTitles": [
+      {
+        "id": 7,
+        "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+      },
+      {
+        "id": 2,
+        "title": "Frozen sperm bank could be set up in space, study suggests"
+      },
+      {
+        "id": 1,
+        "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+      }
+    ],
+    "completionCode": "MTURK-IWNJL6",
+    "surveyResponses": {
+      "1": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "Whatever it takes to win” looks like a  slogan. “Find common ground” makes tough politics feel . the article uses emotional lines without proof"
+      },
+      "2": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "I tagged these parts because they  sound bigger than it is and  Saying sperm banks could be in space is not real"
+      },
+      "7": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "i choose this because 90% missing cases was not explained. it made the story feel sad but i think its propaganda "
+      }
+    },
+    "textAnnotations": {
+      "1": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Slogans",
+          "text": "We will do whatever it takes to win",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Causal Oversimplification",
+          "text": "he'll be able to find common ground on some issues with the Democrats who control the legislature",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        }
+      ],
+      "2": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "open the possibility of creating a human sperm bank outside of Earth",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Slogans",
+          "text": "Sperm banks could one day be set up in space",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        }
+      ],
+      "7": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "90% of missing persons cases, it doesn't end well",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Slogans",
+          "text": "People are very negative about the police, but there are good police officers",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Causal Oversimplification",
+          "text": "My heart is going out for her. We should help this woman,",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T15:22:16.177Z"
+  },
+  "-Oa5cIFB2BgrXN7PkW56": {
+    "articleTitles": [
+      {
+        "id": 11,
+        "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+      },
+      {
+        "id": 8,
+        "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+      },
+      {
+        "id": 2,
+        "title": "Frozen sperm bank could be set up in space, study suggests"
+      }
+    ],
+    "completionCode": "MTURK-X5XJ9K",
+    "surveyResponses": {
+      "2": {
+        "bias": 4,
+        "confidence": 3,
+        "openFeedback": "The article presents a speculative future, downplaying the need for more research and the current limitations of the study, which makes it seem overly optimistic and potentially misleading."
+      },
+      "8": {
+        "bias": 4,
+        "confidence": 3,
+        "openFeedback": "The article presented a somewhat unclear and unconvincing explanation, leaving some doubts about the full context and motivations behind the events described."
+      },
+      "11": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "This news article presents information that appears to be deliberately misleading or biased, potentially manipulating the reader's understanding of the situation through selective reporting and questionable claims."
+      }
+    },
+    "textAnnotations": {
+      "2": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "open the possibility of creating a human sperm bank outside of Earth",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Doubt",
+          "text": "Our best option will be to perform the experiment using real spaceflight but access is very limited,",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        }
+      ],
+      "8": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "ill-gotten gains to gamble at casinos in Joliet",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Doubt",
+          "text": "In 1997, former Posen Mayor James Adamek Jr. pleaded guilty to stealing more than $180,000",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        }
+      ],
+      "11": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Doubt",
+          "text": "banned most petrol and diesel cars",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Donald Trump's rollback of environmental policies",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T15:25:37.266Z"
+  },
+  "-Oa5lyPdth0b9lapeN1x": {
+    "articleTitles": [
+      {
+        "id": 9,
+        "title": "rosemount recreation center plan gets positive response so far"
+      },
+      {
+        "id": 12,
+        "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+      }
+    ],
+    "completionCode": "MTURK-CUASK4",
+    "surveyResponses": {
+      "9": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "Rosemount's City Council is moving forward with a potential new recreation center, with early study results and community feedback indicating strong positive support, particularly for the growing need for more fitness spaces. The project, planned by 292 Design Group, would be an 87,000-square-foot facility costing $28.9 million and would include recreational, wellness, and community gathering areas."
+      },
+      "12": {
+        "bias": 5,
+        "confidence": 4,
+        "openFeedback": "likely asking about the use of hashtags in a social media context or the concept of a tagline or headline in branding or professional profiles"
+      }
+    },
+    "textAnnotations": {
+      "9": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        }
+      ],
+      "12": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T16:07:32.854Z"
+  },
+  "-Oa5mKZN-m_JDFdxiiUb": {
+    "articleTitles": [
+      {
+        "id": 9,
+        "title": "rosemount recreation center plan gets positive response so far"
+      }
+    ],
+    "completionCode": "MTURK-06AM2M",
+    "surveyResponses": {
+      "9": {
+        "bias": 2,
+        "confidence": 4,
+        "openFeedback": "Nothing seems to mislead as it seems for good cause and I tag this way and it is quite interesting too"
+      }
+    },
+    "textAnnotations": {
+      "9": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T16:09:27.058Z"
+  },
+  "-Oa7C11yGcl1iBK-La8T": {
+    "articleTitles": [
+      {
+        "id": 4,
+        "title": "Four top residencies now offered to local artists, thanks to Oolite"
+      },
+      {
+        "id": 12,
+        "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+      },
+      {
+        "id": 9,
+        "title": "rosemount recreation center plan gets positive response so far"
+      }
+    ],
+    "completionCode": "MTURK-LJKUGN",
+    "surveyResponses": {
+      "4": {
+        "bias": 2,
+        "confidence": 4,
+        "openFeedback": "i think that the language used was to elicit support and made the program seem much more than it is in reality. "
+      },
+      "9": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "the article is straightforward and there is nothing controversial about it at all. "
+      },
+      "12": {
+        "bias": 1,
+        "confidence": 3,
+        "openFeedback": "i think that the article was trying to present each side but was a little heavy handed. "
+      }
+    },
+    "textAnnotations": {
+      "4": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Causal Oversimplification",
+          "text": "\"But one of the biggest issues is the economics of going off the grid for five weeks. We need to help artists pay their rent at home while they're gone.",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "master curators and artists",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        }
+      ],
+      "9": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        }
+      ],
+      "12": [
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Scapegoating",
+          "text": "\"at least one incident in which patient safety was gravely compromised,\" \"failed surgical abortions in which women remained pregnant,\"",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "In the latest legal whiplash in the case",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        }
+      ]
+    },
+    "timestamp": "2025-09-26T22:45:38.995Z"
+  },
+  "-OdUCgGaUGC_BwaUOjgp": {
+    "articleTitles": [
+      {
+        "id": 11,
+        "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": {
+      "11": {
+        "bias": 1,
+        "confidence": 3,
+        "openFeedback": "The Starfield Game\nYou will be shown a field of moving dots. Most dots are moving randomly, but a portion are moving either LEFT or RIGHT.\n\nHow fast can you spot the direction of the moving dots?\n\nYour full attention will be required for this experiment.\n\nWe will start with a few practice trials to help you get familiar with the game.\n\nPress any key to continue.The Starfield Game\nYou will be shown a field of moving dots. Most dots are moving randomly, but a portion are moving either LEFT or RIGHT.\n\nHow fast can you spot the direction of the moving dots?\n\nYour full attention will be required for this experiment.\n\nWe will start with a few practice trials to help you get familiar with the game.\n\nPress any key to continue.The Starfield Game\nYou will be shown a field of moving dots. Most dots are moving randomly, but a portion are moving either LEFT or RIGHT.\n\nHow fast can you spot the direction of the moving dots?\n\nYour full attention will be required for this experiment.\n\nWe will start with a few practice trials to help you get familiar with the game.\n\nPress any key to continue.The Starfield Game\nYou will be shown a field of moving dots. Most dots are moving randomly, but a portion are moving either LEFT or RIGHT.\n\nHow fast can you spot the direction of the moving dots?\n\nYour full attention will be required for this experiment.\n\nWe will start with a few practice trials to help you get familiar with the game.\n\nPress any key to continue.The Starfield Game\nYou will be shown a field of moving dots. Most dots are moving randomly, but a portion are moving either LEFT or RIGHT.\n\nHow fast can you spot the direction of the moving dots?\n\nYour full attention will be required for this experiment.\n\nWe will start with a few practice trials to help you get familiar with the game.\n\nPress any key to continue.The Starfield Game\nYou will be shown a field of moving dots. Most dots are moving randomly, but a portion are moving either LEFT or RIGHT.\n\nHow fast can you spot the direction of the moving dots?\n\nYour full attention will be required for this experiment.\n\nWe will start with a few practice trials to help you get familiar with the game.\nThe Starfield Game\nYou will be shown a field of moving dots. Most dots are moving randomly, but a portion are moving either LEFT or RIGHT.\n\nHow fast can you spot the direction of the moving dots?\n\nYour full attention will be required for this experiment.\n\nWe will start with a few practice trials to help you get familiar with the game.\n\nPress any key to continue.\nPress any key to continue."
+      }
+    },
+    "textAnnotations": {
+      "11": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        }
+      ]
+    },
+    "timestamp": "2025-11-07T16:46:36.289Z"
+  },
+  "-OdUCrnTa5mpZM2kmBFN": {
+    "articleTitles": [
+      {
+        "id": 7,
+        "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": {
+      "7": {
+        "bias": 1,
+        "confidence": 4,
+        "openFeedback": "thousands of miles again in his car in a heartbeat:"
+      }
+    },
+    "textAnnotations": {
+      "7": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Slogans",
+          "text": "family's breadwinner",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        }
+      ]
+    },
+    "timestamp": "2025-11-07T16:47:42.102Z"
+  },
+  "-OdUCzpa0Rhn2K87jeky": {
+    "articleTitles": [
+      {
+        "id": 1,
+        "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": [
+      null,
+      {
+        "bias": 2,
+        "confidence": 2,
+        "openFeedback": "This article reads as a straightforward news report from the Chicago Tribune summarizing local political appointments and transitions. It relies primarily on factual information, such as dates, positions, salaries, quotes from key figures, and election context. The tone is neutral and informational, without emotionally charged or persuasive phrasing.\n\nThe few adjectives used (e.g., “familiar names,” “signature initiatives”) are mild and descriptive rather than loaded. Direct quotes from both Democratic and Republican figures are included, offering balanced representation of both parties without editorializing or implying judgment.\n\nThere’s no clear attempt to evoke strong emotions, push a political viewpoint, or frame individuals or parties in a negative or exaggerated way. Therefore, the article contains no noticeable inflammatory or persuasive propaganda language, and it does not exhibit bias in framing or presentation."
+      }
+    ],
+    "textAnnotations": [
+      null,
+      [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat\nJun. 29--Two familiar names will be taking on new roles representing residents of the Northwest Side and near northwest suburbs in Springfield. Robert Martwick, a Chicago Democrat who's served in the Illinois House since 2013, was sworn in Friday afternoon as the new state senator for the 10th District. Local Democratic committeemen, including Martwick himself, selected him to replace former Sen. John Mulroe, a Chicago Democrat who stepped down earlier this month after being appointed a Cook County judge. Local Republican leaders met Saturday to name Rosemont Mayor Brad Stephens to a House seat vacated by Michael McAuliffe, who had been the lone GOP state lawmaker from Chicago. McAuliffe retired June 17 after 23 years in the legislature. His father, Roger McAuliffe, held the seat for 23 years before that. Stephens, the son of longtime Rosemont Mayor Donald Stephens, was sworn in by Mulroe. Stephens said Friday that he will continue serving as mayor and will collect his legislative salary of more than $69,000 on top of his $260,000 mayoral salary.\n\nHe said he will comply with a state law prohibiting local officials from being paid by local governments for the time they're in session in Springfield. Stephens, who will represent roughly the western half of Martwick's Senate district, said he already has good working relationships with the new senator and other lawmakers. \"Over the past 12 years as the mayor, I've made several trips to the Capitol to forge relationships with members on both sides of the aisle,\" Stephens said. He said believes he'll be able to find common ground on some issues with the Democrats who control the legislature. House Republican leader Jim Durkin of Western Springs welcomed Stephens to the House. \"Brad Stephens will be able to deliver for his district on day one,\" Durkin said Saturday in a statement. \"His deep knowledge of state policy and its impact on local communities will be valuable to the Illinois state legislature and a welcome addition to the House Republican Caucus.\" Martwick this spring shepherded one of Democratic Gov.",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        }
+      ]
+    ],
+    "timestamp": "2025-11-07T16:48:16.402Z"
+  },
+  "-OdUD1XGXxins-_Ud8Yf": {
+    "articleTitles": [
+      {
+        "id": 8,
+        "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": {
+      "8": {
+        "bias": 1,
+        "confidence": 3,
+        "openFeedback": "Referenced facts and both angles of the story. No reframing or sensationalizing of opinions "
+      }
+    },
+    "textAnnotations": {
+      "8": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-07T16:48:28.861Z"
+  },
+  "-OdUDCabBqvGjLQFTLC3": {
+    "articleTitles": [
+      {
+        "id": 6,
+        "title": "get these trending washington restaurants on your radar today"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": {
+      "6": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "There seemed to be a lot of exaggerated language used to promote certain restaurants. Trying to make them sound more appealing."
+      }
+    },
+    "textAnnotations": {
+      "6": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Washington's buzziest local spots",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Astoria DC bagged a staggering 141.7% increase",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Rooster & Owl Columbia Heights' Rooster & Owl is also making waves",
+          "title": "get these trending washington restaurants on your radar today"
+        }
+      ]
+    },
+    "timestamp": "2025-11-07T16:49:12.626Z"
+  },
+  "-OdUDQuq2Lqvw-QdL_hS": {
+    "articleTitles": [
+      {
+        "id": 2,
+        "title": "Frozen sperm bank could be set up in space, study suggests"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": {
+      "2": {
+        "bias": 2,
+        "confidence": 2,
+        "openFeedback": "NA"
+      }
+    },
+    "textAnnotations": {
+      "2": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Bandwagon",
+          "text": "The researchers used sperm from 10 healthy donors, exposing some of the samples to microgravity using a small aerobatic aircraft.",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Demonization",
+          "text": "The lack of differences observed in the sperm characteristics between frozen samples exposed to microgravity and those maintained in ground conditions open the possibility of safely transporting male gametes to space and considering the possibility of creating a human sperm bank outside of Earth,",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        }
+      ]
+    },
+    "timestamp": "2025-11-07T16:50:11.353Z"
+  },
+  "-OdUDTeV7PHMoMzagMWY": {
+    "articleTitles": [
+      {
+        "id": 2,
+        "title": "Frozen sperm bank could be set up in space, study suggests"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": {
+      "2": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "It using language which generally be hidden,  and simply the language inflammatory."
+      }
+    },
+    "textAnnotations": {
+      "2": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        }
+      ]
+    },
+    "timestamp": "2025-11-07T16:50:22.505Z"
+  },
+  "-OdUDzcInUxXreMwQZS9": {
+    "articleTitles": [
+      {
+        "id": 8,
+        "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": {
+      "8": {
+        "bias": 1,
+        "confidence": 3,
+        "openFeedback": "I feel like these are the things that stood out to me as article is not overly biased"
+      }
+    },
+    "textAnnotations": {
+      "8": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Slogans",
+          "text": "used the ill-gotten gains",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Casual Oversimplification",
+          "text": "entered the plea due to the facts of the case and his health situation",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-07T16:52:36.563Z"
+  },
+  "-OdUE8k5VI9Y9up8X-u8": {
+    "articleTitles": [
+      {
+        "id": 8,
+        "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": {
+      "8": {
+        "bias": 3,
+        "confidence": 2,
+        "openFeedback": "U.S. District Judge Robert Gettleman can sentence Schupek to as many as 10 years behind bars but the former mayor's attorney said he expects the judge to impose a much lighter sentence, possibly probation. Schupek declined comment outside the courtroom Thursday after entering his guilty plea."
+      }
+    },
+    "textAnnotations": {
+      "8": [
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Scapegoating",
+          "text": "The former mayor of Posen pleaded guilty Thursday to embezzling $27,000 from village coffers during his final term in office. Donald Schupek, 79, who served three terms as mayor of the south suburb before losing a reelection bid in 2017, admitted under oath that in 2015 he had drawn checks on the village's bank account to give himself payroll advances that he never intended to deduct from future paychecks or repay. Prosecutors, who allege Schupek used the ill-gotten gains to gamble at casinos in Joliet, recommended a prison sentence of six and 12 months for the former mayor, who is in poor health and appeared in court Thursday using a wheelchair. By statute, U.S. District Judge Robert Gettleman can sentence Schupek to as many as 10 years behind bars but the former mayor's attorney said he expects the judge to impose a much lighter sentence, possibly probation. Schupek declined comment outside the courtroom Thursday after entering his guilty plea.",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-07T16:53:18.142Z"
+  },
+  "-OdUEF7SX46-Eolzhb3n": {
+    "articleTitles": [
+      {
+        "id": 9,
+        "title": "rosemount recreation center plan gets positive response so far"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": {
+      "9": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "The number of people taking part in area recreation and leisure activities is growing and there is a desire for more fitness spaces"
+      }
+    },
+    "textAnnotations": {
+      "9": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Bandwagon",
+          "text": "The number of people taking part in area recreation and leisure activities is growing and there is a desire for more fitness spaces",
+          "title": "rosemount recreation center plan gets positive response so far"
+        }
+      ]
+    },
+    "timestamp": "2025-11-07T16:53:45.330Z"
+  },
+  "-OdUG0HKX7i4xLxqsnJa": {
+    "articleTitles": [
+      {
+        "id": 3,
+        "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": {
+      "3": {
+        "bias": 2,
+        "confidence": 2,
+        "openFeedback": "It refers to an interview done on MSNBC, which is more of a left-leaning outlet. It focuses more on one side of the story and doesn't give as much of the police's side, so it feels a bit biased against the police."
+      }
+    },
+    "textAnnotations": {
+      "3": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "traumatizing for him and his young children",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "I thought they were gonna start shooting",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        }
+      ]
+    },
+    "timestamp": "2025-11-07T17:01:28.635Z"
+  },
+  "-OdUH0T9wtrAZvVBr-vl": {
+    "articleTitles": [
+      {
+        "id": 3,
+        "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": {
+      "3": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "I thought they were gonna start shooting,\" he said. Rev. Jarrett Maupin, of the Arizona chapter of\" i selected this because it has strong commands"
+      }
+    },
+    "textAnnotations": {
+      "3": [
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Name-Calling",
+          "text": "Sunday that police \"shouldn't have reacted the way that we reacted.\" Williams said that the officers who appeared in the video were placed",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Bandwagon",
+          "text": "I have seen in the video\" and \"I am deeply sorry for what this family went through.\" The mayor vowed to speed up i",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Scapegoating",
+          "text": "I thought they were gonna start shooting,\" he said. Rev. Jarrett Maupin, of the Arizona chapter of",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        }
+      ]
+    },
+    "timestamp": "2025-11-07T17:05:53.081Z"
+  },
+  "-OdUHQ0vddZiApyMB12E": {
+    "articleTitles": [
+      {
+        "id": 10,
+        "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+      }
+    ],
+    "completionCode": "",
+    "surveyResponses": {
+      "10": {
+        "bias": 1,
+        "confidence": 2,
+        "openFeedback": "There wasn't anything really concerning in the article to me. The two sentences that I picked seemed the most persuasive like they were trying to convince of something that might not be true."
+      }
+    },
+    "textAnnotations": {
+      "10": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "did have residents of nearby Trona, Calif. worrying about their town's future",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Doubt",
+          "text": "Authorities are investigating whether the death of a man 95 miles away in Pahrump, Nev., was tied to the earthquake.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        }
+      ]
+    },
+    "timestamp": "2025-11-07T17:07:35.595Z"
+  },
+  "-OdZ0wblX-3fbyOEHAMe": {
+    "articleTitles": [
+      {
+        "id": 6,
+        "title": "get these trending washington restaurants on your radar today"
+      }
+    ],
+    "code": "MTURK-LLV84K",
+    "surveyResponses": {
+      "6": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "The article was tagged primarily for Persuasive Propaganda, specifically Bandwagon, because of its overt focus on telling readers what is currently \"trending\" and \"hot.\" While the article uses data-driven analysis (review percentage increase) which gives it a veneer of objectivity, the language used is highly promotional and designed to persuade a certain action—visiting the listed restaurants."
+      }
+    },
+    "textAnnotations": {
+      "6": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Bandwagon",
+          "text": "Read on to see which spots are riding a trend, right now.",
+          "title": "get these trending washington restaurants on your radar today"
+        }
+      ]
+    },
+    "timestamp": "2025-11-08T15:13:42.647Z"
+  },
+  "-OdZ8WcAy0xp9pmg9arn": {
+    "articleTitles": [
+      {
+        "id": 1,
+        "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+      }
+    ],
+    "code": "MTURK-WGN85W",
+    "surveyResponses": [
+      null,
+      {
+        "bias": 4,
+        "confidence": 3,
+        "openFeedback": "Why did you tag this way? What specific phrases, tone choices, or examples made it stand out to you? You might reference particular sentences, framing choices, or emotional wording that influenced your decision.\nWord count: 0 (minimum 100 characters)\n\n"
+      }
+    ],
+    "textAnnotations": [
+      null,
+      [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        }
+      ]
+    ],
+    "timestamp": "2025-11-08T15:46:24.335Z"
+  },
+  "-OdZDDWGE_oTeu5v821A": {
+    "articleTitles": [
+      {
+        "id": 12,
+        "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+      }
+    ],
+    "code": "MTURK-Y1QNPR",
+    "surveyResponses": {
+      "12": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "ST. LOUIS Missouri's lone abortion clinic can still operate after a St. Louis judge on Friday kept an injunction in effect allowing it to "
+      }
+    },
+    "textAnnotations": {
+      "12": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-08T16:07:12.240Z"
+  },
+  "-OdZL7eeCQHUMueK7GmS": {
+    "articleTitles": [
+      {
+        "id": 1,
+        "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+      }
+    ],
+    "code": "MTURK-8CIJHF",
+    "surveyResponses": [
+      null,
+      {
+        "bias": 4,
+        "confidence": 3,
+        "openFeedback": "I tagged the phrase We will do whatever it takes to win as it imposes the great desire to win by any means, which may be ethical or unethical."
+      }
+    ],
+    "textAnnotations": [
+      null,
+      [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Casual Oversimplification",
+          "text": "We will do whatever it takes to win",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        }
+      ]
+    ],
+    "timestamp": "2025-11-08T16:42:02.469Z"
+  },
+  "-Odin3PP-W0suf1UfmR0": {
+    "articleTitles": [
+      {
+        "id": 3,
+        "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+      }
+    ],
+    "code": "MTURK-HAQIYD",
+    "surveyResponses": {
+      "3": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "I tagged the article this way because it contains one clear instance of Exaggeration, which is a form of polarizing language, but the overall tone of the article itself is relatively neutral and balanced, presenting multiple perspectives."
+      }
+    },
+    "textAnnotations": {
+      "3": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "this is one of the most insane attacks on a black family, or any family, that I've ever seen law enforcement engage in.",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        }
+      ]
+    },
+    "timestamp": "2025-11-10T17:24:31.060Z"
+  },
+  "-OdinRL_lRIo0sLijSom": {
+    "articleTitles": [
+      {
+        "id": 4,
+        "title": "Four top residencies now offered to local artists, thanks to Oolite"
+      }
+    ],
+    "code": "MTURK-7Q2VUV",
+    "surveyResponses": {
+      "4": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "The article was factual and contained no persuasive propaganda or any inflammatory language as far as I can see."
+      }
+    },
+    "textAnnotations": {
+      "4": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        }
+      ]
+    },
+    "timestamp": "2025-11-10T17:26:06.540Z"
+  },
+  "-Odio6FArfwwjFDQLSv1": {
+    "articleTitles": [
+      {
+        "id": 5,
+        "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+      }
+    ],
+    "code": "MTURK-W6IOCD",
+    "surveyResponses": {
+      "5": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "This statement dramatizes the impact of the setback and implies malicious intent by describing the union’s motives as “narrow,” appealing to emotion."
+      }
+    },
+    "textAnnotations": {
+      "5": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Casual Oversimplification",
+          "text": "told the company that the facility was \"infeasible.\" Seroka didn't provide a reason for ending the agreement,",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        }
+      ]
+    },
+    "timestamp": "2025-11-10T17:29:06.316Z"
+  },
+  "-Odipdhyz5JFUWMvLB4H": {
+    "articleTitles": [
+      {
+        "id": 7,
+        "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+      }
+    ],
+    "code": "MTURK-LEMFI9",
+    "surveyResponses": {
+      "7": {
+        "bias": 3,
+        "confidence": 5,
+        "openFeedback": "Why I tagged it this way:\nThe phrase “The pictures and footage only scratch the surface of the tale: wide smiles” uses emotionally heightened language and dramatic framing. It suggests that the story has a deeper emotional weight beyond what’s shown, exaggerating the emotional impact to draw in the reader. This goes beyond objective description and adds a persuasive, sentimental tone."
+      }
+    },
+    "textAnnotations": {
+      "7": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "he pictures and footage only scratch the surface",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        }
+      ]
+    },
+    "timestamp": "2025-11-10T17:35:49.822Z"
+  },
+  "-OdipktXqpKiORfoLWy_": {
+    "articleTitles": [
+      {
+        "id": 10,
+        "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+      }
+    ],
+    "code": "MTURK-L70SKH",
+    "surveyResponses": {
+      "10": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "I tagged the pharse major struggle on earthquake resident. Therefore investigating agency investigate."
+      }
+    },
+    "textAnnotations": {
+      "10": [
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Scapegoating",
+          "text": "The earthquakes were the largest to hit California in nearly 20 years and were felt as far away as Phoenix and Mexicali, Mexico. The temblors and the thousands of aftershocks that followed did not lead to major structural damage near the Ridgecrest epicenter, but did have residents of nearby Trona, Calif. worrying about their town's future. Authorities are investigating whether the death of a man 95 miles away in Pahrump, Nev., was tied to the earthquake.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        }
+      ]
+    },
+    "timestamp": "2025-11-10T17:36:18.939Z"
+  },
+  "-OdiqZycGMfn_4X41fo3": {
+    "articleTitles": [
+      {
+        "id": 11,
+        "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+      }
+    ],
+    "code": "MTURK-JEFIN9",
+    "surveyResponses": {
+      "11": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "I tagged the sentence because of the \"far-left\" part of the comment. Trump has said this so much about people who are actually very close to center in politics. Far left people are very different than the center/slightly left people who are currently being labeled far left."
+      }
+    },
+    "textAnnotations": {
+      "11": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "Last November Madrid's then far-left government banned most petrol and diesel cars from its center to tackle high levels of nitrogen dioxide.",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        }
+      ]
+    },
+    "timestamp": "2025-11-10T17:39:52.406Z"
+  },
+  "-OdiqrU5XisyOtaF-Vlm": {
+    "articleTitles": [
+      {
+        "id": 11,
+        "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+      }
+    ],
+    "code": "MTURK-5368QY",
+    "surveyResponses": {
+      "11": {
+        "bias": 3,
+        "confidence": 5,
+        "openFeedback": "This phrasing uses emotionally charged language (“raising fears,” “spreading”) to create a sense of urgency and threat. It suggests contagion or danger, which can nudge the reader to feel alarm rather than simply process the facts. The use of “may be spreading” is speculative — it implies causality or influence without concrete evidence — which is why it fits under Doubt."
+      }
+    },
+    "textAnnotations": {
+      "11": [
+        {
+          "category": "No_Polarizing_Language",
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        }
+      ]
+    },
+    "timestamp": "2025-11-10T17:41:07.398Z"
+  },
+  "-Odj1CEgCqP8xXoe4ztw": {
+    "articleTitles": [
+      {
+        "id": 6,
+        "title": "get these trending washington restaurants on your radar today"
+      }
+    ],
+    "code": "MTURK-19W3F2",
+    "surveyResponses": {
+      "6": {
+        "bias": 2,
+        "confidence": 2,
+        "openFeedback": "I feel the representation isn't accurate or using all the facts available."
+      }
+    },
+    "textAnnotations": {
+      "6": [
+        {
+          "category": "Persuasive_Propaganda",
+          "subcategory": "Exaggeration",
+          "text": "increased its new review count by 16.7% over the past month",
+          "title": "get these trending washington restaurants on your radar today"
+        }
+      ]
+    },
+    "timestamp": "2025-11-10T18:30:40.830Z"
+  },
+  "-OdjUJWBJU6IdwSyH1mP": {
+    "articleTitles": [
+      {
+        "id": 5,
+        "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+      }
+    ],
+    "code": "MTURK-M6Q0S1",
+    "surveyResponses": {
+      "5": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "I tagged the article the way I did because, while the core reporting is factual, the selection and framing of quotes from the plaintiff's lawsuit introduce a distinct inflammatory and persuasive tone. The article heavily relies on the perspective of the Harbor Performance Enhancement Center, and the most vivid, emotionally charged language comes directly from their legal complaint and their CEO's statements.\n\nSpecific phrases that stood out include the direct quote, \"they [ILWU] run the Port,\" which I tagged as inflammatory and demonizing. This is a powerful, informal accusation that suggests a single entity holds improper, undemocratic control over a public infrastructure asset. It's designed to provoke an emotional response of unfairness in the reader.\n\nFurthermore, the CEO's statement that the union's demands were an \"unexpected curveball thrown at us\" uses a vivid, informal metaphor that frames the company as the victim of an unfair tactic, injecting a sense of frustration and grievance into an otherwise factual report.\n\nFinally, the CEO's comment that the project was \"stymied by a single entity for their own narrow reasons\" is a clear example of persuasive propaganda and vilification. It simplifies a complex labor and business negotiation into a story of a virtuous \"green, job-creating project\" being blocked by a selfish, monolithic villain. This framing is intentionally one-sided, persuading the reader to sympathize with the company without presenting the union's potential justification for its demands. The article's bias lies in showcasing this persuasive language from one side without providing a counter-narrative or the union's reasoning."
+      }
+    },
+    "textAnnotations": {
+      "5": [
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Demonization",
+          "text": "unexpected curveball thrown at us",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Demonization",
+          "text": "they [ILWU] run the Port",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "subcategory": "Demonization",
+          "text": "stymied by a single entity",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        }
+      ]
+    },
+    "timestamp": "2025-11-10T20:37:53.152Z"
+  },
+  "-OeRlTISc7COobjKkV6Z": {
+    "articleTitles": [
+      {
+        "id": 4,
+        "title": "Four top residencies now offered to local artists, thanks to Oolite"
+      }
+    ],
+    "code": "MTURK-RZKCOL",
+    "surveyResponses": {
+      "4": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "There is no polarizing language."
+      }
+    },
+    "textAnnotations": {
+      "4": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:40:12.932Z"
+  },
+  "-OeRlXLKysCQRr8tIz7R": {
+    "articleTitles": [
+      {
+        "id": 3,
+        "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+      }
+    ],
+    "code": "MTURK-DS6RM9",
+    "surveyResponses": {
+      "3": {
+        "bias": 3,
+        "confidence": 2,
+        "openFeedback": "I tagged the phrase inflammatory and persuasive annotated. Some time situations are uncomfortable or unpleasant. "
+      }
+    },
+    "textAnnotations": {
+      "3": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "Phoenix Police Chief Jeri Williams apologized for her department's handling of an alleged shoplifting incident involving a 4-year-old girl and her parents",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Demonization",
+          "text": "Phoenix Mayor Kate Gallego issued a statement on Twitter Saturday saying about the incident, saying,",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:40:22.906Z"
+  },
+  "-OeRlZ0Z-77JGvzkxiFf": {
+    "articleTitles": [
+      {
+        "id": 2,
+        "title": "Frozen sperm bank could be set up in space, study suggests"
+      }
+    ],
+    "code": "MTURK-46SE5D",
+    "surveyResponses": {
+      "2": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "Content is typically \"tagged\" or flagged when it exhibits characteristics that deviate from expected human communication patterns or violate specific platform guidelines, such as being perceived as machine-generated, containing harmful content, or using overly formulaic language. "
+      }
+    },
+    "textAnnotations": {
+      "2": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "Sperm banks could one day be set up in space, scientists have predicted.",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T16:07:01.465Z"
+  },
+  "-OeRlq22Vzc5Efdf40HZ": {
+    "articleTitles": [
+      {
+        "id": 9,
+        "title": "rosemount recreation center plan gets positive response so far"
+      }
+    ],
+    "code": "MTURK-OM5UZI",
+    "surveyResponses": {
+      "9": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "The first phrase appears as a slogan, the second phrase is a general information given, third phrase has a direct annocation of crime happened."
+      }
+    },
+    "textAnnotations": {
+      "9": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Slogans",
+          "text": "WHY BUILD A REC CENTER",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "pleads guilty to being drunk in Valentine's Day crash that killed girlfriend Eagan woman pleads guilty to 2017 death of foster child in her care",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:41:47.107Z"
+  },
+  "-OeRmLT9cmcm_LhG2DYL": {
+    "articleTitles": [
+      {
+        "id": 4,
+        "title": "Four top residencies now offered to local artists, thanks to Oolite"
+      }
+    ],
+    "code": "MTURK-S8NCTC",
+    "surveyResponses": {
+      "4": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "I tagged the phrase using the given particular sentences."
+      }
+    },
+    "textAnnotations": {
+      "4": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "Miami artists have a new opportunity to superpower their careers",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "Oolite formerly known as ArtCenter South Florida will pay stipends, tuition and travel expenses under a new program,",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "We hope our artists will return to South Florida with new ideas and relationships that will further enrich their own work, and Miami's cultural community.\"",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": ". At Anderson Ranch, a dozen Miami artists will work and meet with master curators and artists in five-week residencies beginning in February 2020.",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "Also next spring, Oolite will take a dozen Miami artists to Atlantic Center for the Arts in New Smyrna Beach for a weeklong residency.",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "But one of the biggest issues is the economics of going off the grid for five weeks.",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:43:56.800Z"
+  },
+  "-OeRmO0X2T96Qp4pUYso": {
+    "articleTitles": [
+      {
+        "id": 4,
+        "title": "Four top residencies now offered to local artists, thanks to Oolite"
+      }
+    ],
+    "code": "MTURK-296RZ2",
+    "surveyResponses": {
+      "4": {
+        "bias": 2,
+        "confidence": 2,
+        "openFeedback": "Just seemed like they were tooting their own horn and trying tomake it look better then it might be"
+      }
+    },
+    "textAnnotations": {
+      "4": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "Residencies can be a defining moment in an artist's career",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "working artists are elevating their practice to a point that many of them can successfully compete for and be awarded these kinds of prestigious residencies",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:44:08.072Z"
+  },
+  "-OeRmfB_dkkSZjx71iFz": {
+    "articleTitles": [
+      {
+        "id": 11,
+        "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+      }
+    ],
+    "code": "MTURK-WT3ZS9",
+    "surveyResponses": {
+      "11": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "My underlying models are trained on vast datasets and learn to associate certain words and phrases with specific types of queries or content. For example, terms like \"specific phrases, tone choices, or examples,\" \"framing choices,\" and \"emotional wording\" are common in metacognitive or analytical queries about language, which helps categorize the prompt's subject matter"
+      }
+    },
+    "textAnnotations": {
+      "11": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:45:17.021Z"
+  },
+  "-OeRmfRKTCtFf3amq8gm": {
+    "articleTitles": [
+      {
+        "id": 12,
+        "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+      }
+    ],
+    "code": "MTURK-YQ3EXW",
+    "surveyResponses": {
+      "12": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "The tone of the news seemed to be slightly sided with the pro-abortion side, but was somewhat neutral to the story as well. I felt that it didn't come off completely biased, but was a little bit biased."
+      }
+    },
+    "textAnnotations": {
+      "12": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Bandwagon",
+          "text": "Today is a victory for women to be able to access the kind of medical care that they and their health professionals need and deserve",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "It is still very, very difficult to access abortion in Missouri because of medically unnecessary hoops and regulations",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Doubt",
+          "text": "The long-term fate of the clinic remains unclear.",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Demonization",
+          "text": "Its legal battle got even thornier this week when Planned Parenthood of the St. Louis Region",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Bandwagon",
+          "text": "multiple pelvic exams for women seeking abortion \"unwarranted.\"",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 4,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:45:23.261Z"
+  },
+  "-OeRnR2hBeBc8_oZS843": {
+    "articleTitles": [
+      {
+        "id": 2,
+        "title": "Frozen sperm bank could be set up in space, study suggests"
+      }
+    ],
+    "code": "MTURK-A8NRC7",
+    "surveyResponses": {
+      "2": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "it was connected"
+      }
+    },
+    "textAnnotations": {
+      "2": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:48:41.113Z"
+  },
+  "-OeRnpQDtmNIY1IH8tlV": {
+    "articleTitles": [
+      {
+        "id": 1,
+        "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+      }
+    ],
+    "code": "MTURK-9PN7KC",
+    "surveyResponses": [
+      null,
+      {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "I need more context to understand what \"tag\" you are referring to and how I previously processed or labeled your input. Please provide the text, query, or interaction that you believe I tagged in a certain way, and I can explain the specific elements that influenced my analysis."
+      }
+    ],
+    "textAnnotations": [
+      null,
+      [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "Jun. 29--Two familiar names will be taking on new roles representing residents of the Northwest Side and near northwest suburbs in Springfield. Robert Martwick, a",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "good working relationships with the new senator and other lawmakers. \"Over the past 12 years as the mayor, I've made several trips to the Cap",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        }
+      ]
+    ],
+    "timestamp": "2025-11-19T15:50:13.812Z"
+  },
+  "-OeRnu9_nJDX5qgV2CWr": {
+    "articleTitles": [
+      {
+        "id": 1,
+        "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+      }
+    ],
+    "code": "MTURK-JWN84C",
+    "surveyResponses": [
+      null,
+      {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "I feel like the article was on a whole not biased, but the quotes coming from the politicians created a biased point of view.  It shared a story that overall favored Democrats. "
+      }
+    ],
+    "textAnnotations": [
+      null,
+      [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Bandwagon",
+          "text": "He said believes he'll be able to find common ground on some issues with the Democrats who control the legislature",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "Brad Stephens will be able to deliver for his district on day one",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Casual Oversimplification",
+          "text": "valuable to the Illinois state legislature and a welcome addition to the House Republican Caucus",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Casual Oversimplification",
+          "text": "Mayor Lori Lightfoot, who called the proposal for a 21-member board \"unwieldy.\"",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "I look forward to sitting down with her and having a conversation in earnest",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Bandwagon",
+          "text": "We will do whatever it takes to win",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        }
+      ]
+    ],
+    "timestamp": "2025-11-19T15:50:44.583Z"
+  },
+  "-OeRny3PuDPgUx7XqJ6j": {
+    "articleTitles": [
+      {
+        "id": 6,
+        "title": "get these trending washington restaurants on your radar today"
+      }
+    ],
+    "code": "MTURK-JGAKT8",
+    "surveyResponses": {
+      "6": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "To help me understand what you're asking about, please provide the text or interaction you're referring to. Once I have that information, I can analyze the phrases, tone, or specific wording that might have influenced a particular assessment."
+      }
+    },
+    "textAnnotations": {
+      "6": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "Want the scoop on Washington's buzziest local spots? We took a data-driven look at the question, using Yelp to analyze which eateries have been most discussed this month.",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Casual Oversimplification",
+          "text": "It's not the only trending outlier in the Italian category: Stellina Pizzeria has seen a 36.7% increase in reviews, and Officina has seen a 9.4% bump. Located at 901 Fourth St.",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Demonization",
+          "text": "NW (between North Q and North Church streets) since April 2019, Astoria DC offers sweet and sour ribs, walnut shrimp and ribeye chimichurri.",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 3,
+          "subcategory": "Name-Calling",
+          "text": "The traditional American and New American spot, which opened at 99 M St. SE, Suite 100 (between South Cushing Place) in February 2019",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 4,
+          "subcategory": "Exaggeration",
+          "text": "Open for business at 625 Monroe St. NE (between North Michigan Avenue and North Kearney Street) since 2015, the business offers vegan stir fry,",
+          "title": "get these trending washington restaurants on your radar today"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:50:53.647Z"
+  },
+  "-OeRo9Jw2bZUT-jGWx2_": {
+    "articleTitles": [
+      {
+        "id": 5,
+        "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+      }
+    ],
+    "code": "MTURK-TX5JDM",
+    "surveyResponses": {
+      "5": {
+        "bias": 4,
+        "confidence": 5,
+        "openFeedback": "good"
+      }
+    },
+    "textAnnotations": {
+      "5": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "A Los Angeles company is suing the Port of L.A., claiming it improperly terminated an agreement to",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "The Board of Harbor Commissioners, who are appointed by Mayor Eric Garcetti, and the Los Angel",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Doubt",
+          "text": "The company would have to guarantee to grant the union jurisdiction and exclusive rights to provide tru",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:51:50.373Z"
+  },
+  "-OeRp1jL-PraC9ba93G_": {
+    "articleTitles": [
+      {
+        "id": 6,
+        "title": "get these trending washington restaurants on your radar today"
+      }
+    ],
+    "code": "MTURK-LFP3VS",
+    "surveyResponses": {
+      "6": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "nice"
+      }
+    },
+    "textAnnotations": {
+      "6": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Slogans",
+          "text": "Citywide, Italian spots saw a median 2% increase in new reviews over the past month,",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "Want the scoop on Washington's buzziest local spots?",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Bandwagon",
+          "text": "Read on to see which spots are riding a trend, right now.",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "Nicoletta Italian Kitchen Open since April 2019",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "is trending compared to other businesses categorized as \"Italian\" on Yelp.",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "Astoria DC offers sweet and sour ribs",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 4,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:55:42.286Z"
+  },
+  "-OeRpE-YiTtq93z02QBq": {
+    "articleTitles": [
+      {
+        "id": 2,
+        "title": "Frozen sperm bank could be set up in space, study suggests"
+      }
+    ],
+    "code": "MTURK-NN6CDM",
+    "surveyResponses": {
+      "2": {
+        "bias": 1,
+        "confidence": 2,
+        "openFeedback": "It is within the required word range.\n\nIt reflects a speculative claim that may sound exaggerated or futuristic, fitting the Exaggeration category even though it is not manipulative—this is likely what the task is asking you to practice."
+      }
+    },
+    "textAnnotations": {
+      "2": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Demonization",
+          "text": "\"Our best option will be to perform the experiment using real spaceflight but access is very limited,",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:56:31.072Z"
+  },
+  "-OeRpGukwpkUJTGI3mYt": {
+    "articleTitles": [
+      {
+        "id": 12,
+        "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+      }
+    ],
+    "code": "MTURK-NKC7VB",
+    "surveyResponses": {
+      "12": {
+        "bias": 5,
+        "confidence": 5,
+        "openFeedback": "An exclamatory sentence is the type of sentence that expresses strong feelings or emotions. It is a statement that conveys strong emotion or excitement and ends with an exclamation mark (!), such as in the example: \"What a beautiful day"
+      }
+    },
+    "textAnnotations": {
+      "12": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "ST. LOUIS Missouri's lone abortion clinic can still operate after a St. Louis judge on Friday kept an injunction in effect allowing it to per",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "\"It is still very, very difficult to access abortion in Missouri because of medically unnecessary hoops and regulations, but you can still come to P",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Bandwagon",
+          "text": "The long-term fate of the clinic remains unclear. Stelzer said he would issue a written order regarding next steps with the injunction as soon as",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Doubt",
+          "text": "That stance is backed by the American College of Obstetricians and Gynecologists , which calls multiple pelvic exams for women seeking abortion \"unwarranted.\" Missouri i",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 4,
+          "subcategory": "Doubt",
+          "text": "Wade decision that federally legalized abortion. Aaron Mermelstein reported from St. Louis, and Elizabeth Chuck from New York.",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:56:39.909Z"
+  },
+  "-OeRq-SCnU12yJz5LuzN": {
+    "articleTitles": [
+      {
+        "id": 8,
+        "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+      }
+    ],
+    "code": "MTURK-3TZGBM",
+    "surveyResponses": {
+      "8": {
+        "bias": 5,
+        "confidence": 5,
+        "openFeedback": "good"
+      }
+    },
+    "textAnnotations": {
+      "8": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "The former mayor of Posen pleaded guilty Thursday to embezzling $27,000 from village coffers",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "His attorney Domingo Vargas said Schupek, who was federally indicted in January, entered the plea",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "His attorney Domingo Vargas said Schupek, who was federally indicted in January, entered the plea d",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "His attorney Domingo Vargas said Schupek, who was federally indicted in January, entered the",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T15:59:54.639Z"
+  },
+  "-OeRq8g2Ul17p319Imoj": {
+    "articleTitles": [
+      {
+        "id": 1,
+        "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+      }
+    ],
+    "code": "MTURK-BR1T26",
+    "surveyResponses": [
+      null,
+      {
+        "bias": 2,
+        "confidence": 1,
+        "openFeedback": "I felt the newly elected official and the people praising him were using platitudes or slogans. It was kind of a puff piece."
+      }
+    ],
+    "textAnnotations": [
+      null,
+      [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Slogans",
+          "text": "Brad Stephens will be able to deliver for his district on day one",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Slogans",
+          "text": "We will do whatever it takes to win",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        }
+      ]
+    ],
+    "timestamp": "2025-11-19T16:00:32.753Z"
+  },
+  "-OeRqAK3ey8B0BHvIZ5D": {
+    "articleTitles": [
+      {
+        "id": 7,
+        "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+      }
+    ],
+    "code": "MTURK-XRCNS0",
+    "surveyResponses": {
+      "7": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "Overly Formal or Pseudo-Academic Language: Using complex jargon or \"big words\" when simpler alternatives would be more appropriate for the context (e.g., \"leverage\" instead of \"use\", \"facilitate\" instead of \"help\").\nRepetitive Patterns: Using the same sentence structures or an excess of specific transitional phrases repeatedly (e.g., \"Furthermore,\" \"Moreover,\" \"In addition,\" \"It is important to note that\").\nLack of Personal Voice and Emotion: Content that sounds detached or impersonal, avoiding first-person pronouns, personal anecdotes, or unique perspectives.\nHedging Words: Excessive use of words that weaken claims or avoid definitive statements (e.g., \"can,\" \"may,\" \"might,\" \"could\").\nGeneric Phrases and Clichés: Relying on overused marketing buzzwords or phrases (e.g., \"unlock the potential,\" \"cutting-edge,\" \"navigate the landscape\").\nPerfect Grammar/Punctuation: An unnatural absence of minor typos or grammatical \"imperfections\" that are common in human writing. "
+      }
+    },
+    "textAnnotations": {
+      "7": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "The pictures and footage only scratch the surface of the tale: wide smiles, and the tears of joy of a mother and her son,",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Scapegoating",
+          "text": "For three days I called businesses begging for money\". \"In 90% of missing persons cases, it doesn't end well. It gets to us,",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Casual Oversimplification",
+          "text": "There are no direct road transport links between Eswatini and Cape Town. So Warrant Officer Daniels and a police colleague took vacation time,",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T16:00:36.284Z"
+  },
+  "-OeRqNYvf4vGxgLOLbB6": {
+    "articleTitles": [
+      {
+        "id": 6,
+        "title": "get these trending washington restaurants on your radar today"
+      }
+    ],
+    "code": "MTURK-WFU97Q",
+    "surveyResponses": {
+      "6": {
+        "bias": 5,
+        "confidence": 5,
+        "openFeedback": "I need more context to understand what \"tag\" you are referring to and how I previously processed or labeled your input. Please provide the text, query, or interaction that you believe I tagged in a certain way, and I can explain the specific elements that influenced my analysis"
+      }
+    },
+    "textAnnotations": {
+      "6": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "Want the scoop on Washington's buzziest local spots? We took a data-driven look at the question, using Yelp to analyze which eateries have been m",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "It's not the only trending outlier in the Italian category: Stellina Pizzeria has seen a 36.7% increase in reviews, and Officina has seen a 9.4",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Doubt",
+          "text": "NW (between North Q and North Church streets) since April 2019, Astoria DC offers sweet and sour ribs, walnut shrimp and ribeye chimichurri. Rooster",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Doubt",
+          "text": "The traditional American and New American spot, which opened at 99 M St. SE, Suite 100 (between South Cushing Place) in February 2019, increased it",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 4,
+          "subcategory": "Doubt",
+          "text": "Open for business at 625 Monroe St. NE (between North Michigan Avenue and North Kearney Street) since 2015, the business offers vegan stir fry, cat",
+          "title": "get these trending washington restaurants on your radar today"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T16:01:21.823Z"
+  },
+  "-OeRqgVHNb_KDiwLUspT": {
+    "articleTitles": [
+      {
+        "id": 2,
+        "title": "Frozen sperm bank could be set up in space, study suggests"
+      }
+    ],
+    "code": "MTURK-UK7N8P",
+    "surveyResponses": {
+      "2": {
+        "bias": 1,
+        "confidence": 3,
+        "openFeedback": "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
+      }
+    },
+    "textAnnotations": {
+      "2": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "The scientists conducting the study said little is known about the effect of different gravity levels on sperm.",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "\"Some studies suggest a significant decrease in the motility of human fresh sperm sample. \"",
+          "title": "Frozen sperm bank could be set up in space, study suggests"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T16:02:51.796Z"
+  },
+  "-OeRsFKaqP55VdHE3Pz4": {
+    "articleTitles": [
+      {
+        "id": 9,
+        "title": "rosemount recreation center plan gets positive response so far"
+      }
+    ],
+    "code": "MTURK-SF17FW",
+    "surveyResponses": {
+      "9": {
+        "bias": 4,
+        "confidence": 5,
+        "openFeedback": "\"It's important to remember...\" or \"It is crucial that you...\": These often sound like a lecture or a moral directive rather than a piece of advice.\n\"Have you tried talking to someone about how you are feeling?\": This can be perceived as a templated, disingenuous response to a complex emotional situation.\n\"I understand that... but...\": This phrasing can dismiss the user's feelings by pivoting immediately to a counter-perspective.\n\"The truth is...\" or \"The bottom line...\": These can imply that the AI is delivering some ultimate, authoritative knowledge that the user was unaware of.\n\"You should...\" or \"You must...\": Direct commands or moral imperatives, especially when unsolicited, are often interpreted as judgmental or overbearing. "
+      }
+    },
+    "textAnnotations": {
+      "9": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "While a study on whether to proceed with a new recreation center in Rosemount continues, early results are mostly positive. In September, the Rosemount City",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Casual Oversimplification",
+          "text": "The population in the area is younger than the national average and there are more families with children, the survey has found. In Rosemount,",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "Its design will be made with potential expansion in mind. The costs so far do not cover the money needed to operate the facility",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 3,
+          "subcategory": "Name-Calling",
+          "text": "\"We're starting to get pretty close,\" Schultz said. The next meeting will be held Monday at the Parks and Recreation Commission meeting to provide updates",
+          "title": "rosemount recreation center plan gets positive response so far"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T16:09:38.847Z"
+  },
+  "-OeRtPev091KH8LECxk5": {
+    "articleTitles": [
+      {
+        "id": 6,
+        "title": "get these trending washington restaurants on your radar today"
+      }
+    ],
+    "code": "MTURK-1P8STF",
+    "surveyResponses": {
+      "6": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "Word choice: An author's word choice—also called diction—can help readers understand an idea, situation, or character. Word choice also develops the tone of a text. Tone is an author's feeling or attitude toward a topic."
+      }
+    },
+    "textAnnotations": {
+      "6": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "Want the scoop on Washington's buzziest local spots? We took a data-driven look at the question, using Yelp to analyze which eateries have been",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "It's not the only trending outlier in the Italian category: Stellina Pizzeria has seen a 36.7% increase in reviews, and Officina has seen a",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Demonization",
+          "text": "which offers tapas and more, has seen a 30.2% bump in new reviews over the last month, compared to a median review increase of",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Casual Oversimplification",
+          "text": "It's not the only trending outlier in the Italian category: Stellina Pizzeria has seen a 36.7% increase in reviews, and Officina has see",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 3,
+          "subcategory": "Name-Calling",
+          "text": "The traditional American and New American spot, which opened at 99 M St. SE, Suite 100 (between South Cushing Place) in February 2019, increased its",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 4,
+          "subcategory": "Casual Oversimplification",
+          "text": "Open for business at 625 Monroe St. NE (between North Michigan Avenue and North Kearney Street) since 2015, the business offers vegan stir fry, c",
+          "title": "get these trending washington restaurants on your radar today"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T16:14:49.277Z"
+  },
+  "-OeRwO0JHr44z5lI48Ke": {
+    "articleTitles": [
+      {
+        "id": 8,
+        "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+      }
+    ],
+    "code": "MTURK-95Q4G3",
+    "surveyResponses": {
+      "8": {
+        "bias": 2,
+        "confidence": 2,
+        "openFeedback": "“can sentence Schupek to as many as 10 years behind bars”"
+      }
+    },
+    "textAnnotations": {
+      "8": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Demonization",
+          "text": "The former mayor of Posen pleaded guilty Thursday to embezzling $27,000 from village coffers during his final term in office.",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Slogans",
+          "text": "Schupek is the second ex-Posen mayor who has pleaded guilty to stealing from the village in the past two-plus decades",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Bandwagon",
+          "text": "In 1997, former Posen Mayor James Adamek Jr. pleaded guilty to stealing",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T16:27:48.422Z"
+  },
+  "-OeRwmJTbCQF7p0eBu21": {
+    "articleTitles": [
+      {
+        "id": 9,
+        "title": "rosemount recreation center plan gets positive response so far"
+      }
+    ],
+    "code": "MTURK-EABY56",
+    "surveyResponses": {
+      "9": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "No details offered on key issues related to the recreation center being built. Phrases like most feedback, design made with population explosion in mind (no details as to design features) are pretty positive point to oversimplification."
+      }
+    },
+    "textAnnotations": {
+      "9": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "We're getting a lot of feedback, most of it seems pretty positive",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Casual Oversimplification",
+          "text": "There's needs for all ages so that would be something a facility could provide",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Casual Oversimplification",
+          "text": "Its design will be made with potential expansion in mind",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T16:29:10.930Z"
+  },
+  "-OeRxekVgU9ETZ_4r5I_": {
+    "articleTitles": [
+      {
+        "id": 3,
+        "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+      }
+    ],
+    "code": "MTURK-4BHDGN",
+    "surveyResponses": {
+      "3": {
+        "bias": 1,
+        "confidence": 1,
+        "openFeedback": "I didn't see any polarizing language in the article. The article was balanced, with quotes from the police, the mayor and the victim. It presented the information so the reader could decide how to perceive what happened. It's a tough topic to cover in a balanced way, but it wasn't one sided. It was objective as possible. "
+      }
+    },
+    "textAnnotations": {
+      "3": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T16:33:22.986Z"
+  },
+  "-OeRy3_zbK6Rr-8qqxIZ": {
+    "articleTitles": [
+      {
+        "id": 12,
+        "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+      }
+    ],
+    "code": "MTURK-7LM4J9",
+    "surveyResponses": {
+      "12": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "“latest legal whiplash”\n\nWhy: “Whiplash” is a metaphor suggesting violence, chaos, or instability. It dramatizes the legal situation beyond neutral reporting.\n\n“dealt it a blow”\n\nWhy: Frames the state health department’s decision as an attack. A neutral version would simply say “declined to renew its license.”"
+      }
+    },
+    "textAnnotations": {
+      "12": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Slogans",
+          "text": "It is still very, very difficult to access abortion in Missouri because of medically unnecessary hoops and regulations,",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Slogans",
+          "text": "Planned Parenthood has argued that the licensing battle is part of a greater anti-abortion effort by the state's administration. Last month, Missouri's Republican Gov.",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Bandwagon",
+          "text": "South Dakota and West Virginia, according to the Guttmacher Institute, a research organization that supports abortion rights. Missouri had more abortion clinics in the past",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 4,
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 4,
+          "subcategory": "Bandwagon",
+          "text": "Wade decision that federally legalized abortion. Aaron Mermelstein reported from St. Louis, and Elizabeth Chuck from New York.",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Demonization",
+          "text": "ST. LOUIS Missouri's lone abortion clinic can still operate after a St. Louis judge on Friday kept an injunction in effect allowing it to p",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T16:35:05.347Z"
+  },
+  "-OeRz8KhQ2GtDQgpIrOV": {
+    "articleTitles": [
+      {
+        "id": 1,
+        "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+      }
+    ],
+    "code": "MTURK-AVEAAX",
+    "surveyResponses": [
+      null,
+      {
+        "bias": 1,
+        "confidence": 2,
+        "openFeedback": "I didn't think there was much polarizing language, but I tried to find anything that could be interpreted as such. I thought exaggerations and overemphasis of certain things was what stood out the most, though it was fairly subtle. For instance, focusing on the person's salary makes it seem like they want you to doubt the politician's motivations. It was mostly exaggerations, though, such as \"we will be able to deliver on day one,\" which is exaggerated, but it's not really outside the bounds of normal exaggeration."
+      }
+    ],
+    "textAnnotations": [
+      null,
+      [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "\"Brad Stephens will be able to deliver for his district on day one,\" Durkin said Saturday in a statement.",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "Mayor Lori Lightfoot, who called the proposal for a 21-member board \"unwieldy.\"",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Exaggeration",
+          "text": "\"We will do whatever it takes to win,\" Stephens said.",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "will collect his legislative salary of more than $69,000 on top of his $260,000 mayoral salary",
+          "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"
+        }
+      ]
+    ],
+    "timestamp": "2025-11-19T16:39:50.415Z"
+  },
+  "-OeRzogfA5OmA8YRFMCU": {
+    "articleTitles": [
+      {
+        "id": 9,
+        "title": "rosemount recreation center plan gets positive response so far"
+      }
+    ],
+    "code": "MTURK-MJX5H7",
+    "surveyResponses": {
+      "9": {
+        "bias": 1,
+        "confidence": 5,
+        "openFeedback": "Neutral text, with neutral language, no offensive or polarizing language that i notieced was used in the text"
+      }
+    },
+    "textAnnotations": {
+      "9": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "rosemount recreation center plan gets positive response so far"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T16:42:47.271Z"
+  },
+  "-OeS6sn1pFA7W_1YhJVm": {
+    "articleTitles": [
+      {
+        "id": 11,
+        "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+      }
+    ],
+    "code": "MTURK-QK7PS3",
+    "surveyResponses": {
+      "11": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "I tagged Thousands protested in Madrid on Saturday against the suspension of curbs on polluting cars by the new conservative city hall\" – Persuasive_Propaganda → Casual Oversimplification"
+      }
+    },
+    "textAnnotations": {
+      "11": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "Thousands protested in Madrid on Saturday against the suspension of curbs on polluting cars by the new conservative city hall",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Scapegoating",
+          "text": "People of all ages rallied despite a scorching heatwave in Spain and most of Europe,",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "The new city hall run by the conservative People's Party suspended fines on cars entering the currently restricted area of around five sq km (two sq miles) from July 1",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T17:18:00.697Z"
+  },
+  "-OeSAfTr8By4JXql0OUq": {
+    "articleTitles": [
+      {
+        "id": 5,
+        "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+      }
+    ],
+    "code": "MTURK-RYQAOF",
+    "surveyResponses": {
+      "5": {
+        "bias": 1,
+        "confidence": 3,
+        "openFeedback": "I feel like the article itself isn't biased, but obviously, it's about a lawsuit and has quotes from all parties so it's bound to highlight some sort of polarizing/persuasive/etc words. Like saying a project was 'infeasible' puts the blame on a party, makes one doubt the other party was able. Likewise, blaming a single entity looking out for their own narrow reasons seems like some persuasive simplification."
+      }
+    },
+    "textAnnotations": {
+      "5": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "Gene Seroka, executive director of the Port of L.A., told the company that the facility was \"infeasible.\"",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Casual Oversimplification",
+          "text": "it makes me worried for the city when a green, job-creating project is stymied by a single entity for their own narrow reasons",
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T17:34:37.118Z"
+  },
+  "-OeSIb7Lcs81uWPl58GR": {
+    "articleTitles": [
+      {
+        "id": 7,
+        "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+      }
+    ],
+    "code": "MTURK-QX93DS",
+    "surveyResponses": {
+      "7": {
+        "bias": 2,
+        "confidence": 2,
+        "openFeedback": "The part I tagged seemed ridiculous and unimportant. It didn't need to be there and didn't help the story."
+      }
+    },
+    "textAnnotations": {
+      "7": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "SUPERCAR STASH SEIZED IN CORRUPTIONS PROBES TO BE AUCTIONED FOR CHARITY NIGERIAN INVESTIGATORS DISMISS WILD REPORTS ROGUE GORILLA ATE $22G IN CASH AT ZOO",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T18:09:13.516Z"
+  },
+  "-OeSeRRfTC3qARV6ljPn": {
+    "articleTitles": [
+      {
+        "id": 3,
+        "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+      }
+    ],
+    "code": "MTURK-4VE3JQ",
+    "surveyResponses": {
+      "3": {
+        "bias": 2,
+        "confidence": 2,
+        "openFeedback": "The only bias displayed by the author is when they offer their own judgment that the suspects were complying with the police. Otherwise, the biased language all came from people quoted and those statements were included fairly evenly from both sides."
+      }
+    },
+    "textAnnotations": {
+      "3": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "The officers then pick up Ames who apologizes and appears to be complying and throws him against a police vehicle.",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "this is one of the most insane attacks on a black family, or any family, that I've ever seen law enforcement engage in.",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T19:48:59.596Z"
+  },
+  "-OeSiD9sGjkJRSoQucoo": {
+    "articleTitles": [
+      {
+        "id": 10,
+        "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+      }
+    ],
+    "code": "MTURK-7V7FQH",
+    "surveyResponses": {
+      "10": {
+        "bias": 1,
+        "confidence": 3,
+        "openFeedback": "I tagged \"worrying about the town's future\" because it just seemed like a melodramatic exaggeration."
+      }
+    },
+    "textAnnotations": {
+      "10": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "worrying about their town's future",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T20:05:31.632Z"
+  },
+  "-OeSlvmFXRGercoHznf4": {
+    "articleTitles": [
+      {
+        "id": 8,
+        "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+      }
+    ],
+    "code": "MTURK-PNGPLR",
+    "surveyResponses": {
+      "8": {
+        "bias": 1,
+        "confidence": 2,
+        "openFeedback": "i was trying to tag *something* even though this article is pretty unbiased. i thought what the prosecutors said was oversimplified to make him sound worse and demonise him so that fit well, and what his lawyer said was also oversimplified to make it seem like the matter isn't as important as it really is"
+      }
+    },
+    "textAnnotations": {
+      "8": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "Schupek used the ill-gotten gains to gamble at casinos in Joliet",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Casual Oversimplification",
+          "text": "\"He has more important issues to deal with in his life.\"",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Demonization",
+          "text": "Prosecutors, who allege Schupek used the ill-gotten gains to gamble at casinos in Joliet",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T20:21:44.226Z"
+  },
+  "-OeT9cF8LarCRX4jZd30": {
+    "articleTitles": [
+      {
+        "id": 3,
+        "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+      }
+    ],
+    "code": "MTURK-CVMDHN",
+    "surveyResponses": {
+      "3": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "goodonfused. High: bewildered, baffled, perplexed, disoriented, stunned, amazed, astonished, flabbergasted. ...\nScared. High: terrified, overwhelmed, panicked, petrified, alarmed, fearful. ...\nAngry. High: furious, raging, irate, hateful, incensed, hostile, outraged, indignant, exasperated. ...Good: It was a dark and stormy night. Great: We buried the wrong body — again. Even if your story fits into a familiar genre, your opening line can still stand out. Lead with something a bit shocking and readers will definitely want to know what else you've got in store."
+      }
+    },
+    "textAnnotations": {
+      "3": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Bandwagon",
+          "text": "creams at Ames and says: \"\"When I tell you to do something, you f------ do it!\" The officers then pick up Ames who apologizes and appears to be complying and throws him against a police vehicle. The couple and authorities offered different accounts of what happened before the confrontation. Ames and Harper said they were driving their girls to a babysitter when police approached them in an apartment complex parking lot. Williams said Sunday that they fled from police after a Family Dollar manager alerted authorities to \"adults\" stealing from the store. In a police report, officers said the girl took a boxed doll, while Ames took a pair of underwear and a woman who'd been with the couple at the dollar store also allegedly stole something. Once the car was parked, the report says, Ames allegedly reached toward the car's center console and yelled that he hadn't done anything wrong. Williams said Sunday that police \"shouldn't have reacted the way that we reacted.\" Williams said that the officers who appeared in the video were placed on desk duty. An internal investigation was looking at discrepancies between the police report that documented the incident and the cell phone video that showed the confrontation. On Saturday, Ames told Al Sharpton on MSNBC that he was glad the incident was caught on video by a bystander so people could see how he and his family were treated. \"I felt like I did everything I could to show the officer that I was complying,\" he said, adding that the experience was traumatizing for him and his young children. \"I looked the barrel in the eyes, my kids looked the barrel in the eyes.\n\nInflammatory Language\nPersuasive Propaganda\nNo polarizing language\n\nInstructions\nYou will annotate 1 news article. Please follow these steps for each paragraph:\n\nHighlight a section of text between 4 and 25 wo",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Slogans",
+          "text": "Phoenix Police Chief Jeri Williams apologized for her department's handling of an alleged shoplifting incident involving a 4-year-old girl and her parents , saying Sunday the confrontation that was captured on video was \"unacceptable.\" \"What we saw in that video isn't in keeping with good policing,\" Williams said in an interview with NBC affiliate KPNX . \"This is not what should have happened in that circumstance.\" The child's parents, Dravon Ames and Iesha Harper, filed notice of a $10 million claim last week over the incident, which occurred on May 29 after the couple said they realized their daughter had tak",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "and handcuffing Harper, who is pregnant, after an unidentified woman came to take care of the couples' two young daughters. At one point, an officer screams at Ames and says: \"\"When I tell you to do something, you f------ do it!\" The officers then pick up Ames who apologizes and appears to be complying and throws him against a police vehicle. The couple and authorities offered different accounts of what happened before the confrontation. Ames and Harper said they were driving their girls to a babysitter when police app",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "nd handcuffing Harper, who is pregnant, after an unidentified woman came to take care of the couples' two young daughters. At one point, an officer screams at Ames and says: \"\"When I tell you to do something, you f------ do it!\" The officers then pick up Ames who apologizes and appears to be complying and throws him against a police vehicle. The couple and authorities offered different accounts of what happened before the confrontation. Ames and Harper said they were driving their girls to a babysitter whe",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "statement on Twitter Saturday saying about the incident, saying, \"I, like many others, am sick over what I have seen in the video\" and \"I am deeply sorry for what this family went through.\" The mayor vowed to speed up implementation of body cameras on police officers and hold a community meeting to address the incident. \"I realize that to get to the bottom of this issue",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Demonization",
+          "text": "I thought they were gonna start shooting,\" he said. Rev. Jarrett Maupin, of the Arizona chapter of the National Action Network, appeared with Ames on MSNBC, saying that \"this is one of the most insane attacks on a black family, or any family, that I've ever seen law enforcement engage in.\" Phoenix Mayor Kate Gallego issued a statement on Twitter Saturday",
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T22:09:38.067Z"
+  },
+  "-OeTDJ8qiCP_FvNXUAQb": {
+    "articleTitles": [
+      {
+        "id": 10,
+        "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+      }
+    ],
+    "code": "MTURK-AW2EHG",
+    "surveyResponses": {
+      "10": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "I marked the removed excerpts because they used wording that subtly amplified certainty and dramatic impact without providing strong evidence. Phrases suggesting the technology reveals things “not visible to the naked eye,” or claims that it could “map the whole Earth every 12 days,” tended to create an exaggerated impression of the system’s capabilities. These types of statements lean toward persuasive framing rather than neutral reporting. Even though the overall article is factual, these highlighted lines used tone and framing that could overstate technological power or introduce doubt, which is why they were tagged."
+      }
+    },
+    "textAnnotations": {
+      "10": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "The Advanced Rapid Imaging and Analysis team at NASA's Jet Propulsion Laboratory in Pasadena, California, used satellite data to produce a map showing ruptures and displacements not visible to the naked eye employing technology that has been developed over the last quarter century.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "Linear color lines indicate where an area was cracked open or was disturbed.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "When it launches in roughly three years, Fielding said, the technology will be able to \"map the whole Earth every 12 days.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T22:25:44.290Z"
+  },
+  "-OeTPN0Uk2e0wDpmCuUh": {
+    "articleTitles": [
+      {
+        "id": 12,
+        "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+      }
+    ],
+    "code": "MTURK-Z9WZIJ",
+    "surveyResponses": {
+      "12": {
+        "bias": 2,
+        "confidence": 4,
+        "openFeedback": "I looked for obvious bias."
+      }
+    },
+    "textAnnotations": {
+      "12": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "\"Today is a victory for women to be able to access the kind of medical care that they and their health professionals need and deserve,\"",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "\"And that is a good day for women.\"",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "you can still come to Planned Parenthood today for all of your reproductive health care,\"",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "an alleged failure to obtain \"informed consent,\"",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "despite the health department not renewing the license, Stelzer said on Friday during a hearing that barely lasted five minutes",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Casual Oversimplification",
+          "text": "another medically unnecessary requirement that the state was putting on it to whittle down Missouri residents' access to abortion.",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Bandwagon",
+          "text": "That stance is backed by the American College of Obstetricians and Gynecologists , which calls multiple pelvic exams for women seeking abortion \"unwarranted.\"",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Exaggeration",
+          "text": "The licensing fight comes amid a slew of recent anti-abortion legislation across the country",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 4,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T23:18:24.272Z"
+  },
+  "-OeTYLqPAu6yq6sun1fd": {
+    "articleTitles": [
+      {
+        "id": 8,
+        "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+      }
+    ],
+    "code": "MTURK-CWWTR7",
+    "surveyResponses": {
+      "8": {
+        "bias": 2,
+        "confidence": 2,
+        "openFeedback": "Certain things were phrased or characterized in certain ways that seemed to emphasize the negative (\"former\" Mayor, \"ill gotten gains\"). The focus was mainly on the worst aspects of the situation and the language that was used emphasized this."
+      }
+    },
+    "textAnnotations": {
+      "8": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Demonization",
+          "text": "ill-gotten gains",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "that he never intended to deduct from future paychecks or repay",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "Prosecutors, who allege Schupek used the ill-gotten gains to gamble at casinos",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "stealing from the village",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Casual Oversimplification",
+          "text": "\"He'd like to put this behind him,\" Vargas said. \"He has more important issues to deal with in his life.\"",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Demonization",
+          "text": "former Posen Mayor James Adamek Jr. pleaded guilty",
+          "title": "Ex-Posen mayor pleads guilty to embezzling village funds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-19T23:57:39.776Z"
+  },
+  "-OeTiFEG6ORdiPVqkNWr": {
+    "articleTitles": [
+      {
+        "id": 12,
+        "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+      }
+    ],
+    "code": "MTURK-IQ1D5X",
+    "surveyResponses": {
+      "12": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "I think there was some exaggeration and oversimplification of the issue. This would have been more persuasive if more clear language was use. I detected minimal usage of inflammatory language, however."
+      }
+    },
+    "textAnnotations": {
+      "12": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Casual Oversimplification",
+          "text": "whittle down Missouri residents' access to abortion",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Exaggeration",
+          "text": "clinics were unable to keep up with the state's stringent and perpetually evolving requirements",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 4,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "No polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        }
+      ]
+    },
+    "timestamp": "2025-11-20T00:45:17.242Z"
+  },
+  "-OeTn2eSGUVk4UEgOWtA": {
+    "articleTitles": [
+      {
+        "id": 6,
+        "title": "get these trending washington restaurants on your radar today"
+      }
+    ],
+    "code": "MTURK-DMPBSG",
+    "surveyResponses": {
+      "6": {
+        "bias": 1,
+        "confidence": 1,
+        "openFeedback": "I tagged this article as having no polarizing language because the entire text is descriptive and data-driven. It reports Yelp review numbers, restaurant locations, dishes, and rating trends without using emotional, persuasive, or inflammatory wording. There are no exaggerations, slogans, name-calling, or attempts to influence opinions. The tone is informational, not biased or one-sided."
+      }
+    },
+    "textAnnotations": {
+      "6": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 4,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "get these trending washington restaurants on your radar today"
+        }
+      ]
+    },
+    "timestamp": "2025-11-20T01:06:13.899Z"
+  },
+  "-OeUSZGA59rPMhDMrhNX": {
+    "articleTitles": [
+      {
+        "id": 10,
+        "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+      }
+    ],
+    "code": "MTURK-BYFIYY",
+    "surveyResponses": {
+      "10": {
+        "bias": 1,
+        "confidence": 1,
+        "openFeedback": "After reading carefully twice, I couldn't find any inflammatory language or persuasive propaganda. It's a straightforward article and there's no bias in it.\n\nI'd like to add that I am extremely confident that there's NO polarizing language used in the article. But since the first question asks about the PRESENCE of polarizing language in the article, I was confused how to answer as none of the given answers were correct. So I chose the first option. I considered selecting the last option but felt that it's exactly the opposite of the actual answer. "
+      }
+    },
+    "textAnnotations": {
+      "10": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        }
+      ]
+    },
+    "timestamp": "2025-11-20T04:11:59.003Z"
+  },
+  "-OeUXhjEn2aLjfCSkhXE": {
+    "articleTitles": [
+      {
+        "id": 10,
+        "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+      }
+    ],
+    "code": "MTURK-5RAHQS",
+    "surveyResponses": {
+      "10": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "No fault long enough to generate a magnitude 10 earthquake is known to exist, and if it did, it would extend around most of the planet. The largest earthquake ever recorded was a magnitude 9.5 on May 22, 1960 in Chile on a fault that is almost 1,000 miles long… a “megaquake” in its own right.\n"
+      }
+    },
+    "textAnnotations": {
+      "10": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Demonization",
+          "text": "Damage to the earth's crust from the 6.4 and 7.1 magnitude earthquakes that struck Southern California last week is visible in a kaleidoscopic satellite image released by NASA.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Casual Oversimplification",
+          "text": "The man was pinned under a Jeep after the vehicle fell off its jacks following the quake. On the NASA map, each color of the psychedelic-looking image represents 4.8 inches of ground displacement.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Demonization",
+          "text": "The Japanese Aerospace Exploration Agency provided the data to produce the map.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        }
+      ]
+    },
+    "timestamp": "2025-11-20T04:34:20.410Z"
+  },
+  "-OeUYKck0MZMRMhvpGAU": {
+    "articleTitles": [
+      {
+        "id": 10,
+        "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+      }
+    ],
+    "code": "MTURK-4OQBCF",
+    "surveyResponses": {
+      "10": {
+        "bias": 5,
+        "confidence": 4,
+        "openFeedback": "Yes, the 2019 Ridgecrest earthquakes caused damage to the Earth's crust that was visible and measurable from satellites, including inelastic deformation, surface ruptures, and permanent changes to the shallow crust. Advanced satellite imagery revealed these effects, such as the permanent surface movements and widespread rock damage that scientists could then study in detail. "
+      }
+    },
+    "textAnnotations": {
+      "10": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Demonization",
+          "text": "Damage to the earth's crust from the 6.4 and 7.1 magnitude earthquakes that struck Southern California last week is visible in a kaleidoscopic satellite image released by NASA.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "The man was pinned under a Jeep after the vehicle fell off its jacks following the quake.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Casual Oversimplification",
+          "text": "The Japanese Aerospace Exploration Agency provided the data to produce the map.",
+          "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"
+        }
+      ]
+    },
+    "timestamp": "2025-11-20T04:37:03.839Z"
+  },
+  "-OeWx2rT4ja5upFPPRlj": {
+    "articleTitles": [
+      {
+        "id": 4,
+        "title": "Four top residencies now offered to local artists, thanks to Oolite"
+      }
+    ],
+    "code": "MTURK-ELP3AI",
+    "surveyResponses": {
+      "4": {
+        "bias": 1,
+        "confidence": 1,
+        "openFeedback": "The article had very simple language, nothing boisterous or obviously misleading in my opinion. There seemed to be no agenda and was just a general news story with no misleading information that I could discern. "
+      }
+    },
+    "textAnnotations": {
+      "4": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "No polarizing language selected",
+          "title": "Four top residencies now offered to local artists, thanks to Oolite"
+        }
+      ]
+    },
+    "timestamp": "2025-11-20T15:48:49.805Z"
+  }
+}
