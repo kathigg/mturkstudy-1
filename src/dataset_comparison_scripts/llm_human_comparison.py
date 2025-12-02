@@ -348,7 +348,36 @@ def compare_all(llm_json, gold_json):
             "per_article": all_results,
         }
 
-    # --- Normal case: direct matches exist ---
+        # ------------------------------------------------------
+    # NEW: Warn about missing articles & exclude them entirely
+    # ------------------------------------------------------
+    llm_titles_norm = {normalize_title(k): k for k in llm_map.keys()}
+    gold_titles_norm = {normalize_title(k): k for k in gold_map.keys()}
+
+    missing_in_llm = set(gold_titles_norm.keys()) - set(llm_titles_norm.keys())
+    missing_in_gold = set(llm_titles_norm.keys()) - set(gold_titles_norm.keys())
+
+    # Print warnings for visibility
+    for t in sorted(missing_in_llm):
+        print(f"⚠️ Skipping '{gold_titles_norm[t]}' — exists in GOLD but not in LLM.")
+
+    for t in sorted(missing_in_gold):
+        print(f"⚠️ Skipping '{llm_titles_norm[t]}' — exists in LLM but not in GOLD.")
+
+    # Now restrict the evaluation strictly to shared titles
+    valid_shared_titles = sorted(shared_titles)
+
+    if not valid_shared_titles:
+        print("⚠️ After removing unmatched titles, no articles remain for comparison.")
+        return {
+            "overall": {
+                "article_match": {"precision": 0, "recall": 0, "f1": 0},
+                "category_match": {"precision": 0, "recall": 0, "f1": 0},
+                "weighted_article_match": {"precision": 0, "recall": 0, "f1": 0},
+            },
+            "per_article": {}
+        }
+    
     # --- Normal case: direct matches exist ---
     all_results = {}
     total_correct_article = total_llm = total_gold = 0
@@ -359,7 +388,7 @@ def compare_all(llm_json, gold_json):
     sum_FP = 0
     sum_Gold_w = 0.0
 
-    for title_norm in shared_titles:
+    for title_norm in valid_shared_titles:
         llm_title = next(k for k in llm_map if normalize_title(k) == title_norm)
         gold_title = next(k for k in gold_map if normalize_title(k) == title_norm)
 
