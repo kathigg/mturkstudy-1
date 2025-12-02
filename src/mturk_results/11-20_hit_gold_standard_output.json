@@ -1,0 +1,952 @@
+[
+  {
+    "title": "Mueller Agrees To Testify Before 2 House Panels Next Month",
+    "annotations": [
+      {
+        "text": "mueller, who has spoken publicly only once about his work, resisted taking the witness stand, where he will face questions both from democrats eager to employ him to build a case against trump and republicans eager to argue for the president's innocence.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Atlanta Mayor Endorses Joe Biden For President",
+    "annotations": [
+      {
+        "text": "harris, who is black, challenged biden to explain his decades-old position with respect to school desegregation, one which she characterized as being against busing. \"i did not oppose busing in america. what i opposed was busing ordered by the department of education,\" biden countered. harris, the former prosecutor turned california senator, said she didn't think the former vice president \"was a racist.\" but she criticized him for recently \"defending segregationists\" in the senate and for once opposing mandatory busing of students to desegregated public schools.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      }
+    ]
+  },
+  {
+    "title": "Phoenix Chief Says Police Response To Incident With 4-Year-Old Is 'Unacceptable'",
+    "annotations": [
+      {
+        "text": "traumatizing for him and his young",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 8,
+        "label_consistent": false
+      },
+      {
+        "text": "i thought they were gonna start shooting",
+        "category": "Inflammatory Language",
+        "subcategory": "Exaggeration",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false
+      },
+      {
+        "text": "i have seen in the video\" and \"i am deeply sorry for what this family went through.\" the mayor vowed to speed up i",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "this is one of the most insane attacks on a black family, or any family, that i've ever seen law enforcement engage in.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true
+      },
+      {
+        "text": "Phoenix Mayor Kate Gallego issued a statement on Twitter Saturday saying about the incident, saying,",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Four Top Residencies Now Offered To Local Artists, Thanks To Oolite",
+    "annotations": [
+      {
+        "text": "we need to help artists pay their rent at home while they're gone",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "master curators and artists",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "Miami artists have a new opportunity to superpower their careers",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Oolite formerly known as ArtCenter South Florida will pay stipends, tuition and travel expenses under a new program,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "We hope our artists will return to South Florida with new ideas and relationships that will further enrich their own work, and Miami's cultural community.\"",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Also next spring, Oolite will take a dozen Miami artists to Atlantic Center for the Arts in New Smyrna Beach for a weeklong residency.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "But one of the biggest issues is the economics of going off the grid for five weeks.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Residencies can be a defining moment in an artist's career",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "working artists are elevating their practice to a point that many of them can successfully compete for and be awarded these kinds of prestigious residencies",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Port Of L.A. Sued After Canceling Agreement For A Shipping Container Facility",
+    "annotations": [
+      {
+        "text": "A port spokesman declined to comment, citing the pending litigation",
+        "category": "Inflammatory Language",
+        "subcategory": "Scapegoating",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "told the company that the facility was \"infeasible.\" Seroka didn't provide a reason for ending the agreement,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "unexpected curveball thrown at us",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "they [ILWU] run the Port",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "stymied by a single entity",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "A Los Angeles company is suing the Port of L.A., claiming it improperly terminated an agreement to",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "The Board of Harbor Commissioners, who are appointed by Mayor Eric Garcetti, and the Los Angel",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "The company would have to guarantee to grant the union jurisdiction and exclusive rights to provide tru",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Gene Seroka, executive director of the Port of L.A., told the company that the facility was \"infeasible.\"",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Ridgecrest Earthquakes Caused Damage To The Earth'S Crust Seen From Satellite",
+    "annotations": [
+      {
+        "text": "the man was pinned under a jeep after the vehicle fell off its jacks following the quake.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Causal Oversimplification",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false
+      },
+      {
+        "text": "worrying about their town's future",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false
+      },
+      {
+        "text": "Authorities are investigating whether the death of a man 95 miles away in Pahrump, Nev., was tied to the earthquake.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "The Advanced Rapid Imaging and Analysis team at NASA's Jet Propulsion Laboratory in Pasadena, California, used satellite data to produce a map showing ruptures and displacements not visible to the naked eye employing technology that has been developed over the last quarter century.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Linear color lines indicate where an area was cracked open or was disturbed.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "When it launches in roughly three years, Fielding said, the technology will be able to \"map the whole Earth every 12 days.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "damage to the earth's crust from the 6.4 and 7.1 magnitude earthquakes that struck southern california last week is visible in a kaleidoscopic satellite image released by nasa.",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true
+      },
+      {
+        "text": "the japanese aerospace exploration agency provided the data to produce the map.",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      }
+    ]
+  },
+  {
+    "title": "Democrat Robert Martwick Sworn In As State Senator; Gop Taps Rosemont Mayor Brad Stephens For House Seat",
+    "annotations": [
+      {
+        "text": "we will do whatever it takes to win",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 5,
+        "label_consistent": false
+      },
+      {
+        "text": "he'll be able to find common ground on some issues with the democrats who control the legislature",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Causal Oversimplification",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false
+      },
+      {
+        "text": "Jun. 29--Two familiar names will be taking on new roles representing residents of the Northwest Side and near northwest suburbs in Springfield. Robert Martwick, a",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "good working relationships with the new senator and other lawmakers. \"Over the past 12 years as the mayor, I've made several trips to the Cap",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "brad stephens will be able to deliver for his district on day one",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false
+      },
+      {
+        "text": "valuable to the Illinois state legislature and a welcome addition to the House Republican Caucus",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "mayor lori lightfoot, who called the proposal for a 21-member board \"unwieldy.\"",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "I look forward to sitting down with her and having a conversation in earnest",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "will collect his legislative salary of more than $69,000 on top of his $260,000 mayoral salary",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Frozen Sperm Bank Could Be Set Up In Space, Study Suggests",
+    "annotations": [
+      {
+        "text": "open the possibility of creating a human sperm bank outside of earth",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true
+      },
+      {
+        "text": "sperm banks could one day be set up in space",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "our best option will be to perform the experiment using real spaceflight but access is very limited,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "The researchers used sperm from 10 healthy donors, exposing some of the samples to microgravity using a small aerobatic aircraft.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "The lack of differences observed in the sperm characteristics between frozen samples exposed to microgravity and those maintained in ground conditions open the possibility of safely transporting male gametes to space and considering the possibility of creating a human sperm bank outside of Earth,",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "The scientists conducting the study said little is known about the effect of different gravity levels on sperm.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "\"Some studies suggest a significant decrease in the motility of human fresh sperm sample. \"",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "South African Woman Reunited With Son Six Years After He Disappeared And Was Tracked Down 1,000 Miles Away",
+    "annotations": [
+      {
+        "text": "90% of missing persons cases, it doesn't end well",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "People are very negative about the police, but there are good police officers",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "My heart is going out for her. We should help this woman,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Causal Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "family's breadwinner",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "he pictures and footage only scratch the surface",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "There are no direct road transport links between Eswatini and Cape Town. So Warrant Officer Daniels and a police colleague took vacation time,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "SUPERCAR STASH SEIZED IN CORRUPTIONS PROBES TO BE AUCTIONED FOR CHARITY NIGERIAN INVESTIGATORS DISMISS WILD REPORTS ROGUE GORILLA ATE $22G IN CASH AT ZOO",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Ex-Posen Mayor Pleads Guilty To Embezzling Village Funds",
+    "annotations": [
+      {
+        "text": "ill-gotten gains",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.33,
+        "num_supporters": 5,
+        "label_consistent": false
+      },
+      {
+        "text": "former posen mayor james adamek jr. pleaded guilty",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false
+      },
+      {
+        "text": "used the ill-gotten gains",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "entered the plea due to the facts of the case and his health situation",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "the former mayor of posen pleaded guilty thursday to embezzling $27,000 from village coffers",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "his attorney domingo vargas said schupek, who was federally indicted in january, entered the",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true
+      },
+      {
+        "text": "stealing from the village",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "\"he has more important issues to deal with in his life.\"",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true
+      },
+      {
+        "text": "that he never intended to deduct from future paychecks or repay",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Protest In Madrid As Conservatives Suspend Ban On Most Polluting Cars",
+    "annotations": [
+      {
+        "text": "banned most petrol and diesel cars",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "Donald Trump's rollback of environmental policies",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Thousands protested in Madrid on Saturday against the suspension of curbs on polluting cars by the new conservative city hall",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "People of all ages rallied despite a scorching heatwave in Spain and most of Europe,",
+        "category": "Inflammatory Language",
+        "subcategory": "Scapegoating",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "The new city hall run by the conservative People's Party suspended fines on cars entering the currently restricted area of around five sq km (two sq miles) from July 1",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Missouri'S Only Abortion Clinic To Remain Open After Judge'S Injunction Holds",
+    "annotations": [
+      {
+        "text": "\"at least one incident in which patient safety was gravely compromised,\" \"failed surgical abortions in which women remained pregnant,\"",
+        "category": "Inflammatory Language",
+        "subcategory": "Scapegoating",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "In the latest legal whiplash in the case",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "today is a victory for women to be able to access the kind of medical care that they and their health professionals need and deserve",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "it is still very, very difficult to access abortion in missouri because of medically unnecessary hoops and regulations",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false
+      },
+      {
+        "text": "the long-term fate of the clinic remains unclear.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "Its legal battle got even thornier this week when Planned Parenthood of the St. Louis Region",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "multiple pelvic exams for women seeking abortion \"unwarranted.\"",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false
+      },
+      {
+        "text": "st. louis missouri's lone abortion clinic can still operate after a st. louis judge on friday kept an injunction in effect allowing it to p",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "wade decision that federally legalized abortion. aaron mermelstein reported from st. louis, and elizabeth chuck from new york.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "Planned Parenthood has argued that the licensing battle is part of a greater anti-abortion effort by the state's administration. Last month, Missouri's Republican Gov.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "South Dakota and West Virginia, according to the Guttmacher Institute, a research organization that supports abortion rights. Missouri had more abortion clinics in the past",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "\"And that is a good day for women.\"",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "you can still come to Planned Parenthood today for all of your reproductive health care,\"",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "an alleged failure to obtain \"informed consent,\"",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "despite the health department not renewing the license, Stelzer said on Friday during a hearing that barely lasted five minutes",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "whittle down missouri residents' access to abortion",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true
+      },
+      {
+        "text": "The licensing fight comes amid a slew of recent anti-abortion legislation across the country",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "clinics were unable to keep up with the state's stringent and perpetually evolving requirements",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Get These Trending Washington Restaurants On Your Radar Today",
+    "annotations": [
+      {
+        "text": "washington's buzziest local spots",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 5,
+        "label_consistent": false
+      },
+      {
+        "text": "Astoria DC bagged a staggering 141.7% increase",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Rooster & Owl Columbia Heights' Rooster & Owl is also making waves",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "read on to see which spots are riding a trend, right now.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true
+      },
+      {
+        "text": "increased its new review count by 16.7% over the past month",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "it's not the only trending outlier in the italian category: stellina pizzeria has seen a 36.7% increase in reviews, and officina has see",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 4,
+        "label_consistent": false
+      },
+      {
+        "text": "astoria dc offers sweet and sour ribs",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Demonization",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false
+      },
+      {
+        "text": "the traditional american and new american spot, which opened at 99 m st. se, suite 100 (between south cushing place) in february 2019",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false
+      },
+      {
+        "text": "open for business at 625 monroe st. ne (between north michigan avenue and north kearney street) since 2015, the business offers vegan stir fry,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false
+      },
+      {
+        "text": "Citywide, Italian spots saw a median 2% increase in new reviews over the past month,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Nicoletta Italian Kitchen Open since April 2019",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "is trending compared to other businesses categorized as \"Italian\" on Yelp.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "which offers tapas and more, has seen a 30.2% bump in new reviews over the last month, compared to a median review increase of",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Rosemount Recreation Center Plan Gets Positive Response So Far",
+    "annotations": [
+      {
+        "text": "The number of people taking part in area recreation and leisure activities is growing and there is a desire for more fitness spaces",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "WHY BUILD A REC CENTER",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "pleads guilty to being drunk in Valentine's Day crash that killed girlfriend Eagan woman pleads guilty to 2017 death of foster child in her care",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "While a study on whether to proceed with a new recreation center in Rosemount continues, early results are mostly positive. In September, the Rosemount City",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "The population in the area is younger than the national average and there are more families with children, the survey has found. In Rosemount,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "its design will be made with potential expansion in mind",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "\"We're starting to get pretty close,\" Schultz said. The next meeting will be held Monday at the Parks and Recreation Commission meeting to provide updates",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "We're getting a lot of feedback, most of it seems pretty positive",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "There's needs for all ages so that would be something a facility could provide",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  }
+]

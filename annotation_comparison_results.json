@@ -1,56 +1,56 @@
 {
   "overall": {
     "article_match": {
-      "precision": 0.625,
-      "recall": 0.375,
-      "f1": 0.469,
-      "correct_matches": 15,
-      "total_llm": 24,
+      "precision": 0.706,
+      "recall": 0.3,
+      "f1": 0.421,
+      "correct_matches": 12,
+      "total_llm": 17,
       "total_gold": 40
     },
     "category_match": {
-      "precision": 0.4,
-      "recall": 0.4,
-      "f1": 0.4,
-      "correct_matches": 6,
-      "total_matches": 15
+      "precision": 0.25,
+      "recall": 0.25,
+      "f1": 0.25,
+      "correct_matches": 3,
+      "total_matches": 12
     },
     "weighted_article_match": {
-      "precision": 0.355,
-      "recall": 0.375,
-      "f1": 0.365,
-      "tp_weight": 4.95,
+      "precision": 0.442,
+      "recall": 0.3,
+      "f1": 0.357,
+      "tp_weight": 3.96,
       "total_gold_weight": 13.2,
-      "fp": 9
+      "fp": 5
     }
   },
   "per_article": {
-    "Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+    "Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
       "article_match": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_llm": 3,
-        "total_gold": 2
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 5
       },
       "category_match": {
-        "precision": 0,
-        "recall": 0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_matches": 0
-      },
-      "weighted_article_match": {
         "precision": 0.0,
         "recall": 0.0,
-        "f1": 0.0,
-        "tp_weight": 0,
-        "total_gold_weight": 0.66,
-        "fp": 3,
-        "matched": 0,
-        "total_llm": 3,
-        "total_gold": 2
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333,
+        "tp_weight": 0.33,
+        "total_gold_weight": 1.65,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 5
       }
     },
     "Rosemount Recreation Center Plan Gets Positive Response so Far": {
@@ -81,118 +81,6 @@
         "total_gold": 1
       }
     },
-    "Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
-      "article_match": {
-        "precision": 1.0,
-        "recall": 0.5,
-        "f1": 0.667,
-        "correct_matches": 2,
-        "total_llm": 2,
-        "total_gold": 4
-      },
-      "category_match": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "correct_matches": 2,
-        "total_matches": 2
-      },
-      "weighted_article_match": {
-        "precision": 1.0,
-        "recall": 0.5,
-        "f1": 0.667,
-        "tp_weight": 0.66,
-        "total_gold_weight": 1.32,
-        "fp": 0,
-        "matched": 2,
-        "total_llm": 2,
-        "total_gold": 4
-      }
-    },
-    "Get These Trending Washington Restaurants on Your Radar Today": {
-      "article_match": {
-        "precision": 0.8,
-        "recall": 0.8,
-        "f1": 0.8,
-        "correct_matches": 4,
-        "total_llm": 5,
-        "total_gold": 5
-      },
-      "category_match": {
-        "precision": 0.75,
-        "recall": 0.75,
-        "f1": 0.75,
-        "correct_matches": 3,
-        "total_matches": 4
-      },
-      "weighted_article_match": {
-        "precision": 0.569,
-        "recall": 0.8,
-        "f1": 0.665,
-        "tp_weight": 1.32,
-        "total_gold_weight": 1.65,
-        "fp": 1,
-        "matched": 4,
-        "total_llm": 5,
-        "total_gold": 5
-      }
-    },
-    "Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
-      "article_match": {
-        "precision": 1.0,
-        "recall": 0.5,
-        "f1": 0.667,
-        "correct_matches": 1,
-        "total_llm": 1,
-        "total_gold": 2
-      },
-      "category_match": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "correct_matches": 1,
-        "total_matches": 1
-      },
-      "weighted_article_match": {
-        "precision": 1.0,
-        "recall": 0.5,
-        "f1": 0.667,
-        "tp_weight": 0.33,
-        "total_gold_weight": 0.66,
-        "fp": 0,
-        "matched": 1,
-        "total_llm": 1,
-        "total_gold": 2
-      }
-    },
-    "Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
-      "article_match": {
-        "precision": 1.0,
-        "recall": 0.5,
-        "f1": 0.667,
-        "correct_matches": 1,
-        "total_llm": 1,
-        "total_gold": 2
-      },
-      "category_match": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_matches": 1
-      },
-      "weighted_article_match": {
-        "precision": 1.0,
-        "recall": 0.5,
-        "f1": 0.667,
-        "tp_weight": 0.33,
-        "total_gold_weight": 0.66,
-        "fp": 0,
-        "matched": 1,
-        "total_llm": 1,
-        "total_gold": 2
-      }
-    },
     "Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
       "article_match": {
         "precision": 1.0,
@@ -219,6 +107,34 @@
         "matched": 1,
         "total_llm": 1,
         "total_gold": 4
+      }
+    },
+    "Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 3,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 0.66,
+        "fp": 3,
+        "matched": 0,
+        "total_llm": 3,
+        "total_gold": 2
       }
     },
     "South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
@@ -249,14 +165,14 @@
         "total_gold": 5
       }
     },
-    "Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+    "Get These Trending Washington Restaurants on Your Radar Today": {
       "article_match": {
         "precision": 1.0,
-        "recall": 0.333,
-        "f1": 0.5,
+        "recall": 0.2,
+        "f1": 0.333,
         "correct_matches": 1,
         "total_llm": 1,
-        "total_gold": 3
+        "total_gold": 5
       },
       "category_match": {
         "precision": 0.0,
@@ -267,14 +183,14 @@
       },
       "weighted_article_match": {
         "precision": 1.0,
-        "recall": 0.333,
-        "f1": 0.5,
+        "recall": 0.2,
+        "f1": 0.333,
         "tp_weight": 0.33,
-        "total_gold_weight": 0.99,
+        "total_gold_weight": 1.65,
         "fp": 0,
         "matched": 1,
         "total_llm": 1,
-        "total_gold": 3
+        "total_gold": 5
       }
     },
     "Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
@@ -305,42 +221,14 @@
         "total_gold": 5
       }
     },
-    "Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
-      "article_match": {
-        "precision": 0.167,
-        "recall": 0.5,
-        "f1": 0.25,
-        "correct_matches": 1,
-        "total_llm": 6,
-        "total_gold": 2
-      },
-      "category_match": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_matches": 1
-      },
-      "weighted_article_match": {
-        "precision": 0.062,
-        "recall": 0.5,
-        "f1": 0.11,
-        "tp_weight": 0.33,
-        "total_gold_weight": 0.66,
-        "fp": 5,
-        "matched": 1,
-        "total_llm": 6,
-        "total_gold": 2
-      }
-    },
-    "Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+    "Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
       "article_match": {
         "precision": 1.0,
-        "recall": 0.2,
-        "f1": 0.333,
+        "recall": 0.5,
+        "f1": 0.667,
         "correct_matches": 1,
         "total_llm": 1,
-        "total_gold": 5
+        "total_gold": 2
       },
       "category_match": {
         "precision": 0.0,
@@ -351,14 +239,126 @@
       },
       "weighted_article_match": {
         "precision": 1.0,
-        "recall": 0.2,
-        "f1": 0.333,
+        "recall": 0.5,
+        "f1": 0.667,
         "tp_weight": 0.33,
-        "total_gold_weight": 1.65,
+        "total_gold_weight": 0.66,
         "fp": 0,
         "matched": 1,
         "total_llm": 1,
-        "total_gold": 5
+        "total_gold": 2
+      }
+    },
+    "Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.333,
+        "f1": 0.5,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.333,
+        "f1": 0.5,
+        "tp_weight": 0.33,
+        "total_gold_weight": 0.99,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 3
+      }
+    },
+    "Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.667,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.667,
+        "tp_weight": 0.33,
+        "total_gold_weight": 0.66,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 2
+      }
+    },
+    "Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "article_match": {
+        "precision": 0.333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "correct_matches": 1,
+        "total_llm": 3,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 0.142,
+        "recall": 0.5,
+        "f1": 0.221,
+        "tp_weight": 0.33,
+        "total_gold_weight": 0.66,
+        "fp": 2,
+        "matched": 1,
+        "total_llm": 3,
+        "total_gold": 2
+      }
+    },
+    "Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.667,
+        "correct_matches": 2,
+        "total_llm": 2,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 2,
+        "total_matches": 2
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.667,
+        "tp_weight": 0.66,
+        "total_gold_weight": 1.32,
+        "fp": 0,
+        "matched": 2,
+        "total_llm": 2,
+        "total_gold": 4
       }
     }
   }
