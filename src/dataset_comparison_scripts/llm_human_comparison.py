@@ -491,6 +491,9 @@ if __name__ == "__main__":
     llm_map = flatten_llm(llm_json)
     gold_map = flatten_gold(gold_json)
 
+    llm_map = {k: v for k, v in llm_map.items() if normalize_title(k) in shared_titles}
+    gold_map = {k: v for k, v in gold_map.items() if normalize_title(k) in shared_titles}
+
     print("\n=== DEBUG INFO ===")
     print(f"LLM has {len(llm_map)} articles.")
     print(f"Gold has {len(gold_map)} articles.\n")
