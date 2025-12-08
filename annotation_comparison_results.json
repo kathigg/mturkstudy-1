@@ -1,54 +1,54 @@
 {
   "overall": {
     "article_match": {
-      "precision": 0.706,
-      "recall": 0.3,
-      "f1": 0.421,
-      "correct_matches": 12,
+      "precision": 0.471,
+      "recall": 0.2,
+      "f1": 0.281,
+      "correct_matches": 8,
       "total_llm": 17,
       "total_gold": 40
     },
     "category_match": {
-      "precision": 0.25,
-      "recall": 0.25,
-      "f1": 0.25,
+      "precision": 0.375,
+      "recall": 0.375,
+      "f1": 0.375,
       "correct_matches": 3,
-      "total_matches": 12
+      "total_matches": 8
     },
     "weighted_article_match": {
-      "precision": 0.442,
-      "recall": 0.3,
-      "f1": 0.357,
-      "tp_weight": 3.96,
+      "precision": 0.227,
+      "recall": 0.2,
+      "f1": 0.213,
+      "tp_weight": 2.64,
       "total_gold_weight": 13.2,
-      "fp": 5
+      "fp": 9
     }
   },
   "per_article": {
     "Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
       "article_match": {
-        "precision": 1.0,
-        "recall": 0.5,
-        "f1": 0.667,
-        "correct_matches": 1,
-        "total_llm": 1,
-        "total_gold": 2
-      },
-      "category_match": {
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0,
         "correct_matches": 0,
-        "total_matches": 1
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
       },
       "weighted_article_match": {
-        "precision": 1.0,
-        "recall": 0.5,
-        "f1": 0.667,
-        "tp_weight": 0.33,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
         "total_gold_weight": 0.66,
-        "fp": 0,
-        "matched": 1,
+        "fp": 1,
+        "matched": 0,
         "total_llm": 1,
         "total_gold": 2
       }
@@ -83,28 +83,28 @@
     },
     "Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
       "article_match": {
-        "precision": 1.0,
-        "recall": 0.5,
-        "f1": 0.667,
-        "correct_matches": 1,
-        "total_llm": 1,
-        "total_gold": 2
-      },
-      "category_match": {
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0,
         "correct_matches": 0,
-        "total_matches": 1
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
       },
       "weighted_article_match": {
-        "precision": 1.0,
-        "recall": 0.5,
-        "f1": 0.667,
-        "tp_weight": 0.33,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
         "total_gold_weight": 0.66,
-        "fp": 0,
-        "matched": 1,
+        "fp": 1,
+        "matched": 0,
         "total_llm": 1,
         "total_gold": 2
       }
@@ -195,28 +195,28 @@
     },
     "Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
       "article_match": {
-        "precision": 1.0,
-        "recall": 0.5,
-        "f1": 0.667,
-        "correct_matches": 2,
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.333,
+        "correct_matches": 1,
         "total_llm": 2,
         "total_gold": 4
       },
       "category_match": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
+        "precision": 2.0,
+        "recall": 2.0,
+        "f1": 2.0,
         "correct_matches": 2,
-        "total_matches": 2
+        "total_matches": 1
       },
       "weighted_article_match": {
-        "precision": 1.0,
-        "recall": 0.5,
-        "f1": 0.667,
-        "tp_weight": 0.66,
+        "precision": 0.248,
+        "recall": 0.25,
+        "f1": 0.249,
+        "tp_weight": 0.33,
         "total_gold_weight": 1.32,
-        "fp": 0,
-        "matched": 2,
+        "fp": 1,
+        "matched": 1,
         "total_llm": 2,
         "total_gold": 4
       }
@@ -307,28 +307,28 @@
     },
     "Rosemount Recreation Center Plan Gets Positive Response so Far": {
       "article_match": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "correct_matches": 1,
-        "total_llm": 1,
-        "total_gold": 1
-      },
-      "category_match": {
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0,
         "correct_matches": 0,
-        "total_matches": 1
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
       },
       "weighted_article_match": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "tp_weight": 0.33,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
         "total_gold_weight": 0.33,
-        "fp": 0,
-        "matched": 1,
+        "fp": 1,
+        "matched": 0,
         "total_llm": 1,
         "total_gold": 1
       }
