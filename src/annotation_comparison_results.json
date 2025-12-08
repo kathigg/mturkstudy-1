@@ -1,0 +1,407 @@
+{
+  "overall": {
+    "span_level": {
+      "precision": 0.222,
+      "recall": 0.05,
+      "f1": 0.082,
+      "tp": 2,
+      "fp": 15,
+      "fn": 38,
+      "total_llm_real_spans": 9,
+      "total_llm_no_polarizing": 8,
+      "total_gold_spans": 40
+    },
+    "weighted_span_level": {
+      "precision": 0.042,
+      "recall": 0.043,
+      "f1": 0.042,
+      "tp_weight": 0.66,
+      "gold_total_weight": 15.4,
+      "fp": 15
+    },
+    "category_level": {
+      "precision": 1.0,
+      "recall": 0.05,
+      "f1": 0.095,
+      "correct_category_matches": 2,
+      "matched_spans": 2,
+      "total_gold_spans": 40
+    }
+  },
+  "per_article": {
+    "Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
+      "span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 2,
+        "total_llm_real_spans": 0,
+        "total_llm_no_polarizing": 1,
+        "total_gold_spans": 2
+      },
+      "weighted_span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0.0,
+        "gold_total_weight": 1.0,
+        "fp": 1
+      },
+      "category_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct_category_matches": 0,
+        "matched_spans": 0,
+        "total_gold_spans": 2
+      },
+      "matches": []
+    },
+    "Ex-Posen Mayor Pleads Guilty to Embezzling Village Funds": {
+      "span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 4,
+        "total_llm_real_spans": 0,
+        "total_llm_no_polarizing": 1,
+        "total_gold_spans": 4
+      },
+      "weighted_span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0.0,
+        "gold_total_weight": 1.49,
+        "fp": 1
+      },
+      "category_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct_category_matches": 0,
+        "matched_spans": 0,
+        "total_gold_spans": 4
+      },
+      "matches": []
+    },
+    "Four Top Residencies Now Offered to Local Artists, Thanks to Oolite": {
+      "span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 2,
+        "total_llm_real_spans": 0,
+        "total_llm_no_polarizing": 1,
+        "total_gold_spans": 2
+      },
+      "weighted_span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0.0,
+        "gold_total_weight": 0.83,
+        "fp": 1
+      },
+      "category_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct_category_matches": 0,
+        "matched_spans": 0,
+        "total_gold_spans": 2
+      },
+      "matches": []
+    },
+    "Frozen Sperm Bank Could Be Set up in Space, Study Suggests": {
+      "span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 5,
+        "total_llm_real_spans": 0,
+        "total_llm_no_polarizing": 1,
+        "total_gold_spans": 5
+      },
+      "weighted_span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0.0,
+        "gold_total_weight": 1.99,
+        "fp": 1
+      },
+      "category_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct_category_matches": 0,
+        "matched_spans": 0,
+        "total_gold_spans": 5
+      },
+      "matches": []
+    },
+    "Get These Trending Washington Restaurants on Your Radar Today": {
+      "span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 5,
+        "total_llm_real_spans": 0,
+        "total_llm_no_polarizing": 1,
+        "total_gold_spans": 5
+      },
+      "weighted_span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0.0,
+        "gold_total_weight": 1.65,
+        "fp": 1
+      },
+      "category_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct_category_matches": 0,
+        "matched_spans": 0,
+        "total_gold_spans": 5
+      },
+      "matches": []
+    },
+    "Missouri's Only Abortion Clinic to Remain Open After Judge's Injunction Holds": {
+      "span_level": {
+        "precision": 0.333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "tp": 1,
+        "fp": 2,
+        "fn": 1,
+        "total_llm_real_spans": 3,
+        "total_llm_no_polarizing": 0,
+        "total_gold_spans": 2
+      },
+      "weighted_span_level": {
+        "precision": 0.142,
+        "recall": 0.5,
+        "f1": 0.221,
+        "tp_weight": 0.33,
+        "gold_total_weight": 0.66,
+        "fp": 2
+      },
+      "category_level": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.667,
+        "correct_category_matches": 1,
+        "matched_spans": 1,
+        "total_gold_spans": 2
+      },
+      "matches": [
+        [
+          2,
+          1,
+          1.0
+        ]
+      ]
+    },
+    "Phoenix Chief Says Police Response to Incident with 4-year-old Is 'unacceptable'": {
+      "span_level": {
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.333,
+        "tp": 1,
+        "fp": 1,
+        "fn": 3,
+        "total_llm_real_spans": 2,
+        "total_llm_no_polarizing": 0,
+        "total_gold_spans": 4
+      },
+      "weighted_span_level": {
+        "precision": 0.248,
+        "recall": 0.153,
+        "f1": 0.189,
+        "tp_weight": 0.33,
+        "gold_total_weight": 2.16,
+        "fp": 1
+      },
+      "category_level": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "correct_category_matches": 1,
+        "matched_spans": 1,
+        "total_gold_spans": 4
+      },
+      "matches": [
+        [
+          0,
+          3,
+          0.9544120344890845
+        ]
+      ]
+    },
+    "Port of L.a. Sued After Canceling Agreement for a Shipping Container Facility": {
+      "span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 5,
+        "total_llm_real_spans": 1,
+        "total_llm_no_polarizing": 0,
+        "total_gold_spans": 5
+      },
+      "weighted_span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0.0,
+        "gold_total_weight": 1.65,
+        "fp": 1
+      },
+      "category_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct_category_matches": 0,
+        "matched_spans": 0,
+        "total_gold_spans": 5
+      },
+      "matches": []
+    },
+    "Protest in Madrid as Conservatives Suspend Ban on Most Polluting Cars": {
+      "span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 3,
+        "fn": 2,
+        "total_llm_real_spans": 3,
+        "total_llm_no_polarizing": 0,
+        "total_gold_spans": 2
+      },
+      "weighted_span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0.0,
+        "gold_total_weight": 0.83,
+        "fp": 3
+      },
+      "category_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct_category_matches": 0,
+        "matched_spans": 0,
+        "total_gold_spans": 2
+      },
+      "matches": []
+    },
+    "Ridgecrest Earthquakes Caused Damage to the Earth's Crust Seen from Satellite": {
+      "span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 3,
+        "total_llm_real_spans": 0,
+        "total_llm_no_polarizing": 1,
+        "total_gold_spans": 3
+      },
+      "weighted_span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0.0,
+        "gold_total_weight": 1.16,
+        "fp": 1
+      },
+      "category_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct_category_matches": 0,
+        "matched_spans": 0,
+        "total_gold_spans": 3
+      },
+      "matches": []
+    },
+    "Rosemount Recreation Center Plan Gets Positive Response so Far": {
+      "span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "total_llm_real_spans": 0,
+        "total_llm_no_polarizing": 1,
+        "total_gold_spans": 1
+      },
+      "weighted_span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0.0,
+        "gold_total_weight": 0.33,
+        "fp": 1
+      },
+      "category_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct_category_matches": 0,
+        "matched_spans": 0,
+        "total_gold_spans": 1
+      },
+      "matches": []
+    },
+    "South African Woman Reunited with Son Six Years After He Disappeared and Was Tracked Down 1,000 Miles Away": {
+      "span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 5,
+        "total_llm_real_spans": 0,
+        "total_llm_no_polarizing": 1,
+        "total_gold_spans": 5
+      },
+      "weighted_span_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0.0,
+        "gold_total_weight": 1.65,
+        "fp": 1
+      },
+      "category_level": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct_category_matches": 0,
+        "matched_spans": 0,
+        "total_gold_spans": 5
+      },
+      "matches": []
+    }
+  },
+  "unmatched_llm_titles": [],
+  "unmatched_gold_titles": []
+}

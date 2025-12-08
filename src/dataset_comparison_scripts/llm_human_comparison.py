@@ -44,7 +44,7 @@ def tokenize(text):
     return normalize_text(text).split()
 
 
-def overlap(span1, span2, min_overlap=2):
+def overlap(span1, span2, min_overlap=4):
     tokens1 = set(tokenize(span1))
     tokens2 = set(tokenize(span2))
     # token overlap OR substring overlap
@@ -102,7 +102,7 @@ def flatten_llm(llm_json):
 # Weighted matching helpers
 # ------------------------
 def get_gold_weight(ann):
-    # Default mirrors your gold-builder levels: 1.0 (3/3), 0.67 (2 w/consistency), 0.5 (2 w/o), 0.33 (1)
+    # Default mirrors gold-builder levels: 1.0 (3/3), 0.67 (2 w/consistency), 0.5 (2 w/o), 0.33 (1)
     # If not present, assume a conservative 0.33.
     return float(ann.get("confidence", 0.33))
 
@@ -281,28 +281,37 @@ def normalize_title(title):
 # Aggregate Comparison
 # ------------------------
 def compare_all(llm_json, gold_json):
-    llm_map = flatten_llm(llm_json)
-    gold_map = flatten_gold(gold_json)
+    # Flatten
+    llm_map_raw = flatten_llm(llm_json)
+    gold_map_raw = flatten_gold(gold_json)
 
-    # --- Normalize gold titles by removing "ARTICLE_" prefix if present ---
+    # Normalize gold titles by removing "ARTICLE_" prefix if present
     cleaned_gold_map = {}
-    for title, anns in gold_map.items():
+    for title, anns in gold_map_raw.items():
         normalized_title = title
         if title.startswith("ARTICLE_"):
             normalized_title = title.replace("ARTICLE_", "", 1).strip()
         cleaned_gold_map[normalized_title] = anns
-    gold_map = cleaned_gold_map
+    gold_map_raw = cleaned_gold_map
 
-    shared_titles = set(map(normalize_title, llm_map.keys())) & set(map(normalize_title, gold_map.keys()))
+    # Build mapping from normalized title -> original title
+    llm_norm_to_title = {normalize_title(k): k for k in llm_map_raw.keys()}
+    gold_norm_to_title = {normalize_title(k): k for k in gold_map_raw.keys()}
 
-    if not shared_titles:
+    llm_norm_titles = set(llm_norm_to_title.keys())
+    gold_norm_titles = set(gold_norm_to_title.keys())
+
+    shared_norm_titles = llm_norm_titles & gold_norm_titles
+
+    # If nothing overlaps at all, use your existing fallback mode
+    if not shared_norm_titles:
         print("⚠️ No direct title matches found. Using fallback comparison mode.")
         all_results = {}
         total_correct_article = total_llm = total_gold = 0
         total_correct_cat = total_shared = 0
 
-        for g_title, g_anns in gold_map.items():
-            for l_title, l_anns in llm_map.items():
+        for g_title, g_anns in gold_map_raw.items():
+            for l_title, l_anns in llm_map_raw.items():
                 result = compare_article(l_anns, g_anns)
                 cat_result = compare_category(l_anns, g_anns)
 
@@ -348,26 +357,18 @@ def compare_all(llm_json, gold_json):
             "per_article": all_results,
         }
 
-        # ------------------------------------------------------
-    # NEW: Warn about missing articles & exclude them entirely
-    # ------------------------------------------------------
-    llm_titles_norm = {normalize_title(k): k for k in llm_map.keys()}
-    gold_titles_norm = {normalize_title(k): k for k in gold_map.keys()}
+    # -------- New: warn & restrict strictly to shared titles --------
+    missing_in_llm = gold_norm_titles - llm_norm_titles
+    missing_in_gold = llm_norm_titles - gold_norm_titles
 
-    missing_in_llm = set(gold_titles_norm.keys()) - set(llm_titles_norm.keys())
-    missing_in_gold = set(llm_titles_norm.keys()) - set(gold_titles_norm.keys())
+    for norm in sorted(missing_in_llm):
+        print(f"⚠️ Skipping '{gold_norm_to_title[norm]}' — exists in GOLD but not in LLM.")
 
-    # Print warnings for visibility
-    for t in sorted(missing_in_llm):
-        print(f"⚠️ Skipping '{gold_titles_norm[t]}' — exists in GOLD but not in LLM.")
+    for norm in sorted(missing_in_gold):
+        print(f"⚠️ Skipping '{llm_norm_to_title[norm]}' — exists in LLM but not in GOLD.")
 
-    for t in sorted(missing_in_gold):
-        print(f"⚠️ Skipping '{llm_titles_norm[t]}' — exists in LLM but not in GOLD.")
-
-    # Now restrict the evaluation strictly to shared titles
-    valid_shared_titles = sorted(shared_titles)
-
-    if not valid_shared_titles:
+    # If after filtering there are no articles left, bail out with zeros
+    if not shared_norm_titles:
         print("⚠️ After removing unmatched titles, no articles remain for comparison.")
         return {
             "overall": {
@@ -375,63 +376,66 @@ def compare_all(llm_json, gold_json):
                 "category_match": {"precision": 0, "recall": 0, "f1": 0},
                 "weighted_article_match": {"precision": 0, "recall": 0, "f1": 0},
             },
-            "per_article": {}
+            "per_article": {},
         }
-    
-    # --- Normal case: direct matches exist ---
+
+    # Now restrict maps to shared titles only
+    # (THIS is what ensures missing articles can't affect totals)
+    llm_map = {
+        llm_norm_to_title[norm]: llm_map_raw[llm_norm_to_title[norm]]
+        for norm in shared_norm_titles
+    }
+    gold_map = {
+        gold_norm_to_title[norm]: gold_map_raw[gold_norm_to_title[norm]]
+        for norm in shared_norm_titles
+    }
+
+    # --- Normal case: direct matches exist on shared articles ---
     all_results = {}
     total_correct_article = total_llm = total_gold = 0
     total_correct_cat = total_shared = 0
 
-    # NEW overall accumulators for weighted metric
     sum_TP_w = 0.0
     sum_FP = 0
     sum_Gold_w = 0.0
 
-    for title_norm in valid_shared_titles:
-        llm_title = next(k for k in llm_map if normalize_title(k) == title_norm)
-        gold_title = next(k for k in gold_map if normalize_title(k) == title_norm)
+    for norm in sorted(shared_norm_titles):
+        llm_title = llm_norm_to_title[norm]
+        gold_title = gold_norm_to_title[norm]
 
         l_anns = llm_map[llm_title]
         g_anns = gold_map[gold_title]
 
-        # existing metrics (unchanged)
         result = compare_article(l_anns, g_anns)
         cat_result = compare_category(l_anns, g_anns)
-
-        # NEW weighted metric (article-level)
         w_result = compare_article_weighted(l_anns, g_anns)
 
         all_results[llm_title] = {
             "article_match": result,
             "category_match": cat_result,
-            "weighted_article_match": w_result,  # <-- add per-article weighted
+            "weighted_article_match": w_result,
         }
 
-        # existing aggregation
         total_correct_article += result["correct_matches"]
         total_llm += result["total_llm"]
         total_gold += result["total_gold"]
         total_correct_cat += cat_result["correct_matches"]
         total_shared += cat_result["total_matches"]
 
-        # NEW aggregation for weighted overall
         sum_TP_w += w_result["tp_weight"]
         sum_FP += w_result["fp"]
         sum_Gold_w += w_result["total_gold_weight"]
 
-    # existing overall metrics (unchanged)
     precision_article = total_correct_article / total_llm if total_llm else 0
     recall_article = total_correct_article / total_gold if total_gold else 0
     f1_article = (2 * precision_article * recall_article /
-                (precision_article + recall_article)) if (precision_article + recall_article) else 0
+                  (precision_article + recall_article)) if (precision_article + recall_article) else 0
 
     precision_cat = total_correct_cat / total_shared if total_shared else 0
     recall_cat = total_correct_cat / total_shared if total_shared else 0
     f1_cat = (2 * precision_cat * recall_cat /
-            (precision_cat + recall_cat)) if (precision_cat + recall_cat) else 0
+              (precision_cat + recall_cat)) if (precision_cat + recall_cat) else 0
 
-    # --- Macro-average weighted metrics across all articles ---
     weighted_precisions = [res["weighted_article_match"]["precision"] for res in all_results.values()]
     weighted_recalls = [res["weighted_article_match"]["recall"] for res in all_results.values()]
     weighted_f1s = [res["weighted_article_match"]["f1"] for res in all_results.values()]
@@ -439,12 +443,11 @@ def compare_all(llm_json, gold_json):
     macro_weighted_precision = sum(weighted_precisions) / len(weighted_precisions) if weighted_precisions else 0
     macro_weighted_recall = sum(weighted_recalls) / len(weighted_recalls) if weighted_recalls else 0
     macro_weighted_f1 = sum(weighted_f1s) / len(weighted_f1s) if weighted_f1s else 0
-    
-    # NEW overall weighted metrics
+
     overall_wp = (sum_TP_w / (sum_TP_w + sum_FP)) if (sum_TP_w + sum_FP) > 0 else 0.0
     overall_wr = (sum_TP_w / sum_Gold_w) if sum_Gold_w > 0 else 0.0
     overall_wf1 = (2 * overall_wp * overall_wr / (overall_wp + overall_wr)
-                if (overall_wp + overall_wr) > 0 else 0.0)
+                   if (overall_wp + overall_wr) > 0 else 0.0)
 
     return {
         "overall": {
@@ -463,7 +466,6 @@ def compare_all(llm_json, gold_json):
                 "correct_matches": total_correct_cat,
                 "total_matches": total_shared,
             },
-            # NEW weighted overall block
             "weighted_article_match": {
                 "precision": round(overall_wp, 3),
                 "recall": round(overall_wr, 3),
@@ -490,9 +492,6 @@ if __name__ == "__main__":
     # Flatten manually to inspect
     llm_map = flatten_llm(llm_json)
     gold_map = flatten_gold(gold_json)
-
-    llm_map = {k: v for k, v in llm_map.items() if normalize_title(k) in shared_titles}
-    gold_map = {k: v for k, v in gold_map.items() if normalize_title(k) in shared_titles}
 
     print("\n=== DEBUG INFO ===")
     print(f"LLM has {len(llm_map)} articles.")
