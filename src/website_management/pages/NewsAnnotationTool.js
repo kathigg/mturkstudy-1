@@ -218,6 +218,10 @@ function ToolMain() {
     const [currentParagraphIndex, setCurrentParagraphIndex] = useState(0);
     const [selectionParagraphIndex, setSelectionParagraphIndex] = useState(null);
 
+    // --- Subcategory confirmation popup (mirrors No Polarizing Language flow) ---
+    const [showSubcategoryPopup, setShowSubcategoryPopup] = useState(false);
+    const [pendingSubcategoryAnnotation, setPendingSubcategoryAnnotation] = useState(null);
+
     const currentArticle = articles[currentArticleIndex];
     const paragraphs = currentArticle ? paragraphAdd(currentArticle.content) : [];
     const hasMoreParagraphs = currentArticle ? currentParagraphIndex < paragraphs.length - 1 : false;
@@ -235,13 +239,29 @@ function ToolMain() {
       setSelectedCategory(categoryKey);
       setSelectedSubcategory("");
     
-      // Trigger popup overlay for "No polarizing language"
+      // No Polarizing Language popup DISABLED (record immediately)
       if (categoryKey === "No_Polarizing_Language") {
-        setPendingNoPolarizingConfirm(true);
-        setShowNoPolarizingPopup(true);
+        const articleId = articles[currentArticleIndex]?.id;
+        if (articleId) {
+          setTextAnnotations((prev) => ({
+            ...prev,
+            [articleId]: [
+              ...(prev[articleId] || []),
+              {
+                title: articles[currentArticleIndex]?.title || "",
+                text: "No polarizing language selected",
+                category: "No_Polarizing_Language",
+                subcategory: "no polarizing language",
+                paragraphIndex: currentParagraphIndex,
+              },
+            ],
+          }));
+        }
+        // Ensure popup state stays off
+        setShowNoPolarizingPopup(false);
+        setPendingNoPolarizingConfirm(false);
         return;
       }
-    
       // Regular categories behave normally
     };
     
@@ -269,6 +289,94 @@ useEffect(() => {
       "No_Polarizing_Language": ["No polarizing language"],
   };
 
+    const subcategoryPopupContent = {
+      Exaggeration: {
+        title: "Exaggeration",
+        description:
+          "Makes something sound much bigger, better, or worse than it really is (or downplays it as smaller or less serious).",
+        examples: [
+          "“A local protest ignited waves of outrage and sent shockwaves through the nation.”",
+          "“This minor disagreement has become a national catastrophe.”",
+        ],
+      },
+      Slogans: {
+        title: "Slogans",
+        description:
+          "A short, memorable phrase meant to spark emotion or support a cause by simplifying a complex idea into a few words.",
+        examples: ["“No Justice, No Peace.”", "“America First.”"],
+      },
+      Bandwagon: {
+        title: "Bandwagon",
+        description:
+          "Urges support because “everyone else” supports it—relying on popularity or social pressure rather than evidence.",
+        examples: ["“Most Americans back this plan, polls show.”"],
+      },
+      "Casual Oversimplification": {
+        title: "Casual Oversimplification",
+        description:
+          "Explains a complex issue with one simple cause or answer, ignoring other factors that are probably involved.",
+        examples: [
+          "“The media is the only reason the nation is divided.”",
+          "“Inflation rose solely because of the president’s policies.”",
+        ],
+      },
+      Doubt: {
+        title: "Doubt",
+        description:
+          "Language that makes the audience question whether a person, group, or institution is competent, honest, or legitimate.",
+        examples: [
+          "“Is he really ready to be the Mayor?”",
+          "“Some experts question whether the agency’s data can be trusted.”",
+        ],
+      },
+      "Name-Calling": {
+        title: "Name-Calling",
+        description:
+          "Uses a loaded positive or negative label to shape how the audience feels about a person, group, or idea instead of evidence.",
+        examples: [
+          "“The movement, composed largely of radical extremists, has demanded sweeping reform.”",
+          "“The oft-labeled terrorist sympathizers took to the streets…”",
+        ],
+      },
+      Demonization: {
+        title: "Demonization",
+        description:
+          "Describes people or groups as evil, dangerous, corrupt, disgusting, or less than human to turn the audience against them.",
+        examples: [
+          "“Migrants are parasites stealing American jobs.”",
+          "“These politicians are eating away at the heart of this nation…”",
+        ],
+      },
+      Scapegoating: {
+        title: "Scapegoating",
+        description:
+          "Blames an entire group for a broad problem or crisis and frames them as the main cause of widespread harm or decline.",
+        examples: [
+          "“Teachers’ unions are the reason kids are failing in school.”",
+          "“The rising rents—driven as always by greedy landlords—represent a severe strain on families.”",
+        ],
+      },
+    };
+
+    const getSubcategoryPopupCopy = (subcategory) => {
+      if (!subcategory) {
+        return {
+          title: "Are you sure?",
+          description:
+            "Confirm your choice before saving this annotation. If it doesn't fit, cancel and pick a different subcategory.",
+          examples: [],
+        };
+      }
+      return (
+        subcategoryPopupContent[subcategory] || {
+          title: subcategory,
+          description:
+            "Confirm your choice before saving this annotation. If it doesn't fit, cancel and pick a different subcategory.",
+          examples: [],
+        }
+      );
+    };
+
     const [showSurvey, setShowSurvey] = useState(false);
     const [surveyResponses, setSurveyResponses] = useState({});
     const [confidence, setConfidence] = useState(0);
@@ -277,6 +385,10 @@ useEffect(() => {
     const [showThankYou, setShowThankYou] = useState(false);
 
     const articleId = articles[currentArticleIndex]?.id;
+    const pendingSubcategoryCopy = pendingSubcategoryAnnotation
+      ? getSubcategoryPopupCopy(pendingSubcategoryAnnotation.subcategory)
+      : null;
+
 
     // Annotations for current article and paragraph-based progress
     const annotationsForArticle = articleId ? (textAnnotations[articleId] || []) : [];
@@ -294,78 +406,102 @@ useEffect(() => {
       return text.trim().length;
     };
 
-const autoSaveAnnotation = (category, subcategory) => {
-  if (category && subcategory && articleId) {
-    // For "no polarizing language", we don't require selected text
-    const textToSave = category === "No_Polarizing_Language" 
-      ? "no polarizing language selected" 
-      : selectedText;
-    
-    if (category === "No_Polarizing_Language" || selectedText) {
-      setTextAnnotations((prevAnnotations) => ({
-        ...prevAnnotations,
-        [articleId]: [
-          ...(prevAnnotations[articleId] || []),
-          { title: articles[currentArticleIndex]?.title || "", 
-            text: textToSave, 
-            category, 
-            subcategory,
-            paragraphIndex: selectionParagraphIndex ?? currentParagraphIndex },
-        ],
-      }));
-      
-      setSelectedText("");
-      setSelectedCategory("");
-      setSelectedSubcategory("");
-    }
-  }
+const saveAnnotation = ({
+  articleId: targetArticleId,
+  title = "",
+  text,
+  category,
+  subcategory,
+  paragraphIndex,
+}) => {
+  if (!targetArticleId || !category || !subcategory) return;
+
+  setTextAnnotations((prevAnnotations) => ({
+    ...prevAnnotations,
+    [targetArticleId]: [
+      ...(prevAnnotations[targetArticleId] || []),
+      {
+        title,
+        text,
+        category,
+        subcategory,
+        paragraphIndex,
+      },
+    ],
+  }));
+
+  // Reset selection UI
+  setSelectedText("");
+  setSelectedCategory("");
+  setSelectedSubcategory("");
+  setSelectionParagraphIndex(null);
 };
 
 // Update category and subcategory selection handlers
 const handleCategoryChange = (e) => {
   const newCategory = e.target.value;
+
+  // Changing category should reset subcategory selection
   setSelectedCategory(newCategory);
-  if (selectedSubcategory && (selectedText || newCategory === "No_Polarizing_Language")) {
-    autoSaveAnnotation(newCategory, selectedSubcategory);
+  setSelectedSubcategory("");
+
+  // If someone selects "No polarizing language" from the dropdown (rare),
+  // reuse the same confirmation flow as the dedicated button.
+  if (newCategory === "No_Polarizing_Language") {
+    // No Polarizing Language popup DISABLED (record immediately)
+    const articleId = articles[currentArticleIndex]?.id;
+    if (articleId) {
+      setTextAnnotations((prev) => ({
+        ...prev,
+        [articleId]: [
+          ...(prev[articleId] || []),
+          {
+            title: articles[currentArticleIndex]?.title || "",
+            text: "No polarizing language selected",
+            category: "No_Polarizing_Language",
+            subcategory: "no polarizing language",
+            paragraphIndex: currentParagraphIndex,
+          },
+        ],
+      }));
+    }
+    setShowNoPolarizingPopup(false);
+    setPendingNoPolarizingConfirm(false);
   }
 };
 
 const handleSubcategoryChange = (e) => {
   const newSubcategory = e.target.value;
   setSelectedSubcategory(newSubcategory);
-  if (selectedCategory && (selectedText || selectedCategory === "No_Polarizing_Language")) {
-    autoSaveAnnotation(selectedCategory, newSubcategory);
+
+  if (!newSubcategory) return;
+
+  // We only show the subcategory popup for actual polarizing categories.
+  if (selectedCategory === "No_Polarizing_Language") {
+    return;
   }
+
+  // Enforce word-count rule before allowing a subcategory confirmation
+  const wc = countWords(selectedText);
+  if (wc < MIN_WORDS || wc > MAX_WORDS) {
+    alert(`Please select between ${MIN_WORDS} and ${MAX_WORDS} words before annotating.`);
+    setSelectedSubcategory("");
+    return;
+  }
+
+  const articleIdNow = articles[currentArticleIndex]?.id;
+  if (!articleIdNow || !selectedText) return;
+
+  setPendingSubcategoryAnnotation({
+    articleId: articleIdNow,
+    title: articles[currentArticleIndex]?.title || "",
+    text: selectedText,
+    category: selectedCategory,
+    subcategory: newSubcategory,
+    paragraphIndex: selectionParagraphIndex ?? currentParagraphIndex,
+  });
+  setShowSubcategoryPopup(true);
 };
-
-// Update JSX for annotation inputs
-<select
-  className="p-2 border border-gray-300 rounded-md mb-2"
-  value={selectedCategory}
-  onChange={handleCategoryChange}
->
-  <option value="">Select a Category</option>
-  {Object.keys(categoryOptions).map((category) => (
-    <option key={category} value={category}>
-      {category}
-    </option>
-  ))}
-</select>
-
-{selectedCategory && Array.isArray(categoryOptions[selectedCategory]) && (
-  <select
-    className="p-2 border border-gray-300 rounded-md mb-2"
-    value={selectedSubcategory}
-    onChange={handleSubcategoryChange}
-  >
-    <option value="">Select a Subcategory</option>
-    {categoryOptions[selectedCategory].map((subcategory) => (
-      <option key={subcategory} value={subcategory}>
-        {subcategory}
-      </option>
-    ))}
-  </select>
-)}
 
 const downloadAnnotations = (annotations, textAnnotations, surveyResponses) => {
   const articleTitles = articles.map((article) => ({
@@ -468,7 +604,7 @@ const downloadAnnotations = (annotations, textAnnotations, surveyResponses) => {
       }, []);
     */
 
-const MAX_PER_ARTICLE = 4;
+const MAX_PER_ARTICLE = 3;
 async function pickAndClaimIndex() {
   const usageRef = ref(database, "articleUsage");
   const claimedRef = ref(database, "claimedArticles");
@@ -818,7 +954,7 @@ const handleNextArticle = async () => {
       return (
         <div className="flex w-full justify-center items-start min-h-screen bg-gray-100 relative">
           {/* --- No Polarizing Language Confirmation Overlay --- */}
-          {showNoPolarizingPopup && (
+          {false && showNoPolarizingPopup && (
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm transition-opacity duration-300">
               <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full text-center animate-fadeIn">
                 <h2 className="text-2xl font-bold mb-3 text-gray-900">Are you sure?</h2>
@@ -876,6 +1012,78 @@ const handleNextArticle = async () => {
             </div>
           )}
           
+
+          {/* --- Subcategory Confirmation Overlay --- */}
+          {showSubcategoryPopup && pendingSubcategoryAnnotation && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm transition-opacity duration-300">
+              <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full text-center animate-fadeIn">
+                <h2 className="text-2xl font-bold mb-3 text-gray-900">Are you sure?</h2>
+
+                <p className="text-sm text-gray-700 mb-4 leading-relaxed">
+                  Selecting this option will trigger a closer review of your work.
+                  <br /><br />
+                  You selected <strong>{pendingSubcategoryCopy?.title}</strong>. Confirm if this highlight truly matches the definition below.
+                  Otherwise, click <strong>Cancel</strong> and choose a different subcategory.
+                </p>
+
+                <div className="bg-gray-50 border border-gray-200 rounded-lg p-3 text-left mb-4">
+                  <p className="text-xs text-gray-500 mb-1 font-semibold">Selected text</p>
+                  <p className="text-sm text-gray-800 break-words">“{pendingSubcategoryAnnotation.text}”</p>
+                </div>
+
+                <div className="text-left mb-5">
+                  <p className="text-sm text-gray-800 leading-relaxed">
+                    {pendingSubcategoryCopy?.description}
+                  </p>
+
+                  {pendingSubcategoryCopy?.examples?.length > 0 && (
+                    <div className="mt-3">
+                      <p className="text-xs text-gray-500 font-semibold mb-1">Examples</p>
+                      <ul className="list-disc list-outside ml-5 text-sm text-gray-700 space-y-1">
+                        {pendingSubcategoryCopy.examples.slice(0, 3).map((ex, i) => (
+                          <li key={i}>{ex}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+
+                <div className="flex justify-center space-x-4">
+                  <Button
+                    onClick={() => {
+                      setShowSubcategoryPopup(false);
+                      setPendingSubcategoryAnnotation(null);
+                      setSelectedSubcategory("");
+                    }}
+                    className="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded"
+                  >
+                    Cancel
+                  </Button>
+
+                  <Button
+                    onClick={() => {
+                      if (pendingSubcategoryAnnotation) {
+                        saveAnnotation({
+                          articleId: pendingSubcategoryAnnotation.articleId,
+                          title: pendingSubcategoryAnnotation.title,
+                          text: pendingSubcategoryAnnotation.text,
+                          category: pendingSubcategoryAnnotation.category,
+                          subcategory: pendingSubcategoryAnnotation.subcategory,
+                          paragraphIndex: pendingSubcategoryAnnotation.paragraphIndex,
+                        });
+                      }
+                      setShowSubcategoryPopup(false);
+                      setPendingSubcategoryAnnotation(null);
+                    }}
+                    className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded"
+                  >
+                    I’m sure
+                  </Button>
+                </div>
+              </div>
+            </div>
+          )}
+
             {/* Instructions Sidebar */}
             <div className={`w-1/4 p-4 bg-gray-200 shadow-md transition-all duration-300 ${showRightInstructions ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"}`}>
                 <h3 className="text-lg font-bold mb-2">Annotation Guide</h3>
@@ -1241,7 +1449,7 @@ const handleNextArticle = async () => {
 </Button>
           </div>
         ) : (
-          allParagraphsAnnotated && (
+          !hasMoreParagraphs && hasAnnotationInCurrentParagraph && (
             <div className="mt-6">
               <Button onClick={handleNextArticle} className="bg-blue-500">Submit</Button>
             </div>
