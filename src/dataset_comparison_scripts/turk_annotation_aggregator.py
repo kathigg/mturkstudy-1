@@ -8,7 +8,7 @@ from collections import defaultdict, Counter
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/11-20HIT.json")
+INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/full-11-20HIT.json")
 OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/11-20_hit_gold_standard_output.json")
 
 # ------------------------
@@ -42,12 +42,19 @@ def tokenize(text):
     # split only on whitespace, don't remove punctuation
     return text.lower().split()
 
+def normalize_title_string(title):
+    return re.sub(r"[^\w\s]", "", title or "").strip().lower()
+
 def non_stopword_overlap(span1, span2):
     tokens1 = set(tokenize(span1)) - STOP_WORDS
     tokens2 = set(tokenize(span2)) - STOP_WORDS
     return len(tokens1 & tokens2) >= 2
 
-def spans_match(span1, span2):
+def spans_match(span1, span2, title1=None, title2=None):
+    # Require title equality if both provided
+    if title1 is not None and title2 is not None:
+        if normalize_title_string(title1) != normalize_title_string(title2):
+            return False
     norm1 = normalize(span1)
     norm2 = normalize(span2)
     return (norm1 in norm2 or norm2 in norm1) and non_stopword_overlap(span1, span2)
@@ -141,6 +148,7 @@ def build_gold_standard_with_intersection(
     for article_id, spans in annotations_by_article.items():
         grouped = []
         used = set()
+        title_for_article = article_titles.get(str(article_id)) or article_titles.get(int(article_id)) or ""
 
         for i, span1 in enumerate(spans):
             if i in used:
@@ -151,7 +159,8 @@ def build_gold_standard_with_intersection(
                 if j in used:
                     continue
                 span2 = spans[j]
-                if spans_match(span1["text"], span2["text"]):
+                # Enforce title match as precondition before span comparison
+                if spans_match(span1.get("text", ""), span2.get("text", ""), title_for_article, title_for_article):
                     group.append(span2)
                     used.add(j)
             grouped.append(group)

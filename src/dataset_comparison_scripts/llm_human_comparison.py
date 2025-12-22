@@ -27,12 +27,19 @@ def normalize_span(text):
 def tokenize_span(text):
     return normalize_span(text).split()
 
+def titles_match(title1, title2):
+    t1 = re.sub(r"[^\w\s]", "", title1 or "").strip().lower()
+    t2 = re.sub(r"[^\w\s]", "", title2 or "").strip().lower()
+    return t1 == t2
+
 def non_stopword_overlap(span1, span2):
     tokens1 = set(tokenize_span(span1)) - STOP_WORDS
     tokens2 = set(tokenize_span(span2)) - STOP_WORDS
     return len(tokens1 & tokens2) >= 2
 
-def spans_match(span1, span2):
+def spans_match(span1, span2, title1=None, title2=None):
+    if title1 is not None and title2 is not None and not titles_match(title1, title2):
+        return False
     norm1 = normalize_span(span1)
     norm2 = normalize_span(span2)
     return (norm1 in norm2 or norm2 in norm1) and non_stopword_overlap(span1, span2)
@@ -93,16 +100,20 @@ def is_no_polarizing(ann):
     text = ann.get("text", "").lower()
     return "no polarizing language" in cat or "no polarizing language" in text
 
-def match_annotation(llm_ann, gold_ann):
-    """Return True if annotations overlap (or both say no polarizing language)."""
+def match_annotation(llm_ann, gold_ann, llm_title=None, gold_title=None):
+    """Return True if titles match and annotations overlap (or both say no polarizing language)."""
+    if llm_title is not None and gold_title is not None and not titles_match(llm_title, gold_title):
+        return False
     # Special case: both label "no polarizing language"
     if is_no_polarizing(llm_ann) and is_no_polarizing(gold_ann):
         return True
-    return spans_match(llm_ann.get("text", ""), gold_ann.get("text", ""))
+    return spans_match(llm_ann.get("text", ""), gold_ann.get("text", ""), llm_title, gold_title)
 
 
-def match_category(llm_ann, gold_ann):
-    """Return True if category/subcategory match (and overlap)."""
+def match_category(llm_ann, gold_ann, llm_title=None, gold_title=None):
+    """Return True if titles match and category/subcategory match (and overlap)."""
+    if llm_title is not None and gold_title is not None and not titles_match(llm_title, gold_title):
+        return False
     if is_no_polarizing(llm_ann) and is_no_polarizing(gold_ann):
         return True
     if overlap(llm_ann["text"], gold_ann["text"]):
@@ -164,7 +175,7 @@ def greedy_weighted_match(llm_annotations, gold_annotations, match_fn):
     unmatched_gold = set(i for i in range(len(gold_annotations)) if i not in {g for _, g, _ in matched_pairs})
     return matched_pairs, unmatched_llm, unmatched_gold
 
-def compare_article_weighted(llm_annotations, gold_annotations):
+def compare_article_weighted(llm_annotations, gold_annotations, llm_title=None, gold_title=None):
     """
     Weighted article-level metric (span overlap logic):
       - rewards agreement with high-confidence gold
@@ -172,7 +183,7 @@ def compare_article_weighted(llm_annotations, gold_annotations):
       - keeps FP cost unweighted
     """
     matched_pairs, unmatched_llm, unmatched_gold = greedy_weighted_match(
-        llm_annotations, gold_annotations, match_annotation
+        llm_annotations, gold_annotations, lambda l, g: match_annotation(l, g, llm_title, gold_title)
     )
     TP_w = sum(w for _, _, w in matched_pairs)
     FP = len(unmatched_llm)
@@ -242,7 +253,7 @@ def flatten_gold(gold_json):
 # ------------------------
 # Comparison helpers
 # ------------------------
-def num_of_overlap(llm_ann, gold_ann):
+def num_of_overlap(llm_ann, gold_ann, llm_title=None, gold_title=None):
     """Compare annotations for a single article and return number of matching spans."""
     correct = 0
     used_gold = set()
@@ -250,14 +261,14 @@ def num_of_overlap(llm_ann, gold_ann):
         for i, gold in enumerate(gold_ann):
             if i in used_gold:
                 continue
-            if match_annotation(llm, gold):
+            if match_annotation(llm, gold, llm_title, gold_title):
                 correct += 1
                 used_gold.add(i)
                 break
     return correct
 
 
-def compare_article(llm_annotations, gold_annotations):
+def compare_article(llm_annotations, gold_annotations, llm_title=None, gold_title=None):
     """Compare annotations for a single article and return metrics."""
     correct = 0
     used_gold = set()
@@ -265,7 +276,7 @@ def compare_article(llm_annotations, gold_annotations):
         for i, gold in enumerate(gold_annotations):
             if i in used_gold:
                 continue
-            if match_annotation(llm, gold):
+            if match_annotation(llm, gold, llm_title, gold_title):
                 correct += 1
                 used_gold.add(i)
                 break
@@ -284,9 +295,9 @@ def compare_article(llm_annotations, gold_annotations):
     }
 
 
-def compare_category(llm_annotations, gold_annotations):
+def compare_category(llm_annotations, gold_annotations, llm_title=None, gold_title=None):
     """Compare annotations for a single article (category/subcategory only)."""
-    total_shared = num_of_overlap(llm_annotations, gold_annotations)
+    total_shared = num_of_overlap(llm_annotations, gold_annotations, llm_title, gold_title)
     correct = 0
     used_gold = set()
 
@@ -294,7 +305,7 @@ def compare_category(llm_annotations, gold_annotations):
         for i, gold in enumerate(gold_annotations):
             if i in used_gold:
                 continue
-            if match_category(llm, gold):
+            if match_category(llm, gold, llm_title, gold_title):
                 correct += 1
                 used_gold.add(i)
                 break
@@ -350,8 +361,8 @@ def compare_all(llm_json, gold_json):
 
         for g_title, g_anns in gold_map_raw.items():
             for l_title, l_anns in llm_map_raw.items():
-                result = compare_article(l_anns, g_anns)
-                cat_result = compare_category(l_anns, g_anns)
+                result = compare_article(l_anns, g_anns, l_title, g_title)
+                cat_result = compare_category(l_anns, g_anns, l_title, g_title)
 
                 all_results[f"{g_title} ↔ {l_title}"] = {
                     "article_match": result,
@@ -444,9 +455,9 @@ def compare_all(llm_json, gold_json):
         l_anns = llm_map[llm_title]
         g_anns = gold_map[gold_title]
 
-        result = compare_article(l_anns, g_anns)
-        cat_result = compare_category(l_anns, g_anns)
-        w_result = compare_article_weighted(l_anns, g_anns)
+        result = compare_article(l_anns, g_anns, llm_title, gold_title)
+        cat_result = compare_category(l_anns, g_anns, llm_title, gold_title)
+        w_result = compare_article_weighted(l_anns, g_anns, llm_title, gold_title)
 
         all_results[llm_title] = {
             "article_match": result,
