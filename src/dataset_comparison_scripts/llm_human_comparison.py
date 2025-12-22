@@ -3,6 +3,40 @@ import re
 from pathlib import Path
 from collections import defaultdict
 
+# --- Shared span-matching logic (mirrors turk_annotation_aggregator.py) ---
+STOP_WORDS = {
+    'i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your',
+    'yours', 'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she',
+    'her', 'hers', 'herself', 'it', 'its', 'itself', 'they', 'them', 'their',
+    'theirs', 'themselves', 'what', 'which', 'who', 'whom', 'this', 'that',
+    'these', 'those', 'am', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+    'have', 'has', 'had', 'having', 'do', 'does', 'did', 'doing', 'a', 'an',
+    'the', 'and', 'but', 'if', 'or', 'because', 'as', 'until', 'while', 'of',
+    'at', 'by', 'for', 'with', 'about', 'against', 'between', 'into', 'through',
+    'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up', 'down',
+    'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then',
+    'once', 'here', 'there', 'when', 'where', 'why', 'how', 'all', 'any',
+    'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no',
+    'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 'can',
+    'will', 'just', 'don', 'should', 'now'
+}
+
+def normalize_span(text):
+    return (text or "").lower().strip()
+
+def tokenize_span(text):
+    return normalize_span(text).split()
+
+def non_stopword_overlap(span1, span2):
+    tokens1 = set(tokenize_span(span1)) - STOP_WORDS
+    tokens2 = set(tokenize_span(span2)) - STOP_WORDS
+    return len(tokens1 & tokens2) >= 2
+
+def spans_match(span1, span2):
+    norm1 = normalize_span(span1)
+    norm2 = normalize_span(span2)
+    return (norm1 in norm2 or norm2 in norm1) and non_stopword_overlap(span1, span2)
+
 # ------------------------
 # Paths for JSON files
 # ------------------------
@@ -11,7 +45,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # LLM_PATH = BASE_DIR / "mturk_results/gpt-5-twelve_article_annotations.json"
 # LLM_PATH = BASE_DIR / "mturk_results/11-20_hit_gold_standard_output.json"
 LLM_PATH = BASE_DIR / "llm_annotation_results/final_annotations_3annotators (1).json"
-GOLD_PATH = BASE_DIR / "mturk_results/newest11-20HIT.json"
+GOLD_PATH = BASE_DIR / "mturk_results/v3_2nd_hit_gold_standard_output.json"
 # GOLD_PATH = BASE_DIR / "mturk_results/gold_standard_output.json"
 
 # ------------------------
@@ -64,7 +98,7 @@ def match_annotation(llm_ann, gold_ann):
     # Special case: both label "no polarizing language"
     if is_no_polarizing(llm_ann) and is_no_polarizing(gold_ann):
         return True
-    return overlap(llm_ann["text"], gold_ann["text"])
+    return spans_match(llm_ann.get("text", ""), gold_ann.get("text", ""))
 
 
 def match_category(llm_ann, gold_ann):
@@ -174,6 +208,8 @@ def flatten_gold(gold_json):
         for art_id, anns in gold_json.items():
             title = f"ARTICLE_{art_id}"
             for ann in anns:
+                if not isinstance(ann, dict):
+                    continue
                 article_map[title].append(
                     {
                         "text": ann.get("text", ""),
@@ -188,6 +224,8 @@ def flatten_gold(gold_json):
             title = article.get("title", "UNKNOWN_TITLE")
             anns = article.get("annotations", [])
             for ann in anns:
+                if not isinstance(ann, dict):
+                    continue
                 article_map[title].append(
                     {
                         "text": ann.get("text", ""),
