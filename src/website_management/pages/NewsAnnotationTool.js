@@ -249,7 +249,7 @@ function ToolMain() {
               ...(prev[articleId] || []),
               {
                 title: articles[currentArticleIndex]?.title || "",
-                text: "No polarizing language selected",
+                text: "no polarizing language selected",
                 category: "No_Polarizing_Language",
                 subcategory: "no polarizing language",
                 paragraphIndex: currentParagraphIndex,
