@@ -80,6 +80,23 @@ function IntroScreen({ onDone }) {
   );
 }
 
+function TaskClosedScreen() {
+  return (
+    <div className="min-h-screen w-full flex items-center justify-center bg-gray-100">
+      <div className="w-full max-w-2xl bg-white rounded-xl shadow p-8 border border-gray-200 text-center">
+        <h1 className="text-3xl font-extrabold text-gray-900 mb-4">Task Closed</h1>
+        <p className="text-gray-700 leading-relaxed mb-2">
+          This task is no longer accepting responses because the required number of annotations has been completed.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-2">
+          You may safely return or exit the HIT without submitting.
+        </p>
+        <p className="text-gray-700 leading-relaxed">Thank you for your interest.</p>
+      </div>
+    </div>
+  );
+}
+
 // --- Selection constraints ---
 const MIN_WORDS = 4;
 const MAX_WORDS = 25;
@@ -203,6 +220,7 @@ function ToolMain() {
     const [openDropdown, setOpenDropdown] = useState(null); 
     const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
     const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false); // commented out the variable pendingNoPolarizingConfirm
+    const [taskClosed, setTaskClosed] = useState(false);
     const [completionCode, setCompletionCode] = useState("");
     const [allArticles, setAllArticles] = useState([]);
     const [articles, setArticles] = useState([]);
@@ -689,6 +707,10 @@ async function logArticleUsage(index) {
           if (idx !== null) {
             setSelectedIdx(idx);             // remember chosen index
             setArticles([parsedArticles[idx]]);
+          } else {
+            // All articles have hit the maximum allowed annotations.
+            // Show a clean "Task Closed" screen instead of the empty tool UI.
+            setTaskClosed(true);
           }
         },
       });
@@ -918,6 +940,10 @@ const handleNextArticle = async () => {
       }, [showThankYou]);
 
     
+
+      if (taskClosed) {
+        return <TaskClosedScreen />;
+      }
 
       if (showThankYou) {
   return (
