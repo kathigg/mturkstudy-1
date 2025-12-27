@@ -14,11 +14,14 @@ python -m pip install -r src/dataset_comparison_scripts/requirements_llm_noteboo
 
 ### 2) Set API keys
 
-The notebook reads keys from environment variables:
+The notebook reads keys from environment variables. Recommended: put them in a repo-root `.env`
+(this repo ignores `.env` via `.gitignore`).
 
 ```bash
-export OPENAI_API_KEY="..."
-export GEMINI_API_KEY="..."
+cp .env.example .env
+# edit .env and set:
+# OPENAI_API_KEY=...
+# GEMINI_API_KEY=...
 ```
 
 ### 3) Ensure the input CSV exists
@@ -32,4 +35,3 @@ jupyter lab
 ```
 
 Then open `src/dataset_comparison_scripts/Multiple_LLM_Annotations_Script.ipynb` and run cells top-to-bottom.
-
