@@ -205,20 +205,56 @@ def normalize_annotation_enums(obj: dict[str, Any]) -> dict[str, Any]:
         "no polarizing language": "no polarizing language",
         "no polarizing": "no polarizing language",
     }
+    subcategory_to_category = {
+        "exaggeration": "Persuasive Propaganda",
+        "slogans": "Persuasive Propaganda",
+        "bandwagon": "Persuasive Propaganda",
+        "causal oversimplification": "Persuasive Propaganda",
+        "doubt": "Persuasive Propaganda",
+        "name-calling": "Inflammatory Language",
+        "demonization": "Inflammatory Language",
+        "scapegoating": "Inflammatory Language",
+        "no polarizing language": "No Polarizing language",
+    }
 
     for ann in obj.get("annotations", []):
         if not isinstance(ann, dict):
             continue
-        cat = ann.get("category")
-        if isinstance(cat, str):
-            key = cat.strip().lower()
-            if key in valid_categories:
-                ann["category"] = valid_categories[key]
+
+        # Normalize subcategory first (models often vary casing)
         sub = ann.get("subcategory")
         if isinstance(sub, str):
-            key = sub.strip().lower()
-            if key in valid_subcategories:
-                ann["subcategory"] = valid_subcategories[key]
+            sub_key = sub.strip().lower()
+            if sub_key in valid_subcategories:
+                ann["subcategory"] = valid_subcategories[sub_key]
+
+        # Normalize category (models sometimes put a subcategory here)
+        cat = ann.get("category")
+        if isinstance(cat, str):
+            cat_key = cat.strip().lower()
+            if cat_key in valid_categories:
+                ann["category"] = valid_categories[cat_key]
+            elif cat_key in valid_subcategories:
+                # If a model mistakenly put a subcategory in category, recover.
+                ann["subcategory"] = valid_subcategories[cat_key]
+                ann["category"] = subcategory_to_category.get(ann["subcategory"], ann.get("category"))
+
+        # If category is still invalid but subcategory is valid, infer category from subcategory.
+        cat = ann.get("category")
+        sub = ann.get("subcategory")
+        if isinstance(cat, str) and isinstance(sub, str):
+            if cat not in ("Persuasive Propaganda", "Inflammatory Language", "No Polarizing language"):
+                inferred = subcategory_to_category.get(sub.strip().lower())
+                if inferred:
+                    ann["category"] = inferred
+
+        # Standardize "no polarizing language" placeholder text.
+        # If the paragraph label is "No Polarizing language", ensure the text is the canonical placeholder
+        # so downstream matching logic can align on it.
+        if ann.get("category") == "No Polarizing language":
+            ann["subcategory"] = "no polarizing language"
+            ann["text"] = "no polarizing language selected"
+
     return obj
 
 
@@ -331,7 +367,7 @@ def _openai_client():
 def _gemini_client():
     from google import genai
 
-# GEMINI_API_KEY is loaded from environment (do not hardcode)
+    return genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 
 def annotate_dry_run(title: str, topic: str, source: str, rating: str, body: str) -> tuple[dict[str, Any], str]:
