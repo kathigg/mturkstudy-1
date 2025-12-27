@@ -1,7 +1,6 @@
 {
   "overall": {
     "article_match": {
-<<<<<<< HEAD
       "precision": 0.404,
       "recall": 0.132,
       "f1": 0.199,
@@ -27,33 +26,6 @@
   },
   "per_article": {
     "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat": {
-=======
-      "precision": 0.765,
-      "recall": 0.082,
-      "f1": 0.148,
-      "correct_matches": 13,
-      "total_llm": 17,
-      "total_gold": 159
-    },
-    "category_match": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0,
-      "correct_matches": 0,
-      "total_matches": 13
-    },
-    "weighted_article_match": {
-      "precision": 0.517,
-      "recall": 0.082,
-      "f1": 0.141,
-      "tp_weight": 4.29,
-      "total_gold_weight": 52.47,
-      "fp": 4
-    }
-  },
-  "per_article": {
-    "Democrat Robert Martwick Sworn in as State Senator; GOP Taps Rosemont Mayor Brad Stephens for House Seat": {
->>>>>>> refs/remotes/origin/main
       "article_match": {
         "precision": 1.0,
         "recall": 0.059,
