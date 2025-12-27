@@ -1,0 +1,322 @@
+[
+  {
+    "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat",
+    "topic": "politics",
+    "source": "Chicago Tribune",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "This paragraph provides factual details about the swearing-in of Robert Martwick and the appointment of Brad Stephens, including salary information, without using loaded or inflammatory language.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "The paragraph contains standard political endorsements and quotes regarding Stephens' qualifications and compliance with state law, but does not employ propaganda techniques or inflammatory rhetoric.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "This section reports on legislative initiatives and political plans neutrally, including quotes from officials about future meetings and elections, without persuasive manipulation.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "The paragraph discusses campaign history and potential future candidates using factual reporting. Quotes regarding determination to win are standard political rhetoric rather than inflammatory language.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Frozen sperm bank could be set up in space, study suggests",
+    "topic": "science",
+    "source": "Press Association",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "Neutral description of scientific prediction without emotional or polarizing wording.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'",
+    "topic": "crime",
+    "source": "CNN",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "\"this is one of the most insane attacks on a black family, or any family, that I've ever seen law enforcement engage in.\"",
+        "openFeedback": "Describes the incident as one of the most insane attacks ever seen, amplifying its extremity beyond a neutral description.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Four top residencies now offered to local artists, thanks to Oolite",
+    "topic": "politics",
+    "source": "Miami Herald",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "The paragraph is descriptive and promotional about arts residencies without targeting any group or using manipulative political rhetoric.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "port of l.a. sued after canceling agreement for a shipping container facility",
+    "topic": "science",
+    "source": "CNN Business",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "The paragraph provides factual reporting on the lawsuit filing, the parties involved, and the stated reasons (or lack thereof) for the contract termination, without using inflammatory language.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "This paragraph outlines the procedural history, the involvement of city officials, and the specific requirements regarding union support, maintaining a neutral tone.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "a green, job-creating project is stymied by a single entity for their own narrow reasons",
+        "openFeedback": "Characterizes the project in highly positive terms and suggests one unnamed entity with 'narrow reasons' is solely blocking it, overstating both benefits and simplicity of the cause.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "This paragraph neutrally describes another policy dispute and related actions without loaded or propagandistic wording.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "get these trending washington restaurants on your radar today",
+    "topic": "health",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "Descriptive, data-focused language about restaurant trends without emotional or political framing.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away",
+    "topic": "science",
+    "source": "Los Angeles Times",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "The paragraph contains a human interest story narrative without inflammatory language or propaganda techniques.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "The paragraph focuses on emotional details of a reunion and financial struggles; while unrelated headline artifacts appear in the text, the main content is not polarized.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "bandwagon",
+        "text": "People are very negative about the police, but there are good police officers who go out of their way to help the community",
+        "openFeedback": "Contrasts a generalized public attitude with a positive counterexample to influence perceptions of police, appealing to a broader shift in view rather than evidence alone.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Ex-Posen mayor pleads guilty to embezzling village funds",
+    "topic": "crime",
+    "source": "Chicago Tribune",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "Describes criminal case and sentencing details in neutral, factual terms without loaded or propagandistic language.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "rosemount recreation center plan gets positive response so far",
+    "topic": "health",
+    "source": "AP",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "This paragraph is descriptive and informational without emotional or polarizing language.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite",
+    "topic": "science",
+    "source": "Los Angeles Times",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "This paragraph is descriptive science reporting without emotional or polarizing language.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+    "topic": "environmental issues",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "raising fears that environmental rollbacks seen in the United States may be spreading to Europe",
+        "openFeedback": "Frames the policy change as part of a broader, spreading rollback, heightening perceived threat without direct evidence.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "\"Yes we can, I do want Madrid central,\" chanted the protesters",
+        "openFeedback": "Short, chant-like phrase used to rally support for the policy, functioning as a slogan.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "We have to save (the planet) starting at the local and small level",
+        "openFeedback": "The phrase 'save (the planet)' is a generic environmentalist slogan used here to frame local policy as a global moral imperative.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Missouri's only abortion clinic to remain open after judge's injunction holds",
+    "topic": "legal arguments",
+    "source": "NBC News",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "embattled health center",
+        "openFeedback": "Portrays the clinic as under siege, heightening a sense of conflict.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "a victory for women to be able to access the kind of medical care that they and their health professionals need and deserve",
+        "openFeedback": "Highly value-laden framing of the ruling as a broad \u2018victory,\u2019 going beyond neutral description.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "medically unnecessary hoops and regulations",
+        "openFeedback": "Labels regulations as \u2018hoops,\u2019 a dismissive term that disparages the rules rather than neutrally describing them.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "a good day for women",
+        "openFeedback": "Sweeping positive characterization that generalizes the impact in emotive terms.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "patient safety was gravely compromised",
+        "openFeedback": "Uses strong, dramatic wording that intensifies the seriousness of the safety concern.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "causal oversimplification",
+        "text": "part of a greater anti-abortion effort by the state's administration",
+        "openFeedback": "Attributes the licensing dispute to a single overarching anti-abortion effort, simplifying potentially complex motives.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "one of the nation's most restrictive abortion bills",
+        "openFeedback": "Comparative superlative framing that emphasizes extremity and may overstate without detailed context.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "causal oversimplification",
+        "text": "another medically unnecessary requirement that the state was putting on it to whittle down Missouri residents' access to abortion",
+        "openFeedback": "Frames the requirement as solely intended to reduce access, simplifying regulatory motives to a single cause.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "stringent and perpetually evolving requirements",
+        "openFeedback": "Describes regulations with strong, ongoing intensity that heightens their perceived burden.",
+        "paragraphIndex": 3
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "a slew of recent anti-abortion legislation across the country",
+        "openFeedback": "The term \u2018slew\u2019 suggests a large, possibly overwhelming number, dramatizing the trend.",
+        "paragraphIndex": 3
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "a near-total ban on abortions in Alabama",
+        "openFeedback": "Characterizes the law as \u2018near-total,\u2019 emphasizing extremity and severity.",
+        "paragraphIndex": 3
+      }
+    ]
+  }
+]

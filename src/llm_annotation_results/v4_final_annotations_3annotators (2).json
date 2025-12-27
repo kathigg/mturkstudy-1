@@ -1,0 +1,301 @@
+[
+  {
+    "title": "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat",
+    "topic": "politics",
+    "source": "Chicago Tribune",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "will be able to deliver for his district on day one",
+        "openFeedback": "This overstates immediate effectiveness, implying instant results without supporting evidence.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Frozen sperm bank could be set up in space, study suggests",
+    "topic": "science",
+    "source": "Press Association",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "The paragraph provides a neutral summary of scientific predictions and study results regarding sperm banks in space, using hedged language typical of science reporting.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'",
+    "topic": "crime",
+    "source": "CNN",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "this is one of the most insane attacks on a black family, or any family, that I've ever seen law enforcement engage in",
+        "openFeedback": "The speaker uses hyperbolic language (\"one of the most insane attacks\") to characterize the incident, amplifying its severity to evoke an emotional response.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Four top residencies now offered to local artists, thanks to Oolite",
+    "topic": "politics",
+    "source": "Miami Herald",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "This paragraph reports factual news about an arts nonprofit offering residencies, without using inflammatory language or propaganda techniques.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "port of l.a. sued after canceling agreement for a shipping container facility",
+    "topic": "science",
+    "source": "CNN Business",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "Descriptive legal and business language without emotional or polarizing framing.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "Neutral reporting on legal actions and procedural history without loaded terms.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "causal oversimplification",
+        "text": "a green, job-creating project is stymied by a single entity for their own narrow reasons",
+        "openFeedback": "Attributes the project\u2019s problems to one unnamed entity\u2019s narrow motives, simplifying a complex labor and regulatory dispute to a single cause.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "Reports on policy decisions and reactions without inflammatory or propagandistic wording.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "get these trending washington restaurants on your radar today",
+    "topic": "health",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "Descriptive, data-focused language about restaurant trends without emotional or polarizing framing.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away",
+    "topic": "science",
+    "source": "Los Angeles Times",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "The paragraph uses standard storytelling language to describe a human interest story without inflammatory or persuasive rhetorical devices.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "The main narrative remains factual and emotive but not inflammatory. The capitalized inserted headlines (artifacts) contain sensational language ('wild reports', 'rogue gorilla') but are distinct from the article's authorial voice and topic.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "The paragraph contains a quote defending the police, but it is presented as a personal opinion/anecdote within the story context rather than a persuasive political slogan or inflammatory attack.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Ex-Posen mayor pleads guilty to embezzling village funds",
+    "topic": "crime",
+    "source": "Chicago Tribune",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "The paragraph reports factual details regarding the guilty plea and court proceedings without using inflammatory or persuasive techniques.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "rosemount recreation center plan gets positive response so far",
+    "topic": "health",
+    "source": "AP",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "This paragraph is descriptive and informational without emotional or polarizing wording.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite",
+    "topic": "science",
+    "source": "Los Angeles Times",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "This paragraph is descriptive science reporting about earthquakes and satellite imagery without emotional or polarizing language.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+    "topic": "environmental issues",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "raising fears that environmental rollbacks seen in the United States may be spreading to Europe",
+        "openFeedback": "Suggests a broad spread of U.S.-style rollbacks to Europe, implying a larger trend than the article evidences.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "Yes we can, I do want Madrid central",
+        "openFeedback": "The text quotes a chant using the well-known political slogan \"Yes we can\" to emotionally charge the protest and unify the demonstrators.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "\"I want to breathe free\" and \"We aspire to have a Madrid without smoke\"",
+        "openFeedback": "Short, emotive protest phrases that simplify complex policy issues into memorable slogans.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "We have to save (the planet) starting at the local and small level",
+        "openFeedback": "Frames local traffic policy as part of literally \u201csaving the planet,\u201d amplifying the stakes.",
+        "paragraphIndex": 3
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "no precedent in ending a car traffic restriction",
+        "openFeedback": "Asserts an absolute lack of precedent at the European level, which may overstate the uniqueness of the case.",
+        "paragraphIndex": 6
+      }
+    ]
+  },
+  {
+    "title": "Missouri's only abortion clinic to remain open after judge's injunction holds",
+    "topic": "legal arguments",
+    "source": "NBC News",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "dealt it a blow, declining to renew its license",
+        "openFeedback": "Metaphorical phrasing heightens the sense of harm beyond a neutral description.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "embattled health center, preventing Missouri from becoming the only state in the country without an abortion clinic",
+        "openFeedback": "\"Embattled\" and framing the ruling as preventing a uniquely dire outcome heighten drama around the situation.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "medically unnecessary hoops and regulations",
+        "openFeedback": "The speaker uses the loaded label \"hoops\" to characterize state safety regulations as pointless obstacles, emotionally discrediting the legal requirements.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "a good day for women",
+        "openFeedback": "Sweeping positive framing that generalizes the impact to all women.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "patient safety was gravely compromised",
+        "openFeedback": "Strong wording that intensifies the seriousness of the safety issue.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "causal oversimplification",
+        "text": "part of a greater anti-abortion effort by the state's administration",
+        "openFeedback": "Attributes the licensing dispute primarily to a broad anti-abortion effort, simplifying potentially multiple regulatory motives.",
+        "paragraphIndex": 3
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "causal oversimplification",
+        "text": "another medically unnecessary requirement that the state was putting on it to whittle down Missouri residents' access to abortion",
+        "openFeedback": "Frames the requirement as solely intended to reduce access, simplifying regulatory motives to one cause.",
+        "paragraphIndex": 3
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "stringent and perpetually evolving requirements",
+        "openFeedback": "The phrase \"perpetually evolving\" is hyperbolic, suggesting that the regulations are changing endlessly and making compliance impossible, which frames the situation as worse than a standard regulatory process.",
+        "paragraphIndex": 4
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "slew of recent anti-abortion legislation across the country",
+        "openFeedback": "Uses \"slew\" to suggest a large, possibly overwhelming number of laws, heightening perceived scale.",
+        "paragraphIndex": 4
+      }
+    ]
+  }
+]

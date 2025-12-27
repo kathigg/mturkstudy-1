@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^11.6.1",
     "firebase-admin": "^13.6.0",
+    "jupyterlab": "^0.17.2",
     "lucide-react": "^0.479.0",
     "pandas": "^0.0.3",
     "papaparse": "^5.5.3",
