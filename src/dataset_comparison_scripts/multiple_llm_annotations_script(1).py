@@ -616,7 +616,7 @@ def main() -> int:
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", default="src/dataset_comparison_scripts/twelve_article_set.csv")
-    parser.add_argument("--results-csv", default="annotated_results_3annotators.csv")
+    parser.add_argument("--results-csv", default="src/dataset_comparison_scripts/annotated_results_3annotators.csv")
     parser.add_argument("--final-json", default="src/llm_annotation_results/final_annotations_3annotators.json")
     parser.add_argument("--openai-model", default="gpt-5.1")
     parser.add_argument("--adjudicator-model", default=None)
