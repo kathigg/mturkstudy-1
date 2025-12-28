@@ -94,6 +94,18 @@ def compute_confidence(num_supporters, label_consistent):
     else:
         return 0.33
 
+def is_no_polarizing_annotation(ann: dict) -> bool:
+    cat = (ann.get("category") or "").strip().lower()
+    sub = (ann.get("subcategory") or "").strip().lower()
+    return cat == "no_polarizing_language" or sub == "no polarizing language" or sub == "no polarizing language".lower()
+
+def compute_no_polarizing_confidence(num_supporters: int, total_workers: int) -> float:
+    if total_workers <= 0:
+        return 0.0
+    # Use a direct agreement fraction for "No Polarizing Language".
+    # This yields e.g. 0.67 for 2/3 and 0.33 for 1/3.
+    return round(num_supporters / total_workers, 2)
+
 # ------------------------
 # Gold Standard Builder
 # ------------------------
@@ -107,6 +119,8 @@ from collections import Counter, defaultdict
 def build_gold_standard_with_intersection(
     annotations_by_article,
     database_record=None,  # full record OR top-level dict
+    workers_by_article_para=None,
+    no_polarizing_workers_by_article_para=None,
     pad=2
 ):
     """
@@ -189,16 +203,35 @@ def build_gold_standard_with_intersection(
 
             most_common_cat = Counter(categories).most_common(1)[0][0]
             most_common_subcat = Counter(subcategories).most_common(1)[0][0]
+            paragraph_index = group[0].get("paragraphIndex")
+
             label_consistent = len(set(categories)) == 1 and len(set(subcategories)) == 1
             worker_ids = {g.get("worker") for g in group if g.get("worker") is not None}
             missing_workers = [g for g in group if g.get("worker") is None]
             if missing_workers:
                 print(
                     f"Warning: {len(missing_workers)} annotations missing worker IDs "
-                    f"(article_id={article_id}, paragraphIndex={group[0].get('paragraphIndex')})."
+                    f"(article_id={article_id}, paragraphIndex={paragraph_index})."
                 )
-            num_supporters = len(worker_ids) if worker_ids else len(group)
-            confidence = compute_confidence(num_supporters, label_consistent)
+
+            # For "No Polarizing Language", confidence and supporter counts should be paragraph-based:
+            # num_supporters = number of workers who selected "no polarizing language" for that paragraph.
+            if str(most_common_cat).strip().lower() == "no_polarizing_language":
+                total_workers = 0
+                if workers_by_article_para is not None:
+                    total_workers = len(workers_by_article_para.get((str(article_id), paragraph_index), set()))
+                npl_workers = set()
+                if no_polarizing_workers_by_article_para is not None:
+                    npl_workers = no_polarizing_workers_by_article_para.get((str(article_id), paragraph_index), set())
+                num_supporters = len(npl_workers) if npl_workers else (len(worker_ids) if worker_ids else len(group))
+                confidence = compute_no_polarizing_confidence(num_supporters, total_workers) if total_workers else compute_confidence(num_supporters, label_consistent)
+                label_consistent = bool(total_workers) and num_supporters == total_workers
+                # Canonicalize the span text/subcategory for NPL.
+                most_common_subcat = "no polarizing language"
+                text = "no polarizing language selected"
+            else:
+                num_supporters = len(worker_ids) if worker_ids else len(group)
+                confidence = compute_confidence(num_supporters, label_consistent)
 
             # Lookup title — check both int and string
             title = (
@@ -206,9 +239,6 @@ def build_gold_standard_with_intersection(
                 or article_titles.get(int(article_id))
                 or "UNKNOWN_TITLE"
             )
-
-            # Skip if all annotators agreed on No_Polarizing_Language
-            paragraph_index = group[0].get("paragraphIndex")
 
             gold_standard[article_id].append({
                 "text": text,
@@ -220,6 +250,43 @@ def build_gold_standard_with_intersection(
                 "title": title,
                 "paragraphIndex": paragraph_index,
             })
+
+        # --- STEP 3: Paragraph-level override for "No Polarizing Language" (2/3+) ---
+        # If >=2/3 workers selected "no polarizing language" for a paragraph, keep ONLY the paragraph-level
+        # no-polarizing annotation and drop all other annotations for that paragraph.
+        if workers_by_article_para is not None and no_polarizing_workers_by_article_para is not None:
+            title = (
+                article_titles.get(str(article_id))
+                or article_titles.get(int(article_id))
+                or "UNKNOWN_TITLE"
+            )
+            paragraph_indices = {
+                a.get("paragraphIndex")
+                for a in gold_standard.get(article_id, [])
+                if isinstance(a, dict)
+            }
+            for pidx in sorted([p for p in paragraph_indices if isinstance(p, int)]):
+                total_workers = len(workers_by_article_para.get((str(article_id), pidx), set()))
+                npl_workers = no_polarizing_workers_by_article_para.get((str(article_id), pidx), set())
+                npl_count = len(npl_workers)
+                if total_workers <= 0:
+                    continue
+                if npl_count >= 2 and (npl_count / total_workers) >= (2 / 3):
+                    gold_standard[article_id] = [
+                        a for a in gold_standard.get(article_id, []) if a.get("paragraphIndex") != pidx
+                    ]
+                    gold_standard[article_id].append(
+                        {
+                            "text": "no polarizing language selected",
+                            "category": "No_Polarizing_Language",
+                            "subcategory": "no polarizing language",
+                            "confidence": compute_no_polarizing_confidence(npl_count, total_workers),
+                            "num_supporters": npl_count,
+                            "label_consistent": npl_count == total_workers,
+                            "title": title,
+                            "paragraphIndex": pidx,
+                        }
+                    )
 
     return gold_standard
 
@@ -234,6 +301,9 @@ def process_annotation_file(input_path, output_path):
         raw_data = json.load(f)
 
     annotated_spans = defaultdict(list)
+    workers_by_article_para = defaultdict(set)  # (article_id, paragraphIndex) -> set(worker_id)
+    no_polarizing_workers_by_article_para = defaultdict(set)  # (article_id, paragraphIndex) -> set(worker_id)
+    polarizing_workers_by_article_para = defaultdict(set)  # (article_id, paragraphIndex) -> set(worker_id)
 
     for worker_id, entry in raw_data.items():
         ta = entry.get("textAnnotations")
@@ -249,6 +319,13 @@ def process_annotation_file(input_path, output_path):
                 for ann in annotations:
                     if not isinstance(ann, dict):
                         continue
+                    pidx = ann.get("paragraphIndex")
+                    if isinstance(pidx, int):
+                        workers_by_article_para[(str(article_id), pidx)].add(worker_id)
+                        if is_no_polarizing_annotation(ann):
+                            no_polarizing_workers_by_article_para[(str(article_id), pidx)].add(worker_id)
+                        else:
+                            polarizing_workers_by_article_para[(str(article_id), pidx)].add(worker_id)
                     text = ann.get("text", "")
                     annotated_spans[str(article_id)].append({
                         "text": text,
@@ -268,6 +345,13 @@ def process_annotation_file(input_path, output_path):
                 for ann in annotations:
                     if not isinstance(ann, dict):
                         continue
+                    pidx = ann.get("paragraphIndex")
+                    if isinstance(pidx, int):
+                        workers_by_article_para[(str(article_id), pidx)].add(worker_id)
+                        if is_no_polarizing_annotation(ann):
+                            no_polarizing_workers_by_article_para[(str(article_id), pidx)].add(worker_id)
+                        else:
+                            polarizing_workers_by_article_para[(str(article_id), pidx)].add(worker_id)
                     text = ann.get("text", "")
                     annotated_spans[article_id].append({
                         "text": text,
@@ -277,9 +361,21 @@ def process_annotation_file(input_path, output_path):
                         "paragraphIndex": ann.get("paragraphIndex"),
                     })
 
+    # Warn if any worker both selected no-polarizing and also provided polarizing annotations in the same paragraph.
+    for key, npl_workers in no_polarizing_workers_by_article_para.items():
+        overlap = npl_workers & polarizing_workers_by_article_para.get(key, set())
+        if overlap:
+            article_id, pidx = key
+            print(
+                f"Warning: {len(overlap)} worker(s) have both no-polarizing and polarizing annotations "
+                f"for the same paragraph (article_id={article_id}, paragraphIndex={pidx})."
+            )
+
     gold_standard = build_gold_standard_with_intersection(
         annotated_spans,
-        database_record=raw_data  # pass the full MTurk file so title mapping works
+        database_record=raw_data,  # pass the full MTurk file so title mapping works
+        workers_by_article_para=workers_by_article_para,
+        no_polarizing_workers_by_article_para=no_polarizing_workers_by_article_para,
         )
 
     # --- Convert gold_standard dict to list-of-articles format for LLM comparison ---
