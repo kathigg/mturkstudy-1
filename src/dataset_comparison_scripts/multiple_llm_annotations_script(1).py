@@ -28,6 +28,7 @@ import csv
 import json
 import os
 import random
+import re
 import sys
 import time
 from dataclasses import dataclass
@@ -140,6 +141,7 @@ ANNOTATION_SCHEMA: dict[str, Any] = {
                             "slogans",
                             "bandwagon",
                             "causal oversimplification",
+                            "casual oversimplification",
                             "doubt",
                             "name-calling",
                             "demonization",
@@ -195,8 +197,11 @@ def normalize_annotation_enums(obj: dict[str, Any]) -> dict[str, Any]:
         "slogans": "slogans",
         "slogan": "slogans",
         "bandwagon": "bandwagon",
-        "causal oversimplification": "causal oversimplification",
-        "causal_oversimplification": "causal oversimplification",
+        # Tool/gold uses 'Casual Oversimplification' (note: casual, not causal).
+        "causal oversimplification": "casual oversimplification",
+        "causal_oversimplification": "casual oversimplification",
+        "casual oversimplification": "casual oversimplification",
+        "casual_oversimplification": "casual oversimplification",
         "doubt": "doubt",
         "name-calling": "name-calling",
         "name calling": "name-calling",
@@ -210,6 +215,7 @@ def normalize_annotation_enums(obj: dict[str, Any]) -> dict[str, Any]:
         "slogans": "Persuasive Propaganda",
         "bandwagon": "Persuasive Propaganda",
         "causal oversimplification": "Persuasive Propaganda",
+        "casual oversimplification": "Persuasive Propaganda",
         "doubt": "Persuasive Propaganda",
         "name-calling": "Inflammatory Language",
         "demonization": "Inflammatory Language",
@@ -258,7 +264,7 @@ def normalize_annotation_enums(obj: dict[str, Any]) -> dict[str, Any]:
     return obj
 
 
-def repair_annotation_object(obj: dict[str, Any]) -> dict[str, Any]:
+def repair_annotation_object(obj: dict[str, Any], *, body: str | None = None) -> dict[str, Any]:
     """
     Best-effort repair to satisfy schema requirements when models omit fields.
     This keeps the pipeline running while still producing schema-valid output.
@@ -266,6 +272,9 @@ def repair_annotation_object(obj: dict[str, Any]) -> dict[str, Any]:
     anns = obj.get("annotations")
     if not isinstance(anns, list):
         return obj
+
+    paragraphs = split_paragraphs_from_body(body) if body is not None else None
+    max_para = (len(paragraphs) - 1) if paragraphs is not None else None
 
     for i, ann in enumerate(anns):
         if not isinstance(ann, dict):
@@ -279,12 +288,28 @@ def repair_annotation_object(obj: dict[str, Any]) -> dict[str, Any]:
             ann["openFeedback"] = f"Auto-filled: {cat} / {sub}".strip()
 
         # Ensure paragraphIndex exists; if missing, default to 0 but warn.
-        if ann.get("paragraphIndex") is None:
+        pidx = ann.get("paragraphIndex")
+        if pidx is None:
             print(
                 f"Warning: missing paragraphIndex for annotation {i}; defaulting to 0.",
                 file=sys.stderr,
             )
-            ann["paragraphIndex"] = 0
+            pidx = 0
+
+        # If we have paragraph text, prefer assigning by locating the span inside a paragraph.
+        if paragraphs is not None:
+            inferred = infer_paragraph_index(str(ann.get("text", "")), paragraphs)
+            if inferred is not None:
+                pidx = inferred
+
+            # Clamp out-of-range indices.
+            if isinstance(pidx, int) and max_para is not None:
+                if pidx < 0:
+                    pidx = 0
+                elif pidx > max_para:
+                    pidx = max_para
+
+        ann["paragraphIndex"] = pidx
 
     return obj
 
@@ -293,6 +318,138 @@ def decode_literal_newlines(body: str) -> str:
     # Our CSV may store paragraph breaks as the literal two-character sequence "\\n".
     return (body or "").replace("\\n", "\n")
 
+def split_paragraphs_from_body(body: str) -> list[str]:
+    text = decode_literal_newlines(body)
+    paragraphs = [p.strip() for p in text.split("\n") if p.strip()]
+    if paragraphs:
+        return paragraphs
+    return [text.strip()] if text.strip() else [""]
+
+def _norm_for_match(text: str) -> str:
+    text = (text or "").lower()
+    text = re.sub(r"[^\w\s]", " ", text)
+    return " ".join(text.split())
+
+def infer_paragraph_index(span_text: str, paragraphs: list[str]) -> int | None:
+    needle = _norm_for_match(span_text)
+    if not needle:
+        return None
+    best_idx = None
+    best_overlap = 0
+    needle_tokens = set(needle.split())
+
+    for idx, para in enumerate(paragraphs):
+        hay = _norm_for_match(para)
+        if needle in hay:
+            return idx
+
+        hay_tokens = set(hay.split())
+        overlap = len(needle_tokens & hay_tokens)
+        if overlap > best_overlap:
+            best_overlap = overlap
+            best_idx = idx
+
+    # Require at least 2 shared tokens to avoid random matches.
+    if best_idx is not None and best_overlap >= 2:
+        return best_idx
+    return None
+
+
+def _is_no_polarizing(ann: dict[str, Any]) -> bool:
+    return ann.get("category") == "No Polarizing language"
+
+
+def _dedupe_annotations(annotations: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    seen: set[tuple[str, str, str, int]] = set()
+    out: list[dict[str, Any]] = []
+    for ann in annotations:
+        cat = str(ann.get("category", ""))
+        sub = str(ann.get("subcategory", ""))
+        txt = str(ann.get("text", ""))
+        pidx = ann.get("paragraphIndex")
+        if not isinstance(pidx, int):
+            continue
+        key = (cat, sub, txt, pidx)
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(ann)
+    return out
+
+
+def enforce_paragraph_no_polarizing_policy(obj: dict[str, Any], *, body: str) -> dict[str, Any]:
+    """
+    Enforce paragraph-level rules:
+      - At most ONE "No Polarizing language" annotation per paragraph.
+      - If a paragraph has ANY Inflammatory/Persuasive annotations, remove "No Polarizing language" for that paragraph.
+      - If a paragraph ends up with zero annotations, add exactly one "No Polarizing language" placeholder annotation.
+      - Ensure paragraphIndex values are in-range and prefer inferring from span text.
+    """
+    anns = obj.get("annotations")
+    if not isinstance(anns, list):
+        return obj
+
+    paragraphs = split_paragraphs_from_body(body)
+    max_para = max(0, len(paragraphs) - 1)
+
+    normalized: list[dict[str, Any]] = []
+    for ann in anns:
+        if not isinstance(ann, dict):
+            continue
+
+        pidx = ann.get("paragraphIndex")
+        if not isinstance(pidx, int):
+            pidx = 0
+
+        inferred = infer_paragraph_index(str(ann.get("text", "")), paragraphs)
+        if inferred is not None:
+            pidx = inferred
+
+        pidx = min(max(pidx, 0), max_para)
+        ann["paragraphIndex"] = pidx
+        normalized.append(ann)
+
+    normalized = _dedupe_annotations(normalized)
+
+    by_para: dict[int, list[dict[str, Any]]] = {i: [] for i in range(max_para + 1)}
+    for ann in normalized:
+        by_para[ann["paragraphIndex"]].append(ann)
+
+    final: list[dict[str, Any]] = []
+    for pidx in range(max_para + 1):
+        items = by_para.get(pidx, [])
+        no = [a for a in items if _is_no_polarizing(a)]
+        other = [a for a in items if not _is_no_polarizing(a)]
+
+        if other:
+            # If there's any polarizing annotation, drop no-polarizing for that paragraph.
+            final.extend(other)
+            continue
+
+        # Otherwise, ensure exactly one no-polarizing annotation.
+        if no:
+            keep = no[0]
+        else:
+            keep = {
+                "category": "No Polarizing language",
+                "subcategory": "no polarizing language",
+                "text": "no polarizing language selected",
+                "openFeedback": "No polarizing language detected in this paragraph.",
+                "paragraphIndex": pidx,
+            }
+
+        # Canonicalize the placeholder fields.
+        keep["category"] = "No Polarizing language"
+        keep["subcategory"] = "no polarizing language"
+        keep["text"] = "no polarizing language selected"
+        if not isinstance(keep.get("openFeedback"), str) or not keep["openFeedback"].strip():
+            keep["openFeedback"] = "No polarizing language detected in this paragraph."
+        keep["paragraphIndex"] = pidx
+        final.append(keep)
+
+    obj["annotations"] = _dedupe_annotations(final)
+    return obj
+
 
 def paragraph_count_from_body(body: str) -> int:
     txt = decode_literal_newlines(body)
@@ -300,7 +457,7 @@ def paragraph_count_from_body(body: str) -> int:
     return max(1, len(parts))
 
 
-def build_article_text(row: dict[str, Any]) -> tuple[str, str, str, str, str]:
+def build_article_text(row: dict[str, Any]) -> tuple[str, str, str, str, str, str]:
     title = str(row.get("Headline", ""))
     body = decode_literal_newlines(str(row.get("News body", "")))
     topic = str(row.get("Topic", ""))
@@ -314,7 +471,7 @@ def build_article_text(row: dict[str, Any]) -> tuple[str, str, str, str, str]:
         f"RATING: {rating}\n\n"
         f"BODY:\n{body}"
     )
-    return title, topic, source, rating, article_block
+    return title, topic, source, rating, body, article_block
 
 
 def build_user_prompt_for_annotation(article_block: str) -> str:
@@ -395,7 +552,7 @@ def annotate_dry_run(title: str, topic: str, source: str, rating: str, body: str
     return obj, raw
 
 
-def annotate_with_openai(client, role_desc: str, article_block: str, title: str, topic: str, source: str, rating: str, *, model: str, temperature: float, max_retries: int):
+def annotate_with_openai(client, role_desc: str, article_block: str, title: str, topic: str, source: str, rating: str, *, body: str, model: str, temperature: float, max_retries: int):
     user_prompt = build_user_prompt_for_annotation(article_block)
 
     def _call():
@@ -418,7 +575,8 @@ def annotate_with_openai(client, role_desc: str, article_block: str, title: str,
     obj.setdefault("source", source)
     obj.setdefault("rating", rating)
     obj = normalize_annotation_enums(obj)
-    obj = repair_annotation_object(obj)
+    obj = repair_annotation_object(obj, body=body)
+    # Keep annotator outputs as-is beyond basic repairs; apply paragraph policy to FINAL output only.
 
     ok, err = validate_annotation(obj)
     if not ok:
@@ -426,7 +584,7 @@ def annotate_with_openai(client, role_desc: str, article_block: str, title: str,
     return obj, json_str
 
 
-def annotate_with_gemini(client, role_desc: str, article_block: str, title: str, topic: str, source: str, rating: str, *, model: str, max_retries: int):
+def annotate_with_gemini(client, role_desc: str, article_block: str, title: str, topic: str, source: str, rating: str, *, body: str, model: str, max_retries: int):
     user_prompt = build_user_prompt_for_annotation(article_block)
     prompt = (
         "SYSTEM INSTRUCTIONS:\n"
@@ -456,14 +614,15 @@ def annotate_with_gemini(client, role_desc: str, article_block: str, title: str,
     obj.setdefault("source", source)
     obj.setdefault("rating", rating)
     obj = normalize_annotation_enums(obj)
-    obj = repair_annotation_object(obj)
+    obj = repair_annotation_object(obj, body=body)
+    # Keep annotator outputs as-is beyond basic repairs; apply paragraph policy to FINAL output only.
     ok, err = validate_annotation(obj)
     if not ok:
         raise ValueError(f"Gemini returned JSON failed schema validation: {err}\n\n{json_str}")
     return obj, json_str
 
 
-def adjudicate_with_openai(client, article_block: str, title: str, topic: str, source: str, rating: str, obj_a: dict[str, Any], obj_b: dict[str, Any], obj_c: dict[str, Any], *, model: str, temperature: float, max_retries: int):
+def adjudicate_with_openai(client, article_block: str, title: str, topic: str, source: str, rating: str, obj_a: dict[str, Any], obj_b: dict[str, Any], obj_c: dict[str, Any], *, body: str, model: str, temperature: float, max_retries: int):
     adjudicator_system = """
 You are the Adjudicator, a methods-oriented political scientist overseeing three annotators.
 
@@ -513,7 +672,8 @@ Meta fields must be set to:
     obj.setdefault("source", source)
     obj.setdefault("rating", rating)
     obj = normalize_annotation_enums(obj)
-    obj = repair_annotation_object(obj)
+    obj = repair_annotation_object(obj, body=body)
+    obj = enforce_paragraph_no_polarizing_policy(obj, body=body)
     ok, err = validate_annotation(obj)
     if not ok:
         raise ValueError(f"Adjudicated JSON failed schema validation: {err}\n\n{json_str}")
@@ -531,8 +691,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
     final_annotations: list[dict[str, Any]] = []
 
     for idx, row in tqdm(df.iterrows(), total=len(df)):
-        title, topic, source, rating, article_block = build_article_text(row)
-        body = str(row.get("News body", ""))
+        title, topic, source, rating, body, article_block = build_article_text(row)
 
         if dry_run:
             obj_a, raw_a = annotate_dry_run(title, topic, source, rating, body)
@@ -548,6 +707,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                 topic,
                 source,
                 rating,
+                body=body,
                 model=cfg.openai_model,
                 temperature=cfg.temperature,
                 max_retries=max_retries,
@@ -561,6 +721,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                 topic,
                 source,
                 rating,
+                body=body,
                 model=cfg.gemini_model,
                 max_retries=max_retries,
             )
@@ -573,6 +734,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                 topic,
                 source,
                 rating,
+                body=body,
                 model=cfg.openai_model,
                 temperature=cfg.temperature,
                 max_retries=max_retries,
@@ -588,6 +750,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                 obj_a,
                 obj_b,
                 obj_c,
+                body=body,
                 model=cfg.adjudicator_model,
                 temperature=cfg.temperature,
                 max_retries=max_retries,
