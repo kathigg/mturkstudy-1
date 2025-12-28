@@ -104,6 +104,7 @@ ANNOTATION RULES
 =====================
 - Extract exact spans (4–25 words) — no ellipses or paraphrasing.
 - Annotate per paragraph.
+- Be conservative: only label Persuasive Propaganda / Inflammatory Language when the language is explicit and clearly matches a definition; if unsure, choose No Polarizing language.
 - When there is no polarizing language in a given paragraph, output one annotation for that paragraph:
   {
     "text": "no polarizing language selected",
@@ -632,6 +633,7 @@ Constraints:
 - You may only select from the annotations that appear in the three annotator JSON objects.
 - You may merge only exact duplicates (same category, same subcategory, same text, same paragraphIndex).
 - Do NOT invent new spans.
+- Be conservative: if unsure, choose No Polarizing language.
 """
 
     user_prompt = f"""
@@ -701,7 +703,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
         else:
             obj_a, raw_a = annotate_with_openai(
                 openai_client,
-                "You are Annotator A, a political communication scholar. Strictly follow the codebook and JSON schema.",
+                "You are Annotator A, a political communication scholar. Strictly follow the codebook and JSON schema. Be conservative: if unsure, choose No Polarizing language.",
                 article_block,
                 title,
                 topic,
@@ -715,7 +717,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
 
             obj_b, raw_b = annotate_with_gemini(
                 gemini_client,
-                "You are Annotator B, a linguistics/discourse analyst. Your strength is correct subcategory selection.",
+                "You are Annotator B, a linguistics/discourse analyst. Your strength is correct subcategory selection. Be conservative: avoid over-labeling; if unsure, choose No Polarizing language.",
                 article_block,
                 title,
                 topic,
@@ -728,7 +730,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
 
             obj_c, raw_c = annotate_with_openai(
                 openai_client,
-                "You are Annotator C, a conservative/high-precision media psychology expert.",
+                "You are Annotator C, a conservative/high-precision media psychology expert. Be conservative: only label when explicit; if unsure, choose No Polarizing language.",
                 article_block,
                 title,
                 topic,
