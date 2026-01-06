@@ -14,6 +14,14 @@
       "f1": 0.938,
       "correct_matches": 15,
       "total_matches": 16
+    },
+    "weighted_article_match": {
+      "precision": 0.217,
+      "recall": 0.408,
+      "f1": 0.283,
+      "tp_weight": 7.76,
+      "total_gold_weight": 19.04,
+      "fp": 28
     }
   },
   "per_article": {
@@ -32,6 +40,17 @@
         "f1": 1.0,
         "correct_matches": 1,
         "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 0.16,
+        "recall": 0.197,
+        "f1": 0.176,
+        "tp_weight": 0.57,
+        "total_gold_weight": 2.9,
+        "fp": 3,
+        "matched": 1,
+        "total_llm": 4,
+        "total_gold": 4
       }
     },
     "Ex-Posen mayor pleads guilty to embezzling village funds": {
@@ -49,6 +68,17 @@
         "f1": 1.0,
         "correct_matches": 3,
         "total_matches": 3
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 1.57,
+        "total_gold_weight": 1.57,
+        "fp": 0,
+        "matched": 3,
+        "total_llm": 3,
+        "total_gold": 3
       }
     },
     "Four top residencies now offered to local artists, thanks to Oolite": {
@@ -66,6 +96,17 @@
         "f1": 1.0,
         "correct_matches": 2,
         "total_matches": 2
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 1.12,
+        "total_gold_weight": 1.12,
+        "fp": 0,
+        "matched": 2,
+        "total_llm": 2,
+        "total_gold": 2
       }
     },
     "Frozen sperm bank could be set up in space, study suggests": {
@@ -83,6 +124,17 @@
         "f1": 1.0,
         "correct_matches": 1,
         "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 0.57,
+        "total_gold_weight": 0.57,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 1
       }
     },
     "get these trending washington restaurants on your radar today": {
@@ -100,6 +152,17 @@
         "f1": 0,
         "correct_matches": 0,
         "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 1.65,
+        "fp": 5,
+        "matched": 0,
+        "total_llm": 5,
+        "total_gold": 5
       }
     },
     "Missouri's only abortion clinic to remain open after judge's injunction holds": {
@@ -117,6 +180,17 @@
         "f1": 0,
         "correct_matches": 0,
         "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 2.32,
+        "fp": 5,
+        "matched": 0,
+        "total_llm": 5,
+        "total_gold": 5
       }
     },
     "phoenix chief says police response to incident with 4-year-old is 'unacceptable'": {
@@ -134,6 +208,17 @@
         "f1": 0,
         "correct_matches": 0,
         "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "tp_weight": 1.0,
+        "total_gold_weight": 2.0,
+        "fp": 1,
+        "matched": 1,
+        "total_llm": 2,
+        "total_gold": 2
       }
     },
     "port of l.a. sued after canceling agreement for a shipping container facility": {
@@ -151,6 +236,17 @@
         "f1": 1.0,
         "correct_matches": 3,
         "total_matches": 3
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 0.5,
+        "total_gold_weight": 0.5,
+        "fp": 0,
+        "matched": 3,
+        "total_llm": 3,
+        "total_gold": 3
       }
     },
     "Protest in Madrid as conservatives suspend ban on most polluting cars": {
@@ -168,6 +264,17 @@
         "f1": 0,
         "correct_matches": 0,
         "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 0.99,
+        "fp": 9,
+        "matched": 0,
+        "total_llm": 9,
+        "total_gold": 3
       }
     },
     "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite": {
@@ -185,6 +292,17 @@
         "f1": 0,
         "correct_matches": 0,
         "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 0.99,
+        "fp": 3,
+        "matched": 0,
+        "total_llm": 3,
+        "total_gold": 3
       }
     },
     "rosemount recreation center plan gets positive response so far": {
@@ -202,6 +320,17 @@
         "f1": 1.0,
         "correct_matches": 4,
         "total_matches": 4
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 2.43,
+        "total_gold_weight": 2.43,
+        "fp": 0,
+        "matched": 4,
+        "total_llm": 4,
+        "total_gold": 4
       }
     },
     "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away": {
@@ -219,6 +348,17 @@
         "f1": 1.0,
         "correct_matches": 1,
         "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0.0,
+        "total_gold_weight": 2.0,
+        "fp": 2,
+        "matched": 1,
+        "total_llm": 3,
+        "total_gold": 3
       }
     }
   }
