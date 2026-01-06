@@ -381,9 +381,9 @@ def _dedupe_annotations(annotations: list[dict[str, Any]]) -> list[dict[str, Any
 def enforce_paragraph_no_polarizing_policy(obj: dict[str, Any], *, body: str) -> dict[str, Any]:
     """
     Enforce paragraph-level rules:
-      - At most ONE "No Polarizing language" annotation per paragraph.
-      - If a paragraph has ANY Inflammatory/Persuasive annotations, remove "No Polarizing language" for that paragraph.
-      - If a paragraph ends up with zero annotations, add exactly one "No Polarizing language" placeholder annotation.
+      - Exactly ONE annotation per paragraph.
+      - If a paragraph has ANY Inflammatory/Persuasive annotations, keep only the best polarizing annotation.
+      - Otherwise, keep exactly one "No Polarizing language" placeholder annotation.
       - Ensure paragraphIndex values are in-range and prefer inferring from span text.
     """
     anns = obj.get("annotations")
@@ -416,6 +416,12 @@ def enforce_paragraph_no_polarizing_policy(obj: dict[str, Any], *, body: str) ->
     for ann in normalized:
         by_para[ann["paragraphIndex"]].append(ann)
 
+    def _pick_best_annotation(annotations: list[dict[str, Any]]) -> dict[str, Any] | None:
+        if not annotations:
+            return None
+        # Prefer longer spans as a simple proxy for specificity; keep stable ordering on ties.
+        return max(enumerate(annotations), key=lambda item: (len(str(item[1].get("text", ""))), -item[0]))[1]
+
     final: list[dict[str, Any]] = []
     for pidx in range(max_para + 1):
         items = by_para.get(pidx, [])
@@ -423,13 +429,16 @@ def enforce_paragraph_no_polarizing_policy(obj: dict[str, Any], *, body: str) ->
         other = [a for a in items if not _is_no_polarizing(a)]
 
         if other:
-            # If there's any polarizing annotation, drop no-polarizing for that paragraph.
-            final.extend(other)
+            # If there's any polarizing annotation, keep only the best one for that paragraph.
+            keep = _pick_best_annotation(other)
+            if keep is not None:
+                keep["paragraphIndex"] = pidx
+                final.append(keep)
             continue
 
         # Otherwise, ensure exactly one no-polarizing annotation.
         if no:
-            keep = no[0]
+            keep = _pick_best_annotation(no)
         else:
             keep = {
                 "category": "No Polarizing language",
