@@ -1,27 +1,27 @@
 {
   "overall": {
     "article_match": {
-      "precision": 0.364,
-      "recall": 0.421,
-      "f1": 0.39,
-      "correct_matches": 16,
-      "total_llm": 44,
+      "precision": 0.395,
+      "recall": 0.395,
+      "f1": 0.395,
+      "correct_matches": 15,
+      "total_llm": 38,
       "total_gold": 38
     },
     "category_match": {
-      "precision": 0.938,
-      "recall": 0.938,
-      "f1": 0.938,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
       "correct_matches": 15,
-      "total_matches": 16
+      "total_matches": 15
     },
     "weighted_article_match": {
-      "precision": 0.217,
-      "recall": 0.408,
-      "f1": 0.283,
-      "tp_weight": 7.76,
+      "precision": 0.236,
+      "recall": 0.372,
+      "f1": 0.289,
+      "tp_weight": 7.09,
       "total_gold_weight": 19.04,
-      "fp": 28
+      "fp": 23
     }
   },
   "per_article": {
@@ -195,68 +195,12 @@
     },
     "phoenix chief says police response to incident with 4-year-old is 'unacceptable'": {
       "article_match": {
-        "precision": 0.5,
-        "recall": 0.5,
-        "f1": 0.5,
-        "correct_matches": 1,
-        "total_llm": 2,
-        "total_gold": 2
-      },
-      "category_match": {
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0,
         "correct_matches": 0,
-        "total_matches": 1
-      },
-      "weighted_article_match": {
-        "precision": 0.5,
-        "recall": 0.5,
-        "f1": 0.5,
-        "tp_weight": 1.0,
-        "total_gold_weight": 2.0,
-        "fp": 1,
-        "matched": 1,
         "total_llm": 2,
         "total_gold": 2
-      }
-    },
-    "port of l.a. sued after canceling agreement for a shipping container facility": {
-      "article_match": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "correct_matches": 3,
-        "total_llm": 3,
-        "total_gold": 3
-      },
-      "category_match": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "correct_matches": 3,
-        "total_matches": 3
-      },
-      "weighted_article_match": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "tp_weight": 0.5,
-        "total_gold_weight": 0.5,
-        "fp": 0,
-        "matched": 3,
-        "total_llm": 3,
-        "total_gold": 3
-      }
-    },
-    "Protest in Madrid as conservatives suspend ban on most polluting cars": {
-      "article_match": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_llm": 9,
-        "total_gold": 3
       },
       "category_match": {
         "precision": 0,
@@ -270,10 +214,66 @@
         "recall": 0.0,
         "f1": 0.0,
         "tp_weight": 0,
-        "total_gold_weight": 0.99,
-        "fp": 9,
+        "total_gold_weight": 2.0,
+        "fp": 2,
         "matched": 0,
-        "total_llm": 9,
+        "total_llm": 2,
+        "total_gold": 2
+      }
+    },
+    "port of l.a. sued after canceling agreement for a shipping container facility": {
+      "article_match": {
+        "precision": 0.667,
+        "recall": 0.667,
+        "f1": 0.667,
+        "correct_matches": 2,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 2,
+        "total_matches": 2
+      },
+      "weighted_article_match": {
+        "precision": 0.333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "tp_weight": 0.5,
+        "total_gold_weight": 0.5,
+        "fp": 1,
+        "matched": 2,
+        "total_llm": 3,
+        "total_gold": 3
+      }
+    },
+    "Protest in Madrid as conservatives suspend ban on most polluting cars": {
+      "article_match": {
+        "precision": 0.333,
+        "recall": 0.333,
+        "f1": 0.333,
+        "correct_matches": 1,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 0.142,
+        "recall": 0.333,
+        "f1": 0.199,
+        "tp_weight": 0.33,
+        "total_gold_weight": 0.99,
+        "fp": 2,
+        "matched": 1,
+        "total_llm": 3,
         "total_gold": 3
       }
     },
