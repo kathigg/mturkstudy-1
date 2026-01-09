@@ -1,0 +1,404 @@
+[
+  {
+    "title": "Ex-Posen Mayor Pleads Guilty To Embezzling Village Funds",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "South African Woman Reunited With Son Six Years After He Disappeared And Was Tracked Down 1,000 Miles Away",
+    "annotations": [
+      {
+        "text": "he gave them an address in delft the daniels' home",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "i saw the desperation on her, and her poor circumstances",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Rosemount Recreation Center Plan Gets Positive Response So Far",
+    "annotations": [
+      {
+        "text": "the number of people taking part in area recreation and leisure activities is growing",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "\"we're starting to get pretty close,\"",
+        "category": "Inflammatory Language",
+        "subcategory": "Scapegoating",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Frozen Sperm Bank Could Be Set Up In Space, Study Suggests",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Democrat Robert Martwick Sworn In As State Senator; Gop Taps Rosemont Mayor Brad Stephens For House Seat",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Missouri'S Only Abortion Clinic To Remain Open After Judge'S Injunction Holds",
+    "annotations": [
+      {
+        "text": "st. louis missouri's lone abortion clinic can still operate after a st. louis judge on friday kept an injunction",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "\"it is still very, very difficult to access abortion in missouri because of medically unnecessary hoops and regulations",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "the long-term fate of the clinic remains unclear. stelzer said he would issue a written order regarding next steps with the injunction",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "that stance is backed by the american college of obstetricians and gynecologists , which calls multiple pelvic exams for women seeking abortion",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 3
+      },
+      {
+        "text": "wade decision that federally legalized abortion. aaron mermelstein reported from st. louis, and elizabeth chuck from new york",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 4
+      }
+    ]
+  },
+  {
+    "title": "Get These Trending Washington Restaurants On Your Radar Today",
+    "annotations": [
+      {
+        "text": "want the scoop on washington's buzziest local spots?",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "trending outlier in the italian",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 4
+      }
+    ]
+  },
+  {
+    "title": "Phoenix Chief Says Police Response To Incident With 4-Year-Old Is 'Unacceptable'",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Four Top Residencies Now Offered To Local Artists, Thanks To Oolite",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Ridgecrest Earthquakes Caused Damage To The Earth'S Crust Seen From Satellite",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Port Of L.A. Sued After Canceling Agreement For A Shipping Container Facility",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "the board of harbor commissioners, who are appointed by mayor eric garcetti, and the los angeles city council didn't weigh in on the decision",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "the company would have to guarantee to grant the union jurisdiction and exclusive rights to provide trucking services",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Protest In Madrid As Conservatives Suspend Ban On Most Polluting Cars",
+    "annotations": [
+      {
+        "text": "madrid (reuters) - thousands protested in madrid on saturday against the suspension",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "we have to save (the planet) starting at the local and small level, the first thing is madrid's center,\" said laura martin",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "the new city hall run by the conservative people's party suspended fines on cars entering the currently restricted area of around five sq km",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  }
+]

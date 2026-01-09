@@ -31,6 +31,9 @@ STOP_WORDS = {
     'will', 'just', 'don', 'should', 'now'
 }
 
+# Minimum number of annotators required to keep an annotation (1, 2, or 3).
+MIN_SUPPORTERS_TO_SAVE = 2
+
 # ------------------------
 # Text Utility Functions
 # ------------------------
@@ -251,85 +254,50 @@ def build_gold_standard_with_intersection(
                 "paragraphIndex": paragraph_index,
             })
 
-        # --- STEP 3: Paragraph-level override for "No Polarizing Language" (2/3+) ---
-        # If >=2/3 workers selected "no polarizing language" for a paragraph, keep ONLY the paragraph-level
-        # no-polarizing annotation and drop all other annotations for that paragraph.
-        # Otherwise, remove any no-polarizing annotations so they never coexist with polarizing labels.
-        title = (
-            article_titles.get(str(article_id))
-            or article_titles.get(int(article_id))
-            or "UNKNOWN_TITLE"
-        )
-        paragraph_indices = {
-            a.get("paragraphIndex")
-            for a in gold_standard.get(article_id, [])
-            if isinstance(a, dict)
-        }
-        for pidx in sorted([p for p in paragraph_indices if isinstance(p, int)]):
-            total_workers = len(workers_by_article_para.get((str(article_id), pidx), set()))
-            npl_workers = no_polarizing_workers_by_article_para.get((str(article_id), pidx), set())
-            npl_count = len(npl_workers)
-            npl_dominates = total_workers > 0 and npl_count >= 2 and (npl_count / total_workers) >= (2 / 3)
+    # --- STEP 3: Keep only the strongest annotation per paragraph ---
+    for article_id, anns in list(gold_standard.items()):
+        by_para = defaultdict(list)
+        for ann in anns:
+            pidx = ann.get("paragraphIndex")
+            if isinstance(pidx, int):
+                by_para[pidx].append(ann)
 
-            # Collect existing annotations for this paragraph to check support levels.
-            anns_for_para = [
-                a for a in gold_standard.get(article_id, []) if a.get("paragraphIndex") == pidx
+        pruned: list[dict] = []
+        for pidx, items in by_para.items():
+            if not items:
+                continue
+            items = [
+                a for a in items
+                if int(a.get("num_supporters") or 0) >= MIN_SUPPORTERS_TO_SAVE
             ]
-            polarizing_anns = [a for a in anns_for_para if not is_no_polarizing_annotation(a)]
-            high_support_polarizing = [
-                a for a in polarizing_anns if int(a.get("num_supporters") or 0) > 2
-            ]
+            if not items:
+                # Fall back to a no-polarizing placeholder when nothing meets the threshold.
+                pruned.append({
+                    "text": "no polarizing language selected",
+                    "category": "No_Polarizing_Language",
+                    "subcategory": "no polarizing language",
+                    "confidence": 0.33,
+                    "num_supporters": 0,
+                    "label_consistent": False,
+                    "title": anns[0].get("title", "UNKNOWN_TITLE"),
+                    "paragraphIndex": pidx,
+                })
+                continue
+            max_support = max(int(a.get("num_supporters") or 0) for a in items)
+            tied = [a for a in items if int(a.get("num_supporters") or 0) == max_support]
+            npl = [a for a in tied if is_no_polarizing_annotation(a)]
+            candidates = npl if npl else tied
+            # Break remaining ties with confidence, then longer span.
+            keep = max(
+                candidates,
+                key=lambda a: (
+                    float(a.get("confidence") or 0.0),
+                    len(str(a.get("text", ""))),
+                ),
+            )
+            pruned.append(keep)
 
-            if npl_dominates:
-                gold_standard[article_id] = [
-                    a for a in gold_standard.get(article_id, []) if a.get("paragraphIndex") != pidx
-                ]
-                gold_standard[article_id].append(
-                    {
-                        "text": "no polarizing language selected",
-                        "category": "No_Polarizing_Language",
-                        "subcategory": "no polarizing language",
-                        "confidence": compute_no_polarizing_confidence(npl_count, total_workers),
-                        "num_supporters": npl_count,
-                        "label_consistent": npl_count == total_workers,
-                        "title": title,
-                        "paragraphIndex": pidx,
-                    }
-                )
-            else:
-                if polarizing_anns and not high_support_polarizing:
-                    # If a paragraph has polarizing annotations but none have >2 supporters,
-                    # treat the paragraph as no polarizing language.
-                    gold_standard[article_id] = [
-                        a for a in gold_standard.get(article_id, []) if a.get("paragraphIndex") != pidx
-                    ]
-                    gold_standard[article_id].append(
-                        {
-                            "text": "no polarizing language selected",
-                            "category": "No_Polarizing_Language",
-                            "subcategory": "no polarizing language",
-                            "confidence": compute_no_polarizing_confidence(npl_count, total_workers),
-                            "num_supporters": npl_count,
-                            "label_consistent": npl_count == total_workers and total_workers > 0,
-                            "title": title,
-                            "paragraphIndex": pidx,
-                        }
-                    )
-                else:
-                    # Otherwise:
-                    #  - remove any no-polarizing annotations (so it never coexists with polarizing labels)
-                    #  - drop low-support polarizing annotations (num_supporters <= 2)
-                    keep = []
-                    for a in gold_standard.get(article_id, []):
-                        if a.get("paragraphIndex") != pidx:
-                            keep.append(a)
-                            continue
-                        if is_no_polarizing_annotation(a):
-                            continue
-                        if int(a.get("num_supporters") or 0) <= 2:
-                            continue
-                        keep.append(a)
-                    gold_standard[article_id] = keep
+        gold_standard[article_id] = pruned
 
     return gold_standard
 

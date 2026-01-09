@@ -51,8 +51,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # LLM_PATH = BASE_DIR / "dataset_comparison_scripts/LLM_Commitee_test_2.json"
 # LLM_PATH = BASE_DIR / "mturk_results/gpt-5-twelve_article_annotations.json"
 # LLM_PATH = BASE_DIR / "mturk_results/11-20_hit_gold_standard_output.json"
-LLM_PATH = BASE_DIR / "llm_annotation_results/final_annotations_3annotators (1).json"
-GOLD_PATH = BASE_DIR / "mturk_results/v3_2nd_hit_gold_standard_output.json"
+LLM_PATH = BASE_DIR / "llm_annotation_results/final_annotations_3annotators.json"
+GOLD_PATH = BASE_DIR / "mturk_results/1-8_hit_gold_standard_output.json"
 # GOLD_PATH = BASE_DIR / "mturk_results/gold_standard_output.json"
 
 # Toggle confidence-weighted metrics (True = use gold confidence weights; False = treat all gold weights as 1.0).

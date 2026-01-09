@@ -1,10 +1,10 @@
 {
   "overall": {
     "article_match": {
-      "precision": 0.395,
-      "recall": 0.395,
-      "f1": 0.395,
-      "correct_matches": 15,
+      "precision": 0.579,
+      "recall": 0.579,
+      "f1": 0.579,
+      "correct_matches": 22,
       "total_llm": 38,
       "total_gold": 38
     },
@@ -12,25 +12,25 @@
       "precision": 1.0,
       "recall": 1.0,
       "f1": 1.0,
-      "correct_matches": 15,
-      "total_matches": 15
+      "correct_matches": 22,
+      "total_matches": 22
     },
     "weighted_article_match": {
-      "precision": 0.236,
-      "recall": 0.372,
-      "f1": 0.289,
-      "tp_weight": 7.09,
-      "total_gold_weight": 19.04,
-      "fp": 23
+      "precision": 0.428,
+      "recall": 0.553,
+      "f1": 0.483,
+      "tp_weight": 11.98,
+      "total_gold_weight": 21.65,
+      "fp": 16
     }
   },
   "per_article": {
     "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat": {
       "article_match": {
-        "precision": 0.25,
-        "recall": 0.25,
-        "f1": 0.25,
-        "correct_matches": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 4,
         "total_llm": 4,
         "total_gold": 4
       },
@@ -38,17 +38,17 @@
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
-        "correct_matches": 1,
-        "total_matches": 1
+        "correct_matches": 4,
+        "total_matches": 4
       },
       "weighted_article_match": {
-        "precision": 0.16,
-        "recall": 0.197,
-        "f1": 0.176,
-        "tp_weight": 0.57,
-        "total_gold_weight": 2.9,
-        "fp": 3,
-        "matched": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 1.66,
+        "total_gold_weight": 1.66,
+        "fp": 0,
+        "matched": 4,
         "total_llm": 4,
         "total_gold": 4
       }
@@ -73,8 +73,8 @@
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
-        "tp_weight": 1.57,
-        "total_gold_weight": 1.57,
+        "tp_weight": 2.67,
+        "total_gold_weight": 2.67,
         "fp": 0,
         "matched": 3,
         "total_llm": 3,
@@ -101,8 +101,8 @@
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
-        "tp_weight": 1.12,
-        "total_gold_weight": 1.12,
+        "tp_weight": 2.0,
+        "total_gold_weight": 2.0,
         "fp": 0,
         "matched": 2,
         "total_llm": 2,
@@ -129,8 +129,8 @@
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
-        "tp_weight": 0.57,
-        "total_gold_weight": 0.57,
+        "tp_weight": 0.33,
+        "total_gold_weight": 0.33,
         "fp": 0,
         "matched": 1,
         "total_llm": 1,
@@ -139,28 +139,28 @@
     },
     "get these trending washington restaurants on your radar today": {
       "article_match": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0,
-        "correct_matches": 0,
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1": 0.6,
+        "correct_matches": 3,
         "total_llm": 5,
         "total_gold": 5
       },
       "category_match": {
-        "precision": 0,
-        "recall": 0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_matches": 0
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 3,
+        "total_matches": 3
       },
       "weighted_article_match": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "tp_weight": 0,
-        "total_gold_weight": 1.65,
-        "fp": 5,
-        "matched": 0,
+        "precision": 0.455,
+        "recall": 0.625,
+        "f1": 0.527,
+        "tp_weight": 1.67,
+        "total_gold_weight": 2.67,
+        "fp": 2,
+        "matched": 3,
         "total_llm": 5,
         "total_gold": 5
       }
@@ -186,7 +186,7 @@
         "recall": 0.0,
         "f1": 0.0,
         "tp_weight": 0,
-        "total_gold_weight": 2.32,
+        "total_gold_weight": 2.67,
         "fp": 5,
         "matched": 0,
         "total_llm": 5,
@@ -195,40 +195,12 @@
     },
     "phoenix chief says police response to incident with 4-year-old is 'unacceptable'": {
       "article_match": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_llm": 2,
-        "total_gold": 2
-      },
-      "category_match": {
-        "precision": 0,
-        "recall": 0,
-        "f1": 0,
-        "correct_matches": 0,
-        "total_matches": 0
-      },
-      "weighted_article_match": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "tp_weight": 0,
-        "total_gold_weight": 2.0,
-        "fp": 2,
-        "matched": 0,
-        "total_llm": 2,
-        "total_gold": 2
-      }
-    },
-    "port of l.a. sued after canceling agreement for a shipping container facility": {
-      "article_match": {
-        "precision": 0.667,
-        "recall": 0.667,
-        "f1": 0.667,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
         "correct_matches": 2,
-        "total_llm": 3,
-        "total_gold": 3
+        "total_llm": 2,
+        "total_gold": 2
       },
       "category_match": {
         "precision": 1.0,
@@ -238,18 +210,18 @@
         "total_matches": 2
       },
       "weighted_article_match": {
-        "precision": 0.333,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1": 0.5,
-        "tp_weight": 0.5,
-        "total_gold_weight": 0.5,
-        "fp": 1,
+        "f1": 1.0,
+        "tp_weight": 0.66,
+        "total_gold_weight": 0.66,
+        "fp": 0,
         "matched": 2,
-        "total_llm": 3,
-        "total_gold": 3
+        "total_llm": 2,
+        "total_gold": 2
       }
     },
-    "Protest in Madrid as conservatives suspend ban on most polluting cars": {
+    "port of l.a. sued after canceling agreement for a shipping container facility": {
       "article_match": {
         "precision": 0.333,
         "recall": 0.333,
@@ -267,17 +239,17 @@
       },
       "weighted_article_match": {
         "precision": 0.142,
-        "recall": 0.333,
-        "f1": 0.199,
+        "recall": 0.248,
+        "f1": 0.18,
         "tp_weight": 0.33,
-        "total_gold_weight": 0.99,
+        "total_gold_weight": 1.33,
         "fp": 2,
         "matched": 1,
         "total_llm": 3,
         "total_gold": 3
       }
     },
-    "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite": {
+    "Protest in Madrid as conservatives suspend ban on most polluting cars": {
       "article_match": {
         "precision": 0.0,
         "recall": 0.0,
@@ -298,19 +270,47 @@
         "recall": 0.0,
         "f1": 0.0,
         "tp_weight": 0,
-        "total_gold_weight": 0.99,
+        "total_gold_weight": 3.0,
         "fp": 3,
         "matched": 0,
         "total_llm": 3,
         "total_gold": 3
       }
     },
-    "rosemount recreation center plan gets positive response so far": {
+    "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite": {
       "article_match": {
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
-        "correct_matches": 4,
+        "correct_matches": 3,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 3,
+        "total_matches": 3
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 1.67,
+        "total_gold_weight": 1.67,
+        "fp": 0,
+        "matched": 3,
+        "total_llm": 3,
+        "total_gold": 3
+      }
+    },
+    "rosemount recreation center plan gets positive response so far": {
+      "article_match": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "correct_matches": 2,
         "total_llm": 4,
         "total_gold": 4
       },
@@ -318,17 +318,17 @@
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
-        "correct_matches": 4,
-        "total_matches": 4
+        "correct_matches": 2,
+        "total_matches": 2
       },
       "weighted_article_match": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "tp_weight": 2.43,
-        "total_gold_weight": 2.43,
-        "fp": 0,
-        "matched": 4,
+        "precision": 0.248,
+        "recall": 0.398,
+        "f1": 0.306,
+        "tp_weight": 0.66,
+        "total_gold_weight": 1.66,
+        "fp": 2,
+        "matched": 2,
         "total_llm": 4,
         "total_gold": 4
       }
@@ -350,11 +350,11 @@
         "total_matches": 1
       },
       "weighted_article_match": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "tp_weight": 0.0,
-        "total_gold_weight": 2.0,
+        "precision": 0.142,
+        "recall": 0.248,
+        "f1": 0.18,
+        "tp_weight": 0.33,
+        "total_gold_weight": 1.33,
         "fp": 2,
         "matched": 1,
         "total_llm": 3,
