@@ -13,7 +13,7 @@ from pathlib import Path
 
 
 def main() -> int:
-    script = Path(__file__).with_name("multiple_llm_annotations_script(1).py")
+    script = Path(__file__).with_name("run_wrapper_multiple_llm_annotations.py")
     runpy.run_path(str(script), run_name="__main__")
     return 0
 
