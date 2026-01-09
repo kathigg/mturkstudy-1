@@ -43,7 +43,7 @@ To adapt the tool for your own study, edit `config.js`:
 4. Run locally: `npm start`
 5. Optionally deploy on Vercel, Netlify, or Firebase
 
-## 📂 Example Output
+## Example Output
 
 At the end of the task, all annotations and survey responses are saved as structured JSON and can optionally be uploaded to Firebase.
 
