@@ -8,8 +8,8 @@ from collections import defaultdict, Counter
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/12-22HIT.json")
-OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/12-22_hit_gold_standard_output.json")
+INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/1-8HIT_2026_01.json")
+OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/1-8_hit_gold_standard_output.json")
 
 # ------------------------
 # Constants
