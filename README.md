@@ -19,7 +19,7 @@ This is a browser-based annotation platform for labeling persuasive propaganda, 
 ## Location: 
 /mturkstudy/src/website_management
 
-## 🚀 Features
+## Features
 
 - Highlight text and apply structured labels
 - Customizable categories and survey questions
@@ -27,7 +27,7 @@ This is a browser-based annotation platform for labeling persuasive propaganda, 
 - JSON export or Firebase integration
 - “Thank You” screen with MTurk code
 
-## 🔧 Customization via `config.js`
+## Customization via `config.js`
 
 To adapt the tool for your own study, edit `config.js`:
 
@@ -35,7 +35,7 @@ To adapt the tool for your own study, edit `config.js`:
 - `categoryOptions`: tags available to annotators
 - `surveyQuestions`: Likert-style post-annotation questions
 
-## 🛠 Getting Started
+## Getting Started
 
 1. Clone this repo
 2. Run `npm install`
@@ -47,14 +47,14 @@ To adapt the tool for your own study, edit `config.js`:
 
 At the end of the task, all annotations and survey responses are saved as structured JSON and can optionally be uploaded to Firebase.
 
-## 🧪 Designed For Research
+## Designed For Research
 
 This tool was created for a human-subject study but is reusable across research domains involving:
 - Misinformation
 - Bias detection
 - Media literacy
 
-## 📄 License
+## License
 
 MIT License
 
