@@ -1,6 +1,12 @@
 # Updates.md
 Written by Kathleen Higgins, begun on January 8th (though I've been working on the project for a year and a half, now) to include recent updates so I can go back and check what I did. 
 
+## January 13th, 11:54pm:
+To-Do List (post-meeting):
+- Send JSON file for the interns to annotate. 
+- Send JSON to Varun of the finished LLM annotations. 
+
+***To-Do List***
 ## January 8th, 8:00pm:
 - Realized I was doing something mad stupid, and I didn't update the comparison script to work with the per-paragraph LLM json. 
 ```
