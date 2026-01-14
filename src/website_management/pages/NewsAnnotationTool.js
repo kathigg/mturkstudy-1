@@ -646,9 +646,10 @@ async function pickAndClaimIndex() {
     return null;
   }
 
+  const shuffled = [...candidates].sort(() => Math.random() - 0.5);
+
   /*
   // Try in random order; atomically claim the first that succeeds
-  const shuffled = candidates.sort(() => Math.random() - 0.5);
   for (const i of shuffled) {
     const ok = await tryClaimIndex(i);
     if (ok) {
@@ -656,13 +657,12 @@ async function pickAndClaimIndex() {
       return i;
     }
   }
+  console.warn("All candidates were claimed concurrently. Try again.");
+  return null;
   */
   // {ADD BACK AFTER HAND ANNOTATIONS}
   console.log(`Chosen index (claims bypassed): ${shuffled[0]}`);
   return shuffled[0];
-
-  console.warn("All candidates were claimed concurrently. Try again.");
-  return null;
 }
 
 // Atomically try to claim an index: increment claimedArticles[i] iff it's < MAX_PER_ARTICLE
@@ -1571,4 +1571,3 @@ export default function NewsAnnotationTool() {
   }
   return <ToolMain />;
 }
-
