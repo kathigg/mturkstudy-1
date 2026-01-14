@@ -640,13 +640,13 @@ async function pickAndClaimIndex() {
   // Candidates must be under both caps
   const candidates = Object.keys(usage)
     .map(Number)
-    .filter((i) => usage[i] < MAX_PER_ARTICLE && (claimed[i] ?? 0) < MAX_PER_ARTICLE);
-
+    .filter((i) => usage[i] < MAX_PER_ARTICLE); // && (claimed[i] ?? 0) < MAX_PER_ARTICLE {ADD BACK AFTER HAND ANNOTATIONS}
   if (candidates.length === 0) {
     console.warn("No available articles left.");
     return null;
   }
 
+  /*
   // Try in random order; atomically claim the first that succeeds
   const shuffled = candidates.sort(() => Math.random() - 0.5);
   for (const i of shuffled) {
@@ -656,6 +656,10 @@ async function pickAndClaimIndex() {
       return i;
     }
   }
+  */
+  // {ADD BACK AFTER HAND ANNOTATIONS}
+  console.log(`Chosen index (claims bypassed): ${shuffled[0]}`);
+  return shuffled[0];
 
   console.warn("All candidates were claimed concurrently. Try again.");
   return null;
