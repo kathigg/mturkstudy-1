@@ -61,6 +61,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 LLM_PATH = BASE_DIR / "llm_annotation_results/final_annotations_3annotators.json"
 GOLD_PATH = BASE_DIR / "mturk_results/1-8_hit_gold_standard_output.json"
 # GOLD_PATH = BASE_DIR / "mturk_results/gold_standard_output.json"
+DEBUG_TITLE = None  # Set to a string to print matched pairs for one title.
 
 # Toggle confidence-weighted metrics (True = use gold confidence weights; False = treat all gold weights as 1.0).
 USE_CONFIDENCE_WEIGHTING = True
@@ -354,6 +355,41 @@ def compare_category(llm_annotations, gold_annotations, llm_title=None, gold_tit
 def normalize_title(title):
     return re.sub(r"[^\w\s]", "", title).strip().lower()
 
+def print_matched_pairs_for_title(llm_json, gold_json, title_query):
+    if not title_query:
+        return
+
+    llm_map = flatten_llm(llm_json)
+    gold_map = flatten_gold(gold_json)
+
+    llm_norm_to_title = {normalize_title(k): k for k in llm_map.keys()}
+    gold_norm_to_title = {normalize_title(k): k for k in gold_map.keys()}
+    norm = normalize_title(title_query)
+
+    if norm not in llm_norm_to_title or norm not in gold_norm_to_title:
+        print(f"⚠️ Title not found in both datasets: '{title_query}'")
+        return
+
+    llm_title = llm_norm_to_title[norm]
+    gold_title = gold_norm_to_title[norm]
+    l_anns = llm_map[llm_title]
+    g_anns = gold_map[gold_title]
+
+    matched_pairs, _, _ = greedy_weighted_match(
+        l_anns, g_anns, lambda l, g: match_annotation(l, g, llm_title, gold_title)
+    )
+
+    print(f"\n=== MATCHED PAIRS FOR: {llm_title} ===")
+    if not matched_pairs:
+        print("No matched pairs found.")
+        return
+
+    for li, gi, _ in matched_pairs:
+        l = l_anns[li]
+        g = g_anns[gi]
+        print("- LLM:", l)
+        print("  GOLD:", g)
+
 
 # ------------------------
 # Aggregate Comparison
@@ -603,6 +639,7 @@ if __name__ == "__main__":
     print("=== END DEBUG ===\n")
 
     results = compare_all(llm_json, gold_json)
+    print_matched_pairs_for_title(llm_json, gold_json, DEBUG_TITLE)
 
     with open(output_file, "w") as f:
         json.dump(results, f, indent=2)
