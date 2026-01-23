@@ -1,0 +1,481 @@
+[
+  {
+    "title": "Protest In Madrid As Conservatives Suspend Ban On Most Polluting Cars",
+    "annotations": [
+      {
+        "text": "fears that environmental rollbacks seen in the United States may be spreading to Europe.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "People of all ages rallied despite a scorching heatwave in Spain and most of Europe,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "measure slashed air pollution levels from car emissions in the center to record lows.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "\"Yes we can, I do want Madrid central,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "i want to breathe free",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true
+      },
+      {
+        "text": "We aspire to have a Madrid without smoke",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Missouri'S Only Abortion Clinic To Remain Open After Judge'S Injunction Holds",
+    "annotations": [
+      {
+        "text": "tate health department had dealt it a blow,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "medically unnecessary hoops and regulations",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "state's stringent and perpetually evolving requirements",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "Today is a victory for women to be abl",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "It is still very, very difficult to a",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "that the licensing battle is part of a greater anti-abortion effort",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "amid a slew of recent anti-abortion",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "good day for women",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "a victory for women to be able to access the kind of medical care that they and their health professionals need and deserve",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Phoenix Chief Says Police Response To Incident With 4-Year-Old Is 'Unacceptable'",
+    "annotations": [
+      {
+        "text": "appearing to push and kick",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "ung daughters. At one point, an officer screams at Ames and says: \"\"When I tell you to do something, you f------ do it!",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "\"What we saw in that video isn't in keeping wi",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "was looking at discrepancies between the police report t",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "\"shouldn't have reacted the way that we reacted.\" Williams said tha",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "n. \"I looked the barrel in the eyes, my kids looked the barrel in the eyes.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "this is one of the most insane attacks on a black famil",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "When I tell you to do something, you f------ do it!\"",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Get These Trending Washington Restaurants On Your Radar Today",
+    "annotations": [
+      {
+        "text": "maintaining a superior four-star rating",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true
+      },
+      {
+        "text": "Washington's buzziest local spots",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "bagged a staggering 141.7% increase in new reviews",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "more than one hot spot trending in Washington's",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "navy yard is the city's buzziest traditional american",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true
+      },
+      {
+        "text": "Review counts increased by more than 400% on a month-to-month basis.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "increased its new reviews by 4.6% with its Yelp rating improving from 3.5 stars to four stars",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Port Of L.A. Sued After Canceling Agreement For A Shipping Container Facility",
+    "annotations": [
+      {
+        "text": "ultimately ease congestion at the port",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "t makes me worried for the city when a green, job-creating project is stymied by a single entity for their own narrow reasons,",
+        "category": "Inflammatory Language",
+        "subcategory": "Scapegoating",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "accessed at the site, using a \"hub and spoke\" model that would ultimately ease congestion",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Angeles company is suing the Port of L.A., claiming it improperly terminated an agreement to negotiate the development of a $",
+        "category": "Inflammatory Language",
+        "subcategory": "Scapegoating",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "money we've spent, it makes me worried for the city when a green, job-creating project is stymied by a single entity for their",
+        "category": "Inflammatory Language",
+        "subcategory": "Scapegoating",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "ion were an \"unexpected curveball thrown at us.\" \"Beyond the time and money we've spent, it makes me worried for the c",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Rather than help mediate with the ILWU or insist that the ILWU negotiate in good faith",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "and none of our decision makers will step in to try to resolve it,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "South African Woman Reunited With Son Six Years After He Disappeared And Was Tracked Down 1,000 Miles Away",
+    "annotations": [
+      {
+        "text": "people are very negative about the police, but there are good police officers",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false
+      },
+      {
+        "text": "footage only scratch the surface o",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "In 90% of missing persons cases, i",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Four Top Residencies Now Offered To Local Artists, Thanks To Oolite",
+    "annotations": [
+      {
+        "text": "new opportunity to superpower their careers.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "am, Home and Away",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Miami artists chosen for the highly competitive Ya",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Miami artists have a new opportunity to superpower their careers",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Residencies can be a defining moment in an artist's career",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Rosemount Recreation Center Plan Gets Positive Response So Far",
+    "annotations": [
+      {
+        "text": "community has more resources to support and use the center.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Democrat Robert Martwick Sworn In As State Senator; Gop Taps Rosemont Mayor Brad Stephens For House Seat",
+    "annotations": [
+      {
+        "text": ". \"We will do whatever it takes to win",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "deliver for his district on day one,",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Ex-Posen Mayor Pleads Guilty To Embezzling Village Funds",
+    "annotations": [
+      {
+        "text": "used the ill-gotten gains to gamble at casinos in Joliet,",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "Schupek is the second ex-Posen mayor who has pleaded guilty to stealing from the village in the past two-plus decades",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  },
+  {
+    "title": "Ridgecrest Earthquakes Caused Damage To The Earth'S Crust Seen From Satellite",
+    "annotations": [
+      {
+        "text": "ach color of the psychedelic-looking image represents 4.8 inches of ground displaceme",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      },
+      {
+        "text": "map the whole Earth every 12 days",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true
+      }
+    ]
+  }
+]
