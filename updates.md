@@ -1,5 +1,7 @@
 # Updates.md
 Written by Kathleen Higgins, begun on January 8th (though I've been working on the project for a year and a half, now) to include recent updates so I can go back and check what I did. 
+## January 17th, 4:17pm:
+- I kept mixing up which JSON files were right and which ones were out of date, so I 
 
 ## January 13th, 11:54pm:
 To-Do List (post-meeting):
