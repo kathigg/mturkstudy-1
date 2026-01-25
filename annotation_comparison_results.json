@@ -15,6 +15,64 @@
       "correct_matches": 31,
       "total_matches": 32
     },
+    "category_match_per_class": {
+      "inflammatory language": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "no polarizing language": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 31,
+        "tp": 31,
+        "fp": 0,
+        "fn": 0
+      },
+      "persuasive propaganda": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      }
+    },
+    "subcategory_match_per_class": {
+      "exaggeration": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "no polarizing language": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 31,
+        "tp": 31,
+        "fp": 0,
+        "fn": 0
+      },
+      "scapegoating": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
     "weighted_article_match": {
       "precision": 0.807,
       "recall": 0.867,
@@ -51,6 +109,28 @@
         "matched": 4,
         "total_llm": 4,
         "total_gold": 4
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
       }
     },
     "Ex-Posen mayor pleads guilty to embezzling village funds": {
@@ -79,6 +159,28 @@
         "matched": 3,
         "total_llm": 3,
         "total_gold": 3
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
       }
     },
     "Four top residencies now offered to local artists, thanks to Oolite": {
@@ -107,6 +209,28 @@
         "matched": 2,
         "total_llm": 2,
         "total_gold": 2
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
       }
     },
     "Frozen sperm bank could be set up in space, study suggests": {
@@ -135,6 +259,28 @@
         "matched": 1,
         "total_llm": 1,
         "total_gold": 1
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
       }
     },
     "get these trending washington restaurants on your radar today": {
@@ -163,6 +309,28 @@
         "matched": 3,
         "total_llm": 5,
         "total_gold": 5
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
       }
     },
     "Missouri's only abortion clinic to remain open after judge's injunction holds": {
@@ -191,6 +359,28 @@
         "matched": 3,
         "total_llm": 5,
         "total_gold": 5
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
       }
     },
     "phoenix chief says police response to incident with 4-year-old is 'unacceptable'": {
@@ -219,6 +409,28 @@
         "matched": 2,
         "total_llm": 2,
         "total_gold": 2
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
       }
     },
     "port of l.a. sued after canceling agreement for a shipping container facility": {
@@ -247,6 +459,64 @@
         "matched": 3,
         "total_llm": 3,
         "total_gold": 3
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "persuasive propaganda": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "exaggeration": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "scapegoating": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
       }
     },
     "Protest in Madrid as conservatives suspend ban on most polluting cars": {
@@ -275,6 +545,28 @@
         "matched": 1,
         "total_llm": 3,
         "total_gold": 3
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
       }
     },
     "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite": {
@@ -303,6 +595,28 @@
         "matched": 3,
         "total_llm": 3,
         "total_gold": 3
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
       }
     },
     "rosemount recreation center plan gets positive response so far": {
@@ -331,6 +645,28 @@
         "matched": 4,
         "total_llm": 4,
         "total_gold": 4
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
       }
     },
     "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away": {
@@ -359,6 +695,28 @@
         "matched": 3,
         "total_llm": 3,
         "total_gold": 3
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
       }
     }
   }

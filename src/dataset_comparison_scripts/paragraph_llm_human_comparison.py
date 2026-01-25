@@ -352,6 +352,53 @@ def compare_category(llm_annotations, gold_annotations, llm_title=None, gold_tit
         "total_matches": total_shared,
     }
 
+def init_class_counts():
+    return defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0, "support": 0})
+
+def update_class_counts(counts, pred_label, gold_label):
+    if pred_label == gold_label:
+        counts[gold_label]["tp"] += 1
+        counts[gold_label]["support"] += 1
+    else:
+        counts[pred_label]["fp"] += 1
+        counts[gold_label]["fn"] += 1
+        counts[gold_label]["support"] += 1
+        counts[pred_label]["support"] += 0
+
+def merge_class_counts(dest, src):
+    for label, c in src.items():
+        dest[label]["tp"] += c["tp"]
+        dest[label]["fp"] += c["fp"]
+        dest[label]["fn"] += c["fn"]
+        dest[label]["support"] += c["support"]
+
+def finalize_class_metrics(counts):
+    metrics = {}
+    for label in sorted(counts.keys()):
+        c = counts[label]
+        tp, fp, fn = c["tp"], c["fp"], c["fn"]
+        precision = tp / (tp + fp) if (tp + fp) else 0.0
+        recall = tp / (tp + fn) if (tp + fn) else 0.0
+        f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) else 0.0
+        metrics[label] = {
+            "precision": round(precision, 3),
+            "recall": round(recall, 3),
+            "f1": round(f1, 3),
+            "support": c["support"],
+            "tp": tp,
+            "fp": fp,
+            "fn": fn,
+        }
+    return metrics
+
+def compute_per_class_metrics(matched_pairs, llm_annotations, gold_annotations, label_key):
+    counts = init_class_counts()
+    for li, gi, _ in matched_pairs:
+        pred_label = normalize_label(llm_annotations[li].get(label_key, "")) or "unknown"
+        gold_label = normalize_label(gold_annotations[gi].get(label_key, "")) or "unknown"
+        update_class_counts(counts, pred_label, gold_label)
+    return finalize_class_metrics(counts), counts
+
 def normalize_title(title):
     return re.sub(r"[^\w\s]", "", title).strip().lower()
 
@@ -426,17 +473,32 @@ def compare_all(llm_json, gold_json):
         sum_TP_w = 0.0
         sum_FP = 0
         sum_Gold_w = 0.0
+        overall_cat_counts = init_class_counts()
+        overall_subcat_counts = init_class_counts()
 
         for g_title, g_anns in gold_map_raw.items():
             for l_title, l_anns in llm_map_raw.items():
                 result = compare_article(l_anns, g_anns, l_title, g_title)
                 cat_result = compare_category(l_anns, g_anns, l_title, g_title)
                 w_result = compare_article_weighted(l_anns, g_anns, l_title, g_title)
+                matched_pairs, _, _ = greedy_weighted_match(
+                    l_anns, g_anns, lambda l, g: match_annotation(l, g, l_title, g_title)
+                )
+                cat_per_class, cat_counts = compute_per_class_metrics(
+                    matched_pairs, l_anns, g_anns, "category"
+                )
+                subcat_per_class, subcat_counts = compute_per_class_metrics(
+                    matched_pairs, l_anns, g_anns, "subcategory"
+                )
+                merge_class_counts(overall_cat_counts, cat_counts)
+                merge_class_counts(overall_subcat_counts, subcat_counts)
 
                 all_results[f"{g_title} ↔ {l_title}"] = {
                     "article_match": result,
                     "category_match": cat_result,
                     "weighted_article_match": w_result,
+                    "category_match_per_class": cat_per_class,
+                    "subcategory_match_per_class": subcat_per_class,
                 }
 
                 total_correct_article += result["correct_matches"]
@@ -480,6 +542,8 @@ def compare_all(llm_json, gold_json):
                     "correct_matches": total_correct_cat,
                     "total_matches": total_shared,
                 },
+                "category_match_per_class": finalize_class_metrics(overall_cat_counts),
+                "subcategory_match_per_class": finalize_class_metrics(overall_subcat_counts),
                 "weighted_article_match": {
                     "precision": round(overall_wp, 3),
                     "recall": round(overall_wr, 3),
@@ -509,6 +573,8 @@ def compare_all(llm_json, gold_json):
             "overall": {
                 "article_match": {"precision": 0, "recall": 0, "f1": 0},
                 "category_match": {"precision": 0, "recall": 0, "f1": 0},
+                "category_match_per_class": {},
+                "subcategory_match_per_class": {},
                 "weighted_article_match": {"precision": 0, "recall": 0, "f1": 0},
             },
             "per_article": {},
@@ -532,6 +598,8 @@ def compare_all(llm_json, gold_json):
     sum_TP_w = 0.0
     sum_FP = 0
     sum_Gold_w = 0.0
+    overall_cat_counts = init_class_counts()
+    overall_subcat_counts = init_class_counts()
 
     for norm in sorted(shared_norm_titles):
         llm_title = llm_norm_to_title[norm]
@@ -543,11 +611,24 @@ def compare_all(llm_json, gold_json):
         result = compare_article(l_anns, g_anns, llm_title, gold_title)
         cat_result = compare_category(l_anns, g_anns, llm_title, gold_title)
         w_result = compare_article_weighted(l_anns, g_anns, llm_title, gold_title)
+        matched_pairs, _, _ = greedy_weighted_match(
+            l_anns, g_anns, lambda l, g: match_annotation(l, g, llm_title, gold_title)
+        )
+        cat_per_class, cat_counts = compute_per_class_metrics(
+            matched_pairs, l_anns, g_anns, "category"
+        )
+        subcat_per_class, subcat_counts = compute_per_class_metrics(
+            matched_pairs, l_anns, g_anns, "subcategory"
+        )
+        merge_class_counts(overall_cat_counts, cat_counts)
+        merge_class_counts(overall_subcat_counts, subcat_counts)
 
         all_results[llm_title] = {
             "article_match": result,
             "category_match": cat_result,
             "weighted_article_match": w_result,
+            "category_match_per_class": cat_per_class,
+            "subcategory_match_per_class": subcat_per_class,
         }
 
         total_correct_article += result["correct_matches"]
@@ -591,6 +672,8 @@ def compare_all(llm_json, gold_json):
                 "correct_matches": total_correct_cat,
                 "total_matches": total_shared,
             },
+            "category_match_per_class": finalize_class_metrics(overall_cat_counts),
+            "subcategory_match_per_class": finalize_class_metrics(overall_subcat_counts),
             "weighted_article_match": {
                 "precision": round(overall_wp, 3),
                 "recall": round(overall_wr, 3),
