@@ -2,6 +2,7 @@ import json
 import re
 from pathlib import Path
 from collections import defaultdict
+import random
 
 # --- Shared span-matching logic (mirrors turk_annotation_aggregator.py) ---
 STOP_WORDS = {
@@ -58,8 +59,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # LLM_PATH = BASE_DIR / "dataset_comparison_scripts/LLM_Commitee_test_2.json"
 # LLM_PATH = BASE_DIR / "mturk_results/gpt-5-twelve_article_annotations.json"
 # LLM_PATH = BASE_DIR / "mturk_results/11-20_hit_gold_standard_output.json"
-LLM_PATH = BASE_DIR / "llm_annotation_results/final_annotations_3annotators.json"
-GOLD_PATH = BASE_DIR / "mturk_results/1-20_hit_gold_standard_output.json"
+LLM_PATH = BASE_DIR / "llm_annotation_results/multi_llm_annotations/multi_final_annotations_3annotators.json"
+GOLD_PATH = BASE_DIR / "mturk_results/multi_1-8_hit_gold_standard_output.json"
 # GOLD_PATH = BASE_DIR / "mturk_results/gold_standard_output.json"
 DEBUG_TITLE = None  # Set to a string to print matched pairs for one title.
 
@@ -68,7 +69,12 @@ USE_CONFIDENCE_WEIGHTING = True
 
 # If True, force exactly one annotation per paragraph on both sides (for apples-to-apples comparison).
 # If False, allow multiple annotations per paragraph (matching remains paragraph-indexed).
-ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH = True
+ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH = False
+
+# Bootstrap confidence intervals (article-level resampling).
+ENABLE_BOOTSTRAP_CIS = False
+BOOTSTRAP_N = 1000
+BOOTSTRAP_SEED = 0
 
 # ------------------------
 # Utility functions
@@ -489,6 +495,222 @@ def print_matched_pairs_for_title(llm_json, gold_json, title_query):
 # ------------------------
 # Aggregate Comparison
 # ------------------------
+def _aggregate_overall_from_article_summaries(
+    per_article_summaries: dict[str, dict],
+):
+    total_correct_article = 0
+    total_llm = 0
+    total_gold = 0
+
+    total_correct_cat = 0
+    total_shared = 0
+
+    sum_TP_w = 0.0
+    sum_FP = 0
+    sum_Gold_w = 0.0
+
+    overall_cat_counts = init_class_counts()
+    overall_subcat_counts = init_class_counts()
+
+    for summary in per_article_summaries.values():
+        a = summary["article_match"]
+        c = summary["category_match"]
+        w = summary["weighted_article_match"]
+
+        total_correct_article += int(a.get("correct_matches", 0))
+        total_llm += int(a.get("total_llm", 0))
+        total_gold += int(a.get("total_gold", 0))
+
+        total_correct_cat += int(c.get("correct_matches", 0))
+        total_shared += int(c.get("total_matches", 0))
+
+        sum_TP_w += float(w.get("tp_weight", 0.0))
+        sum_FP += int(w.get("fp", 0))
+        sum_Gold_w += float(w.get("total_gold_weight", 0.0))
+
+        # Per-class summaries are already "finalized" dicts. Reconstruct counts by tp/fp/fn/support.
+        # This keeps bootstrap aggregation consistent with the per-article computation basis (matched pairs only).
+        for label, entry in (summary.get("category_match_per_class") or {}).items():
+            overall_cat_counts[label]["tp"] += int(entry.get("tp", 0))
+            overall_cat_counts[label]["fp"] += int(entry.get("fp", 0))
+            overall_cat_counts[label]["fn"] += int(entry.get("fn", 0))
+            overall_cat_counts[label]["support"] += int(entry.get("support", 0))
+        for label, entry in (summary.get("subcategory_match_per_class") or {}).items():
+            overall_subcat_counts[label]["tp"] += int(entry.get("tp", 0))
+            overall_subcat_counts[label]["fp"] += int(entry.get("fp", 0))
+            overall_subcat_counts[label]["fn"] += int(entry.get("fn", 0))
+            overall_subcat_counts[label]["support"] += int(entry.get("support", 0))
+
+    precision_article = total_correct_article / total_llm if total_llm else 0.0
+    recall_article = total_correct_article / total_gold if total_gold else 0.0
+    f1_article = (2 * precision_article * recall_article / (precision_article + recall_article)) if (precision_article + recall_article) else 0.0
+
+    precision_cat = total_correct_cat / total_shared if total_shared else 0.0
+    recall_cat = total_correct_cat / total_shared if total_shared else 0.0
+    f1_cat = (2 * precision_cat * recall_cat / (precision_cat + recall_cat)) if (precision_cat + recall_cat) else 0.0
+
+    overall_wp = (sum_TP_w / (sum_TP_w + sum_FP)) if (sum_TP_w + sum_FP) > 0 else 0.0
+    overall_wr = (sum_TP_w / sum_Gold_w) if sum_Gold_w > 0 else 0.0
+    overall_wf1 = (2 * overall_wp * overall_wr / (overall_wp + overall_wr)) if (overall_wp + overall_wr) > 0 else 0.0
+
+    return {
+        "article_match": {
+            "precision": round(precision_article, 3),
+            "recall": round(recall_article, 3),
+            "f1": round(f1_article, 3),
+            "correct_matches": total_correct_article,
+            "total_llm": total_llm,
+            "total_gold": total_gold,
+        },
+        "category_match": {
+            "precision": round(precision_cat, 3),
+            "recall": round(recall_cat, 3),
+            "f1": round(f1_cat, 3),
+            "correct_matches": total_correct_cat,
+            "total_matches": total_shared,
+        },
+        "category_match_per_class": finalize_class_metrics(overall_cat_counts),
+        "subcategory_match_per_class": finalize_class_metrics(overall_subcat_counts),
+        "weighted_article_match": {
+            "precision": round(overall_wp, 3),
+            "recall": round(overall_wr, 3),
+            "f1": round(overall_wf1, 3),
+            "tp_weight": round(sum_TP_w, 3),
+            "total_gold_weight": round(sum_Gold_w, 3),
+            "fp": sum_FP,
+        },
+    }
+
+
+def compare_shared_titles(llm_map_raw, gold_map_raw, shared_norm_titles, llm_norm_to_title, gold_norm_to_title):
+    """
+    Compare only the provided set of shared_norm_titles.
+    Returns:
+      overall (dict) and per_article (dict).
+    """
+    per_article = {}
+
+    for norm in sorted(shared_norm_titles):
+        llm_title = llm_norm_to_title[norm]
+        gold_title = gold_norm_to_title[norm]
+
+        l_anns, g_anns = maybe_enforce_one_annotation_per_paragraph(
+            llm_map_raw[llm_title],
+            gold_map_raw[gold_title],
+        )
+
+        result = compare_article(l_anns, g_anns, llm_title, gold_title)
+        cat_result = compare_category(l_anns, g_anns, llm_title, gold_title)
+        w_result = compare_article_weighted(l_anns, g_anns, llm_title, gold_title)
+        matched_pairs, _, _ = greedy_weighted_match(
+            l_anns, g_anns, lambda l, g: match_annotation(l, g, llm_title, gold_title)
+        )
+        cat_per_class, _ = compute_per_class_metrics(
+            matched_pairs, l_anns, g_anns, "category"
+        )
+        subcat_per_class, _ = compute_per_class_metrics(
+            matched_pairs, l_anns, g_anns, "subcategory"
+        )
+
+        per_article[llm_title] = {
+            "article_match": result,
+            "category_match": cat_result,
+            "weighted_article_match": w_result,
+            "category_match_per_class": cat_per_class,
+            "subcategory_match_per_class": subcat_per_class,
+        }
+
+    overall = _aggregate_overall_from_article_summaries(per_article)
+    return overall, per_article
+
+
+def bootstrap_article_level_cis(llm_json, gold_json, *, n_bootstrap: int, seed: int):
+    """
+    Article-level bootstrap:
+      - Sample articles with replacement from the shared-title set
+      - Recompute overall metrics for each sample
+      - Report percentile CIs (2.5%, 97.5%)
+    """
+    llm_map_raw = flatten_llm(llm_json)
+    gold_map_raw = flatten_gold(gold_json)
+
+    # Normalize gold titles by removing "ARTICLE_" prefix if present
+    cleaned_gold_map = {}
+    for title, anns in gold_map_raw.items():
+        normalized_title = title
+        if title.startswith("ARTICLE_"):
+            normalized_title = title.replace("ARTICLE_", "", 1).strip()
+        cleaned_gold_map[normalized_title] = anns
+    gold_map_raw = cleaned_gold_map
+
+    llm_norm_to_title = {normalize_title(k): k for k in llm_map_raw.keys()}
+    gold_norm_to_title = {normalize_title(k): k for k in gold_map_raw.keys()}
+
+    shared_norm_titles = sorted(set(llm_norm_to_title.keys()) & set(gold_norm_to_title.keys()))
+    if not shared_norm_titles:
+        raise ValueError("No shared titles found; cannot bootstrap.")
+
+    rng = random.Random(seed)
+
+    def _get_scalar(overall, key1, key2):
+        return float(overall[key1][key2])
+
+    samples = {
+        "article_precision": [],
+        "article_recall": [],
+        "article_f1": [],
+        "weighted_precision": [],
+        "weighted_recall": [],
+        "weighted_f1": [],
+        "category_precision": [],
+        "category_recall": [],
+        "category_f1": [],
+    }
+
+    for _ in range(n_bootstrap):
+        drawn = [rng.choice(shared_norm_titles) for _ in range(len(shared_norm_titles))]
+        overall, _ = compare_shared_titles(llm_map_raw, gold_map_raw, drawn, llm_norm_to_title, gold_norm_to_title)
+
+        samples["article_precision"].append(_get_scalar(overall, "article_match", "precision"))
+        samples["article_recall"].append(_get_scalar(overall, "article_match", "recall"))
+        samples["article_f1"].append(_get_scalar(overall, "article_match", "f1"))
+
+        samples["weighted_precision"].append(_get_scalar(overall, "weighted_article_match", "precision"))
+        samples["weighted_recall"].append(_get_scalar(overall, "weighted_article_match", "recall"))
+        samples["weighted_f1"].append(_get_scalar(overall, "weighted_article_match", "f1"))
+
+        samples["category_precision"].append(_get_scalar(overall, "category_match", "precision"))
+        samples["category_recall"].append(_get_scalar(overall, "category_match", "recall"))
+        samples["category_f1"].append(_get_scalar(overall, "category_match", "f1"))
+
+    def _pct(values, p):
+        if not values:
+            return 0.0
+        values_sorted = sorted(values)
+        k = (len(values_sorted) - 1) * p
+        f = int(k)
+        c = min(f + 1, len(values_sorted) - 1)
+        if f == c:
+            return float(values_sorted[f])
+        d0 = values_sorted[f] * (c - k)
+        d1 = values_sorted[c] * (k - f)
+        return float(d0 + d1)
+
+    cis = {}
+    for key, values in samples.items():
+        cis[key] = {
+            "low": round(_pct(values, 0.025), 3),
+            "high": round(_pct(values, 0.975), 3),
+        }
+
+    return {
+        "n_articles": len(shared_norm_titles),
+        "n_bootstrap": n_bootstrap,
+        "seed": seed,
+        "cis": cis,
+    }
+
+
 def compare_all(llm_json, gold_json):
     # Flatten
     llm_map_raw = flatten_llm(llm_json)
@@ -639,103 +861,10 @@ def compare_all(llm_json, gold_json):
         gold_norm_to_title[norm]: gold_map_raw[gold_norm_to_title[norm]]
         for norm in shared_norm_titles
     }
-
-    # --- Normal case: direct matches exist on shared articles ---
-    all_results = {}
-    total_correct_article = total_llm = total_gold = 0
-    total_correct_cat = total_shared = 0
-    sum_TP_w = 0.0
-    sum_FP = 0
-    sum_Gold_w = 0.0
-    overall_cat_counts = init_class_counts()
-    overall_subcat_counts = init_class_counts()
-
-    for norm in sorted(shared_norm_titles):
-        llm_title = llm_norm_to_title[norm]
-        gold_title = gold_norm_to_title[norm]
-
-        l_anns, g_anns = maybe_enforce_one_annotation_per_paragraph(
-            llm_map[llm_title],
-            gold_map[gold_title],
-        )
-
-        result = compare_article(l_anns, g_anns, llm_title, gold_title)
-        cat_result = compare_category(l_anns, g_anns, llm_title, gold_title)
-        w_result = compare_article_weighted(l_anns, g_anns, llm_title, gold_title)
-        matched_pairs, _, _ = greedy_weighted_match(
-            l_anns, g_anns, lambda l, g: match_annotation(l, g, llm_title, gold_title)
-        )
-        cat_per_class, cat_counts = compute_per_class_metrics(
-            matched_pairs, l_anns, g_anns, "category"
-        )
-        subcat_per_class, subcat_counts = compute_per_class_metrics(
-            matched_pairs, l_anns, g_anns, "subcategory"
-        )
-        merge_class_counts(overall_cat_counts, cat_counts)
-        merge_class_counts(overall_subcat_counts, subcat_counts)
-
-        all_results[llm_title] = {
-            "article_match": result,
-            "category_match": cat_result,
-            "weighted_article_match": w_result,
-            "category_match_per_class": cat_per_class,
-            "subcategory_match_per_class": subcat_per_class,
-        }
-
-        total_correct_article += result["correct_matches"]
-        total_llm += result["total_llm"]
-        total_gold += result["total_gold"]
-        total_correct_cat += cat_result["correct_matches"]
-        total_shared += cat_result["total_matches"]
-        sum_TP_w += w_result["tp_weight"]
-        sum_FP += w_result["fp"]
-        sum_Gold_w += w_result["total_gold_weight"]
-
-    precision_article = total_correct_article / total_llm if total_llm else 0
-    recall_article = total_correct_article / total_gold if total_gold else 0
-    f1_article = (2 * precision_article * recall_article /
-                  (precision_article + recall_article)) if (precision_article + recall_article) else 0
-
-    precision_cat = total_correct_cat / total_shared if total_shared else 0
-    recall_cat = total_correct_cat / total_shared if total_shared else 0
-    f1_cat = (2 * precision_cat * recall_cat /
-              (precision_cat + recall_cat)) if (precision_cat + recall_cat) else 0
-
-    overall_wp = (sum_TP_w / (sum_TP_w + sum_FP)) if (sum_TP_w + sum_FP) > 0 else 0.0
-    overall_wr = (sum_TP_w / sum_Gold_w) if sum_Gold_w > 0 else 0.0
-    overall_wf1 = (2 * overall_wp * overall_wr / (overall_wp + overall_wr)
-                   if (overall_wp + overall_wr) > 0 else 0.0)
-
-    return {
-        "overall": {
-            "article_match": {
-                "precision": round(precision_article, 3),
-                "recall": round(recall_article, 3),
-                "f1": round(f1_article, 3),
-                "correct_matches": total_correct_article,
-                "total_llm": total_llm,
-                "total_gold": total_gold,
-            },
-            "category_match": {
-                "precision": round(precision_cat, 3),
-                "recall": round(recall_cat, 3),
-                "f1": round(f1_cat, 3),
-                "correct_matches": total_correct_cat,
-                "total_matches": total_shared,
-            },
-            "category_match_per_class": finalize_class_metrics(overall_cat_counts),
-            "subcategory_match_per_class": finalize_class_metrics(overall_subcat_counts),
-            "weighted_article_match": {
-                "precision": round(overall_wp, 3),
-                "recall": round(overall_wr, 3),
-                "f1": round(overall_wf1, 3),
-                "tp_weight": round(sum_TP_w, 3),
-                "total_gold_weight": round(sum_Gold_w, 3),
-                "fp": sum_FP,
-            },
-        },
-        "per_article": all_results,
-    }
+    overall, per_article = compare_shared_titles(
+        llm_map, gold_map, shared_norm_titles, llm_norm_to_title, gold_norm_to_title
+    )
+    return {"overall": overall, "per_article": per_article}
 
 # ------------------------
 # Main
@@ -780,7 +909,23 @@ if __name__ == "__main__":
 
     print("=== Overall Results ===")
     print(f"Confidence weighting enabled: {USE_CONFIDENCE_WEIGHTING}")
+    print(f"Enforce one annotation per paragraph: {ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH}")
     print("Article Match:", results["overall"]["article_match"])
     print("Category Match:", results["overall"]["category_match"])
     print("Weighted Article Match:", results["overall"]["weighted_article_match"])
     print(f"\nDetailed results saved to {output_file}")
+
+    if ENABLE_BOOTSTRAP_CIS:
+        boot = bootstrap_article_level_cis(llm_json, gold_json, n_bootstrap=BOOTSTRAP_N, seed=BOOTSTRAP_SEED)
+        print("\n=== Bootstrap 95% CIs (Article-Level) ===")
+        print(f"n_articles={boot['n_articles']} n_bootstrap={boot['n_bootstrap']} seed={boot['seed']}")
+        cis = boot["cis"]
+        print("Article precision CI:", cis["article_precision"])
+        print("Article recall CI:", cis["article_recall"])
+        print("Article F1 CI:", cis["article_f1"])
+        print("Weighted precision CI:", cis["weighted_precision"])
+        print("Weighted recall CI:", cis["weighted_recall"])
+        print("Weighted F1 CI:", cis["weighted_f1"])
+        print("Category precision CI:", cis["category_precision"])
+        print("Category recall CI:", cis["category_recall"])
+        print("Category F1 CI:", cis["category_f1"])

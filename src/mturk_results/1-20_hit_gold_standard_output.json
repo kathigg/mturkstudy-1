@@ -21,9 +21,9 @@
         "paragraphIndex": 1
       },
       {
-        "text": "no polarizing language selected",
-        "category": "No Polarizing Language",
-        "subcategory": "no polarizing language",
+        "text": "people are very negative about the police, but there are good police officers",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
@@ -199,12 +199,12 @@
         "paragraphIndex": 0
       },
       {
-        "text": "no polarizing language selected",
-        "category": "No Polarizing Language",
-        "subcategory": "no polarizing language",
-        "confidence": 1.0,
-        "num_supporters": 3,
-        "label_consistent": true,
+        "text": "this is one of the most insane attacks on a black famil",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 1
       }
     ]

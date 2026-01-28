@@ -1,6 +1,12 @@
 # Updates.md
 Written by Kathleen Higgins, begun on January 8th (though I've been working on the project for a year and a half, now) to include recent updates so I can go back and check what I did. 
 
+## January 28th, 4:46pm:
+- Added confidence intervals. Not sure if I like what I'm seeing, but it's on 12 articles, so it's fine. Will not be mentioning this in m paper, haha. 
+
+## January 28th, 2:26pm:
+- Quick note that the latest 1-20_hit_gold_standard JSON file is not enforcing one-annotation-per-paragraph.  
+- 
 ## January 28th, 2:10pm:
 - Quick note of the script updates:
 ```

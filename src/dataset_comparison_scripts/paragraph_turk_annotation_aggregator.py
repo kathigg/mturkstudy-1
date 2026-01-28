@@ -8,8 +8,8 @@ from collections import defaultdict, Counter
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/1-20-in-house.json")
-OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/1-20_hit_gold_standard_output.json")
+INPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/archived_mturk_results/1-8/1-8HIT_2026_01.json")
+OUTPUT_FILE = os.path.join(BASE_DIR, "../mturk_results/multi_1-8_hit_gold_standard_output.json")
 
 # ------------------------
 # Constants
@@ -37,7 +37,7 @@ MIN_SUPPORTERS_TO_SAVE = 2
 # If True, keep only one (best) annotation per paragraph.
 # If False, keep multiple annotations per paragraph (still paragraph-indexed),
 # while using "No Polarizing Language" only when no polarizing annotations survive.
-ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH = True
+ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH = False
 
 # ------------------------
 # Text Utility Functions
