@@ -1,6 +1,29 @@
 # Updates.md
 Written by Kathleen Higgins, begun on January 8th (though I've been working on the project for a year and a half, now) to include recent updates so I can go back and check what I did. 
 
+## January 28th, 2:10pm:
+- Quick note of the script updates:
+```
+Done.
+
+1) Same Script, Toggleable Policy
+Updated run_wrapper_multiple_llm_annotations.py to support:
+
+--paragraph-policy exact-one (default; preserves current behavior)
+--paragraph-policy min-one (flexible: keep all polarizing spans per paragraph, otherwise one NPL; always ≥1 annotation/paragraph)
+This is applied only to the FINAL adjudicated output, same as before.
+
+2) Second “Flexible” Script Preserving the First
+Added run_wrapper_multiple_llm_annotations_flexible.py, which defaults to:
+
+--paragraph-policy min-one
+final_annotations_3annotators_multi.json
+annotated_results_3annotators_multi.csv
+So you don’t overwrite the original outputs.
+
+If you want the flexible version to also keep NPL alongside polarizing spans (instead of dropping NPL when polarizing exists), tell me and I’ll adjust that policy.
+```
+
 ## January 28th, 12:31pm:
 - Revised to have a second version of the original LLM and Turk aggregation scripts to support multiple annotations. Reorganization for simplification still needed of the codebase. 
 
