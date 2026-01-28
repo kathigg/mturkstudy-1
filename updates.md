@@ -1,6 +1,46 @@
 # Updates.md
 Written by Kathleen Higgins, begun on January 8th (though I've been working on the project for a year and a half, now) to include recent updates so I can go back and check what I did. 
 
+## January 28th, 5:07pm:
+- Added Krippendorf's alpha and interannotator agreement. 
+```
+Here’s what’s worth knowing about the design decisions baked into inter_annotator_agreement_1_8.py:
+
+1. Unit of analysis
+
+The script treats each (article_id, paragraphIndex) as a unit.
+This is consistent with your paragraph‑level pipeline, but it means agreement is per paragraph, not per article or per span.
+2. Worker labeling rule per paragraph
+
+A worker’s paragraph label is derived from their annotations in that paragraph.
+If they mark any polarizing span, the paragraph is Polarizing (for the binary label).
+If they mark only NPL, it’s NPL.
+3. Mixed selections
+
+If a worker marks both NPL and polarizing within the same paragraph, it is still treated as Polarizing (binary).
+These are counted as mixed_npl_and_polarizing so you can see how often it happens.
+4. Category‑level labels
+
+If a worker uses multiple polarizing categories in a paragraph, it becomes “Multiple Polarizing Categories.”
+That avoids forcing a single category but lowers agreement because it’s a distinct label.
+5. No weighting for support
+
+Every worker’s paragraph label counts equally.
+There is no confidence weighting or enforcement of 2/3 agreement inside this script.
+6. No span‑matching
+
+The script ignores span overlap entirely.
+It’s strictly a paragraph‑level decision based on what the worker chose, not how the text matches.
+7. IAA metrics
+
+It reports pairwise agreement and Krippendorff’s alpha (nominal).
+Alpha is sensitive to category imbalance and low variability, which is why it looks small here.
+8. Tie handling in majority vote
+
+Ties in the majority vote are resolved with the MAJORITY_TIE_BREAKER.
+Right now it defaults to "npl", but you can flip it to "polarizing" or "exclude".
+```
+
 ## January 28th, 4:46pm:
 - Added confidence intervals. Not sure if I like what I'm seeing, but it's on 12 articles, so it's fine. Will not be mentioning this in m paper, haha. 
 
