@@ -36,64 +36,29 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph provides factual details about political appointments and salaries without using inflammatory language."",
+      ""openFeedback"": ""The paragraph provides factual reporting on political appointments and the swearing-in of officials without using inflammatory or persuasive techniques."",
       ""paragraphIndex"": 0
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""Quotes and statements regarding compliance with laws and relationship building are reported neutrally."",
+      ""openFeedback"": ""The paragraph contains direct quotes and factual descriptions of political relationships and duties. While politicians praise their colleagues, it represents standard political discourse rather than propaganda or inflammatory language."",
       ""paragraphIndex"": 1
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""Political praise ('deliver for his district') is quoted as part of a standard endorsement and does not constitute propaganda in this context."",
+      ""openFeedback"": ""The paragraph outlines legislative initiatives and political disagreements neutrally. Terms like 'unwieldy' are attributed quotes describing policy, not attacks on persons."",
       ""paragraphIndex"": 2
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""Legislative history and upcoming ballot measures are described factually."",
+      ""openFeedback"": ""The paragraph discusses election history and future candidates factually."",
       ""paragraphIndex"": 3
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""Reporting on future election plans is factual."",
-      ""paragraphIndex"": 4
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""Descriptions of legislative proposals and critiques ('unwieldy') are reported neutrally."",
-      ""paragraphIndex"": 5
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""Quotes regarding future meetings and political intent are standard discourse."",
-      ""paragraphIndex"": 6
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""Discussion of past campaign expenses and determination to win ('whatever it takes') is reported as standard political rhetoric."",
-      ""paragraphIndex"": 7
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The listing of potential candidates and concluding information is factual."",
-      ""paragraphIndex"": 8
     }
   ]
 }","{
@@ -117,7 +82,7 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 2
     }
   ]
-}","{""title"": ""Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"", ""topic"": ""politics"", ""source"": ""Chicago Tribune"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""We will do whatever it takes to win"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / slogans"", ""paragraphIndex"": 3}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 3}]}"
+}","{""title"": ""Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat"", ""topic"": ""politics"", ""source"": ""Chicago Tribune"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph provides factual reporting on political appointments and the swearing-in of officials without using inflammatory or persuasive techniques."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph contains direct quotes and factual descriptions of political relationships and duties. While politicians praise their colleagues, it represents standard political discourse rather than propaganda or inflammatory language."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph outlines legislative initiatives and political disagreements neutrally. Terms like 'unwieldy' are attributed quotes describing policy, not attacks on persons."", ""paragraphIndex"": 2}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""We will do whatever it takes to win"", ""openFeedback"": ""This phrase is a campaign-style slogan that emphasizes determination to win without providing substantive policy content, fitting the definition of persuasive propaganda through slogans."", ""paragraphIndex"": 3}]}"
 1,"Frozen sperm bank could be set up in space, study suggests",science,Press Association,center,"{
   ""annotations"": [
     {
@@ -191,50 +156,8 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This paragraph reports on a scientific prediction and study results without using inflammatory or persuasive language."",
+      ""openFeedback"": ""The article reports on scientific findings regarding the effects of microgravity on frozen sperm samples. The language used is objective, factual, and strictly informative, containing no inflammatory language or persuasive propaganda."",
       ""paragraphIndex"": 0
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This paragraph discusses research implications and the need for further study using neutral, factual language."",
-      ""paragraphIndex"": 1
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This paragraph provides context on where the study was presented and current scientific knowledge, avoiding polarizing rhetoric."",
-      ""paragraphIndex"": 2
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This paragraph contains a direct quote from a researcher explaining the scientific context; no inflammatory language is used."",
-      ""paragraphIndex"": 3
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This paragraph describes the methodology of the experiment factually."",
-      ""paragraphIndex"": 4
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This paragraph reports the findings of the study and the researchers' conclusions without exaggeration or bias."",
-      ""paragraphIndex"": 5
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This paragraph notes the limitations of the study and future requirements, maintaining a neutral, scientific tone."",
-      ""paragraphIndex"": 6
     }
   ]
 }","{
@@ -306,7 +229,7 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 10
     }
   ]
-}","{""title"": ""Frozen sperm bank could be set up in space, study suggests"", ""topic"": ""science"", ""source"": ""Press Association"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph reports on a scientific prediction and study results without using inflammatory or persuasive language."", ""paragraphIndex"": 0}]}"
+}","{""title"": ""Frozen sperm bank could be set up in space, study suggests"", ""topic"": ""science"", ""source"": ""Press Association"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The article reports on scientific findings regarding the effects of microgravity on frozen sperm samples. The language used is objective, factual, and strictly informative, containing no inflammatory language or persuasive propaganda."", ""paragraphIndex"": 0}]}"
 2,phoenix chief says police response to incident with 4-year-old is 'unacceptable',crime,CNN,left,"{
   ""annotations"": [
     {
@@ -334,15 +257,9 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 1
     },
     {
-      ""text"": ""Video showed officers appearing to push and kick a handcuffed man"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
-      ""paragraphIndex"": 2
-    },
-    {
-      ""text"": ""throws him against a police vehicle"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
+      ""text"": ""At one point, an officer screams at Ames and says: \""\""When I tell you to do something, you f------ do it!\"""",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
       ""paragraphIndex"": 2
     },
     {
@@ -364,52 +281,40 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 5
     },
     {
-      ""text"": ""police \""shouldn't have reacted the way that we reacted.\"""",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
-      ""paragraphIndex"": 6
-    },
-    {
       ""text"": ""no polarizing language selected"",
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
-      ""paragraphIndex"": 7
-    },
-    {
-      ""text"": ""the experience was traumatizing for him and his young children"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
-      ""paragraphIndex"": 8
+      ""paragraphIndex"": 6
     },
     {
       ""text"": ""\""I looked the barrel in the eyes, my kids looked the barrel in the eyes.\nI thought they were gonna start shooting,\"""",
       ""category"": ""Persuasive Propaganda"",
       ""subcategory"": ""Exaggeration"",
-      ""paragraphIndex"": 8
+      ""paragraphIndex"": 7
     },
     {
       ""text"": ""\""this is one of the most insane attacks on a black family, or any family, that I've ever seen law enforcement engage in.\"""",
       ""category"": ""Persuasive Propaganda"",
       ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 8
+    },
+    {
+      ""text"": ""\""I, like many others, am sick over what I have seen in the video\"""",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Bandwagon"",
       ""paragraphIndex"": 9
     },
     {
       ""text"": ""\""I, like many others, am sick over what I have seen in the video\"""",
       ""category"": ""Persuasive Propaganda"",
       ""subcategory"": ""Exaggeration"",
-      ""paragraphIndex"": 10
+      ""paragraphIndex"": 9
     },
     {
-      ""text"": ""\""I am deeply sorry for what this family went through.\"""",
+      ""text"": ""\""I realize that to get to the bottom of this issue and implement meaningful change, we are going to have some uncomfortable and painful conversations,\"""",
       ""category"": ""Persuasive Propaganda"",
       ""subcategory"": ""Exaggeration"",
       ""paragraphIndex"": 10
-    },
-    {
-      ""text"": ""implement meaningful change, we are going to have some uncomfortable and painful conversations"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
-      ""paragraphIndex"": 11
     }
   ]
 }","{
@@ -422,8 +327,78 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The article maintains a neutral journalistic tone, reporting on the incident and conflicting accounts. While it quotes individuals using strong emotional language (e.g., 'insane attacks'), the reporter does not adopt this language, nor is it used as a propaganda technique by the text itself."",
+      ""openFeedback"": ""The paragraph reports on the police chief's official apology and statement without using inflammatory language."",
       ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Factual reporting on the legal claim filed by the parents."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Descriptive account of the video footage detailing the physical actions observed."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Reports on the officer's aggressive language and actions as documented in the video/report."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Reports the conflicting accounts from the couple and the authorities regarding the events preceding the confrontation."",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Details the allegations made in the police report."",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Reports on the chief's reaction and the administrative actions taken against the officers."",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Quotes the victim's description of the event and their emotional state."",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""one of the most insane attacks on a black family"",
+      ""openFeedback"": ""The quoted activist uses hyperbolic language ('insane attacks', 'ever seen') to characterize the police conduct."",
+      ""paragraphIndex"": 8
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Reports the Mayor's statement expressing personal dismay/empathy."",
+      ""paragraphIndex"": 9
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Reports on the Mayor's policy promises and call for community dialogue."",
+      ""paragraphIndex"": 10
     }
   ]
 }","{
@@ -435,21 +410,21 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 0
     },
     {
-      ""text"": ""no polarizing language selected"",
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
+      ""text"": ""appearing to push and kick a handcuffed man believed to be Ames and handcuffing Harper, who is pregnant"",
+      ""category"": ""Exaggeration"",
+      ""subcategory"": ""Exaggeration"",
       ""paragraphIndex"": 1
     },
     {
-      ""text"": ""I thought they were gonna start shooting"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
       ""paragraphIndex"": 2
     },
     {
-      ""text"": ""this is one of the most insane attacks on a black family, or any family, that I've ever seen law enforcement engage in"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
       ""paragraphIndex"": 3
     },
     {
@@ -457,9 +432,33 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""I thought they were gonna start shooting"",
+      ""category"": ""Exaggeration"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""one of the most insane attacks on a black family, or any family, that I've ever seen law enforcement engage in"",
+      ""category"": ""Exaggeration"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""I, like many others, am sick over what I have seen in the video"",
+      ""category"": ""Exaggeration"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""text"": ""uncomfortable and painful conversations"",
+      ""category"": ""Exaggeration"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 8
     }
   ]
-}","{""title"": ""phoenix chief says police response to incident with 4-year-old is 'unacceptable'"", ""topic"": ""crime"", ""source"": ""CNN"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The article maintains a neutral journalistic tone, reporting on the incident and conflicting accounts. While it quotes individuals using strong emotional language (e.g., 'insane attacks'), the reporter does not adopt this language, nor is it used as a propaganda technique by the text itself."", ""paragraphIndex"": 0}]}"
+}","{""title"": ""phoenix chief says police response to incident with 4-year-old is 'unacceptable'"", ""topic"": ""crime"", ""source"": ""CNN"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph reports on the police chief's official apology and statement without using inflammatory language."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Factual reporting on the legal claim filed by the parents."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Descriptive account of the video footage detailing the physical actions observed."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Reports on the officer's aggressive language and actions as documented in the video/report."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Reports the conflicting accounts from the couple and the authorities regarding the events preceding the confrontation."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Details the allegations made in the police report."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Reports on the chief's reaction and the administrative actions taken against the officers."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Quotes the victim's description of the event and their emotional state."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""one of the most insane attacks on a black family"", ""openFeedback"": ""The quoted activist uses hyperbolic language ('insane attacks', 'ever seen') to characterize the police conduct."", ""paragraphIndex"": 1}]}"
 3,"Four top residencies now offered to local artists, thanks to Oolite",politics,Miami Herald,left,"{
   ""annotations"": [
     {
@@ -503,21 +502,21 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph provides factual information about new residency opportunities for artists without using inflammatory or persuasive language."",
+      ""openFeedback"": ""This paragraph reports on new residency opportunities for artists without using inflammatory or persuasive techniques."",
       ""paragraphIndex"": 0
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph outlines the specifics of the residency programs and includes quotes about the economic needs of artists, remaining neutral and informative."",
+      ""openFeedback"": ""This paragraph details the specific benefits of the residencies and quotes the CEO explaining the economic reasoning, without polarizing language."",
       ""paragraphIndex"": 1
     }
   ]
 }","{
   ""annotations"": [
     {
-      ""text"": ""Miami artists have a new opportunity to superpower their careers"",
+      ""text"": ""Miami artists have a new opportunity to superpower their careers."",
       ""category"": ""Persuasive Propaganda"",
       ""subcategory"": ""Exaggeration"",
       ""paragraphIndex"": 0
@@ -547,7 +546,7 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 1
     }
   ]
-}","{""title"": ""Four top residencies now offered to local artists, thanks to Oolite"", ""topic"": ""politics"", ""source"": ""Miami Herald"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph provides factual information about new residency opportunities for artists without using inflammatory or persuasive language."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph outlines the specifics of the residency programs and includes quotes about the economic needs of artists, remaining neutral and informative."", ""paragraphIndex"": 1}]}"
+}","{""title"": ""Four top residencies now offered to local artists, thanks to Oolite"", ""topic"": ""politics"", ""source"": ""Miami Herald"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph reports on new residency opportunities for artists without using inflammatory or persuasive techniques."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph details the specific benefits of the residencies and quotes the CEO explaining the economic reasoning, without polarizing language."", ""paragraphIndex"": 1}]}"
 4,port of l.a. sued after canceling agreement for a shipping container facility,science,CNN Business,left,"{
   ""annotations"": [
     {
@@ -563,7 +562,63 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 1
     },
     {
-      ""text"": ""it makes me worried for the city when a green, job-creating project is stymied by a single entity for their own narrow reasons"",
+      ""text"": ""a green, job-creating project is stymied by a single entity for their own narrow reasons"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+""title"": ""port of l.a. sued after canceling agreement for a shipping container facility"",
+""topic"": ""science"",
+""source"": ""CNN Business"",
+""rating"": ""left"",
+""annotations"": [
+{
+""category"": ""No Polarizing language"",
+""subcategory"": ""no polarizing language"",
+""text"": ""no polarizing language selected"",
+""openFeedback"": ""The paragraph provides a factual summary of a lawsuit filing and the claims involved without using inflammatory or propagandistic language."",
+""paragraphIndex"": 0
+},
+{
+""category"": ""No Polarizing language"",
+""subcategory"": ""no polarizing language"",
+""text"": ""no polarizing language selected"",
+""openFeedback"": ""This paragraph details the background of the financing and the involvement of various officials and unions in a neutral, reporting tone."",
+""paragraphIndex"": 1
+},
+{
+""category"": ""No Polarizing language"",
+""subcategory"": ""no polarizing language"",
+""text"": ""no polarizing language selected"",
+""openFeedback"": ""The paragraph contains quotes from the plaintiff describing their grievances. While the quotes express a biased perspective ('green, job-creating project', 'narrow reasons'), reporting these statements in the context of a legal dispute does not constitute inflammatory language or propaganda on the part of the article."",
+""paragraphIndex"": 2
+},
+{
+""category"": ""No Polarizing language"",
+""subcategory"": ""no polarizing language"",
+""text"": ""no polarizing language selected"",
+""openFeedback"": ""The final paragraph outlines a concurrent event regarding automation permits and quotes relevant officials factually."",
+""paragraphIndex"": 3
+}
+]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""a green, job-creating project is stymied by a single entity for their own narrow reasons"",
       ""category"": ""Persuasive Propaganda"",
       ""subcategory"": ""Exaggeration"",
       ""paragraphIndex"": 2
@@ -575,63 +630,7 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 3
     }
   ]
-}","{
-  ""title"": ""port of l.a. sued after canceling agreement for a shipping container facility"",
-  ""topic"": ""science"",
-  ""source"": ""CNN Business"",
-  ""rating"": ""left"",
-  ""annotations"": [
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph reports factual details regarding a lawsuit, the reasons for termination cited by the plaintiff, and the response from the Port executive, without using inflammatory language."",
-      ""paragraphIndex"": 0
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph provides background information on the Board of Harbor Commissioners and the history of the project proposal in a neutral, informative manner."",
-      ""paragraphIndex"": 1
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph contains quotes expressing frustration and hyperbole (e.g., 'they [ILWU] run the Port', 'narrow reasons'), but these are directly attributed to the lawsuit participants and are reported neutrally by the author."",
-      ""paragraphIndex"": 2
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph discusses a separate but related permit vote and potential political actions without employing persuasive propaganda or inflammatory language."",
-      ""paragraphIndex"": 3
-    }
-  ]
-}","{
-  ""annotations"": [
-    {
-      ""text"": ""no polarizing language selected"",
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""paragraphIndex"": 0
-    },
-    {
-      ""text"": ""no polarizing language selected"",
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""paragraphIndex"": 1
-    },
-    {
-      ""text"": ""a single entity for their own narrow reasons"",
-      ""category"": ""Inflammatory Language"",
-      ""subcategory"": ""Name-Calling"",
-      ""paragraphIndex"": 2
-    }
-  ]
-}","{""title"": ""port of l.a. sued after canceling agreement for a shipping container facility"", ""topic"": ""science"", ""source"": ""CNN Business"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""it makes me worried for the city when a green, job-creating project is stymied by a single entity for their own narrow reasons"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / exaggeration"", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 2}]}"
+}","{""title"": ""port of l.a. sued after canceling agreement for a shipping container facility"", ""topic"": ""science"", ""source"": ""CNN Business"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph provides a factual summary of a lawsuit filing and the claims involved without using inflammatory or propagandistic language."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph details the background of the financing and the involvement of various officials and unions in a neutral, reporting tone."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""a green, job-creating project is stymied by a single entity for their own narrow reasons"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / exaggeration"", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph contains quotes from the plaintiff describing their grievances. While the quotes express a biased perspective ('green, job-creating project', 'narrow reasons'), reporting these statements in the context of a legal dispute does not constitute inflammatory language or propaganda on the part of the article."", ""paragraphIndex"": 2}]}"
 5,get these trending washington restaurants on your radar today,health,USA TODAY,center,"{
   ""annotations"": [
     {
@@ -639,48 +638,6 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""paragraphIndex"": 0
-    },
-    {
-      ""text"": ""no polarizing language selected"",
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""paragraphIndex"": 1
-    },
-    {
-      ""text"": ""the cocktail bar and Szechuan spot is a hot topic"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
-      ""paragraphIndex"": 2
-    },
-    {
-      ""text"": ""no polarizing language selected"",
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""paragraphIndex"": 3
-    },
-    {
-      ""text"": ""Columbia Heights' Rooster & Owl is also making waves"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
-      ""paragraphIndex"": 4
-    },
-    {
-      ""text"": ""CIRCA at Navy Yard is the city's buzziest traditional American spot by the numbers"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
-      ""paragraphIndex"": 5
-    },
-    {
-      ""text"": ""popular Busboys and Poets - Brookland is currently on the upswing"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
-      ""paragraphIndex"": 6
-    },
-    {
-      ""text"": ""This story was created automatically using local business data, then reviewed and augmented by an editor"",
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""paragraphIndex"": 7
     }
   ]
 }","{
@@ -693,43 +650,36 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph describes methodology for analyzing restaurant trends using Yelp data; it contains no inflammatory or persuasive propaganda."",
+      ""openFeedback"": ""This paragraph provides data-driven reporting on restaurant trends without using inflammatory language or propaganda techniques."",
       ""paragraphIndex"": 0
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph provides statistical data about review increases for Italian restaurants without polarizing language."",
+      ""openFeedback"": ""This paragraph lists statistical increases in restaurant reviews and menu items without polarizing rhetoric."",
       ""paragraphIndex"": 1
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph reports on restaurant review statistics and menu items without using propaganda techniques."",
+      ""openFeedback"": ""This paragraph continues factual reporting on restaurant locations and review data."",
       ""paragraphIndex"": 2
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph identifies a specific restaurant as 'buzziest' based on stated data criteria, which is descriptive rather than inflammatory."",
+      ""openFeedback"": ""This paragraph details statistical growth for specific businesses without using persuasive propaganda or inflammatory language."",
       ""paragraphIndex"": 3
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph details location and menu information along with statistical review data neutrally."",
+      ""openFeedback"": ""This paragraph contains logistical information about a business and a disclaimer about the automated nature of the story."",
       ""paragraphIndex"": 4
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph presents factual data regarding review increases and menu offerings for a local business."",
-      ""paragraphIndex"": 5
     }
   ]
 }","{
@@ -739,46 +689,154 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""paragraphIndex"": 0
-    },
-    {
-      ""text"": ""no polarizing language selected"",
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""paragraphIndex"": 1
-    },
-    {
-      ""text"": ""no polarizing language selected"",
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""paragraphIndex"": 2
-    },
-    {
-      ""text"": ""no polarizing language selected"",
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""paragraphIndex"": 3
-    },
-    {
-      ""text"": ""no polarizing language selected"",
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""paragraphIndex"": 4
     }
   ]
-}","{""title"": ""get these trending washington restaurants on your radar today"", ""topic"": ""health"", ""source"": ""USA TODAY"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 3}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 4}]}"
+}","{""title"": ""get these trending washington restaurants on your radar today"", ""topic"": ""health"", ""source"": ""USA TODAY"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph provides data-driven reporting on restaurant trends without using inflammatory language or propaganda techniques."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph lists statistical increases in restaurant reviews and menu items without polarizing rhetoric."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph continues factual reporting on restaurant locations and review data."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph details statistical growth for specific businesses without using persuasive propaganda or inflammatory language."", ""paragraphIndex"": 3}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph contains logistical information about a business and a disclaimer about the automated nature of the story."", ""paragraphIndex"": 4}]}"
 6,"south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away",science,Los Angeles Times,left,"{
   ""annotations"": [
     {
-      ""text"": ""no polarizing language selected"",
+      ""text"": ""The pictures and footage only scratch the surface of the tale: wide smiles, and the tears of joy of a mother and her son, reunited after six years."",
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""paragraphIndex"": 0
     },
     {
-      ""text"": ""no polarizing language selected"",
+      ""text"": ""Six years ago, Jane Daniels, 60, from Delft, near Cape Town, South Africa , was distraught when her son, who is mentally challenged, disappeared."",
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""When the police came up with no leads, after three years, Denzil was presumed dead, and a memorial service was held."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""But two weeks ago, police in the neighboring country of Eswatini, formerly called Swaziland, carried out a routine stop and search of a man who was found rummaging through trash outside a supermarket."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""He gave them an address in Delft the Daniels' home."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""The Eswatini police sent a photo of Denzil to the Cape police missing persons' unit, and Warrant Officer Michael Daniels no relation took it to Mrs. Daniels and asked her if she knew the man in the photo."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""BODY OF KENYAN STOWAWAY FOUND IN LONDON YARD AFTER FALLING FROM PLANE'S LANDING GEAR Officer Daniels didn't expect the reaction he received."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""\""My heart is going out for her. We should help this woman, because when we brought the news to say your child is in Swaziland, she just fainted,\"" he said."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""text"": ""But Mrs. Daniels couldn't afford to make the 2,200-mile round trip to collect her son, now 30, who was being looked after by the Eswatini police."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 8
+    },
+    {
+      ""text"": ""Fortunately, radio and multimedia journalist Lauren Isaacs of South Africa's Eye Witness News ( EWN ) came to the rescue."",
+      ""category"": ""Exaggeration"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 9
+    },
+    {
+      ""text"": ""A Delft pastor appealed to Isaacs for help, and the reporter visited the mother."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 10
+    },
+    {
+      ""text"": ""\""I saw the desperation on her, and her poor circumstances.,\"" Isaacs told Fox News."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 11
+    },
+    {
+      ""text"": ""\""For three days I called businesses begging for money\""."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 12
+    },
+    {
+      ""text"": ""\""In 90% of missing persons cases, it doesn't end well. It gets to us, I needed to get help for this family.\"""",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 13
+    },
+    {
+      ""text"": ""POLITICIAN'S $13 MILLION SUPERCAR STASH SEIZED IN CORRUPTIONS PROBES TO BE AUCTIONED FOR CHARITY NIGERIAN INVESTIGATORS DISMISS WILD REPORTS ROGUE GORILLA ATE $22G IN CASH AT ZOO, PIN MISSING MONEY ON ARMED ROBBERS The reporter also called humanitarian aid group the Gift of the Givers, who not only agreed to become the main funders of the trip, but even provided the son with new clothes."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 14
+    },
+    {
+      ""text"": ""There are no direct road transport links between Eswatini and Cape Town."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 15
+    },
+    {
+      ""text"": ""So Warrant Officer Daniels and a police colleague took vacation time, and used the policeman's private car for the two-day journey to reunite mother and son at the border."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 16
+    },
+    {
+      ""text"": ""On seeing her son, Jane repeatedly hugged him and kept saying: \""My son, my son, I am so happy to see you.\"""",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 17
+    },
+    {
+      ""text"": ""Denzil for his part said he had hitchhiked to Eswatini where he made friends and did odd jobs to make a living."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 18
+    },
+    {
+      ""text"": ""\""I helped people to earn some money, selling clothes and stuff like that... I missed my family.\"""",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 19
+    },
+    {
+      ""text"": ""He later explained to News24.com : \""I wasn't actually going to Swaziland. I was in Wellington and then I moved further and further.\"""",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 20
+    },
+    {
+      ""text"": ""He added that he now hopes to find work and act as the family's breadwinner after his father died two years ago."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 21
+    },
+    {
+      ""text"": ""CLICK HERE FOR THE FOX NEWS APP Officer Daniels said he'd go the extra thousands of miles again in his car in a heartbeat:"",
+      ""category"": ""Exaggeration"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 22
+    },
+    {
+      ""text"": ""\""People are very negative about the police, but there are good police officers who go out of their way to help the community\""."",
+      ""category"": ""Causal Oversimplification"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 23
     }
   ]
 }","{
@@ -791,21 +849,21 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph provides a factual account of the disappearance and discovery of the missing son without using inflammatory or persuasive language."",
+      ""openFeedback"": ""This paragraph provides a factual narrative of the events leading to the reunion, describing the disappearance and subsequent discovery of the son without using inflammatory or persuasive techniques."",
       ""paragraphIndex"": 0
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This paragraph contains a mix of the narrative regarding the reunion and unrelated headlines/links. The narrative portions are emotional but not propagandistic."",
+      ""openFeedback"": ""The paragraph details the logistical challenges and the journalist's assistance. The capitalized text appears to be unrelated headlines inserted into the body. The quoted statistic ('90% of missing persons cases') reflects the source's perspective but does not constitute explicit propaganda."",
       ""paragraphIndex"": 1
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph describes the logistics of the reunion and includes a positive quote from a police officer, which constitutes a human interest perspective rather than propaganda."",
+      ""openFeedback"": ""This paragraph describes the physical reunion and includes a quote defending police officers. While the quote addresses public sentiment ('People are very negative about the police'), it functions as a personal observation rather than inflammatory rhetoric or political propaganda."",
       ""paragraphIndex"": 2
     }
   ]
@@ -824,7 +882,7 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 1
     }
   ]
-}","{""title"": ""south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"", ""topic"": ""science"", ""source"": ""Los Angeles Times"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph describes the logistics of the reunion and includes a positive quote from a police officer, which constitutes a human interest perspective rather than propaganda."", ""paragraphIndex"": 2}]}"
+}","{""title"": ""south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"", ""topic"": ""science"", ""source"": ""Los Angeles Times"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph provides a factual narrative of the events leading to the reunion, describing the disappearance and subsequent discovery of the son without using inflammatory or persuasive techniques."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph details the logistical challenges and the journalist's assistance. The capitalized text appears to be unrelated headlines inserted into the body. The quoted statistic ('90% of missing persons cases') reflects the source's perspective but does not constitute explicit propaganda."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph describes the physical reunion and includes a quote defending police officers. While the quote addresses public sentiment ('People are very negative about the police'), it functions as a personal observation rather than inflammatory rhetoric or political propaganda."", ""paragraphIndex"": 2}]}"
 7,Ex-Posen mayor pleads guilty to embezzling village funds,crime,Chicago Tribune,center,"{
   ""annotations"": [
     {
@@ -850,21 +908,21 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph provides a factual account of the guilty plea and the details of the crime without using inflammatory language or propaganda techniques."",
+      ""openFeedback"": ""The paragraph provides a factual account of the guilty plea and court proceedings without using inflammatory language or propaganda techniques."",
       ""paragraphIndex"": 0
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph quotes the attorney and current officials regarding the case facts and context without employing persuasive or inflammatory rhetoric."",
+      ""openFeedback"": ""The paragraph quotes the attorney and outlines the timeline of events and the reaction of the current mayor objectively."",
       ""paragraphIndex"": 1
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph provides historical context about a previous mayor's conviction using neutral, factual language."",
+      ""openFeedback"": ""The paragraph provides historical context about a previous mayor's conviction in a factual manner."",
       ""paragraphIndex"": 2
     }
   ]
@@ -883,7 +941,7 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 1
     }
   ]
-}","{""title"": ""Ex-Posen mayor pleads guilty to embezzling village funds"", ""topic"": ""crime"", ""source"": ""Chicago Tribune"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph provides a factual account of the guilty plea and the details of the crime without using inflammatory language or propaganda techniques."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph quotes the attorney and current officials regarding the case facts and context without employing persuasive or inflammatory rhetoric."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph provides historical context about a previous mayor's conviction using neutral, factual language."", ""paragraphIndex"": 2}]}"
+}","{""title"": ""Ex-Posen mayor pleads guilty to embezzling village funds"", ""topic"": ""crime"", ""source"": ""Chicago Tribune"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph provides historical context about a previous mayor's conviction in a factual manner."", ""paragraphIndex"": 2}]}"
 8,rosemount recreation center plan gets positive response so far,health,AP,center,"{
   ""annotations"": [
     {
@@ -915,36 +973,29 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph provides factual information about a city council study and survey regarding a new recreation center without using inflammatory language or propaganda."",
+      ""openFeedback"": ""The paragraph provides a factual update on the status of a recreation center study and survey results without using inflammatory or persuasive language."",
       ""paragraphIndex"": 0
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This paragraph cites survey data and demographics to explain the rationale for the center, using neutral language."",
+      ""openFeedback"": ""The paragraph reports on demographic data and proposed facility amenities in a neutral manner."",
       ""paragraphIndex"": 1
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The text lists proposed amenities and quotes a designer about community needs in a neutral, informative manner."",
+      ""openFeedback"": ""The paragraph discusses funding, design considerations, and lists related article headlines without using loaded language or propaganda techniques."",
       ""paragraphIndex"": 2
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This section discusses funding, future decisions, and lists related article headlines (which are distinct from the main text) without persuasive or inflammatory rhetoric."",
+      ""openFeedback"": ""The paragraph provides information on upcoming meetings and contact details for public input, maintaining a neutral tone."",
       ""paragraphIndex"": 3
-    },
-    {
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
-      ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The final paragraph provides administrative details about upcoming meetings and public input channels neutrally."",
-      ""paragraphIndex"": 4
     }
   ]
 }","{
@@ -968,11 +1019,41 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 2
     }
   ]
-}","{""title"": ""rosemount recreation center plan gets positive response so far"", ""topic"": ""health"", ""source"": ""AP"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph provides factual information about a city council study and survey regarding a new recreation center without using inflammatory language or propaganda."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph cites survey data and demographics to explain the rationale for the center, using neutral language."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The text lists proposed amenities and quotes a designer about community needs in a neutral, informative manner."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This section discusses funding, future decisions, and lists related article headlines (which are distinct from the main text) without persuasive or inflammatory rhetoric."", ""paragraphIndex"": 3}]}"
+}","{""title"": ""rosemount recreation center plan gets positive response so far"", ""topic"": ""health"", ""source"": ""AP"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph provides a factual update on the status of a recreation center study and survey results without using inflammatory or persuasive language."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph reports on demographic data and proposed facility amenities in a neutral manner."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph discusses funding, design considerations, and lists related article headlines without using loaded language or propaganda techniques."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph provides information on upcoming meetings and contact details for public input, maintaining a neutral tone."", ""paragraphIndex"": 3}]}"
 9,Ridgecrest earthquakes caused damage to the earth's crust seen from satellite,science,Los Angeles Times,left,"{
   ""annotations"": [
     {
       ""text"": ""Damage to the earth's crust from the 6.4 and 7.1 magnitude earthquakes that struck Southern California last week is visible in a kaleidoscopic satellite image released by NASA."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""The Advanced Rapid Imaging and Analysis team at NASA's Jet Propulsion Laboratory in Pasadena, California, used satellite data to produce a map showing ruptures and displacements not visible to the naked eye employing technology that has been developed over the last quarter century."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""The imagery was acquired on July 8 and compared with data from April 8."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""The earthquakes were the largest to hit California in nearly 20 years and were felt as far away as Phoenix and Mexicali, Mexico."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""The temblors and the thousands of aftershocks that followed did not lead to major structural damage near the Ridgecrest epicenter, but did have residents of nearby Trona, Calif. worrying about their town's future."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""Authorities are investigating whether the death of a man 95 miles away in Pahrump, Nev., was tied to the earthquake."",
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""paragraphIndex"": 0
@@ -984,7 +1065,67 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 1
     },
     {
+      ""text"": ""On the NASA map, each color of the psychedelic-looking image represents 4.8 inches of ground displacement."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""Linear color lines indicate where an area was cracked open or was disturbed."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""\""One of the things that we want to know after an earthquake happens is which fault moved and how far it moved."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""So, by using these satellite images, we can determine where the fault is, what lengths of the fault slipped in the earthquake and which fault moved the most."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""That allows us to better understand where future earthquakes could happen,\"" said JPL's Eric Fielding."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""It once took a year to obtain such satellite images, as was the case when capturing the impact of the 7.3 magnitude Landers earthquake in the Mojave Desert in 1992."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""But Fielding said that since 2016, images can arrive within three to four days."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
       ""text"": ""The Japanese Aerospace Exploration Agency provided the data to produce the map."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""NASA is building its own radar satellite at JPL."",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""When it launches in roughly three years, Fielding said, the technology will be able to \""map the whole Earth every 12 days.\"""",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""colleen.shalby@latimes.com @cshalby"",
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""paragraphIndex"": 2
@@ -1000,21 +1141,21 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph provides factual reporting on the earthquake damage, satellite imagery, and the scope of the event without using inflammatory language or persuasive propaganda."",
+      ""openFeedback"": ""The paragraph provides a factual account of the earthquake's magnitude, the satellite technology used to view damage, and the immediate impact on local towns without using inflammatory or persuasive language."",
       ""paragraphIndex"": 0
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This paragraph describes the details of the satellite imagery and provides quotes from a scientist explaining the technology and its utility. It contains no polarizing content."",
+      ""openFeedback"": ""The paragraph describes specific incidents related to the earthquake and explains the scientific data presented in the satellite images, using neutral and descriptive language."",
       ""paragraphIndex"": 1
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The final paragraph discusses the source of the data and future technological developments in a neutral, factual manner."",
+      ""openFeedback"": ""The paragraph outlines the sources of data and future technological developments in satellite mapping in a factual manner."",
       ""paragraphIndex"": 2
     }
   ]
@@ -1039,7 +1180,7 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 2
     }
   ]
-}","{""title"": ""Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"", ""topic"": ""science"", ""source"": ""Los Angeles Times"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph provides factual reporting on the earthquake damage, satellite imagery, and the scope of the event without using inflammatory language or persuasive propaganda."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph describes the details of the satellite imagery and provides quotes from a scientist explaining the technology and its utility. It contains no polarizing content."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The final paragraph discusses the source of the data and future technological developments in a neutral, factual manner."", ""paragraphIndex"": 2}]}"
+}","{""title"": ""Ridgecrest earthquakes caused damage to the earth's crust seen from satellite"", ""topic"": ""science"", ""source"": ""Los Angeles Times"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph provides a factual account of the earthquake's magnitude, the satellite technology used to view damage, and the immediate impact on local towns without using inflammatory or persuasive language."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph describes specific incidents related to the earthquake and explains the scientific data presented in the satellite images, using neutral and descriptive language."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph outlines the sources of data and future technological developments in satellite mapping in a factual manner."", ""paragraphIndex"": 2}]}"
 10,Protest in Madrid as conservatives suspend ban on most polluting cars,environmental issues,Reuters,center,"{
   ""annotations"": [
     {
@@ -1055,15 +1196,15 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 1
     },
     {
-      ""text"": ""\""Yes we can, I do want Madrid central,\"" chanted the protesters"",
+      ""text"": ""\""I want to breathe free\"" and \""We aspire to have a Madrid without smoke\"""",
       ""category"": ""Persuasive Propaganda"",
       ""subcategory"": ""Slogans"",
       ""paragraphIndex"": 2
     },
     {
-      ""text"": ""\""We have to save (the planet) starting at the local and small level, the first thing is Madrid's center,\"""",
+      ""text"": ""We have to save (the planet) starting at the local and small level"",
       ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Causal Oversimplification"",
+      ""subcategory"": ""Exaggeration"",
       ""paragraphIndex"": 3
     },
     {
@@ -1089,21 +1230,21 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""Persuasive Propaganda"",
       ""subcategory"": ""slogans"",
       ""text"": ""Yes we can, I do want Madrid central"",
-      ""openFeedback"": ""This span contains a chant used by protesters, fitting the definition of a slogan used to simplify and rally support for their cause."",
+      ""openFeedback"": ""The article quotes a chant used by protesters which utilizes a recognizable political slogan structure ('Yes we can') to promote their cause."",
       ""paragraphIndex"": 0
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This paragraph consists of quotes and factual reporting on the protest and context without the author employing explicit inflammatory or persuasive techniques."",
+      ""openFeedback"": ""The paragraph quotes a protester and describes the heatwave and environmental context factually without using inflammatory language or propaganda techniques in the narrative voice."",
       ""paragraphIndex"": 1
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""This paragraph reports on the actions of the city hall and warnings from the European Commission using neutral language."",
+      ""openFeedback"": ""The paragraph reports on the city hall's actions and the European Commission's warnings using neutral, factual language."",
       ""paragraphIndex"": 2
     }
   ]
@@ -1116,9 +1257,9 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 0
     },
     {
-      ""text"": ""no polarizing language selected"",
-      ""category"": ""No Polarizing language"",
-      ""subcategory"": ""no polarizing language"",
+      ""text"": ""a fresh sign of growing divisions in Spain after a series of inconclusive elections"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
       ""paragraphIndex"": 1
     },
     {
@@ -1128,13 +1269,37 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 2
     },
     {
+      ""text"": ""\""Yes we can, I do want Madrid central,\"" chanted the protesters"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""\""We aspire to have a Madrid without smoke\"""",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""We have to save (the planet) starting at the local and small level"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 4
+    },
+    {
       ""text"": ""no polarizing language selected"",
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
-      ""paragraphIndex"": 3
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 6
     }
   ]
-}","{""title"": ""Protest in Madrid as conservatives suspend ban on most polluting cars"", ""topic"": ""environmental issues"", ""source"": ""Reuters"", ""rating"": ""center"", ""annotations"": [{""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""\""Yes we can, I do want Madrid central,\"" chanted the protesters"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / slogans"", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 2}]}"
+}","{""title"": ""Protest in Madrid as conservatives suspend ban on most polluting cars"", ""topic"": ""environmental issues"", ""source"": ""Reuters"", ""rating"": ""center"", ""annotations"": [{""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""Yes we can, I do want Madrid central"", ""openFeedback"": ""The article quotes a chant used by protesters which utilizes a recognizable political slogan structure ('Yes we can') to promote their cause."", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""\""Yes we can, I do want Madrid central,\"" chanted the protesters"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / slogans"", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""\""I want to breathe free\"" and \""We aspire to have a Madrid without smoke\"""", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / slogans"", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""\""We aspire to have a Madrid without smoke\"""", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / slogans"", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""We have to save (the planet) starting at the local and small level"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / exaggeration"", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph reports on the city hall's actions and the European Commission's warnings using neutral, factual language."", ""paragraphIndex"": 2}]}"
 11,Missouri's only abortion clinic to remain open after judge's injunction holds,legal arguments,NBC News,left,"{
   ""annotations"": [
     {
@@ -1150,28 +1315,16 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 1
     },
     {
-      ""text"": ""a greater anti-abortion effort by the state's administration"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Causal Oversimplification"",
-      ""paragraphIndex"": 2
-    },
-    {
       ""text"": ""another medically unnecessary requirement that the state was putting on it to whittle down Missouri residents' access to abortion"",
       ""category"": ""Persuasive Propaganda"",
       ""subcategory"": ""Causal Oversimplification"",
       ""paragraphIndex"": 2
     },
     {
-      ""text"": ""stringent and perpetually evolving requirements"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
       ""paragraphIndex"": 3
-    },
-    {
-      ""text"": ""a slew of recent anti-abortion legislation across the country"",
-      ""category"": ""Persuasive Propaganda"",
-      ""subcategory"": ""Exaggeration"",
-      ""paragraphIndex"": 4
     }
   ]
 }","{
@@ -1184,29 +1337,36 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph reports on a court ruling and includes a quote from an advocate characterizing the ruling as a 'victory for women', which is standard advocacy rhetoric attributed to a source, rather than explicit propaganda by the author."",
+      ""openFeedback"": ""The paragraph reports on the court ruling and includes a quote from an advocate expressing a positive reaction ('victory'), but the reporting itself is neutral and does not employ inflammatory language."",
       ""paragraphIndex"": 0
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph presents conflicting claims: an advocate's quote labeling regulations as 'medically unnecessary hoops' and the state's inspection findings regarding 'gravely compromised' safety. These are attributed arguments and findings central to the news report."",
+      ""openFeedback"": ""The paragraph outlines the sequence of legal events and quotes allegations from both the advocate ('unnecessary hoops') and the state report ('gravely compromised'). The author uses neutral attribution throughout."",
       ""paragraphIndex"": 1
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph describes the legal arguments and the context of the legislative environment (an 8-week ban) using descriptive language and attributed opinions ('whittle down access')."",
+      ""openFeedback"": ""The paragraph describes the arguments regarding the licensing battle and recent legislation. It attributes the characterization of the rules ('medically unnecessary') to the clinic."",
       ""paragraphIndex"": 2
     },
     {
       ""category"": ""No Polarizing language"",
       ""subcategory"": ""no polarizing language"",
       ""text"": ""no polarizing language selected"",
-      ""openFeedback"": ""The paragraph describes the historical context of clinic closures and state requirements. While 'stringent and perpetually evolving' is strong descriptive language, it fits the context of a decade-long legislative trend and does not clearly cross into inflammatory language or propaganda."",
+      ""openFeedback"": ""The paragraph provides context on clinic statistics and national trends. The description of requirements as 'stringent and perpetually evolving' reflects the clinic's struggle but remains within the bounds of descriptive reporting on the lawsuit's context."",
       ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This segment completes the sentence from the previous paragraph and provides author credits, containing no polarizing language."",
+      ""paragraphIndex"": 4
     }
   ]
 }","{
@@ -1218,7 +1378,19 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 0
     },
     {
+      ""text"": ""Today is a victory for women to be able to access the kind of medical care that they and their health professionals need and deserve"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 1
+    },
+    {
       ""text"": ""medically unnecessary hoops and regulations"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""that is a good day for women"",
       ""category"": ""Persuasive Propaganda"",
       ""subcategory"": ""Exaggeration"",
       ""paragraphIndex"": 1
@@ -1242,16 +1414,22 @@ index,title,topic,source,rating,annotator_A_json,annotator_B_json,annotator_C_js
       ""paragraphIndex"": 3
     },
     {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
       ""text"": ""stringent and perpetually evolving requirements"",
       ""category"": ""Persuasive Propaganda"",
       ""subcategory"": ""Exaggeration"",
       ""paragraphIndex"": 4
     },
     {
-      ""text"": ""slew of recent anti-abortion legislation across the country"",
+      ""text"": ""a slew of recent anti-abortion legislation across the country"",
       ""category"": ""Persuasive Propaganda"",
       ""subcategory"": ""Exaggeration"",
       ""paragraphIndex"": 5
     }
   ]
-}","{""title"": ""Missouri's only abortion clinic to remain open after judge's injunction holds"", ""topic"": ""legal arguments"", ""source"": ""NBC News"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph reports on a court ruling and includes a quote from an advocate characterizing the ruling as a 'victory for women', which is standard advocacy rhetoric attributed to a source, rather than explicit propaganda by the author."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph presents conflicting claims: an advocate's quote labeling regulations as 'medically unnecessary hoops' and the state's inspection findings regarding 'gravely compromised' safety. These are attributed arguments and findings central to the news report."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph describes the legal arguments and the context of the legislative environment (an 8-week ban) using descriptive language and attributed opinions ('whittle down access')."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph describes the historical context of clinic closures and state requirements. While 'stringent and perpetually evolving' is strong descriptive language, it fits the context of a decade-long legislative trend and does not clearly cross into inflammatory language or propaganda."", ""paragraphIndex"": 3}]}"
+}","{""title"": ""Missouri's only abortion clinic to remain open after judge's injunction holds"", ""topic"": ""legal arguments"", ""source"": ""NBC News"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph reports on the court ruling and includes a quote from an advocate expressing a positive reaction ('victory'), but the reporting itself is neutral and does not employ inflammatory language."", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""Today is a victory for women to be able to access the kind of medical care that they and their health professionals need and deserve"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / exaggeration"", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""medically unnecessary hoops and regulations"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / exaggeration"", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""that is a good day for women"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / exaggeration"", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph outlines the sequence of legal events and quotes allegations from both the advocate ('unnecessary hoops') and the state report ('gravely compromised'). The author uses neutral attribution throughout."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph describes the arguments regarding the licensing battle and recent legislation. It attributes the characterization of the rules ('medically unnecessary') to the clinic."", ""paragraphIndex"": 2}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""casual oversimplification"", ""text"": ""greater anti-abortion effort by the state's administration"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / casual oversimplification"", ""paragraphIndex"": 2}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""casual oversimplification"", ""text"": ""another medically unnecessary requirement that the state was putting on it to whittle down Missouri residents' access to abortion"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / casual oversimplification"", ""paragraphIndex"": 2}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""stringent and perpetually evolving requirements"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / exaggeration"", ""paragraphIndex"": 3}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""a slew of recent anti-abortion legislation across the country"", ""openFeedback"": ""Auto-filled: Persuasive Propaganda / exaggeration"", ""paragraphIndex"": 3}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph provides context on clinic statistics and national trends. The description of requirements as 'stringent and perpetually evolving' reflects the clinic's struggle but remains within the bounds of descriptive reporting on the lawsuit's context."", ""paragraphIndex"": 3}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This segment completes the sentence from the previous paragraph and provides author credits, containing no polarizing language."", ""paragraphIndex"": 4}]}"
