@@ -19,6 +19,10 @@ Example:
     --input src/dataset_comparison_scripts/twelve_article_set.csv \
     --results-csv src/dataset_comparison_scripts/annotated_results_3annotators.csv \
     --final-json src/llm_annotation_results/paragraph_final_annotations_3annotators.json
+
+Paragraph policy:
+  --paragraph-policy exact-one   (default; exactly one annotation per paragraph)
+  --paragraph-policy min-one     (keep all polarizing annotations per paragraph, but guarantee at least one annotation per paragraph)
 """
 
 from __future__ import annotations
@@ -461,6 +465,108 @@ def enforce_paragraph_no_polarizing_policy(obj: dict[str, Any], *, body: str) ->
     return obj
 
 
+def enforce_paragraph_minimum_one_policy(obj: dict[str, Any], *, body: str) -> dict[str, Any]:
+    """
+    Enforce paragraph-level rules:
+      - At least ONE annotation per paragraph.
+      - If a paragraph has ANY Inflammatory/Persuasive annotations, keep ALL such polarizing annotations.
+      - Otherwise, keep exactly one "No Polarizing language" placeholder annotation.
+      - Ensure paragraphIndex values are in-range and prefer inferring from span text.
+
+    This policy allows a flexible number of annotations per paragraph (>= 1).
+    """
+    anns = obj.get("annotations")
+    if not isinstance(anns, list):
+        return obj
+
+    paragraphs = split_paragraphs_from_body(body)
+    max_para = max(0, len(paragraphs) - 1)
+
+    normalized: list[dict[str, Any]] = []
+    for ann in anns:
+        if not isinstance(ann, dict):
+            continue
+
+        pidx = ann.get("paragraphIndex")
+        if not isinstance(pidx, int):
+            pidx = 0
+
+        inferred = infer_paragraph_index(str(ann.get("text", "")), paragraphs)
+        if inferred is not None:
+            pidx = inferred
+
+        pidx = min(max(pidx, 0), max_para)
+        ann["paragraphIndex"] = pidx
+        normalized.append(ann)
+
+    normalized = _dedupe_annotations(normalized)
+
+    by_para: dict[int, list[dict[str, Any]]] = {i: [] for i in range(max_para + 1)}
+    for ann in normalized:
+        by_para[ann["paragraphIndex"]].append(ann)
+
+    def _pick_best_annotation(annotations: list[dict[str, Any]]) -> dict[str, Any] | None:
+        if not annotations:
+            return None
+        # Prefer longer spans as a simple proxy for specificity; keep stable ordering on ties.
+        return max(enumerate(annotations), key=lambda item: (len(str(item[1].get("text", ""))), -item[0]))[1]
+
+    final: list[dict[str, Any]] = []
+    for pidx in range(max_para + 1):
+        items = by_para.get(pidx, [])
+        no = [a for a in items if _is_no_polarizing(a)]
+        other = [a for a in items if not _is_no_polarizing(a)]
+
+        if other:
+            # Keep all polarizing annotations; drop any NPL annotations for that paragraph.
+            # Sort for stable output (longer/more specific first).
+            other_sorted = sorted(
+                other,
+                key=lambda a: (
+                    -len(str(a.get("text", ""))),
+                    str(a.get("category", "")),
+                    str(a.get("subcategory", "")),
+                    str(a.get("text", "")),
+                ),
+            )
+            for ann in other_sorted:
+                ann["paragraphIndex"] = pidx
+            final.extend(other_sorted)
+            continue
+
+        # Otherwise, ensure exactly one no-polarizing annotation.
+        if no:
+            keep = _pick_best_annotation(no)
+        else:
+            keep = {
+                "category": "No Polarizing language",
+                "subcategory": "no polarizing language",
+                "text": "no polarizing language selected",
+                "openFeedback": "No polarizing language detected in this paragraph.",
+                "paragraphIndex": pidx,
+            }
+
+        # Canonicalize the placeholder fields.
+        keep["category"] = "No Polarizing language"
+        keep["subcategory"] = "no polarizing language"
+        keep["text"] = "no polarizing language selected"
+        if not isinstance(keep.get("openFeedback"), str) or not keep["openFeedback"].strip():
+            keep["openFeedback"] = "No polarizing language detected in this paragraph."
+        keep["paragraphIndex"] = pidx
+        final.append(keep)
+
+    obj["annotations"] = _dedupe_annotations(final)
+    return obj
+
+
+def apply_paragraph_policy(obj: dict[str, Any], *, body: str, paragraph_policy: str) -> dict[str, Any]:
+    if paragraph_policy == "exact-one":
+        return enforce_paragraph_no_polarizing_policy(obj, body=body)
+    if paragraph_policy == "min-one":
+        return enforce_paragraph_minimum_one_policy(obj, body=body)
+    raise ValueError(f"Unknown paragraph_policy: {paragraph_policy!r}")
+
+
 def paragraph_count_from_body(body: str) -> int:
     txt = decode_literal_newlines(body)
     parts = [p.strip() for p in txt.split("\n") if p.strip()]
@@ -499,6 +605,7 @@ class ModelConfig:
     openai_model: str
     gemini_model: str
     adjudicator_model: str
+    paragraph_policy: str = "exact-one"
     temperature: float = 0.1
 
 
@@ -632,7 +739,23 @@ def annotate_with_gemini(client, role_desc: str, article_block: str, title: str,
     return obj, json_str
 
 
-def adjudicate_with_openai(client, article_block: str, title: str, topic: str, source: str, rating: str, obj_a: dict[str, Any], obj_b: dict[str, Any], obj_c: dict[str, Any], *, body: str, model: str, temperature: float, max_retries: int):
+def adjudicate_with_openai(
+    client,
+    article_block: str,
+    title: str,
+    topic: str,
+    source: str,
+    rating: str,
+    obj_a: dict[str, Any],
+    obj_b: dict[str, Any],
+    obj_c: dict[str, Any],
+    *,
+    body: str,
+    model: str,
+    temperature: float,
+    max_retries: int,
+    paragraph_policy: str,
+):
     adjudicator_system = """
 You are the Adjudicator, a methods-oriented political scientist overseeing three annotators.
 
@@ -684,7 +807,7 @@ Meta fields must be set to:
     obj.setdefault("rating", rating)
     obj = normalize_annotation_enums(obj)
     obj = repair_annotation_object(obj, body=body)
-    obj = enforce_paragraph_no_polarizing_policy(obj, body=body)
+    obj = apply_paragraph_policy(obj, body=body, paragraph_policy=paragraph_policy)
     ok, err = validate_annotation(obj)
     if not ok:
         raise ValueError(f"Adjudicated JSON failed schema validation: {err}\n\n{json_str}")
@@ -765,6 +888,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                 model=cfg.adjudicator_model,
                 temperature=cfg.temperature,
                 max_retries=max_retries,
+                paragraph_policy=cfg.paragraph_policy,
             )
 
         results.append(
@@ -785,7 +909,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
     return results, final_annotations
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     _load_dotenv_if_present()
 
     parser = argparse.ArgumentParser()
@@ -795,9 +919,19 @@ def main() -> int:
     parser.add_argument("--openai-model", default="gpt-5.1")
     parser.add_argument("--adjudicator-model", default=None)
     parser.add_argument("--gemini-model", default="gemini-3-pro-preview")
+    parser.add_argument(
+        "--paragraph-policy",
+        default="exact-one",
+        choices=["exact-one", "min-one"],
+        help=(
+            "How to enforce paragraph coverage in the FINAL adjudicated output. "
+            "'exact-one' keeps exactly one annotation per paragraph; "
+            "'min-one' keeps all polarizing annotations per paragraph but guarantees at least one annotation per paragraph (NPL when needed)."
+        ),
+    )
     parser.add_argument("--max-retries", type=int, default=2)
     parser.add_argument("--dry-run", action="store_true", help="No network calls; emits placeholder outputs.")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     _require_keys(unless_dry_run=args.dry_run)
 
@@ -805,6 +939,7 @@ def main() -> int:
         openai_model=args.openai_model,
         adjudicator_model=args.adjudicator_model or args.openai_model,
         gemini_model=args.gemini_model,
+        paragraph_policy=args.paragraph_policy,
     )
 
     input_path = Path(args.input)

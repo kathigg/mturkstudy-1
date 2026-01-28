@@ -1,6 +1,9 @@
 # Updates.md
 Written by Kathleen Higgins, begun on January 8th (though I've been working on the project for a year and a half, now) to include recent updates so I can go back and check what I did. 
 
+## January 28th, 12:31pm:
+- Revised to have a second version of the original LLM and Turk aggregation scripts to support multiple annotations. Reorganization for simplification still needed of the codebase. 
+
 ## January 25th, latest two runs (1-8 HIT vs. in-house, same 12 articles):
 - Both runs enforce one annotation per paragraph, so precision == recall at the article-match level.
 - 1-8 HIT (MTurk):

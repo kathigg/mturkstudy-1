@@ -34,6 +34,11 @@ STOP_WORDS = {
 # Minimum number of annotators required to keep an annotation (1, 2, or 3).
 MIN_SUPPORTERS_TO_SAVE = 2
 
+# If True, keep only one (best) annotation per paragraph.
+# If False, keep multiple annotations per paragraph (still paragraph-indexed),
+# while using "No Polarizing Language" only when no polarizing annotations survive.
+ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH = True
+
 # ------------------------
 # Text Utility Functions
 # ------------------------
@@ -124,6 +129,8 @@ def build_gold_standard_with_intersection(
     database_record=None,  # full record OR top-level dict
     workers_by_article_para=None,
     no_polarizing_workers_by_article_para=None,
+    *,
+    enforce_one_annotation_per_paragraph: bool = True,
     pad=2
 ):
     """
@@ -254,7 +261,7 @@ def build_gold_standard_with_intersection(
                 "paragraphIndex": paragraph_index,
             })
 
-    # --- STEP 3: Keep only the strongest annotation per paragraph ---
+    # --- STEP 3: Optionally enforce one annotation per paragraph ---
     for article_id, anns in list(gold_standard.items()):
         by_para = defaultdict(list)
         for ann in anns:
@@ -262,40 +269,92 @@ def build_gold_standard_with_intersection(
             if isinstance(pidx, int):
                 by_para[pidx].append(ann)
 
+        # Ensure we iterate all paragraphs we observed workers for, even if grouping produced nothing.
+        para_indices = set(by_para.keys())
+        if workers_by_article_para is not None:
+            para_indices |= {p for (aid, p) in workers_by_article_para.keys() if str(aid) == str(article_id)}
+
         pruned: list[dict] = []
-        for pidx, items in by_para.items():
-            if not items:
-                continue
+        for pidx in sorted(para_indices):
+            items = by_para.get(pidx, [])
             items = [
                 a for a in items
                 if int(a.get("num_supporters") or 0) >= MIN_SUPPORTERS_TO_SAVE
             ]
-            if not items:
-                # Fall back to a no-polarizing placeholder when nothing meets the threshold.
-                pruned.append({
-                    "text": "no polarizing language selected",
-                    "category": "No_Polarizing_Language",
-                    "subcategory": "no polarizing language",
-                    "confidence": 0.33,
-                    "num_supporters": 0,
-                    "label_consistent": False,
-                    "title": anns[0].get("title", "UNKNOWN_TITLE"),
-                    "paragraphIndex": pidx,
-                })
+
+            if enforce_one_annotation_per_paragraph:
+                if not items:
+                    # Fall back to a no-polarizing placeholder when nothing meets the threshold.
+                    pruned.append({
+                        "text": "no polarizing language selected",
+                        "category": "No_Polarizing_Language",
+                        "subcategory": "no polarizing language",
+                        "confidence": 0.33,
+                        "num_supporters": 0,
+                        "label_consistent": False,
+                        "title": anns[0].get("title", "UNKNOWN_TITLE"),
+                        "paragraphIndex": pidx,
+                    })
+                    continue
+
+                max_support = max(int(a.get("num_supporters") or 0) for a in items)
+                tied = [a for a in items if int(a.get("num_supporters") or 0) == max_support]
+
+                # Prefer NPL if it ties on support (conservative); otherwise keep the strongest tied span.
+                npl = [a for a in tied if is_no_polarizing_annotation(a)]
+                candidates = npl if npl else tied
+
+                keep = max(
+                    candidates,
+                    key=lambda a: (
+                        float(a.get("confidence") or 0.0),
+                        len(str(a.get("text", ""))),
+                    ),
+                )
+                pruned.append(keep)
                 continue
-            max_support = max(int(a.get("num_supporters") or 0) for a in items)
-            tied = [a for a in items if int(a.get("num_supporters") or 0) == max_support]
-            npl = [a for a in tied if is_no_polarizing_annotation(a)]
-            candidates = npl if npl else tied
-            # Break remaining ties with confidence, then longer span.
-            keep = max(
-                candidates,
-                key=lambda a: (
-                    float(a.get("confidence") or 0.0),
-                    len(str(a.get("text", ""))),
-                ),
-            )
-            pruned.append(keep)
+
+            # Multi-annotation mode:
+            # - Keep all qualifying polarizing annotations in the paragraph.
+            # - Only use NPL when no polarizing annotations survive.
+            polarizing = [a for a in items if not is_no_polarizing_annotation(a)]
+            if polarizing:
+                pruned.extend(
+                    sorted(
+                        polarizing,
+                        key=lambda a: (
+                            int(a.get("paragraphIndex") or -1),
+                            -int(a.get("num_supporters") or 0),
+                            -float(a.get("confidence") or 0.0),
+                            -len(str(a.get("text", ""))),
+                        ),
+                    )
+                )
+                continue
+
+            if items:
+                # Only NPL remains; keep a single representative (highest confidence, then longer span).
+                keep = max(
+                    items,
+                    key=lambda a: (
+                        float(a.get("confidence") or 0.0),
+                        len(str(a.get("text", ""))),
+                    ),
+                )
+                pruned.append(keep)
+                continue
+
+            # Nothing survives: add placeholder NPL.
+            pruned.append({
+                "text": "no polarizing language selected",
+                "category": "No_Polarizing_Language",
+                "subcategory": "no polarizing language",
+                "confidence": 0.33,
+                "num_supporters": 0,
+                "label_consistent": False,
+                "title": anns[0].get("title", "UNKNOWN_TITLE"),
+                "paragraphIndex": pidx,
+            })
 
         gold_standard[article_id] = pruned
 
@@ -387,6 +446,7 @@ def process_annotation_file(input_path, output_path):
         database_record=raw_data,  # pass the full MTurk file so title mapping works
         workers_by_article_para=workers_by_article_para,
         no_polarizing_workers_by_article_para=no_polarizing_workers_by_article_para,
+        enforce_one_annotation_per_paragraph=ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH,
         )
 
     # --- Convert gold_standard dict to list-of-articles format for LLM comparison ---

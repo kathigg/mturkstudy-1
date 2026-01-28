@@ -66,6 +66,10 @@ DEBUG_TITLE = None  # Set to a string to print matched pairs for one title.
 # Toggle confidence-weighted metrics (True = use gold confidence weights; False = treat all gold weights as 1.0).
 USE_CONFIDENCE_WEIGHTING = True
 
+# If True, force exactly one annotation per paragraph on both sides (for apples-to-apples comparison).
+# If False, allow multiple annotations per paragraph (matching remains paragraph-indexed).
+ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH = True
+
 # ------------------------
 # Utility functions
 # ------------------------
@@ -110,6 +114,48 @@ def is_no_polarizing(ann):
     cat = normalize_label(ann.get("category", ""))
     text = ann.get("text", "").lower()
     return "no polarizing language" in cat or "no polarizing language" in text
+
+def _group_by_paragraph_index(annotations):
+    by_para = defaultdict(list)
+    for ann in annotations:
+        pidx = ann.get("paragraphIndex")
+        if isinstance(pidx, int):
+            by_para[pidx].append(ann)
+    return by_para
+
+def _pick_best_llm_annotation(items):
+    # Prefer a polarizing annotation if present; otherwise keep an NPL placeholder.
+    polarizing = [a for a in items if not is_no_polarizing(a)]
+    candidates = polarizing if polarizing else items
+    # Prefer longer spans as a proxy for specificity; keep stable ordering on ties.
+    return max(enumerate(candidates), key=lambda item: (len(str(item[1].get("text", ""))), -item[0]))[1]
+
+def _pick_best_gold_annotation(items):
+    # Match turk aggregation tie-breaking: max supporters, then (conservatively) prefer NPL if tied,
+    # then confidence, then longer span.
+    max_support = max(int(a.get("num_supporters") or 0) for a in items)
+    tied = [a for a in items if int(a.get("num_supporters") or 0) == max_support]
+    npl = [a for a in tied if is_no_polarizing(a)]
+    candidates = npl if npl else tied
+    return max(
+        enumerate(candidates),
+        key=lambda item: (
+            float(item[1].get("confidence") or 0.0),
+            len(str(item[1].get("text", ""))),
+            -item[0],
+        ),
+    )[1]
+
+def maybe_enforce_one_annotation_per_paragraph(llm_annotations, gold_annotations):
+    if not ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH:
+        return llm_annotations, gold_annotations
+
+    llm_by_para = _group_by_paragraph_index(llm_annotations)
+    gold_by_para = _group_by_paragraph_index(gold_annotations)
+
+    llm_reduced = [_pick_best_llm_annotation(llm_by_para[pidx]) for pidx in sorted(llm_by_para.keys())]
+    gold_reduced = [_pick_best_gold_annotation(gold_by_para[pidx]) for pidx in sorted(gold_by_para.keys())]
+    return llm_reduced, gold_reduced
 
 def match_annotation(llm_ann, gold_ann, llm_title=None, gold_title=None):
     """Return True if titles match and annotations overlap (or both say no polarizing language)."""
@@ -419,8 +465,10 @@ def print_matched_pairs_for_title(llm_json, gold_json, title_query):
 
     llm_title = llm_norm_to_title[norm]
     gold_title = gold_norm_to_title[norm]
-    l_anns = llm_map[llm_title]
-    g_anns = gold_map[gold_title]
+    l_anns, g_anns = maybe_enforce_one_annotation_per_paragraph(
+        llm_map[llm_title],
+        gold_map[gold_title],
+    )
 
     matched_pairs, _, _ = greedy_weighted_match(
         l_anns, g_anns, lambda l, g: match_annotation(l, g, llm_title, gold_title)
@@ -478,6 +526,7 @@ def compare_all(llm_json, gold_json):
 
         for g_title, g_anns in gold_map_raw.items():
             for l_title, l_anns in llm_map_raw.items():
+                l_anns, g_anns = maybe_enforce_one_annotation_per_paragraph(l_anns, g_anns)
                 result = compare_article(l_anns, g_anns, l_title, g_title)
                 cat_result = compare_category(l_anns, g_anns, l_title, g_title)
                 w_result = compare_article_weighted(l_anns, g_anns, l_title, g_title)
@@ -605,8 +654,10 @@ def compare_all(llm_json, gold_json):
         llm_title = llm_norm_to_title[norm]
         gold_title = gold_norm_to_title[norm]
 
-        l_anns = llm_map[llm_title]
-        g_anns = gold_map[gold_title]
+        l_anns, g_anns = maybe_enforce_one_annotation_per_paragraph(
+            llm_map[llm_title],
+            gold_map[gold_title],
+        )
 
         result = compare_article(l_anns, g_anns, llm_title, gold_title)
         cat_result = compare_category(l_anns, g_anns, llm_title, gold_title)
