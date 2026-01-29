@@ -1,6 +1,35 @@
 # Updates.md
 Written by Kathleen Higgins, begun on January 8th (though I've been working on the project for a year and a half, now) to include recent updates so I can go back and check what I did. 
 
+## January 28th, 7:57pm:
+- Results from Krippendorf's Alpha and Inter-Annotator Agreement:
+```
+(base) kathleenhiggins@wifi-roaming-128-4-187-79 mturkstudy-3 % python src/dataset_comparison_scripts/statistical_analysis/inter_annotator_agreement_1_8.py
+Inter-Annotator Agreement (1-8 HIT)
+=================================
+Input file: /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/../../mturk_results/archived_mturk_results/1-8/1-8HIT_2026_01.json
+Annotators: 37
+Units (article, paragraph): 38
+Units by # annotators: {3: 35, 4: 3}
+Worker-paragraph labels: 117
+Mixed NPL+polarizing labels: 3
+Multi-category polarizing labels: 7
+
+Binary Labels (NPL vs Polarizing)
+---------------------------------
+Label counts: {'No Polarizing Language': 41, 'Polarizing Language': 76}
+Pairwise agreement: 58.54%
+Krippendorff's alpha (nominal): 0.0764
+Majority labels: {'No Polarizing Language': 10, 'Polarizing Language': 28}
+Tied majorities: 0 (tie breaker: npl)
+
+Category Labels (NPL vs Category)
+---------------------------------
+Label counts: {'No Polarizing Language': 41, 'Persuasive Propaganda': 56, 'Multiple Polarizing Categories': 7, 'Inflammatory Language': 13}
+Pairwise agreement: 39.02%
+Krippendorff's alpha (nominal): 0.0289
+```
+
 ## January 28th, 5:07pm:
 - Added Krippendorf's alpha and interannotator agreement. 
 ```
