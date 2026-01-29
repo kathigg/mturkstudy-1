@@ -211,8 +211,8 @@ def plot_confusion_matrix(confusion: Dict[str, Counter], labels: List[str], unit
     tick_labels = [display_label(l) for l in labels]
     ax.set_xticks(range(n), tick_labels, rotation=45, ha="right")
     ax.set_yticks(range(n), tick_labels)
-    ax.set_xlabel("LLM (predicted subcategory)")
-    ax.set_ylabel("Gold (true subcategory)")
+    ax.set_xlabel("LLM (predicted subcategory)", fontweight="bold")
+    ax.set_ylabel("Gold (true subcategory)", fontweight="bold")
 
     # Annotate counts.
     vmax = max(max(row) for row in matrix) if matrix else 0
@@ -256,4 +256,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
