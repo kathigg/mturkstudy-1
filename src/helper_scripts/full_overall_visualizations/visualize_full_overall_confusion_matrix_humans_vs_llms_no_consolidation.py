@@ -23,6 +23,8 @@ MPLCONFIGDIR = OUTPUT_DIR / ".mplconfig"
 os.environ.setdefault("MPLCONFIGDIR", str(MPLCONFIGDIR))
 
 import matplotlib.pyplot as plt  # noqa: E402
+import numpy as np  # noqa: E402
+from matplotlib import colors  # noqa: E402
 
 
 # ------------------------
@@ -44,6 +46,13 @@ OUTPUT_IMG = OUTPUT_DIR / "confusion_matrix_llm_vs_mturk_full_overall_subcategor
 # ------------------------
 # If True, include NPL on both axes. If False, skip any pairs where either side is NPL.
 INCLUDE_NPL_IN_MATRIX = False
+
+# Make low-count cells more visible by compressing the color scale.
+USE_ENHANCED_CONTRAST = True
+# Options (only used when USE_ENHANCED_CONTRAST is True): "power", "log"
+COLOR_SCALE = "power"
+# Only used when COLOR_SCALE == "power". Lower gamma -> darker low counts.
+POWER_GAMMA = 0.35
 
 # Order of subcategories on both axes (least -> most severe).
 SEVERITY_ORDER = [
@@ -214,15 +223,34 @@ def plot_confusion_matrix(confusion: Dict[str, Counter], labels: List[str], unit
     MPLCONFIGDIR.mkdir(parents=True, exist_ok=True)
 
     n = len(labels)
-    matrix = [[confusion[true].get(pred, 0) for pred in labels] for true in labels]
+    matrix = np.array([[confusion[true].get(pred, 0) for pred in labels] for true in labels], dtype=float)
 
     plt.style.use("seaborn-v0_8-colorblind")
     fig_w = max(10, 1.05 * n)
     fig_h = max(8, 0.95 * n)
     fig, ax = plt.subplots(figsize=(fig_w, fig_h))
 
-    im = ax.imshow(matrix, cmap="Blues")
-    ax.figure.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+    cmap = plt.get_cmap("Blues").copy()
+    vmax = float(matrix.max()) if matrix.size else 0.0
+
+    if COLOR_SCALE == "log":
+        # Log scaling improves visibility of small counts, but cannot handle zeros.
+        # Mask zeros so they remain white.
+        masked = np.ma.masked_where(matrix <= 0, matrix)
+        cmap.set_bad(color="white")
+        norm = colors.LogNorm(vmin=1, vmax=max(1.0, float(masked.max()) if masked.count() else 1.0))
+        im = ax.imshow(masked, cmap=cmap, norm=norm)
+        cbar_label = "Count (log scale)"
+    elif COLOR_SCALE == "power":
+        norm = colors.PowerNorm(gamma=POWER_GAMMA, vmin=0.0, vmax=max(1.0, vmax))
+        im = ax.imshow(matrix, cmap=cmap, norm=norm)
+        cbar_label = f"Count (power, gamma={POWER_GAMMA})"
+    else:
+        im = ax.imshow(matrix, cmap=cmap)
+        cbar_label = "Count"
+
+    cbar = ax.figure.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+    cbar.set_label(cbar_label)
 
     subtitle = f"Paragraph-indexed spans (n={unit_count})"
     if not INCLUDE_NPL_IN_MATRIX:
@@ -239,13 +267,16 @@ def plot_confusion_matrix(confusion: Dict[str, Counter], labels: List[str], unit
     ax.set_xlabel("LLM (predicted subcategory)", fontweight="bold")
     ax.set_ylabel("MTurk (true subcategory)", fontweight="bold")
 
-    vmax = max(max(row) for row in matrix) if matrix else 0
-    threshold = vmax * 0.55
+    threshold = 0.55
     for i in range(n):
         for j in range(n):
-            val = matrix[i][j]
-            color = "white" if val > threshold else "black"
-            ax.text(j, i, str(val), ha="center", va="center", color=color, fontsize=10)
+            val = float(matrix[i, j])
+            if COLOR_SCALE == "log" and val <= 0:
+                intensity = 0.0
+            else:
+                intensity = float(im.norm(val)) if getattr(im, "norm", None) is not None else (val / vmax if vmax else 0.0)
+            color = "white" if intensity > threshold else "black"
+            ax.text(j, i, str(int(val)), ha="center", va="center", color=color, fontsize=10)
 
     fig.tight_layout()
     fig.savefig(OUTPUT_IMG, dpi=300, bbox_inches="tight")
@@ -330,4 +361,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
