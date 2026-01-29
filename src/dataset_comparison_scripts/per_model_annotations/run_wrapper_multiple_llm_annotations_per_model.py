@@ -77,7 +77,7 @@ def run_pipeline_per_model(
         else:
             obj_a, _ = base.annotate_with_openai(
                 openai_client,
-                "You are Annotator A, a political communication scholar. Strictly follow the codebook and JSON schema. Be conservative: if unsure, choose No Polarizing language.",
+                "You are Annotator A, a political communication scholar. Strictly follow the codebook and JSON schema.",
                 article_block,
                 title,
                 topic,
@@ -91,7 +91,7 @@ def run_pipeline_per_model(
 
             obj_b, _ = base.annotate_with_gemini(
                 gemini_client,
-                "You are Annotator B, a linguistics/discourse analyst. Your strength is correct subcategory selection. Be conservative: avoid over-labeling; if unsure, choose No Polarizing language.",
+                "You are Annotator B, a linguistics/discourse analyst. Your strength is correct subcategory selection",
                 article_block,
                 title,
                 topic,
@@ -104,7 +104,7 @@ def run_pipeline_per_model(
 
             obj_c, _ = base.annotate_with_openai(
                 openai_client,
-                "You are Annotator C, a conservative/high-precision media psychology expert. Be conservative: only label when explicit; if unsure, choose No Polarizing language.",
+                "You are Annotator C, a conservative/high-precision media psychology expert.",
                 article_block,
                 title,
                 topic,

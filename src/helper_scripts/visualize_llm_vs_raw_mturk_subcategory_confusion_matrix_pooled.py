@@ -21,8 +21,16 @@ import matplotlib.pyplot as plt  # noqa: E402
 # Inputs / Outputs
 # ------------------------
 MTURK_RAW_PATH = BASE_DIR / "mturk_results/archived_mturk_results/1-8/1-8HIT.json"
-LLM_PATH = BASE_DIR / "llm_annotation_results/archived_llm_annotations/paragraph_final_annotations_3annotators.json"
+
+## LLM_PATH = BASE_DIR / "llm_annotation_results/per_model_annotations/per_model_annotations_3models.json"
 OUTPUT_IMG = OUTPUT_DIR / "confusion_matrix_llm_vs_raw_mturk_subcategory_pooled.png"
+
+# If LLM_PATH points at a per-model output (from
+# src/dataset_comparison_scripts/per_model_annotations/run_wrapper_multiple_llm_annotations_per_model.py),
+# select which model to compare.
+#
+# Valid options: "annotator_A", "annotator_B", "annotator_C"
+PER_MODEL_ANNOTATOR_KEY = "annotator_A"
 
 
 # ------------------------
@@ -151,9 +159,23 @@ def build_llm_paragraph_labels(llm_payload) -> Dict[Tuple[str, int], str]:
     labels: Dict[Tuple[str, int], str] = {}
 
     for article in llm_payload:
+        # Supported shapes:
+        # 1) Adjudicated/standard: {"title": ..., "annotations": [...]}
+        # 2) Per-model: {"title": ..., "annotator_A": {...}, "annotator_B": {...}, "annotator_C": {...}}
+        if not isinstance(article, dict):
+            continue
+
         title_norm = normalize_title(article.get("title", ""))
+        if "annotations" in article:
+            annotations = article.get("annotations", [])
+        elif PER_MODEL_ANNOTATOR_KEY in article:
+            model_obj = article.get(PER_MODEL_ANNOTATOR_KEY) or {}
+            annotations = model_obj.get("annotations", [])
+        else:
+            continue
+
         by_para: Dict[int, List[dict]] = defaultdict(list)
-        for ann in article.get("annotations", []):
+        for ann in annotations:
             pidx = ann.get("paragraphIndex")
             if isinstance(pidx, int):
                 by_para[pidx].append(ann)
@@ -299,6 +321,8 @@ def main() -> None:
     print("------------------------------------------")
     print(f"MTURK_RAW_PATH: {MTURK_RAW_PATH}")
     print(f"LLM_PATH:       {LLM_PATH}")
+    if isinstance(llm_payload, list) and llm_payload and isinstance(llm_payload[0], dict) and PER_MODEL_ANNOTATOR_KEY in llm_payload[0]:
+        print(f"Per-model LLM file detected; using: {PER_MODEL_ANNOTATOR_KEY}")
     print(f"Worker-paragraph groups (with paragraphIndex): {len(worker_groups)}")
     print(f"LLM title-paragraph keys: {len(llm_labels)}")
     print(f"Aligned units used: {used_units}")
