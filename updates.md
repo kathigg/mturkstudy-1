@@ -1,6 +1,11 @@
 # Updates.md
 Written by Kathleen Higgins, begun on January 8th (though I've been working on the project for a year and a half, now) to include recent updates so I can go back and check what I did. 
 
+## January 29th, 9:57pm:
+- Testing to make sure that my commits work.
+- I'm trying to make the heatmap look better by getting more data. Essentially, I'm moving away from the consolidation process of the one-per-paragraph (a change I've already made earlier and will sustain) and additionally, just for the sake of being able to compare the number of category annotations of the LLM versus the humans in MTurk, I'm running another version of the LLM script that doesn't use an aggregation method; instead it saves everything as-is. It's quite nice, and I'm doing something similar with not processing the Turk results, where I can just see total counts overall in the heatmap of what the models annotate. 
+- Also, for my Goldwater paper, I'm running with the 1-20 HIT as our MTurk HIT to which I'm using our data on.
+
 ## January 28th, 7:57pm:
 - Results from Krippendorf's Alpha and Inter-Annotator Agreement:
 ```
