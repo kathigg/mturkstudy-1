@@ -3,6 +3,59 @@
 **Principal Developer:** Kathleen Higgins (Summer 2025)
 **Principal Investigator:** Prerana Khatiwada (PhD) and Professor Matthew Mauriello
 
+## Repository Design
+```
+mturkstudy-3/
+├─ README.md
+├─ updates.md
+├─ package.json
+├─ package-lock.json
+├─ public/
+├─ src/
+│  ├─ website_management/                 # React annotation tool (UI)
+│  │  ├─ pages/
+│  │  ├─ components/
+│  │  └─ helper_scripts/
+│  │
+│  ├─ dataset_comparison_scripts/         # Core pipelines + evaluation
+│  │  ├─ run_wrapper_multiple_llm_annotations.py
+│  │  ├─ run_wrapper_multiple_llm_annotations_flexible.py
+│  │  ├─ paragraph_llm_human_comparison.py
+│  │  ├─ paragraph_turk_annotation_aggregator.py
+│  │  ├─ multiple_llm_annotations_script.py
+│  │  ├─ requirements_llm_notebook.txt
+│  │  ├─ per_model_annotations/
+│  │  │  └─ run_wrapper_multiple_llm_annotations_per_model.py
+│  │  ├─ statistical_analysis/
+│  │  │  └─ inter_annotator_agreement_1_8.py
+│  │  └─ archived_comparison_scripts/
+│  │
+│  ├─ helper_scripts/                     # Figures / analysis helpers
+│  │  ├─ visualize_llm_vs_raw_mturk_subcategory_confusion_matrix_pooled.py
+│  │  ├─ visualize_precision_recall_llm_vs_raw_mturk_by_category_severity.py
+│  │  └─ gold_standard_visualizations/
+│  │     ├─ visualize_llm_vs_gold_subcategory_confusion_matrix.py
+│  │     └─ visualize_precision_recall_by_category_severity.py
+│  │
+│  ├─ llm_annotation_results/             # LLM outputs (current + archived)
+│  │  ├─ final_annotations_3annotators.json
+│  │  ├─ multi_llm_annotations/
+│  │  ├─ per_model_annotations/
+│  │  └─ archived_llm_annotations/
+│  │
+│  ├─ mturk_results/                      # MTurk outputs (current + archived)
+│  │  ├─ 1-20_hit_gold_standard_output.json
+│  │  ├─ archived_mturk_results/
+│  │  │  └─ 1-8/
+│  │  │     ├─ 1-8HIT.json
+│  │  │     └─ 1-8HIT_2026_01.json
+│  │  └─ ...
+│  │
+│  └─ data_visualizations/                # Saved plots (PNG) + mpl cache
+│     └─ ...
+└─ annotation_comparison_results.json
+```
+
 This project is divided into several sections. 
 
 Table of Contents: 
@@ -12,14 +65,14 @@ Table of Contents:
 - LLM vs Turker Comparison Process 
 
 
-# News Annotation Platform 
+## News Annotation Platform 
 
 This is a browser-based annotation platform for labeling persuasive propaganda, inflammatory language, and misleading content in news articles. Designed for MTurk and human-subject studies.
 
-## Location: 
+### Location: 
 /mturkstudy/src/website_management
 
-## Features
+### Features
 
 - Highlight text and apply structured labels
 - Customizable categories and survey questions
@@ -27,7 +80,7 @@ This is a browser-based annotation platform for labeling persuasive propaganda, 
 - JSON export or Firebase integration
 - “Thank You” screen with MTurk code
 
-## Customization via `config.js`
+### Customization via `config.js`
 
 To adapt the tool for your own study, edit `config.js`:
 
@@ -43,11 +96,11 @@ To adapt the tool for your own study, edit `config.js`:
 4. Run locally: `npm start`
 5. Optionally deploy on Vercel, Netlify, or Firebase
 
-## Example Output
+### Example Output
 
 At the end of the task, all annotations and survey responses are saved as structured JSON and can optionally be uploaded to Firebase.
 
-## Designed For Research
+### Designed For Research
 
 This tool was created for a human-subject study but is reusable across research domains involving:
 - Misinformation
@@ -58,10 +111,10 @@ This tool was created for a human-subject study but is reusable across research 
 
 MIT License
 
-# Annotation Aggregation Scripts 
+## Annotation Aggregation Scripts 
 
-## Location: 
+### Location: 
 /mturkstudy/src/gold_standard_dataset
 
-## About:
+### About:
 Contains code that aggregates the work of different annotators into a single dataset that contains confidence scores that can be compared to LLMs. 

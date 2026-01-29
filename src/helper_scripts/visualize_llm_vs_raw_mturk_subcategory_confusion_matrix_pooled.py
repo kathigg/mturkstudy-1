@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 # Inputs / Outputs
 # ------------------------
 MTURK_RAW_PATH = BASE_DIR / "mturk_results/archived_mturk_results/1-8/1-8HIT.json"
-
+LLM_PATH = BASE_DIR / "llm_annotation_results/per_model_annotations/per_model_annotations_3models.json"
 ## LLM_PATH = BASE_DIR / "llm_annotation_results/per_model_annotations/per_model_annotations_3models.json"
 OUTPUT_IMG = OUTPUT_DIR / "confusion_matrix_llm_vs_raw_mturk_subcategory_pooled.png"
 
@@ -38,14 +38,14 @@ PER_MODEL_ANNOTATOR_KEY = "annotator_A"
 # ------------------------
 # Requested: exaggeration, casual oversimplification, doubt, slogans, bandwagon,
 #           scapegoating, name-calling, demonization.
-INCLUDE_NPL_IN_MATRIX = True
+INCLUDE_NPL_IN_MATRIX = False
 
 SEVERITY_ORDER = [
     "exaggeration",
     "casual oversimplification",
+    "bandwagon",
     "doubt",
     "slogans",
-    "bandwagon",
     "scapegoating",
     "name-calling",
     "demonization",
@@ -257,11 +257,10 @@ def plot_confusion_matrix(confusion: Dict[str, Counter], labels: List[str], unit
     im = ax.imshow(matrix, cmap="Blues")
     ax.figure.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
 
-    ax.set_title(
-        f"LLM vs Raw MTurk Confusion Matrix (Subcategory)\n"
-        f"Pooled worker-paragraph units (n={unit_count})",
-        pad=18,
-    )
+    subtitle = f"Pooled worker-paragraph units (n={unit_count})"
+    if not INCLUDE_NPL_IN_MATRIX:
+        subtitle += " (excluding NPL)"
+    ax.set_title(f"LLM vs Raw MTurk Confusion Matrix (Subcategory)\n{subtitle}", pad=18)
 
     tick_labels = [display_label(l) for l in labels]
     ax.set_xticks(range(n), tick_labels, rotation=45, ha="right")
@@ -314,6 +313,8 @@ def main() -> None:
     base_labels.extend(SEVERITY_ORDER)
 
     observed_labels = sorted(set(true_counts.keys()) | set(pred_counts.keys()))
+    if not INCLUDE_NPL_IN_MATRIX:
+        observed_labels = [l for l in observed_labels if l != NPL_NORMALIZED]
     extras = [l for l in observed_labels if l not in base_labels]
     labels = base_labels + extras
 
