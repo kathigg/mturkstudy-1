@@ -1,0 +1,4 @@
+category,precision,recall,f1,tp,fp,fn,support
+no polarizing language,0.896552,0.83871,0.866667,26,3,5,31
+persuasive propaganda,0.133333,0.333333,0.190476,2,13,4,6
+inflammatory language,0.0,0.0,0.0,0,0,1,1

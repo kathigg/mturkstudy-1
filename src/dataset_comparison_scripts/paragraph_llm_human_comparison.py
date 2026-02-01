@@ -52,7 +52,7 @@ def spans_match(span1, span2, title1=None, title2=None, para1=None, para2=None):
     norm2 = normalize_span(span2)
     return (norm1 in norm2 or norm2 in norm1) and non_stopword_overlap(span1, span2)
 
-# ------------------------
+# ------------------------ß
 # Paths for JSON files
 # ------------------------
 BASE_DIR = Path(__file__).resolve().parent.parent

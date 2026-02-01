@@ -52,15 +52,15 @@ USE_ENHANCED_CONTRAST = True
 # Options (only used when USE_ENHANCED_CONTRAST is True): "power", "log"
 COLOR_SCALE = "power"
 # Only used when COLOR_SCALE == "power". Lower gamma -> darker low counts.
-POWER_GAMMA = 0.35
+POWER_GAMMA = 0.5
 
 # Order of subcategories on both axes (least -> most severe).
 SEVERITY_ORDER = [
     "exaggeration",
     "casual oversimplification",
     "doubt",
-    "slogans",
     "bandwagon",
+    "slogans",
     "scapegoating",
     "name-calling",
     "demonization",
@@ -233,7 +233,10 @@ def plot_confusion_matrix(confusion: Dict[str, Counter], labels: List[str], unit
     cmap = plt.get_cmap("Blues").copy()
     vmax = float(matrix.max()) if matrix.size else 0.0
 
-    if COLOR_SCALE == "log":
+    if not USE_ENHANCED_CONTRAST:
+        im = ax.imshow(matrix, cmap=cmap)
+        cbar_label = "Count"
+    elif COLOR_SCALE == "log":
         # Log scaling improves visibility of small counts, but cannot handle zeros.
         # Mask zeros so they remain white.
         masked = np.ma.masked_where(matrix <= 0, matrix)
@@ -241,24 +244,23 @@ def plot_confusion_matrix(confusion: Dict[str, Counter], labels: List[str], unit
         norm = colors.LogNorm(vmin=1, vmax=max(1.0, float(masked.max()) if masked.count() else 1.0))
         im = ax.imshow(masked, cmap=cmap, norm=norm)
         cbar_label = "Count (log scale)"
-    elif COLOR_SCALE == "power":
+    else:
+        # Default enhanced contrast mode: power-law scaling that still renders zeros.
         norm = colors.PowerNorm(gamma=POWER_GAMMA, vmin=0.0, vmax=max(1.0, vmax))
         im = ax.imshow(matrix, cmap=cmap, norm=norm)
         cbar_label = f"Count (power, gamma={POWER_GAMMA})"
-    else:
-        im = ax.imshow(matrix, cmap=cmap)
-        cbar_label = "Count"
 
     cbar = ax.figure.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
     cbar.set_label(cbar_label)
 
-    subtitle = f"Paragraph-indexed spans (n={unit_count})"
+    # subtitle = f"Paragraph-indexed spans n={unit_count}"
+    '''
     if not INCLUDE_NPL_IN_MATRIX:
         subtitle += " (excluding NPL)"
+    '''
     ax.set_title(
-        "LLM vs MTurk FULL OVERALL Confusion Matrix (Subcategory)\n"
-        f"{subtitle} (no consolidation; all A/B/C annotations kept)",
-        pad=18,
+        "LLM vs MTurk Full Subcategory Confusion Matrix\n",
+        pad=18, weight = 'bold'
     )
 
     tick_labels = [display_label(l) for l in labels]
@@ -271,7 +273,7 @@ def plot_confusion_matrix(confusion: Dict[str, Counter], labels: List[str], unit
     for i in range(n):
         for j in range(n):
             val = float(matrix[i, j])
-            if COLOR_SCALE == "log" and val <= 0:
+            if USE_ENHANCED_CONTRAST and COLOR_SCALE == "log" and val <= 0:
                 intensity = 0.0
             else:
                 intensity = float(im.norm(val)) if getattr(im, "norm", None) is not None else (val / vmax if vmax else 0.0)
