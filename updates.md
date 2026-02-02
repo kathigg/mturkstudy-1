@@ -1,5 +1,13 @@
 # Updates.md
 Written by Kathleen Higgins, begun on January 8th (though I've been working on the project for a year and a half, now) to include recent updates so I can go back and check what I did. 
+## February 2nd, 5:51pm:
+```
+python src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py `
+  --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv `
+  --paragraph-policy exact-one `
+  --results-csv src/dataset_comparison_scripts/annotated_results_3annotators_full_300_700.csv `
+  --final-json src/llm_annotation_results/final_annotations_3annotators_full_300_700.json
+```
 
 ## January 29th, 9:57pm:
 - Testing to make sure that my commits work.
