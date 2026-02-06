@@ -5,9 +5,9 @@ from typing import Dict, Iterable, List, Optional, Tuple
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 INPUT_FILE = os.path.join(
-    BASE_DIR,
-    "../../mturk_results/archived_mturk_results/1-8/1-8HIT_2026_01.json",
+    BASE_DIR,"../../mturk_results/archived_mturk_results/1-8/1-8HIT_2026_01.json",
 )
+# BASE_DIR,"../../mturk_results/1-20/1-20-in-house.json"
 
 NPL_LABEL = "No Polarizing Language"
 POLARIZING_LABEL = "Polarizing Language"
@@ -257,7 +257,7 @@ def main() -> None:
     binary_label_counts = Counter(label for ratings in binary_ratings for label in ratings)
     category_label_counts = Counter(label for ratings in category_ratings for label in ratings)
 
-    print("Inter-Annotator Agreement (1-8 HIT)")
+    print(f"Inter-Annotator Agreement (HIT)")
     print("=================================")
     print(f"Input file: {INPUT_FILE}")
     print(f"Annotators: {len(worker_ids)}")

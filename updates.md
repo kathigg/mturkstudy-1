@@ -1,5 +1,18 @@
 # Updates.md
 Written by Kathleen Higgins, begun on January 8th (though I've been working on the project for a year and a half, now) to include recent updates so I can go back and check what I did. 
+
+## February 5th, 10:04pm:
+Explanation of LLM scripts:
+```
+Save every model output (no aggregation/adjudication): run_wrapper_multiple_llm_annotations_per_model.py (writes annotator_A, annotator_B, annotator_C for each article).
+Consensus / committee aggregation (3 annotators + OpenAI adjudicator produces one final per article): run_wrapper_multiple_llm_annotations.py (writes a final-json plus a results-csv that contains the raw per-annotator JSON strings).
+Same consensus pipeline, just a convenience default: run_wrapper_multiple_llm_annotations_flexible.py (calls the consensus script but defaults --paragraph-policy min-one + default output paths).
+Other LLM-related files that don’t fit those two buckets:
+
+Wrapper entrypoint only (no new logic; just runs the consensus script): multiple_llm_annotations_script.py.
+Notebook version / historical development artifact (not the canonical CLI): Multiple_LLM_Annotations_Script.ipynb.
+```
+
 ## February 2nd, 5:51pm:
 ```
 python src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py `
