@@ -607,6 +607,7 @@ class ModelConfig:
     adjudicator_model: str
     paragraph_policy: str = "exact-one"
     temperature: float = 0.1
+    annotator_b_provider: str = "gemini"  # "gemini" (default) or "openai"
 
 
 def _retry(call, *, max_retries: int, base_sleep_s: float = 1.0):
@@ -623,12 +624,12 @@ def _retry(call, *, max_retries: int, base_sleep_s: float = 1.0):
     raise last_exc  # pragma: no cover
 
 
-def _require_keys(unless_dry_run: bool):
+def _require_keys(unless_dry_run: bool, *, require_gemini: bool = True):
     if unless_dry_run:
         return
     if not os.environ.get("OPENAI_API_KEY"):
         raise RuntimeError("Missing OPENAI_API_KEY env var.")
-    if not os.environ.get("GEMINI_API_KEY"):
+    if require_gemini and not os.environ.get("GEMINI_API_KEY"):
         raise RuntimeError("Missing GEMINI_API_KEY env var.")
 
 
@@ -819,7 +820,8 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
     gemini_client = None
     if not dry_run:
         openai_client = _openai_client()
-        gemini_client = _gemini_client()
+        if cfg.annotator_b_provider == "gemini":
+            gemini_client = _gemini_client()
 
     results: list[dict[str, Any]] = []
     final_annotations: list[dict[str, Any]] = []
@@ -847,18 +849,35 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                 max_retries=max_retries,
             )
 
-            obj_b, raw_b = annotate_with_gemini(
-                gemini_client,
-                "You are Annotator B, a linguistics/discourse analyst. Your strength is correct subcategory selection. Be conservative: avoid over-labeling; if unsure, choose No Polarizing language.",
-                article_block,
-                title,
-                topic,
-                source,
-                rating,
-                body=body,
-                model=cfg.gemini_model,
-                max_retries=max_retries,
-            )
+            if cfg.annotator_b_provider == "gemini":
+                obj_b, raw_b = annotate_with_gemini(
+                    gemini_client,
+                    "You are Annotator B, a linguistics/discourse analyst. Your strength is correct subcategory selection. Be conservative: avoid over-labeling; if unsure, choose No Polarizing language.",
+                    article_block,
+                    title,
+                    topic,
+                    source,
+                    rating,
+                    body=body,
+                    model=cfg.gemini_model,
+                    max_retries=max_retries,
+                )
+            elif cfg.annotator_b_provider == "openai":
+                obj_b, raw_b = annotate_with_openai(
+                    openai_client,
+                    "You are Annotator B, a linguistics/discourse analyst. Your strength is correct subcategory selection. Be conservative: avoid over-labeling; if unsure, choose No Polarizing language.",
+                    article_block,
+                    title,
+                    topic,
+                    source,
+                    rating,
+                    body=body,
+                    model=cfg.openai_model,
+                    temperature=cfg.temperature,
+                    max_retries=max_retries,
+                )
+            else:
+                raise ValueError(f"Unknown annotator_b_provider: {cfg.annotator_b_provider!r}")
 
             obj_c, raw_c = annotate_with_openai(
                 openai_client,
@@ -909,6 +928,122 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
     return results, final_annotations
 
 
+def _results_csv_fieldnames() -> list[str]:
+    return [
+        "index",
+        "title",
+        "topic",
+        "source",
+        "rating",
+        "annotator_A_json",
+        "annotator_B_json",
+        "annotator_C_json",
+        "final_json",
+    ]
+
+
+def _load_completed_indices_from_results_csv(path: Path) -> set[int]:
+    if not path.exists():
+        return set()
+    completed: set[int] = set()
+    with path.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            try:
+                completed.add(int(row.get("index", "").strip()))
+            except Exception:
+                continue
+    return completed
+
+
+def _load_completed_indices_from_jsonl(path: Path) -> set[int]:
+    if not path.exists():
+        return set()
+    completed: set[int] = set()
+    with path.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = (line or "").strip()
+            if not line:
+                continue
+            try:
+                obj = json.loads(line)
+            except Exception:
+                continue
+            if isinstance(obj, dict) and "index" in obj:
+                try:
+                    completed.add(int(obj["index"]))
+                except Exception:
+                    pass
+    return completed
+
+
+def _append_results_row(path: Path, row: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    write_header = not path.exists() or path.stat().st_size == 0
+    with path.open("a", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=_results_csv_fieldnames(), extrasaction="ignore")
+        if write_header:
+            writer.writeheader()
+        writer.writerow(row)
+
+
+def _append_final_jsonl(path: Path, *, index: int, final_obj: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    record = {"index": int(index), "final": final_obj}
+    with path.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+
+def _materialize_final_json(*, final_jsonl_path: Path, final_json_path: Path) -> None:
+    if not final_jsonl_path.exists():
+        return
+    by_index: dict[int, dict[str, Any]] = {}
+    with final_jsonl_path.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = (line or "").strip()
+            if not line:
+                continue
+            try:
+                rec = json.loads(line)
+            except Exception:
+                continue
+            if not isinstance(rec, dict):
+                continue
+            idx = rec.get("index")
+            final = rec.get("final")
+            if isinstance(idx, int) and isinstance(final, dict) and idx not in by_index:
+                by_index[idx] = final
+
+    finals = [by_index[i] for i in sorted(by_index)]
+    final_json_path.parent.mkdir(parents=True, exist_ok=True)
+    with final_json_path.open("w", encoding="utf-8") as f:
+        json.dump(finals, f, indent=2, ensure_ascii=False)
+
+
+def _backfill_jsonl_from_results_csv(*, results_csv_path: Path, final_jsonl_path: Path) -> None:
+    if final_jsonl_path.exists():
+        return
+    if not results_csv_path.exists():
+        return
+    final_jsonl_path.parent.mkdir(parents=True, exist_ok=True)
+    with results_csv_path.open("r", encoding="utf-8", newline="") as f_in, final_jsonl_path.open("a", encoding="utf-8") as f_out:
+        reader = csv.DictReader(f_in)
+        for row in reader:
+            try:
+                idx = int(str(row.get("index", "")).strip())
+            except Exception:
+                continue
+            final_raw = row.get("final_json")
+            if not isinstance(final_raw, str) or not final_raw.strip():
+                continue
+            try:
+                final_obj = json.loads(final_raw)
+            except Exception:
+                continue
+            rec = {"index": idx, "final": final_obj}
+            f_out.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+
 def main(argv: list[str] | None = None) -> int:
     _load_dotenv_if_present()
 
@@ -920,6 +1055,12 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--adjudicator-model", default=None)
     parser.add_argument("--gemini-model", default="gemini-3-pro-preview")
     parser.add_argument(
+        "--annotator-b-provider",
+        default="gemini",
+        choices=["gemini", "openai"],
+        help="Which provider to use for Annotator B. Use 'openai' if your Gemini quota is exhausted/unavailable.",
+    )
+    parser.add_argument(
         "--paragraph-policy",
         default="exact-one",
         choices=["exact-one", "min-one"],
@@ -930,36 +1071,206 @@ def main(argv: list[str] | None = None) -> int:
         ),
     )
     parser.add_argument("--max-retries", type=int, default=2)
+    parser.add_argument("--start-index", type=int, default=0, help="Start row index (0-based, inclusive) to process.")
+    parser.add_argument("--end-index", type=int, default=None, help="End row index (0-based, exclusive) to process.")
+    parser.add_argument("--resume", action="store_true", help="Resume from an existing --results-csv/--final-jsonl (skips completed indices).")
+    parser.add_argument(
+        "--checkpoint-every",
+        type=int,
+        default=10,
+        help="How often (in processed items) to rewrite --final-json from --final-jsonl. Results CSV/jsonl are appended every item.",
+    )
+    parser.add_argument(
+        "--final-jsonl",
+        default=None,
+        help="Append-only checkpoint file (JSONL) for final adjudicated objects; defaults to --final-json with a .jsonl suffix.",
+    )
+    parser.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Overwrite existing output files instead of erroring/appending. Ignored when --resume is set.",
+    )
     parser.add_argument("--dry-run", action="store_true", help="No network calls; emits placeholder outputs.")
     args = parser.parse_args(argv)
 
-    _require_keys(unless_dry_run=args.dry_run)
+    _require_keys(unless_dry_run=args.dry_run, require_gemini=(args.annotator_b_provider == "gemini"))
 
     cfg = ModelConfig(
         openai_model=args.openai_model,
         adjudicator_model=args.adjudicator_model or args.openai_model,
         gemini_model=args.gemini_model,
         paragraph_policy=args.paragraph_policy,
+        annotator_b_provider=args.annotator_b_provider,
     )
 
     input_path = Path(args.input)
     if not input_path.exists():
         raise FileNotFoundError(f"Input CSV not found: {input_path}")
 
-    df = pd.read_csv(input_path)
-    results, finals = run_pipeline(df, cfg, dry_run=args.dry_run, max_retries=args.max_retries)
-
-    results_df = pd.DataFrame(results)
     results_csv_path = Path(args.results_csv)
-    results_df.to_csv(results_csv_path, index=False)
-
     final_json_path = Path(args.final_json)
-    final_json_path.parent.mkdir(parents=True, exist_ok=True)
-    with final_json_path.open("w", encoding="utf-8") as f:
-        json.dump(finals, f, indent=2, ensure_ascii=False)
+    final_jsonl_path = Path(args.final_jsonl) if args.final_jsonl else Path(args.final_json).with_suffix(".jsonl")
+
+    if not args.resume and not args.overwrite:
+        existing = [p for p in (results_csv_path, final_json_path, final_jsonl_path) if p.exists() and p.stat().st_size > 0]
+        if existing:
+            raise FileExistsError(
+                "Output file(s) already exist. Use --resume to continue, or --overwrite to replace: "
+                + ", ".join(str(p) for p in existing)
+            )
+
+    if args.overwrite and not args.resume:
+        for p in (results_csv_path, final_json_path, final_jsonl_path):
+            if p.exists():
+                p.unlink()
+
+    df = pd.read_csv(input_path).reset_index(drop=True)
+    start_idx = max(0, int(args.start_index))
+    end_idx = int(args.end_index) if args.end_index is not None else None
+
+    if args.resume:
+        _backfill_jsonl_from_results_csv(results_csv_path=results_csv_path, final_jsonl_path=final_jsonl_path)
+
+    completed = set()
+    if args.resume:
+        completed |= _load_completed_indices_from_results_csv(results_csv_path)
+        completed |= _load_completed_indices_from_jsonl(final_jsonl_path)
+
+    openai_client = None
+    gemini_client = None
+    if not args.dry_run:
+        openai_client = _openai_client()
+        if cfg.annotator_b_provider == "gemini":
+            gemini_client = _gemini_client()
+
+    processed_since_materialize = 0
+
+    try:
+        for idx, row in tqdm(df.iterrows(), total=len(df)):
+            if idx < start_idx:
+                continue
+            if end_idx is not None and idx >= end_idx:
+                break
+            if args.resume and idx in completed:
+                continue
+
+            title, topic, source, rating, body, article_block = build_article_text(row)
+
+            if args.dry_run:
+                obj_a, raw_a = annotate_dry_run(title, topic, source, rating, body)
+                obj_b, raw_b = annotate_dry_run(title, topic, source, rating, body)
+                obj_c, raw_c = annotate_dry_run(title, topic, source, rating, body)
+                final_obj, final_raw = annotate_dry_run(title, topic, source, rating, body)
+            else:
+                obj_a, raw_a = annotate_with_openai(
+                    openai_client,
+                    "You are Annotator A, a political communication scholar. Strictly follow the codebook and JSON schema. Be conservative: if unsure, choose No Polarizing language.",
+                    article_block,
+                    title,
+                    topic,
+                    source,
+                    rating,
+                    body=body,
+                    model=cfg.openai_model,
+                    temperature=cfg.temperature,
+                    max_retries=args.max_retries,
+                )
+
+                if cfg.annotator_b_provider == "gemini":
+                    obj_b, raw_b = annotate_with_gemini(
+                        gemini_client,
+                        "You are Annotator B, a linguistics/discourse analyst. Your strength is correct subcategory selection. Be conservative: avoid over-labeling; if unsure, choose No Polarizing language.",
+                        article_block,
+                        title,
+                        topic,
+                        source,
+                        rating,
+                        body=body,
+                        model=cfg.gemini_model,
+                        max_retries=args.max_retries,
+                    )
+                elif cfg.annotator_b_provider == "openai":
+                    obj_b, raw_b = annotate_with_openai(
+                        openai_client,
+                        "You are Annotator B, a linguistics/discourse analyst. Your strength is correct subcategory selection. Be conservative: avoid over-labeling; if unsure, choose No Polarizing language.",
+                        article_block,
+                        title,
+                        topic,
+                        source,
+                        rating,
+                        body=body,
+                        model=cfg.openai_model,
+                        temperature=cfg.temperature,
+                        max_retries=args.max_retries,
+                    )
+                else:
+                    raise ValueError(f"Unknown annotator_b_provider: {cfg.annotator_b_provider!r}")
+
+                obj_c, raw_c = annotate_with_openai(
+                    openai_client,
+                    "You are Annotator C, a conservative/high-precision media psychology expert. Be conservative: only label when explicit; if unsure, choose No Polarizing language.",
+                    article_block,
+                    title,
+                    topic,
+                    source,
+                    rating,
+                    body=body,
+                    model=cfg.openai_model,
+                    temperature=cfg.temperature,
+                    max_retries=args.max_retries,
+                )
+
+                final_obj, final_raw = adjudicate_with_openai(
+                    openai_client,
+                    article_block,
+                    title,
+                    topic,
+                    source,
+                    rating,
+                    obj_a,
+                    obj_b,
+                    obj_c,
+                    body=body,
+                    model=cfg.adjudicator_model,
+                    temperature=cfg.temperature,
+                    max_retries=args.max_retries,
+                    paragraph_policy=cfg.paragraph_policy,
+                )
+
+            _append_results_row(
+                results_csv_path,
+                {
+                    "index": idx,
+                    "title": title,
+                    "topic": topic,
+                    "source": source,
+                    "rating": rating,
+                    "annotator_A_json": raw_a,
+                    "annotator_B_json": raw_b,
+                    "annotator_C_json": raw_c,
+                    "final_json": final_raw,
+                },
+            )
+            _append_final_jsonl(final_jsonl_path, index=idx, final_obj=final_obj)
+            completed.add(idx)
+
+            processed_since_materialize += 1
+            if args.checkpoint_every > 0 and processed_since_materialize >= args.checkpoint_every:
+                _materialize_final_json(final_jsonl_path=final_jsonl_path, final_json_path=final_json_path)
+                processed_since_materialize = 0
+    except KeyboardInterrupt:
+        _materialize_final_json(final_jsonl_path=final_jsonl_path, final_json_path=final_json_path)
+        print("\nInterrupted. Checkpoints written; re-run with --resume to continue.")
+        return 130
+    except Exception:
+        _materialize_final_json(final_jsonl_path=final_jsonl_path, final_json_path=final_json_path)
+        raise
+
+    _materialize_final_json(final_jsonl_path=final_jsonl_path, final_json_path=final_json_path)
 
     print(f"Wrote results CSV: {results_csv_path}")
     print(f"Wrote final JSON: {final_json_path}")
+    print(f"Wrote final JSONL (checkpoint): {final_jsonl_path}")
     return 0
 
 

@@ -1,0 +1,146 @@
+{
+  "exact_vs_exact_1_8": {
+    "llm_path": "src/llm_annotation_results/final_annotations_3annotators.json",
+    "gold_path": "src/mturk_results/1-8_hit_gold_standard_output.json",
+    "confidence_weighting": true,
+    "enforce_one_annotation_per_paragraph": false,
+    "overall": {
+      "article_match": {
+        "precision": 0.579,
+        "recall": 0.579,
+        "f1": 0.579,
+        "correct_matches": 22,
+        "total_llm": 38,
+        "total_gold": 38
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 22,
+        "total_matches": 22
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 22,
+          "tp": 22,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 22,
+          "tp": 22,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "weighted_article_match": {
+        "precision": 0.428,
+        "recall": 0.553,
+        "f1": 0.483,
+        "tp_weight": 11.98,
+        "total_gold_weight": 21.65,
+        "fp": 16
+      }
+    },
+    "n_articles_compared": 12
+  },
+  "min_vs_min_1_8": {
+    "llm_path": "src/llm_annotation_results/multi_llm_annotations/multi_final_annotations_3annotators.json",
+    "gold_path": "src/mturk_results/multi_1-8_hit_gold_standard_output.json",
+    "confidence_weighting": true,
+    "enforce_one_annotation_per_paragraph": false,
+    "overall": {
+      "article_match": {
+        "precision": 0.5,
+        "recall": 0.564,
+        "f1": 0.53,
+        "correct_matches": 22,
+        "total_llm": 44,
+        "total_gold": 39
+      },
+      "category_match": {
+        "precision": 0.909,
+        "recall": 0.909,
+        "f1": 0.909,
+        "correct_matches": 20,
+        "total_matches": 22
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 20,
+          "tp": 20,
+          "fp": 0,
+          "fn": 0
+        },
+        "persuasive propaganda": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "bandwagon": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "exaggeration": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 20,
+          "tp": 20,
+          "fp": 0,
+          "fn": 0
+        },
+        "slogans": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "weighted_article_match": {
+        "precision": 0.368,
+        "recall": 0.579,
+        "f1": 0.45,
+        "tp_weight": 12.82,
+        "total_gold_weight": 22.15,
+        "fp": 22
+      }
+    },
+    "n_articles_compared": 12
+  }
+}

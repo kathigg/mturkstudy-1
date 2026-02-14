@@ -1,6 +1,9 @@
 # Updates.md
 Written by Kathleen Higgins, begun on January 8th (though I've been working on the project for a year and a half, now) to include recent updates so I can go back and check what I did. 
 
+## February 14th, 10:59am:
+![alt text](image.png)
+
 ## February 5th, 10:04pm:
 Explanation of LLM scripts:
 ```
