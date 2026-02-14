@@ -56,12 +56,10 @@ def spans_match(span1, span2, title1=None, title2=None, para1=None, para2=None):
 # Paths for JSON files
 # ------------------------
 BASE_DIR = Path(__file__).resolve().parent.parent
-# LLM_PATH = BASE_DIR / "dataset_comparison_scripts/LLM_Commitee_test_2.json"
-# LLM_PATH = BASE_DIR / "mturk_results/gpt-5-twelve_article_annotations.json"
-# LLM_PATH = BASE_DIR / "mturk_results/11-20_hit_gold_standard_output.json"
-LLM_PATH = BASE_DIR / "llm_annotation_results/multi_llm_annotations/multi_final_annotations_3annotators.json"
-GOLD_PATH = BASE_DIR / "mturk_results/1-20_hit_gold_standard_output.json"
-# GOLD_PATH = BASE_DIR / "mturk_results/gold_standard_output.json"
+# LLM_PATH = BASE_DIR / "llm_annotation_results/1-20/1-20_llm_exact_one_final_annotations_3annotators.json"
+# GOLD_PATH = BASE_DIR / "mturk_results/1-20/1-20_human_exact_one_gold_standard_output.json"
+LLM_PATH = BASE_DIR / "llm_annotation_results/1-20/1-20_llm_min_one_final_annotations_3annotators.json"
+GOLD_PATH = BASE_DIR / "mturk_results/1-20/1-20_human_min_one_gold_standard_output.json"
 DEBUG_TITLE = None  # Set to a string to print matched pairs for one title.
 
 # Toggle confidence-weighted metrics (True = use gold confidence weights; False = treat all gold weights as 1.0).

@@ -1,0 +1,726 @@
+{
+  "llm_path": "src/llm_annotation_results/1-20/1-20_llm_exact_one_final_annotations_3annotators.json",
+  "gold_path": "src/mturk_results/1-20/1-20_human_exact_one_gold_standard_output.json",
+  "overall": {
+    "article_match": {
+      "precision": 0.842,
+      "recall": 0.842,
+      "f1": 0.842,
+      "correct_matches": 32,
+      "total_llm": 38,
+      "total_gold": 38
+    },
+    "category_match": {
+      "precision": 0.969,
+      "recall": 0.969,
+      "f1": 0.969,
+      "correct_matches": 31,
+      "total_matches": 32
+    },
+    "category_match_per_class": {
+      "inflammatory language": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "no polarizing language": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 31,
+        "tp": 31,
+        "fp": 0,
+        "fn": 0
+      },
+      "persuasive propaganda": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      }
+    },
+    "subcategory_match_per_class": {
+      "exaggeration": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "no polarizing language": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 31,
+        "tp": 31,
+        "fp": 0,
+        "fn": 0
+      },
+      "scapegoating": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "weighted_article_match": {
+      "precision": 0.807,
+      "recall": 0.867,
+      "f1": 0.836,
+      "tp_weight": 25.1,
+      "total_gold_weight": 28.95,
+      "fp": 6
+    }
+  },
+  "per_article": {
+    "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 4,
+        "total_llm": 4,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 4,
+        "total_matches": 4
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 3.34,
+        "total_gold_weight": 3.34,
+        "fp": 0,
+        "matched": 4,
+        "total_llm": 4,
+        "total_gold": 4
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "Ex-Posen mayor pleads guilty to embezzling village funds": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 3,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 3,
+        "total_matches": 3
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 2.34,
+        "total_gold_weight": 2.34,
+        "fp": 0,
+        "matched": 3,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "Four top residencies now offered to local artists, thanks to Oolite": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 2,
+        "total_llm": 2,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 2,
+        "total_matches": 2
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 1.67,
+        "total_gold_weight": 1.67,
+        "fp": 0,
+        "matched": 2,
+        "total_llm": 2,
+        "total_gold": 2
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "Frozen sperm bank could be set up in space, study suggests": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 1.0,
+        "total_gold_weight": 1.0,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "get these trending washington restaurants on your radar today": {
+      "article_match": {
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1": 0.6,
+        "correct_matches": 3,
+        "total_llm": 5,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 3,
+        "total_matches": 3
+      },
+      "weighted_article_match": {
+        "precision": 0.572,
+        "recall": 0.666,
+        "f1": 0.615,
+        "tp_weight": 2.67,
+        "total_gold_weight": 4.01,
+        "fp": 2,
+        "matched": 3,
+        "total_llm": 5,
+        "total_gold": 5
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "Missouri's only abortion clinic to remain open after judge's injunction holds": {
+      "article_match": {
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1": 0.6,
+        "correct_matches": 3,
+        "total_llm": 5,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 3,
+        "total_matches": 3
+      },
+      "weighted_article_match": {
+        "precision": 0.454,
+        "recall": 0.587,
+        "f1": 0.512,
+        "tp_weight": 1.66,
+        "total_gold_weight": 2.83,
+        "fp": 2,
+        "matched": 3,
+        "total_llm": 5,
+        "total_gold": 5
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "phoenix chief says police response to incident with 4-year-old is 'unacceptable'": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 2,
+        "total_llm": 2,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 2,
+        "total_matches": 2
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 1.33,
+        "total_gold_weight": 1.33,
+        "fp": 0,
+        "matched": 2,
+        "total_llm": 2,
+        "total_gold": 2
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "port of l.a. sued after canceling agreement for a shipping container facility": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 3,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0.667,
+        "recall": 0.667,
+        "f1": 0.667,
+        "correct_matches": 2,
+        "total_matches": 3
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 1.83,
+        "total_gold_weight": 1.83,
+        "fp": 0,
+        "matched": 3,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "persuasive propaganda": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "exaggeration": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "scapegoating": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      }
+    },
+    "Protest in Madrid as conservatives suspend ban on most polluting cars": {
+      "article_match": {
+        "precision": 0.333,
+        "recall": 0.333,
+        "f1": 0.333,
+        "correct_matches": 1,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 0.333,
+        "recall": 0.427,
+        "f1": 0.375,
+        "tp_weight": 1.0,
+        "total_gold_weight": 2.34,
+        "fp": 2,
+        "matched": 1,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 3,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 3,
+        "total_matches": 3
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 2.34,
+        "total_gold_weight": 2.34,
+        "fp": 0,
+        "matched": 3,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "rosemount recreation center plan gets positive response so far": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 4,
+        "total_llm": 4,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 4,
+        "total_matches": 4
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 3.67,
+        "total_gold_weight": 3.67,
+        "fp": 0,
+        "matched": 4,
+        "total_llm": 4,
+        "total_gold": 4
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 3,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 3,
+        "total_matches": 3
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 2.25,
+        "total_gold_weight": 2.25,
+        "fp": 0,
+        "matched": 3,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "no polarizing language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  },
+  "n_articles_compared": 12
+}
