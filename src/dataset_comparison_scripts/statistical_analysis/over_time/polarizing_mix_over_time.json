@@ -1,0 +1,68 @@
+{
+  "llm_path": "src/llm_annotation_results/multi_llm_annotations/multi_final_annotations_3annotators.json",
+  "runs": [
+    {
+      "date": "2025-08-02",
+      "gold_path": "src/mturk_results/archived_mturk_results/8-2/8-2_human_min_one_gold_standard_output.json",
+      "shared_titles": 0,
+      "llm_pol": 0,
+      "llm_npl": 0,
+      "human_pol": 0,
+      "human_npl": 0
+    },
+    {
+      "date": "2025-09-26",
+      "gold_path": "src/mturk_results/archived_mturk_results/9-26/9-26_human_min_one_gold_standard_output.json",
+      "shared_titles": 0,
+      "llm_pol": 0,
+      "llm_npl": 0,
+      "human_pol": 0,
+      "human_npl": 0
+    },
+    {
+      "date": "2025-11-09",
+      "gold_path": "src/mturk_results/archived_mturk_results/11-9/11-9_human_min_one_gold_standard_output.json",
+      "shared_titles": 0,
+      "llm_pol": 0,
+      "llm_npl": 0,
+      "human_pol": 0,
+      "human_npl": 0
+    },
+    {
+      "date": "2025-11-20",
+      "gold_path": "src/mturk_results/archived_mturk_results/11-20/11-20_human_min_one_gold_standard_output.json",
+      "shared_titles": 12,
+      "llm_pol": 15,
+      "llm_npl": 29,
+      "human_pol": 19,
+      "human_npl": 22
+    },
+    {
+      "date": "2025-12-22",
+      "gold_path": "src/mturk_results/archived_mturk_results/12-22/12-22_human_min_one_gold_standard_output.json",
+      "shared_titles": 12,
+      "llm_pol": 15,
+      "llm_npl": 29,
+      "human_pol": 40,
+      "human_npl": 6
+    },
+    {
+      "date": "2026-01-08",
+      "gold_path": "src/mturk_results/multi_1-8_hit_gold_standard_output.json",
+      "shared_titles": 12,
+      "llm_pol": 15,
+      "llm_npl": 29,
+      "human_pol": 17,
+      "human_npl": 22
+    },
+    {
+      "date": "2026-01-20",
+      "gold_path": "src/mturk_results/1-20/1-20_human_min_one_gold_standard_output.json",
+      "shared_titles": 12,
+      "llm_pol": 15,
+      "llm_npl": 29,
+      "human_pol": 7,
+      "human_npl": 31
+    }
+  ]
+}
