@@ -1,0 +1,60 @@
+{
+  "hits": [
+    {
+      "date": "2025-08-02",
+      "llm_used": "multi_min12",
+      "n_articles_compared": 36,
+      "article_precision": 0.0,
+      "article_recall": 0.0,
+      "article_f1": 0
+    },
+    {
+      "date": "2025-09-26",
+      "llm_used": "ashrey_full",
+      "n_articles_compared": 15,
+      "article_precision": 0.136,
+      "article_recall": 0.393,
+      "article_f1": 0.202
+    },
+    {
+      "date": "2025-11-09",
+      "llm_used": "ashrey_full",
+      "n_articles_compared": 15,
+      "article_precision": 0.247,
+      "article_recall": 0.465,
+      "article_f1": 0.323
+    },
+    {
+      "date": "2025-11-20",
+      "llm_used": "multi_min12",
+      "n_articles_compared": 12,
+      "article_precision": 0.455,
+      "article_recall": 0.488,
+      "article_f1": 0.471
+    },
+    {
+      "date": "2025-12-22",
+      "llm_used": "multi_min12",
+      "n_articles_compared": 12,
+      "article_precision": 0.205,
+      "article_recall": 0.196,
+      "article_f1": 0.2
+    },
+    {
+      "date": "2026-01-08",
+      "llm_used": "multi_min12",
+      "n_articles_compared": 12,
+      "article_precision": 0.5,
+      "article_recall": 0.564,
+      "article_f1": 0.53
+    },
+    {
+      "date": "2026-01-20",
+      "llm_used": "multi_min12",
+      "n_articles_compared": 12,
+      "article_precision": 0.659,
+      "article_recall": 0.763,
+      "article_f1": 0.707
+    }
+  ]
+}

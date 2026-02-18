@@ -1,0 +1,1409 @@
+{
+  "multi_min12": {
+    "llm_path": "src/llm_annotation_results/multi_llm_annotations/multi_final_annotations_3annotators.json",
+    "runs": [
+      {
+        "date": "2025-08-02",
+        "gold_path": "src/mturk_results/archived_mturk_results/8-2/8-2_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 36,
+        "article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "correct_matches": 0,
+          "total_llm": 132,
+          "total_gold": 36
+        },
+        "category_match": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "correct_matches": 0,
+          "total_matches": 0
+        },
+        "weighted_article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp_weight": 0.0,
+          "total_gold_weight": 30.0,
+          "fp": 132
+        }
+      },
+      {
+        "date": "2025-09-26",
+        "gold_path": "src/mturk_results/archived_mturk_results/9-26/9-26_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.045,
+          "recall": 0.083,
+          "f1": 0.059,
+          "correct_matches": 2,
+          "total_llm": 44,
+          "total_gold": 24
+        },
+        "category_match": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "correct_matches": 2,
+          "total_matches": 2
+        },
+        "weighted_article_match": {
+          "precision": 0.045,
+          "recall": 0.205,
+          "f1": 0.074,
+          "tp_weight": 2.0,
+          "total_gold_weight": 9.77,
+          "fp": 42
+        }
+      },
+      {
+        "date": "2025-11-09",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-9/11-9_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "correct_matches": 0,
+          "total_llm": 44,
+          "total_gold": 40
+        },
+        "category_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "correct_matches": 0,
+          "total_matches": 0
+        },
+        "weighted_article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp_weight": 0.0,
+          "total_gold_weight": 15.4,
+          "fp": 44
+        }
+      },
+      {
+        "date": "2025-11-20",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-20/11-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.455,
+          "recall": 0.488,
+          "f1": 0.471,
+          "correct_matches": 20,
+          "total_llm": 44,
+          "total_gold": 41
+        },
+        "category_match": {
+          "precision": 0.95,
+          "recall": 0.95,
+          "f1": 0.95,
+          "correct_matches": 19,
+          "total_matches": 20
+        },
+        "weighted_article_match": {
+          "precision": 0.246,
+          "recall": 0.377,
+          "f1": 0.298,
+          "tp_weight": 7.85,
+          "total_gold_weight": 20.84,
+          "fp": 24
+        }
+      },
+      {
+        "date": "2025-12-22",
+        "gold_path": "src/mturk_results/archived_mturk_results/12-22/12-22_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.205,
+          "recall": 0.196,
+          "f1": 0.2,
+          "correct_matches": 9,
+          "total_llm": 44,
+          "total_gold": 46
+        },
+        "category_match": {
+          "precision": 0.556,
+          "recall": 0.556,
+          "f1": 0.556,
+          "correct_matches": 5,
+          "total_matches": 9
+        },
+        "weighted_article_match": {
+          "precision": 0.143,
+          "recall": 0.23,
+          "f1": 0.176,
+          "tp_weight": 5.83,
+          "total_gold_weight": 25.3,
+          "fp": 35
+        }
+      },
+      {
+        "date": "2026-01-08",
+        "gold_path": "src/mturk_results/multi_1-8_hit_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.5,
+          "recall": 0.564,
+          "f1": 0.53,
+          "correct_matches": 22,
+          "total_llm": 44,
+          "total_gold": 39
+        },
+        "category_match": {
+          "precision": 0.909,
+          "recall": 0.909,
+          "f1": 0.909,
+          "correct_matches": 20,
+          "total_matches": 22
+        },
+        "weighted_article_match": {
+          "precision": 0.368,
+          "recall": 0.579,
+          "f1": 0.45,
+          "tp_weight": 12.82,
+          "total_gold_weight": 22.15,
+          "fp": 22
+        }
+      },
+      {
+        "date": "2026-01-20",
+        "gold_path": "src/mturk_results/1-20/1-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.659,
+          "recall": 0.763,
+          "f1": 0.707,
+          "correct_matches": 29,
+          "total_llm": 44,
+          "total_gold": 38
+        },
+        "category_match": {
+          "precision": 0.931,
+          "recall": 0.931,
+          "f1": 0.931,
+          "correct_matches": 27,
+          "total_matches": 29
+        },
+        "weighted_article_match": {
+          "precision": 0.61,
+          "recall": 0.824,
+          "f1": 0.701,
+          "tp_weight": 23.44,
+          "total_gold_weight": 28.45,
+          "fp": 15
+        }
+      }
+    ]
+  },
+  "ashrey_full": {
+    "llm_path": "src/llm_annotation_results/ashrey_original_full/gpt-5-mini-annotations (2).json",
+    "runs": [
+      {
+        "date": "2025-08-02",
+        "gold_path": "src/mturk_results/archived_mturk_results/8-2/8-2_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 3,
+        "article_match": {
+          "precision": 0.059,
+          "recall": 0.333,
+          "f1": 0.1,
+          "correct_matches": 1,
+          "total_llm": 17,
+          "total_gold": 3
+        },
+        "category_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "correct_matches": 0,
+          "total_matches": 1
+        },
+        "weighted_article_match": {
+          "precision": 0.059,
+          "recall": 0.4,
+          "f1": 0.103,
+          "tp_weight": 1.0,
+          "total_gold_weight": 2.5,
+          "fp": 16
+        }
+      },
+      {
+        "date": "2025-09-26",
+        "gold_path": "src/mturk_results/archived_mturk_results/9-26/9-26_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 15,
+        "article_match": {
+          "precision": 0.136,
+          "recall": 0.393,
+          "f1": 0.202,
+          "correct_matches": 11,
+          "total_llm": 81,
+          "total_gold": 28
+        },
+        "category_match": {
+          "precision": 0.364,
+          "recall": 0.364,
+          "f1": 0.364,
+          "correct_matches": 4,
+          "total_matches": 11
+        },
+        "weighted_article_match": {
+          "precision": 0.062,
+          "recall": 0.359,
+          "f1": 0.106,
+          "tp_weight": 4.64,
+          "total_gold_weight": 12.94,
+          "fp": 70
+        }
+      },
+      {
+        "date": "2025-11-09",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-9/11-9_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 15,
+        "article_match": {
+          "precision": 0.247,
+          "recall": 0.465,
+          "f1": 0.323,
+          "correct_matches": 20,
+          "total_llm": 81,
+          "total_gold": 43
+        },
+        "category_match": {
+          "precision": 0.35,
+          "recall": 0.35,
+          "f1": 0.35,
+          "correct_matches": 7,
+          "total_matches": 20
+        },
+        "weighted_article_match": {
+          "precision": 0.115,
+          "recall": 0.444,
+          "f1": 0.183,
+          "tp_weight": 7.95,
+          "total_gold_weight": 17.9,
+          "fp": 61
+        }
+      },
+      {
+        "date": "2025-11-20",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-20/11-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.078,
+          "recall": 0.122,
+          "f1": 0.095,
+          "correct_matches": 5,
+          "total_llm": 64,
+          "total_gold": 41
+        },
+        "category_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "correct_matches": 0,
+          "total_matches": 5
+        },
+        "weighted_article_match": {
+          "precision": 0.061,
+          "recall": 0.184,
+          "f1": 0.092,
+          "tp_weight": 3.84,
+          "total_gold_weight": 20.84,
+          "fp": 59
+        }
+      },
+      {
+        "date": "2025-12-22",
+        "gold_path": "src/mturk_results/archived_mturk_results/12-22/12-22_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.156,
+          "recall": 0.217,
+          "f1": 0.182,
+          "correct_matches": 10,
+          "total_llm": 64,
+          "total_gold": 46
+        },
+        "category_match": {
+          "precision": 0.1,
+          "recall": 0.1,
+          "f1": 0.1,
+          "correct_matches": 1,
+          "total_matches": 10
+        },
+        "weighted_article_match": {
+          "precision": 0.095,
+          "recall": 0.224,
+          "f1": 0.133,
+          "tp_weight": 5.66,
+          "total_gold_weight": 25.3,
+          "fp": 54
+        }
+      },
+      {
+        "date": "2026-01-08",
+        "gold_path": "src/mturk_results/multi_1-8_hit_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.078,
+          "recall": 0.128,
+          "f1": 0.097,
+          "correct_matches": 5,
+          "total_llm": 64,
+          "total_gold": 39
+        },
+        "category_match": {
+          "precision": 0.2,
+          "recall": 0.2,
+          "f1": 0.2,
+          "correct_matches": 1,
+          "total_matches": 5
+        },
+        "weighted_article_match": {
+          "precision": 0.048,
+          "recall": 0.135,
+          "f1": 0.071,
+          "tp_weight": 3.0,
+          "total_gold_weight": 22.15,
+          "fp": 59
+        }
+      },
+      {
+        "date": "2026-01-20",
+        "gold_path": "src/mturk_results/1-20/1-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.078,
+          "recall": 0.132,
+          "f1": 0.098,
+          "correct_matches": 5,
+          "total_llm": 64,
+          "total_gold": 38
+        },
+        "category_match": {
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4,
+          "correct_matches": 2,
+          "total_matches": 5
+        },
+        "weighted_article_match": {
+          "precision": 0.046,
+          "recall": 0.1,
+          "f1": 0.063,
+          "tp_weight": 2.84,
+          "total_gold_weight": 28.45,
+          "fp": 59
+        }
+      }
+    ]
+  },
+  "v3": {
+    "llm_path": "src/llm_annotation_results/archived_llm_annotations/v3_final_annotations_3annotators.json",
+    "runs": [
+      {
+        "date": "2025-08-02",
+        "gold_path": "src/mturk_results/archived_mturk_results/8-2/8-2_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 36,
+        "article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "correct_matches": 0,
+          "total_llm": 96,
+          "total_gold": 36
+        },
+        "category_match": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "correct_matches": 0,
+          "total_matches": 0
+        },
+        "weighted_article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp_weight": 0.0,
+          "total_gold_weight": 30.0,
+          "fp": 96
+        }
+      },
+      {
+        "date": "2025-09-26",
+        "gold_path": "src/mturk_results/archived_mturk_results/9-26/9-26_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.062,
+          "recall": 0.083,
+          "f1": 0.071,
+          "correct_matches": 2,
+          "total_llm": 32,
+          "total_gold": 24
+        },
+        "category_match": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "correct_matches": 2,
+          "total_matches": 2
+        },
+        "weighted_article_match": {
+          "precision": 0.062,
+          "recall": 0.205,
+          "f1": 0.096,
+          "tp_weight": 2.0,
+          "total_gold_weight": 9.77,
+          "fp": 30
+        }
+      },
+      {
+        "date": "2025-11-09",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-9/11-9_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "correct_matches": 0,
+          "total_llm": 32,
+          "total_gold": 40
+        },
+        "category_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "correct_matches": 0,
+          "total_matches": 0
+        },
+        "weighted_article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp_weight": 0.0,
+          "total_gold_weight": 15.4,
+          "fp": 32
+        }
+      },
+      {
+        "date": "2025-11-20",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-20/11-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.406,
+          "recall": 0.317,
+          "f1": 0.356,
+          "correct_matches": 13,
+          "total_llm": 32,
+          "total_gold": 41
+        },
+        "category_match": {
+          "precision": 0.769,
+          "recall": 0.769,
+          "f1": 0.769,
+          "correct_matches": 10,
+          "total_matches": 13
+        },
+        "weighted_article_match": {
+          "precision": 0.224,
+          "recall": 0.262,
+          "f1": 0.241,
+          "tp_weight": 5.47,
+          "total_gold_weight": 20.84,
+          "fp": 19
+        }
+      },
+      {
+        "date": "2025-12-22",
+        "gold_path": "src/mturk_results/archived_mturk_results/12-22/12-22_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.125,
+          "recall": 0.087,
+          "f1": 0.103,
+          "correct_matches": 4,
+          "total_llm": 32,
+          "total_gold": 46
+        },
+        "category_match": {
+          "precision": 0.25,
+          "recall": 0.25,
+          "f1": 0.25,
+          "correct_matches": 1,
+          "total_matches": 4
+        },
+        "weighted_article_match": {
+          "precision": 0.069,
+          "recall": 0.082,
+          "f1": 0.075,
+          "tp_weight": 2.07,
+          "total_gold_weight": 25.3,
+          "fp": 28
+        }
+      },
+      {
+        "date": "2026-01-08",
+        "gold_path": "src/mturk_results/multi_1-8_hit_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.344,
+          "recall": 0.282,
+          "f1": 0.31,
+          "correct_matches": 11,
+          "total_llm": 32,
+          "total_gold": 39
+        },
+        "category_match": {
+          "precision": 0.909,
+          "recall": 0.909,
+          "f1": 0.909,
+          "correct_matches": 10,
+          "total_matches": 11
+        },
+        "weighted_article_match": {
+          "precision": 0.217,
+          "recall": 0.263,
+          "f1": 0.238,
+          "tp_weight": 5.82,
+          "total_gold_weight": 22.15,
+          "fp": 21
+        }
+      },
+      {
+        "date": "2026-01-20",
+        "gold_path": "src/mturk_results/1-20/1-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.531,
+          "recall": 0.447,
+          "f1": 0.486,
+          "correct_matches": 17,
+          "total_llm": 32,
+          "total_gold": 38
+        },
+        "category_match": {
+          "precision": 0.882,
+          "recall": 0.882,
+          "f1": 0.882,
+          "correct_matches": 15,
+          "total_matches": 17
+        },
+        "weighted_article_match": {
+          "precision": 0.469,
+          "recall": 0.466,
+          "f1": 0.468,
+          "tp_weight": 13.26,
+          "total_gold_weight": 28.45,
+          "fp": 15
+        }
+      }
+    ]
+  },
+  "v4": {
+    "llm_path": "src/llm_annotation_results/archived_llm_annotations/v4_final_annotations_3annotators (2).json",
+    "runs": [
+      {
+        "date": "2025-08-02",
+        "gold_path": "src/mturk_results/archived_mturk_results/8-2/8-2_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 36,
+        "article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "correct_matches": 0,
+          "total_llm": 87,
+          "total_gold": 36
+        },
+        "category_match": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "correct_matches": 0,
+          "total_matches": 0
+        },
+        "weighted_article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp_weight": 0.0,
+          "total_gold_weight": 30.0,
+          "fp": 87
+        }
+      },
+      {
+        "date": "2025-09-26",
+        "gold_path": "src/mturk_results/archived_mturk_results/9-26/9-26_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.069,
+          "recall": 0.083,
+          "f1": 0.075,
+          "correct_matches": 2,
+          "total_llm": 29,
+          "total_gold": 24
+        },
+        "category_match": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "correct_matches": 2,
+          "total_matches": 2
+        },
+        "weighted_article_match": {
+          "precision": 0.069,
+          "recall": 0.205,
+          "f1": 0.103,
+          "tp_weight": 2.0,
+          "total_gold_weight": 9.77,
+          "fp": 27
+        }
+      },
+      {
+        "date": "2025-11-09",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-9/11-9_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.034,
+          "recall": 0.025,
+          "f1": 0.029,
+          "correct_matches": 1,
+          "total_llm": 29,
+          "total_gold": 40
+        },
+        "category_match": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "correct_matches": 1,
+          "total_matches": 1
+        },
+        "weighted_article_match": {
+          "precision": 0.012,
+          "recall": 0.021,
+          "f1": 0.015,
+          "tp_weight": 0.33,
+          "total_gold_weight": 15.4,
+          "fp": 28
+        }
+      },
+      {
+        "date": "2025-11-20",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-20/11-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.379,
+          "recall": 0.268,
+          "f1": 0.314,
+          "correct_matches": 11,
+          "total_llm": 29,
+          "total_gold": 41
+        },
+        "category_match": {
+          "precision": 0.909,
+          "recall": 0.909,
+          "f1": 0.909,
+          "correct_matches": 10,
+          "total_matches": 11
+        },
+        "weighted_article_match": {
+          "precision": 0.216,
+          "recall": 0.238,
+          "f1": 0.227,
+          "tp_weight": 4.97,
+          "total_gold_weight": 20.84,
+          "fp": 18
+        }
+      },
+      {
+        "date": "2025-12-22",
+        "gold_path": "src/mturk_results/archived_mturk_results/12-22/12-22_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.069,
+          "recall": 0.043,
+          "f1": 0.053,
+          "correct_matches": 2,
+          "total_llm": 29,
+          "total_gold": 46
+        },
+        "category_match": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "correct_matches": 1,
+          "total_matches": 2
+        },
+        "weighted_article_match": {
+          "precision": 0.024,
+          "recall": 0.026,
+          "f1": 0.025,
+          "tp_weight": 0.66,
+          "total_gold_weight": 25.3,
+          "fp": 27
+        }
+      },
+      {
+        "date": "2026-01-08",
+        "gold_path": "src/mturk_results/multi_1-8_hit_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.241,
+          "recall": 0.179,
+          "f1": 0.206,
+          "correct_matches": 7,
+          "total_llm": 29,
+          "total_gold": 39
+        },
+        "category_match": {
+          "precision": 0.857,
+          "recall": 0.857,
+          "f1": 0.857,
+          "correct_matches": 6,
+          "total_matches": 7
+        },
+        "weighted_article_match": {
+          "precision": 0.137,
+          "recall": 0.158,
+          "f1": 0.147,
+          "tp_weight": 3.49,
+          "total_gold_weight": 22.15,
+          "fp": 22
+        }
+      },
+      {
+        "date": "2026-01-20",
+        "gold_path": "src/mturk_results/1-20/1-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.379,
+          "recall": 0.289,
+          "f1": 0.328,
+          "correct_matches": 11,
+          "total_llm": 29,
+          "total_gold": 38
+        },
+        "category_match": {
+          "precision": 0.909,
+          "recall": 0.909,
+          "f1": 0.909,
+          "correct_matches": 10,
+          "total_matches": 11
+        },
+        "weighted_article_match": {
+          "precision": 0.331,
+          "recall": 0.314,
+          "f1": 0.322,
+          "tp_weight": 8.92,
+          "total_gold_weight": 28.45,
+          "fp": 18
+        }
+      }
+    ]
+  },
+  "paragraph_final": {
+    "llm_path": "src/llm_annotation_results/archived_llm_annotations/paragraph_final_annotations_3annotators.json",
+    "runs": [
+      {
+        "date": "2025-08-02",
+        "gold_path": "src/mturk_results/archived_mturk_results/8-2/8-2_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 36,
+        "article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "correct_matches": 0,
+          "total_llm": 156,
+          "total_gold": 36
+        },
+        "category_match": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "correct_matches": 0,
+          "total_matches": 0
+        },
+        "weighted_article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp_weight": 0.0,
+          "total_gold_weight": 30.0,
+          "fp": 156
+        }
+      },
+      {
+        "date": "2025-09-26",
+        "gold_path": "src/mturk_results/archived_mturk_results/9-26/9-26_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.077,
+          "recall": 0.167,
+          "f1": 0.105,
+          "correct_matches": 4,
+          "total_llm": 52,
+          "total_gold": 24
+        },
+        "category_match": {
+          "precision": 0.25,
+          "recall": 0.25,
+          "f1": 0.25,
+          "correct_matches": 1,
+          "total_matches": 4
+        },
+        "weighted_article_match": {
+          "precision": 0.04,
+          "recall": 0.204,
+          "f1": 0.067,
+          "tp_weight": 1.99,
+          "total_gold_weight": 9.77,
+          "fp": 48
+        }
+      },
+      {
+        "date": "2025-11-09",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-9/11-9_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.096,
+          "recall": 0.125,
+          "f1": 0.109,
+          "correct_matches": 5,
+          "total_llm": 52,
+          "total_gold": 40
+        },
+        "category_match": {
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4,
+          "correct_matches": 2,
+          "total_matches": 5
+        },
+        "weighted_article_match": {
+          "precision": 0.037,
+          "recall": 0.118,
+          "f1": 0.057,
+          "tp_weight": 1.82,
+          "total_gold_weight": 15.4,
+          "fp": 47
+        }
+      },
+      {
+        "date": "2025-11-20",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-20/11-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.154,
+          "recall": 0.195,
+          "f1": 0.172,
+          "correct_matches": 8,
+          "total_llm": 52,
+          "total_gold": 41
+        },
+        "category_match": {
+          "precision": 0.625,
+          "recall": 0.625,
+          "f1": 0.625,
+          "correct_matches": 5,
+          "total_matches": 8
+        },
+        "weighted_article_match": {
+          "precision": 0.086,
+          "recall": 0.2,
+          "f1": 0.121,
+          "tp_weight": 4.16,
+          "total_gold_weight": 20.84,
+          "fp": 44
+        }
+      },
+      {
+        "date": "2025-12-22",
+        "gold_path": "src/mturk_results/archived_mturk_results/12-22/12-22_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.154,
+          "recall": 0.174,
+          "f1": 0.163,
+          "correct_matches": 8,
+          "total_llm": 52,
+          "total_gold": 46
+        },
+        "category_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "correct_matches": 0,
+          "total_matches": 8
+        },
+        "weighted_article_match": {
+          "precision": 0.086,
+          "recall": 0.164,
+          "f1": 0.113,
+          "tp_weight": 4.16,
+          "total_gold_weight": 25.3,
+          "fp": 44
+        }
+      },
+      {
+        "date": "2026-01-08",
+        "gold_path": "src/mturk_results/multi_1-8_hit_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.096,
+          "recall": 0.128,
+          "f1": 0.11,
+          "correct_matches": 5,
+          "total_llm": 52,
+          "total_gold": 39
+        },
+        "category_match": {
+          "precision": 0.6,
+          "recall": 0.6,
+          "f1": 0.6,
+          "correct_matches": 3,
+          "total_matches": 5
+        },
+        "weighted_article_match": {
+          "precision": 0.057,
+          "recall": 0.128,
+          "f1": 0.079,
+          "tp_weight": 2.83,
+          "total_gold_weight": 22.15,
+          "fp": 47
+        }
+      },
+      {
+        "date": "2026-01-20",
+        "gold_path": "src/mturk_results/1-20/1-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.115,
+          "recall": 0.158,
+          "f1": 0.133,
+          "correct_matches": 6,
+          "total_llm": 52,
+          "total_gold": 38
+        },
+        "category_match": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "correct_matches": 6,
+          "total_matches": 6
+        },
+        "weighted_article_match": {
+          "precision": 0.08,
+          "recall": 0.141,
+          "f1": 0.102,
+          "tp_weight": 4.0,
+          "total_gold_weight": 28.45,
+          "fp": 46
+        }
+      }
+    ]
+  },
+  "no_paragraph": {
+    "llm_path": "src/llm_annotation_results/archived_llm_annotations/no_paragraph_final_annotations_3annotators.json",
+    "runs": [
+      {
+        "date": "2025-08-02",
+        "gold_path": "src/mturk_results/archived_mturk_results/8-2/8-2_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 36,
+        "article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "correct_matches": 0,
+          "total_llm": 51,
+          "total_gold": 36
+        },
+        "category_match": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "correct_matches": 0,
+          "total_matches": 0
+        },
+        "weighted_article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp_weight": 0.0,
+          "total_gold_weight": 30.0,
+          "fp": 51
+        }
+      },
+      {
+        "date": "2025-09-26",
+        "gold_path": "src/mturk_results/archived_mturk_results/9-26/9-26_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.118,
+          "recall": 0.083,
+          "f1": 0.098,
+          "correct_matches": 2,
+          "total_llm": 17,
+          "total_gold": 24
+        },
+        "category_match": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "correct_matches": 1,
+          "total_matches": 2
+        },
+        "weighted_article_match": {
+          "precision": 0.042,
+          "recall": 0.068,
+          "f1": 0.052,
+          "tp_weight": 0.66,
+          "total_gold_weight": 9.77,
+          "fp": 15
+        }
+      },
+      {
+        "date": "2025-11-09",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-9/11-9_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.353,
+          "recall": 0.15,
+          "f1": 0.211,
+          "correct_matches": 6,
+          "total_llm": 17,
+          "total_gold": 40
+        },
+        "category_match": {
+          "precision": 0.333,
+          "recall": 0.333,
+          "f1": 0.333,
+          "correct_matches": 2,
+          "total_matches": 6
+        },
+        "weighted_article_match": {
+          "precision": 0.153,
+          "recall": 0.129,
+          "f1": 0.14,
+          "tp_weight": 1.98,
+          "total_gold_weight": 15.4,
+          "fp": 11
+        }
+      },
+      {
+        "date": "2025-11-20",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-20/11-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.235,
+          "recall": 0.098,
+          "f1": 0.138,
+          "correct_matches": 4,
+          "total_llm": 17,
+          "total_gold": 41
+        },
+        "category_match": {
+          "precision": 0.25,
+          "recall": 0.25,
+          "f1": 0.25,
+          "correct_matches": 1,
+          "total_matches": 4
+        },
+        "weighted_article_match": {
+          "precision": 0.179,
+          "recall": 0.136,
+          "f1": 0.155,
+          "tp_weight": 2.84,
+          "total_gold_weight": 20.84,
+          "fp": 13
+        }
+      },
+      {
+        "date": "2025-12-22",
+        "gold_path": "src/mturk_results/archived_mturk_results/12-22/12-22_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.529,
+          "recall": 0.196,
+          "f1": 0.286,
+          "correct_matches": 9,
+          "total_llm": 17,
+          "total_gold": 46
+        },
+        "category_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "correct_matches": 0,
+          "total_matches": 9
+        },
+        "weighted_article_match": {
+          "precision": 0.392,
+          "recall": 0.204,
+          "f1": 0.268,
+          "tp_weight": 5.16,
+          "total_gold_weight": 25.3,
+          "fp": 8
+        }
+      },
+      {
+        "date": "2026-01-08",
+        "gold_path": "src/mturk_results/multi_1-8_hit_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.118,
+          "recall": 0.051,
+          "f1": 0.071,
+          "correct_matches": 2,
+          "total_llm": 17,
+          "total_gold": 39
+        },
+        "category_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "correct_matches": 0,
+          "total_matches": 2
+        },
+        "weighted_article_match": {
+          "precision": 0.062,
+          "recall": 0.045,
+          "f1": 0.052,
+          "tp_weight": 1.0,
+          "total_gold_weight": 22.15,
+          "fp": 15
+        }
+      },
+      {
+        "date": "2026-01-20",
+        "gold_path": "src/mturk_results/1-20/1-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.176,
+          "recall": 0.079,
+          "f1": 0.109,
+          "correct_matches": 3,
+          "total_llm": 17,
+          "total_gold": 38
+        },
+        "category_match": {
+          "precision": 0.667,
+          "recall": 0.667,
+          "f1": 0.667,
+          "correct_matches": 2,
+          "total_matches": 3
+        },
+        "weighted_article_match": {
+          "precision": 0.107,
+          "recall": 0.059,
+          "f1": 0.076,
+          "tp_weight": 1.67,
+          "total_gold_weight": 28.45,
+          "fp": 14
+        }
+      }
+    ]
+  },
+  "exact_one_llm": {
+    "llm_path": "src/llm_annotation_results/final_annotations_3annotators.json",
+    "runs": [
+      {
+        "date": "2025-08-02",
+        "gold_path": "src/mturk_results/archived_mturk_results/8-2/8-2_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 36,
+        "article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "correct_matches": 0,
+          "total_llm": 114,
+          "total_gold": 36
+        },
+        "category_match": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "correct_matches": 0,
+          "total_matches": 0
+        },
+        "weighted_article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp_weight": 0.0,
+          "total_gold_weight": 30.0,
+          "fp": 114
+        }
+      },
+      {
+        "date": "2025-09-26",
+        "gold_path": "src/mturk_results/archived_mturk_results/9-26/9-26_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.053,
+          "recall": 0.083,
+          "f1": 0.065,
+          "correct_matches": 2,
+          "total_llm": 38,
+          "total_gold": 24
+        },
+        "category_match": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "correct_matches": 2,
+          "total_matches": 2
+        },
+        "weighted_article_match": {
+          "precision": 0.053,
+          "recall": 0.205,
+          "f1": 0.084,
+          "tp_weight": 2.0,
+          "total_gold_weight": 9.77,
+          "fp": 36
+        }
+      },
+      {
+        "date": "2025-11-09",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-9/11-9_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "correct_matches": 0,
+          "total_llm": 38,
+          "total_gold": 40
+        },
+        "category_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "correct_matches": 0,
+          "total_matches": 0
+        },
+        "weighted_article_match": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp_weight": 0.0,
+          "total_gold_weight": 15.4,
+          "fp": 38
+        }
+      },
+      {
+        "date": "2025-11-20",
+        "gold_path": "src/mturk_results/archived_mturk_results/11-20/11-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.526,
+          "recall": 0.488,
+          "f1": 0.506,
+          "correct_matches": 20,
+          "total_llm": 38,
+          "total_gold": 41
+        },
+        "category_match": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "correct_matches": 20,
+          "total_matches": 20
+        },
+        "weighted_article_match": {
+          "precision": 0.28,
+          "recall": 0.336,
+          "f1": 0.306,
+          "tp_weight": 7.01,
+          "total_gold_weight": 20.84,
+          "fp": 18
+        }
+      },
+      {
+        "date": "2025-12-22",
+        "gold_path": "src/mturk_results/archived_mturk_results/12-22/12-22_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.132,
+          "recall": 0.109,
+          "f1": 0.119,
+          "correct_matches": 5,
+          "total_llm": 38,
+          "total_gold": 46
+        },
+        "category_match": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "correct_matches": 5,
+          "total_matches": 5
+        },
+        "weighted_article_match": {
+          "precision": 0.083,
+          "recall": 0.119,
+          "f1": 0.098,
+          "tp_weight": 3.0,
+          "total_gold_weight": 25.3,
+          "fp": 33
+        }
+      },
+      {
+        "date": "2026-01-08",
+        "gold_path": "src/mturk_results/multi_1-8_hit_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.579,
+          "recall": 0.564,
+          "f1": 0.571,
+          "correct_matches": 22,
+          "total_llm": 38,
+          "total_gold": 39
+        },
+        "category_match": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "correct_matches": 22,
+          "total_matches": 22
+        },
+        "weighted_article_match": {
+          "precision": 0.428,
+          "recall": 0.541,
+          "f1": 0.478,
+          "tp_weight": 11.98,
+          "total_gold_weight": 22.15,
+          "fp": 16
+        }
+      },
+      {
+        "date": "2026-01-20",
+        "gold_path": "src/mturk_results/1-20/1-20_human_min_one_gold_standard_output.json",
+        "n_articles_compared": 12,
+        "article_match": {
+          "precision": 0.789,
+          "recall": 0.789,
+          "f1": 0.789,
+          "correct_matches": 30,
+          "total_llm": 38,
+          "total_gold": 38
+        },
+        "category_match": {
+          "precision": 0.967,
+          "recall": 0.967,
+          "f1": 0.967,
+          "correct_matches": 29,
+          "total_matches": 30
+        },
+        "weighted_article_match": {
+          "precision": 0.747,
+          "recall": 0.83,
+          "f1": 0.786,
+          "tp_weight": 23.6,
+          "total_gold_weight": 28.45,
+          "fp": 8
+        }
+      }
+    ]
+  }
+}
