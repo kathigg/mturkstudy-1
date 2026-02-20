@@ -115,25 +115,27 @@ function paragraphAdd(text) {
   let wordCount = 0;
   let insideQuote = false;
 
+  const quoteMatches = text.match(/["“”]/g) || [];
+  const trackQuotes = (quoteMatches.length % 2 === 0);
+
   for (let i = 0; i < words.length; i++) {
     const word = words[i];
     paragraph += word + " ";
     wordCount++;
 
     // Detect quote entry/exit
-    if (word.includes('"')) {
-      const quoteCount = (word.match(/"/g) || []).length;
-      // Toggle quote status for each odd quote encountered
-      if (quoteCount % 2 !== 0) {
-        insideQuote = !insideQuote;
-      }
+    if (trackQuotes && /["“”]/.test(word)) {
+      const q = (word.match(/["“”]/g) || []).length;
+      if (q % 2 !== 0) insideQuote = !insideQuote;
     }
+
+    const isSentenceEnd = /[.!?][”"')\]]*$/.test(word);
 
     // Only insert break if:
     // - 150+ words
     // - Ends with a period
     // - Not inside a quote
-    if (wordCount >= 150 && word.endsWith(".") && !insideQuote) {
+    if (wordCount >= 150 && isSentenceEnd && (!trackQuotes || !insideQuote)) {
       paragraphs.push(paragraph.trim());
       paragraph = "";
       wordCount = 0;
