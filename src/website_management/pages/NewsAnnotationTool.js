@@ -631,8 +631,8 @@ async function pickAndClaimIndex() {
   let usage = usageSnap.exists() ? usageSnap.val() : {};
   let claimed = claimedSnap.exists() ? claimedSnap.val() : {};
 
-  // Initialize first 12 indices to 0 if missing
-  for (let i = 0; i < 12; i++) {
+  // Initialize first 27 indices to 0 if missing
+  for (let i = 0; i < 27; i++) {
     if (usage[i] === undefined) usage[i] = 0;
     if (claimed[i] === undefined) claimed[i] = 0;
   }
@@ -692,7 +692,7 @@ async function logArticleUsage(index) {
 }
 
   useEffect(() => {
-  fetch("/article_dataset_versions/test3_encoding_fixed_300_700_words.csv")
+  fetch("/article_dataset_versions/27Articles.csv")
     .then((response) => response.text())
     .then(async (csvText) => {
       Papa.parse(csvText, {
