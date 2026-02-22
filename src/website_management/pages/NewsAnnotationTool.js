@@ -624,7 +624,7 @@ const downloadAnnotations = (annotations, textAnnotations, surveyResponses) => {
       }, []);
     */
 
-const MAX_PER_ARTICLE = 3;
+const MAX_PER_ARTICLE = 10;
 async function pickAndClaimIndex() {
   const usageRef = ref(database, "articleUsage");
   const claimedRef = ref(database, "claimedArticles");
