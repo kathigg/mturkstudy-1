@@ -1,0 +1,7 @@
+category_key,category_label,source,count,share_within_source
+no polarizing language,No Polarizing Language,Human,58,0.5088
+no polarizing language,No Polarizing Language,LLM,38,0.1719
+persuasive propaganda,Persuasive Propaganda,Human,38,0.3333
+persuasive propaganda,Persuasive Propaganda,LLM,98,0.4434
+inflammatory language,Inflammatory Language,Human,18,0.1579
+inflammatory language,Inflammatory Language,LLM,85,0.3846

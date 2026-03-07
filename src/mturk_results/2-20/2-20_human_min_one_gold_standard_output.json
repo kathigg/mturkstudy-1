@@ -1,0 +1,1163 @@
+[
+  {
+    "title": "Trump Hits Polling On Fox News: 'Something Weird Going On At Fox'",
+    "annotations": [
+      {
+        "text": "re against crooked hillary",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "\"something weird\" is happening at the network favored by conservatives",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "hat. more fake news",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "make america great again!",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "\"only fake polls\" showed him behind 2020",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Editorial: Six Months After California'S Landmark Police Transparency Law, Many Agencies Still Won'T Release Their Records",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "law enforcement in san francisco is deliberately sandbagging the release of these records",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "becerra's obvious bias toward the police groups could prove an obstacle, too.",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "all the agencies that have sworn to protect and serve the public should be allowed to thwart the law.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Dc Mayor Says Trump'S Fourth Of July Celebration Emptied Security Fund",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Rmv Fail: 546 License Suspensions, More To Come",
+    "annotations": [
+      {
+        "text": "in a stunning press conference detailing the scope",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 4
+      }
+    ]
+  },
+  {
+    "title": "George Conway Urges Trump To Resign Over Aborted Iran Strike",
+    "annotations": [
+      {
+        "text": "o say this is amateur hour would defame amateurs.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "do the country and the world a favor",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": ", you're even more of an idiot than people think you are",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "to say this is amateur hour would defame amateurs",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Meghan Markle Has Been Branded 'Difficult' By Tabloids. It'S The Same Sexism That Demonizes Driven Women In The Workplace.",
+    "annotations": [
+      {
+        "text": "people love tearing down powerful women",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "duchess difficult,\" me-gain,\" and \"hurricane meghan.",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Gop Lawmaker Suggests Colin Kaepernick Move To A Different Country",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "very radical people in the united states of america who don't like america",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "on't like the foundational principles that have made us a great nation",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "we've had over a million americans die fighting",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Gabbard Was Most Searched Democratic Candidate After Debate Despite Getting Third-Lowest Speaking Time",
+    "annotations": [
+      {
+        "text": "this president and his chicken hawk cabinet have led us to the brink of war",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Ron Desantis Signs Amendment 4 Bill, Limiting Felon Voting",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Donald Trump Jr. Mocks Roy Moore After Campaign Announcement, Reigniting Feud",
+    "annotations": [
+      {
+        "text": "\"yes, i can win. not only can i, they know i can.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "this can't be real... can it?",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "he's doing a disservice to all conservatives",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "would be gift wrapping this senate seat for chuck schumer",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "\"anyone but roy moore.\"",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Tutankhamun Sculpture'S London Auction Sparks Egyptian Outcry",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "hey have not shown any legal papers to prove its ownership.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Did Jared Kushner Violate The Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "involved in this scandal are removed",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Trump Rips 'Horrible' New York Times, Washington Post, Wonders If People Will 'Demand' He Stay In White House",
+    "annotations": [
+      {
+        "text": "hey are both a disgrace to our country, the enemy of the people",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "america has been made great again",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "the fake news has never been more dishonest than it is today",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Name-Calling",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Buzzfeed Journalists Protest In Push For Union Recognition",
+    "annotations": [
+      {
+        "text": "recognize the buzzfeed union!!",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "once the darlings of the media industry",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Killer Of 16-Year-Old New York Girl In 1980 Released On Parole Despite Outrage",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "'Pathetic Rout,' 'Tragic Mistake' And 'Painful' John Mccain Holds Little Back In Describing Helsinki",
+    "annotations": [
+      {
+        "text": "president trump's naivet\u00e9, egotism, false equivalence, and sympathy for autocrats is difficult to calculate.",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "ne of the most disgraceful performances",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "bombastic and erratic conduct towards our closest frien",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no prior president has ever abased himself more abjectly before a tyrant.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "americans are waiting and hoping for president trump to",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "The Latest: Nadler Says Panel Will Move Quickly On Mcgahn",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Trump Vows To Cure Cancer And Eradicate Aids",
+    "annotations": [
+      {
+        "text": "attacking familiar foes and restating his position on issues like immigration",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "wow, why the hell didn't you do that over the last 50 ye",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "r sought to divert money away from hiv/aids research t",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Senate Confirms Judge Who Attacked Roe V. Wade, Called Being Transgender 'A Delusion'",
+    "annotations": [
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "alled being transgender \"a delusion.\"",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Ocasio-Cortez, Sanders Call For Climate Change Emergency Mobilization, Seeks A Re-Do Of Failed Green New Deal",
+    "annotations": [
+      {
+        "text": "ress the so-called emergency.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "a radical, top-down, socialist makeover of the entire u.s. economy.\"",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "on the existential threat of climate change, trump",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "hony national emergencies to advance",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "'We Are Livid!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized",
+    "annotations": [
+      {
+        "text": "f hero and fallen-officer,",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "h are as minuscule as a slap on the wrist.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Donald Trump'S Criminal Justice Reform Shows Results",
+    "annotations": [
+      {
+        "text": "is a major achievement in improving the cr",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "e will pay until he's 90 years old",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 4
+      }
+    ]
+  },
+  {
+    "title": "'If You'Re Directly Complicit In Spreading Hate, Consider Dining At Home': Restaurant Owner Who Kicked Sarah Sanders Out Last Year Defends Chicago Server Who Spat On Eric Trump In A Cocktail Bar",
+    "annotations": [
+      {
+        "text": "ek, saying politicians involved in 'spreading hate' should consider dining at home",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Protest In Madrid As Conservatives Suspend Ban On Most Polluting Cars",
+    "annotations": [
+      {
+        "text": "i want to breathe free",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": true,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "'Every American Is Entitled To Health Care': Sen. Bernie Sanders",
+    "annotations": [
+      {
+        "text": "end the international embarrassment of not guarant",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "be willing to end the greed of the health insurance",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "guarantee health care as a human right",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Biden Criticizes Amazon For Paying $0 In Corporate Taxes",
+    "annotations": [
+      {
+        "text": "ut no company pulling in billions of dollars of profits should pay a lower tax rate",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "we need to reward work, not just wealth",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "presidential candidate to slam one",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.33,
+        "num_supporters": 0,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 2
+      },
+      {
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 3
+      }
+    ]
+  }
+]

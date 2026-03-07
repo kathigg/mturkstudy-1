@@ -1,0 +1,1395 @@
+{
+  "input_path": "/Users/kathleenhiggins/mturkstudy-3/src/mturk_results/1-20/1-20-in-house.json",
+  "dataset_summary": {
+    "workers": 37,
+    "articles": 12,
+    "article_worker_counts": {
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 3,
+      "5": 3,
+      "6": 3,
+      "7": 4,
+      "8": 3,
+      "9": 3,
+      "10": 3,
+      "11": 3,
+      "12": 3
+    },
+    "worker_paragraph_units": 117,
+    "raw_annotations": 144
+  },
+  "density": {
+    "category": {
+      "inflammatory language": {
+        "count": 7,
+        "share_of_annotations": 0.0486,
+        "annotations_per_worker_paragraph": 0.0598
+      },
+      "no polarizing language": {
+        "count": 84,
+        "share_of_annotations": 0.5833,
+        "annotations_per_worker_paragraph": 0.7179
+      },
+      "persuasive propaganda": {
+        "count": 53,
+        "share_of_annotations": 0.3681,
+        "annotations_per_worker_paragraph": 0.453
+      }
+    },
+    "subcategory": {
+      "bandwagon": {
+        "count": 2,
+        "share_of_annotations": 0.0139,
+        "annotations_per_worker_paragraph": 0.0171
+      },
+      "casual oversimplification": {
+        "count": 6,
+        "share_of_annotations": 0.0417,
+        "annotations_per_worker_paragraph": 0.0513
+      },
+      "demonization": {
+        "count": 2,
+        "share_of_annotations": 0.0139,
+        "annotations_per_worker_paragraph": 0.0171
+      },
+      "doubt": {
+        "count": 9,
+        "share_of_annotations": 0.0625,
+        "annotations_per_worker_paragraph": 0.0769
+      },
+      "exaggeration": {
+        "count": 27,
+        "share_of_annotations": 0.1875,
+        "annotations_per_worker_paragraph": 0.2308
+      },
+      "name-calling": {
+        "count": 2,
+        "share_of_annotations": 0.0139,
+        "annotations_per_worker_paragraph": 0.0171
+      },
+      "no polarizing language": {
+        "count": 84,
+        "share_of_annotations": 0.5833,
+        "annotations_per_worker_paragraph": 0.7179
+      },
+      "scapegoating": {
+        "count": 3,
+        "share_of_annotations": 0.0208,
+        "annotations_per_worker_paragraph": 0.0256
+      },
+      "slogans": {
+        "count": 9,
+        "share_of_annotations": 0.0625,
+        "annotations_per_worker_paragraph": 0.0769
+      }
+    }
+  },
+  "span_overlap": {
+    "including_npl": {
+      "pair_count": 39,
+      "macro_dice_f1": 0.533,
+      "macro_jaccard": 0.41,
+      "micro_dice_f1": 0.485,
+      "micro_jaccard": 0.32,
+      "matched_spans": 73,
+      "total_annotations_a": 144,
+      "total_annotations_b": 157,
+      "pair_examples": [
+        {
+          "article_id": "1",
+          "worker_a": "-OjIOZzRWgF7XfssSX0M",
+          "worker_b": "-OjMZvMQ2deXYp2913xI",
+          "count_a": 4,
+          "count_b": 4,
+          "matched": 3,
+          "dice_f1": 0.75,
+          "jaccard": 0.6
+        },
+        {
+          "article_id": "1",
+          "worker_a": "-OjIOZzRWgF7XfssSX0M",
+          "worker_b": "-OjNs7ytDKLknYuA8uh5",
+          "count_a": 4,
+          "count_b": 4,
+          "matched": 3,
+          "dice_f1": 0.75,
+          "jaccard": 0.6
+        },
+        {
+          "article_id": "1",
+          "worker_a": "-OjMZvMQ2deXYp2913xI",
+          "worker_b": "-OjNs7ytDKLknYuA8uh5",
+          "count_a": 4,
+          "count_b": 4,
+          "matched": 2,
+          "dice_f1": 0.5,
+          "jaccard": 0.333
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OjIKsYGNFiI15JQqcD5",
+          "worker_b": "-OjMuovvmiSenN9PQvVR",
+          "count_a": 4,
+          "count_b": 3,
+          "matched": 2,
+          "dice_f1": 0.571,
+          "jaccard": 0.4
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OjIKsYGNFiI15JQqcD5",
+          "worker_b": "-OjNtroAR44G8XPAc6tT",
+          "count_a": 4,
+          "count_b": 3,
+          "matched": 2,
+          "dice_f1": 0.571,
+          "jaccard": 0.4
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OjMuovvmiSenN9PQvVR",
+          "worker_b": "-OjNtroAR44G8XPAc6tT",
+          "count_a": 3,
+          "count_b": 3,
+          "matched": 1,
+          "dice_f1": 0.333,
+          "jaccard": 0.2
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OjINGLT40qScUvTBN4n",
+          "worker_b": "-OjMvglrPt-si7iF4B94",
+          "count_a": 4,
+          "count_b": 4,
+          "matched": 1,
+          "dice_f1": 0.25,
+          "jaccard": 0.143
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OjINGLT40qScUvTBN4n",
+          "worker_b": "-OjNtOGJV5dqS1Zw60IL",
+          "count_a": 4,
+          "count_b": 6,
+          "matched": 1,
+          "dice_f1": 0.2,
+          "jaccard": 0.111
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OjMvglrPt-si7iF4B94",
+          "worker_b": "-OjNtOGJV5dqS1Zw60IL",
+          "count_a": 4,
+          "count_b": 6,
+          "matched": 3,
+          "dice_f1": 0.6,
+          "jaccard": 0.429
+        },
+        {
+          "article_id": "12",
+          "worker_a": "-OjIQBdbxSq0_F9Ar5F5",
+          "worker_b": "-OjMTvPgMYiGaR0IVmA9",
+          "count_a": 5,
+          "count_b": 6,
+          "matched": 2,
+          "dice_f1": 0.364,
+          "jaccard": 0.222
+        }
+      ]
+    },
+    "polarizing_only": {
+      "pair_count": 39,
+      "macro_dice_f1": 0.072,
+      "macro_jaccard": 0.047,
+      "micro_dice_f1": 0.113,
+      "micro_jaccard": 0.06,
+      "matched_spans": 7,
+      "total_annotations_a": 55,
+      "total_annotations_b": 69,
+      "pair_examples": [
+        {
+          "article_id": "1",
+          "worker_a": "-OjIOZzRWgF7XfssSX0M",
+          "worker_b": "-OjMZvMQ2deXYp2913xI",
+          "count_a": 0,
+          "count_b": 1,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "1",
+          "worker_a": "-OjIOZzRWgF7XfssSX0M",
+          "worker_b": "-OjNs7ytDKLknYuA8uh5",
+          "count_a": 0,
+          "count_b": 1,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "1",
+          "worker_a": "-OjMZvMQ2deXYp2913xI",
+          "worker_b": "-OjNs7ytDKLknYuA8uh5",
+          "count_a": 1,
+          "count_b": 1,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OjIKsYGNFiI15JQqcD5",
+          "worker_b": "-OjMuovvmiSenN9PQvVR",
+          "count_a": 0,
+          "count_b": 1,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OjIKsYGNFiI15JQqcD5",
+          "worker_b": "-OjNtroAR44G8XPAc6tT",
+          "count_a": 0,
+          "count_b": 1,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OjMuovvmiSenN9PQvVR",
+          "worker_b": "-OjNtroAR44G8XPAc6tT",
+          "count_a": 1,
+          "count_b": 1,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OjINGLT40qScUvTBN4n",
+          "worker_b": "-OjMvglrPt-si7iF4B94",
+          "count_a": 3,
+          "count_b": 2,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OjINGLT40qScUvTBN4n",
+          "worker_b": "-OjNtOGJV5dqS1Zw60IL",
+          "count_a": 3,
+          "count_b": 2,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OjMvglrPt-si7iF4B94",
+          "worker_b": "-OjNtOGJV5dqS1Zw60IL",
+          "count_a": 2,
+          "count_b": 2,
+          "matched": 1,
+          "dice_f1": 0.5,
+          "jaccard": 0.333
+        },
+        {
+          "article_id": "12",
+          "worker_a": "-OjIQBdbxSq0_F9Ar5F5",
+          "worker_b": "-OjMTvPgMYiGaR0IVmA9",
+          "count_a": 3,
+          "count_b": 5,
+          "matched": 1,
+          "dice_f1": 0.25,
+          "jaccard": 0.143
+        }
+      ]
+    }
+  },
+  "agreement": {
+    "overall_binary": {
+      "pairwise_percent_agreement": 0.642,
+      "pairwise_cohen_kappa": {
+        "pair_count": 36,
+        "weighted_mean_kappa": 0.229,
+        "pair_examples": [
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjIerwWWeiRPRw9lFk5",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 1.0
+          },
+          {
+            "worker_a": "-OjIerwWWeiRPRw9lFk5",
+            "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIerwWWeiRPRw9lFk5",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIKsYGNFiI15JQqcD5",
+            "worker_b": "-OjMuovvmiSenN9PQvVR",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIKsYGNFiI15JQqcD5",
+            "worker_b": "-OjNtroAR44G8XPAc6tT",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjMuovvmiSenN9PQvVR",
+            "worker_b": "-OjNtroAR44G8XPAc6tT",
+            "shared_units": 3,
+            "kappa": -0.5
+          },
+          {
+            "worker_a": "-OjINGLT40qScUvTBN4n",
+            "worker_b": "-OjMvglrPt-si7iF4B94",
+            "shared_units": 3,
+            "kappa": 0.4
+          }
+        ]
+      },
+      "krippendorff_alpha_nominal": 0.239
+    },
+    "category": {
+      "pairwise_percent_agreement": 0.593,
+      "pairwise_cohen_kappa": {
+        "pair_count": 36,
+        "weighted_mean_kappa": 0.189,
+        "pair_examples": [
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjIerwWWeiRPRw9lFk5",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 1.0
+          },
+          {
+            "worker_a": "-OjIerwWWeiRPRw9lFk5",
+            "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIerwWWeiRPRw9lFk5",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIKsYGNFiI15JQqcD5",
+            "worker_b": "-OjMuovvmiSenN9PQvVR",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIKsYGNFiI15JQqcD5",
+            "worker_b": "-OjNtroAR44G8XPAc6tT",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjMuovvmiSenN9PQvVR",
+            "worker_b": "-OjNtroAR44G8XPAc6tT",
+            "shared_units": 3,
+            "kappa": -0.5
+          },
+          {
+            "worker_a": "-OjINGLT40qScUvTBN4n",
+            "worker_b": "-OjMvglrPt-si7iF4B94",
+            "shared_units": 3,
+            "kappa": 0.4
+          }
+        ]
+      },
+      "krippendorff_alpha_nominal": 0.2
+    },
+    "subcategory": {
+      "pairwise_percent_agreement": 0.504,
+      "pairwise_cohen_kappa": {
+        "pair_count": 36,
+        "weighted_mean_kappa": 0.147,
+        "pair_examples": [
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjIerwWWeiRPRw9lFk5",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 1.0
+          },
+          {
+            "worker_a": "-OjIerwWWeiRPRw9lFk5",
+            "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIerwWWeiRPRw9lFk5",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIKsYGNFiI15JQqcD5",
+            "worker_b": "-OjMuovvmiSenN9PQvVR",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIKsYGNFiI15JQqcD5",
+            "worker_b": "-OjNtroAR44G8XPAc6tT",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjMuovvmiSenN9PQvVR",
+            "worker_b": "-OjNtroAR44G8XPAc6tT",
+            "shared_units": 3,
+            "kappa": -0.5
+          },
+          {
+            "worker_a": "-OjINGLT40qScUvTBN4n",
+            "worker_b": "-OjMvglrPt-si7iF4B94",
+            "shared_units": 3,
+            "kappa": 0.143
+          }
+        ]
+      },
+      "krippendorff_alpha_nominal": 0.139
+    },
+    "category_one_vs_rest": {
+      "no polarizing language": {
+        "positive_ratings": 80,
+        "positive_share_of_worker_paragraph_units": 0.6838,
+        "pairwise_percent_agreement": 0.699,
+        "pairwise_cohen_kappa": {
+          "pair_count": 36,
+          "weighted_mean_kappa": 0.289,
+          "pair_examples": [
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjIerwWWeiRPRw9lFk5",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 0.4
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjMuovvmiSenN9PQvVR",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjMuovvmiSenN9PQvVR",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": -0.5
+            },
+            {
+              "worker_a": "-OjINGLT40qScUvTBN4n",
+              "worker_b": "-OjMvglrPt-si7iF4B94",
+              "shared_units": 3,
+              "kappa": 0.4
+            }
+          ]
+        },
+        "krippendorff_alpha_nominal": 0.303
+      },
+      "persuasive propaganda": {
+        "positive_ratings": 41,
+        "positive_share_of_worker_paragraph_units": 0.3504,
+        "pairwise_percent_agreement": 0.642,
+        "pairwise_cohen_kappa": {
+          "pair_count": 36,
+          "weighted_mean_kappa": 0.229,
+          "pair_examples": [
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjIerwWWeiRPRw9lFk5",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjMuovvmiSenN9PQvVR",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjMuovvmiSenN9PQvVR",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": -0.5
+            },
+            {
+              "worker_a": "-OjINGLT40qScUvTBN4n",
+              "worker_b": "-OjMvglrPt-si7iF4B94",
+              "shared_units": 3,
+              "kappa": 0.4
+            }
+          ]
+        },
+        "krippendorff_alpha_nominal": 0.217
+      },
+      "inflammatory language": {
+        "positive_ratings": 7,
+        "positive_share_of_worker_paragraph_units": 0.0598,
+        "pairwise_percent_agreement": 0.935,
+        "pairwise_cohen_kappa": {
+          "pair_count": 36,
+          "weighted_mean_kappa": 0.853,
+          "pair_examples": [
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjIerwWWeiRPRw9lFk5",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjMuovvmiSenN9PQvVR",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMuovvmiSenN9PQvVR",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjINGLT40qScUvTBN4n",
+              "worker_b": "-OjMvglrPt-si7iF4B94",
+              "shared_units": 3,
+              "kappa": 1.0
+            }
+          ]
+        },
+        "krippendorff_alpha_nominal": 0.397
+      }
+    },
+    "subcategory_one_vs_rest": {
+      "no polarizing language": {
+        "positive_ratings": 80,
+        "positive_share_of_worker_paragraph_units": 0.6838,
+        "pairwise_percent_agreement": 0.699,
+        "pairwise_cohen_kappa": {
+          "pair_count": 36,
+          "weighted_mean_kappa": 0.289,
+          "pair_examples": [
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjIerwWWeiRPRw9lFk5",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 0.4
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjMuovvmiSenN9PQvVR",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjMuovvmiSenN9PQvVR",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": -0.5
+            },
+            {
+              "worker_a": "-OjINGLT40qScUvTBN4n",
+              "worker_b": "-OjMvglrPt-si7iF4B94",
+              "shared_units": 3,
+              "kappa": 0.4
+            }
+          ]
+        },
+        "krippendorff_alpha_nominal": 0.303
+      },
+      "exaggeration": {
+        "positive_ratings": 24,
+        "positive_share_of_worker_paragraph_units": 0.2051,
+        "pairwise_percent_agreement": 0.691,
+        "pairwise_cohen_kappa": {
+          "pair_count": 36,
+          "weighted_mean_kappa": 0.351,
+          "pair_examples": [
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjIerwWWeiRPRw9lFk5",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjMuovvmiSenN9PQvVR",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjMuovvmiSenN9PQvVR",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": -0.5
+            },
+            {
+              "worker_a": "-OjINGLT40qScUvTBN4n",
+              "worker_b": "-OjMvglrPt-si7iF4B94",
+              "shared_units": 3,
+              "kappa": 0.0
+            }
+          ]
+        },
+        "krippendorff_alpha_nominal": 0.05
+      },
+      "slogans": {
+        "positive_ratings": 7,
+        "positive_share_of_worker_paragraph_units": 0.0598,
+        "pairwise_percent_agreement": 0.902,
+        "pairwise_cohen_kappa": {
+          "pair_count": 36,
+          "weighted_mean_kappa": 0.717,
+          "pair_examples": [
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjIerwWWeiRPRw9lFk5",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjMuovvmiSenN9PQvVR",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMuovvmiSenN9PQvVR",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjINGLT40qScUvTBN4n",
+              "worker_b": "-OjMvglrPt-si7iF4B94",
+              "shared_units": 3,
+              "kappa": 0.0
+            }
+          ]
+        },
+        "krippendorff_alpha_nominal": 0.095
+      },
+      "bandwagon": {
+        "positive_ratings": 2,
+        "positive_share_of_worker_paragraph_units": 0.0171,
+        "pairwise_percent_agreement": 0.959,
+        "pairwise_cohen_kappa": {
+          "pair_count": 36,
+          "weighted_mean_kappa": 0.875,
+          "pair_examples": [
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjIerwWWeiRPRw9lFk5",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjMuovvmiSenN9PQvVR",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMuovvmiSenN9PQvVR",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjINGLT40qScUvTBN4n",
+              "worker_b": "-OjMvglrPt-si7iF4B94",
+              "shared_units": 3,
+              "kappa": 0.0
+            }
+          ]
+        },
+        "krippendorff_alpha_nominal": -0.017
+      },
+      "casual oversimplification": {
+        "positive_ratings": 6,
+        "positive_share_of_worker_paragraph_units": 0.0513,
+        "pairwise_percent_agreement": 0.902,
+        "pairwise_cohen_kappa": {
+          "pair_count": 36,
+          "weighted_mean_kappa": 0.677,
+          "pair_examples": [
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjIerwWWeiRPRw9lFk5",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjMuovvmiSenN9PQvVR",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMuovvmiSenN9PQvVR",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjINGLT40qScUvTBN4n",
+              "worker_b": "-OjMvglrPt-si7iF4B94",
+              "shared_units": 3,
+              "kappa": 1.0
+            }
+          ]
+        },
+        "krippendorff_alpha_nominal": -0.047
+      },
+      "doubt": {
+        "positive_ratings": 6,
+        "positive_share_of_worker_paragraph_units": 0.0513,
+        "pairwise_percent_agreement": 0.911,
+        "pairwise_cohen_kappa": {
+          "pair_count": 36,
+          "weighted_mean_kappa": 0.742,
+          "pair_examples": [
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjIerwWWeiRPRw9lFk5",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjMuovvmiSenN9PQvVR",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMuovvmiSenN9PQvVR",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjINGLT40qScUvTBN4n",
+              "worker_b": "-OjMvglrPt-si7iF4B94",
+              "shared_units": 3,
+              "kappa": 0.0
+            }
+          ]
+        },
+        "krippendorff_alpha_nominal": 0.11
+      },
+      "name-calling": {
+        "positive_ratings": 2,
+        "positive_share_of_worker_paragraph_units": 0.0171,
+        "pairwise_percent_agreement": 0.967,
+        "pairwise_cohen_kappa": {
+          "pair_count": 36,
+          "weighted_mean_kappa": 0.917,
+          "pair_examples": [
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjIerwWWeiRPRw9lFk5",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjMuovvmiSenN9PQvVR",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMuovvmiSenN9PQvVR",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjINGLT40qScUvTBN4n",
+              "worker_b": "-OjMvglrPt-si7iF4B94",
+              "shared_units": 3,
+              "kappa": 1.0
+            }
+          ]
+        },
+        "krippendorff_alpha_nominal": -0.012
+      },
+      "demonization": {
+        "positive_ratings": 2,
+        "positive_share_of_worker_paragraph_units": 0.0171,
+        "pairwise_percent_agreement": 0.967,
+        "pairwise_cohen_kappa": {
+          "pair_count": 36,
+          "weighted_mean_kappa": 0.917,
+          "pair_examples": [
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjIerwWWeiRPRw9lFk5",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjMuovvmiSenN9PQvVR",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMuovvmiSenN9PQvVR",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjINGLT40qScUvTBN4n",
+              "worker_b": "-OjMvglrPt-si7iF4B94",
+              "shared_units": 3,
+              "kappa": 1.0
+            }
+          ]
+        },
+        "krippendorff_alpha_nominal": -0.012
+      },
+      "scapegoating": {
+        "positive_ratings": 3,
+        "positive_share_of_worker_paragraph_units": 0.0256,
+        "pairwise_percent_agreement": 0.967,
+        "pairwise_cohen_kappa": {
+          "pair_count": 36,
+          "weighted_mean_kappa": 0.935,
+          "pair_examples": [
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjIerwWWeiRPRw9lFk5",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIerwWWeiRPRw9lFk5",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+              "worker_b": "-OjNsePqfcnKtrM30Wkl",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjMuovvmiSenN9PQvVR",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIKsYGNFiI15JQqcD5",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMuovvmiSenN9PQvVR",
+              "worker_b": "-OjNtroAR44G8XPAc6tT",
+              "shared_units": 3,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjINGLT40qScUvTBN4n",
+              "worker_b": "-OjMvglrPt-si7iF4B94",
+              "shared_units": 3,
+              "kappa": 1.0
+            }
+          ]
+        },
+        "krippendorff_alpha_nominal": 0.319
+      }
+    }
+  }
+}

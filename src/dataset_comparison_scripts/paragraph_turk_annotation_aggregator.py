@@ -1,3 +1,4 @@
+import argparse
 import json
 import re
 from collections import defaultdict, Counter
@@ -130,6 +131,7 @@ def build_gold_standard_with_intersection(
     workers_by_article_para=None,
     no_polarizing_workers_by_article_para=None,
     *,
+    min_supporters_to_save: int = MIN_SUPPORTERS_TO_SAVE,
     enforce_one_annotation_per_paragraph: bool = True,
     pad=2
 ):
@@ -155,6 +157,8 @@ def build_gold_standard_with_intersection(
         # Case 1: direct record with "articleTitles"
         if "articleTitles" in database_record:
             for entry in database_record["articleTitles"]:
+                if not isinstance(entry, dict):
+                    continue
                 # Ensure string keys since annotation IDs may be strings
                 article_titles[str(entry["id"])] = entry["title"]
 
@@ -163,6 +167,8 @@ def build_gold_standard_with_intersection(
             for key, value in database_record.items():
                 if isinstance(value, dict) and "articleTitles" in value:
                     for entry in value["articleTitles"]:
+                        if not isinstance(entry, dict):
+                            continue
                         article_titles[str(entry["id"])] = entry["title"]
 
     # Debugging: show extracted mapping
@@ -279,7 +285,7 @@ def build_gold_standard_with_intersection(
             items = by_para.get(pidx, [])
             items = [
                 a for a in items
-                if int(a.get("num_supporters") or 0) >= MIN_SUPPORTERS_TO_SAVE
+                if int(a.get("num_supporters") or 0) >= min_supporters_to_save
             ]
 
             if enforce_one_annotation_per_paragraph:
@@ -363,7 +369,13 @@ def build_gold_standard_with_intersection(
 # ------------------------
 # Main Function
 # ------------------------
-def process_annotation_file(input_path, output_path):
+def process_annotation_file(
+    input_path,
+    output_path,
+    *,
+    min_supporters_to_save: int = MIN_SUPPORTERS_TO_SAVE,
+    enforce_one_annotation_per_paragraph: bool = ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH,
+):
     import os, json
     from collections import defaultdict
 
@@ -446,7 +458,8 @@ def process_annotation_file(input_path, output_path):
         database_record=raw_data,  # pass the full MTurk file so title mapping works
         workers_by_article_para=workers_by_article_para,
         no_polarizing_workers_by_article_para=no_polarizing_workers_by_article_para,
-        enforce_one_annotation_per_paragraph=ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH,
+        min_supporters_to_save=min_supporters_to_save,
+        enforce_one_annotation_per_paragraph=enforce_one_annotation_per_paragraph,
         )
 
     # --- Convert gold_standard dict to list-of-articles format for LLM comparison ---
@@ -472,13 +485,39 @@ def process_annotation_file(input_path, output_path):
 ]
         })
 
-    with open(OUTPUT_FILE, "w") as f:
+    with open(output_path, "w") as f:
         json.dump(output_list, f, indent=2)
 
-    print(f"Gold standard saved to: {OUTPUT_FILE}")
+    print(f"Gold standard saved to: {output_path}")
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", default=INPUT_FILE)
+    parser.add_argument("--output", default=OUTPUT_FILE)
+    parser.add_argument(
+        "--paragraph-policy",
+        default="exact-one" if ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH else "min-one",
+        choices=["exact-one", "min-one"],
+        help=(
+            "'exact-one' keeps one best annotation per paragraph; "
+            "'min-one' keeps all qualifying polarizing annotations per paragraph "
+            "and uses a no-polarizing placeholder only when needed."
+        ),
+    )
+    parser.add_argument("--min-supporters-to-save", type=int, default=MIN_SUPPORTERS_TO_SAVE)
+    args = parser.parse_args(argv)
+
+    process_annotation_file(
+        args.input,
+        args.output,
+        min_supporters_to_save=args.min_supporters_to_save,
+        enforce_one_annotation_per_paragraph=(args.paragraph_policy == "exact-one"),
+    )
+    return 0
 
 # ------------------------
 # Execute
 # ------------------------
 if __name__ == "__main__":
-    process_annotation_file(INPUT_FILE, OUTPUT_FILE)
+    raise SystemExit(main())

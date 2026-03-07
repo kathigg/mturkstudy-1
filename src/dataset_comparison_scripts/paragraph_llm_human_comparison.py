@@ -1,3 +1,4 @@
+import argparse
 import json
 import re
 from pathlib import Path
@@ -60,6 +61,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # GOLD_PATH = BASE_DIR / "mturk_results/1-20/1-20_human_exact_one_gold_standard_output.json"
 LLM_PATH = BASE_DIR / "llm_annotation_results/1-20/1-20_llm_min_one_final_annotations_3annotators.json"
 GOLD_PATH = BASE_DIR / "mturk_results/1-20/1-20_human_min_one_gold_standard_output.json"
+OUTPUT_PATH = BASE_DIR.parent / "annotation_comparison_results.json"
 DEBUG_TITLE = None  # Set to a string to print matched pairs for one title.
 
 # Toggle confidence-weighted metrics (True = use gold confidence weights; False = treat all gold weights as 1.0).
@@ -867,10 +869,50 @@ def compare_all(llm_json, gold_json):
 # ------------------------
 # Main
 # ------------------------
-if __name__ == "__main__":
-    llm_json = load_json(LLM_PATH)
-    gold_json = load_json(GOLD_PATH)
-    output_file = "annotation_comparison_results.json"
+def main(argv=None):
+    global DEBUG_TITLE
+    global USE_CONFIDENCE_WEIGHTING
+    global ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH
+    global ENABLE_BOOTSTRAP_CIS
+    global BOOTSTRAP_N
+    global BOOTSTRAP_SEED
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--llm-path", default=str(LLM_PATH))
+    parser.add_argument("--gold-path", default=str(GOLD_PATH))
+    parser.add_argument("--output", default=str(OUTPUT_PATH))
+    parser.add_argument("--debug-title", default=DEBUG_TITLE)
+    parser.add_argument(
+        "--paragraph-policy",
+        default="exact-one" if ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH else "min-one",
+        choices=["exact-one", "min-one"],
+        help=(
+            "'exact-one' forces one annotation per paragraph on both sides; "
+            "'min-one' allows multiple polarizing annotations per paragraph."
+        ),
+    )
+    parser.add_argument(
+        "--disable-confidence-weighting",
+        action="store_true",
+        help="Treat all gold annotations equally instead of weighting by confidence.",
+    )
+    parser.add_argument("--bootstrap", action="store_true", help="Compute article-level bootstrap confidence intervals.")
+    parser.add_argument("--bootstrap-n", type=int, default=BOOTSTRAP_N)
+    parser.add_argument("--bootstrap-seed", type=int, default=BOOTSTRAP_SEED)
+    args = parser.parse_args(argv)
+
+    DEBUG_TITLE = args.debug_title
+    USE_CONFIDENCE_WEIGHTING = not args.disable_confidence_weighting
+    ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH = args.paragraph_policy == "exact-one"
+    ENABLE_BOOTSTRAP_CIS = args.bootstrap
+    BOOTSTRAP_N = args.bootstrap_n
+    BOOTSTRAP_SEED = args.bootstrap_seed
+
+    llm_path = Path(args.llm_path)
+    gold_path = Path(args.gold_path)
+    output_file = Path(args.output)
+    llm_json = load_json(llm_path)
+    gold_json = load_json(gold_path)
 
     # --- Debug: Check structure of both datasets before comparison ---
     from pprint import pprint
@@ -899,8 +941,16 @@ if __name__ == "__main__":
 
     print("=== END DEBUG ===\n")
 
-    results = compare_all(llm_json, gold_json)
+    comparison = compare_all(llm_json, gold_json)
     print_matched_pairs_for_title(llm_json, gold_json, DEBUG_TITLE)
+
+    results = {
+        "llm_path": str(llm_path),
+        "gold_path": str(gold_path),
+        "overall": comparison["overall"],
+        "per_article": comparison["per_article"],
+        "n_articles_compared": len(comparison["per_article"]),
+    }
 
     with open(output_file, "w") as f:
         json.dump(results, f, indent=2)
@@ -927,3 +977,8 @@ if __name__ == "__main__":
         print("Category precision CI:", cis["category_precision"])
         print("Category recall CI:", cis["category_recall"])
         print("Category F1 CI:", cis["category_f1"])
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

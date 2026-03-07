@@ -187,6 +187,18 @@ def extract_json_from_text(text: str) -> str:
     return text[start : end + 1]
 
 
+def load_json_with_backslash_repair(text: str) -> dict[str, Any]:
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as exc:
+        if "Invalid \\escape" not in str(exc):
+            raise
+
+    # Some model outputs include a stray backslash inside normal prose.
+    repaired = re.sub(r'\\(?!["\\/bfnrtu])', r"\\\\", text)
+    return json.loads(repaired)
+
+
 def normalize_annotation_enums(obj: dict[str, Any]) -> dict[str, Any]:
     if "annotations" not in obj or not isinstance(obj.get("annotations"), list):
         return obj
@@ -686,7 +698,7 @@ def annotate_with_openai(client, role_desc: str, article_block: str, title: str,
     completion = _retry(_call, max_retries=max_retries)
     raw = completion.choices[0].message.content.strip()
     json_str = extract_json_from_text(raw)
-    obj = json.loads(json_str)
+    obj = load_json_with_backslash_repair(json_str)
 
     obj.setdefault("title", title)
     obj.setdefault("topic", topic)
@@ -725,7 +737,7 @@ def annotate_with_gemini(client, role_desc: str, article_block: str, title: str,
     response = _retry(_call, max_retries=max_retries)
     raw = (getattr(response, "text", None) or "").strip()
     json_str = extract_json_from_text(raw)
-    obj = json.loads(json_str)
+    obj = load_json_with_backslash_repair(json_str)
 
     obj.setdefault("title", title)
     obj.setdefault("topic", topic)
@@ -800,7 +812,7 @@ Meta fields must be set to:
     completion = _retry(_call, max_retries=max_retries)
     raw = completion.choices[0].message.content.strip()
     json_str = extract_json_from_text(raw)
-    obj = json.loads(json_str)
+    obj = load_json_with_backslash_repair(json_str)
 
     obj.setdefault("title", title)
     obj.setdefault("topic", topic)

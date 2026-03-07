@@ -1,0 +1,10 @@
+subcategory_key,subcategory_label,count,share_of_annotations,annotations_per_worker_paragraph,covered
+no polarizing language,No Polarizing Language,84,0.5833,0.7179,yes
+exaggeration,Exaggeration,27,0.1875,0.2308,yes
+slogans,Slogans,9,0.0625,0.0769,yes
+bandwagon,Bandwagon,2,0.0139,0.0171,yes
+casual oversimplification,Casual Oversimplification,6,0.0417,0.0513,yes
+doubt,Doubt,9,0.0625,0.0769,yes
+name-calling,Name-Calling,2,0.0139,0.0171,yes
+demonization,Demonization,2,0.0139,0.0171,yes
+scapegoating,Scapegoating,3,0.0208,0.0256,yes
