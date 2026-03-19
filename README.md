@@ -103,10 +103,11 @@ At the end of the task, all annotations and survey responses are saved as struct
 ## Scheduled Firebase Sync
 
 The repo now includes a scheduled GitHub Actions workflow at
-`.github/workflows/firebase-daily-sync.yml` that exports the Firebase
-Realtime Database `submissions` node into:
+`.github/workflows/firebase-daily-sync.yml` that exports these Firebase
+Realtime Database nodes:
 
 `src/mturk_results/live/cisc475database-default-rtdb-submissions-export.json`
+`src/llm_annotation_results/live/cisc475database-default-rtdb-LLMAnnotations-export.json`
 
 The export is performed by
 `src/website_management/helper_scripts/export_firebase_snapshot.mjs`.

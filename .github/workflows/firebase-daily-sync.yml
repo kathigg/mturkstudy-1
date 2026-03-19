@@ -18,8 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FIREBASE_DATABASE_URL: https://cisc475database-default-rtdb.firebaseio.com
-      FIREBASE_EXPORT_PATH: /submissions
-      FIREBASE_EXPORT_OUTPUT: src/mturk_results/live/cisc475database-default-rtdb-submissions-export.json
+      FIREBASE_SUBMISSIONS_EXPORT_PATH: /submissions
+      FIREBASE_SUBMISSIONS_OUTPUT: src/mturk_results/live/cisc475database-default-rtdb-submissions-export.json
+      FIREBASE_LLM_ANNOTATIONS_EXPORT_PATH: /LLMAnnotations
+      FIREBASE_LLM_ANNOTATIONS_OUTPUT: src/llm_annotation_results/live/cisc475database-default-rtdb-LLMAnnotations-export.json
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -69,21 +71,31 @@ jobs:
           printf '%s' "$FIREBASE_SERVICE_ACCOUNT_JSON" > "$RUNNER_TEMP/firebase-service-account.json"
           echo "FIREBASE_SERVICE_ACCOUNT_PATH=$RUNNER_TEMP/firebase-service-account.json" >> "$GITHUB_ENV"
 
-      - name: Export Firebase snapshot
+      - name: Export Firebase submissions snapshot
         if: steps.schedule_guard.outputs.should_run == 'true'
+        env:
+          FIREBASE_EXPORT_PATH: ${{ env.FIREBASE_SUBMISSIONS_EXPORT_PATH }}
+          FIREBASE_EXPORT_OUTPUT: ${{ env.FIREBASE_SUBMISSIONS_OUTPUT }}
         run: node src/website_management/helper_scripts/export_firebase_snapshot.mjs
 
-      - name: Commit updated snapshot
+      - name: Export Firebase LLM annotations snapshot
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        env:
+          FIREBASE_EXPORT_PATH: ${{ env.FIREBASE_LLM_ANNOTATIONS_EXPORT_PATH }}
+          FIREBASE_EXPORT_OUTPUT: ${{ env.FIREBASE_LLM_ANNOTATIONS_OUTPUT }}
+        run: node src/website_management/helper_scripts/export_firebase_snapshot.mjs
+
+      - name: Commit updated snapshots
         if: steps.schedule_guard.outputs.should_run == 'true'
         shell: bash
         run: |
-          if [ -z "$(git status --porcelain -- src/mturk_results/live/cisc475database-default-rtdb-submissions-export.json)" ]; then
+          if [ -z "$(git status --porcelain -- "$FIREBASE_SUBMISSIONS_OUTPUT" "$FIREBASE_LLM_ANNOTATIONS_OUTPUT")" ]; then
             echo "No Firebase snapshot changes to commit."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/mturk_results/live/cisc475database-default-rtdb-submissions-export.json
-          git commit -m "chore: sync Firebase submissions snapshot"
+          git add "$FIREBASE_SUBMISSIONS_OUTPUT" "$FIREBASE_LLM_ANNOTATIONS_OUTPUT"
+          git commit -m "chore: sync Firebase snapshots"
           git push
