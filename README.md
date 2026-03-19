@@ -100,6 +100,33 @@ To adapt the tool for your own study, edit `config.js`:
 
 At the end of the task, all annotations and survey responses are saved as structured JSON and can optionally be uploaded to Firebase.
 
+## Scheduled Firebase Sync
+
+The repo now includes a scheduled GitHub Actions workflow at
+`.github/workflows/firebase-daily-sync.yml` that exports the Firebase
+Realtime Database `submissions` node into:
+
+`src/mturk_results/live/cisc475database-default-rtdb-submissions-export.json`
+
+The export is performed by
+`src/website_management/helper_scripts/export_firebase_snapshot.mjs`.
+
+Setup requirements:
+- Add a GitHub Actions secret named `FIREBASE_SERVICE_ACCOUNT_JSON`.
+- Paste in the full contents of your local `serviceAccountKey.json`.
+- The workflow runs every morning at `9:00 AM` in `America/New_York`.
+
+Implementation note:
+- GitHub Actions cron is UTC, so the workflow schedules both `13:00` and `14:00` UTC and only proceeds when the runner's local New York hour is `09`. That keeps the run aligned with daylight saving time.
+
+Local manual export example:
+
+```bash
+node src/website_management/helper_scripts/export_firebase_snapshot.mjs \
+  --serviceAccount serviceAccountKey.json \
+  --output src/mturk_results/live/cisc475database-default-rtdb-submissions-export.json
+```
+
 ### Designed For Research
 
 This tool was created for a human-subject study but is reusable across research domains involving:

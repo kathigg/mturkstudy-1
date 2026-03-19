@@ -1,0 +1,89 @@
+name: Firebase Daily Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 13 * * *"
+    - cron: "0 14 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: firebase-daily-sync
+  cancel-in-progress: false
+
+jobs:
+  export-and-commit:
+    runs-on: ubuntu-latest
+    env:
+      FIREBASE_DATABASE_URL: https://cisc475database-default-rtdb.firebaseio.com
+      FIREBASE_EXPORT_PATH: /submissions
+      FIREBASE_EXPORT_OUTPUT: src/mturk_results/live/cisc475database-default-rtdb-submissions-export.json
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check New York schedule window
+        id: schedule_guard
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          ny_hour="$(TZ=America/New_York date +%H)"
+          if [ "$ny_hour" = "09" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Stop outside 9 AM New York window
+        if: steps.schedule_guard.outputs.should_run != 'true'
+        run: echo "Skipping run outside 9 AM America/New_York."
+
+      - name: Set up Node.js
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        run: npm ci
+
+      - name: Write Firebase service account key
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        shell: bash
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+        run: |
+          if [ -z "$FIREBASE_SERVICE_ACCOUNT_JSON" ]; then
+            echo "Missing FIREBASE_SERVICE_ACCOUNT_JSON secret." >&2
+            exit 1
+          fi
+
+          printf '%s' "$FIREBASE_SERVICE_ACCOUNT_JSON" > "$RUNNER_TEMP/firebase-service-account.json"
+          echo "FIREBASE_SERVICE_ACCOUNT_PATH=$RUNNER_TEMP/firebase-service-account.json" >> "$GITHUB_ENV"
+
+      - name: Export Firebase snapshot
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        run: node src/website_management/helper_scripts/export_firebase_snapshot.mjs
+
+      - name: Commit updated snapshot
+        if: steps.schedule_guard.outputs.should_run == 'true'
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain -- src/mturk_results/live/cisc475database-default-rtdb-submissions-export.json)" ]; then
+            echo "No Firebase snapshot changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/mturk_results/live/cisc475database-default-rtdb-submissions-export.json
+          git commit -m "chore: sync Firebase submissions snapshot"
+          git push
