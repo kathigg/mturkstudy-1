@@ -1,0 +1,1405 @@
+{
+  "input_path": "src/mturk_results/2-20/2-20_polarizing_annotation.json",
+  "dataset_summary": {
+    "workers": 93,
+    "articles": 27,
+    "paragraph_units": 97,
+    "raters_per_unit": 3,
+    "raw_annotations": 515
+  },
+  "paragraph_level_agreement": {
+    "binary": {
+      "units": 97,
+      "raters_per_unit_distribution": {
+        "3": 97
+      },
+      "label_counts": {
+        "polarizing language": 165,
+        "no polarizing language": 126
+      },
+      "pairwise_percent_agreement": 0.498,
+      "exact_consensus_rate": 0.247,
+      "pairwise_cohen_weighted_mean": 0.19,
+      "fleiss_kappa": -0.022,
+      "krippendorff_alpha_nominal": -0.02,
+      "bootstrap_95ci": {
+        "pairwise_percent_agreement": {
+          "lower": 0.443,
+          "upper": 0.56,
+          "samples": 2000
+        },
+        "exact_consensus_rate": {
+          "lower": 0.165,
+          "upper": 0.34,
+          "samples": 2000
+        },
+        "pairwise_cohen_weighted_mean": {
+          "lower": 0.158,
+          "upper": 0.315,
+          "samples": 2000
+        },
+        "fleiss_kappa": {
+          "lower": -0.137,
+          "upper": 0.095,
+          "samples": 2000
+        },
+        "krippendorff_alpha_nominal": {
+          "lower": -0.131,
+          "upper": 0.088,
+          "samples": 2000
+        }
+      }
+    },
+    "category": {
+      "units": 97,
+      "raters_per_unit_distribution": {
+        "3": 97
+      },
+      "label_counts": {
+        "multiple polarizing categories": 71,
+        "no polarizing language": 126,
+        "persuasive propaganda": 62,
+        "inflammatory language": 32
+      },
+      "pairwise_percent_agreement": 0.296,
+      "exact_consensus_rate": 0.093,
+      "pairwise_cohen_weighted_mean": 0.091,
+      "fleiss_kappa": -0.013,
+      "krippendorff_alpha_nominal": -0.011,
+      "bootstrap_95ci": {
+        "pairwise_percent_agreement": {
+          "lower": 0.241,
+          "upper": 0.351,
+          "samples": 2000
+        },
+        "exact_consensus_rate": {
+          "lower": 0.041,
+          "upper": 0.155,
+          "samples": 2000
+        },
+        "pairwise_cohen_weighted_mean": {
+          "lower": 0.059,
+          "upper": 0.187,
+          "samples": 2000
+        },
+        "fleiss_kappa": {
+          "lower": -0.084,
+          "upper": 0.054,
+          "samples": 2000
+        },
+        "krippendorff_alpha_nominal": {
+          "lower": -0.084,
+          "upper": 0.055,
+          "samples": 2000
+        }
+      }
+    },
+    "subcategory": {
+      "units": 97,
+      "raters_per_unit_distribution": {
+        "3": 97
+      },
+      "label_counts": {
+        "multiple polarizing subcategories": 95,
+        "no polarizing language": 126,
+        "doubt": 10,
+        "exaggeration": 14,
+        "demonization": 12,
+        "slogans": 8,
+        "name-calling": 15,
+        "bandwagon": 2,
+        "casual oversimplification": 6,
+        "scapegoating": 3
+      },
+      "pairwise_percent_agreement": 0.278,
+      "exact_consensus_rate": 0.072,
+      "pairwise_cohen_weighted_mean": 0.071,
+      "fleiss_kappa": -0.036,
+      "krippendorff_alpha_nominal": -0.034,
+      "bootstrap_95ci": {
+        "pairwise_percent_agreement": {
+          "lower": 0.23,
+          "upper": 0.326,
+          "samples": 2000
+        },
+        "exact_consensus_rate": {
+          "lower": 0.031,
+          "upper": 0.124,
+          "samples": 2000
+        },
+        "pairwise_cohen_weighted_mean": {
+          "lower": 0.054,
+          "upper": 0.161,
+          "samples": 2000
+        },
+        "fleiss_kappa": {
+          "lower": -0.096,
+          "upper": 0.02,
+          "samples": 2000
+        },
+        "krippendorff_alpha_nominal": {
+          "lower": -0.094,
+          "upper": 0.022,
+          "samples": 2000
+        }
+      }
+    }
+  },
+  "span_overlap": {
+    "including_npl": {
+      "pair_count": 81,
+      "macro_dice_f1": 0.287,
+      "macro_jaccard": 0.192,
+      "micro_dice_f1": 0.26,
+      "micro_jaccard": 0.15,
+      "matched_spans": 134,
+      "total_annotations_a": 372,
+      "total_annotations_b": 658,
+      "pair_examples": [
+        {
+          "article_id": "1",
+          "worker_a": "-OmKVAjgOHC1mVq6kCb7",
+          "worker_b": "-OmNDa2K2vrvWsM0SYvY",
+          "count_a": 6,
+          "count_b": 4,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "1",
+          "worker_a": "-OmKVAjgOHC1mVq6kCb7",
+          "worker_b": "-OmPeiIanXliIzWXEzvk",
+          "count_a": 6,
+          "count_b": 12,
+          "matched": 4,
+          "dice_f1": 0.444,
+          "jaccard": 0.286
+        },
+        {
+          "article_id": "1",
+          "worker_a": "-OmNDa2K2vrvWsM0SYvY",
+          "worker_b": "-OmPeiIanXliIzWXEzvk",
+          "count_a": 4,
+          "count_b": 12,
+          "matched": 1,
+          "dice_f1": 0.125,
+          "jaccard": 0.067
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OmKZbJ6PKUXaAVpZWPL",
+          "worker_b": "-OmQ61N0d5pdteb2KTf2",
+          "count_a": 6,
+          "count_b": 4,
+          "matched": 2,
+          "dice_f1": 0.4,
+          "jaccard": 0.25
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OmKZbJ6PKUXaAVpZWPL",
+          "worker_b": "-OmjE6B5yBbbnbIh1bzs",
+          "count_a": 6,
+          "count_b": 13,
+          "matched": 1,
+          "dice_f1": 0.105,
+          "jaccard": 0.056
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OmQ61N0d5pdteb2KTf2",
+          "worker_b": "-OmjE6B5yBbbnbIh1bzs",
+          "count_a": 4,
+          "count_b": 13,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OmABt79XPWN83TU-zKD",
+          "worker_b": "-OmNRRp4yQtmcpKlQTRa",
+          "count_a": 7,
+          "count_b": 4,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OmABt79XPWN83TU-zKD",
+          "worker_b": "-OmjTDiPPtdHTRJrd3DB",
+          "count_a": 7,
+          "count_b": 7,
+          "matched": 3,
+          "dice_f1": 0.429,
+          "jaccard": 0.273
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OmNRRp4yQtmcpKlQTRa",
+          "worker_b": "-OmjTDiPPtdHTRJrd3DB",
+          "count_a": 4,
+          "count_b": 7,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "12",
+          "worker_a": "-OmKSnG_ta6n2fcVnovC",
+          "worker_b": "-OmN-Dz5BWCv0NSMJalQ",
+          "count_a": 3,
+          "count_b": 3,
+          "matched": 1,
+          "dice_f1": 0.333,
+          "jaccard": 0.2
+        }
+      ]
+    },
+    "polarizing_only": {
+      "pair_count": 81,
+      "macro_dice_f1": 0.152,
+      "macro_jaccard": 0.095,
+      "micro_dice_f1": 0.188,
+      "micro_jaccard": 0.104,
+      "matched_spans": 71,
+      "total_annotations_a": 207,
+      "total_annotations_b": 549,
+      "pair_examples": [
+        {
+          "article_id": "1",
+          "worker_a": "-OmKVAjgOHC1mVq6kCb7",
+          "worker_b": "-OmNDa2K2vrvWsM0SYvY",
+          "count_a": 5,
+          "count_b": 2,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "1",
+          "worker_a": "-OmKVAjgOHC1mVq6kCb7",
+          "worker_b": "-OmPeiIanXliIzWXEzvk",
+          "count_a": 5,
+          "count_b": 12,
+          "matched": 4,
+          "dice_f1": 0.471,
+          "jaccard": 0.308
+        },
+        {
+          "article_id": "1",
+          "worker_a": "-OmNDa2K2vrvWsM0SYvY",
+          "worker_b": "-OmPeiIanXliIzWXEzvk",
+          "count_a": 2,
+          "count_b": 12,
+          "matched": 1,
+          "dice_f1": 0.143,
+          "jaccard": 0.077
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OmKZbJ6PKUXaAVpZWPL",
+          "worker_b": "-OmQ61N0d5pdteb2KTf2",
+          "count_a": 4,
+          "count_b": 1,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OmKZbJ6PKUXaAVpZWPL",
+          "worker_b": "-OmjE6B5yBbbnbIh1bzs",
+          "count_a": 4,
+          "count_b": 13,
+          "matched": 1,
+          "dice_f1": 0.118,
+          "jaccard": 0.062
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OmQ61N0d5pdteb2KTf2",
+          "worker_b": "-OmjE6B5yBbbnbIh1bzs",
+          "count_a": 1,
+          "count_b": 13,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OmABt79XPWN83TU-zKD",
+          "worker_b": "-OmNRRp4yQtmcpKlQTRa",
+          "count_a": 7,
+          "count_b": 0,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OmABt79XPWN83TU-zKD",
+          "worker_b": "-OmjTDiPPtdHTRJrd3DB",
+          "count_a": 7,
+          "count_b": 7,
+          "matched": 3,
+          "dice_f1": 0.429,
+          "jaccard": 0.273
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OmNRRp4yQtmcpKlQTRa",
+          "worker_b": "-OmjTDiPPtdHTRJrd3DB",
+          "count_a": 0,
+          "count_b": 7,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "article_id": "12",
+          "worker_a": "-OmKSnG_ta6n2fcVnovC",
+          "worker_b": "-OmN-Dz5BWCv0NSMJalQ",
+          "count_a": 2,
+          "count_b": 0,
+          "matched": 0,
+          "dice_f1": 0.0,
+          "jaccard": 0.0
+        }
+      ]
+    }
+  },
+  "matched_span_label_agreement": {
+    "including_npl": {
+      "pair_count": 67,
+      "matched_spans_total": 134,
+      "micro_category_agreement_rate": 0.858,
+      "micro_subcategory_agreement_rate": 0.724,
+      "macro_category_agreement_rate": 0.873,
+      "macro_subcategory_agreement_rate": 0.71,
+      "pair_examples": [
+        {
+          "article_id": "1",
+          "worker_a": "-OmKVAjgOHC1mVq6kCb7",
+          "worker_b": "-OmPeiIanXliIzWXEzvk",
+          "matched_spans": 4,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
+        },
+        {
+          "article_id": "1",
+          "worker_a": "-OmNDa2K2vrvWsM0SYvY",
+          "worker_b": "-OmPeiIanXliIzWXEzvk",
+          "matched_spans": 1,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OmKZbJ6PKUXaAVpZWPL",
+          "worker_b": "-OmQ61N0d5pdteb2KTf2",
+          "matched_spans": 2,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OmKZbJ6PKUXaAVpZWPL",
+          "worker_b": "-OmjE6B5yBbbnbIh1bzs",
+          "matched_spans": 1,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 0.0
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OmABt79XPWN83TU-zKD",
+          "worker_b": "-OmjTDiPPtdHTRJrd3DB",
+          "matched_spans": 3,
+          "category_agreement_rate": 0.333,
+          "subcategory_agreement_rate": 0.0
+        },
+        {
+          "article_id": "12",
+          "worker_a": "-OmKSnG_ta6n2fcVnovC",
+          "worker_b": "-OmN-Dz5BWCv0NSMJalQ",
+          "matched_spans": 1,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
+        },
+        {
+          "article_id": "12",
+          "worker_a": "-OmKSnG_ta6n2fcVnovC",
+          "worker_b": "-OmSN9nvuobViEQDZ8n_",
+          "matched_spans": 2,
+          "category_agreement_rate": 0.5,
+          "subcategory_agreement_rate": 0.5
+        },
+        {
+          "article_id": "13",
+          "worker_a": "-OmACmWrDqnnwFl0oo7D",
+          "worker_b": "-OmN7xgAKKQ9_wcmT7qq",
+          "matched_spans": 2,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
+        },
+        {
+          "article_id": "14",
+          "worker_a": "-OmNJ32-fpZU4gfB1Qo2",
+          "worker_b": "-OmNSepogC6ZURA0HJx8",
+          "matched_spans": 2,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
+        },
+        {
+          "article_id": "14",
+          "worker_a": "-OmNJ32-fpZU4gfB1Qo2",
+          "worker_b": "-OmPgptImeNkZfWV7T4W",
+          "matched_spans": 3,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
+        }
+      ]
+    },
+    "polarizing_only": {
+      "pair_count": 41,
+      "matched_spans_total": 71,
+      "micro_category_agreement_rate": 0.732,
+      "micro_subcategory_agreement_rate": 0.479,
+      "macro_category_agreement_rate": 0.774,
+      "macro_subcategory_agreement_rate": 0.461,
+      "pair_examples": [
+        {
+          "article_id": "1",
+          "worker_a": "-OmKVAjgOHC1mVq6kCb7",
+          "worker_b": "-OmPeiIanXliIzWXEzvk",
+          "matched_spans": 4,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
+        },
+        {
+          "article_id": "1",
+          "worker_a": "-OmNDa2K2vrvWsM0SYvY",
+          "worker_b": "-OmPeiIanXliIzWXEzvk",
+          "matched_spans": 1,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OmKZbJ6PKUXaAVpZWPL",
+          "worker_b": "-OmjE6B5yBbbnbIh1bzs",
+          "matched_spans": 1,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 0.0
+        },
+        {
+          "article_id": "11",
+          "worker_a": "-OmABt79XPWN83TU-zKD",
+          "worker_b": "-OmjTDiPPtdHTRJrd3DB",
+          "matched_spans": 3,
+          "category_agreement_rate": 0.333,
+          "subcategory_agreement_rate": 0.0
+        },
+        {
+          "article_id": "12",
+          "worker_a": "-OmKSnG_ta6n2fcVnovC",
+          "worker_b": "-OmSN9nvuobViEQDZ8n_",
+          "matched_spans": 2,
+          "category_agreement_rate": 0.5,
+          "subcategory_agreement_rate": 0.5
+        },
+        {
+          "article_id": "14",
+          "worker_a": "-OmNJ32-fpZU4gfB1Qo2",
+          "worker_b": "-OmPgptImeNkZfWV7T4W",
+          "matched_spans": 1,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
+        },
+        {
+          "article_id": "15",
+          "worker_a": "-OmFuxrN5YkYD7SR_Cam",
+          "worker_b": "-OmSCeGOpRI-1B7fG-pV",
+          "matched_spans": 1,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
+        },
+        {
+          "article_id": "16",
+          "worker_a": "-OmFpOYos3IjDTyCJ2ec",
+          "worker_b": "-OmNLLzjoazDWU669BjZ",
+          "matched_spans": 1,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 0.0
+        },
+        {
+          "article_id": "16",
+          "worker_a": "-OmFpOYos3IjDTyCJ2ec",
+          "worker_b": "-OmS4pFc5lgoyZLj0IgD",
+          "matched_spans": 2,
+          "category_agreement_rate": 0.5,
+          "subcategory_agreement_rate": 0.5
+        },
+        {
+          "article_id": "16",
+          "worker_a": "-OmNLLzjoazDWU669BjZ",
+          "worker_b": "-OmS4pFc5lgoyZLj0IgD",
+          "matched_spans": 1,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 0.0
+        }
+      ]
+    }
+  },
+  "one_vs_rest": {
+    "category": {
+      "no polarizing language": {
+        "positive_ratings": 133,
+        "positive_share_of_worker_paragraph_units": 0.457,
+        "pairwise_percent_agreement": 0.519,
+        "exact_consensus_rate": 0.278,
+        "pairwise_cohen_weighted_mean": 0.173,
+        "fleiss_kappa": 0.031,
+        "krippendorff_alpha_nominal": 0.032
+      },
+      "persuasive propaganda": {
+        "positive_ratings": 133,
+        "positive_share_of_worker_paragraph_units": 0.457,
+        "pairwise_percent_agreement": 0.505,
+        "exact_consensus_rate": 0.258,
+        "pairwise_cohen_weighted_mean": 0.159,
+        "fleiss_kappa": 0.003,
+        "krippendorff_alpha_nominal": 0.005
+      },
+      "inflammatory language": {
+        "positive_ratings": 103,
+        "positive_share_of_worker_paragraph_units": 0.354,
+        "pairwise_percent_agreement": 0.533,
+        "exact_consensus_rate": 0.299,
+        "pairwise_cohen_weighted_mean": 0.215,
+        "fleiss_kappa": -0.022,
+        "krippendorff_alpha_nominal": -0.02
+      }
+    },
+    "subcategory": {
+      "no polarizing language": {
+        "positive_ratings": 133,
+        "positive_share_of_worker_paragraph_units": 0.457,
+        "pairwise_percent_agreement": 0.519,
+        "exact_consensus_rate": 0.278,
+        "pairwise_cohen_weighted_mean": 0.173,
+        "fleiss_kappa": 0.031,
+        "krippendorff_alpha_nominal": 0.032
+      },
+      "exaggeration": {
+        "positive_ratings": 77,
+        "positive_share_of_worker_paragraph_units": 0.265,
+        "pairwise_percent_agreement": 0.588,
+        "exact_consensus_rate": 0.381,
+        "pairwise_cohen_weighted_mean": 0.236,
+        "fleiss_kappa": -0.06,
+        "krippendorff_alpha_nominal": -0.058
+      },
+      "doubt": {
+        "positive_ratings": 42,
+        "positive_share_of_worker_paragraph_units": 0.144,
+        "pairwise_percent_agreement": 0.759,
+        "exact_consensus_rate": 0.639,
+        "pairwise_cohen_weighted_mean": 0.35,
+        "fleiss_kappa": 0.026,
+        "krippendorff_alpha_nominal": 0.028
+      },
+      "slogans": {
+        "positive_ratings": 27,
+        "positive_share_of_worker_paragraph_units": 0.093,
+        "pairwise_percent_agreement": 0.869,
+        "exact_consensus_rate": 0.804,
+        "pairwise_cohen_weighted_mean": 0.613,
+        "fleiss_kappa": 0.224,
+        "krippendorff_alpha_nominal": 0.226
+      },
+      "casual oversimplification": {
+        "positive_ratings": 23,
+        "positive_share_of_worker_paragraph_units": 0.079,
+        "pairwise_percent_agreement": 0.849,
+        "exact_consensus_rate": 0.773,
+        "pairwise_cohen_weighted_mean": 0.557,
+        "fleiss_kappa": -0.039,
+        "krippendorff_alpha_nominal": -0.037
+      },
+      "scapegoating": {
+        "positive_ratings": 5,
+        "positive_share_of_worker_paragraph_units": 0.017,
+        "pairwise_percent_agreement": 0.966,
+        "exact_consensus_rate": 0.948,
+        "pairwise_cohen_weighted_mean": 0.89,
+        "fleiss_kappa": -0.017,
+        "krippendorff_alpha_nominal": -0.016
+      },
+      "bandwagon": {
+        "positive_ratings": 17,
+        "positive_share_of_worker_paragraph_units": 0.058,
+        "pairwise_percent_agreement": 0.89,
+        "exact_consensus_rate": 0.835,
+        "pairwise_cohen_weighted_mean": 0.662,
+        "fleiss_kappa": 0.0,
+        "krippendorff_alpha_nominal": 0.002
+      },
+      "demonization": {
+        "positive_ratings": 46,
+        "positive_share_of_worker_paragraph_units": 0.158,
+        "pairwise_percent_agreement": 0.732,
+        "exact_consensus_rate": 0.598,
+        "pairwise_cohen_weighted_mean": 0.413,
+        "fleiss_kappa": -0.007,
+        "krippendorff_alpha_nominal": -0.005
+      },
+      "name-calling": {
+        "positive_ratings": 66,
+        "positive_share_of_worker_paragraph_units": 0.227,
+        "pairwise_percent_agreement": 0.649,
+        "exact_consensus_rate": 0.474,
+        "pairwise_cohen_weighted_mean": 0.337,
+        "fleiss_kappa": 0.001,
+        "krippendorff_alpha_nominal": 0.002
+      }
+    }
+  },
+  "article_level_binary": [
+    {
+      "article_id": "1",
+      "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.5,
+      "krippendorff_alpha_nominal": -0.417
+    },
+    {
+      "article_id": "2",
+      "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 1.0,
+      "exact_consensus_rate": 1.0,
+      "fleiss_kappa": 1.0,
+      "krippendorff_alpha_nominal": 1.0
+    },
+    {
+      "article_id": "3",
+      "title": "Four top residencies now offered to local artists, thanks to Oolite",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.35,
+      "krippendorff_alpha_nominal": -0.275
+    },
+    {
+      "article_id": "4",
+      "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": 0.1,
+      "krippendorff_alpha_nominal": 0.15
+    },
+    {
+      "article_id": "5",
+      "title": "get these trending washington restaurants on your radar today",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.5,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": -0.125,
+      "krippendorff_alpha_nominal": -0.078
+    },
+    {
+      "article_id": "6",
+      "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": -0.286,
+      "krippendorff_alpha_nominal": -0.214
+    },
+    {
+      "article_id": "7",
+      "title": "Ex-Posen mayor pleads guilty to embezzling village funds",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.667,
+      "exact_consensus_rate": 0.5,
+      "fleiss_kappa": 0.111,
+      "krippendorff_alpha_nominal": 0.148
+    },
+    {
+      "article_id": "8",
+      "title": "rosemount recreation center plan gets positive response so far",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.35,
+      "krippendorff_alpha_nominal": -0.275
+    },
+    {
+      "article_id": "9",
+      "title": "ron desantis signs amendment 4 bill, limiting felon voting",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.5,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": -0.333,
+      "krippendorff_alpha_nominal": -0.278
+    },
+    {
+      "article_id": "10",
+      "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.5,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": -0.029,
+      "krippendorff_alpha_nominal": 0.014
+    },
+    {
+      "article_id": "11",
+      "title": "Missouri's only abortion clinic to remain open after judge's injunction holds",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.5,
+      "krippendorff_alpha_nominal": -0.438
+    },
+    {
+      "article_id": "12",
+      "title": "BuzzFeed Journalists Protest in Push for Union Recognition",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.35,
+      "krippendorff_alpha_nominal": -0.275
+    },
+    {
+      "article_id": "13",
+      "title": "DC mayor says Trump's Fourth of July celebration emptied security fund",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.35,
+      "krippendorff_alpha_nominal": -0.275
+    },
+    {
+      "article_id": "14",
+      "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": -0.0,
+      "krippendorff_alpha_nominal": 0.056
+    },
+    {
+      "article_id": "15",
+      "title": "tutankhamun sculpture's london auction sparks egyptian outcry",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.333,
+      "krippendorff_alpha_nominal": -0.278
+    },
+    {
+      "article_id": "16",
+      "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.5,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": -0.0,
+      "krippendorff_alpha_nominal": 0.042
+    },
+    {
+      "article_id": "17",
+      "title": "Biden criticizes Amazon for paying $0 in corporate taxes",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.5,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": -0.029,
+      "krippendorff_alpha_nominal": 0.014
+    },
+    {
+      "article_id": "18",
+      "title": "trump vows to cure cancer and eradicate aids",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.333,
+      "krippendorff_alpha_nominal": -0.278
+    },
+    {
+      "article_id": "19",
+      "title": "donald trump's criminal justice reform shows results",
+      "paragraph_units": 5,
+      "pairwise_percent_agreement": 0.6,
+      "exact_consensus_rate": 0.4,
+      "fleiss_kappa": 0.196,
+      "krippendorff_alpha_nominal": 0.223
+    },
+    {
+      "article_id": "20",
+      "title": "GOP lawmaker suggests Colin Kaepernick move to a different country",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": -0.286,
+      "krippendorff_alpha_nominal": -0.214
+    },
+    {
+      "article_id": "21",
+      "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": -0.286,
+      "krippendorff_alpha_nominal": -0.214
+    },
+    {
+      "article_id": "22",
+      "title": "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.667,
+      "exact_consensus_rate": 0.5,
+      "fleiss_kappa": 0.314,
+      "krippendorff_alpha_nominal": 0.343
+    },
+    {
+      "article_id": "23",
+      "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": -0.286,
+      "krippendorff_alpha_nominal": -0.214
+    },
+    {
+      "article_id": "24",
+      "title": "RMV Fail: 546 license suspensions, more to come",
+      "paragraph_units": 5,
+      "pairwise_percent_agreement": 0.467,
+      "exact_consensus_rate": 0.2,
+      "fleiss_kappa": -0.111,
+      "krippendorff_alpha_nominal": -0.074
+    },
+    {
+      "article_id": "25",
+      "title": "Killer of 16-year-old New York girl in 1980 released on parole despite outrage",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.333,
+      "krippendorff_alpha_nominal": -0.278
+    },
+    {
+      "article_id": "26",
+      "title": "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": -0.286,
+      "krippendorff_alpha_nominal": -0.214
+    },
+    {
+      "article_id": "27",
+      "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": -0.286,
+      "krippendorff_alpha_nominal": -0.214
+    }
+  ],
+  "article_level_category": [
+    {
+      "article_id": "1",
+      "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.222,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.37,
+      "krippendorff_alpha_nominal": -0.293
+    },
+    {
+      "article_id": "2",
+      "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.5,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": 0.234,
+      "krippendorff_alpha_nominal": 0.266
+    },
+    {
+      "article_id": "3",
+      "title": "Four top residencies now offered to local artists, thanks to Oolite",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": 0.036,
+      "krippendorff_alpha_nominal": 0.089
+    },
+    {
+      "article_id": "4",
+      "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.038,
+      "krippendorff_alpha_nominal": 0.019
+    },
+    {
+      "article_id": "5",
+      "title": "get these trending washington restaurants on your radar today",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.5,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": -0.029,
+      "krippendorff_alpha_nominal": 0.014
+    },
+    {
+      "article_id": "6",
+      "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.111,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.286,
+      "krippendorff_alpha_nominal": -0.214
+    },
+    {
+      "article_id": "7",
+      "title": "Ex-Posen mayor pleads guilty to embezzling village funds",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": 0.094,
+      "krippendorff_alpha_nominal": 0.132
+    },
+    {
+      "article_id": "8",
+      "title": "rosemount recreation center plan gets positive response so far",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.222,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.26,
+      "krippendorff_alpha_nominal": -0.19
+    },
+    {
+      "article_id": "9",
+      "title": "ron desantis signs amendment 4 bill, limiting felon voting",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.5,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": -0.241,
+      "krippendorff_alpha_nominal": -0.19
+    },
+    {
+      "article_id": "10",
+      "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.167,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.2,
+      "krippendorff_alpha_nominal": -0.15
+    },
+    {
+      "article_id": "11",
+      "title": "Missouri's only abortion clinic to remain open after judge's injunction holds",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.0,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.358,
+      "krippendorff_alpha_nominal": -0.302
+    },
+    {
+      "article_id": "12",
+      "title": "BuzzFeed Journalists Protest in Push for Union Recognition",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.111,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.385,
+      "krippendorff_alpha_nominal": -0.308
+    },
+    {
+      "article_id": "13",
+      "title": "DC mayor says Trump's Fourth of July celebration emptied security fund",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.222,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.26,
+      "krippendorff_alpha_nominal": -0.19
+    },
+    {
+      "article_id": "14",
+      "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": -0.0,
+      "krippendorff_alpha_nominal": 0.056
+    },
+    {
+      "article_id": "15",
+      "title": "tutankhamun sculpture's london auction sparks egyptian outcry",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.091,
+      "krippendorff_alpha_nominal": -0.045
+    },
+    {
+      "article_id": "16",
+      "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.171,
+      "krippendorff_alpha_nominal": -0.122
+    },
+    {
+      "article_id": "17",
+      "title": "Biden criticizes Amazon for paying $0 in corporate taxes",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.25,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.08,
+      "krippendorff_alpha_nominal": -0.035
+    },
+    {
+      "article_id": "18",
+      "title": "trump vows to cure cancer and eradicate aids",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.167,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.364,
+      "krippendorff_alpha_nominal": -0.307
+    },
+    {
+      "article_id": "19",
+      "title": "donald trump's criminal justice reform shows results",
+      "paragraph_units": 5,
+      "pairwise_percent_agreement": 0.6,
+      "exact_consensus_rate": 0.4,
+      "fleiss_kappa": 0.274,
+      "krippendorff_alpha_nominal": 0.298
+    },
+    {
+      "article_id": "20",
+      "title": "GOP lawmaker suggests Colin Kaepernick move to a different country",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.111,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.241,
+      "krippendorff_alpha_nominal": -0.172
+    },
+    {
+      "article_id": "21",
+      "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.222,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.05,
+      "krippendorff_alpha_nominal": 0.008
+    },
+    {
+      "article_id": "22",
+      "title": "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": 0.059,
+      "krippendorff_alpha_nominal": 0.098
+    },
+    {
+      "article_id": "23",
+      "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.0,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.397,
+      "krippendorff_alpha_nominal": -0.319
+    },
+    {
+      "article_id": "24",
+      "title": "RMV Fail: 546 license suspensions, more to come",
+      "paragraph_units": 5,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.2,
+      "fleiss_kappa": -0.19,
+      "krippendorff_alpha_nominal": -0.151
+    },
+    {
+      "article_id": "25",
+      "title": "Killer of 16-year-old New York girl in 1980 released on parole despite outrage",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.25,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.2,
+      "krippendorff_alpha_nominal": -0.15
+    },
+    {
+      "article_id": "26",
+      "title": "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": 0.4,
+      "krippendorff_alpha_nominal": 0.433
+    },
+    {
+      "article_id": "27",
+      "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.111,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.2,
+      "krippendorff_alpha_nominal": -0.133
+    }
+  ],
+  "article_level_subcategory": [
+    {
+      "article_id": "1",
+      "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.5,
+      "krippendorff_alpha_nominal": -0.417
+    },
+    {
+      "article_id": "2",
+      "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.5,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": 0.234,
+      "krippendorff_alpha_nominal": 0.266
+    },
+    {
+      "article_id": "3",
+      "title": "Four top residencies now offered to local artists, thanks to Oolite",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.038,
+      "krippendorff_alpha_nominal": 0.019
+    },
+    {
+      "article_id": "4",
+      "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.222,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.167,
+      "krippendorff_alpha_nominal": -0.102
+    },
+    {
+      "article_id": "5",
+      "title": "get these trending washington restaurants on your radar today",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.5,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": 0.027,
+      "krippendorff_alpha_nominal": 0.068
+    },
+    {
+      "article_id": "6",
+      "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.111,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.241,
+      "krippendorff_alpha_nominal": -0.172
+    },
+    {
+      "article_id": "7",
+      "title": "Ex-Posen mayor pleads guilty to embezzling village funds",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.25,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": 0.018,
+      "krippendorff_alpha_nominal": 0.059
+    },
+    {
+      "article_id": "8",
+      "title": "rosemount recreation center plan gets positive response so far",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.222,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.26,
+      "krippendorff_alpha_nominal": -0.19
+    },
+    {
+      "article_id": "9",
+      "title": "ron desantis signs amendment 4 bill, limiting felon voting",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.5,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": -0.241,
+      "krippendorff_alpha_nominal": -0.19
+    },
+    {
+      "article_id": "10",
+      "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.25,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.102,
+      "krippendorff_alpha_nominal": -0.056
+    },
+    {
+      "article_id": "11",
+      "title": "Missouri's only abortion clinic to remain open after judge's injunction holds",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.167,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.364,
+      "krippendorff_alpha_nominal": -0.307
+    },
+    {
+      "article_id": "12",
+      "title": "BuzzFeed Journalists Protest in Push for Union Recognition",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.111,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.333,
+      "krippendorff_alpha_nominal": -0.259
+    },
+    {
+      "article_id": "13",
+      "title": "DC mayor says Trump's Fourth of July celebration emptied security fund",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.222,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.37,
+      "krippendorff_alpha_nominal": -0.293
+    },
+    {
+      "article_id": "14",
+      "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": 0.1,
+      "krippendorff_alpha_nominal": 0.15
+    },
+    {
+      "article_id": "15",
+      "title": "tutankhamun sculpture's london auction sparks egyptian outcry",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.167,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.25,
+      "krippendorff_alpha_nominal": -0.198
+    },
+    {
+      "article_id": "16",
+      "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.171,
+      "krippendorff_alpha_nominal": -0.122
+    },
+    {
+      "article_id": "17",
+      "title": "Biden criticizes Amazon for paying $0 in corporate taxes",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.25,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.102,
+      "krippendorff_alpha_nominal": -0.056
+    },
+    {
+      "article_id": "18",
+      "title": "trump vows to cure cancer and eradicate aids",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.167,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.277,
+      "krippendorff_alpha_nominal": -0.223
+    },
+    {
+      "article_id": "19",
+      "title": "donald trump's criminal justice reform shows results",
+      "paragraph_units": 5,
+      "pairwise_percent_agreement": 0.4,
+      "exact_consensus_rate": 0.2,
+      "fleiss_kappa": 0.007,
+      "krippendorff_alpha_nominal": 0.04
+    },
+    {
+      "article_id": "20",
+      "title": "GOP lawmaker suggests Colin Kaepernick move to a different country",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.111,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.241,
+      "krippendorff_alpha_nominal": -0.172
+    },
+    {
+      "article_id": "21",
+      "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.222,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.086,
+      "krippendorff_alpha_nominal": -0.026
+    },
+    {
+      "article_id": "22",
+      "title": "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.25,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": -0.038,
+      "krippendorff_alpha_nominal": 0.005
+    },
+    {
+      "article_id": "23",
+      "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.35,
+      "krippendorff_alpha_nominal": -0.275
+    },
+    {
+      "article_id": "24",
+      "title": "RMV Fail: 546 license suspensions, more to come",
+      "paragraph_units": 5,
+      "pairwise_percent_agreement": 0.333,
+      "exact_consensus_rate": 0.2,
+      "fleiss_kappa": -0.154,
+      "krippendorff_alpha_nominal": -0.115
+    },
+    {
+      "article_id": "25",
+      "title": "Killer of 16-year-old New York girl in 1980 released on parole despite outrage",
+      "paragraph_units": 4,
+      "pairwise_percent_agreement": 0.167,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.333,
+      "krippendorff_alpha_nominal": -0.278
+    },
+    {
+      "article_id": "26",
+      "title": "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.222,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.016,
+      "krippendorff_alpha_nominal": 0.04
+    },
+    {
+      "article_id": "27",
+      "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time",
+      "paragraph_units": 3,
+      "pairwise_percent_agreement": 0.111,
+      "exact_consensus_rate": 0.0,
+      "fleiss_kappa": -0.161,
+      "krippendorff_alpha_nominal": -0.097
+    }
+  ]
+}
