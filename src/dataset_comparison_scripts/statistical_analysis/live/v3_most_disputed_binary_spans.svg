@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="634" viewBox="0 0 1300 634">
+<style>
+text { font-family: Arial, sans-serif; fill: #1f2937; }
+.title { font-size: 18px; font-weight: 700; }
+.subtitle { font-size: 11px; fill: #4b5563; }
+.label { font-size: 11px; }
+.small { font-size: 10px; fill: #4b5563; }
+.value { font-size: 11px; font-weight: 700; }
+</style>
+<rect x="0" y="0" width="1300" height="634" fill="#ffffff" />
+<text x="40" y="34" class="title">Most Disputed Binary Agreement Cases</text>
+<text x="40" y="54" class="subtitle">Top v3 LLM-provided annotation spans ranked by highest deny count, then lowest accept rate. Bars show binary accept rate.</text>
+<line x1="540.0" y1="82" x2="540.0" y2="598" stroke="#e5e7eb" stroke-width="1" />
+<text x="540.0" y="620" text-anchor="middle" class="small">0%</text>
+<line x1="685.0" y1="82" x2="685.0" y2="598" stroke="#e5e7eb" stroke-width="1" />
+<text x="685.0" y="620" text-anchor="middle" class="small">25%</text>
+<line x1="830.0" y1="82" x2="830.0" y2="598" stroke="#e5e7eb" stroke-width="1" />
+<text x="830.0" y="620" text-anchor="middle" class="small">50%</text>
+<line x1="975.0" y1="82" x2="975.0" y2="598" stroke="#e5e7eb" stroke-width="1" />
+<text x="975.0" y="620" text-anchor="middle" class="small">75%</text>
+<line x1="1120.0" y1="82" x2="1120.0" y2="598" stroke="#e5e7eb" stroke-width="1" />
+<text x="1120.0" y="620" text-anchor="middle" class="small">100%</text>
+<text x="526" y="90" text-anchor="end" class="label">No Polarizing language | no polarizing language selected</text>
+<rect x="540" y="82" width="145.0" height="16" fill="#e76f51" rx="3" />
+<text x="1130" y="90" class="small">1 accept / 3 deny (25%)</text>
+<text x="526" y="132" text-anchor="end" class="label">No Polarizing language | no polarizing language selected</text>
+<rect x="540" y="124" width="145.0" height="16" fill="#e76f51" rx="3" />
+<text x="1130" y="132" class="small">1 accept / 3 deny (25%)</text>
+<text x="526" y="174" text-anchor="end" class="label">exaggeration | a slew of recent anti-abortion legislation across the country</text>
+<rect x="540" y="166" width="0.0" height="16" fill="#e76f51" rx="3" />
+<text x="1130" y="174" class="small">0 accept / 2 deny (0%)</text>
+<text x="526" y="216" text-anchor="end" class="label">No Polarizing language | no polarizing language selected</text>
+<rect x="540" y="208" width="290.0" height="16" fill="#e9c46a" rx="3" />
+<text x="1130" y="216" class="small">2 accept / 2 deny (50%)</text>
+<text x="526" y="258" text-anchor="end" class="label">No Polarizing language | no polarizing language selected</text>
+<rect x="540" y="250" width="290.0" height="16" fill="#e9c46a" rx="3" />
+<text x="1130" y="258" class="small">2 accept / 2 deny (50%)</text>
+<text x="526" y="300" text-anchor="end" class="label">exaggeration | raising fears that environmental rollbacks seen in the United…</text>
+<rect x="540" y="292" width="386.66666666666663" height="16" fill="#e9c46a" rx="3" />
+<text x="1130" y="300" class="small">4 accept / 2 deny (67%)</text>
+<text x="526" y="342" text-anchor="end" class="label">No Polarizing language | no polarizing language selected</text>
+<rect x="540" y="334" width="386.66666666666663" height="16" fill="#e9c46a" rx="3" />
+<text x="1130" y="342" class="small">2 accept / 1 deny (67%)</text>
+<text x="526" y="384" text-anchor="end" class="label">No Polarizing language | no polarizing language selected</text>
+<rect x="540" y="376" width="386.66666666666663" height="16" fill="#e9c46a" rx="3" />
+<text x="1130" y="384" class="small">2 accept / 1 deny (67%)</text>
+<text x="526" y="426" text-anchor="end" class="label">No Polarizing language | no polarizing language selected</text>
+<rect x="540" y="418" width="386.66666666666663" height="16" fill="#e9c46a" rx="3" />
+<text x="1130" y="426" class="small">2 accept / 1 deny (67%)</text>
+<text x="526" y="468" text-anchor="end" class="label">No Polarizing language | no polarizing language selected</text>
+<rect x="540" y="460" width="386.66666666666663" height="16" fill="#e9c46a" rx="3" />
+<text x="1130" y="468" class="small">2 accept / 1 deny (67%)</text>
+<text x="526" y="510" text-anchor="end" class="label">No Polarizing language | no polarizing language selected</text>
+<rect x="540" y="502" width="386.66666666666663" height="16" fill="#e9c46a" rx="3" />
+<text x="1130" y="510" class="small">2 accept / 1 deny (67%)</text>
+<text x="526" y="552" text-anchor="end" class="label">No Polarizing language | no polarizing language selected</text>
+<rect x="540" y="544" width="464.0" height="16" fill="#2a9d8f" rx="3" />
+<text x="1130" y="552" class="small">4 accept / 1 deny (80%)</text>
+</svg>

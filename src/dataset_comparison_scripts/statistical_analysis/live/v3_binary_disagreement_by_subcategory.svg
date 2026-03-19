@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="268" viewBox="0 0 1100 268">
+<style>
+text { font-family: Arial, sans-serif; fill: #1f2937; }
+.title { font-size: 18px; font-weight: 700; }
+.subtitle { font-size: 11px; fill: #4b5563; }
+.label { font-size: 11px; }
+.small { font-size: 10px; fill: #4b5563; }
+.value { font-size: 11px; font-weight: 700; }
+</style>
+<rect x="0" y="0" width="1100" height="268" fill="#ffffff" />
+<text x="40" y="34" class="title">Binary Disagreement By LLM Subcategory</text>
+<text x="40" y="54" class="subtitle">Aggregate deny rate for each LLM-provided subcategory label in the live v3 binary agreement node.</text>
+<line x1="300.0" y1="82" x2="300.0" y2="232" stroke="#e5e7eb" stroke-width="1" />
+<text x="300.0" y="254" text-anchor="middle" class="small">0%</text>
+<line x1="450.0" y1="82" x2="450.0" y2="232" stroke="#e5e7eb" stroke-width="1" />
+<text x="450.0" y="254" text-anchor="middle" class="small">25%</text>
+<line x1="600.0" y1="82" x2="600.0" y2="232" stroke="#e5e7eb" stroke-width="1" />
+<text x="600.0" y="254" text-anchor="middle" class="small">50%</text>
+<line x1="750.0" y1="82" x2="750.0" y2="232" stroke="#e5e7eb" stroke-width="1" />
+<text x="750.0" y="254" text-anchor="middle" class="small">75%</text>
+<line x1="900.0" y1="82" x2="900.0" y2="232" stroke="#e5e7eb" stroke-width="1" />
+<text x="900.0" y="254" text-anchor="middle" class="small">100%</text>
+<text x="286" y="90" text-anchor="end" class="label">exaggeration</text>
+<rect x="300" y="82" width="141.1764705882353" height="16" fill="#e9c46a" rx="3" />
+<text x="910" y="90" class="small">4 deny / 17 votes across 4 spans (24%)</text>
+<text x="286" y="136" text-anchor="end" class="label">No Polarizing language</text>
+<rect x="300" y="128" width="97.5609756097561" height="16" fill="#e9c46a" rx="3" />
+<text x="910" y="136" class="small">20 deny / 123 votes across 33 spans (16%)</text>
+<text x="286" y="182" text-anchor="end" class="label">casual oversimplification</text>
+<rect x="300" y="174" width="0.0" height="16" fill="#2a9d8f" rx="3" />
+<text x="910" y="182" class="small">0 deny / 2 votes across 1 spans (0%)</text>
+</svg>

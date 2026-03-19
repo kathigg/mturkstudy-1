@@ -1,0 +1,217 @@
+{
+  "valid_v3_review_submissions": 16,
+  "reviews_with_any_subcategory_correction": 6,
+  "full_agreement_review_submissions": 10,
+  "review_level_full_agreement_rate": 0.625,
+  "review_level_correction_rate": 0.375,
+  "total_subcategory_corrections": 13,
+  "corrected_subcategory_counts": {
+    "slogans": 3,
+    "bandwagon": 2,
+    "doubt": 2,
+    "name-calling": 1,
+    "scapegoating": 2,
+    "exaggeration": 2,
+    "no polarizing language": 1
+  },
+  "article_review_outcomes": {
+    "Democrat Robert Martwick sworn in as state senator; GOP taps Rosemont Mayor Brad Stephens for House seat": {
+      "agree": 4,
+      "corrected": 0,
+      "correction_entries": 0
+    },
+    "Ex-Posen mayor pleads guilty to embezzling village funds": {
+      "agree": 1,
+      "corrected": 0,
+      "correction_entries": 0
+    },
+    "Four top residencies now offered to local artists, thanks to Oolite": {
+      "agree": 2,
+      "corrected": 1,
+      "correction_entries": 2
+    },
+    "Missouri's only abortion clinic to remain open after judge's injunction holds": {
+      "agree": 0,
+      "corrected": 2,
+      "correction_entries": 2
+    },
+    "get these trending washington restaurants on your radar today": {
+      "agree": 1,
+      "corrected": 1,
+      "correction_entries": 4
+    },
+    "phoenix chief says police response to incident with 4-year-old is 'unacceptable'": {
+      "agree": 1,
+      "corrected": 0,
+      "correction_entries": 0
+    },
+    "port of l.a. sued after canceling agreement for a shipping container facility": {
+      "agree": 1,
+      "corrected": 0,
+      "correction_entries": 0
+    },
+    "rosemount recreation center plan gets positive response so far": {
+      "agree": 0,
+      "corrected": 1,
+      "correction_entries": 3
+    },
+    "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away": {
+      "agree": 0,
+      "corrected": 1,
+      "correction_entries": 2
+    }
+  },
+  "binary_accept_total": 118,
+  "binary_deny_total": 24,
+  "binary_accept_rate": 0.8309859154929577,
+  "binary_vote_total": 142,
+  "binary_annotation_instances": 38,
+  "binary_outcome_buckets": {
+    "unanimous_accept": 22,
+    "majority_accept": 11,
+    "tied": 2,
+    "majority_deny": 3
+  },
+  "binary_by_subcategory": {
+    "No Polarizing language": {
+      "accept": 103,
+      "deny": 20,
+      "instances": 33,
+      "accept_rate": 0.8373983739837398
+    },
+    "casual oversimplification": {
+      "accept": 2,
+      "deny": 0,
+      "instances": 1,
+      "accept_rate": 1.0
+    },
+    "exaggeration": {
+      "accept": 13,
+      "deny": 4,
+      "instances": 4,
+      "accept_rate": 0.7647058823529411
+    }
+  },
+  "top_disputed_binary_annotations": [
+    {
+      "group_index": 8,
+      "annotation_index": 0,
+      "subcategory": "No Polarizing language",
+      "span": "no polarizing language selected",
+      "accept": 1,
+      "deny": 3,
+      "total": 4,
+      "accept_rate": 0.25
+    },
+    {
+      "group_index": 8,
+      "annotation_index": 2,
+      "subcategory": "No Polarizing language",
+      "span": "no polarizing language selected",
+      "accept": 1,
+      "deny": 3,
+      "total": 4,
+      "accept_rate": 0.25
+    },
+    {
+      "group_index": 11,
+      "annotation_index": 3,
+      "subcategory": "exaggeration",
+      "span": "a slew of recent anti-abortion legislation across the country",
+      "accept": 0,
+      "deny": 2,
+      "total": 2,
+      "accept_rate": 0.0
+    },
+    {
+      "group_index": 4,
+      "annotation_index": 1,
+      "subcategory": "No Polarizing language",
+      "span": "no polarizing language selected",
+      "accept": 2,
+      "deny": 2,
+      "total": 4,
+      "accept_rate": 0.5
+    },
+    {
+      "group_index": 8,
+      "annotation_index": 1,
+      "subcategory": "No Polarizing language",
+      "span": "no polarizing language selected",
+      "accept": 2,
+      "deny": 2,
+      "total": 4,
+      "accept_rate": 0.5
+    },
+    {
+      "group_index": 10,
+      "annotation_index": 0,
+      "subcategory": "exaggeration",
+      "span": "raising fears that environmental rollbacks seen in the United States may be spreading to Europe",
+      "accept": 4,
+      "deny": 2,
+      "total": 6,
+      "accept_rate": 0.6666666666666666
+    },
+    {
+      "group_index": 3,
+      "annotation_index": 0,
+      "subcategory": "No Polarizing language",
+      "span": "no polarizing language selected",
+      "accept": 2,
+      "deny": 1,
+      "total": 3,
+      "accept_rate": 0.6666666666666666
+    },
+    {
+      "group_index": 3,
+      "annotation_index": 1,
+      "subcategory": "No Polarizing language",
+      "span": "no polarizing language selected",
+      "accept": 2,
+      "deny": 1,
+      "total": 3,
+      "accept_rate": 0.6666666666666666
+    },
+    {
+      "group_index": 6,
+      "annotation_index": 1,
+      "subcategory": "No Polarizing language",
+      "span": "no polarizing language selected",
+      "accept": 2,
+      "deny": 1,
+      "total": 3,
+      "accept_rate": 0.6666666666666666
+    },
+    {
+      "group_index": 6,
+      "annotation_index": 2,
+      "subcategory": "No Polarizing language",
+      "span": "no polarizing language selected",
+      "accept": 2,
+      "deny": 1,
+      "total": 3,
+      "accept_rate": 0.6666666666666666
+    },
+    {
+      "group_index": 7,
+      "annotation_index": 1,
+      "subcategory": "No Polarizing language",
+      "span": "no polarizing language selected",
+      "accept": 2,
+      "deny": 1,
+      "total": 3,
+      "accept_rate": 0.6666666666666666
+    },
+    {
+      "group_index": 5,
+      "annotation_index": 0,
+      "subcategory": "No Polarizing language",
+      "span": "no polarizing language selected",
+      "accept": 4,
+      "deny": 1,
+      "total": 5,
+      "accept_rate": 0.8
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="526" viewBox="0 0 1200 526">
+<style>
+text { font-family: Arial, sans-serif; fill: #1f2937; }
+.title { font-size: 18px; font-weight: 700; }
+.subtitle { font-size: 11px; fill: #4b5563; }
+.label { font-size: 11px; }
+.small { font-size: 10px; fill: #4b5563; }
+.value { font-size: 11px; font-weight: 700; }
+</style>
+<rect x="0" y="0" width="1200" height="526" fill="#ffffff" />
+<text x="40" y="34" class="title">V3 Review Outcomes By Article</text>
+<text x="40" y="54" class="subtitle">Each bar shows valid v3 human reviews with no subcategory correction versus reviews that changed at least one provided LLM label.</text>
+<line x1="420.0" y1="82" x2="420.0" y2="490" stroke="#e5e7eb" stroke-width="1" />
+<text x="420.0" y="512" text-anchor="middle" class="small">0</text>
+<line x1="580.0" y1="82" x2="580.0" y2="490" stroke="#e5e7eb" stroke-width="1" />
+<text x="580.0" y="512" text-anchor="middle" class="small">1</text>
+<line x1="740.0" y1="82" x2="740.0" y2="490" stroke="#e5e7eb" stroke-width="1" />
+<text x="740.0" y="512" text-anchor="middle" class="small">2</text>
+<line x1="900.0" y1="82" x2="900.0" y2="490" stroke="#e5e7eb" stroke-width="1" />
+<text x="900.0" y="512" text-anchor="middle" class="small">3</text>
+<line x1="1060.0" y1="82" x2="1060.0" y2="490" stroke="#e5e7eb" stroke-width="1" />
+<text x="1060.0" y="512" text-anchor="middle" class="small">4</text>
+<rect x="40" y="66" width="12" height="12" fill="#2a9d8f" rx="2" />
+<text x="58" y="76" class="small">Fully agreed with LLM</text>
+<rect x="190" y="66" width="12" height="12" fill="#e76f51" rx="2" />
+<text x="208" y="76" class="small">Made subcategory correction(s)</text>
+<text x="406" y="90" text-anchor="end" class="label">Missouri's only abortion clinic to remain open after judge's in…</text>
+<rect x="420" y="82" width="0.0" height="16" fill="#2a9d8f" rx="3" />
+<rect x="420.0" y="82" width="320.0" height="16" fill="#e76f51" rx="3" />
+<text x="748.0" y="90" class="small">2/2 corrected, 2 correction entries (100%)</text>
+<text x="406" y="134" text-anchor="end" class="label">Four top residencies now offered to local artists, thanks to Oo…</text>
+<rect x="420" y="126" width="320.0" height="16" fill="#2a9d8f" rx="3" />
+<rect x="740.0" y="126" width="160.0" height="16" fill="#e76f51" rx="3" />
+<text x="908.0" y="134" class="small">1/3 corrected, 2 correction entries (33%)</text>
+<text x="406" y="178" text-anchor="end" class="label">get these trending washington restaurants on your radar today</text>
+<rect x="420" y="170" width="160.0" height="16" fill="#2a9d8f" rx="3" />
+<rect x="580.0" y="170" width="160.0" height="16" fill="#e76f51" rx="3" />
+<text x="748.0" y="178" class="small">1/2 corrected, 4 correction entries (50%)</text>
+<text x="406" y="222" text-anchor="end" class="label">rosemount recreation center plan gets positive response so far</text>
+<rect x="420" y="214" width="0.0" height="16" fill="#2a9d8f" rx="3" />
+<rect x="420.0" y="214" width="160.0" height="16" fill="#e76f51" rx="3" />
+<text x="588.0" y="222" class="small">1/1 corrected, 3 correction entries (100%)</text>
+<text x="406" y="266" text-anchor="end" class="label">south african woman reunited with son six years after he disapp…</text>
+<rect x="420" y="258" width="0.0" height="16" fill="#2a9d8f" rx="3" />
+<rect x="420.0" y="258" width="160.0" height="16" fill="#e76f51" rx="3" />
+<text x="588.0" y="266" class="small">1/1 corrected, 2 correction entries (100%)</text>
+<text x="406" y="310" text-anchor="end" class="label">Democrat Robert Martwick sworn in as state senator; GOP taps Ro…</text>
+<rect x="420" y="302" width="640.0" height="16" fill="#2a9d8f" rx="3" />
+<rect x="1060.0" y="302" width="0.0" height="16" fill="#e76f51" rx="3" />
+<text x="1068.0" y="310" class="small">0/4 corrected, 0 correction entries (0%)</text>
+<text x="406" y="354" text-anchor="end" class="label">Ex-Posen mayor pleads guilty to embezzling village funds</text>
+<rect x="420" y="346" width="160.0" height="16" fill="#2a9d8f" rx="3" />
+<rect x="580.0" y="346" width="0.0" height="16" fill="#e76f51" rx="3" />
+<text x="588.0" y="354" class="small">0/1 corrected, 0 correction entries (0%)</text>
+<text x="406" y="398" text-anchor="end" class="label">phoenix chief says police response to incident with 4-year-old…</text>
+<rect x="420" y="390" width="160.0" height="16" fill="#2a9d8f" rx="3" />
+<rect x="580.0" y="390" width="0.0" height="16" fill="#e76f51" rx="3" />
+<text x="588.0" y="398" class="small">0/1 corrected, 0 correction entries (0%)</text>
+<text x="406" y="442" text-anchor="end" class="label">port of l.a. sued after canceling agreement for a shipping cont…</text>
+<rect x="420" y="434" width="160.0" height="16" fill="#2a9d8f" rx="3" />
+<rect x="580.0" y="434" width="0.0" height="16" fill="#e76f51" rx="3" />
+<text x="588.0" y="442" class="small">0/1 corrected, 0 correction entries (0%)</text>
+</svg>
