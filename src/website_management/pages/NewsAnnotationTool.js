@@ -623,7 +623,7 @@ const downloadAnnotations = (annotations, textAnnotations, surveyResponses) => {
       }, []);
     */
 
-const MAX_PER_ARTICLE = 10;
+const MAX_PER_ARTICLE = 3;
 
 async function assignArticleIndex() {
   const usageRef = ref(database, "articleUsage");
