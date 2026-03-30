@@ -234,7 +234,6 @@ function ToolMain() {
     const [selectedSubcategory, setSelectedSubcategory] = useState("");
     const [showRightInstructions, setShowRightInstructions] = useState(true);
     const [wordCount, setWordCount] = useState(0);
-    const [selectedIdx, setSelectedIdx] = useState(null);
     const [currentParagraphIndex, setCurrentParagraphIndex] = useState(0);
     const [selectionParagraphIndex, setSelectionParagraphIndex] = useState(null);
 
@@ -625,72 +624,39 @@ const downloadAnnotations = (annotations, textAnnotations, surveyResponses) => {
     */
 
 const MAX_PER_ARTICLE = 10;
-async function pickAndClaimIndex() {
+
+async function assignArticleIndex() {
   const usageRef = ref(database, "articleUsage");
-  const claimedRef = ref(database, "claimedArticles");
+  let chosenIndex = null;
 
-  const [usageSnap, claimedSnap] = await Promise.all([get(usageRef), get(claimedRef)]);
-  let usage = usageSnap.exists() ? usageSnap.val() : {};
-  let claimed = claimedSnap.exists() ? claimedSnap.val() : {};
+  const result = await runTransaction(usageRef, (curr) => {
+    const usage = curr ?? {};
 
-  // Initialize first 27 indices to 0 if missing
-  for (let i = 0; i < 27; i++) {
-    if (usage[i] === undefined) usage[i] = 0;
-    if (claimed[i] === undefined) claimed[i] = 0;
-  }
+    for (let i = 0; i < 27; i++) {
+      if (usage[i] === undefined) usage[i] = 0;
+    }
 
-  // Candidates must be under both caps
-  const candidates = Object.keys(usage)
-    .map(Number)
-    .filter((i) => usage[i] < MAX_PER_ARTICLE); // && (claimed[i] ?? 0) < MAX_PER_ARTICLE); {FOR IN HOUSE ANNOTATIONS}
-  if (candidates.length === 0) {
+    const candidates = Object.keys(usage)
+      .map(Number)
+      .filter((i) => usage[i] < MAX_PER_ARTICLE);
+
+    if (candidates.length === 0) {
+      chosenIndex = null;
+      return;
+    }
+
+    chosenIndex = candidates[Math.floor(Math.random() * candidates.length)];
+    usage[chosenIndex] = (usage[chosenIndex] ?? 0) + 1;
+    return usage;
+  });
+
+  if (!result.committed || chosenIndex === null) {
     console.warn("No available articles left.");
     return null;
   }
 
-  const shuffled = [...candidates].sort(() => Math.random() - 0.5);
-
-  /*
-  // Try in random order; atomically claim the first that succeeds
-  for (const i of shuffled) {
-    const ok = await tryClaimIndex(i);
-    if (ok) {
-      console.log(`Chosen & claimed index: ${i}`);
-      return i;
-    }
-  }
-  console.warn("All candidates were claimed concurrently. Try again.");
-  return null;
-  */
-  //{FOR HAND ANNOTATIONS}
-  console.log(`Chosen index (claims bypassed): ${shuffled[0]}`);
-  return shuffled[0];
-}
-
-async function tryClaimIndex(i) {
-  const idxRef = ref(database, `claimedArticles/${i}`);
-  const result = await runTransaction(idxRef, (curr) => {
-    const v = curr ?? 0;
-    if (v >= MAX_PER_ARTICLE) return; // abort transaction
-    return v + 1;                      // commit v+1
-  });
-  return result.committed; // true if we successfully claimed
-}
-
-// Decrement claim counter (never below 0)
-async function unclaimArticle(i) {
-  const idxRef = ref(database, `claimedArticles/${i}`);
-  await runTransaction(idxRef, (curr) => {
-    const v = curr ?? 0;
-    return v > 0 ? v - 1 : 0;
-  });
-}
-
-// Use transactions for logging usage too (safer under contention)
-async function logArticleUsage(index) {
-  const usageIdxRef = ref(database, `articleUsage/${index}`);
-  await runTransaction(usageIdxRef, (curr) => (curr ?? 0) + 1);
-  console.log(`Logged usage for index ${index}.`);
+  console.log(`Assigned index and logged usage immediately: ${chosenIndex}`);
+  return chosenIndex;
 }
 
   useEffect(() => {
@@ -708,9 +674,8 @@ async function logArticleUsage(index) {
           }));
           setAllArticles(parsedArticles);
 
-          const idx = await pickAndClaimIndex();
+          const idx = await assignArticleIndex();
           if (idx !== null) {
-            setSelectedIdx(idx);             // remember chosen index
             setArticles([parsedArticles[idx]]);
           } else {
             // All articles have hit the maximum allowed annotations.
@@ -794,28 +759,16 @@ const handleNextArticle = async () => {
     setBias(0);
     setOpenFeedback("");
 
-    // If user already did 1 article, log usage now and show thank-you
     if (articles.length >= 1) {
-      try {
-        if (selectedIdx !== null) {
-          await logArticleUsage(selectedIdx); // <-- increment only on Finish
-          await unclaimArticle(selectedIdx);
-        }
-      } catch (e) {
-        console.error("Failed to log article usage:", e);
-      }
       console.log("User has completed 1 articles this session.");
       setShowThankYou(true);
       return;
     } else {
-      // Otherwise fetch another article; remember index but log on that article's Finish
-      const nextIdx = await pickAndClaimIndex();
+      const nextIdx = await assignArticleIndex();
       if (nextIdx !== null && allArticles[nextIdx]) {
-        setSelectedIdx(nextIdx);
         setArticles((prev) => [...prev, allArticles[nextIdx]]);
         setCurrentArticleIndex((prev) => prev + 1);
       } else {
-        // If Firebase runs out before 1, then show thank-you
         setShowThankYou(true);
       }
     }
