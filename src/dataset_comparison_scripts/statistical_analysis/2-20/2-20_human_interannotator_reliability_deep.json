@@ -147,11 +147,11 @@
   "span_overlap": {
     "including_npl": {
       "pair_count": 81,
-      "macro_dice_f1": 0.287,
-      "macro_jaccard": 0.192,
-      "micro_dice_f1": 0.26,
-      "micro_jaccard": 0.15,
-      "matched_spans": 134,
+      "macro_dice_f1": 0.299,
+      "macro_jaccard": 0.2,
+      "micro_dice_f1": 0.272,
+      "micro_jaccard": 0.157,
+      "matched_spans": 140,
       "total_annotations_a": 372,
       "total_annotations_b": 658,
       "pair_examples": [
@@ -191,9 +191,9 @@
           "worker_b": "-OmQ61N0d5pdteb2KTf2",
           "count_a": 6,
           "count_b": 4,
-          "matched": 2,
-          "dice_f1": 0.4,
-          "jaccard": 0.25
+          "matched": 3,
+          "dice_f1": 0.6,
+          "jaccard": 0.429
         },
         {
           "article_id": "10",
@@ -231,9 +231,9 @@
           "worker_b": "-OmjTDiPPtdHTRJrd3DB",
           "count_a": 7,
           "count_b": 7,
-          "matched": 3,
-          "dice_f1": 0.429,
-          "jaccard": 0.273
+          "matched": 4,
+          "dice_f1": 0.571,
+          "jaccard": 0.4
         },
         {
           "article_id": "11",
@@ -259,11 +259,11 @@
     },
     "polarizing_only": {
       "pair_count": 81,
-      "macro_dice_f1": 0.152,
-      "macro_jaccard": 0.095,
-      "micro_dice_f1": 0.188,
-      "micro_jaccard": 0.104,
-      "matched_spans": 71,
+      "macro_dice_f1": 0.167,
+      "macro_jaccard": 0.105,
+      "micro_dice_f1": 0.204,
+      "micro_jaccard": 0.113,
+      "matched_spans": 77,
       "total_annotations_a": 207,
       "total_annotations_b": 549,
       "pair_examples": [
@@ -303,9 +303,9 @@
           "worker_b": "-OmQ61N0d5pdteb2KTf2",
           "count_a": 4,
           "count_b": 1,
-          "matched": 0,
-          "dice_f1": 0.0,
-          "jaccard": 0.0
+          "matched": 1,
+          "dice_f1": 0.4,
+          "jaccard": 0.25
         },
         {
           "article_id": "10",
@@ -343,9 +343,9 @@
           "worker_b": "-OmjTDiPPtdHTRJrd3DB",
           "count_a": 7,
           "count_b": 7,
-          "matched": 3,
-          "dice_f1": 0.429,
-          "jaccard": 0.273
+          "matched": 4,
+          "dice_f1": 0.571,
+          "jaccard": 0.4
         },
         {
           "article_id": "11",
@@ -372,12 +372,12 @@
   },
   "matched_span_label_agreement": {
     "including_npl": {
-      "pair_count": 67,
-      "matched_spans_total": 134,
-      "micro_category_agreement_rate": 0.858,
-      "micro_subcategory_agreement_rate": 0.724,
-      "macro_category_agreement_rate": 0.873,
-      "macro_subcategory_agreement_rate": 0.71,
+      "pair_count": 69,
+      "matched_spans_total": 140,
+      "micro_category_agreement_rate": 0.857,
+      "micro_subcategory_agreement_rate": 0.714,
+      "macro_category_agreement_rate": 0.876,
+      "macro_subcategory_agreement_rate": 0.708,
       "pair_examples": [
         {
           "article_id": "1",
@@ -399,7 +399,7 @@
           "article_id": "10",
           "worker_a": "-OmKZbJ6PKUXaAVpZWPL",
           "worker_b": "-OmQ61N0d5pdteb2KTf2",
-          "matched_spans": 2,
+          "matched_spans": 3,
           "category_agreement_rate": 1.0,
           "subcategory_agreement_rate": 1.0
         },
@@ -415,8 +415,8 @@
           "article_id": "11",
           "worker_a": "-OmABt79XPWN83TU-zKD",
           "worker_b": "-OmjTDiPPtdHTRJrd3DB",
-          "matched_spans": 3,
-          "category_agreement_rate": 0.333,
+          "matched_spans": 4,
+          "category_agreement_rate": 0.5,
           "subcategory_agreement_rate": 0.0
         },
         {
@@ -462,12 +462,12 @@
       ]
     },
     "polarizing_only": {
-      "pair_count": 41,
-      "matched_spans_total": 71,
-      "micro_category_agreement_rate": 0.732,
-      "micro_subcategory_agreement_rate": 0.479,
-      "macro_category_agreement_rate": 0.774,
-      "macro_subcategory_agreement_rate": 0.461,
+      "pair_count": 44,
+      "matched_spans_total": 77,
+      "micro_category_agreement_rate": 0.74,
+      "micro_subcategory_agreement_rate": 0.481,
+      "macro_category_agreement_rate": 0.788,
+      "macro_subcategory_agreement_rate": 0.481,
       "pair_examples": [
         {
           "article_id": "1",
@@ -488,6 +488,14 @@
         {
           "article_id": "10",
           "worker_a": "-OmKZbJ6PKUXaAVpZWPL",
+          "worker_b": "-OmQ61N0d5pdteb2KTf2",
+          "matched_spans": 1,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
+        },
+        {
+          "article_id": "10",
+          "worker_a": "-OmKZbJ6PKUXaAVpZWPL",
           "worker_b": "-OmjE6B5yBbbnbIh1bzs",
           "matched_spans": 1,
           "category_agreement_rate": 1.0,
@@ -497,8 +505,8 @@
           "article_id": "11",
           "worker_a": "-OmABt79XPWN83TU-zKD",
           "worker_b": "-OmjTDiPPtdHTRJrd3DB",
-          "matched_spans": 3,
-          "category_agreement_rate": 0.333,
+          "matched_spans": 4,
+          "category_agreement_rate": 0.5,
           "subcategory_agreement_rate": 0.0
         },
         {
@@ -540,14 +548,6 @@
           "matched_spans": 2,
           "category_agreement_rate": 0.5,
           "subcategory_agreement_rate": 0.5
-        },
-        {
-          "article_id": "16",
-          "worker_a": "-OmNLLzjoazDWU669BjZ",
-          "worker_b": "-OmS4pFc5lgoyZLj0IgD",
-          "matched_spans": 1,
-          "category_agreement_rate": 1.0,
-          "subcategory_agreement_rate": 0.0
         }
       ]
     }

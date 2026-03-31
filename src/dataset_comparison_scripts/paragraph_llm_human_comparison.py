@@ -24,7 +24,8 @@ STOP_WORDS = {
 }
 
 def normalize_span(text):
-    return (text or "").lower().strip()
+    text = re.sub(r"[^\w\s]", " ", text or "").lower()
+    return re.sub(r"\s+", " ", text).strip()
 
 def tokenize_span(text):
     return normalize_span(text).split()

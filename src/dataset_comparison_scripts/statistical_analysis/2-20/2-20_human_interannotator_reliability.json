@@ -104,11 +104,11 @@
   "span_overlap": {
     "including_npl": {
       "pair_count": 81,
-      "macro_dice_f1": 0.287,
-      "macro_jaccard": 0.192,
-      "micro_dice_f1": 0.26,
-      "micro_jaccard": 0.15,
-      "matched_spans": 134,
+      "macro_dice_f1": 0.299,
+      "macro_jaccard": 0.2,
+      "micro_dice_f1": 0.272,
+      "micro_jaccard": 0.157,
+      "matched_spans": 140,
       "total_annotations_a": 372,
       "total_annotations_b": 658,
       "pair_examples": [
@@ -148,9 +148,9 @@
           "worker_b": "-OmQ61N0d5pdteb2KTf2",
           "count_a": 6,
           "count_b": 4,
-          "matched": 2,
-          "dice_f1": 0.4,
-          "jaccard": 0.25
+          "matched": 3,
+          "dice_f1": 0.6,
+          "jaccard": 0.429
         },
         {
           "article_id": "10",
@@ -188,9 +188,9 @@
           "worker_b": "-OmjTDiPPtdHTRJrd3DB",
           "count_a": 7,
           "count_b": 7,
-          "matched": 3,
-          "dice_f1": 0.429,
-          "jaccard": 0.273
+          "matched": 4,
+          "dice_f1": 0.571,
+          "jaccard": 0.4
         },
         {
           "article_id": "11",
@@ -216,11 +216,11 @@
     },
     "polarizing_only": {
       "pair_count": 81,
-      "macro_dice_f1": 0.152,
-      "macro_jaccard": 0.095,
-      "micro_dice_f1": 0.188,
-      "micro_jaccard": 0.104,
-      "matched_spans": 71,
+      "macro_dice_f1": 0.167,
+      "macro_jaccard": 0.105,
+      "micro_dice_f1": 0.204,
+      "micro_jaccard": 0.113,
+      "matched_spans": 77,
       "total_annotations_a": 207,
       "total_annotations_b": 549,
       "pair_examples": [
@@ -260,9 +260,9 @@
           "worker_b": "-OmQ61N0d5pdteb2KTf2",
           "count_a": 4,
           "count_b": 1,
-          "matched": 0,
-          "dice_f1": 0.0,
-          "jaccard": 0.0
+          "matched": 1,
+          "dice_f1": 0.4,
+          "jaccard": 0.25
         },
         {
           "article_id": "10",
@@ -300,9 +300,9 @@
           "worker_b": "-OmjTDiPPtdHTRJrd3DB",
           "count_a": 7,
           "count_b": 7,
-          "matched": 3,
-          "dice_f1": 0.429,
-          "jaccard": 0.273
+          "matched": 4,
+          "dice_f1": 0.571,
+          "jaccard": 0.4
         },
         {
           "article_id": "11",

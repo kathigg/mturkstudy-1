@@ -39,7 +39,8 @@ def normalize_label(label: str | None) -> str:
 
 
 def normalize_span(text: str | None) -> str:
-    return (text or "").strip().lower()
+    text = re.sub(r"[^\w\s]", " ", text or "").lower()
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def tokenize_span(text: str | None) -> list[str]:

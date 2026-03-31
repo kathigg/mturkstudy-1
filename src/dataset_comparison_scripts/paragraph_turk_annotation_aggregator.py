@@ -51,12 +51,19 @@ def tokenize(text):
     # split only on whitespace, don't remove punctuation
     return text.lower().split()
 
+def normalize_for_match(text):
+    text = re.sub(r"[^\w\s]", " ", text or "").lower()
+    return re.sub(r"\s+", " ", text).strip()
+
+def tokenize_for_match(text):
+    return normalize_for_match(text).split()
+
 def normalize_title_string(title):
     return re.sub(r"[^\w\s]", "", title or "").strip().lower()
 
 def non_stopword_overlap(span1, span2):
-    tokens1 = set(tokenize(span1)) - STOP_WORDS
-    tokens2 = set(tokenize(span2)) - STOP_WORDS
+    tokens1 = set(tokenize_for_match(span1)) - STOP_WORDS
+    tokens2 = set(tokenize_for_match(span2)) - STOP_WORDS
     return len(tokens1 & tokens2) >= 2
 
 def spans_match(span1, span2, title1=None, title2=None, para1=None, para2=None):
@@ -67,8 +74,8 @@ def spans_match(span1, span2, title1=None, title2=None, para1=None, para2=None):
     # Require paragraph equality if both provided
     if para1 is not None and para2 is not None and para1 != para2:
         return False
-    norm1 = normalize(span1)
-    norm2 = normalize(span2)
+    norm1 = normalize_for_match(span1)
+    norm2 = normalize_for_match(span2)
     return (norm1 in norm2 or norm2 in norm1) and non_stopword_overlap(span1, span2)
 
 def extract_intersection_with_padding(span1, span2, pad=2):
