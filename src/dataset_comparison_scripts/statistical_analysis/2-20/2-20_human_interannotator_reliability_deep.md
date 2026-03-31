@@ -9,7 +9,7 @@
 
 ## Dataset Summary
 
-- Workers: `93`
+- Workers: `88`
 - Articles: `27`
 - Paragraph units: `97`
 - Raters per paragraph unit: `3`
@@ -57,12 +57,12 @@
 - `11` Missouri's only abortion clinic to remain open after judge's injunction holds: Fleiss `-0.5`, alpha `-0.438`, agreement `0.333`, paragraphs `4`
 - `1` 'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki: Fleiss `-0.5`, alpha `-0.417`, agreement `0.333`, paragraphs `3`
 - `3` Four top residencies now offered to local artists, thanks to Oolite: Fleiss `-0.35`, alpha `-0.275`, agreement `0.333`, paragraphs `3`
-- `8` rosemount recreation center plan gets positive response so far: Fleiss `-0.35`, alpha `-0.275`, agreement `0.333`, paragraphs `3`
+- `8` Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings: Fleiss `-0.35`, alpha `-0.275`, agreement `0.333`, paragraphs `3`
 - `12` BuzzFeed Journalists Protest in Push for Union Recognition: Fleiss `-0.35`, alpha `-0.275`, agreement `0.333`, paragraphs `3`
 
 ### Highest Fleiss' Kappa
 
-- `2` phoenix chief says police response to incident with 4-year-old is 'unacceptable': Fleiss `1.0`, alpha `1.0`, agreement `1.0`, paragraphs `4`
+- `2` trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house: Fleiss `1.0`, alpha `1.0`, agreement `1.0`, paragraphs `4`
 - `22` 'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar: Fleiss `0.314`, alpha `0.343`, agreement `0.667`, paragraphs `4`
 - `19` donald trump's criminal justice reform shows results: Fleiss `0.196`, alpha `0.223`, agreement `0.6`, paragraphs `5`
 - `7` Ex-Posen mayor pleads guilty to embezzling village funds: Fleiss `0.111`, alpha `0.148`, agreement `0.667`, paragraphs `4`

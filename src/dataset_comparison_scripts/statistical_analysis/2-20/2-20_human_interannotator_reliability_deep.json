@@ -1,7 +1,7 @@
 {
   "input_path": "src/mturk_results/2-20/2-20_polarizing_annotation.json",
   "dataset_summary": {
-    "workers": 93,
+    "workers": 88,
     "articles": 27,
     "paragraph_units": 97,
     "raters_per_unit": 3,
@@ -678,7 +678,7 @@
     },
     {
       "article_id": "2",
-      "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'",
+      "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house",
       "paragraph_units": 4,
       "pairwise_percent_agreement": 1.0,
       "exact_consensus_rate": 1.0,
@@ -732,7 +732,7 @@
     },
     {
       "article_id": "8",
-      "title": "rosemount recreation center plan gets positive response so far",
+      "title": "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings",
       "paragraph_units": 3,
       "pairwise_percent_agreement": 0.333,
       "exact_consensus_rate": 0.0,
@@ -750,7 +750,7 @@
     },
     {
       "article_id": "10",
-      "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+      "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'",
       "paragraph_units": 4,
       "pairwise_percent_agreement": 0.5,
       "exact_consensus_rate": 0.25,
@@ -923,7 +923,7 @@
     },
     {
       "article_id": "2",
-      "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'",
+      "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house",
       "paragraph_units": 4,
       "pairwise_percent_agreement": 0.667,
       "exact_consensus_rate": 0.5,
@@ -977,7 +977,7 @@
     },
     {
       "article_id": "8",
-      "title": "rosemount recreation center plan gets positive response so far",
+      "title": "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings",
       "paragraph_units": 3,
       "pairwise_percent_agreement": 0.222,
       "exact_consensus_rate": 0.0,
@@ -995,7 +995,7 @@
     },
     {
       "article_id": "10",
-      "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+      "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'",
       "paragraph_units": 4,
       "pairwise_percent_agreement": 0.25,
       "exact_consensus_rate": 0.0,
@@ -1168,7 +1168,7 @@
     },
     {
       "article_id": "2",
-      "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'",
+      "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house",
       "paragraph_units": 4,
       "pairwise_percent_agreement": 0.5,
       "exact_consensus_rate": 0.25,
@@ -1222,7 +1222,7 @@
     },
     {
       "article_id": "8",
-      "title": "rosemount recreation center plan gets positive response so far",
+      "title": "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings",
       "paragraph_units": 3,
       "pairwise_percent_agreement": 0.222,
       "exact_consensus_rate": 0.0,
@@ -1240,7 +1240,7 @@
     },
     {
       "article_id": "10",
-      "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+      "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'",
       "paragraph_units": 4,
       "pairwise_percent_agreement": 0.25,
       "exact_consensus_rate": 0.0,
