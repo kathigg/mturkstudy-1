@@ -140,11 +140,11 @@
     "title": "Missouri'S Only Abortion Clinic To Remain Open After Judge'S Injunction Holds",
     "annotations": [
       {
-        "text": "no polarizing language selected",
-        "category": "No Polarizing Language",
-        "subcategory": "no polarizing language",
-        "confidence": 0.33,
-        "num_supporters": 0,
+        "text": "today is a victory for women to be abl",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
         "label_consistent": false,
         "paragraphIndex": 0
       },
@@ -190,11 +190,11 @@
     "title": "Phoenix Chief Says Police Response To Incident With 4-Year-Old Is 'Unacceptable'",
     "annotations": [
       {
-        "text": "no polarizing language selected",
-        "category": "No Polarizing Language",
-        "subcategory": "no polarizing language",
-        "confidence": 0.33,
-        "num_supporters": 0,
+        "text": "when i tell you to do something, you f------ do it!\"",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.5,
+        "num_supporters": 2,
         "label_consistent": false,
         "paragraphIndex": 0
       },
@@ -295,12 +295,12 @@
     "title": "Four Top Residencies Now Offered To Local Artists, Thanks To Oolite",
     "annotations": [
       {
-        "text": "no polarizing language selected",
-        "category": "No Polarizing Language",
-        "subcategory": "no polarizing language",
+        "text": "new opportunity to superpower their careers.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
         "confidence": 0.67,
         "num_supporters": 2,
-        "label_consistent": false,
+        "label_consistent": true,
         "paragraphIndex": 0
       },
       {
@@ -373,11 +373,11 @@
     "title": "Port Of L.A. Sued After Canceling Agreement For A Shipping Container Facility",
     "annotations": [
       {
-        "text": "no polarizing language selected",
-        "category": "No Polarizing Language",
-        "subcategory": "no polarizing language",
-        "confidence": 0.33,
-        "num_supporters": 0,
+        "text": "ultimately ease congestion at the port",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
         "label_consistent": false,
         "paragraphIndex": 0
       },
@@ -391,11 +391,11 @@
         "paragraphIndex": 1
       },
       {
-        "text": "t makes me worried for the city when a green, job-creating project is stymied by a single entity for their own narrow reasons,",
+        "text": "us.\" \"beyond the time and money we've spent, it makes me worried for the c",
         "category": "Inflammatory Language",
         "subcategory": "Scapegoating",
-        "confidence": 0.5,
-        "num_supporters": 2,
+        "confidence": 1.0,
+        "num_supporters": 3,
         "label_consistent": false,
         "paragraphIndex": 2
       }

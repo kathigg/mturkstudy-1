@@ -5,8 +5,8 @@
     "three_rater_paragraph_units": 35,
     "four_rater_paragraph_units": 3,
     "all_three_polarizing_paragraph_units": 6,
-    "shared_three_way_span_instances": 0,
-    "shared_three_way_supporting_paragraphs": 0
+    "shared_three_way_span_instances": 1,
+    "shared_three_way_supporting_paragraphs": 1
   },
   "clarification": {
     "explicit_npl_is_present_in_raw_data": true,
@@ -382,34 +382,51 @@
       }
     },
     "shared_three_way_span_instances": {
-      "supporting_paragraph_keys": [],
+      "supporting_paragraph_keys": [
+        {
+          "article_id": "5",
+          "paragraph_index": 2,
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        }
+      ],
       "category": {
-        "units": 0,
-        "raters_per_unit_distribution": {},
-        "label_counts": {},
-        "pairwise_percent_agreement": null,
-        "exact_consensus_rate": null,
+        "units": 1,
+        "raters_per_unit_distribution": {
+          "3": 1
+        },
+        "label_counts": {
+          "inflammatory language": 1,
+          "persuasive propaganda": 2
+        },
+        "pairwise_percent_agreement": 0.333,
+        "exact_consensus_rate": 0.0,
         "pairwise_cohen_kappa": {
           "pair_count": 0,
           "weighted_mean_kappa": null,
           "pair_examples": []
         },
-        "fleiss_kappa": null,
-        "krippendorff_alpha_nominal": null
+        "fleiss_kappa": -0.5,
+        "krippendorff_alpha_nominal": -0.25
       },
       "subcategory": {
-        "units": 0,
-        "raters_per_unit_distribution": {},
-        "label_counts": {},
-        "pairwise_percent_agreement": null,
-        "exact_consensus_rate": null,
+        "units": 1,
+        "raters_per_unit_distribution": {
+          "3": 1
+        },
+        "label_counts": {
+          "scapegoating": 1,
+          "doubt": 1,
+          "multiple polarizing subcategories": 1
+        },
+        "pairwise_percent_agreement": 0.0,
+        "exact_consensus_rate": 0.0,
         "pairwise_cohen_kappa": {
           "pair_count": 0,
           "weighted_mean_kappa": null,
           "pair_examples": []
         },
-        "fleiss_kappa": null,
-        "krippendorff_alpha_nominal": null
+        "fleiss_kappa": -0.5,
+        "krippendorff_alpha_nominal": -0.25
       }
     }
   }

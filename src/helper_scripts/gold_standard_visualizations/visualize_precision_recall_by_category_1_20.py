@@ -220,11 +220,31 @@ def _normalize_category(cat: str) -> str:
 
 
 def _normalize_span(text: str) -> str:
-    return (text or "").lower().strip()
+    text = re.sub(r"[^\w\s]", " ", text or "").lower()
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def _tokenize_span(text: str) -> list[str]:
     return _normalize_span(text).split()
+
+
+def _longest_common_token_run(span1: str, span2: str) -> int:
+    tokens1 = _tokenize_span(span1)
+    tokens2 = _tokenize_span(span2)
+    if not tokens1 or not tokens2:
+        return 0
+
+    best = 0
+    prev = [0] * (len(tokens2) + 1)
+    for token1 in tokens1:
+        curr = [0] * (len(tokens2) + 1)
+        for j, token2 in enumerate(tokens2, start=1):
+            if token1 == token2:
+                curr[j] = prev[j - 1] + 1
+                if curr[j] > best:
+                    best = curr[j]
+        prev = curr
+    return best
 
 
 def _non_stopword_overlap(span1: str, span2: str) -> bool:
@@ -249,7 +269,10 @@ def _spans_match(
         return False
     norm1 = _normalize_span(span1)
     norm2 = _normalize_span(span2)
-    return (norm1 in norm2 or norm2 in norm1) and _non_stopword_overlap(span1, span2)
+    return (
+        (norm1 in norm2 or norm2 in norm1 or _longest_common_token_run(span1, span2) >= 3)
+        and _non_stopword_overlap(span1, span2)
+    )
 
 
 def _flatten_llm(llm_json: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:

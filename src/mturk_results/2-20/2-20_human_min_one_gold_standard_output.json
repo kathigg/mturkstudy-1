@@ -48,21 +48,12 @@
         "paragraphIndex": 1
       },
       {
-        "text": "\"Fox is moving more and more to the losing (wrong) side in covering the Dems,\"",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
         "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "ut he has increasingly criticized it over its campaign covera",
-        "category": "Inflammatory Language",
-        "subcategory": "Scapegoating",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "num_supporters": 0,
+        "label_consistent": false,
         "paragraphIndex": 2
       }
     ]
@@ -77,24 +68,6 @@
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "But the public has the right to know about these very serious events, which is why it was so important to pass SB1421.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "police departments are resisting compliance",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
         "paragraphIndex": 0
       },
       {
@@ -125,30 +98,12 @@
         "paragraphIndex": 2
       },
       {
-        "text": "groups have had a powerful champion in their attempts to deny the public thi",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
         "text": "all the agencies that have sworn to protect and serve the public should be allowed to thwart the law.",
         "category": "Persuasive Propaganda",
         "subcategory": "Slogans",
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "The passage of SB1421 was a hard-fought battle to give the public transparency about police misconduct in their communities.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
         "paragraphIndex": 3
       }
     ]
@@ -157,57 +112,21 @@
     "title": "Dc Mayor Says Trump'S Fourth Of July Celebration Emptied Security Fund",
     "annotations": [
       {
-        "text": "ves, increased demand for heightened security, and a one-time draw down of $7.3",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 0
       },
       {
-        "text": "events and defend against terrorist threats",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "ests has emptied out a municipal fund us",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "'Are you proud to be an American?' Why Trump's 4th of July was a tale of three different celebrations",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "More: 'This says something':",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Slogans",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "Nothing America cannot do':",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Slogans",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 1
       },
       {
@@ -216,42 +135,6 @@
         "subcategory": "Name-Calling",
         "confidence": 0.67,
         "num_supporters": 2,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "DC mayor says Trump's Fourth of July celebration emptied",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "\"Dump Trump\" robot to protest the president",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "More: Far-right extremists Proud Boys ou",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "y Some protests grew more heated.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
         "label_consistent": true,
         "paragraphIndex": 2
       }
@@ -279,102 +162,30 @@
         "paragraphIndex": 0
       },
       {
-        "text": "546 drivers have now been suspended based on previously overlooked out-of-state notices.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "accused of killing seven motorcyclists in New Hampshire on J",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "ld have triggered an automatic license suspension",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "t after major failings at the RMV and MBTA, Bak",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 1
       },
       {
-        "text": "\"The RMV failed to act on critically important",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "e unknown reason, when people stopped dealing with the notifications altogether.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 2
       },
       {
-        "text": "e RMV has \"worked around the clock\" to address the backlog",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
         "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "se drivers who shouldn't have been on the road have been i",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "Someone's dropping the ball' Investigation reveals thousands of notifications awaiting review at RMV",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "xiously awaiting to see exactly where there may have been a failure in the system",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "r letting dangerous drivers stay on the road Sorry Cha",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "num_supporters": 0,
+        "label_consistent": false,
         "paragraphIndex": 3
       },
       {
@@ -410,51 +221,6 @@
         "paragraphIndex": 0
       },
       {
-        "text": "Resign. If you didn't know this until it was almost too late, you're even more of an idiot than people think you are",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "trump didn't realize until ten minutes beforehand that a planned airstrike would kill over a hundred people",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "ay blasted President Trump and called for hi",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "ould therefore be grossly disproportionate t",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "George Conway blasted President Trum",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
         "text": ", you're even more of an idiot than people think you are",
         "category": "Inflammatory Language",
         "subcategory": "Name-Calling",
@@ -473,30 +239,12 @@
         "paragraphIndex": 1
       },
       {
-        "text": "Go back to real estate, where the worst yo",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "cocked & loaded to retaliate last night",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "m in an \"unprovoked attack.",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 2
       },
       {
@@ -506,15 +254,6 @@
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "slamming the commander in chief",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
         "paragraphIndex": 3
       }
     ]
@@ -541,111 +280,30 @@
         "paragraphIndex": 0
       },
       {
-        "text": "sexism that often demonizes driven women as \"abrasive\" or \"bossy",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "they seem to think that she's running the show.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 1
       },
       {
-        "text": "volatile \" wave of abuse and harassment \"",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "\"outright sexism and racism\" she faced.",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "otypes (ideas about what women are like) and prescriptive gender stereotypes (ideas about what women should be like) impede women's professional advancement .",
-        "category": "Inflammatory Language",
-        "subcategory": "Scapegoating",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 2
       },
       {
-        "text": "alled \"abrasive\" and \"bossy\" in performance reviews while men are praised for being \"aggressive.\"",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "they face \"disapproval and social penalties\" that keep them from getting promoted.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": ", Markle is being labeled \"difficult\" and unpopular beca",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "ings of the sexism that often demonizes driven women",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "why people feel the need to ridicule her for it.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "are seen as micromanaging and bossy \"",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "ost influential royal style icon,",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 3
       }
     ]
@@ -654,48 +312,12 @@
     "title": "Gop Lawmaker Suggests Colin Kaepernick Move To A Different Country",
     "annotations": [
       {
-        "text": "ought to consider moving to a country where he believes the laws are better for his purposes",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
         "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "controversy over Nike sneakers with a Revolutionary War-era flag",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "who is well known for his political activism",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "symbol that he and others consider offensive",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "marked an era when slavery existed in the",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "num_supporters": 0,
+        "label_consistent": false,
         "paragraphIndex": 0
       },
       {
@@ -708,57 +330,12 @@
         "paragraphIndex": 1
       },
       {
-        "text": "on't like the foundational principles that have made us a great nation",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "by some white supremacist groups such as the Ku Klux Klan,",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "ate symbols and is widely seen as a patriotic flag",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "d put Mr. Kaepernick in that category ...",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
         "text": "we've had over a million americans die fighting",
         "category": "Inflammatory Language",
         "subcategory": "Demonization",
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "doubt he will do that because",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
         "paragraphIndex": 2
       }
     ]
@@ -776,33 +353,6 @@
         "paragraphIndex": 0
       },
       {
-        "text": "eing the most searched candidate on Google in most states,",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "ran one of the night's biggest winners.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "elative unknown mired at the bottom of",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
         "text": "weren't in there, they started flying planes into our buildings,\"",
         "category": "Persuasive Propaganda",
         "subcategory": "Exaggeration",
@@ -812,48 +362,12 @@
         "paragraphIndex": 1
       },
       {
-        "text": "calling her out on her relationship with Assad",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
         "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "as the most \"composed and authentic.\"",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "It's clear who MSNBC wants to be president: Elizabeth Warren. They're giving her more time than all the other candidates combined.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "ird-highest amount of speaking time with 9.3 minutes,",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "slamming MSNBC for favoring Warren.",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "num_supporters": 0,
+        "label_consistent": false,
         "paragraphIndex": 2
       }
     ]
@@ -862,38 +376,20 @@
     "title": "Ron Desantis Signs Amendment 4 Bill, Limiting Felon Voting",
     "annotations": [
       {
-        "text": "ublican-controlled Legislature was called a \"poll tax\" by critics",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 0
       },
       {
-        "text": "undercutting much of the promise of last year's historic Am",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "nfranchise hundreds of thousands of felons",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "out one of the most racist and enduring policie",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
         "label_consistent": true,
         "paragraphIndex": 1
       },
@@ -907,12 +403,12 @@
         "paragraphIndex": 2
       },
       {
-        "text": "Republicans' approach is confusing and expensive.",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 3
       }
     ]
@@ -948,33 +444,6 @@
         "paragraphIndex": 1
       },
       {
-        "text": "If you actually care about #MAGA more than your own ego, it's time to ride off into the sunset, Judge.",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "You're literally the only candidate who could lose a GOP seat in pro-Trump, pro-USA ALABAMA",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "his is pure fake news",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Slogans",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
         "text": "would be gift wrapping this senate seat for chuck schumer",
         "category": "Persuasive Propaganda",
         "subcategory": "Exaggeration",
@@ -991,15 +460,6 @@
         "num_supporters": 2,
         "label_consistent": true,
         "paragraphIndex": 2
-      },
-      {
-        "text": "ether Moore can escape his baggage without his candidacy collapsing under its own weight",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
       }
     ]
   },
@@ -1007,30 +467,12 @@
     "title": "Tutankhamun Sculpture'S London Auction Sparks Egyptian Outcry",
     "annotations": [
       {
-        "text": "hiselled head -- its serene eyes and puffed lips",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "y's unparalleled collection of antiquities wan",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "goes under the hammer this week",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 0
       },
       {
@@ -1043,66 +485,21 @@
         "paragraphIndex": 1
       },
       {
-        "text": "and little is known to the public about how the statue found its way to Europe",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
         "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": ". \"It is hugely important to establish recent ownership and legal right to s",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "its remarkable room full of marble Parthenon friezes and sculptures.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "num_supporters": 0,
+        "label_consistent": false,
         "paragraphIndex": 2
       },
       {
-        "text": "His rule would have probably passed without notice",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "The lavish find revived interest in ancient E",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "r numerous works went missing during the lootin",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "The late Egyptian strongman",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 3
       }
     ]
@@ -1111,12 +508,12 @@
     "title": "Did Jared Kushner Violate The Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings",
     "annotations": [
       {
-        "text": "Democratic congressman on Monday to demand an investigation into whether the president's son-in-law Jared Kushner similarly broke federal law.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 0
       },
       {
@@ -1129,47 +526,11 @@
         "paragraphIndex": 1
       },
       {
-        "text": "We have strong reason to believe that Jared Kushner is in violation of both the spirit and the letter",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "Kushner's \"poor track record of compliance with the spirit of the Hatch Act,",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "\"it looks to me like they're trying to take away her right to free speech and that's just not fair.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "mp '\u00c4\u00e3Donald Trump's Refusal to Fire Kellyanne Conway is 'Dangerous' and She Should Resign:",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "Jared Kushner lied on his SF-86 form and must lose his security clearance",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
         "label_consistent": true,
         "paragraphIndex": 2
       }
@@ -1179,21 +540,12 @@
     "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets",
     "annotations": [
       {
-        "text": "the scandal connected to a number of police officers.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "gs on the racist police who posted on Facebook,\"",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 0
       },
       {
@@ -1215,48 +567,12 @@
         "paragraphIndex": 1
       },
       {
-        "text": "ake certain that the police that do not want to police our community are removed",
-        "category": "Inflammatory Language",
-        "subcategory": "Scapegoating",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "e group wants city council to intervene on the heels of Philadelphia",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "ore officers that are taken off the streets, the more vulnerable the city becomes to",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "ws. We think the investigation is far too broad.\"",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "level of violence that's occurring in the city",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 2
       }
     ]
@@ -1283,33 +599,6 @@
         "paragraphIndex": 0
       },
       {
-        "text": "both of these horrible papers will quickly go out of business & be forever gone,",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "e Amazon (lobbyist) Washington",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "more dishonest and deceitful.",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
         "text": "committed a \"virtual act of treason\" by",
         "category": "Persuasive Propaganda",
         "subcategory": "Exaggeration",
@@ -1319,66 +608,12 @@
         "paragraphIndex": 1
       },
       {
-        "text": "ed if \"people would demand that I stay longer\" to \"k",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "the Failing New York Times",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "enemy of the people.",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "enemy of the peopl",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
         "text": "the fake news has never been more dishonest than it is today",
         "category": "Persuasive Propaganda",
         "subcategory": "Name-Calling",
         "confidence": 1.0,
         "num_supporters": 3,
         "label_consistent": false,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "There new weapon of choice is Fake Polling, sometimes referred to as Suppression Polls (they suppress the numbers)",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "lashed out at the media",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
         "paragraphIndex": 2
       },
       {
@@ -1405,48 +640,12 @@
         "paragraphIndex": 0
       },
       {
-        "text": "also a giant inflatable rat -- a common form of protest by striking trade unions",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "a question that unions and companies frequently spar over.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "unfair pay disparities, mismanaged pivots and layoffs, weak benefits, skyrocketing health insurance costs, diversity, and more",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "seeking to impose additional demands that threaten our progress around voluntary recognitio",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "xclude workers they claim are managerial, supervisory or confidential despite",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 1
       },
       {
@@ -1456,24 +655,6 @@
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "The tumult has led journalists at several media outlets to opt for collective bargaining.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "While that hasn't prevented layoffs, it has in some cases cushioned the blow.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
         "paragraphIndex": 2
       }
     ]
@@ -1491,84 +672,30 @@
         "paragraphIndex": 0
       },
       {
-        "text": "victed of brutally murdering a 16-year-old girl in 1",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
         "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "at LaBarbera be given another parole hearing in front of all 12 members",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "num_supporters": 0,
+        "label_consistent": false,
         "paragraphIndex": 1
       },
       {
-        "text": "A non-profit organization \"Petition for Paula\" filed a lawsuit",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Slogans",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "were given the toughest sentence available at the time and h",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "hey would have to see that this man should not be out in the streets,\" Pataki said.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "6-year-old girl's convicted killer fo",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
         "label_consistent": false,
         "paragraphIndex": 2
       },
       {
-        "text": "ist and murderer is so hideous to",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "y for it, so how can he be sorry?",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 3
-      },
-      {
-        "text": ". I don't think he's sorry.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 3
       }
     ]
@@ -1595,15 +722,6 @@
         "paragraphIndex": 0
       },
       {
-        "text": "a \"tragic mistake\" in his meetings with Russian P",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
         "text": "bombastic and erratic conduct towards our closest frien",
         "category": "Persuasive Propaganda",
         "subcategory": "Exaggeration",
@@ -1619,33 +737,6 @@
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "sovereignty of his neighbors, his complicity in the slaughter of the Syrian people,",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "m to spew propaganda and lies to the world",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "low point in the history",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
         "paragraphIndex": 1
       },
       {
@@ -1665,33 +756,6 @@
         "num_supporters": 2,
         "label_consistent": true,
         "paragraphIndex": 2
-      },
-      {
-        "text": "but speaking for America to the world, our president failed to defend all that makes us who we are a republic of free people",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "ions all the more painful and inexplicable",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "es his blunders and capitulations",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
       }
     ]
   },
@@ -1699,30 +763,21 @@
     "title": "The Latest: Nadler Says Panel Will Move Quickly On Mcgahn",
     "annotations": [
       {
-        "text": "ainst witnesses who defy subpoenas",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 0
       },
       {
-        "text": "ed answers on the questions left unanswered",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "ying \"it's not even close\"",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 1
       },
       {
@@ -1758,42 +813,6 @@
         "paragraphIndex": 0
       },
       {
-        "text": "s to many, many problems, to many, many diseases in",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "\"come up with the cures\" to devastating diseases",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "made sweeping promises to tackle two o",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "ankind's most dreaded diseases. I",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
         "text": "wow, why the hell didn't you do that over the last 50 ye",
         "category": "Persuasive Propaganda",
         "subcategory": "Doubt",
@@ -1812,48 +831,21 @@
         "paragraphIndex": 1
       },
       {
-        "text": "oing to see the single most important thing that changes America we're going to cure cancer.\"",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "\"I promise you, if I'm elected president",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "uldn't help but wonder about the feasibility of the president's big promises,",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "e will eradicate aids in america once and for all",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
         "label_consistent": false,
         "paragraphIndex": 2
       },
       {
-        "text": "Red Planet. \"We will lay the foundation for landing American astronauts on the surface of Mars",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 3
       }
     ]
@@ -1862,39 +854,12 @@
     "title": "Senate Confirms Judge Who Attacked Roe V. Wade, Called Being Transgender 'A Delusion'",
     "annotations": [
       {
-        "text": "ore than a year because of his extreme views on",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "Kacsmaryk called the law \" a bad idea \"",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "his record of hostility toward LGBTQ",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "omen Act \"a grave mistake.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 0
       },
       {
@@ -1925,75 +890,21 @@
         "paragraphIndex": 1
       },
       {
-        "text": ", a celestial phenomenon invisible to the non-lawyer eye.\"",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
         "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "ted bizarre comments Kacsmaryk ha",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "sounds like a lot of President Donald Trump's other judicial nominees young, right-wing ideologues , the vast majority of whom are white men",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "num_supporters": 0,
+        "label_consistent": false,
         "paragraphIndex": 2
       },
       {
-        "text": "selection process and funneling anti-abortion and anti-LGBTQ",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "a right-wing Christian advocacy group, sounds like",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "drape black robes over these bigoted views?",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "He is one of Trump's most extreme nominees",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "That's more circuit judges than any president has gotten through by this point in a first term.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 3
       }
     ]
@@ -2011,38 +922,11 @@
         "paragraphIndex": 0
       },
       {
-        "text": "solution declaring a climate change emergency, a move that comes after the Green New Deal failed",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "the United States at a massive-scale.\"",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
         "text": "a radical, top-down, socialist makeover of the entire u.s. economy.\"",
         "category": "Inflammatory Language",
         "subcategory": "Name-Calling",
         "confidence": 0.67,
         "num_supporters": 2,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "ent.\" OCASIO-CORTEZ ASSAILS BIDEN'S 'MIDDLE GROUND' CLIMATE CHANGE PLAN, SAYS IT'S 'DEALBREAKER' Both",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
         "label_consistent": true,
         "paragraphIndex": 1
       },
@@ -2063,15 +947,6 @@
         "num_supporters": 2,
         "label_consistent": false,
         "paragraphIndex": 2
-      },
-      {
-        "text": "ng it would devastate the economy and trigger massive tax increases",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
       }
     ]
   },
@@ -2085,15 +960,6 @@
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "'I'm Disgusted': Family Of Murdered Philadelphia Police Sgt",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
         "paragraphIndex": 0
       },
       {
@@ -2115,66 +981,12 @@
         "paragraphIndex": 1
       },
       {
-        "text": "why should any other layman warrant any real respect and keep their memory alive?",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "Learning of the blatant disrespect that has been repeatedly",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "orance and disrespect shown toward police is at an al",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "while backing criminals then, why should any other",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "WE ARE LIVID! One year ago,",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Slogans",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
         "text": "h are as minuscule as a slap on the wrist.",
         "category": "Persuasive Propaganda",
         "subcategory": "Casual Oversimplification",
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "the shaming and defacement of Sgt. Wilson's mural.",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
         "paragraphIndex": 2
       }
     ]
@@ -2192,66 +1004,12 @@
         "paragraphIndex": 0
       },
       {
-        "text": "Most people are not aware of the First Step Act",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "will become a productive member of society.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "ehind bars does nothing to rehabilitate.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "We all want to see criminals",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "He had no friends or family. No money, no transportation",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "me.\" He didn't know how to be free. He died in priso",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "o had spent nearly 90% of his adult years",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 1
       },
       {
@@ -2264,84 +1022,12 @@
         "paragraphIndex": 2
       },
       {
-        "text": "Sentences for many felonies are spelled out in minimum mandatory guidelines from which judges cannot ignore.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "re certainly concerned about getting elected, or re-elected.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "esults in many years behind bars accomplishing nothing",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "nell against winning at the polls is to appear \"soft o",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "spent two decades incarcerated for selling crack coca",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "That does not take into account the population of aging inmates, where costs run much higher.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "en about the extreme and morally damaging sentencing practices of the modern era.",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "Yes, we want bad people punished. Their victims deserve that",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "That's a lot of medical expenses.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 3
       },
       {
@@ -2368,48 +1054,12 @@
         "paragraphIndex": 0
       },
       {
-        "text": "Wilkinson says restaurants are 'a part of the soundstage for our ongoing national spectacle'.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
         "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "If you're an unsavory individual - of whatever persuasion or affiliation - we have no legal or moral obligation to do business with you,",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "You can't call people your enemies by day and expect hospitality from them in the evening,' she added.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "an administration that has made its name trashing norms and breaking backs",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "\"staying in their lane\"",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "num_supporters": 0,
+        "label_consistent": false,
         "paragraphIndex": 1
       },
       {
@@ -2419,24 +1069,6 @@
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "If you're directly complicit in spreading hate or perpetuating suffering",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "'[Wilkinson's] actions say far more about her than about me.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
         "paragraphIndex": 2
       },
       {
@@ -2463,20 +1095,11 @@
         "paragraphIndex": 0
       },
       {
-        "text": "\"Yes we can, I do want Madrid central",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Slogans",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "People of all ages rallied despite a scorching heatwave in Spain and most of Europe",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 1.0,
+        "num_supporters": 3,
         "label_consistent": true,
         "paragraphIndex": 1
       },
@@ -2531,39 +1154,12 @@
         "paragraphIndex": 1
       },
       {
-        "text": "That means boldly transforming our dysfunctional system by ending the use of private health insurance",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "e got to talk to the needs of the working class of this count",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "verybody said our ideas are crazy",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "are crazy and wild and extreme a",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 2
       }
     ]
@@ -2599,15 +1195,6 @@
         "paragraphIndex": 0
       },
       {
-        "text": "in profits last year, has become a prime target for Democrats seeking to criticize corporate power",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
         "text": "slamming the company at a",
         "category": "Persuasive Propaganda",
         "subcategory": "Exaggeration",
@@ -2617,84 +1204,21 @@
         "paragraphIndex": 1
       },
       {
-        "text": ". \"But they should pay a few taxes, you know what I mean?",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "who said they were treated inhumanely at the facilitie",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "okesperson added that the company invested more than $50 billion and created 45,000 full-time, full-benefit jobs last year",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 2
       },
       {
-        "text": "furious backlash in Washington against the country's top tech giants",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "who has insulted CEO Jeff Bezos, who also owns The Washington Post.",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "corporate power to the detriment of other companies and workers",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "Amazon crushes small companies by copying the goods",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "accused Amazon of colluding with Democrats to \"discriminate\" against him.",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "has accused the Post of being biased against him",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "text": "no polarizing language selected",
+        "category": "No Polarizing Language",
+        "subcategory": "no polarizing language",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 3
       }
     ]

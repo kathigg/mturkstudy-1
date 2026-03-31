@@ -3,46 +3,37 @@
   "gold_path": "src/mturk_results/1-20/1-20_human_min_one_gold_standard_output.json",
   "overall": {
     "article_match": {
-      "precision": 0.659,
-      "recall": 0.763,
-      "f1": 0.707,
-      "correct_matches": 29,
+      "precision": 0.614,
+      "recall": 0.711,
+      "f1": 0.659,
+      "correct_matches": 27,
       "total_llm": 44,
       "total_gold": 38
     },
     "category_match": {
-      "precision": 0.931,
-      "recall": 0.931,
-      "f1": 0.931,
-      "correct_matches": 27,
-      "total_matches": 29
+      "precision": 0.963,
+      "recall": 0.963,
+      "f1": 0.963,
+      "correct_matches": 26,
+      "total_matches": 27
     },
     "category_match_per_class": {
-      "inflammatory language": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "support": 1,
-        "tp": 0,
-        "fp": 0,
-        "fn": 1
-      },
       "no polarizing language": {
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
-        "support": 26,
-        "tp": 26,
+        "support": 23,
+        "tp": 23,
         "fp": 0,
         "fn": 0
       },
       "persuasive propaganda": {
-        "precision": 0.667,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1": 0.8,
-        "support": 2,
-        "tp": 2,
-        "fp": 1,
+        "f1": 1.0,
+        "support": 4,
+        "tp": 4,
+        "fp": 0,
         "fn": 0
       }
     },
@@ -57,31 +48,22 @@
         "fn": 1
       },
       "exaggeration": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "support": 0,
-        "tp": 0,
-        "fp": 2,
+        "precision": 0.667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "support": 2,
+        "tp": 2,
+        "fp": 1,
         "fn": 0
       },
       "no polarizing language": {
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
-        "support": 26,
-        "tp": 26,
+        "support": 23,
+        "tp": 23,
         "fp": 0,
         "fn": 0
-      },
-      "scapegoating": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "support": 1,
-        "tp": 0,
-        "fp": 0,
-        "fn": 1
       },
       "slogans": {
         "precision": 1.0,
@@ -94,12 +76,12 @@
       }
     },
     "weighted_article_match": {
-      "precision": 0.61,
-      "recall": 0.824,
-      "f1": 0.701,
-      "tp_weight": 23.44,
-      "total_gold_weight": 28.45,
-      "fp": 15
+      "precision": 0.571,
+      "recall": 0.767,
+      "f1": 0.655,
+      "tp_weight": 22.61,
+      "total_gold_weight": 29.46,
+      "fp": 17
     }
   },
   "per_article": {
@@ -205,10 +187,10 @@
     },
     "Four top residencies now offered to local artists, thanks to Oolite": {
       "article_match": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "correct_matches": 2,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "correct_matches": 1,
         "total_llm": 2,
         "total_gold": 2
       },
@@ -216,17 +198,17 @@
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
-        "correct_matches": 2,
-        "total_matches": 2
+        "correct_matches": 1,
+        "total_matches": 1
       },
       "weighted_article_match": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "tp_weight": 1.67,
+        "precision": 0.5,
+        "recall": 0.599,
+        "f1": 0.545,
+        "tp_weight": 1.0,
         "total_gold_weight": 1.67,
-        "fp": 0,
-        "matched": 2,
+        "fp": 1,
+        "matched": 1,
         "total_llm": 2,
         "total_gold": 2
       },
@@ -235,8 +217,8 @@
           "precision": 1.0,
           "recall": 1.0,
           "f1": 1.0,
-          "support": 2,
-          "tp": 2,
+          "support": 1,
+          "tp": 1,
           "fp": 0,
           "fn": 0
         }
@@ -246,8 +228,8 @@
           "precision": 1.0,
           "recall": 1.0,
           "f1": 1.0,
-          "support": 2,
-          "tp": 2,
+          "support": 1,
+          "tp": 1,
           "fp": 0,
           "fn": 0
         }
@@ -355,28 +337,28 @@
     },
     "Missouri's only abortion clinic to remain open after judge's injunction holds": {
       "article_match": {
-        "precision": 0.25,
-        "recall": 0.4,
-        "f1": 0.308,
-        "correct_matches": 2,
+        "precision": 0.375,
+        "recall": 0.6,
+        "f1": 0.462,
+        "correct_matches": 3,
         "total_llm": 8,
         "total_gold": 5
       },
       "category_match": {
-        "precision": 0.5,
-        "recall": 0.5,
-        "f1": 0.5,
-        "correct_matches": 1,
-        "total_matches": 2
+        "precision": 0.667,
+        "recall": 0.667,
+        "f1": 0.667,
+        "correct_matches": 2,
+        "total_matches": 3
       },
       "weighted_article_match": {
-        "precision": 0.2,
-        "recall": 0.53,
-        "f1": 0.29,
-        "tp_weight": 1.5,
-        "total_gold_weight": 2.83,
-        "fp": 6,
-        "matched": 2,
+        "precision": 0.286,
+        "recall": 0.667,
+        "f1": 0.4,
+        "tp_weight": 2.0,
+        "total_gold_weight": 3.0,
+        "fp": 5,
+        "matched": 3,
         "total_llm": 8,
         "total_gold": 5
       },
@@ -394,8 +376,8 @@
           "precision": 1.0,
           "recall": 1.0,
           "f1": 1.0,
-          "support": 1,
-          "tp": 1,
+          "support": 2,
+          "tp": 2,
           "fp": 0,
           "fn": 0
         }
@@ -411,11 +393,11 @@
           "fn": 1
         },
         "exaggeration": {
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
-          "support": 0,
-          "tp": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.667,
+          "support": 1,
+          "tp": 1,
           "fp": 1,
           "fn": 0
         },
@@ -447,18 +429,18 @@
         "total_matches": 1
       },
       "weighted_article_match": {
-        "precision": 0.248,
-        "recall": 0.398,
-        "f1": 0.306,
-        "tp_weight": 0.33,
-        "total_gold_weight": 0.83,
+        "precision": 0.333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "tp_weight": 0.5,
+        "total_gold_weight": 1.0,
         "fp": 1,
         "matched": 1,
         "total_llm": 2,
         "total_gold": 2
       },
       "category_match_per_class": {
-        "no polarizing language": {
+        "persuasive propaganda": {
           "precision": 1.0,
           "recall": 1.0,
           "f1": 1.0,
@@ -469,7 +451,7 @@
         }
       },
       "subcategory_match_per_class": {
-        "no polarizing language": {
+        "exaggeration": {
           "precision": 1.0,
           "recall": 1.0,
           "f1": 1.0,
@@ -482,87 +464,51 @@
     },
     "port of l.a. sued after canceling agreement for a shipping container facility": {
       "article_match": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "correct_matches": 3,
+        "precision": 0.333,
+        "recall": 0.333,
+        "f1": 0.333,
+        "correct_matches": 1,
         "total_llm": 3,
         "total_gold": 3
       },
       "category_match": {
-        "precision": 0.667,
-        "recall": 0.667,
-        "f1": 0.667,
-        "correct_matches": 2,
-        "total_matches": 3
-      },
-      "weighted_article_match": {
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0,
-        "tp_weight": 1.83,
-        "total_gold_weight": 1.83,
-        "fp": 0,
-        "matched": 3,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 0.333,
+        "recall": 0.4,
+        "f1": 0.364,
+        "tp_weight": 1.0,
+        "total_gold_weight": 2.5,
+        "fp": 2,
+        "matched": 1,
         "total_llm": 3,
         "total_gold": 3
       },
       "category_match_per_class": {
-        "inflammatory language": {
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
-          "support": 1,
-          "tp": 0,
-          "fp": 0,
-          "fn": 1
-        },
         "no polarizing language": {
           "precision": 1.0,
           "recall": 1.0,
           "f1": 1.0,
-          "support": 2,
-          "tp": 2,
+          "support": 1,
+          "tp": 1,
           "fp": 0,
-          "fn": 0
-        },
-        "persuasive propaganda": {
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
-          "support": 0,
-          "tp": 0,
-          "fp": 1,
           "fn": 0
         }
       },
       "subcategory_match_per_class": {
-        "exaggeration": {
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
-          "support": 0,
-          "tp": 0,
-          "fp": 1,
-          "fn": 0
-        },
         "no polarizing language": {
           "precision": 1.0,
           "recall": 1.0,
           "f1": 1.0,
-          "support": 2,
-          "tp": 2,
+          "support": 1,
+          "tp": 1,
           "fp": 0,
           "fn": 0
-        },
-        "scapegoating": {
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
-          "support": 1,
-          "tp": 0,
-          "fp": 0,
-          "fn": 1
         }
       }
     },

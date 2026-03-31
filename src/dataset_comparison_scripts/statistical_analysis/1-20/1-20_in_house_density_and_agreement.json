@@ -89,11 +89,11 @@
   "span_overlap": {
     "including_npl": {
       "pair_count": 39,
-      "macro_dice_f1": 0.533,
-      "macro_jaccard": 0.41,
-      "micro_dice_f1": 0.485,
-      "micro_jaccard": 0.32,
-      "matched_spans": 73,
+      "macro_dice_f1": 0.566,
+      "macro_jaccard": 0.437,
+      "micro_dice_f1": 0.525,
+      "micro_jaccard": 0.356,
+      "matched_spans": 79,
       "total_annotations_a": 144,
       "total_annotations_b": 157,
       "pair_examples": [
@@ -201,11 +201,11 @@
     },
     "polarizing_only": {
       "pair_count": 39,
-      "macro_dice_f1": 0.072,
-      "macro_jaccard": 0.047,
-      "micro_dice_f1": 0.113,
-      "micro_jaccard": 0.06,
-      "matched_spans": 7,
+      "macro_dice_f1": 0.121,
+      "macro_jaccard": 0.08,
+      "micro_dice_f1": 0.21,
+      "micro_jaccard": 0.117,
+      "matched_spans": 13,
       "total_annotations_a": 55,
       "total_annotations_b": 69,
       "pair_examples": [

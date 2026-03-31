@@ -22,10 +22,29 @@ STOP_WORDS = {
 }
 
 def normalize_span(text):
-    return (text or "").lower().strip()
+    text = re.sub(r"[^\w\s]", " ", (text or "").lower())
+    return re.sub(r"\s+", " ", text).strip()
 
 def tokenize_span(text):
     return normalize_span(text).split()
+
+def longest_common_token_run(span1, span2):
+    tokens1 = tokenize_span(span1)
+    tokens2 = tokenize_span(span2)
+    if not tokens1 or not tokens2:
+        return 0
+
+    dp = [0] * (len(tokens2) + 1)
+    best = 0
+    for token1 in tokens1:
+        next_dp = [0] * (len(tokens2) + 1)
+        for j, token2 in enumerate(tokens2, start=1):
+            if token1 == token2:
+                next_dp[j] = dp[j - 1] + 1
+                if next_dp[j] > best:
+                    best = next_dp[j]
+        dp = next_dp
+    return best
 
 def titles_match(title1, title2):
     t1 = re.sub(r"[^\w\s]", "", title1 or "").strip().lower()
@@ -42,7 +61,10 @@ def spans_match(span1, span2, title1=None, title2=None):
         return False
     norm1 = normalize_span(span1)
     norm2 = normalize_span(span2)
-    return (norm1 in norm2 or norm2 in norm1) and non_stopword_overlap(span1, span2)
+    return (
+        (norm1 in norm2 or norm2 in norm1 or longest_common_token_run(span1, span2) >= 3)
+        and non_stopword_overlap(span1, span2)
+    )
 
 # ------------------------
 # Paths for JSON files
