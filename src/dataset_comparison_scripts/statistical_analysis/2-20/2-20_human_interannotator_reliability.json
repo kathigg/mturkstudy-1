@@ -399,22 +399,22 @@
       "krippendorff_alpha_nominal": -0.02
     },
     "category": {
-      "pairwise_percent_agreement": 0.296,
+      "pairwise_percent_agreement": 0.375,
       "pairwise_cohen_kappa": {
         "pair_count": 81,
-        "weighted_mean_kappa": 0.091,
+        "weighted_mean_kappa": 0.101,
         "pair_examples": [
           {
             "worker_a": "-OmAAP2V6LfMLcW1xcaJ",
             "worker_b": "-OmPcs4ctnzMqZagJ_Qz",
             "shared_units": 3,
-            "kappa": 0.5
+            "kappa": 0.0
           },
           {
             "worker_a": "-OmAAP2V6LfMLcW1xcaJ",
             "worker_b": "-OmPsA4Z969wr4Bi5lRq",
             "shared_units": 3,
-            "kappa": -0.125
+            "kappa": 0.143
           },
           {
             "worker_a": "-OmPcs4ctnzMqZagJ_Qz",
@@ -432,7 +432,7 @@
             "worker_a": "-OmABt79XPWN83TU-zKD",
             "worker_b": "-OmjTDiPPtdHTRJrd3DB",
             "shared_units": 4,
-            "kappa": -0.455
+            "kappa": -1.0
           },
           {
             "worker_a": "-OmNRRp4yQtmcpKlQTRa",
@@ -450,7 +450,7 @@
             "worker_a": "-OmACmWrDqnnwFl0oo7D",
             "worker_b": "-OmSH3JAjvhyCq1ZE9k3",
             "shared_units": 3,
-            "kappa": 0.0
+            "kappa": 0.25
           },
           {
             "worker_a": "-OmN7xgAKKQ9_wcmT7qq",
@@ -466,7 +466,7 @@
           }
         ]
       },
-      "krippendorff_alpha_nominal": -0.011
+      "krippendorff_alpha_nominal": 0.035
     },
     "subcategory": {
       "pairwise_percent_agreement": 0.278,

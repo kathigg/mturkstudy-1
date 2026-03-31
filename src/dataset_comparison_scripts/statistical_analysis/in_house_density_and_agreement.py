@@ -177,9 +177,15 @@ def pairwise_span_overlap(worker_annotations: dict[str, dict[str, list[dict]]], 
 
 
 def derive_paragraph_category_label(annotations: list[dict]) -> str | None:
-    polarizing = sorted({canonical_category(ann) for ann in annotations if not is_no_polarizing_annotation(ann)})
+    polarizing = [canonical_category(ann) for ann in annotations if not is_no_polarizing_annotation(ann)]
     if polarizing:
-        return polarizing[0] if len(polarizing) == 1 else MULTI_CATEGORY_LABEL
+        counts = Counter(polarizing)
+        best_count = max(counts.values())
+        # For category alpha, collapse multi-label paragraphs to the most frequent
+        # top-level category; on ties, keep the first polarizing category encountered.
+        for label in polarizing:
+            if counts[label] == best_count:
+                return label
     if any(is_no_polarizing_annotation(ann) for ann in annotations):
         return NPL_LABEL
     return None

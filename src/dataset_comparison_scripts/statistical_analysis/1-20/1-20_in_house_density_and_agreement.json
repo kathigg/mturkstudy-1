@@ -384,10 +384,10 @@
       "krippendorff_alpha_nominal": 0.239
     },
     "category": {
-      "pairwise_percent_agreement": 0.593,
+      "pairwise_percent_agreement": 0.618,
       "pairwise_cohen_kappa": {
         "pair_count": 36,
-        "weighted_mean_kappa": 0.189,
+        "weighted_mean_kappa": 0.205,
         "pair_examples": [
           {
             "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
@@ -451,7 +451,7 @@
           }
         ]
       },
-      "krippendorff_alpha_nominal": 0.2
+      "krippendorff_alpha_nominal": 0.224
     },
     "subcategory": {
       "pairwise_percent_agreement": 0.504,

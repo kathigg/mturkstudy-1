@@ -1,0 +1,416 @@
+{
+  "input_path": "src/mturk_results/1-20/1-20-in-house.json",
+  "dataset_counts": {
+    "full_paragraph_units": 38,
+    "three_rater_paragraph_units": 35,
+    "four_rater_paragraph_units": 3,
+    "all_three_polarizing_paragraph_units": 6,
+    "shared_three_way_span_instances": 0,
+    "shared_three_way_supporting_paragraphs": 0
+  },
+  "clarification": {
+    "explicit_npl_is_present_in_raw_data": true,
+    "note": "Paragraph-level disagreement between polarizing and NPL is coming from the saved annotations in the raw file, not from the IRR script manufacturing NPL labels for missing rows."
+  },
+  "full_dataset": {
+    "binary": {
+      "units": 38,
+      "raters_per_unit_distribution": {
+        "3": 35,
+        "4": 3
+      },
+      "label_counts": {
+        "no polarizing language": 73,
+        "polarizing language": 44
+      },
+      "pairwise_percent_agreement": 0.642,
+      "exact_consensus_rate": 0.474,
+      "pairwise_cohen_kappa": {
+        "pair_count": 36,
+        "weighted_mean_kappa": 0.229,
+        "pair_examples": [
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjIerwWWeiRPRw9lFk5",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 1.0
+          },
+          {
+            "worker_a": "-OjIerwWWeiRPRw9lFk5",
+            "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIerwWWeiRPRw9lFk5",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIKsYGNFiI15JQqcD5",
+            "worker_b": "-OjMuovvmiSenN9PQvVR",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIKsYGNFiI15JQqcD5",
+            "worker_b": "-OjNtroAR44G8XPAc6tT",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjMuovvmiSenN9PQvVR",
+            "worker_b": "-OjNtroAR44G8XPAc6tT",
+            "shared_units": 3,
+            "kappa": -0.5
+          },
+          {
+            "worker_a": "-OjINGLT40qScUvTBN4n",
+            "worker_b": "-OjMvglrPt-si7iF4B94",
+            "shared_units": 3,
+            "kappa": 0.4
+          }
+        ]
+      },
+      "fleiss_kappa": null,
+      "krippendorff_alpha_nominal": 0.239
+    },
+    "category": {
+      "units": 38,
+      "raters_per_unit_distribution": {
+        "3": 35,
+        "4": 3
+      },
+      "label_counts": {
+        "no polarizing language": 73,
+        "persuasive propaganda": 40,
+        "inflammatory language": 4
+      },
+      "pairwise_percent_agreement": 0.618,
+      "exact_consensus_rate": 0.447,
+      "pairwise_cohen_kappa": {
+        "pair_count": 36,
+        "weighted_mean_kappa": 0.205,
+        "pair_examples": [
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjIerwWWeiRPRw9lFk5",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 1.0
+          },
+          {
+            "worker_a": "-OjIerwWWeiRPRw9lFk5",
+            "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIerwWWeiRPRw9lFk5",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIKsYGNFiI15JQqcD5",
+            "worker_b": "-OjMuovvmiSenN9PQvVR",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIKsYGNFiI15JQqcD5",
+            "worker_b": "-OjNtroAR44G8XPAc6tT",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjMuovvmiSenN9PQvVR",
+            "worker_b": "-OjNtroAR44G8XPAc6tT",
+            "shared_units": 3,
+            "kappa": -0.5
+          },
+          {
+            "worker_a": "-OjINGLT40qScUvTBN4n",
+            "worker_b": "-OjMvglrPt-si7iF4B94",
+            "shared_units": 3,
+            "kappa": 0.4
+          }
+        ]
+      },
+      "fleiss_kappa": null,
+      "krippendorff_alpha_nominal": 0.224
+    },
+    "subcategory": {
+      "units": 38,
+      "raters_per_unit_distribution": {
+        "3": 35,
+        "4": 3
+      },
+      "label_counts": {
+        "no polarizing language": 73,
+        "slogans": 5,
+        "exaggeration": 19,
+        "doubt": 4,
+        "multiple polarizing subcategories": 7,
+        "casual oversimplification": 5,
+        "demonization": 1,
+        "scapegoating": 1,
+        "bandwagon": 1,
+        "name-calling": 1
+      },
+      "pairwise_percent_agreement": 0.504,
+      "exact_consensus_rate": 0.342,
+      "pairwise_cohen_kappa": {
+        "pair_count": 36,
+        "weighted_mean_kappa": 0.147,
+        "pair_examples": [
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjIerwWWeiRPRw9lFk5",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-Oj8qtrTuhdLT8YVc1i6",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 1.0
+          },
+          {
+            "worker_a": "-OjIerwWWeiRPRw9lFk5",
+            "worker_b": "-OjMo9jY5dKCLbqs_OYB",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIerwWWeiRPRw9lFk5",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjMo9jY5dKCLbqs_OYB",
+            "worker_b": "-OjNsePqfcnKtrM30Wkl",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIKsYGNFiI15JQqcD5",
+            "worker_b": "-OjMuovvmiSenN9PQvVR",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjIKsYGNFiI15JQqcD5",
+            "worker_b": "-OjNtroAR44G8XPAc6tT",
+            "shared_units": 3,
+            "kappa": 0.0
+          },
+          {
+            "worker_a": "-OjMuovvmiSenN9PQvVR",
+            "worker_b": "-OjNtroAR44G8XPAc6tT",
+            "shared_units": 3,
+            "kappa": -0.5
+          },
+          {
+            "worker_a": "-OjINGLT40qScUvTBN4n",
+            "worker_b": "-OjMvglrPt-si7iF4B94",
+            "shared_units": 3,
+            "kappa": 0.143
+          }
+        ]
+      },
+      "fleiss_kappa": null,
+      "krippendorff_alpha_nominal": 0.139
+    }
+  },
+  "overlap_restricted": {
+    "all_three_polarizing_paragraphs": {
+      "unit_keys": [
+        {
+          "article_id": "11",
+          "paragraph_index": 0,
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "article_id": "12",
+          "paragraph_index": 0,
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "article_id": "12",
+          "paragraph_index": 1,
+          "title": "Missouri's only abortion clinic to remain open after judge's injunction holds"
+        },
+        {
+          "article_id": "3",
+          "paragraph_index": 0,
+          "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'"
+        },
+        {
+          "article_id": "5",
+          "paragraph_index": 2,
+          "title": "port of l.a. sued after canceling agreement for a shipping container facility"
+        },
+        {
+          "article_id": "6",
+          "paragraph_index": 1,
+          "title": "get these trending washington restaurants on your radar today"
+        }
+      ],
+      "category": {
+        "units": 6,
+        "raters_per_unit_distribution": {
+          "3": 6
+        },
+        "label_counts": {
+          "persuasive propaganda": 16,
+          "inflammatory language": 2
+        },
+        "pairwise_percent_agreement": 0.889,
+        "exact_consensus_rate": 0.833,
+        "pairwise_cohen_kappa": {
+          "pair_count": 3,
+          "weighted_mean_kappa": 1.0,
+          "pair_examples": [
+            {
+              "worker_a": "-OjIQBdbxSq0_F9Ar5F5",
+              "worker_b": "-OjMTvPgMYiGaR0IVmA9",
+              "shared_units": 2,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjIQBdbxSq0_F9Ar5F5",
+              "worker_b": "-OjNSaBx0oEmygxow_wE",
+              "shared_units": 2,
+              "kappa": 1.0
+            },
+            {
+              "worker_a": "-OjMTvPgMYiGaR0IVmA9",
+              "worker_b": "-OjNSaBx0oEmygxow_wE",
+              "shared_units": 2,
+              "kappa": 1.0
+            }
+          ]
+        },
+        "fleiss_kappa": 0.437,
+        "krippendorff_alpha_nominal": 0.453
+      },
+      "subcategory": {
+        "units": 6,
+        "raters_per_unit_distribution": {
+          "3": 6
+        },
+        "label_counts": {
+          "doubt": 2,
+          "slogans": 4,
+          "exaggeration": 6,
+          "casual oversimplification": 2,
+          "multiple polarizing subcategories": 3,
+          "scapegoating": 1
+        },
+        "pairwise_percent_agreement": 0.333,
+        "exact_consensus_rate": 0.167,
+        "pairwise_cohen_kappa": {
+          "pair_count": 3,
+          "weighted_mean_kappa": 0.0,
+          "pair_examples": [
+            {
+              "worker_a": "-OjIQBdbxSq0_F9Ar5F5",
+              "worker_b": "-OjMTvPgMYiGaR0IVmA9",
+              "shared_units": 2,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjIQBdbxSq0_F9Ar5F5",
+              "worker_b": "-OjNSaBx0oEmygxow_wE",
+              "shared_units": 2,
+              "kappa": 0.0
+            },
+            {
+              "worker_a": "-OjMTvPgMYiGaR0IVmA9",
+              "worker_b": "-OjNSaBx0oEmygxow_wE",
+              "shared_units": 2,
+              "kappa": 0.0
+            }
+          ]
+        },
+        "fleiss_kappa": 0.15,
+        "krippendorff_alpha_nominal": 0.173
+      }
+    },
+    "shared_three_way_span_instances": {
+      "supporting_paragraph_keys": [],
+      "category": {
+        "units": 0,
+        "raters_per_unit_distribution": {},
+        "label_counts": {},
+        "pairwise_percent_agreement": null,
+        "exact_consensus_rate": null,
+        "pairwise_cohen_kappa": {
+          "pair_count": 0,
+          "weighted_mean_kappa": null,
+          "pair_examples": []
+        },
+        "fleiss_kappa": null,
+        "krippendorff_alpha_nominal": null
+      },
+      "subcategory": {
+        "units": 0,
+        "raters_per_unit_distribution": {},
+        "label_counts": {},
+        "pairwise_percent_agreement": null,
+        "exact_consensus_rate": null,
+        "pairwise_cohen_kappa": {
+          "pair_count": 0,
+          "weighted_mean_kappa": null,
+          "pair_examples": []
+        },
+        "fleiss_kappa": null,
+        "krippendorff_alpha_nominal": null
+      }
+    }
+  }
+}

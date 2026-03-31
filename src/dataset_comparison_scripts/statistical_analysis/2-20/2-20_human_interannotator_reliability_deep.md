@@ -28,12 +28,12 @@
 
 ### Category
 
-- Pairwise percent agreement: `0.296` with 95% bootstrap CI `[0.241, 0.351]`
-- Exact 3-rater consensus rate: `0.093` with 95% bootstrap CI `[0.041, 0.155]`
-- Weighted mean pairwise Cohen's kappa: `0.091` with 95% bootstrap CI `[0.059, 0.187]`
-- Fleiss' kappa: `-0.013` with 95% bootstrap CI `[-0.084, 0.054]`
-- Krippendorff's alpha (nominal): `-0.011` with 95% bootstrap CI `[-0.084, 0.055]`
-- Label counts: `{'multiple polarizing categories': 71, 'no polarizing language': 126, 'persuasive propaganda': 62, 'inflammatory language': 32}`
+- Pairwise percent agreement: `0.375` with 95% bootstrap CI `[0.323, 0.433]`
+- Exact 3-rater consensus rate: `0.144` with 95% bootstrap CI `[0.082, 0.216]`
+- Weighted mean pairwise Cohen's kappa: `0.101` with 95% bootstrap CI `[0.063, 0.218]`
+- Fleiss' kappa: `0.033` with 95% bootstrap CI `[-0.053, 0.113]`
+- Krippendorff's alpha (nominal): `0.035` with 95% bootstrap CI `[-0.057, 0.113]`
+- Label counts: `{'persuasive propaganda': 97, 'no polarizing language': 126, 'inflammatory language': 68}`
 
 ### Subcategory
 

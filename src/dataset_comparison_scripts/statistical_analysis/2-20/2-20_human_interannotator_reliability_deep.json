@@ -56,40 +56,39 @@
         "3": 97
       },
       "label_counts": {
-        "multiple polarizing categories": 71,
+        "persuasive propaganda": 97,
         "no polarizing language": 126,
-        "persuasive propaganda": 62,
-        "inflammatory language": 32
+        "inflammatory language": 68
       },
-      "pairwise_percent_agreement": 0.296,
-      "exact_consensus_rate": 0.093,
-      "pairwise_cohen_weighted_mean": 0.091,
-      "fleiss_kappa": -0.013,
-      "krippendorff_alpha_nominal": -0.011,
+      "pairwise_percent_agreement": 0.375,
+      "exact_consensus_rate": 0.144,
+      "pairwise_cohen_weighted_mean": 0.101,
+      "fleiss_kappa": 0.033,
+      "krippendorff_alpha_nominal": 0.035,
       "bootstrap_95ci": {
         "pairwise_percent_agreement": {
-          "lower": 0.241,
-          "upper": 0.351,
+          "lower": 0.323,
+          "upper": 0.433,
           "samples": 2000
         },
         "exact_consensus_rate": {
-          "lower": 0.041,
-          "upper": 0.155,
+          "lower": 0.082,
+          "upper": 0.216,
           "samples": 2000
         },
         "pairwise_cohen_weighted_mean": {
-          "lower": 0.059,
-          "upper": 0.187,
+          "lower": 0.063,
+          "upper": 0.218,
           "samples": 2000
         },
         "fleiss_kappa": {
-          "lower": -0.084,
-          "upper": 0.054,
+          "lower": -0.053,
+          "upper": 0.113,
           "samples": 2000
         },
         "krippendorff_alpha_nominal": {
-          "lower": -0.084,
-          "upper": 0.055,
+          "lower": -0.057,
+          "upper": 0.113,
           "samples": 2000
         }
       }
@@ -926,28 +925,28 @@
       "article_id": "2",
       "title": "phoenix chief says police response to incident with 4-year-old is 'unacceptable'",
       "paragraph_units": 4,
-      "pairwise_percent_agreement": 0.5,
-      "exact_consensus_rate": 0.25,
-      "fleiss_kappa": 0.234,
-      "krippendorff_alpha_nominal": 0.266
+      "pairwise_percent_agreement": 0.667,
+      "exact_consensus_rate": 0.5,
+      "fleiss_kappa": 0.415,
+      "krippendorff_alpha_nominal": 0.439
     },
     {
       "article_id": "3",
       "title": "Four top residencies now offered to local artists, thanks to Oolite",
       "paragraph_units": 3,
-      "pairwise_percent_agreement": 0.333,
+      "pairwise_percent_agreement": 0.222,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": 0.036,
-      "krippendorff_alpha_nominal": 0.089
+      "fleiss_kappa": -0.212,
+      "krippendorff_alpha_nominal": -0.144
     },
     {
       "article_id": "4",
       "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets",
       "paragraph_units": 3,
-      "pairwise_percent_agreement": 0.333,
-      "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.038,
-      "krippendorff_alpha_nominal": 0.019
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": 0.1,
+      "krippendorff_alpha_nominal": 0.15
     },
     {
       "article_id": "5",
@@ -962,10 +961,10 @@
       "article_id": "6",
       "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away",
       "paragraph_units": 3,
-      "pairwise_percent_agreement": 0.111,
+      "pairwise_percent_agreement": 0.222,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.286,
-      "krippendorff_alpha_nominal": -0.214
+      "fleiss_kappa": -0.212,
+      "krippendorff_alpha_nominal": -0.144
     },
     {
       "article_id": "7",
@@ -973,8 +972,8 @@
       "paragraph_units": 4,
       "pairwise_percent_agreement": 0.333,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": 0.094,
-      "krippendorff_alpha_nominal": 0.132
+      "fleiss_kappa": -0.067,
+      "krippendorff_alpha_nominal": -0.022
     },
     {
       "article_id": "8",
@@ -982,8 +981,8 @@
       "paragraph_units": 3,
       "pairwise_percent_agreement": 0.222,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.26,
-      "krippendorff_alpha_nominal": -0.19
+      "fleiss_kappa": -0.313,
+      "krippendorff_alpha_nominal": -0.24
     },
     {
       "article_id": "9",
@@ -998,10 +997,10 @@
       "article_id": "10",
       "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
       "paragraph_units": 4,
-      "pairwise_percent_agreement": 0.167,
+      "pairwise_percent_agreement": 0.25,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.2,
-      "krippendorff_alpha_nominal": -0.15
+      "fleiss_kappa": -0.149,
+      "krippendorff_alpha_nominal": -0.101
     },
     {
       "article_id": "11",
@@ -1009,26 +1008,26 @@
       "paragraph_units": 4,
       "pairwise_percent_agreement": 0.0,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.358,
-      "krippendorff_alpha_nominal": -0.302
+      "fleiss_kappa": -0.5,
+      "krippendorff_alpha_nominal": -0.438
     },
     {
       "article_id": "12",
       "title": "BuzzFeed Journalists Protest in Push for Union Recognition",
       "paragraph_units": 3,
-      "pairwise_percent_agreement": 0.111,
+      "pairwise_percent_agreement": 0.333,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.385,
-      "krippendorff_alpha_nominal": -0.308
+      "fleiss_kappa": -0.35,
+      "krippendorff_alpha_nominal": -0.275
     },
     {
       "article_id": "13",
       "title": "DC mayor says Trump's Fourth of July celebration emptied security fund",
       "paragraph_units": 3,
-      "pairwise_percent_agreement": 0.222,
+      "pairwise_percent_agreement": 0.333,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.26,
-      "krippendorff_alpha_nominal": -0.19
+      "fleiss_kappa": -0.125,
+      "krippendorff_alpha_nominal": -0.062
     },
     {
       "article_id": "14",
@@ -1045,8 +1044,8 @@
       "paragraph_units": 4,
       "pairwise_percent_agreement": 0.333,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.091,
-      "krippendorff_alpha_nominal": -0.045
+      "fleiss_kappa": -0.171,
+      "krippendorff_alpha_nominal": -0.122
     },
     {
       "article_id": "16",
@@ -1054,26 +1053,26 @@
       "paragraph_units": 4,
       "pairwise_percent_agreement": 0.333,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.171,
-      "krippendorff_alpha_nominal": -0.122
+      "fleiss_kappa": -0.091,
+      "krippendorff_alpha_nominal": -0.045
     },
     {
       "article_id": "17",
       "title": "Biden criticizes Amazon for paying $0 in corporate taxes",
       "paragraph_units": 4,
-      "pairwise_percent_agreement": 0.25,
-      "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.08,
-      "krippendorff_alpha_nominal": -0.035
+      "pairwise_percent_agreement": 0.417,
+      "exact_consensus_rate": 0.25,
+      "fleiss_kappa": 0.106,
+      "krippendorff_alpha_nominal": 0.144
     },
     {
       "article_id": "18",
       "title": "trump vows to cure cancer and eradicate aids",
       "paragraph_units": 4,
-      "pairwise_percent_agreement": 0.167,
+      "pairwise_percent_agreement": 0.333,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.364,
-      "krippendorff_alpha_nominal": -0.307
+      "fleiss_kappa": -0.333,
+      "krippendorff_alpha_nominal": -0.278
     },
     {
       "article_id": "19",
@@ -1081,8 +1080,8 @@
       "paragraph_units": 5,
       "pairwise_percent_agreement": 0.6,
       "exact_consensus_rate": 0.4,
-      "fleiss_kappa": 0.274,
-      "krippendorff_alpha_nominal": 0.298
+      "fleiss_kappa": 0.196,
+      "krippendorff_alpha_nominal": 0.223
     },
     {
       "article_id": "20",
@@ -1090,8 +1089,8 @@
       "paragraph_units": 3,
       "pairwise_percent_agreement": 0.111,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.241,
-      "krippendorff_alpha_nominal": -0.172
+      "fleiss_kappa": -0.385,
+      "krippendorff_alpha_nominal": -0.308
     },
     {
       "article_id": "21",
@@ -1099,35 +1098,35 @@
       "paragraph_units": 3,
       "pairwise_percent_agreement": 0.222,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.05,
-      "krippendorff_alpha_nominal": 0.008
+      "fleiss_kappa": -0.212,
+      "krippendorff_alpha_nominal": -0.144
     },
     {
       "article_id": "22",
       "title": "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar",
       "paragraph_units": 4,
-      "pairwise_percent_agreement": 0.333,
-      "exact_consensus_rate": 0.25,
-      "fleiss_kappa": 0.059,
-      "krippendorff_alpha_nominal": 0.098
+      "pairwise_percent_agreement": 0.667,
+      "exact_consensus_rate": 0.5,
+      "fleiss_kappa": 0.489,
+      "krippendorff_alpha_nominal": 0.511
     },
     {
       "article_id": "23",
       "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud",
       "paragraph_units": 3,
-      "pairwise_percent_agreement": 0.0,
+      "pairwise_percent_agreement": 0.222,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.397,
-      "krippendorff_alpha_nominal": -0.319
+      "fleiss_kappa": -0.313,
+      "krippendorff_alpha_nominal": -0.24
     },
     {
       "article_id": "24",
       "title": "RMV Fail: 546 license suspensions, more to come",
       "paragraph_units": 5,
-      "pairwise_percent_agreement": 0.333,
+      "pairwise_percent_agreement": 0.4,
       "exact_consensus_rate": 0.2,
-      "fleiss_kappa": -0.19,
-      "krippendorff_alpha_nominal": -0.151
+      "fleiss_kappa": -0.144,
+      "krippendorff_alpha_nominal": -0.106
     },
     {
       "article_id": "25",
@@ -1135,8 +1134,8 @@
       "paragraph_units": 4,
       "pairwise_percent_agreement": 0.25,
       "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.2,
-      "krippendorff_alpha_nominal": -0.15
+      "fleiss_kappa": -0.317,
+      "krippendorff_alpha_nominal": -0.262
     },
     {
       "article_id": "26",
@@ -1144,17 +1143,17 @@
       "paragraph_units": 3,
       "pairwise_percent_agreement": 0.556,
       "exact_consensus_rate": 0.333,
-      "fleiss_kappa": 0.4,
-      "krippendorff_alpha_nominal": 0.433
+      "fleiss_kappa": 0.308,
+      "krippendorff_alpha_nominal": 0.346
     },
     {
       "article_id": "27",
       "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time",
       "paragraph_units": 3,
-      "pairwise_percent_agreement": 0.111,
-      "exact_consensus_rate": 0.0,
-      "fleiss_kappa": -0.2,
-      "krippendorff_alpha_nominal": -0.133
+      "pairwise_percent_agreement": 0.556,
+      "exact_consensus_rate": 0.333,
+      "fleiss_kappa": 0.308,
+      "krippendorff_alpha_nominal": 0.346
     }
   ],
   "article_level_subcategory": [
