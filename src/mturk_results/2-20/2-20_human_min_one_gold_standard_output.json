@@ -3,6 +3,15 @@
     "title": "Trump Hits Polling On Fox News: 'Something Weird Going On At Fox'",
     "annotations": [
       {
+        "text": "hat. more fake news",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "confidence": 1.0,
+        "num_supporters": 3,
+        "label_consistent": false,
+        "paragraphIndex": 0
+      },
+      {
         "text": "re against crooked hillary",
         "category": "Inflammatory Language",
         "subcategory": "Name-Calling",
@@ -18,24 +27,6 @@
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "hat. more fake news",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
-        "confidence": 0.5,
-        "num_supporters": 2,
-        "label_consistent": false,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "More Fake News @BretBaier - Donald J. Trump",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
         "paragraphIndex": 0
       },
       {
@@ -80,25 +71,16 @@
     "title": "Editorial: Six Months After California'S Landmark Police Transparency Law, Many Agencies Still Won'T Release Their Records",
     "annotations": [
       {
-        "text": "But the public has the right to know about these very serious events, which is why it was so important to pass SB1421.",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Casual Oversimplification",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "But the biggest thing we've learned is that many police departments believe that compliance with the law is optiona",
+        "text": "we've learned is that many police departments believe that compliance with the law is optional",
         "category": "Inflammatory Language",
         "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 0
       },
       {
-        "text": "we've learned is that many police departments believe that compliance with the law is optional",
+        "text": "But the public has the right to know about these very serious events, which is why it was so important to pass SB1421.",
         "category": "Persuasive Propaganda",
         "subcategory": "Casual Oversimplification",
         "confidence": 0.33,
@@ -175,16 +157,7 @@
     "title": "Dc Mayor Says Trump'S Fourth Of July Celebration Emptied Security Fund",
     "annotations": [
       {
-        "text": "declining reserves, increased demand for heightened security, and a one-time draw down o",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "ves, increased demand for heightened security, and a one-time draw down of $7.3 million",
+        "text": "ves, increased demand for heightened security, and a one-time draw down of $7.3",
         "category": "Persuasive Propaganda",
         "subcategory": "Exaggeration",
         "confidence": 0.33,
@@ -238,6 +211,15 @@
         "paragraphIndex": 1
       },
       {
+        "text": "brought along a \"baby trump\" balloon",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 2
+      },
+      {
         "text": "DC mayor says Trump's Fourth of July celebration emptied",
         "category": "Persuasive Propaganda",
         "subcategory": "Exaggeration",
@@ -247,25 +229,7 @@
         "paragraphIndex": 2
       },
       {
-        "text": "Demonstrators brought along a \"Baby Trump\" balloon",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
         "text": "\"Dump Trump\" robot to protest the president",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "Baby Trump\" balloon and a \"Dump Trump\" r",
         "category": "Inflammatory Language",
         "subcategory": "Name-Calling",
         "confidence": 0.33,
@@ -306,12 +270,12 @@
         "paragraphIndex": 0
       },
       {
-        "text": "Massachusetts drivers' violations in other states accumulate for more than a year, unprocessed in 53 bins, in a deadly bureaucratic failure",
+        "text": "bins, in a deadly bureaucratic failure that gov.",
         "category": "Persuasive Propaganda",
         "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 0
       },
       {
@@ -336,15 +300,6 @@
         "text": "ld have triggered an automatic license suspension",
         "category": "Persuasive Propaganda",
         "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
-        "text": "bins, in a deadly bureaucratic failure that Gov.",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
         "confidence": 0.33,
         "num_supporters": 1,
         "label_consistent": true,
@@ -518,27 +473,18 @@
         "paragraphIndex": 1
       },
       {
-        "text": "cocked & loaded to retaliate last night on 3 different sights",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "cocked and loaded\" to retaliate against Iran",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
         "text": "Go back to real estate, where the worst yo",
         "category": "Inflammatory Language",
         "subcategory": "Demonization",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "cocked & loaded to retaliate last night",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
         "confidence": 0.33,
         "num_supporters": 1,
         "label_consistent": true,
@@ -554,21 +500,12 @@
         "paragraphIndex": 2
       },
       {
-        "text": "\"erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man whose judgment no serious, intelligent person trusts",
+        "text": "as an \"erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man",
         "category": "Inflammatory Language",
         "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 3
-      },
-      {
-        "text": "n chief as an \"erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 3
       },
       {
@@ -762,8 +699,8 @@
         "paragraphIndex": 0
       },
       {
-        "text": "very radical people in the united states of america who don't like america",
-        "category": "Inflammatory Language",
+        "text": "radical people in the united states of america who don't like america.",
+        "category": "Persuasive Propaganda",
         "subcategory": "Name-Calling",
         "confidence": 1.0,
         "num_supporters": 3,
@@ -771,12 +708,12 @@
         "paragraphIndex": 1
       },
       {
-        "text": "kaepernick in that category ...",
+        "text": "on't like the foundational principles that have made us a great nation",
         "category": "Inflammatory Language",
-        "subcategory": "Exaggeration",
-        "confidence": 0.5,
-        "num_supporters": 2,
-        "label_consistent": false,
+        "subcategory": "Demonization",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true,
         "paragraphIndex": 1
       },
       {
@@ -790,6 +727,15 @@
       },
       {
         "text": "ate symbols and is widely seen as a patriotic flag",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "confidence": 0.33,
+        "num_supporters": 1,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "d put Mr. Kaepernick in that category ...",
         "category": "Inflammatory Language",
         "subcategory": "Name-Calling",
         "confidence": 0.33,
@@ -893,15 +839,6 @@
         "paragraphIndex": 2
       },
       {
-        "text": "the third-lowest amount of speaking time with just 6.6 minutes",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
         "text": "ird-highest amount of speaking time with 9.3 minutes,",
         "category": "Persuasive Propaganda",
         "subcategory": "Exaggeration",
@@ -986,7 +923,7 @@
       {
         "text": "\"yes, i can win. not only can i, they know i can.",
         "category": "Persuasive Propaganda",
-        "subcategory": "Slogans",
+        "subcategory": "Bandwagon",
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
@@ -1002,20 +939,11 @@
         "paragraphIndex": 0
       },
       {
-        "text": "Thursday despite leading Republicans criticizing him and President Trump publicly saying he couldn't win. \"Can I win?",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 0
-      },
-      {
         "text": "he's doing a disservice to all conservatives",
         "category": "Persuasive Propaganda",
         "subcategory": "Bandwagon",
-        "confidence": 0.5,
-        "num_supporters": 2,
+        "confidence": 1.0,
+        "num_supporters": 3,
         "label_consistent": false,
         "paragraphIndex": 1
       },
@@ -1032,15 +960,6 @@
         "text": "You're literally the only candidate who could lose a GOP seat in pro-Trump, pro-USA ALABAMA",
         "category": "Persuasive Propaganda",
         "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "he's doing a disservice to all conservatives across the country in the process",
-        "category": "Inflammatory Language",
-        "subcategory": "Scapegoating",
         "confidence": 0.33,
         "num_supporters": 1,
         "label_consistent": true,
@@ -1201,12 +1120,12 @@
         "paragraphIndex": 0
       },
       {
-        "text": "benefited from special treatment; as with his many deceptions regarding his security clearance this is something no rank-and-file federal employee would get away with",
+        "text": "benefited from special treatment; as",
         "category": "Inflammatory Language",
         "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 1
       },
       {
@@ -1222,15 +1141,6 @@
         "text": "Kushner's \"poor track record of compliance with the spirit of the Hatch Act,",
         "category": "Persuasive Propaganda",
         "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "Jared Kushner has repeatedly benefited from special treatment",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
         "confidence": 0.33,
         "num_supporters": 1,
         "label_consistent": true,
@@ -1400,27 +1310,18 @@
         "paragraphIndex": 0
       },
       {
-        "text": "a virtual act of Treason by a once great paper so desperate for a story, any story, even if bad for our Country",
+        "text": "committed a \"virtual act of treason\" by",
         "category": "Persuasive Propaganda",
         "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 1
       },
       {
         "text": "ed if \"people would demand that I stay longer\" to \"k",
         "category": "Persuasive Propaganda",
         "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "committed a \"virtual act of treason\" by",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
         "confidence": 0.33,
         "num_supporters": 1,
         "label_consistent": true,
@@ -1712,27 +1613,18 @@
         "paragraphIndex": 1
       },
       {
-        "text": "sovereignty of his neighbors, his complicity in the slaughter of the Syrian people,",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "e to defend a tyrant against the fair questions of a f",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
         "text": "president made a conscious choice to defend a tyrant",
         "category": "Inflammatory Language",
         "subcategory": "Name-Calling",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
+        "text": "sovereignty of his neighbors, his complicity in the slaughter of the Syrian people,",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
         "confidence": 0.33,
         "num_supporters": 1,
         "label_consistent": true,
@@ -1834,20 +1726,11 @@
         "paragraphIndex": 1
       },
       {
-        "text": "d her \"Nervous Nancy\" after it was reported she privately told De",
+        "text": "he called her \"nervous nancy\"",
         "category": "Inflammatory Language",
         "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "He called her \"Nervous Nancy\"",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
-        "confidence": 0.33,
-        "num_supporters": 1,
+        "confidence": 0.67,
+        "num_supporters": 2,
         "label_consistent": true,
         "paragraphIndex": 2
       },
@@ -2024,30 +1907,21 @@
         "paragraphIndex": 1
       },
       {
+        "text": "autonomous blob of silly putty, unconstrained by nature or biology",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "confidence": 0.67,
+        "num_supporters": 2,
+        "label_consistent": true,
+        "paragraphIndex": 1
+      },
+      {
         "text": "alled being transgender \"a delusion.\"",
         "category": "Inflammatory Language",
         "subcategory": "Demonization",
         "confidence": 0.5,
         "num_supporters": 2,
         "label_consistent": false,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "unconstrained by nature or biology, and that marriage, sexuality, gender identity, and even the unborn child must yield to the erotic desires of liberated adults",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "autonomous blob of Silly Putty, unconstrained by nature or biology",
-        "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
         "paragraphIndex": 1
       },
       {
@@ -2223,36 +2097,27 @@
         "paragraphIndex": 0
       },
       {
-        "text": "this is a racial slur against the police, or if it's a slur because they want this neighborhood back, but there's something going on",
+        "text": "know if this is a racial slur against the police",
         "category": "Persuasive Propaganda",
         "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
+        "confidence": 0.67,
+        "num_supporters": 2,
         "label_consistent": true,
         "paragraphIndex": 1
       },
       {
-        "text": "If the DA, top persecutor of this city, can tarnish the efforts and life of a slain officer while backing criminals then,",
+        "text": "he da of this city set this tone of disrespect for the city",
         "category": "Inflammatory Language",
-        "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "subcategory": "Scapegoating",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 1
       },
       {
         "text": "why should any other layman warrant any real respect and keep their memory alive?",
         "category": "Persuasive Propaganda",
         "subcategory": "Bandwagon",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "he DA of this city set this tone of disrespect for the city",
-        "category": "Inflammatory Language",
-        "subcategory": "Scapegoating",
         "confidence": 0.33,
         "num_supporters": 1,
         "label_consistent": true,
@@ -2280,15 +2145,6 @@
         "text": "while backing criminals then, why should any other",
         "category": "Inflammatory Language",
         "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "know if this is a racial slur against the police",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Doubt",
         "confidence": 0.33,
         "num_supporters": 1,
         "label_consistent": true,
@@ -2557,12 +2413,12 @@
         "paragraphIndex": 1
       },
       {
-        "text": "'its normal axis' there will be less 'highly charged encounters' making headlines.",
+        "text": "to 'its normal axis'",
         "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
+        "subcategory": "Slogans",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
         "paragraphIndex": 2
       },
       {
@@ -2578,15 +2434,6 @@
         "text": "'[Wilkinson's] actions say far more about her than about me.",
         "category": "Persuasive Propaganda",
         "subcategory": "Doubt",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 2
-      },
-      {
-        "text": "to 'its normal axis'",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Slogans",
         "confidence": 0.33,
         "num_supporters": 1,
         "label_consistent": true,
@@ -2761,6 +2608,15 @@
         "paragraphIndex": 0
       },
       {
+        "text": "slamming the company at a",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "confidence": 0.5,
+        "num_supporters": 2,
+        "label_consistent": false,
+        "paragraphIndex": 1
+      },
+      {
         "text": ". \"But they should pay a few taxes, you know what I mean?",
         "category": "Persuasive Propaganda",
         "subcategory": "Casual Oversimplification",
@@ -2773,24 +2629,6 @@
         "text": "who said they were treated inhumanely at the facilitie",
         "category": "Inflammatory Language",
         "subcategory": "Demonization",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "earlier this week, slamming the company",
-        "category": "Persuasive Propaganda",
-        "subcategory": "Exaggeration",
-        "confidence": 0.33,
-        "num_supporters": 1,
-        "label_consistent": true,
-        "paragraphIndex": 1
-      },
-      {
-        "text": "slamming the company at a campaign stop",
-        "category": "Inflammatory Language",
-        "subcategory": "Name-Calling",
         "confidence": 0.33,
         "num_supporters": 1,
         "label_consistent": true,

@@ -46,9 +46,9 @@
 
 ## Span-Level Reliability
 
-- Dice/F1 including `no polarizing language`: macro `0.299`, micro `0.272`
-- Dice/F1 polarizing-only: macro `0.167`, micro `0.204`
-- Among matched polarizing spans, category agreement: micro `0.74`, subcategory agreement: micro `0.481`
+- Dice/F1 including `no polarizing language`: macro `0.33`, micro `0.305`
+- Dice/F1 polarizing-only: macro `0.205`, micro `0.249`
+- Among matched polarizing spans, category agreement: micro `0.713`, subcategory agreement: micro `0.447`
 
 ## Article-Level Binary Reliability
 

@@ -58,6 +58,24 @@ def normalize_for_match(text):
 def tokenize_for_match(text):
     return normalize_for_match(text).split()
 
+def longest_common_token_run(span1, span2):
+    tokens1 = tokenize_for_match(span1)
+    tokens2 = tokenize_for_match(span2)
+    if not tokens1 or not tokens2:
+        return 0
+
+    best = 0
+    prev = [0] * (len(tokens2) + 1)
+    for token1 in tokens1:
+        curr = [0] * (len(tokens2) + 1)
+        for j, token2 in enumerate(tokens2, start=1):
+            if token1 == token2:
+                curr[j] = prev[j - 1] + 1
+                if curr[j] > best:
+                    best = curr[j]
+        prev = curr
+    return best
+
 def normalize_title_string(title):
     return re.sub(r"[^\w\s]", "", title or "").strip().lower()
 
@@ -76,7 +94,10 @@ def spans_match(span1, span2, title1=None, title2=None, para1=None, para2=None):
         return False
     norm1 = normalize_for_match(span1)
     norm2 = normalize_for_match(span2)
-    return (norm1 in norm2 or norm2 in norm1) and non_stopword_overlap(span1, span2)
+    return (
+        (norm1 in norm2 or norm2 in norm1 or longest_common_token_run(span1, span2) >= 3)
+        and non_stopword_overlap(span1, span2)
+    )
 
 def extract_intersection_with_padding(span1, span2, pad=2):
     tokens1 = normalize(span1).split()

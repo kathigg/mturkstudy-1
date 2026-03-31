@@ -9,7 +9,7 @@
 - Paragraph units in full dataset: `97`
 - Paragraph units with exactly 3 raters: `97`
 - Paragraph units where all 3 raters marked polarizing spans: `17`
-- Shared 3-way overlapping span instances: `8`
+- Shared 3-way overlapping span instances: `10`
 
 ## Full Dataset
 
@@ -26,8 +26,8 @@
 ## Explicit Shared-Span Instances
 
 - Restriction: only connected overlap components where all 3 raters marked the same polarizing instance.
-- Category: agreement `0.75`, exact consensus `0.625`, Cohen `0.333`, Fleiss `0.486`, alpha `0.496`
-- Subcategory: agreement `0.458`, exact consensus `0.375`, Cohen `0.333`, Fleiss `0.347`, alpha `0.361`
+- Category: agreement `0.733`, exact consensus `0.6`, Cohen `0.333`, Fleiss `0.464`, alpha `0.473`
+- Subcategory: agreement `0.4`, exact consensus `0.3`, Cohen `0.333`, Fleiss `0.301`, alpha `0.312`
 
 ## Interpretation
 

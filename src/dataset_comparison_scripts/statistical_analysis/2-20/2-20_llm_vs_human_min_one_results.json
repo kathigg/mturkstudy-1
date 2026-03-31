@@ -3,29 +3,29 @@
   "gold_path": "src/mturk_results/2-20/2-20_human_min_one_gold_standard_output.json",
   "overall": {
     "article_match": {
-      "precision": 0.452,
-      "recall": 0.33,
-      "f1": 0.382,
-      "correct_matches": 100,
+      "precision": 0.498,
+      "recall": 0.363,
+      "f1": 0.42,
+      "correct_matches": 110,
       "total_llm": 221,
       "total_gold": 303
     },
     "category_match": {
-      "precision": 0.58,
-      "recall": 0.58,
-      "f1": 0.58,
-      "correct_matches": 58,
-      "total_matches": 100
+      "precision": 0.591,
+      "recall": 0.591,
+      "f1": 0.591,
+      "correct_matches": 65,
+      "total_matches": 110
     },
     "category_match_per_class": {
       "inflammatory language": {
-        "precision": 0.682,
-        "recall": 0.698,
-        "f1": 0.69,
-        "support": 43,
-        "tp": 30,
-        "fp": 14,
-        "fn": 13
+        "precision": 0.706,
+        "recall": 0.72,
+        "f1": 0.713,
+        "support": 50,
+        "tp": 36,
+        "fp": 15,
+        "fn": 14
       },
       "no polarizing language": {
         "precision": 1.0,
@@ -37,42 +37,42 @@
         "fn": 0
       },
       "persuasive propaganda": {
-        "precision": 0.74,
-        "recall": 0.725,
-        "f1": 0.733,
-        "support": 51,
-        "tp": 37,
-        "fp": 13,
-        "fn": 14
+        "precision": 0.736,
+        "recall": 0.722,
+        "f1": 0.729,
+        "support": 54,
+        "tp": 39,
+        "fp": 14,
+        "fn": 15
       }
     },
     "subcategory_match_per_class": {
       "bandwagon": {
-        "precision": 0.667,
-        "recall": 0.5,
-        "f1": 0.571,
+        "precision": 0.6,
+        "recall": 0.375,
+        "f1": 0.462,
         "support": 8,
-        "tp": 4,
+        "tp": 3,
         "fp": 2,
-        "fn": 4
+        "fn": 5
       },
       "casual oversimplification": {
-        "precision": 0.182,
-        "recall": 0.5,
-        "f1": 0.267,
+        "precision": 0.077,
+        "recall": 0.25,
+        "f1": 0.118,
         "support": 4,
-        "tp": 2,
-        "fp": 9,
-        "fn": 2
+        "tp": 1,
+        "fp": 12,
+        "fn": 3
       },
       "demonization": {
-        "precision": 0.6,
-        "recall": 0.429,
-        "f1": 0.5,
-        "support": 21,
-        "tp": 9,
-        "fp": 6,
-        "fn": 12
+        "precision": 0.632,
+        "recall": 0.462,
+        "f1": 0.533,
+        "support": 26,
+        "tp": 12,
+        "fp": 7,
+        "fn": 14
       },
       "doubt": {
         "precision": 0.4,
@@ -84,22 +84,22 @@
         "fn": 8
       },
       "exaggeration": {
-        "precision": 0.458,
-        "recall": 0.55,
-        "f1": 0.5,
-        "support": 20,
-        "tp": 11,
-        "fp": 13,
-        "fn": 9
+        "precision": 0.462,
+        "recall": 0.522,
+        "f1": 0.49,
+        "support": 23,
+        "tp": 12,
+        "fp": 14,
+        "fn": 11
       },
       "name-calling": {
-        "precision": 0.536,
-        "recall": 0.714,
-        "f1": 0.612,
-        "support": 21,
-        "tp": 15,
-        "fp": 13,
-        "fn": 6
+        "precision": 0.516,
+        "recall": 0.696,
+        "f1": 0.593,
+        "support": 23,
+        "tp": 16,
+        "fp": 15,
+        "fn": 7
       },
       "no polarizing language": {
         "precision": 1.0,
@@ -130,39 +130,39 @@
       }
     },
     "weighted_article_match": {
-      "precision": 0.286,
-      "recall": 0.394,
-      "f1": 0.332,
-      "tp_weight": 48.51,
+      "precision": 0.321,
+      "recall": 0.427,
+      "f1": 0.366,
+      "tp_weight": 52.49,
       "total_gold_weight": 122.97,
-      "fp": 121
+      "fp": 111
     }
   },
   "per_article": {
     "Biden criticizes Amazon for paying $0 in corporate taxes": {
       "article_match": {
-        "precision": 0.75,
-        "recall": 0.4,
-        "f1": 0.522,
-        "correct_matches": 6,
+        "precision": 0.875,
+        "recall": 0.467,
+        "f1": 0.609,
+        "correct_matches": 7,
         "total_llm": 8,
         "total_gold": 15
       },
       "category_match": {
-        "precision": 0.5,
-        "recall": 0.5,
-        "f1": 0.5,
+        "precision": 0.429,
+        "recall": 0.429,
+        "f1": 0.429,
         "correct_matches": 3,
-        "total_matches": 6
+        "total_matches": 7
       },
       "weighted_article_match": {
-        "precision": 0.518,
-        "recall": 0.382,
-        "f1": 0.44,
-        "tp_weight": 2.15,
+        "precision": 0.738,
+        "recall": 0.501,
+        "f1": 0.597,
+        "tp_weight": 2.82,
         "total_gold_weight": 5.63,
-        "fp": 2,
-        "matched": 6,
+        "fp": 1,
+        "matched": 7,
         "total_llm": 8,
         "total_gold": 15
       },
@@ -177,11 +177,11 @@
           "fn": 2
         },
         "persuasive propaganda": {
-          "precision": 0.5,
+          "precision": 0.6,
           "recall": 1.0,
-          "f1": 0.667,
-          "support": 2,
-          "tp": 2,
+          "f1": 0.75,
+          "support": 3,
+          "tp": 3,
           "fp": 2,
           "fn": 0
         }
@@ -193,7 +193,7 @@
           "f1": 0.0,
           "support": 0,
           "tp": 0,
-          "fp": 1,
+          "fp": 2,
           "fn": 0
         },
         "demonization": {
@@ -207,12 +207,12 @@
         },
         "exaggeration": {
           "precision": 0.5,
-          "recall": 1.0,
-          "f1": 0.667,
-          "support": 1,
+          "recall": 0.5,
+          "f1": 0.5,
+          "support": 2,
           "tp": 1,
           "fp": 1,
-          "fn": 0
+          "fn": 1
         },
         "name-calling": {
           "precision": 1.0,
@@ -535,13 +535,13 @@
       },
       "subcategory_match_per_class": {
         "bandwagon": {
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "support": 1,
-          "tp": 1,
+          "tp": 0,
           "fp": 0,
-          "fn": 0
+          "fn": 1
         },
         "casual oversimplification": {
           "precision": 0.0,
@@ -549,7 +549,7 @@
           "f1": 0.0,
           "support": 0,
           "tp": 0,
-          "fp": 1,
+          "fp": 2,
           "fn": 0
         },
         "exaggeration": {
@@ -574,28 +574,28 @@
     },
     "editorial: six months after california's landmark police transparency law, many agencies still won't release their records": {
       "article_match": {
-        "precision": 0.455,
-        "recall": 0.5,
-        "f1": 0.476,
-        "correct_matches": 5,
+        "precision": 0.545,
+        "recall": 0.6,
+        "f1": 0.571,
+        "correct_matches": 6,
         "total_llm": 11,
         "total_gold": 10
       },
       "category_match": {
-        "precision": 0.4,
-        "recall": 0.4,
-        "f1": 0.4,
+        "precision": 0.333,
+        "recall": 0.333,
+        "f1": 0.333,
         "correct_matches": 2,
-        "total_matches": 5
+        "total_matches": 6
       },
       "weighted_article_match": {
-        "precision": 0.265,
-        "recall": 0.543,
-        "f1": 0.356,
-        "tp_weight": 2.16,
+        "precision": 0.332,
+        "recall": 0.626,
+        "f1": 0.434,
+        "tp_weight": 2.49,
         "total_gold_weight": 3.98,
-        "fp": 6,
-        "matched": 5,
+        "fp": 5,
+        "matched": 6,
         "total_llm": 11,
         "total_gold": 10
       },
@@ -604,18 +604,18 @@
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0,
-          "support": 1,
+          "support": 2,
           "tp": 0,
           "fp": 1,
-          "fn": 1
+          "fn": 2
         },
         "persuasive propaganda": {
-          "precision": 0.75,
+          "precision": 0.6,
           "recall": 0.75,
-          "f1": 0.75,
+          "f1": 0.667,
           "support": 4,
           "tp": 3,
-          "fp": 1,
+          "fp": 2,
           "fn": 1
         }
       },
@@ -630,22 +630,22 @@
           "fn": 1
         },
         "casual oversimplification": {
-          "precision": 0.5,
-          "recall": 1.0,
-          "f1": 0.667,
-          "support": 1,
-          "tp": 1,
-          "fp": 1,
-          "fn": 0
-        },
-        "demonization": {
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0,
           "support": 1,
           "tp": 0,
-          "fp": 1,
+          "fp": 2,
           "fn": 1
+        },
+        "demonization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2
         },
         "doubt": {
           "precision": 0.0,
@@ -662,7 +662,7 @@
           "f1": 0.0,
           "support": 1,
           "tp": 0,
-          "fp": 0,
+          "fp": 1,
           "fn": 1
         },
         "slogans": {
@@ -678,47 +678,47 @@
     },
     "'Every American is entitled to health care': Sen. Bernie Sanders": {
       "article_match": {
-        "precision": 0.714,
-        "recall": 0.625,
-        "f1": 0.667,
-        "correct_matches": 5,
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.933,
+        "correct_matches": 7,
         "total_llm": 7,
         "total_gold": 8
       },
       "category_match": {
-        "precision": 0.2,
-        "recall": 0.2,
-        "f1": 0.2,
-        "correct_matches": 1,
-        "total_matches": 5
+        "precision": 0.429,
+        "recall": 0.429,
+        "f1": 0.429,
+        "correct_matches": 3,
+        "total_matches": 7
       },
       "weighted_article_match": {
-        "precision": 0.519,
-        "recall": 0.564,
-        "f1": 0.541,
-        "tp_weight": 2.16,
+        "precision": 1.0,
+        "recall": 0.825,
+        "f1": 0.904,
+        "tp_weight": 3.16,
         "total_gold_weight": 3.83,
-        "fp": 2,
-        "matched": 5,
+        "fp": 0,
+        "matched": 7,
         "total_llm": 7,
         "total_gold": 8
       },
       "category_match_per_class": {
         "inflammatory language": {
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
-          "support": 2,
-          "tp": 0,
+          "precision": 1.0,
+          "recall": 0.333,
+          "f1": 0.5,
+          "support": 3,
+          "tp": 1,
           "fp": 0,
           "fn": 2
         },
         "persuasive propaganda": {
-          "precision": 0.6,
+          "precision": 0.667,
           "recall": 1.0,
-          "f1": 0.75,
-          "support": 3,
-          "tp": 3,
+          "f1": 0.8,
+          "support": 4,
+          "tp": 4,
           "fp": 2,
           "fn": 0
         }
@@ -743,11 +743,11 @@
           "fn": 1
         },
         "demonization": {
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
-          "support": 1,
-          "tp": 0,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.667,
+          "support": 2,
+          "tp": 1,
           "fp": 0,
           "fn": 1
         },
@@ -761,11 +761,11 @@
           "fn": 1
         },
         "exaggeration": {
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0,
-          "support": 0,
-          "tp": 0,
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4,
+          "support": 1,
+          "tp": 1,
           "fp": 3,
           "fn": 0
         },
@@ -876,10 +876,10 @@
         "total_gold": 16
       },
       "category_match": {
-        "precision": 0.25,
-        "recall": 0.25,
-        "f1": 0.25,
-        "correct_matches": 1,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "correct_matches": 2,
         "total_matches": 4
       },
       "weighted_article_match": {
@@ -1274,38 +1274,38 @@
     },
     "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki": {
       "article_match": {
-        "precision": 0.5,
-        "recall": 0.643,
-        "f1": 0.563,
-        "correct_matches": 9,
+        "precision": 0.556,
+        "recall": 0.714,
+        "f1": 0.625,
+        "correct_matches": 10,
         "total_llm": 18,
         "total_gold": 14
       },
       "category_match": {
-        "precision": 0.444,
-        "recall": 0.444,
-        "f1": 0.444,
-        "correct_matches": 4,
-        "total_matches": 9
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1": 0.6,
+        "correct_matches": 6,
+        "total_matches": 10
       },
       "weighted_article_match": {
-        "precision": 0.307,
-        "recall": 0.631,
-        "f1": 0.413,
-        "tp_weight": 3.99,
+        "precision": 0.351,
+        "recall": 0.684,
+        "f1": 0.464,
+        "tp_weight": 4.32,
         "total_gold_weight": 6.32,
-        "fp": 9,
-        "matched": 9,
+        "fp": 8,
+        "matched": 10,
         "total_llm": 18,
         "total_gold": 14
       },
       "category_match_per_class": {
         "inflammatory language": {
-          "precision": 0.2,
+          "precision": 0.333,
           "recall": 1.0,
-          "f1": 0.333,
-          "support": 1,
-          "tp": 1,
+          "f1": 0.5,
+          "support": 2,
+          "tp": 2,
           "fp": 4,
           "fn": 0
         },
@@ -1339,11 +1339,11 @@
           "fn": 0
         },
         "demonization": {
-          "precision": 0.5,
+          "precision": 0.667,
           "recall": 1.0,
-          "f1": 0.667,
-          "support": 1,
-          "tp": 1,
+          "f1": 0.8,
+          "support": 2,
+          "tp": 2,
           "fp": 1,
           "fn": 0
         },
@@ -1567,49 +1567,49 @@
     },
     "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'": {
       "article_match": {
-        "precision": 0.381,
-        "recall": 0.5,
-        "f1": 0.432,
-        "correct_matches": 8,
+        "precision": 0.571,
+        "recall": 0.75,
+        "f1": 0.649,
+        "correct_matches": 12,
         "total_llm": 21,
         "total_gold": 16
       },
       "category_match": {
-        "precision": 0.625,
-        "recall": 0.625,
-        "f1": 0.625,
-        "correct_matches": 5,
-        "total_matches": 8
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "correct_matches": 6,
+        "total_matches": 12
       },
       "weighted_article_match": {
-        "precision": 0.178,
-        "recall": 0.485,
-        "f1": 0.26,
-        "tp_weight": 2.81,
+        "precision": 0.315,
+        "recall": 0.713,
+        "f1": 0.437,
+        "tp_weight": 4.13,
         "total_gold_weight": 5.79,
-        "fp": 13,
-        "matched": 8,
+        "fp": 9,
+        "matched": 12,
         "total_llm": 21,
         "total_gold": 16
       },
       "category_match_per_class": {
         "inflammatory language": {
-          "precision": 0.667,
-          "recall": 0.667,
-          "f1": 0.667,
-          "support": 6,
-          "tp": 4,
-          "fp": 2,
+          "precision": 0.7,
+          "recall": 0.778,
+          "f1": 0.737,
+          "support": 9,
+          "tp": 7,
+          "fp": 3,
           "fn": 2
         },
         "persuasive propaganda": {
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0,
-          "support": 2,
+          "support": 3,
           "tp": 0,
           "fp": 2,
-          "fn": 2
+          "fn": 3
         }
       },
       "subcategory_match_per_class": {
@@ -1623,13 +1623,13 @@
           "fn": 0
         },
         "demonization": {
-          "precision": 1.0,
-          "recall": 0.5,
-          "f1": 0.667,
-          "support": 4,
+          "precision": 0.667,
+          "recall": 0.4,
+          "f1": 0.5,
+          "support": 5,
           "tp": 2,
-          "fp": 0,
-          "fn": 2
+          "fp": 1,
+          "fn": 3
         },
         "doubt": {
           "precision": 0.0,
@@ -1644,19 +1644,19 @@
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0,
-          "support": 1,
+          "support": 2,
           "tp": 0,
           "fp": 1,
-          "fn": 1
+          "fn": 2
         },
         "name-calling": {
-          "precision": 0.5,
-          "recall": 1.0,
-          "f1": 0.667,
-          "support": 2,
-          "tp": 2,
-          "fp": 2,
-          "fn": 0
+          "precision": 0.429,
+          "recall": 0.75,
+          "f1": 0.545,
+          "support": 4,
+          "tp": 3,
+          "fp": 4,
+          "fn": 1
         }
       }
     },
@@ -1825,38 +1825,38 @@
     },
     "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house": {
       "article_match": {
-        "precision": 0.667,
-        "recall": 0.667,
-        "f1": 0.667,
-        "correct_matches": 10,
+        "precision": 0.733,
+        "recall": 0.733,
+        "f1": 0.733,
+        "correct_matches": 11,
         "total_llm": 15,
         "total_gold": 15
       },
       "category_match": {
-        "precision": 0.6,
-        "recall": 0.6,
-        "f1": 0.6,
-        "correct_matches": 6,
-        "total_matches": 10
+        "precision": 0.636,
+        "recall": 0.636,
+        "f1": 0.636,
+        "correct_matches": 7,
+        "total_matches": 11
       },
       "weighted_article_match": {
-        "precision": 0.531,
-        "recall": 0.774,
-        "f1": 0.63,
-        "tp_weight": 5.65,
+        "precision": 0.599,
+        "recall": 0.819,
+        "f1": 0.692,
+        "tp_weight": 5.98,
         "total_gold_weight": 7.3,
-        "fp": 5,
-        "matched": 10,
+        "fp": 4,
+        "matched": 11,
         "total_llm": 15,
         "total_gold": 15
       },
       "category_match_per_class": {
         "inflammatory language": {
-          "precision": 0.6,
+          "precision": 0.667,
           "recall": 1.0,
-          "f1": 0.75,
-          "support": 3,
-          "tp": 3,
+          "f1": 0.8,
+          "support": 4,
+          "tp": 4,
           "fp": 2,
           "fn": 0
         },
@@ -1899,11 +1899,11 @@
           "fn": 0
         },
         "demonization": {
-          "precision": 0.667,
+          "precision": 0.75,
           "recall": 1.0,
-          "f1": 0.8,
-          "support": 2,
-          "tp": 2,
+          "f1": 0.857,
+          "support": 3,
+          "tp": 3,
           "fp": 1,
           "fn": 0
         },

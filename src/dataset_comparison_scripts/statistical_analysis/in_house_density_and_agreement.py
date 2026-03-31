@@ -47,6 +47,25 @@ def tokenize_span(text: str | None) -> list[str]:
     return normalize_span(text).split()
 
 
+def longest_common_token_run(span1: str | None, span2: str | None) -> int:
+    tokens1 = tokenize_span(span1)
+    tokens2 = tokenize_span(span2)
+    if not tokens1 or not tokens2:
+        return 0
+
+    best = 0
+    prev = [0] * (len(tokens2) + 1)
+    for token1 in tokens1:
+        curr = [0] * (len(tokens2) + 1)
+        for j, token2 in enumerate(tokens2, start=1):
+            if token1 == token2:
+                curr[j] = prev[j - 1] + 1
+                if curr[j] > best:
+                    best = curr[j]
+        prev = curr
+    return best
+
+
 def is_no_polarizing_annotation(ann: dict) -> bool:
     return (
         normalize_label(ann.get("category")) == NPL_LABEL
@@ -88,7 +107,10 @@ def spans_match(a: dict, b: dict, *, include_npl: bool) -> bool:
 
     span1 = normalize_span(a.get("text"))
     span2 = normalize_span(b.get("text"))
-    return (span1 in span2 or span2 in span1) and non_stopword_overlap(a.get("text"), b.get("text"))
+    return (
+        (span1 in span2 or span2 in span1 or longest_common_token_run(a.get("text"), b.get("text")) >= 3)
+        and non_stopword_overlap(a.get("text"), b.get("text"))
+    )
 
 
 def sorted_annotations(annotations: Iterable[dict]) -> list[dict]:

@@ -5,8 +5,8 @@
     "three_rater_paragraph_units": 97,
     "four_rater_paragraph_units": 0,
     "all_three_polarizing_paragraph_units": 17,
-    "shared_three_way_span_instances": 8,
-    "shared_three_way_supporting_paragraphs": 8
+    "shared_three_way_span_instances": 10,
+    "shared_three_way_supporting_paragraphs": 10
   },
   "clarification": {
     "explicit_npl_is_present_in_raw_data": true,
@@ -500,6 +500,11 @@
           "title": "GOP lawmaker suggests Colin Kaepernick move to a different country"
         },
         {
+          "article_id": "21",
+          "paragraph_index": 0,
+          "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'"
+        },
+        {
           "article_id": "23",
           "paragraph_index": 1,
           "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud"
@@ -513,19 +518,24 @@
           "article_id": "27",
           "paragraph_index": 0,
           "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time"
+        },
+        {
+          "article_id": "6",
+          "paragraph_index": 1,
+          "title": "south african woman reunited with son six years after he disappeared and was tracked down 1,000 miles away"
         }
       ],
       "category": {
-        "units": 8,
+        "units": 10,
         "raters_per_unit_distribution": {
-          "3": 8
+          "3": 10
         },
         "label_counts": {
-          "persuasive propaganda": 14,
-          "inflammatory language": 10
+          "persuasive propaganda": 16,
+          "inflammatory language": 14
         },
-        "pairwise_percent_agreement": 0.75,
-        "exact_consensus_rate": 0.625,
+        "pairwise_percent_agreement": 0.733,
+        "exact_consensus_rate": 0.6,
         "pairwise_cohen_kappa": {
           "pair_count": 3,
           "weighted_mean_kappa": 0.333,
@@ -550,27 +560,27 @@
             }
           ]
         },
-        "fleiss_kappa": 0.486,
-        "krippendorff_alpha_nominal": 0.496
+        "fleiss_kappa": 0.464,
+        "krippendorff_alpha_nominal": 0.473
       },
       "subcategory": {
-        "units": 8,
+        "units": 10,
         "raters_per_unit_distribution": {
-          "3": 8
+          "3": 10
         },
         "label_counts": {
           "exaggeration": 6,
-          "multiple polarizing subcategories": 1,
+          "multiple polarizing subcategories": 3,
           "bandwagon": 2,
-          "demonization": 3,
+          "demonization": 5,
           "name-calling": 6,
-          "slogans": 1,
+          "slogans": 2,
           "doubt": 3,
-          "scapegoating": 1,
+          "scapegoating": 2,
           "casual oversimplification": 1
         },
-        "pairwise_percent_agreement": 0.458,
-        "exact_consensus_rate": 0.375,
+        "pairwise_percent_agreement": 0.4,
+        "exact_consensus_rate": 0.3,
         "pairwise_cohen_kappa": {
           "pair_count": 3,
           "weighted_mean_kappa": 0.333,
@@ -595,8 +605,8 @@
             }
           ]
         },
-        "fleiss_kappa": 0.347,
-        "krippendorff_alpha_nominal": 0.361
+        "fleiss_kappa": 0.301,
+        "krippendorff_alpha_nominal": 0.312
       }
     }
   }

@@ -104,11 +104,11 @@
   "span_overlap": {
     "including_npl": {
       "pair_count": 81,
-      "macro_dice_f1": 0.299,
-      "macro_jaccard": 0.2,
-      "micro_dice_f1": 0.272,
-      "micro_jaccard": 0.157,
-      "matched_spans": 140,
+      "macro_dice_f1": 0.33,
+      "macro_jaccard": 0.223,
+      "micro_dice_f1": 0.305,
+      "micro_jaccard": 0.18,
+      "matched_spans": 157,
       "total_annotations_a": 372,
       "total_annotations_b": 658,
       "pair_examples": [
@@ -138,9 +138,9 @@
           "worker_b": "-OmPeiIanXliIzWXEzvk",
           "count_a": 4,
           "count_b": 12,
-          "matched": 1,
-          "dice_f1": 0.125,
-          "jaccard": 0.067
+          "matched": 2,
+          "dice_f1": 0.25,
+          "jaccard": 0.143
         },
         {
           "article_id": "10",
@@ -158,9 +158,9 @@
           "worker_b": "-OmjE6B5yBbbnbIh1bzs",
           "count_a": 6,
           "count_b": 13,
-          "matched": 1,
-          "dice_f1": 0.105,
-          "jaccard": 0.056
+          "matched": 2,
+          "dice_f1": 0.211,
+          "jaccard": 0.118
         },
         {
           "article_id": "10",
@@ -188,9 +188,9 @@
           "worker_b": "-OmjTDiPPtdHTRJrd3DB",
           "count_a": 7,
           "count_b": 7,
-          "matched": 4,
-          "dice_f1": 0.571,
-          "jaccard": 0.4
+          "matched": 5,
+          "dice_f1": 0.714,
+          "jaccard": 0.556
         },
         {
           "article_id": "11",
@@ -216,11 +216,11 @@
     },
     "polarizing_only": {
       "pair_count": 81,
-      "macro_dice_f1": 0.167,
-      "macro_jaccard": 0.105,
-      "micro_dice_f1": 0.204,
-      "micro_jaccard": 0.113,
-      "matched_spans": 77,
+      "macro_dice_f1": 0.205,
+      "macro_jaccard": 0.132,
+      "micro_dice_f1": 0.249,
+      "micro_jaccard": 0.142,
+      "matched_spans": 94,
       "total_annotations_a": 207,
       "total_annotations_b": 549,
       "pair_examples": [
@@ -250,9 +250,9 @@
           "worker_b": "-OmPeiIanXliIzWXEzvk",
           "count_a": 2,
           "count_b": 12,
-          "matched": 1,
-          "dice_f1": 0.143,
-          "jaccard": 0.077
+          "matched": 2,
+          "dice_f1": 0.286,
+          "jaccard": 0.167
         },
         {
           "article_id": "10",
@@ -270,9 +270,9 @@
           "worker_b": "-OmjE6B5yBbbnbIh1bzs",
           "count_a": 4,
           "count_b": 13,
-          "matched": 1,
-          "dice_f1": 0.118,
-          "jaccard": 0.062
+          "matched": 2,
+          "dice_f1": 0.235,
+          "jaccard": 0.133
         },
         {
           "article_id": "10",
@@ -300,9 +300,9 @@
           "worker_b": "-OmjTDiPPtdHTRJrd3DB",
           "count_a": 7,
           "count_b": 7,
-          "matched": 4,
-          "dice_f1": 0.571,
-          "jaccard": 0.4
+          "matched": 5,
+          "dice_f1": 0.714,
+          "jaccard": 0.556
         },
         {
           "article_id": "11",

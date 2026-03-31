@@ -147,11 +147,11 @@
   "span_overlap": {
     "including_npl": {
       "pair_count": 81,
-      "macro_dice_f1": 0.299,
-      "macro_jaccard": 0.2,
-      "micro_dice_f1": 0.272,
-      "micro_jaccard": 0.157,
-      "matched_spans": 140,
+      "macro_dice_f1": 0.33,
+      "macro_jaccard": 0.223,
+      "micro_dice_f1": 0.305,
+      "micro_jaccard": 0.18,
+      "matched_spans": 157,
       "total_annotations_a": 372,
       "total_annotations_b": 658,
       "pair_examples": [
@@ -181,9 +181,9 @@
           "worker_b": "-OmPeiIanXliIzWXEzvk",
           "count_a": 4,
           "count_b": 12,
-          "matched": 1,
-          "dice_f1": 0.125,
-          "jaccard": 0.067
+          "matched": 2,
+          "dice_f1": 0.25,
+          "jaccard": 0.143
         },
         {
           "article_id": "10",
@@ -201,9 +201,9 @@
           "worker_b": "-OmjE6B5yBbbnbIh1bzs",
           "count_a": 6,
           "count_b": 13,
-          "matched": 1,
-          "dice_f1": 0.105,
-          "jaccard": 0.056
+          "matched": 2,
+          "dice_f1": 0.211,
+          "jaccard": 0.118
         },
         {
           "article_id": "10",
@@ -231,9 +231,9 @@
           "worker_b": "-OmjTDiPPtdHTRJrd3DB",
           "count_a": 7,
           "count_b": 7,
-          "matched": 4,
-          "dice_f1": 0.571,
-          "jaccard": 0.4
+          "matched": 5,
+          "dice_f1": 0.714,
+          "jaccard": 0.556
         },
         {
           "article_id": "11",
@@ -259,11 +259,11 @@
     },
     "polarizing_only": {
       "pair_count": 81,
-      "macro_dice_f1": 0.167,
-      "macro_jaccard": 0.105,
-      "micro_dice_f1": 0.204,
-      "micro_jaccard": 0.113,
-      "matched_spans": 77,
+      "macro_dice_f1": 0.205,
+      "macro_jaccard": 0.132,
+      "micro_dice_f1": 0.249,
+      "micro_jaccard": 0.142,
+      "matched_spans": 94,
       "total_annotations_a": 207,
       "total_annotations_b": 549,
       "pair_examples": [
@@ -293,9 +293,9 @@
           "worker_b": "-OmPeiIanXliIzWXEzvk",
           "count_a": 2,
           "count_b": 12,
-          "matched": 1,
-          "dice_f1": 0.143,
-          "jaccard": 0.077
+          "matched": 2,
+          "dice_f1": 0.286,
+          "jaccard": 0.167
         },
         {
           "article_id": "10",
@@ -313,9 +313,9 @@
           "worker_b": "-OmjE6B5yBbbnbIh1bzs",
           "count_a": 4,
           "count_b": 13,
-          "matched": 1,
-          "dice_f1": 0.118,
-          "jaccard": 0.062
+          "matched": 2,
+          "dice_f1": 0.235,
+          "jaccard": 0.133
         },
         {
           "article_id": "10",
@@ -343,9 +343,9 @@
           "worker_b": "-OmjTDiPPtdHTRJrd3DB",
           "count_a": 7,
           "count_b": 7,
-          "matched": 4,
-          "dice_f1": 0.571,
-          "jaccard": 0.4
+          "matched": 5,
+          "dice_f1": 0.714,
+          "jaccard": 0.556
         },
         {
           "article_id": "11",
@@ -372,12 +372,12 @@
   },
   "matched_span_label_agreement": {
     "including_npl": {
-      "pair_count": 69,
-      "matched_spans_total": 140,
-      "micro_category_agreement_rate": 0.857,
-      "micro_subcategory_agreement_rate": 0.714,
-      "macro_category_agreement_rate": 0.876,
-      "macro_subcategory_agreement_rate": 0.708,
+      "pair_count": 72,
+      "matched_spans_total": 157,
+      "micro_category_agreement_rate": 0.828,
+      "micro_subcategory_agreement_rate": 0.669,
+      "macro_category_agreement_rate": 0.856,
+      "macro_subcategory_agreement_rate": 0.668,
       "pair_examples": [
         {
           "article_id": "1",
@@ -391,9 +391,9 @@
           "article_id": "1",
           "worker_a": "-OmNDa2K2vrvWsM0SYvY",
           "worker_b": "-OmPeiIanXliIzWXEzvk",
-          "matched_spans": 1,
+          "matched_spans": 2,
           "category_agreement_rate": 1.0,
-          "subcategory_agreement_rate": 1.0
+          "subcategory_agreement_rate": 0.5
         },
         {
           "article_id": "10",
@@ -407,16 +407,16 @@
           "article_id": "10",
           "worker_a": "-OmKZbJ6PKUXaAVpZWPL",
           "worker_b": "-OmjE6B5yBbbnbIh1bzs",
-          "matched_spans": 1,
+          "matched_spans": 2,
           "category_agreement_rate": 1.0,
-          "subcategory_agreement_rate": 0.0
+          "subcategory_agreement_rate": 0.5
         },
         {
           "article_id": "11",
           "worker_a": "-OmABt79XPWN83TU-zKD",
           "worker_b": "-OmjTDiPPtdHTRJrd3DB",
-          "matched_spans": 4,
-          "category_agreement_rate": 0.5,
+          "matched_spans": 5,
+          "category_agreement_rate": 0.4,
           "subcategory_agreement_rate": 0.0
         },
         {
@@ -444,30 +444,30 @@
           "subcategory_agreement_rate": 1.0
         },
         {
-          "article_id": "14",
-          "worker_a": "-OmNJ32-fpZU4gfB1Qo2",
-          "worker_b": "-OmNSepogC6ZURA0HJx8",
-          "matched_spans": 2,
+          "article_id": "13",
+          "worker_a": "-OmACmWrDqnnwFl0oo7D",
+          "worker_b": "-OmSH3JAjvhyCq1ZE9k3",
+          "matched_spans": 1,
           "category_agreement_rate": 1.0,
           "subcategory_agreement_rate": 1.0
         },
         {
           "article_id": "14",
           "worker_a": "-OmNJ32-fpZU4gfB1Qo2",
-          "worker_b": "-OmPgptImeNkZfWV7T4W",
-          "matched_spans": 3,
+          "worker_b": "-OmNSepogC6ZURA0HJx8",
+          "matched_spans": 2,
           "category_agreement_rate": 1.0,
           "subcategory_agreement_rate": 1.0
         }
       ]
     },
     "polarizing_only": {
-      "pair_count": 44,
-      "matched_spans_total": 77,
-      "micro_category_agreement_rate": 0.74,
-      "micro_subcategory_agreement_rate": 0.481,
-      "macro_category_agreement_rate": 0.788,
-      "macro_subcategory_agreement_rate": 0.481,
+      "pair_count": 50,
+      "matched_spans_total": 94,
+      "micro_category_agreement_rate": 0.713,
+      "micro_subcategory_agreement_rate": 0.447,
+      "macro_category_agreement_rate": 0.774,
+      "macro_subcategory_agreement_rate": 0.445,
       "pair_examples": [
         {
           "article_id": "1",
@@ -481,9 +481,9 @@
           "article_id": "1",
           "worker_a": "-OmNDa2K2vrvWsM0SYvY",
           "worker_b": "-OmPeiIanXliIzWXEzvk",
-          "matched_spans": 1,
+          "matched_spans": 2,
           "category_agreement_rate": 1.0,
-          "subcategory_agreement_rate": 1.0
+          "subcategory_agreement_rate": 0.5
         },
         {
           "article_id": "10",
@@ -497,16 +497,16 @@
           "article_id": "10",
           "worker_a": "-OmKZbJ6PKUXaAVpZWPL",
           "worker_b": "-OmjE6B5yBbbnbIh1bzs",
-          "matched_spans": 1,
+          "matched_spans": 2,
           "category_agreement_rate": 1.0,
-          "subcategory_agreement_rate": 0.0
+          "subcategory_agreement_rate": 0.5
         },
         {
           "article_id": "11",
           "worker_a": "-OmABt79XPWN83TU-zKD",
           "worker_b": "-OmjTDiPPtdHTRJrd3DB",
-          "matched_spans": 4,
-          "category_agreement_rate": 0.5,
+          "matched_spans": 5,
+          "category_agreement_rate": 0.4,
           "subcategory_agreement_rate": 0.0
         },
         {
@@ -516,6 +516,14 @@
           "matched_spans": 2,
           "category_agreement_rate": 0.5,
           "subcategory_agreement_rate": 0.5
+        },
+        {
+          "article_id": "13",
+          "worker_a": "-OmACmWrDqnnwFl0oo7D",
+          "worker_b": "-OmSH3JAjvhyCq1ZE9k3",
+          "matched_spans": 1,
+          "category_agreement_rate": 1.0,
+          "subcategory_agreement_rate": 1.0
         },
         {
           "article_id": "14",
@@ -540,14 +548,6 @@
           "matched_spans": 1,
           "category_agreement_rate": 1.0,
           "subcategory_agreement_rate": 0.0
-        },
-        {
-          "article_id": "16",
-          "worker_a": "-OmFpOYos3IjDTyCJ2ec",
-          "worker_b": "-OmS4pFc5lgoyZLj0IgD",
-          "matched_spans": 2,
-          "category_agreement_rate": 0.5,
-          "subcategory_agreement_rate": 0.5
         }
       ]
     }
