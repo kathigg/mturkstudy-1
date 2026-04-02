@@ -64,6 +64,32 @@ Table of Contents:
 - LLM Scripts
 - LLM vs Turker Comparison Process 
 
+## Important Files Description
+
+This script (run_wrapper_multiple_llm_annotations.py ) is a multi-LLM annotation pipeline for news articles. It reads a CSV of articles, sends each article to three annotators (two OpenAI-style roles and one Gemini/OpenAI annotator), then sends their outputs to an OpenAI adjudicator to produce one final annotation set.
+It also does a lot of cleanup and validation: it enforces the JSON schema, normalizes labels, repairs missing fields, assigns paragraph indices, and applies a paragraph policy like exactly one annotation per paragraph or minimum one annotation per paragraph. Finally, it saves the raw annotator outputs to a CSV and the final adjudicated annotations to JSON, with resume/checkpoint support so long runs do not get lost.   
+
+This script ( /run_wrapper_multiple_llm_annotations_per_model.py) runs three LLM annotators (A, B, C) on the same set of articles but does NOT combine or adjudicate their outputs. Instead, it saves each model’s annotations separately so you can analyze model disagreement and variability. It also enforces a minimum-one-per-paragraph policy, ensuring every paragraph has at least one annotation while still allowing multiple annotations when present.
+
+
+This script (multiple_llm_annotations_script)  is just a wrapper/launcher, it doesn’t do any annotation or processing itself.
+Its only job is to run another script (run_wrapper_multiple_llm_annotations.py) using runpy. So when we execute this file, it simply forwards execution to the main annotation pipeline.
+
+
+This script (llm_human_comparison.py) compares LLM-generated annotations with gold-standard human annotations. It matches spans and labels between the two, then computes precision, recall, and F1 scores to measure how well the LLM performed. It also supports confidence-weighted evaluation, where higher-confidence gold annotations are given more importance, and outputs both overall metrics and per-article results.
+
+ This script ( turk_annotation_aggregator.py ) builds a gold-standard annotation file from the MTurk annotations. It groups together overlapping spans across annotators, chooses the most common category/subcategory for each group, computes a confidence score based on how many annotators supported it and whether their labels were consistent, and then saves the result in a clean article-level JSON format for later comparison with LLM annotations. It also carries over article titles and extracts a shared overlap-based text span to represent each grouped annotation.   
+ 
+The script (in_house_density_and_agreement.py ) analyzes our in-house annotation dataset to compute overall statistics and agreement. It measures things like label distribution (density), span overlap between annotators, and inter-annotator reliability (agreement, Cohen’s kappa, Krippendorff’s alpha) at binary, category, and subcategory levels. It also includes one-vs-rest analysis for specific labels to understand how consistently each type of propaganda is identified.  
+
+This script (in_house_overlap_restricted_reliability.py) computes inter-annotator reliability (IRR) for the dataset in two ways: on the full dataset and on overlap-restricted subsets. It filters to cases where all annotators marked polarizing content (and even shared overlapping spans), then recalculates agreement (kappa, alpha, etc.) to see if disagreement is due to different span selection vs actual label disagreement. It outputs both a JSON file and a readable Markdown report with interpretation.
+
+This script ( paragraph_llm_human_comparison.py ) compares LLM annotations and human gold-standard annotations at the article + paragraph level. It matches spans only when they come from the same article and same paragraph, then computes precision, recall, F1, category/subcategory performance, and confidence-weighted metrics to evaluate how well the LLM agrees with the gold labels.
+It also supports a few extra evaluation options: we can enforce one annotation per paragraph for stricter apples-to-apples comparison, print matched pairs for a specific article for debugging, and optionally compute bootstrap confidence intervals for the overall metrics. In short, it is a more advanced comparison/evaluation script for measuring LLM-vs-human annotation performance under different settings.
+
+This script (paragraph_turk_annotation_aggregator) builds a human gold-standard annotation file from the MTurk data, but in a more flexible way. It groups overlapping annotations within the same article and paragraph, computes a confidence score based on how many annotators supported each label, and then saves only annotations that meet a chosen minimum supporter threshold.
+It also supports two modes: exact-one, where it keeps only the single best annotation per paragraph, and min-one, where it can keep multiple qualifying polarizing annotations per paragraph and only uses a No Polarizing Language placeholder when needed. In short, this is a more advanced gold-standard builder that lets you control how strict or permissive the final human reference file should be.
+
 
 ## News Annotation Platform 
 
