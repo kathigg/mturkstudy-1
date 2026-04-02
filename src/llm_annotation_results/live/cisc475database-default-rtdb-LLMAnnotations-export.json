@@ -1,25 +1,25 @@
 [
   [
     {
-      "accept": 3,
+      "accept": 5,
+      "deny": 2,
+      "span": "no polarizing language selected",
+      "subcategory": "No Polarizing language"
+    },
+    {
+      "accept": 5,
       "deny": 0,
       "span": "no polarizing language selected",
       "subcategory": "No Polarizing language"
     },
     {
-      "accept": 3,
+      "accept": 5,
       "deny": 0,
       "span": "no polarizing language selected",
       "subcategory": "No Polarizing language"
     },
     {
-      "accept": 3,
-      "deny": 0,
-      "span": "no polarizing language selected",
-      "subcategory": "No Polarizing language"
-    },
-    {
-      "accept": 3,
+      "accept": 5,
       "deny": 0,
       "span": "no polarizing language selected",
       "subcategory": "No Polarizing language"
@@ -36,12 +36,12 @@
   [
     {
       "accept": 3,
-      "deny": 0,
+      "deny": 1,
       "span": "no polarizing language selected",
       "subcategory": "No Polarizing language"
     },
     {
-      "accept": 3,
+      "accept": 4,
       "deny": 0,
       "span": "no polarizing language selected",
       "subcategory": "No Polarizing language"
@@ -115,19 +115,19 @@
   ],
   [
     {
-      "accept": 3,
+      "accept": 4,
       "deny": 0,
       "span": "no polarizing language selected",
       "subcategory": "No Polarizing language"
     },
     {
-      "accept": 2,
+      "accept": 3,
       "deny": 1,
       "span": "no polarizing language selected",
       "subcategory": "No Polarizing language"
     },
     {
-      "accept": 2,
+      "accept": 3,
       "deny": 1,
       "span": "no polarizing language selected",
       "subcategory": "No Polarizing language"
