@@ -1,0 +1,467 @@
+{
+  "raw_proposal_level": {
+    "proposal_count": 515,
+    "vote_eligible_proposal_count": 495,
+    "no_vote_proposal_count": 20,
+    "vote_total": 1492,
+    "accept_total": 801,
+    "deny_total": 691,
+    "accept_rate": 0.5368632707774799,
+    "status_counts": {
+      "majority_accept": 251,
+      "majority_deny": 231,
+      "tie": 13,
+      "no_votes": 20
+    },
+    "status_rates": {
+      "majority_accept": 0.5070707070707071,
+      "majority_deny": 0.4666666666666667,
+      "no_votes": 0.038834951456310676,
+      "tie": 0.026262626262626262
+    },
+    "binary_reliability": {
+      "eligible_unit_count": 495,
+      "krippendorff_alpha_nominal": 0.3114700713855916,
+      "mean_pairwise_percent_agreement": 0.6622895622895623,
+      "exact_consensus_count": 244,
+      "exact_consensus_rate": 0.49292929292929294
+    },
+    "by_subcategory": {
+      "bandwagon": {
+        "accept": 30,
+        "deny": 26,
+        "instances": 20,
+        "total_votes": 56,
+        "accept_rate": 0.5357142857142857
+      },
+      "casual oversimplification": {
+        "accept": 35,
+        "deny": 36,
+        "instances": 24,
+        "total_votes": 71,
+        "accept_rate": 0.49295774647887325
+      },
+      "demonization": {
+        "accept": 96,
+        "deny": 61,
+        "instances": 54,
+        "total_votes": 157,
+        "accept_rate": 0.6114649681528662
+      },
+      "doubt": {
+        "accept": 106,
+        "deny": 42,
+        "instances": 49,
+        "total_votes": 148,
+        "accept_rate": 0.7162162162162162
+      },
+      "exaggeration": {
+        "accept": 168,
+        "deny": 134,
+        "instances": 106,
+        "total_votes": 302,
+        "accept_rate": 0.5562913907284768
+      },
+      "name-calling": {
+        "accept": 134,
+        "deny": 130,
+        "instances": 89,
+        "total_votes": 264,
+        "accept_rate": 0.5075757575757576
+      },
+      "no polarizing language": {
+        "accept": 160,
+        "deny": 229,
+        "instances": 137,
+        "total_votes": 389,
+        "accept_rate": 0.41131105398457585
+      },
+      "scapegoating": {
+        "accept": 7,
+        "deny": 5,
+        "instances": 5,
+        "total_votes": 12,
+        "accept_rate": 0.5833333333333334
+      },
+      "slogans": {
+        "accept": 65,
+        "deny": 28,
+        "instances": 31,
+        "total_votes": 93,
+        "accept_rate": 0.6989247311827957
+      }
+    },
+    "by_category": {
+      "inflammatory language": {
+        "accept": 237,
+        "deny": 196,
+        "instances": 148,
+        "total_votes": 433,
+        "accept_rate": 0.5473441108545035
+      },
+      "no polarizing language": {
+        "accept": 160,
+        "deny": 229,
+        "instances": 137,
+        "total_votes": 389,
+        "accept_rate": 0.41131105398457585
+      },
+      "persuasive propaganda": {
+        "accept": 404,
+        "deny": 266,
+        "instances": 230,
+        "total_votes": 670,
+        "accept_rate": 0.6029850746268657
+      }
+    },
+    "by_meta": {
+      "Aarush": {
+        "accept": 126,
+        "deny": 156,
+        "instances": 97,
+        "total_votes": 282,
+        "accept_rate": 0.44680851063829785
+      },
+      "Ashrey": {
+        "accept": 286,
+        "deny": 106,
+        "instances": 134,
+        "total_votes": 392,
+        "accept_rate": 0.7295918367346939
+      },
+      "I tagged the phrase \"his rule would have probably passed without notice\" because it overcredits the British for finding the tomb.": {
+        "accept": 5,
+        "deny": 5,
+        "instances": 4,
+        "total_votes": 10,
+        "accept_rate": 0.5
+      },
+      "Prerana": {
+        "accept": 384,
+        "deny": 424,
+        "instances": 280,
+        "total_votes": 808,
+        "accept_rate": 0.4752475247524752
+      }
+    }
+  },
+  "consolidated_cluster_level": {
+    "cluster_count": 409,
+    "vote_eligible_cluster_count": 394,
+    "no_vote_cluster_count": 15,
+    "status_counts": {
+      "majority_accept": 180,
+      "majority_deny": 203,
+      "tie": 11,
+      "no_votes": 15
+    },
+    "status_rates": {
+      "majority_accept": 0.45685279187817257,
+      "majority_deny": 0.5152284263959391,
+      "no_votes": 0.03667481662591687,
+      "tie": 0.027918781725888325
+    },
+    "binary_reliability": {
+      "eligible_unit_count": 394,
+      "krippendorff_alpha_nominal": 0.2860992020959867,
+      "mean_pairwise_percent_agreement": 0.6476311336717427,
+      "exact_consensus_count": 186,
+      "exact_consensus_rate": 0.4720812182741117
+    },
+    "final_majority_approved_annotation_count": 180,
+    "by_subcategory": {
+      "bandwagon": {
+        "majority_accept": 10,
+        "majority_deny": 9,
+        "tie": 0,
+        "no_votes": 0
+      },
+      "casual oversimplification": {
+        "majority_accept": 9,
+        "majority_deny": 15,
+        "tie": 0,
+        "no_votes": 0
+      },
+      "demonization": {
+        "majority_accept": 29,
+        "majority_deny": 17,
+        "tie": 1,
+        "no_votes": 2
+      },
+      "doubt": {
+        "majority_accept": 28,
+        "majority_deny": 13,
+        "tie": 2,
+        "no_votes": 1
+      },
+      "exaggeration": {
+        "majority_accept": 43,
+        "majority_deny": 43,
+        "tie": 3,
+        "no_votes": 3
+      },
+      "name-calling": {
+        "majority_accept": 27,
+        "majority_deny": 40,
+        "tie": 4,
+        "no_votes": 4
+      },
+      "no polarizing language": {
+        "majority_accept": 19,
+        "majority_deny": 56,
+        "tie": 1,
+        "no_votes": 4
+      },
+      "scapegoating": {
+        "majority_accept": 2,
+        "majority_deny": 2,
+        "tie": 0,
+        "no_votes": 1
+      },
+      "slogans": {
+        "majority_accept": 13,
+        "majority_deny": 8,
+        "tie": 0,
+        "no_votes": 0
+      }
+    },
+    "by_category": {
+      "inflammatory language": {
+        "majority_accept": 58,
+        "majority_deny": 59,
+        "tie": 5,
+        "no_votes": 7
+      },
+      "no polarizing language": {
+        "majority_accept": 19,
+        "majority_deny": 56,
+        "tie": 1,
+        "no_votes": 4
+      },
+      "persuasive propaganda": {
+        "majority_accept": 103,
+        "majority_deny": 88,
+        "tie": 5,
+        "no_votes": 4
+      }
+    },
+    "by_article": {
+      "'Every American is entitled to health care': Sen. Bernie Sanders": {
+        "cluster_count": 12,
+        "majority_accept": 5,
+        "majority_deny": 6,
+        "tie": 1,
+        "no_votes": 0,
+        "approved_final_annotations": 5
+      },
+      "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized": {
+        "cluster_count": 15,
+        "majority_accept": 8,
+        "majority_deny": 7,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 8
+      },
+      "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar": {
+        "cluster_count": 14,
+        "majority_accept": 7,
+        "majority_deny": 7,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 7
+      },
+      "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki": {
+        "cluster_count": 17,
+        "majority_accept": 12,
+        "majority_deny": 4,
+        "tie": 1,
+        "no_votes": 0,
+        "approved_final_annotations": 12
+      },
+      "Biden criticizes Amazon for paying $0 in corporate taxes": {
+        "cluster_count": 20,
+        "majority_accept": 9,
+        "majority_deny": 11,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 9
+      },
+      "BuzzFeed Journalists Protest in Push for Union Recognition": {
+        "cluster_count": 13,
+        "majority_accept": 4,
+        "majority_deny": 9,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 4
+      },
+      "DC mayor says Trump's Fourth of July celebration emptied security fund": {
+        "cluster_count": 14,
+        "majority_accept": 4,
+        "majority_deny": 10,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 4
+      },
+      "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings": {
+        "cluster_count": 11,
+        "majority_accept": 5,
+        "majority_deny": 6,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 5
+      },
+      "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud": {
+        "cluster_count": 16,
+        "majority_accept": 10,
+        "majority_deny": 6,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 10
+      },
+      "GOP lawmaker suggests Colin Kaepernick move to a different country": {
+        "cluster_count": 17,
+        "majority_accept": 4,
+        "majority_deny": 7,
+        "tie": 6,
+        "no_votes": 0,
+        "approved_final_annotations": 4
+      },
+      "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time": {
+        "cluster_count": 13,
+        "majority_accept": 3,
+        "majority_deny": 10,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 3
+      },
+      "Killer of 16-year-old New York girl in 1980 released on parole despite outrage": {
+        "cluster_count": 15,
+        "majority_accept": 5,
+        "majority_deny": 10,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 5
+      },
+      "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal": {
+        "cluster_count": 13,
+        "majority_accept": 7,
+        "majority_deny": 6,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 7
+      },
+      "Protest in Madrid as conservatives suspend ban on most polluting cars": {
+        "cluster_count": 6,
+        "majority_accept": 3,
+        "majority_deny": 3,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 3
+      },
+      "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets": {
+        "cluster_count": 12,
+        "majority_accept": 4,
+        "majority_deny": 8,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 4
+      },
+      "RMV Fail: 546 license suspensions, more to come": {
+        "cluster_count": 19,
+        "majority_accept": 7,
+        "majority_deny": 11,
+        "tie": 0,
+        "no_votes": 1,
+        "approved_final_annotations": 7
+      },
+      "Trump hits polling on Fox News: 'Something weird going on at Fox'": {
+        "cluster_count": 14,
+        "majority_accept": 8,
+        "majority_deny": 6,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 8
+      },
+      "donald trump's criminal justice reform shows results": {
+        "cluster_count": 22,
+        "majority_accept": 10,
+        "majority_deny": 12,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 10
+      },
+      "editorial: six months after california's landmark police transparency law, many agencies still won't release their records": {
+        "cluster_count": 18,
+        "majority_accept": 8,
+        "majority_deny": 10,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 8
+      },
+      "george conway urges trump to resign over aborted iran strike": {
+        "cluster_count": 20,
+        "majority_accept": 12,
+        "majority_deny": 8,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 12
+      },
+      "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.": {
+        "cluster_count": 20,
+        "majority_accept": 4,
+        "majority_deny": 2,
+        "tie": 0,
+        "no_votes": 14,
+        "approved_final_annotations": 4
+      },
+      "ron desantis signs amendment 4 bill, limiting felon voting": {
+        "cluster_count": 9,
+        "majority_accept": 4,
+        "majority_deny": 5,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 4
+      },
+      "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'": {
+        "cluster_count": 19,
+        "majority_accept": 8,
+        "majority_deny": 11,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 8
+      },
+      "the latest: nadler says panel will move quickly on mcgahn": {
+        "cluster_count": 8,
+        "majority_accept": 4,
+        "majority_deny": 3,
+        "tie": 1,
+        "no_votes": 0,
+        "approved_final_annotations": 4
+      },
+      "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house": {
+        "cluster_count": 17,
+        "majority_accept": 13,
+        "majority_deny": 4,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 13
+      },
+      "trump vows to cure cancer and eradicate aids": {
+        "cluster_count": 20,
+        "majority_accept": 8,
+        "majority_deny": 12,
+        "tie": 0,
+        "no_votes": 0,
+        "approved_final_annotations": 8
+      },
+      "tutankhamun sculpture's london auction sparks egyptian outcry": {
+        "cluster_count": 15,
+        "majority_accept": 4,
+        "majority_deny": 9,
+        "tie": 2,
+        "no_votes": 0,
+        "approved_final_annotations": 4
+      }
+    }
+  }
+}
