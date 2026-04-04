@@ -493,6 +493,146 @@ def build_csv_rows(summary, consolidated_rows):
     )
 
 
+def infer_disagreement_type(target_row, accepted_rows):
+    pseudo_target = {
+        "paragraphIndex": target_row["paragraph_index"],
+        "text": target_row["representative_text"],
+        "subcategory": target_row["subcategory"],
+        "category": target_row["category"],
+    }
+
+    same_subcategory_matches = []
+    different_subcategory_matches = []
+
+    for accepted in accepted_rows:
+        pseudo_accepted = {
+            "paragraphIndex": accepted["paragraph_index"],
+            "text": accepted["representative_text"],
+            "subcategory": accepted["subcategory"],
+            "category": accepted["category"],
+        }
+        if not base.spans_match(pseudo_target, pseudo_accepted, include_npl=True):
+            continue
+        if accepted["subcategory"] == target_row["subcategory"]:
+            same_subcategory_matches.append(accepted)
+        else:
+            different_subcategory_matches.append(accepted)
+
+    if same_subcategory_matches:
+        return "likely_boundary_issue", same_subcategory_matches, different_subcategory_matches
+    if different_subcategory_matches:
+        return "likely_category_confusion", same_subcategory_matches, different_subcategory_matches
+    return "likely_conceptual_difference", same_subcategory_matches, different_subcategory_matches
+
+
+def build_disagreement_rows(consolidated_rows):
+    accepted_by_article_paragraph = defaultdict(list)
+    for row in consolidated_rows:
+        if row["cluster_status"] == "majority_accept":
+            accepted_by_article_paragraph[(row["article_index"], row["paragraph_index"])].append(row)
+
+    disagreement_rows = []
+    for row in consolidated_rows:
+        if row["cluster_status"] not in {"majority_deny", "tie"}:
+            continue
+
+        accepted_rows = accepted_by_article_paragraph.get(
+            (row["article_index"], row["paragraph_index"]), []
+        )
+        disagreement_type, same_matches, different_matches = infer_disagreement_type(
+            row, accepted_rows
+        )
+
+        disagreement_rows.append(
+            {
+                "article_title": row["article_title"],
+                "paragraph_index": row["paragraph_index"],
+                "cluster_status": row["cluster_status"],
+                "likely_disagreement_type": disagreement_type,
+                "subcategory": row["subcategory"],
+                "category": row["category"],
+                "representative_text": row["representative_text"],
+                "representative_meta": row["representative_meta"],
+                "representative_accept": row["representative_accept"],
+                "representative_deny": row["representative_deny"],
+                "representative_total_votes": row["representative_total_votes"],
+                "representative_accept_rate": row["representative_accept_rate"],
+                "cluster_member_count": row["cluster_member_count"],
+                "cluster_metas": " | ".join(row["cluster_metas"]),
+                "cluster_texts": " || ".join(row["cluster_texts"]),
+                "same_subcategory_accepted_overlap_count": len(same_matches),
+                "different_subcategory_accepted_overlap_count": len(different_matches),
+                "overlapping_accepted_same_subcategory": " || ".join(
+                    match["representative_text"] for match in same_matches
+                ),
+                "overlapping_accepted_different_subcategory": " || ".join(
+                    f'{match["subcategory"]}: {match["representative_text"]}'
+                    for match in different_matches
+                ),
+            }
+        )
+
+    disagreement_rows.sort(
+        key=lambda row: (
+            row["likely_disagreement_type"],
+            row["article_title"],
+            row["paragraph_index"],
+            row["subcategory"],
+            row["representative_accept_rate"],
+        )
+    )
+    return disagreement_rows
+
+
+def build_mixed_vote_rows(consolidated_rows):
+    rows = []
+    for row in consolidated_rows:
+        accept = int(row["representative_accept"])
+        deny = int(row["representative_deny"])
+        total_votes = int(row["representative_total_votes"])
+        if accept <= 0 or deny <= 0:
+            continue
+
+        rows.append(
+            {
+                "article_title": row["article_title"],
+                "paragraph_index": row["paragraph_index"],
+                "cluster_status": row["cluster_status"],
+                "vote_pattern": f"{accept}-{deny}",
+                "representative_accept": accept,
+                "representative_deny": deny,
+                "representative_total_votes": total_votes,
+                "representative_accept_rate": row["representative_accept_rate"],
+                "subcategory": row["subcategory"],
+                "category": row["category"],
+                "representative_text": row["representative_text"],
+                "representative_meta": row["representative_meta"],
+                "cluster_member_count": row["cluster_member_count"],
+                "cluster_metas": " | ".join(row["cluster_metas"]),
+                "cluster_texts": " || ".join(row["cluster_texts"]),
+            }
+        )
+
+    rows.sort(
+        key=lambda item: (
+            item["article_title"],
+            item["paragraph_index"],
+            item["subcategory"],
+            item["representative_accept_rate"],
+            item["representative_text"],
+        )
+    )
+    return rows
+
+
+def build_three_way_split_rows(mixed_vote_rows):
+    return [
+        row
+        for row in mixed_vote_rows
+        if row["representative_total_votes"] == 3 and row["vote_pattern"] in {"2-1", "1-2"}
+    ]
+
+
 def main():
     args = parse_args()
     annotations = load_json(args.annotations)
@@ -517,6 +657,9 @@ def main():
         article_rows,
         consolidated_rows_csv,
     ) = build_csv_rows(summary, consolidated_rows)
+    disagreement_rows = build_disagreement_rows(consolidated_rows)
+    mixed_vote_rows = build_mixed_vote_rows(consolidated_rows)
+    three_way_split_rows = build_three_way_split_rows(mixed_vote_rows)
 
     write_csv(
         output_dir / "in_house_live_validation_raw_subcategory_votes.csv",
@@ -571,6 +714,73 @@ def main():
             "cluster_total_votes_sum",
             "cluster_accept_rate_sum",
             "cluster_status",
+            "cluster_metas",
+            "cluster_texts",
+        ],
+    )
+    write_csv(
+        output_dir / "in_house_live_validation_disagreement_clusters.csv",
+        disagreement_rows,
+        [
+            "article_title",
+            "paragraph_index",
+            "cluster_status",
+            "likely_disagreement_type",
+            "subcategory",
+            "category",
+            "representative_text",
+            "representative_meta",
+            "representative_accept",
+            "representative_deny",
+            "representative_total_votes",
+            "representative_accept_rate",
+            "cluster_member_count",
+            "cluster_metas",
+            "cluster_texts",
+            "same_subcategory_accepted_overlap_count",
+            "different_subcategory_accepted_overlap_count",
+            "overlapping_accepted_same_subcategory",
+            "overlapping_accepted_different_subcategory",
+        ],
+    )
+    write_csv(
+        output_dir / "in_house_live_validation_mixed_vote_clusters.csv",
+        mixed_vote_rows,
+        [
+            "article_title",
+            "paragraph_index",
+            "cluster_status",
+            "vote_pattern",
+            "representative_accept",
+            "representative_deny",
+            "representative_total_votes",
+            "representative_accept_rate",
+            "subcategory",
+            "category",
+            "representative_text",
+            "representative_meta",
+            "cluster_member_count",
+            "cluster_metas",
+            "cluster_texts",
+        ],
+    )
+    write_csv(
+        output_dir / "in_house_live_validation_three_way_split_clusters.csv",
+        three_way_split_rows,
+        [
+            "article_title",
+            "paragraph_index",
+            "cluster_status",
+            "vote_pattern",
+            "representative_accept",
+            "representative_deny",
+            "representative_total_votes",
+            "representative_accept_rate",
+            "subcategory",
+            "category",
+            "representative_text",
+            "representative_meta",
+            "cluster_member_count",
             "cluster_metas",
             "cluster_texts",
         ],

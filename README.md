@@ -154,6 +154,15 @@ node src/website_management/helper_scripts/export_firebase_snapshot.mjs \
   --output src/mturk_results/live/cisc475database-default-rtdb-submissions-export.json
 ```
 
+### Notes: `in_house_live_validation_three_way_split_clusters.csv`
+
+- File: `src/dataset_comparison_scripts/statistical_analysis/live/in_house_live_validation_three_way_split_clusters.csv`
+- This is an adjudication-focused CSV built from the live `InHouse-Annotations` validation data after overlapping same-subcategory proposals are consolidated into clusters.
+- Each row is a consolidated cluster with an exact 3-vote split pattern of `2-1` or `1-2`, meaning one validator disagreed with the other two about whether that annotation should be kept.
+- We made it so the hard in-house cases can be re-reviewed in a second agree/disagree pass instead of re-validating the entire dataset.
+- The CSV includes the article title, paragraph index, vote pattern, category, subcategory, representative span text, representative annotator, and the underlying clustered span texts/metas.
+- It is meant to function as a working notes/adjudication sheet for improving the final approved human set and, if needed, raising validation agreement metrics like Krippendorff’s alpha.
+
 ### Designed For Research
 
 This tool was created for a human-subject study but is reusable across research domains involving:
