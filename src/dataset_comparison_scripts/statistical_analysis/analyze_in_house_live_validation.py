@@ -633,6 +633,49 @@ def build_three_way_split_rows(mixed_vote_rows):
     ]
 
 
+def build_unanimous_consensus_rows(consolidated_rows):
+    rows = []
+    for row in consolidated_rows:
+        accept = int(row["representative_accept"])
+        deny = int(row["representative_deny"])
+        total_votes = int(row["representative_total_votes"])
+        if total_votes < 2:
+            continue
+        if not (accept == 0 or deny == 0):
+            continue
+
+        rows.append(
+            {
+                "article_title": row["article_title"],
+                "paragraph_index": row["paragraph_index"],
+                "cluster_status": row["cluster_status"],
+                "vote_pattern": f"{accept}-{deny}",
+                "consensus_direction": "accept" if deny == 0 else "deny",
+                "representative_accept": accept,
+                "representative_deny": deny,
+                "representative_total_votes": total_votes,
+                "subcategory": row["subcategory"],
+                "category": row["category"],
+                "representative_text": row["representative_text"],
+                "representative_meta": row["representative_meta"],
+                "cluster_member_count": row["cluster_member_count"],
+                "cluster_metas": " | ".join(row["cluster_metas"]),
+                "cluster_texts": " || ".join(row["cluster_texts"]),
+            }
+        )
+
+    rows.sort(
+        key=lambda item: (
+            item["consensus_direction"],
+            item["article_title"],
+            item["paragraph_index"],
+            item["subcategory"],
+            item["representative_text"],
+        )
+    )
+    return rows
+
+
 def main():
     args = parse_args()
     annotations = load_json(args.annotations)
@@ -660,6 +703,7 @@ def main():
     disagreement_rows = build_disagreement_rows(consolidated_rows)
     mixed_vote_rows = build_mixed_vote_rows(consolidated_rows)
     three_way_split_rows = build_three_way_split_rows(mixed_vote_rows)
+    unanimous_consensus_rows = build_unanimous_consensus_rows(consolidated_rows)
 
     write_csv(
         output_dir / "in_house_live_validation_raw_subcategory_votes.csv",
@@ -776,6 +820,27 @@ def main():
             "representative_deny",
             "representative_total_votes",
             "representative_accept_rate",
+            "subcategory",
+            "category",
+            "representative_text",
+            "representative_meta",
+            "cluster_member_count",
+            "cluster_metas",
+            "cluster_texts",
+        ],
+    )
+    write_csv(
+        output_dir / "in_house_live_validation_unanimous_consensus_clusters.csv",
+        unanimous_consensus_rows,
+        [
+            "article_title",
+            "paragraph_index",
+            "cluster_status",
+            "vote_pattern",
+            "consensus_direction",
+            "representative_accept",
+            "representative_deny",
+            "representative_total_votes",
             "subcategory",
             "category",
             "representative_text",
