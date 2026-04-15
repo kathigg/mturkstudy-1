@@ -633,6 +633,14 @@ def build_three_way_split_rows(mixed_vote_rows):
     ]
 
 
+def build_four_vote_split_rows(mixed_vote_rows):
+    return [
+        row
+        for row in mixed_vote_rows
+        if row["representative_total_votes"] == 4 and row["vote_pattern"] in {"3-1", "1-3"}
+    ]
+
+
 def build_unanimous_consensus_rows(consolidated_rows):
     rows = []
     for row in consolidated_rows:
@@ -703,6 +711,7 @@ def main():
     disagreement_rows = build_disagreement_rows(consolidated_rows)
     mixed_vote_rows = build_mixed_vote_rows(consolidated_rows)
     three_way_split_rows = build_three_way_split_rows(mixed_vote_rows)
+    four_vote_split_rows = build_four_vote_split_rows(mixed_vote_rows)
     unanimous_consensus_rows = build_unanimous_consensus_rows(consolidated_rows)
 
     write_csv(
@@ -811,6 +820,27 @@ def main():
     write_csv(
         output_dir / "in_house_live_validation_three_way_split_clusters.csv",
         three_way_split_rows,
+        [
+            "article_title",
+            "paragraph_index",
+            "cluster_status",
+            "vote_pattern",
+            "representative_accept",
+            "representative_deny",
+            "representative_total_votes",
+            "representative_accept_rate",
+            "subcategory",
+            "category",
+            "representative_text",
+            "representative_meta",
+            "cluster_member_count",
+            "cluster_metas",
+            "cluster_texts",
+        ],
+    )
+    write_csv(
+        output_dir / "in_house_live_validation_four_vote_split_clusters.csv",
+        four_vote_split_rows,
         [
             "article_title",
             "paragraph_index",
