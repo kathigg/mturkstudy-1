@@ -3569,21 +3569,6 @@
     },
     "timestamp": "2025-11-20T15:48:49.805Z"
   },
-  "-Oh3DJwUsxkT8pKvVty8": {
-    "articleTitles": [
-      {
-        "id": 6,
-        "title": "get these trending washington restaurants on your radar today"
-      }
-    ],
-    "code": "MTURK-YMPLVE",
-    "surveyResponses": {
-      "6": {
-        "bias": 2,
-        "confidence": 2,
-        "openFeedback": "Testing (Kathleen)"
-      }
-    },
     "textAnnotations": {
       "6": [
         {
@@ -3637,78 +3622,6 @@
         }
       ]
     },
-    "timestamp": "2025-12-22T04:02:45.143Z"
-  },
-  "-Oh3EvJBPxv9xy9l6Mqw": {
-    "articleTitles": [
-      {
-        "id": 4,
-        "title": "Four top residencies now offered to local artists, thanks to Oolite"
-      }
-    ],
-    "code": "MTURK-CZTPI9",
-    "surveyResponses": {
-      "4": {
-        "bias": 1,
-        "confidence": 1,
-        "openFeedback": "TESTINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
-      }
-    },
-    "textAnnotations": {
-      "4": [
-        {
-          "category": "No_Polarizing_Language",
-          "paragraphIndex": 0,
-          "subcategory": "no polarizing language",
-          "text": "No polarizing language selected",
-          "title": "Four top residencies now offered to local artists, thanks to Oolite"
-        },
-        {
-          "category": "No_Polarizing_Language",
-          "paragraphIndex": 1,
-          "subcategory": "no polarizing language",
-          "text": "No polarizing language selected",
-          "title": "Four top residencies now offered to local artists, thanks to Oolite"
-        }
-      ]
-    },
-    "timestamp": "2025-12-22T04:09:44.470Z"
-  },
-  "-Oh5tYUotHh0HNNm57EU": {
-    "articleTitles": [
-      {
-        "id": 4,
-        "title": "Four top residencies now offered to local artists, thanks to Oolite"
-      }
-    ],
-    "code": "MTURK-GMKGSO",
-    "surveyResponses": {
-      "4": {
-        "bias": 1,
-        "confidence": 1,
-        "openFeedback": "TESTINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
-      }
-    },
-    "textAnnotations": {
-      "4": [
-        {
-          "category": "No_Polarizing_Language",
-          "paragraphIndex": 0,
-          "subcategory": "no polarizing language",
-          "text": "no polarizing language selected",
-          "title": "Four top residencies now offered to local artists, thanks to Oolite"
-        },
-        {
-          "category": "No_Polarizing_Language",
-          "paragraphIndex": 1,
-          "subcategory": "no polarizing language",
-          "text": "no polarizing language selected",
-          "title": "Four top residencies now offered to local artists, thanks to Oolite"
-        }
-      ]
-    },
-    "timestamp": "2025-12-22T16:30:51.401Z"
-  },
   "-Oh5y_RK6p9Or2Vz1tL-": {
     "articleTitles": [
       {

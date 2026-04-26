@@ -3,6 +3,9 @@
 **Principal Developer:** Kathleen Higgins (Summer 2025)
 **Principal Investigator:** Prerana Khatiwada (PhD) and Professor Matthew Mauriello
 
+## Notes
+`/Users/kathleenhiggins/mturkstudy-3/src/mturk_results/2-20/cisc475database-default-rtdb-submissions-export.json` is the location of the 2-20 in-house annotations. This means Ashrey, Aarush, and Prerana's annotations on the 27 highest-polarization articles. 
+
 ## Repository Design
 ```
 mturkstudy-3/
