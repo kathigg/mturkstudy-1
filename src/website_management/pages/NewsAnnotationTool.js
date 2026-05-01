@@ -821,7 +821,7 @@ const handleNextArticle = async () => {
             code,
           };
     
-          const submissionsRef = ref(database, "submissions");
+          const submissionsRef = ref(database, "Bagozzi-Annotations");
           push(submissionsRef, data)
             .then(() => {
               console.log("Submission saved to Firebase");
