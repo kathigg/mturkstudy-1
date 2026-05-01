@@ -9,76 +9,7 @@ import Papa from "papaparse";
 
 import { database, ref, push } from "../../firebaseConfig";
 import { get, runTransaction } from "firebase/database";
-import instructionVid from "../../Videos/Instruction-Video.mov";
 
-
-function IntroScreen({ onDone }) {
-  //const [videoReady,setVideoReady] = useState(false); 
-  const [videoDuration, setVideoDuration] = useState(0);
-  const [watchedEnough, setWatchedEnough] = useState(false);
-  const videoRef = useRef(null);
-  const watchedSecondsRef = useRef(new Set());
-  // const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
-  // const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false);
-
-  const handleTimeUpdate = () => {
-    const v = videoRef.current;
-    if (!v) return;
-    const t = Math.floor(v.currentTime);
-    watchedSecondsRef.current.add(t);
-    if (videoDuration > 0) {
-      const ratio = watchedSecondsRef.current.size / Math.max(1, Math.floor(videoDuration));
-      if (ratio >= 0.98) setWatchedEnough(true);
-    }
-  };
-
-  const handleLoadedMeta = () => {
-    const v = videoRef.current;
-    if (!v) return;
-    setVideoDuration(v.duration || 0);
-    //setVideoReady(true);
-  };
-
-  return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-100">
-      <div className="w-full max-w-3xl bg-white rounded-xl shadow p-6">
-        <h1 className="text-2xl font-bold text-center mb-4">
-          Video Tool Guide (Please watch before continuing)
-        </h1>
-        
-        <video
-          ref={videoRef}
-          src={instructionVid}
-          controls
-          playsInline
-          className="block mx-auto w-full rounded-lg"
-          onLoadedMetadata={handleLoadedMeta}
-          onTimeUpdate={handleTimeUpdate}
-          onEnded={() => setWatchedEnough(true)}
-        />
-
-        
-        <div className="mt-6 flex justify-center">
-          <button
-            className={
-              watchedEnough
-                ? "px-5 py-2 rounded text-white bg-blue-600 hover:bg-blue-700"
-                : "px-5 py-2 rounded text-white bg-gray-400 cursor-not-allowed"
-            }
-            disabled={!watchedEnough}
-            onClick={onDone}
-          >
-            Next: Start the Annotation Tool
-          </button>
-        </div>
-
-        <p className="mt-3 text-xs text-center text-gray-500">
-          You must watch the full video before continuing.
-        </p>
-      </div>
-    </div>
-  );
-}
 
 function TaskClosedScreen() {
   return (
@@ -223,6 +154,8 @@ function ToolMain() {
     const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
     const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false); // commented out the variable pendingNoPolarizingConfirm
     const [taskClosed, setTaskClosed] = useState(false);
+    const [selectedArticleIndexInput, setSelectedArticleIndexInput] = useState("");
+    const [articleSelectionError, setArticleSelectionError] = useState("");
     const [completionCode, setCompletionCode] = useState("");
     const [allArticles, setAllArticles] = useState([]);
     const [articles, setArticles] = useState([]);
@@ -625,9 +558,14 @@ const downloadAnnotations = (annotations, textAnnotations, surveyResponses) => {
 
 const MAX_PER_ARTICLE = 3;
 
-async function assignArticleIndex() {
+async function assignArticleIndex(requestedIndex) {
   const usageRef = ref(database, "articleUsage");
-  let chosenIndex = null;
+  let chosenIndex = Number(requestedIndex);
+
+  if (!Number.isInteger(chosenIndex) || chosenIndex < 0 || chosenIndex >= 27) {
+    console.warn("Invalid article index selected.");
+    return null;
+  }
 
   const result = await runTransaction(usageRef, (curr) => {
     const usage = curr ?? {};
@@ -636,26 +574,20 @@ async function assignArticleIndex() {
       if (usage[i] === undefined) usage[i] = 0;
     }
 
-    const candidates = Object.keys(usage)
-      .map(Number)
-      .filter((i) => usage[i] < MAX_PER_ARTICLE);
-
-    if (candidates.length === 0) {
-      chosenIndex = null;
+    if ((usage[chosenIndex] ?? 0) >= MAX_PER_ARTICLE) {
       return;
     }
 
-    chosenIndex = candidates[Math.floor(Math.random() * candidates.length)];
     usage[chosenIndex] = (usage[chosenIndex] ?? 0) + 1;
     return usage;
   });
 
-  if (!result.committed || chosenIndex === null) {
-    console.warn("No available articles left.");
+  if (!result.committed) {
+    console.warn(`Article index ${chosenIndex} is no longer available.`);
     return null;
   }
 
-  console.log(`Assigned index and logged usage immediately: ${chosenIndex}`);
+  console.log(`Assigned selected index and logged usage immediately: ${chosenIndex}`);
   return chosenIndex;
 }
 
@@ -673,19 +605,28 @@ async function assignArticleIndex() {
             content: item["News body"],
           }));
           setAllArticles(parsedArticles);
-
-          const idx = await assignArticleIndex();
-          if (idx !== null) {
-            setArticles([parsedArticles[idx]]);
-          } else {
-            // All articles have hit the maximum allowed annotations.
-            // Show a clean "Task Closed" screen instead of the empty tool UI.
-            setTaskClosed(true);
-          }
         },
       });
     });
 }, []);
+
+const handleSelectedArticleStart = async () => {
+  const requestedIndex = Number(selectedArticleIndexInput);
+
+  if (!Number.isInteger(requestedIndex) || requestedIndex < 0 || requestedIndex >= allArticles.length) {
+    setArticleSelectionError(`Please enter a valid article index from 0 to ${Math.max(0, allArticles.length - 1)}.`);
+    return;
+  }
+
+  const idx = await assignArticleIndex(requestedIndex);
+  if (idx !== null && allArticles[idx]) {
+    setArticles([allArticles[idx]]);
+    setCurrentArticleIndex(0);
+    setArticleSelectionError("");
+  } else {
+    setArticleSelectionError("That article has already reached the maximum number of allowed annotations. Please choose another index.");
+  }
+};
   
 
 const handleNextArticle = async () => {
@@ -764,13 +705,7 @@ const handleNextArticle = async () => {
       setShowThankYou(true);
       return;
     } else {
-      const nextIdx = await assignArticleIndex();
-      if (nextIdx !== null && allArticles[nextIdx]) {
-        setArticles((prev) => [...prev, allArticles[nextIdx]]);
-        setCurrentArticleIndex((prev) => prev + 1);
-      } else {
-        setShowThankYou(true);
-      }
+      setShowThankYou(true);
     }
   } else {
     // flip to survey view
@@ -935,6 +870,39 @@ const handleNextArticle = async () => {
     </div>
   );
 }
+      if (articles.length === 0) {
+        return (
+          <div className="min-h-screen w-full flex items-center justify-center bg-gray-100">
+            <div className="w-full max-w-md bg-white rounded-xl shadow p-6 text-center">
+              <h1 className="text-2xl font-bold mb-4">Select Article Index</h1>
+              <p className="text-sm text-gray-700 mb-4">
+                Enter an article index from 0 to {Math.max(0, allArticles.length - 1)}.
+              </p>
+              <input
+                type="number"
+                min="0"
+                max={Math.max(0, allArticles.length - 1)}
+                value={selectedArticleIndexInput}
+                onChange={(e) => setSelectedArticleIndexInput(e.target.value)}
+                className="w-full p-2 border border-gray-300 rounded mb-3 text-center"
+                placeholder="Example: 0"
+                disabled={allArticles.length === 0}
+              />
+              {articleSelectionError && (
+                <p className="text-sm text-red-600 mb-3">{articleSelectionError}</p>
+              )}
+              <Button
+                onClick={handleSelectedArticleStart}
+                className="bg-blue-600 text-white w-full"
+                disabled={allArticles.length === 0 || selectedArticleIndexInput === ""}
+              >
+                Start Annotation
+              </Button>
+            </div>
+          </div>
+        );
+      }
+
       return (
         <div className="flex w-full justify-center items-start min-h-screen bg-gray-100 relative">
           {/* --- No Polarizing Language Confirmation Overlay --- */}
@@ -1230,18 +1198,6 @@ const handleNextArticle = async () => {
   </DropdownItem>
 </div>
                 
-                <h3 className="text-lg font-bold mb-2">Video Tool Guide</h3>
-                { <video
-                        src={instructionVid}
-                        controls
-                        autoPlay
-                        muted
-                        playsInline
-                        width="600"
-                        height="300"
-                        className="block mx-auto"
-                      />
-             }
                 <Button onClick={() => 
                   setShowRightInstructions(false)} className="bg-gray-600 text-white w-full">Close Guide</Button>
             </div>
@@ -1507,21 +1463,6 @@ const handleNextArticle = async () => {
   }
 
 
-// Wrapper component that gates the tool behind the intro video
 export default function NewsAnnotationTool() {
-  const [introDone, setIntroDone] = useState(false);
-
-  // // Uncomment to only require video once per session:
-  // useEffect(() => {
-  //   const seen = sessionStorage.getItem("introWatched") === "1";
-  //   if (seen) setIntroDone(true);
-  // }, []);
-  // useEffect(() => {
-  //   if (introDone) sessionStorage.setItem("introWatched", "1");
-  // }, [introDone]);
-
-  if (!introDone) {
-    return <IntroScreen onDone={() => setIntroDone(true)} />;
-  }
   return <ToolMain />;
 }
