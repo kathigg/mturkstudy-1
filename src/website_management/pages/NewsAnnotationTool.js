@@ -562,7 +562,7 @@ async function assignArticleIndex(requestedIndex) {
   const usageRef = ref(database, "articleUsage");
   let chosenIndex = Number(requestedIndex);
 
-  if (!Number.isInteger(chosenIndex) || chosenIndex < 0 || chosenIndex >= 10) {
+  if (!Number.isInteger(chosenIndex) || chosenIndex < 0 || chosenIndex >= 27) {
     console.warn("Invalid article index selected.");
     return null;
   }
@@ -570,7 +570,7 @@ async function assignArticleIndex(requestedIndex) {
   const result = await runTransaction(usageRef, (curr) => {
     const usage = curr ?? {};
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 27; i++) {
       if (usage[i] === undefined) usage[i] = 0;
     }
 
@@ -592,7 +592,7 @@ async function assignArticleIndex(requestedIndex) {
 }
 
   useEffect(() => {
-  fetch("/article_dataset_versions/DrBagozziArticles.csv")
+  fetch("/article_dataset_versions/27Articles.csv")
     .then((response) => response.text())
     .then(async (csvText) => {
       Papa.parse(csvText, {
