@@ -654,7 +654,7 @@ const handleNextArticle = async () => {
 
   if (showSurvey) {
     // validate survey responses
-    if (confidence === 0 || bias === 0 || openFeedback.trim() === "") {
+    if (confidence === 0 || bias === 0) {
       alert("Please answer all survey questions before continuing.");
       return;
     }
@@ -1364,7 +1364,7 @@ const handleNextArticle = async () => {
   3. Why did you tag this way? What specific phrases, tone choices, or examples made it stand out to you? You might reference particular sentences, framing choices, or emotional wording that influenced your decision.
 </label>
 <p className="text-sm text-gray-600 mb-1">
-  Word count: {countCharacters(openFeedback)} (minimum 100 characters)
+  Character count: {countCharacters(openFeedback)}
 </p>
 <textarea
   value={openFeedback}
@@ -1379,8 +1379,7 @@ const handleNextArticle = async () => {
   className="mt-4 bg-green-600 text-white"
   disabled={
     confidence === 0 ||
-    bias === 0 ||
-    countCharacters(openFeedback) < 100
+    bias === 0
   }
 >
   {currentArticleIndex < articles.length - 1
