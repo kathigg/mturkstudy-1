@@ -1427,7 +1427,11 @@ const handleNextArticle = async () => {
     </li>
     <div className="h-3" />
     <li>
-      <strong>Only mark polarizing language if you are sure there is polarizing language. Otherwise choose "No polarizing language." </strong>
+      <strong>Only mark polarizing language if you are sure there is polarizing language. Otherwise choose "No polarizing language." do NOT mark both in the same paragraph </strong>
+    </li>
+    <div className="h-3" />
+    <li>
+      <strong>Treat text within quotations the same way as the rest of the text </strong>
     </li>
     <div className="h-3" />
   </ul>
