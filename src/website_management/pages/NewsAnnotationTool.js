@@ -1426,6 +1426,10 @@ const handleNextArticle = async () => {
       After making at least 1 annotation per paragraph select <strong>"Submit"</strong> to move on to the post-annotation survey.
     </li>
     <div className="h-3" />
+    <li>
+      <strong>Only mark polarizing language if you are sure there is polarizing language. Otherwise choose "No polarizing language." </strong>
+    </li>
+    <div className="h-3" />
   </ul>
   <p></p>
 <div className="h-4" />
