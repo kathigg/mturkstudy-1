@@ -1,0 +1,52 @@
+{
+  "input_submissions": "src/mturk_results/2-20/cisc475database-default-rtdb-submissions-export.json",
+  "input_workbook": "src/dataset_comparison_scripts/statistical_analysis/prerana_analysis/final_adjudicated_set - Final_adjudicated set.xlsx",
+  "input_sheet": "Final_adjudicated set",
+  "paragraph_rule": "Within an adjudicated paragraph, retained polarizing rows take priority over retained NPL rows because paragraph-level binary labeling is 'polarizing if any retained polarizing span survives'. The mapping is 3-0 polarizing -> 3/3 polarizing, else 2-1 polarizing -> 2/3 polarizing, else 3-0 NPL -> 0/3 polarizing, else 2-1 NPL -> 1/3 polarizing.",
+  "identity_note": "Pairwise agreement, Fleiss' kappa, alpha, and exact consensus depend only on paragraph vote counts. The reported Cohen value is synthetic because paragraph vote-count changes do not uniquely identify which annotator flipped inside the adjudicated subset; this script preserves original names with minimal changes guided by proposer metadata.",
+  "coverage": {
+    "total_original_paragraph_units": 97,
+    "adjudicated_rows": 106,
+    "adjudicated_paragraph_units": 59,
+    "changed_paragraph_units": 36,
+    "retained_row_signature_counts": {
+      "{\"has_npl_2_1\": false, \"has_npl_3_0\": false, \"has_polarizing_2_1\": false, \"has_polarizing_3_0\": true}": 4,
+      "{\"has_npl_2_1\": false, \"has_npl_3_0\": false, \"has_polarizing_2_1\": true, \"has_polarizing_3_0\": false}": 24,
+      "{\"has_npl_2_1\": false, \"has_npl_3_0\": false, \"has_polarizing_2_1\": true, \"has_polarizing_3_0\": true}": 4,
+      "{\"has_npl_2_1\": false, \"has_npl_3_0\": true, \"has_polarizing_2_1\": false, \"has_polarizing_3_0\": false}": 3,
+      "{\"has_npl_2_1\": false, \"has_npl_3_0\": true, \"has_polarizing_2_1\": true, \"has_polarizing_3_0\": false}": 14,
+      "{\"has_npl_2_1\": false, \"has_npl_3_0\": true, \"has_polarizing_2_1\": true, \"has_polarizing_3_0\": true}": 1,
+      "{\"has_npl_2_1\": true, \"has_npl_3_0\": false, \"has_polarizing_2_1\": false, \"has_polarizing_3_0\": false}": 5,
+      "{\"has_npl_2_1\": true, \"has_npl_3_0\": false, \"has_polarizing_2_1\": false, \"has_polarizing_3_0\": true}": 2,
+      "{\"has_npl_2_1\": true, \"has_npl_3_0\": false, \"has_polarizing_2_1\": true, \"has_polarizing_3_0\": false}": 2
+    }
+  },
+  "original_binary_paragraph_irr": {
+    "paragraph_units": 97,
+    "polarizing_count_distribution": {
+      "0": 7,
+      "1": 32,
+      "2": 41,
+      "3": 17
+    },
+    "pairwise_percent_agreement": 0.498,
+    "exact_consensus_rate": 0.247,
+    "fleiss_kappa": -0.022,
+    "krippendorff_alpha_nominal": -0.02,
+    "synthetic_weighted_mean_pairwise_cohen": 0.133
+  },
+  "reconstructed_binary_paragraph_irr": {
+    "paragraph_units": 97,
+    "polarizing_count_distribution": {
+      "0": 10,
+      "1": 15,
+      "2": 56,
+      "3": 16
+    },
+    "pairwise_percent_agreement": 0.512,
+    "exact_consensus_rate": 0.268,
+    "fleiss_kappa": -0.018,
+    "krippendorff_alpha_nominal": -0.016,
+    "synthetic_weighted_mean_pairwise_cohen": 0.065
+  }
+}

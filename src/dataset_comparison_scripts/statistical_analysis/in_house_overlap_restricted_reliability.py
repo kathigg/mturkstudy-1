@@ -199,18 +199,8 @@ def overlap_graph_components(base, worker_map):
 
 def component_label(base, annotations, label_mode):
     if label_mode == "category":
-        labels = [ann["category"] for ann in annotations if ann.get("category")]
-        if not labels:
-            return None
-        counts = Counter(labels)
-        best_count = max(counts.values())
-        for label in labels:
-            if counts[label] == best_count:
-                return label
-    labels = sorted({ann["subcategory"] for ann in annotations if ann.get("subcategory")})
-    if not labels:
-        return None
-    return labels[0] if len(labels) == 1 else base.MULTI_SUBCATEGORY_LABEL
+        return base.derive_paragraph_category_label(annotations)
+    return base.derive_paragraph_subcategory_label(annotations)
 
 
 def build_shared_span_units(base, paragraph_units, *, label_mode):

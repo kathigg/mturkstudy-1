@@ -378,7 +378,7 @@ def write_markdown_report(path: Path, payload):
     lines.append("")
     lines.append("- Fixed unit of analysis: paragraph within article.")
     lines.append("- All paragraph units in the raw `2-20` file have exactly 3 raters, so Fleiss' kappa is valid on the full paragraph-level dataset.")
-    lines.append("- Category and subcategory analyses collapse multi-label paragraphs into explicit `multiple ...` classes, and one-vs-rest results are included to check whether that collapse is hiding label-specific behavior.")
+    lines.append("- Category and subcategory analyses use majority label per paragraph; ties are resolved by first label encountered in that paragraph. One-vs-rest results are included to check label-specific behavior.")
     lines.append("- Span overlap is reported separately from paragraph-level chance-corrected reliability because span selection and label assignment are different reliability problems.")
     lines.append("")
     lines.append("## Dataset Summary")

@@ -223,9 +223,14 @@ def derive_paragraph_binary_label(annotations: list[dict]) -> str | None:
 
 
 def derive_paragraph_subcategory_label(annotations: list[dict]) -> str | None:
-    polarizing = sorted({canonical_subcategory(ann) for ann in annotations if not is_no_polarizing_annotation(ann)})
+    polarizing = [canonical_subcategory(ann) for ann in annotations if not is_no_polarizing_annotation(ann)]
     if polarizing:
-        return polarizing[0] if len(polarizing) == 1 else MULTI_SUBCATEGORY_LABEL
+        counts = Counter(polarizing)
+        best_count = max(counts.values())
+        # Mirror category behavior: majority subcategory; on ties, keep first seen.
+        for label in polarizing:
+            if counts[label] == best_count:
+                return label
     if any(is_no_polarizing_annotation(ann) for ann in annotations):
         return NPL_LABEL
     return None
