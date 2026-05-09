@@ -9,76 +9,7 @@ import Papa from "papaparse";
 
 import { database, ref, push } from "../../firebaseConfig";
 import { get, runTransaction } from "firebase/database";
-import instructionVid from "../../Videos/Instruction-Video.mov";
 
-
-function IntroScreen({ onDone }) {
-  //const [videoReady,setVideoReady] = useState(false); 
-  const [videoDuration, setVideoDuration] = useState(0);
-  const [watchedEnough, setWatchedEnough] = useState(false);
-  const videoRef = useRef(null);
-  const watchedSecondsRef = useRef(new Set());
-  // const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
-  // const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false);
-
-  const handleTimeUpdate = () => {
-    const v = videoRef.current;
-    if (!v) return;
-    const t = Math.floor(v.currentTime);
-    watchedSecondsRef.current.add(t);
-    if (videoDuration > 0) {
-      const ratio = watchedSecondsRef.current.size / Math.max(1, Math.floor(videoDuration));
-      if (ratio >= 0.98) setWatchedEnough(true);
-    }
-  };
-
-  const handleLoadedMeta = () => {
-    const v = videoRef.current;
-    if (!v) return;
-    setVideoDuration(v.duration || 0);
-    //setVideoReady(true);
-  };
-
-  return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-100">
-      <div className="w-full max-w-3xl bg-white rounded-xl shadow p-6">
-        <h1 className="text-2xl font-bold text-center mb-4">
-          Video Tool Guide (Please watch before continuing)
-        </h1>
-        
-        <video
-          ref={videoRef}
-          src={instructionVid}
-          controls
-          playsInline
-          className="block mx-auto w-full rounded-lg"
-          onLoadedMetadata={handleLoadedMeta}
-          onTimeUpdate={handleTimeUpdate}
-          onEnded={() => setWatchedEnough(true)}
-        />
-
-        
-        <div className="mt-6 flex justify-center">
-          <button
-            className={
-              watchedEnough
-                ? "px-5 py-2 rounded text-white bg-blue-600 hover:bg-blue-700"
-                : "px-5 py-2 rounded text-white bg-gray-400 cursor-not-allowed"
-            }
-            disabled={!watchedEnough}
-            onClick={onDone}
-          >
-            Next: Start the Annotation Tool
-          </button>
-        </div>
-
-        <p className="mt-3 text-xs text-center text-gray-500">
-          You must watch the full video before continuing.
-        </p>
-      </div>
-    </div>
-  );
-}
 
 function TaskClosedScreen() {
   return (
@@ -115,25 +46,27 @@ function paragraphAdd(text) {
   let wordCount = 0;
   let insideQuote = false;
 
+  const quoteMatches = text.match(/["“”]/g) || [];
+  const trackQuotes = (quoteMatches.length % 2 === 0);
+
   for (let i = 0; i < words.length; i++) {
     const word = words[i];
     paragraph += word + " ";
     wordCount++;
 
     // Detect quote entry/exit
-    if (word.includes('"')) {
-      const quoteCount = (word.match(/"/g) || []).length;
-      // Toggle quote status for each odd quote encountered
-      if (quoteCount % 2 !== 0) {
-        insideQuote = !insideQuote;
-      }
+    if (trackQuotes && /["“”]/.test(word)) {
+      const q = (word.match(/["“”]/g) || []).length;
+      if (q % 2 !== 0) insideQuote = !insideQuote;
     }
+
+    const isSentenceEnd = /[.!?][”"')\]]*$/.test(word);
 
     // Only insert break if:
     // - 150+ words
     // - Ends with a period
     // - Not inside a quote
-    if (wordCount >= 150 && word.endsWith(".") && !insideQuote) {
+    if (wordCount >= 150 && isSentenceEnd && (!trackQuotes || !insideQuote)) {
       paragraphs.push(paragraph.trim());
       paragraph = "";
       wordCount = 0;
@@ -221,6 +154,8 @@ function ToolMain() {
     const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
     const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false); // commented out the variable pendingNoPolarizingConfirm
     const [taskClosed, setTaskClosed] = useState(false);
+    const [selectedArticleIndexInput, setSelectedArticleIndexInput] = useState("");
+    const [articleSelectionError, setArticleSelectionError] = useState("");
     const [completionCode, setCompletionCode] = useState("");
     const [allArticles, setAllArticles] = useState([]);
     const [articles, setArticles] = useState([]);
@@ -232,7 +167,6 @@ function ToolMain() {
     const [selectedSubcategory, setSelectedSubcategory] = useState("");
     const [showRightInstructions, setShowRightInstructions] = useState(true);
     const [wordCount, setWordCount] = useState(0);
-    const [selectedIdx, setSelectedIdx] = useState(null);
     const [currentParagraphIndex, setCurrentParagraphIndex] = useState(0);
     const [selectionParagraphIndex, setSelectionParagraphIndex] = useState(null);
 
@@ -622,72 +556,43 @@ const downloadAnnotations = (annotations, textAnnotations, surveyResponses) => {
       }, []);
     */
 
-const MAX_PER_ARTICLE = 3;
-async function pickAndClaimIndex() {
+const MAX_PER_ARTICLE = 10;
+
+async function assignArticleIndex(requestedIndex) {
   const usageRef = ref(database, "articleUsage");
-  const claimedRef = ref(database, "claimedArticles");
+  let chosenIndex = Number(requestedIndex);
 
-  const [usageSnap, claimedSnap] = await Promise.all([get(usageRef), get(claimedRef)]);
-  let usage = usageSnap.exists() ? usageSnap.val() : {};
-  let claimed = claimedSnap.exists() ? claimedSnap.val() : {};
-
-  // Initialize first 12 indices to 0 if missing
-  for (let i = 0; i < 12; i++) {
-    if (usage[i] === undefined) usage[i] = 0;
-    if (claimed[i] === undefined) claimed[i] = 0;
-  }
-
-  // Candidates must be under both caps
-  const candidates = Object.keys(usage)
-    .map(Number)
-    .filter((i) => usage[i] < MAX_PER_ARTICLE && (claimed[i] ?? 0) < MAX_PER_ARTICLE);
-  if (candidates.length === 0) {
-    console.warn("No available articles left.");
+  if (!Number.isInteger(chosenIndex) || chosenIndex < 0 || chosenIndex >= 27) {
+    console.warn("Invalid article index selected.");
     return null;
   }
 
-  const shuffled = [...candidates].sort(() => Math.random() - 0.5);
+  const result = await runTransaction(usageRef, (curr) => {
+    const usage = curr ?? {};
 
-  // Try in random order; atomically claim the first that succeeds
-  for (const i of shuffled) {
-    const ok = await tryClaimIndex(i);
-    if (ok) {
-      console.log(`Chosen & claimed index: ${i}`);
-      return i;
+    for (let i = 0; i < 27; i++) {
+      if (usage[i] === undefined) usage[i] = 0;
     }
+
+    if ((usage[chosenIndex] ?? 0) >= MAX_PER_ARTICLE) {
+      return;
+    }
+
+    usage[chosenIndex] = (usage[chosenIndex] ?? 0) + 1;
+    return usage;
+  });
+
+  if (!result.committed) {
+    console.warn(`Article index ${chosenIndex} is no longer available.`);
+    return null;
   }
-  console.warn("All candidates were claimed concurrently. Try again.");
-  return null;
-}
 
-async function tryClaimIndex(i) {
-  const idxRef = ref(database, `claimedArticles/${i}`);
-  const result = await runTransaction(idxRef, (curr) => {
-    const v = curr ?? 0;
-    if (v >= MAX_PER_ARTICLE) return; // abort transaction
-    return v + 1;                      // commit v+1
-  });
-  return result.committed; // true if we successfully claimed
-}
-
-// Decrement claim counter (never below 0)
-async function unclaimArticle(i) {
-  const idxRef = ref(database, `claimedArticles/${i}`);
-  await runTransaction(idxRef, (curr) => {
-    const v = curr ?? 0;
-    return v > 0 ? v - 1 : 0;
-  });
-}
-
-// Use transactions for logging usage too (safer under contention)
-async function logArticleUsage(index) {
-  const usageIdxRef = ref(database, `articleUsage/${index}`);
-  await runTransaction(usageIdxRef, (curr) => (curr ?? 0) + 1);
-  console.log(`Logged usage for index ${index}.`);
+  console.log(`Assigned selected index and logged usage immediately: ${chosenIndex}`);
+  return chosenIndex;
 }
 
   useEffect(() => {
-  fetch("/article_dataset_versions/test3_encoding_fixed_300_700_words.csv")
+  fetch("/article_dataset_versions/27Articles.csv")
     .then((response) => response.text())
     .then(async (csvText) => {
       Papa.parse(csvText, {
@@ -700,20 +605,28 @@ async function logArticleUsage(index) {
             content: item["News body"],
           }));
           setAllArticles(parsedArticles);
-
-          const idx = await pickAndClaimIndex();
-          if (idx !== null) {
-            setSelectedIdx(idx);             // remember chosen index
-            setArticles([parsedArticles[idx]]);
-          } else {
-            // All articles have hit the maximum allowed annotations.
-            // Show a clean "Task Closed" screen instead of the empty tool UI.
-            setTaskClosed(true);
-          }
         },
       });
     });
 }, []);
+
+const handleSelectedArticleStart = async () => {
+  const requestedIndex = Number(selectedArticleIndexInput);
+
+  if (!Number.isInteger(requestedIndex) || requestedIndex < 0 || requestedIndex >= allArticles.length) {
+    setArticleSelectionError(`Please enter a valid article index from 0 to ${Math.max(0, allArticles.length - 1)}.`);
+    return;
+  }
+
+  const idx = await assignArticleIndex(requestedIndex);
+  if (idx !== null && allArticles[idx]) {
+    setArticles([allArticles[idx]]);
+    setCurrentArticleIndex(0);
+    setArticleSelectionError("");
+  } else {
+    setArticleSelectionError("That article has already reached the maximum number of allowed annotations. Please choose another index.");
+  }
+};
   
 
 const handleNextArticle = async () => {
@@ -741,7 +654,7 @@ const handleNextArticle = async () => {
 
   if (showSurvey) {
     // validate survey responses
-    if (confidence === 0 || bias === 0 || openFeedback.trim() === "") {
+    if (confidence === 0 || bias === 0) {
       alert("Please answer all survey questions before continuing.");
       return;
     }
@@ -787,30 +700,12 @@ const handleNextArticle = async () => {
     setBias(0);
     setOpenFeedback("");
 
-    // If user already did 1 article, log usage now and show thank-you
     if (articles.length >= 1) {
-      try {
-        if (selectedIdx !== null) {
-          await logArticleUsage(selectedIdx); // <-- increment only on Finish
-          await unclaimArticle(selectedIdx);
-        }
-      } catch (e) {
-        console.error("Failed to log article usage:", e);
-      }
       console.log("User has completed 1 articles this session.");
       setShowThankYou(true);
       return;
     } else {
-      // Otherwise fetch another article; remember index but log on that article's Finish
-      const nextIdx = await pickAndClaimIndex();
-      if (nextIdx !== null && allArticles[nextIdx]) {
-        setSelectedIdx(nextIdx);
-        setArticles((prev) => [...prev, allArticles[nextIdx]]);
-        setCurrentArticleIndex((prev) => prev + 1);
-      } else {
-        // If Firebase runs out before 1, then show thank-you
-        setShowThankYou(true);
-      }
+      setShowThankYou(true);
     }
   } else {
     // flip to survey view
@@ -926,7 +821,7 @@ const handleNextArticle = async () => {
             code,
           };
     
-          const submissionsRef = ref(database, "submissions");
+          const submissionsRef = ref(database, "Bagozzi-Annotations");
           push(submissionsRef, data)
             .then(() => {
               console.log("Submission saved to Firebase");
@@ -975,6 +870,39 @@ const handleNextArticle = async () => {
     </div>
   );
 }
+      if (articles.length === 0) {
+        return (
+          <div className="min-h-screen w-full flex items-center justify-center bg-gray-100">
+            <div className="w-full max-w-md bg-white rounded-xl shadow p-6 text-center">
+              <h1 className="text-2xl font-bold mb-4">Select Article Index</h1>
+              <p className="text-sm text-gray-700 mb-4">
+                Enter an article index from 0 to {Math.max(0, allArticles.length - 1)}.
+              </p>
+              <input
+                type="number"
+                min="0"
+                max={Math.max(0, allArticles.length - 1)}
+                value={selectedArticleIndexInput}
+                onChange={(e) => setSelectedArticleIndexInput(e.target.value)}
+                className="w-full p-2 border border-gray-300 rounded mb-3 text-center"
+                placeholder="Example: 0"
+                disabled={allArticles.length === 0}
+              />
+              {articleSelectionError && (
+                <p className="text-sm text-red-600 mb-3">{articleSelectionError}</p>
+              )}
+              <Button
+                onClick={handleSelectedArticleStart}
+                className="bg-blue-600 text-white w-full"
+                disabled={allArticles.length === 0 || selectedArticleIndexInput === ""}
+              >
+                Start Annotation
+              </Button>
+            </div>
+          </div>
+        );
+      }
+
       return (
         <div className="flex w-full justify-center items-start min-h-screen bg-gray-100 relative">
           {/* --- No Polarizing Language Confirmation Overlay --- */}
@@ -1270,18 +1198,6 @@ const handleNextArticle = async () => {
   </DropdownItem>
 </div>
                 
-                <h3 className="text-lg font-bold mb-2">Video Tool Guide</h3>
-                { <video
-                        src={instructionVid}
-                        controls
-                        autoPlay
-                        muted
-                        playsInline
-                        width="600"
-                        height="300"
-                        className="block mx-auto"
-                      />
-             }
                 <Button onClick={() => 
                   setShowRightInstructions(false)} className="bg-gray-600 text-white w-full">Close Guide</Button>
             </div>
@@ -1448,7 +1364,7 @@ const handleNextArticle = async () => {
   3. Why did you tag this way? What specific phrases, tone choices, or examples made it stand out to you? You might reference particular sentences, framing choices, or emotional wording that influenced your decision.
 </label>
 <p className="text-sm text-gray-600 mb-1">
-  Word count: {countCharacters(openFeedback)} (minimum 100 characters)
+  Character count: {countCharacters(openFeedback)}
 </p>
 <textarea
   value={openFeedback}
@@ -1463,8 +1379,7 @@ const handleNextArticle = async () => {
   className="mt-4 bg-green-600 text-white"
   disabled={
     confidence === 0 ||
-    bias === 0 ||
-    countCharacters(openFeedback) < 100
+    bias === 0
   }
 >
   {currentArticleIndex < articles.length - 1
@@ -1511,6 +1426,14 @@ const handleNextArticle = async () => {
       After making at least 1 annotation per paragraph select <strong>"Submit"</strong> to move on to the post-annotation survey.
     </li>
     <div className="h-3" />
+    <li>
+      <strong>Only mark polarizing language if you are sure there is polarizing language. Otherwise choose "No polarizing language." do NOT mark both in the same paragraph </strong>
+    </li>
+    <div className="h-3" />
+    <li>
+      <strong>Treat text within quotations the same way as the rest of the text </strong>
+    </li>
+    <div className="h-3" />
   </ul>
   <p></p>
 <div className="h-4" />
@@ -1547,21 +1470,6 @@ const handleNextArticle = async () => {
   }
 
 
-// Wrapper component that gates the tool behind the intro video
 export default function NewsAnnotationTool() {
-  const [introDone, setIntroDone] = useState(false);
-
-  // // Uncomment to only require video once per session:
-  // useEffect(() => {
-  //   const seen = sessionStorage.getItem("introWatched") === "1";
-  //   if (seen) setIntroDone(true);
-  // }, []);
-  // useEffect(() => {
-  //   if (introDone) sessionStorage.setItem("introWatched", "1");
-  // }, [introDone]);
-
-  if (!introDone) {
-    return <IntroScreen onDone={() => setIntroDone(true)} />;
-  }
   return <ToolMain />;
 }
