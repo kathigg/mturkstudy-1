@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1460" height="760" viewBox="0 0 1460 760">
+<style>
+text { font-family: Arial, sans-serif; fill: #1f2937; }
+.title { font-size: 19px; font-weight: 700; }
+.subtitle { font-size: 11px; fill: #4b5563; }
+.small { font-size: 10px; fill: #4b5563; }
+</style>
+<rect x="0" y="0" width="1460" height="760" fill="#ffffff" />
+<text x="40" y="36" class="title">Pre-Adjudication IRR by Subcategory (Agree/Disagree)</text>
+<text x="40" y="56" class="subtitle">Binary accept/deny reliability by subcategory. Rows with at least 2 total votes.</text>
+<rect x="40" y="72" width="16" height="10" fill="#059669" />
+<text x="62" y="81" class="small">Pairwise agreement (left axis)</text>
+<line x1="275" y1="77" x2="291" y2="77" stroke="#f59e0b" stroke-width="2.5" />
+<text x="297" y="81" class="small">Krippendorff's alpha (right axis)</text>
+<line x1="110" y1="510.00" x2="1340" y2="510.00" stroke="#e5e7eb" stroke-width="1" />
+<text x="98" y="514.00" text-anchor="end" class="small">0.0</text>
+<line x1="110" y1="430.00" x2="1340" y2="430.00" stroke="#e5e7eb" stroke-width="1" />
+<text x="98" y="434.00" text-anchor="end" class="small">0.2</text>
+<line x1="110" y1="350.00" x2="1340" y2="350.00" stroke="#e5e7eb" stroke-width="1" />
+<text x="98" y="354.00" text-anchor="end" class="small">0.4</text>
+<line x1="110" y1="270.00" x2="1340" y2="270.00" stroke="#e5e7eb" stroke-width="1" />
+<text x="98" y="274.00" text-anchor="end" class="small">0.6</text>
+<line x1="110" y1="190.00" x2="1340" y2="190.00" stroke="#e5e7eb" stroke-width="1" />
+<text x="98" y="194.00" text-anchor="end" class="small">0.8</text>
+<line x1="110" y1="110.00" x2="1340" y2="110.00" stroke="#e5e7eb" stroke-width="1" />
+<text x="98" y="114.00" text-anchor="end" class="small">1.0</text>
+<text x="1352" y="514.00" text-anchor="start" class="small">-1.0</text>
+<text x="1352" y="414.00" text-anchor="start" class="small">-0.5</text>
+<text x="1352" y="314.00" text-anchor="start" class="small">0.0</text>
+<text x="1352" y="214.00" text-anchor="start" class="small">0.5</text>
+<text x="1352" y="114.00" text-anchor="start" class="small">1.0</text>
+<line x1="110" y1="110" x2="110" y2="510" stroke="#374151" stroke-width="1.5" />
+<line x1="1340" y1="110" x2="1340" y2="510" stroke="#374151" stroke-width="1.5" />
+<line x1="110" y1="510" x2="1340" y2="510" stroke="#374151" stroke-width="1.5" />
+<text x="40" y="100" class="small">Pairwise agreement</text>
+<text x="1354" y="100" class="small">Alpha</text>
+<rect x="138.70" y="225.84" width="79.27" height="284.16" fill="#059669" opacity="0.9" />
+<text x="182.33" y="528" transform="rotate(55 182.33 528)" class="small">no polarizing language (n=128)</text>
+<text x="178.33" y="219.84" text-anchor="middle" class="small">0.71</text>
+<rect x="275.37" y="255.45" width="79.27" height="254.55" fill="#059669" opacity="0.9" />
+<text x="319.00" y="528" transform="rotate(55 319.00 528)" class="small">exaggeration (n=103)</text>
+<text x="315.00" y="249.45" text-anchor="middle" class="small">0.64</text>
+<rect x="412.03" y="327.14" width="79.27" height="182.86" fill="#059669" opacity="0.9" />
+<text x="455.67" y="528" transform="rotate(55 455.67 528)" class="small">casual oversimplification (n=24)</text>
+<text x="451.67" y="321.14" text-anchor="middle" class="small">0.46</text>
+<rect x="548.70" y="256.15" width="79.27" height="253.85" fill="#059669" opacity="0.9" />
+<text x="592.33" y="528" transform="rotate(55 592.33 528)" class="small">doubt (n=48)</text>
+<text x="588.33" y="250.15" text-anchor="middle" class="small">0.63</text>
+<rect x="685.37" y="233.08" width="79.27" height="276.92" fill="#059669" opacity="0.9" />
+<text x="729.00" y="528" transform="rotate(55 729.00 528)" class="small">bandwagon (n=20)</text>
+<text x="725.00" y="227.08" text-anchor="middle" class="small">0.69</text>
+<rect x="822.03" y="264.84" width="79.27" height="245.16" fill="#059669" opacity="0.9" />
+<text x="865.67" y="528" transform="rotate(55 865.67 528)" class="small">slogans (n=31)</text>
+<text x="861.67" y="258.84" text-anchor="middle" class="small">0.61</text>
+<rect x="958.70" y="310.00" width="79.27" height="200.00" fill="#059669" opacity="0.9" />
+<text x="1002.33" y="528" transform="rotate(55 1002.33 528)" class="small">scapegoating (n=4)</text>
+<text x="998.33" y="304.00" text-anchor="middle" class="small">0.50</text>
+<rect x="1095.37" y="235.44" width="79.27" height="274.56" fill="#059669" opacity="0.9" />
+<text x="1139.00" y="528" transform="rotate(55 1139.00 528)" class="small">name-calling (n=85)</text>
+<text x="1135.00" y="229.44" text-anchor="middle" class="small">0.69</text>
+<rect x="1232.03" y="254.10" width="79.27" height="255.90" fill="#059669" opacity="0.9" />
+<text x="1275.67" y="528" transform="rotate(55 1275.67 528)" class="small">demonization (n=52)</text>
+<text x="1271.67" y="248.10" text-anchor="middle" class="small">0.64</text>
+<path d="M 178.33 230.54 L 315.00 256.81 L 451.67 325.77 L 588.33 286.29 L 725.00 232.07 L 861.67 292.97 L 998.33 307.14 L 1135.00 235.26 L 1271.67 260.78" fill="none" stroke="#f59e0b" stroke-width="2.5" />
+<circle cx="178.33" cy="230.54" r="4" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+<circle cx="315.00" cy="256.81" r="4" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+<circle cx="451.67" cy="325.77" r="4" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+<circle cx="588.33" cy="286.29" r="4" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+<circle cx="725.00" cy="232.07" r="4" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+<circle cx="861.67" cy="292.97" r="4" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+<circle cx="998.33" cy="307.14" r="4" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+<circle cx="1135.00" cy="235.26" r="4" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+<circle cx="1271.67" cy="260.78" r="4" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+</svg>

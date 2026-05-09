@@ -4,6 +4,13 @@
 **Principal Investigator:** Prerana Khatiwada (PhD) and Professor Matthew Mauriello
 
 ## Notes
+## May 9th, 3:46pm:
+By the way, ordering by severity, lowest to highest severity:
+*exaggeration, casual oversimplification, doubt, bandwagon, slogans, scapegoating, name-calling, demonization.*
+
+## May 9th, 3:42pm:
+![alt text](src/dataset_comparison_scripts/statistical_analysis/live/in_house_pre_adjudication_subcategory_binary_irr.svg)
+Check out this graph. It's o
 ## May 9th, 3:01pm:
 Okay, so we've been thinking of how to improve IRR. Really, I've been rethinking IRR period. It's a really tough metric to use on something as subjective as open-form annotation of polarizing language. That's, like, insane. So, I was thinking of another way to still do IRR, but to report on a metric that takes the focus away from *did we all spot the same things the first time*---which implies an objective ground truth, which we do **not** have---and instead bringing the focus to, when we have our finished annotations (that we did open-form, without prompting)---do we agree with each other?
 
