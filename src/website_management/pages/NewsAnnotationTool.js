@@ -1407,11 +1407,11 @@ const handleNextArticle = async () => {
   <div className="h-4 text-left" />
   <ul className="list-decimal text-left ml-5 list-inside text-sm space-y-1">
     <li>
-      <strong>Highlight a section of text</strong> between 4 and 25 words that you want to annotate.
+      <strong>Highlight a section of text</strong> between 4 and 25 words that you want to annotate. Only highlight the most prominent category.
     </li>
     <div className="h-3" />
     <li>
-      Scroll down and <strong>select a category</strong> using either the buttons or the dropdown menu (e.g., <em>Flame Rhetoric</em> or <em>Persuasive Propaganda</em>).
+      Scroll down and <strong>select a category</strong> using either the buttons or the dropdown menu (e.g., <em>Imflammatory Language</em> or <em>Persuasive Propaganda</em>).
     </li>
     <div className="h-3" />
     <li>
@@ -1423,7 +1423,7 @@ const handleNextArticle = async () => {
     </li>
     <div className="h-3" />
     <li>
-      After making at least 1 annotation per paragraph select <strong>"Submit"</strong> to move on to the post-annotation survey.
+      After making 1 annotation per paragraph select <strong>"Submit"</strong> to move on to the post-annotation survey.
     </li>
     <div className="h-3" />
     <li>
