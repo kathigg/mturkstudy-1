@@ -95,7 +95,7 @@ function TaskClosedScreen() {
 }
 
 // --- Selection constraints ---
-const MIN_WORDS = 4;
+const MIN_WORDS = 1;
 const MAX_WORDS = 25;
 
 const countWords = (t = "") => (t.trim() ? t.trim().split(/\s+/).length : 0);
@@ -1528,7 +1528,7 @@ const handleNextArticle = async () => {
   <div className="h-4 text-left" />
   <ul className="list-decimal text-left ml-5 list-inside text-sm space-y-1">
     <li>
-      <strong>Highlight a section of text</strong> between 4 and 25 words that you want to annotate. Only highlight the most prominent category.
+      <strong>Highlight a section of text</strong> between 1 and 25 words that you want to annotate. Only highlight the most prominent category.
     </li>
     <div className="h-3" />
     <li>
