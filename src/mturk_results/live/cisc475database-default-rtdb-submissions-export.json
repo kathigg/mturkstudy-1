@@ -3569,59 +3569,59 @@
     },
     "timestamp": "2025-11-20T15:48:49.805Z"
   },
-    "textAnnotations": {
-      "6": [
-        {
-          "category": "No_Polarizing_Language",
-          "paragraphIndex": 0,
-          "subcategory": "no polarizing language",
-          "text": "No polarizing language selected",
-          "title": "get these trending washington restaurants on your radar today"
-        },
-        {
-          "category": "No_Polarizing_Language",
-          "paragraphIndex": 1,
-          "subcategory": "no polarizing language",
-          "text": "No polarizing language selected",
-          "title": "get these trending washington restaurants on your radar today"
-        },
-        {
-          "category": "No_Polarizing_Language",
-          "paragraphIndex": 2,
-          "subcategory": "no polarizing language",
-          "text": "No polarizing language selected",
-          "title": "get these trending washington restaurants on your radar today"
-        },
-        {
-          "category": "No_Polarizing_Language",
-          "paragraphIndex": 3,
-          "subcategory": "no polarizing language",
-          "text": "No polarizing language selected",
-          "title": "get these trending washington restaurants on your radar today"
-        },
-        {
-          "category": "No_Polarizing_Language",
-          "paragraphIndex": 4,
-          "subcategory": "no polarizing language",
-          "text": "No polarizing language selected",
-          "title": "get these trending washington restaurants on your radar today"
-        },
-        {
-          "category": "No_Polarizing_Language",
-          "paragraphIndex": 4,
-          "subcategory": "no polarizing language",
-          "text": "No polarizing language selected",
-          "title": "get these trending washington restaurants on your radar today"
-        },
-        {
-          "category": "No_Polarizing_Language",
-          "paragraphIndex": 4,
-          "subcategory": "no polarizing language",
-          "text": "No polarizing language selected",
-          "title": "get these trending washington restaurants on your radar today"
-        }
-      ]
-    },
+  "textAnnotations": {
+    "6": [
+      {
+        "category": "No_Polarizing_Language",
+        "paragraphIndex": 0,
+        "subcategory": "no polarizing language",
+        "text": "No polarizing language selected",
+        "title": "get these trending washington restaurants on your radar today"
+      },
+      {
+        "category": "No_Polarizing_Language",
+        "paragraphIndex": 1,
+        "subcategory": "no polarizing language",
+        "text": "No polarizing language selected",
+        "title": "get these trending washington restaurants on your radar today"
+      },
+      {
+        "category": "No_Polarizing_Language",
+        "paragraphIndex": 2,
+        "subcategory": "no polarizing language",
+        "text": "No polarizing language selected",
+        "title": "get these trending washington restaurants on your radar today"
+      },
+      {
+        "category": "No_Polarizing_Language",
+        "paragraphIndex": 3,
+        "subcategory": "no polarizing language",
+        "text": "No polarizing language selected",
+        "title": "get these trending washington restaurants on your radar today"
+      },
+      {
+        "category": "No_Polarizing_Language",
+        "paragraphIndex": 4,
+        "subcategory": "no polarizing language",
+        "text": "No polarizing language selected",
+        "title": "get these trending washington restaurants on your radar today"
+      },
+      {
+        "category": "No_Polarizing_Language",
+        "paragraphIndex": 4,
+        "subcategory": "no polarizing language",
+        "text": "No polarizing language selected",
+        "title": "get these trending washington restaurants on your radar today"
+      },
+      {
+        "category": "No_Polarizing_Language",
+        "paragraphIndex": 4,
+        "subcategory": "no polarizing language",
+        "text": "No polarizing language selected",
+        "title": "get these trending washington restaurants on your radar today"
+      }
+    ]
+  },
   "-Oh5y_RK6p9Or2Vz1tL-": {
     "articleTitles": [
       {
@@ -10769,6 +10769,13 @@
           "paragraphIndex": 3,
           "subcategory": "Exaggeration",
           "text": "slamming the commander in chief",
+          "title": "george conway urges trump to resign over aborted iran strike"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Bandwagon",
+          "text": "whose judgment no serious, intelligent person trusts",
           "title": "george conway urges trump to resign over aborted iran strike"
         }
       ]

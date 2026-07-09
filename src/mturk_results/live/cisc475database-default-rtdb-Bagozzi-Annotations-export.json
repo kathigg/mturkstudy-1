@@ -1,0 +1,1803 @@
+{
+  "-Ova-YYOgAHCXJRWr3z1": {
+    "articleTitles": [
+      {
+        "id": 2,
+        "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+      }
+    ],
+    "code": "MTURK-IEPAHN",
+    "surveyResponses": {
+      "2": {
+        "bias": 2,
+        "confidence": 5,
+        "openFeedback": "Most/all polarizing language that I flagged in the article was (accurately) attributed to Trump, not expressed by the author of the article, whose overall reporting I found to be sound. Splitting hairs, there is probably a slight bias in the article against Trump in its usage of certain terms (\"tirade\", \"lashed out\") to characterize him though none of these rose to the level of me feeling those specific characterizations were instances of polarizing language."
+      }
+    },
+    "textAnnotations": {
+      "2": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "more dishonest and deceitful",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "A poll should be done on which is the more dishonest and deceitful newspaper",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "the more dishonest and deceitful newspaper",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "the Failing New York Times",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "the Amazon (lobbyist) Washington Post",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "a disgrace to our Country",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Demonization",
+          "text": "the Enemy of the People",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Slogans",
+          "text": "America has been made GREAT again",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Slogans",
+          "text": "KEEP AMERICA GREAT",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "both of these horrible papers",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Slogans",
+          "text": "America has been made GREAT again",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "both of these horrible papers",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Slogans",
+          "text": "keep America great",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Demonization",
+          "text": "enemy of the people",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Demonization",
+          "text": "virtual act of treason",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "the Failing New York Times",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Demonization",
+          "text": "virtual act of Treason",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "fake news",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "fake polling",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "The Fake News",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "Fake Polling",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Doubt",
+          "text": "Suppression Polls (they suppress the numbers)",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T17:09:28.427Z"
+  },
+  "-Ova4KJTPZSRFsyEqfbK": {
+    "articleTitles": [
+      {
+        "id": 3,
+        "title": "'Every American is entitled to health care': Sen. Bernie Sanders"
+      }
+    ],
+    "code": "MTURK-MCNTKD",
+    "surveyResponses": {
+      "3": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "Overall this article was effectively factual with no author-specific instances of polarizing language. However, it was a bit one sided in just relaying Sanders' stances and characterizations w/out providing space for an opposing voice or any critique."
+      }
+    },
+    "textAnnotations": {
+      "3": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "the international embarrassment",
+          "title": "'Every American is entitled to health care': Sen. Bernie Sanders"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Scapegoating",
+          "text": "the greed of the health insurance and pharmaceutical industries",
+          "title": "'Every American is entitled to health care': Sen. Bernie Sanders"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Scapegoating",
+          "text": "private corporations to make billions of dollars in profits off Americans' health care",
+          "title": "'Every American is entitled to health care': Sen. Bernie Sanders"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "dysfunctional system",
+          "title": "'Every American is entitled to health care': Sen. Bernie Sanders"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "everybody said our ideas are crazy and wild and extreme",
+          "title": "'Every American is entitled to health care': Sen. Bernie Sanders"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T17:30:20.922Z"
+  },
+  "-Ova7LP_QJucfPosu6i6": {
+    "articleTitles": [
+      {
+        "id": 4,
+        "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets"
+      }
+    ],
+    "code": "MTURK-K7YKRS",
+    "surveyResponses": {
+      "4": {
+        "bias": 1,
+        "confidence": 2,
+        "openFeedback": "This article presents both sides/perspectives, with factual reporting, and the only possible instances of polarizing language I flagged came from quotes/etc rather than the journalist. I lean only slightly confident re: polarizing language here because some of the instances I flagged here (e.g., \"racist police\") are name calling but also appear factually accurate in this case based on the Facebook posts made."
+      }
+    },
+    "textAnnotations": {
+      "4": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Demonization",
+          "text": "they hate the people whose communities they patrol",
+          "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "racist police who posted on Facebook",
+          "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "take over 6,000 police officers off the street",
+          "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T17:43:31.890Z"
+  },
+  "-Ova966oY2lV0Py8KpQp": {
+    "articleTitles": [
+      {
+        "id": 5,
+        "title": "the latest: nadler says panel will move quickly on mcgahn"
+      }
+    ],
+    "code": "MTURK-5RTS22",
+    "surveyResponses": {
+      "5": {
+        "bias": 1,
+        "confidence": 4,
+        "openFeedback": "Unbiased, fairly dry factual reporting. Very little polarizing language and the instances I highlighted came from a Trump quote, not the article's author."
+      }
+    },
+    "textAnnotations": {
+      "5": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "the latest: nadler says panel will move quickly on mcgahn"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "the latest: nadler says panel will move quickly on mcgahn"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "Nervous Nancy",
+          "title": "the latest: nadler says panel will move quickly on mcgahn"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "the latest: nadler says panel will move quickly on mcgahn"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T17:51:13.565Z"
+  },
+  "-OvaaTGgoCp1jgVlkOgs": {
+    "articleTitles": [
+      {
+        "id": 11,
+        "title": "editorial: six months after california's landmark police transparency law, many agencies still won't release their records"
+      }
+    ],
+    "code": "MTURK-V4OCH0",
+    "surveyResponses": {
+      "11": {
+        "bias": 5,
+        "confidence": 3,
+        "openFeedback": "It's extremely biased since it is an editorial which by definition here is advancing a one sided perspective on the issue."
+      }
+    },
+    "textAnnotations": {
+      "11": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "compliance with the law is optional",
+          "title": "editorial: six months after california's landmark police transparency law, many agencies still won't release their records"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "This is lawless conduct",
+          "title": "editorial: six months after california's landmark police transparency law, many agencies still won't release their records"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "deliberately sandbagging the release of these records",
+          "title": "editorial: six months after california's landmark police transparency law, many agencies still won't release their records"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Doubt",
+          "text": "Becerra's obvious bias toward the police groups could prove an obstacle",
+          "title": "editorial: six months after california's landmark police transparency law, many agencies still won't release their records"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "editorial: six months after california's landmark police transparency law, many agencies still won't release their records"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T19:55:08.698Z"
+  },
+  "-OvacmYK5Bs4VaF52CUS": {
+    "articleTitles": [
+      {
+        "id": 12,
+        "title": "BuzzFeed Journalists Protest in Push for Union Recognition"
+      }
+    ],
+    "code": "MTURK-J3RZKH",
+    "surveyResponses": {
+      "12": {
+        "bias": 1,
+        "confidence": 3,
+        "openFeedback": "This is just a straight factual reporting piece. There were some mild instances of polarizing language in some of the quotes, but those were accurately reported and weren't presented in a slanted or unbalanced manner."
+      }
+    },
+    "textAnnotations": {
+      "12": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Slogans",
+          "text": "Recognize the BuzzFeed Union!!",
+          "title": "BuzzFeed Journalists Protest in Push for Union Recognition"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "skyrocketing health insurance costs",
+          "title": "BuzzFeed Journalists Protest in Push for Union Recognition"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "BuzzFeed Journalists Protest in Push for Union Recognition"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T20:05:16.066Z"
+  },
+  "-OvaDRSXFQQ02mAN9Soe": {
+    "articleTitles": [
+      {
+        "id": 6,
+        "title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized"
+      }
+    ],
+    "code": "MTURK-AR96DM",
+    "surveyResponses": {
+      "6": {
+        "bias": 2,
+        "confidence": 4,
+        "openFeedback": "Mostly restrained author voice and factual reporting, but sourcing (quotes, perspectives, etc) is very one sided."
+      }
+    },
+    "textAnnotations": {
+      "6": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "some low-life",
+          "title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "hero and fallen-officer",
+          "title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "bravery, courage and valor",
+          "title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "he was a hero",
+          "title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "ignorance and disrespect shown toward police is at an all time high",
+          "title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Casual Oversimplification",
+          "text": "DA of this city set this tone of disrespect for the city",
+          "title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "top persecutor of this city",
+          "title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Demonization",
+          "text": "while backing criminals",
+          "title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "as minuscule as a slap on the wrist",
+          "title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T18:10:09.563Z"
+  },
+  "-Ovae3nHAuxV_2CSbrtC": {
+    "articleTitles": [
+      {
+        "id": 13,
+        "title": "DC mayor says Trump's Fourth of July celebration emptied security fund"
+      }
+    ],
+    "code": "MTURK-NYHXIN",
+    "surveyResponses": {
+      "13": {
+        "bias": 1,
+        "confidence": 2,
+        "openFeedback": "This seems like a pretty neutral, factual article."
+      }
+    },
+    "textAnnotations": {
+      "13": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "DC mayor says Trump's Fourth of July celebration emptied security fund"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "DC mayor says Trump's Fourth of July celebration emptied security fund"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "Baby Trump",
+          "title": "DC mayor says Trump's Fourth of July celebration emptied security fund"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Slogans",
+          "text": "Dump Trump",
+          "title": "DC mayor says Trump's Fourth of July celebration emptied security fund"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T20:10:52.982Z"
+  },
+  "-OvagcTg0AhGwYjogDcZ": {
+    "articleTitles": [
+      {
+        "id": 14,
+        "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+      }
+    ],
+    "code": "MTURK-GFAME0",
+    "surveyResponses": {
+      "14": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "Relative to many of the other (non-editorial) articles, this one seems to have an author that is leaning more towards one side (pro-protester/environmental) which bleeds into their language in the article. In 1-2 places I coded this as exaggeration those I suppose this is a judgement call, as it could also just be 'dramatiziation' type language (scorching heat wave, soaring env concerns, etc.)."
+      }
+    },
+    "textAnnotations": {
+      "14": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Slogans",
+          "text": "Yes we can, I do want Madrid central",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Slogans",
+          "text": "I want to breathe free",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Slogans",
+          "text": "We aspire to have a Madrid without smoke",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "soaring global environmental concerns",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "scorching heatwave",
+          "title": "Protest in Madrid as conservatives suspend ban on most polluting cars"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T20:22:03.418Z"
+  },
+  "-OvaH88MA9uZVQbUHBWt": {
+    "articleTitles": [
+      {
+        "id": 7,
+        "title": "george conway urges trump to resign over aborted iran strike"
+      }
+    ],
+    "code": "MTURK-BVV6QK",
+    "surveyResponses": {
+      "7": {
+        "bias": 2,
+        "confidence": 4,
+        "openFeedback": "A tad one sided, especially with the repetition of Conway's perspective/tweets so many times; but the article does also give some space for Trump's reply as an opposing perspective. But again, no polarizing language outside of the quotes, so the polarizing language I flagged didn't directly filter into my tag."
+      }
+    },
+    "textAnnotations": {
+      "7": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "Trump didn't realize UNTIL TEN MINUTES BEFOREHAND that a planned airstrike would kill over a hundred people",
+          "title": "george conway urges trump to resign over aborted iran strike"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "To say this is amateur hour would defame amateurs",
+          "title": "george conway urges trump to resign over aborted iran strike"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "even more of an idiot than people think you are",
+          "title": "george conway urges trump to resign over aborted iran strike"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "Trump didn't realize UNTIL TEN MINUTES BEFOREHAND that a planned airstrike would kill over a hundred people",
+          "title": "george conway urges trump to resign over aborted iran strike"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "To say this is amateur hour would defame amateurs",
+          "title": "george conway urges trump to resign over aborted iran strike"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "even more of an idiot than people think you are",
+          "title": "george conway urges trump to resign over aborted iran strike"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "george conway urges trump to resign over aborted iran strike"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 3,
+          "subcategory": "Name-Calling",
+          "text": "erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man",
+          "title": "george conway urges trump to resign over aborted iran strike"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Bandwagon",
+          "text": "whose judgment no serious, intelligent person trusts",
+          "title": "george conway urges trump to resign over aborted iran strike"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T18:26:19.061Z"
+  },
+  "-OvaJLJeO9YriYqviZvg": {
+    "articleTitles": [
+      {
+        "id": 8,
+        "title": "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings"
+      }
+    ],
+    "code": "MTURK-PIN3V0",
+    "surveyResponses": {
+      "8": {
+        "bias": 1,
+        "confidence": 2,
+        "openFeedback": "Pretty even-handed. Even the instances of polarizing language I flagged (which all come from quotes/others' attributions) are fairly mild and sparse."
+      }
+    },
+    "textAnnotations": {
+      "8": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "his many deceptions regarding his security clearance",
+          "title": "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Doubt",
+          "text": "Jared Kushner lied on his SF-86 form",
+          "title": "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Slogans",
+          "text": "#RevokeKushner",
+          "title": "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T18:35:57.461Z"
+  },
+  "-Ovak6FXAz1pE7myVN5i": {
+    "articleTitles": [
+      {
+        "id": 15,
+        "title": "tutankhamun sculpture's london auction sparks egyptian outcry"
+      }
+    ],
+    "code": "MTURK-0OHGLK",
+    "surveyResponses": {
+      "15": {
+        "bias": 3,
+        "confidence": 2,
+        "openFeedback": "Though I only flagged a direct quote as polarizing language, the author's own prose had some instances of dramatized language that was close to persuasive propaganda >exaggeration (unparalleled collection of antiquities, swarming tourists) rather than pure neutral language."
+      }
+    },
+    "textAnnotations": {
+      "15": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "tutankhamun sculpture's london auction sparks egyptian outcry"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "The owners have given false information",
+          "title": "tutankhamun sculpture's london auction sparks egyptian outcry"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "tutankhamun sculpture's london auction sparks egyptian outcry"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "tutankhamun sculpture's london auction sparks egyptian outcry"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T20:37:15.971Z"
+  },
+  "-OvaND6NwCvSxWhGO4If": {
+    "articleTitles": [
+      {
+        "id": 9,
+        "title": "ron desantis signs amendment 4 bill, limiting felon voting"
+      }
+    ],
+    "code": "MTURK-TAZ2VY",
+    "surveyResponses": {
+      "9": {
+        "bias": 3,
+        "confidence": 2,
+        "openFeedback": "Of all the articles I've read so far, this one has the strongest reporter-slant/editorializing, though most of it did not rise to the level of persuasive propaganda. In addition to the passages I flagged, there are critical judgements (not facts) that didn't rise to the level of name calling (e.g., \"and the republican's approach is confusing...\" since there are facts to ground it), alongside other dramatizations (e.g., \"if they can ever vote at all\")"
+      }
+    },
+    "textAnnotations": {
+      "9": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "poll tax",
+          "title": "ron desantis signs amendment 4 bill, limiting felon voting"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "one of the most racist and enduring policies of Florida's Jim Crow era",
+          "title": "ron desantis signs amendment 4 bill, limiting felon voting"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "ron desantis signs amendment 4 bill, limiting felon voting"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "ron desantis signs amendment 4 bill, limiting felon voting"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "ron desantis signs amendment 4 bill, limiting felon voting"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T18:52:52.336Z"
+  },
+  "-OvaYZPq4kGiAF9FVECW": {
+    "articleTitles": [
+      {
+        "id": 10,
+        "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"
+      }
+    ],
+    "code": "MTURK-FGIO3L",
+    "surveyResponses": {
+      "10": {
+        "bias": 3,
+        "confidence": 4,
+        "openFeedback": "Pretty advocacy focused and overtly editorial in the journalistic prose. Viewpoints are slanted towards critics and the material seems oriented to cast the judge in as negative a light as possible."
+      }
+    },
+    "textAnnotations": {
+      "10": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "his extreme views on both fronts",
+          "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "being transgender \"a delusion.\"",
+          "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "how anyone could expect Kacsmaryk to be a fair and impartial judge",
+          "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "bizarre comments",
+          "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "the lie that the human person is an autonomous blob of Silly Putty",
+          "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "young, right-wing ideologues",
+          "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "one of Trump's most extreme nominees",
+          "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Demonization",
+          "text": "Why would my colleagues want to drape black robes over these bigoted views",
+          "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"
+        }
+      ]
+    },
+    "timestamp": "2026-06-20T19:42:27.390Z"
+  },
+  "-OvdwDPczkspfZ5Ndih3": {
+    "articleTitles": [
+      {
+        "id": 16,
+        "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+      }
+    ],
+    "code": "MTURK-Y7KJOD",
+    "surveyResponses": {
+      "16": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "Seems fairly one-sided, opinion-column oriented, though not in the polarizing language-sense. Just how these opinion columns often read with a focus on one side of the story/argument."
+      }
+    },
+    "textAnnotations": {
+      "16": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "duchess difficult",
+          "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "Me-Gain",
+          "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "Hurricane Meghan",
+          "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "\"bombards\" her aides",
+          "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "\"bombarding\" her aides with texts",
+          "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "duchess difficult",
+          "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "Me-Gain",
+          "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "Hurricane Meghan",
+          "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "difficult",
+          "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "unpopular",
+          "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."
+        }
+      ]
+    },
+    "timestamp": "2026-06-21T11:29:01.098Z"
+  },
+  "-OvdyyF43hz5qSIumM_i": {
+    "articleTitles": [
+      {
+        "id": 17,
+        "title": "Biden criticizes Amazon for paying $0 in corporate taxes"
+      }
+    ],
+    "code": "MTURK-UKB792",
+    "surveyResponses": {
+      "17": {
+        "bias": 1,
+        "confidence": 2,
+        "openFeedback": "Not biased, the article is critical of Amazon, but also gives it space for its perspective."
+      }
+    },
+    "textAnnotations": {
+      "17": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Biden criticizes Amazon for paying $0 in corporate taxes"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Biden criticizes Amazon for paying $0 in corporate taxes"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "Amazon crushes small companies",
+          "title": "Biden criticizes Amazon for paying $0 in corporate taxes"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Biden criticizes Amazon for paying $0 in corporate taxes"
+        }
+      ]
+    },
+    "timestamp": "2026-06-21T11:41:01.384Z"
+  },
+  "-Ove05T4sCIBdyVRNx2k": {
+    "articleTitles": [
+      {
+        "id": 18,
+        "title": "trump vows to cure cancer and eradicate aids"
+      }
+    ],
+    "code": "MTURK-ZF2SEF",
+    "surveyResponses": {
+      "18": {
+        "bias": 2,
+        "confidence": 1,
+        "openFeedback": "Relatively balanced, holds a slight tilt of skepticism towards trump and his grandiose promises but that is perhaps also the realistic perspective given these particular promises."
+      }
+    },
+    "textAnnotations": {
+      "18": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "trump vows to cure cancer and eradicate aids"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "why the hell didn't you do that over the last 50 years, Joe?",
+          "title": "trump vows to cure cancer and eradicate aids"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "trump vows to cure cancer and eradicate aids"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "trump vows to cure cancer and eradicate aids"
+        }
+      ]
+    },
+    "timestamp": "2026-06-21T11:50:19.363Z"
+  },
+  "-Ove2S8C47S7FLLrJB1J": {
+    "articleTitles": [
+      {
+        "id": 19,
+        "title": "donald trump's criminal justice reform shows results"
+      }
+    ],
+    "code": "MTURK-M64S6M",
+    "surveyResponses": {
+      "19": {
+        "bias": 4,
+        "confidence": 2,
+        "openFeedback": "This is an opinion piece, biased by design. It uses a lot of dramaticizing language, though I did not feel that much to any of it rose to the level of polarizing. "
+      }
+    },
+    "textAnnotations": {
+      "19": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "donald trump's criminal justice reform shows results"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "donald trump's criminal justice reform shows results"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "an 18-year-old makes a mistake",
+          "title": "donald trump's criminal justice reform shows results"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "donald trump's criminal justice reform shows results"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 4,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "donald trump's criminal justice reform shows results"
+        }
+      ]
+    },
+    "timestamp": "2026-06-21T12:00:36.543Z"
+  },
+  "-Ove4CXiJbyBb0wEJXnQ": {
+    "articleTitles": [
+      {
+        "id": 20,
+        "title": "GOP lawmaker suggests Colin Kaepernick move to a different country"
+      }
+    ],
+    "code": "MTURK-OQ7U1Z",
+    "surveyResponses": {
+      "20": {
+        "bias": 2,
+        "confidence": 2,
+        "openFeedback": "Pretty balanced news piece, though slightly tilts towards Broooks."
+      }
+    },
+    "textAnnotations": {
+      "20": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "GOP lawmaker suggests Colin Kaepernick move to a different country"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "very radical people in the United States of America who don't like America",
+          "title": "GOP lawmaker suggests Colin Kaepernick move to a different country"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "GOP lawmaker suggests Colin Kaepernick move to a different country"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Bandwagon",
+          "text": "in this country we've had over a million Americans die fighting for our liberties",
+          "title": "GOP lawmaker suggests Colin Kaepernick move to a different country"
+        }
+      ]
+    },
+    "timestamp": "2026-06-21T12:08:16.950Z"
+  },
+  "-Ove6bvbUMszsjjEZikH": {
+    "articleTitles": [
+      {
+        "id": 21,
+        "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'"
+      }
+    ],
+    "code": "MTURK-LIY8VK",
+    "surveyResponses": {
+      "21": {
+        "bias": 1,
+        "confidence": 4,
+        "openFeedback": "A pretty factual, neutral piece. All polarizing language was from quotes/tweets."
+      }
+    },
+    "textAnnotations": {
+      "21": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "Crooked Hillary",
+          "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "Something weird going on at Fox",
+          "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "More Fake News",
+          "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "Motley Crew",
+          "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "only fake polls",
+          "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Slogans",
+          "text": "MAKE AMERICA GREAT AGAIN!",
+          "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "Polls are always bad for me. They were against Crooked Hillary also",
+          "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'"
+        }
+      ]
+    },
+    "timestamp": "2026-06-21T12:18:49.341Z"
+  },
+  "-Ove9B2jFcjBc61aP7QB": {
+    "articleTitles": [
+      {
+        "id": 22,
+        "title": "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar"
+      }
+    ],
+    "code": "MTURK-YCIUW6",
+    "surveyResponses": {
+      "22": {
+        "bias": 1,
+        "confidence": 3,
+        "openFeedback": "Fairly factual/balanced reporting around the issue."
+      }
+    },
+    "textAnnotations": {
+      "22": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Demonization",
+          "text": "politicians involved in 'spreading hate' should consider dining at home",
+          "title": "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Demonization",
+          "text": "administration that has made its name trashing norms and breaking backs",
+          "title": "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Demonization",
+          "text": "If you're directly complicit in spreading hate or perpetuating suffering, maybe you should consider dining at home",
+          "title": "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar"
+        }
+      ]
+    },
+    "timestamp": "2026-06-21T12:30:01.627Z"
+  },
+  "-OveM0jFMjxhSf4U6Yky": {
+    "articleTitles": [
+      {
+        "id": 23,
+        "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud"
+      }
+    ],
+    "code": "MTURK-Y67P4G",
+    "surveyResponses": {
+      "23": {
+        "bias": 2,
+        "confidence": 3,
+        "openFeedback": "Pretty neutral, slightly anti-Moore."
+      }
+    },
+    "textAnnotations": {
+      "23": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "Based on the allegations I'd stay away from that",
+          "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "Based on the allegations I'd stay away from that",
+          "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "That's why there's such opposition",
+          "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "pure fake news.",
+          "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Slogans",
+          "text": "#MAGA",
+          "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Slogans",
+          "text": "#MAGA",
+          "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Slogans",
+          "text": "\"ABRM,\" which stands for \"anyone but Roy Moore.\"",
+          "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "nominating Roy Moore would be gift wrapping this Senate seat for Chuck Schumer,",
+          "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud"
+        }
+      ]
+    },
+    "timestamp": "2026-06-21T13:26:07.254Z"
+  },
+  "-OveOS0_e5qUHnSSwGVt": {
+    "articleTitles": [
+      {
+        "id": 24,
+        "title": "RMV Fail: 546 license suspensions, more to come"
+      }
+    ],
+    "code": "MTURK-CCRGV4",
+    "surveyResponses": {
+      "24": {
+        "bias": 1,
+        "confidence": 1,
+        "openFeedback": "Another pretty standard/factual one."
+      }
+    },
+    "textAnnotations": {
+      "24": [
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 0,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "RMV Fail: 546 license suspensions, more to come"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "RMV Fail: 546 license suspensions, more to come"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "RMV Fail: 546 license suspensions, more to come"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 3,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "RMV Fail: 546 license suspensions, more to come"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 4,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "RMV Fail: 546 license suspensions, more to come"
+        }
+      ]
+    },
+    "timestamp": "2026-06-21T13:36:43.444Z"
+  },
+  "-OveRW9_2YH5kLBLRTYO": {
+    "articleTitles": [
+      {
+        "id": 25,
+        "title": "Killer of 16-year-old New York girl in 1980 released on parole despite outrage"
+      }
+    ],
+    "code": "MTURK-WBQ6E9",
+    "surveyResponses": {
+      "25": {
+        "bias": 2,
+        "confidence": 2,
+        "openFeedback": "Factual, but heavily one sided overall. The polarizing language passages are borderline and are from quotes so those don't rest heavily on my assessment."
+      }
+    },
+    "textAnnotations": {
+      "25": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "SO HIDEOUS' THAT 16-YEAR-OLD NEW YORK GIRL'S KILLER IS BEING RELEASED",
+          "title": "Killer of 16-year-old New York girl in 1980 released on parole despite outrage"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 1,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Killer of 16-year-old New York girl in 1980 released on parole despite outrage"
+        },
+        {
+          "category": "No_Polarizing_Language",
+          "paragraphIndex": 2,
+          "subcategory": "no polarizing language",
+          "text": "no polarizing language selected",
+          "title": "Killer of 16-year-old New York girl in 1980 released on parole despite outrage"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 3,
+          "subcategory": "Exaggeration",
+          "text": "release of this rapist and murderer is so hideous to me",
+          "title": "Killer of 16-year-old New York girl in 1980 released on parole despite outrage"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 3,
+          "subcategory": "Name-Calling",
+          "text": "this rapist and murderer",
+          "title": "Killer of 16-year-old New York girl in 1980 released on parole despite outrage"
+        }
+      ]
+    },
+    "timestamp": "2026-06-21T13:50:06.862Z"
+  },
+  "-OveT2aDGPc6t_O4tWpI": {
+    "articleTitles": [
+      {
+        "id": 26,
+        "title": "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal"
+      }
+    ],
+    "code": "MTURK-Y4LZ9M",
+    "surveyResponses": {
+      "26": {
+        "bias": 3,
+        "confidence": 3,
+        "openFeedback": "Relative to others, there's clearer evidence of journalistic stance (skepticism), including \"so-called emergency\" though at the same time, sourcing seems two-sided overall."
+      }
+    },
+    "textAnnotations": {
+      "26": [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Doubt",
+          "text": "so-called emergency.",
+          "title": "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "a radical, top-down, socialist makeover of the entire U.S. economy",
+          "title": "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "phony national emergencies",
+          "title": "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal"
+        }
+      ]
+    },
+    "timestamp": "2026-06-21T13:56:50.063Z"
+  },
+  "-OvihohKgV2mxuvIpnxs": {
+    "articleTitles": [
+      {
+        "id": 27,
+        "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time"
+      }
+    ],
+    "code": "MTURK-WP1TZD",
+    "surveyResponses": {
+      "27": {
+        "bias": 4,
+        "confidence": 4,
+        "openFeedback": "Reads as pretty sympathetic to Gabbard from a Fox News-style slant. The article seems to present the false claims from Gabbard's sister in her final tweet without critical interpretation, even though earlier evidence in the article demonstrates they are false."
+      }
+    },
+    "textAnnotations": {
+      "27": [
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "chicken hawk cabinet",
+          "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Casual Oversimplification",
+          "text": "this president and his chicken hawk cabinet have led us to the brink of war with Iran",
+          "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Casual Oversimplification",
+          "text": "When we weren't in there, they started flying planes into our buildings",
+          "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "They're giving her more time than all the other candidates combined",
+          "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "They aren't giving any time to Tulsi at all",
+          "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Doubt",
+          "text": "It's clear who MSNBC wants to be president: Elizabeth Warren",
+          "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time"
+        }
+      ]
+    },
+    "timestamp": "2026-06-22T09:44:11.002Z"
+  },
+  "-OvioW916F_wtD0JUDzx": {
+    "articleTitles": [
+      {
+        "id": 1,
+        "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+      }
+    ],
+    "code": "MTURK-DL58CD",
+    "surveyResponses": [
+      null,
+      {
+        "bias": 4,
+        "confidence": 5,
+        "openFeedback": "Fairly one sided, so biased by omission, not by any specific author statements or framing."
+      }
+    ],
+    "textAnnotations": [
+      null,
+      [
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "tragic mistake",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "one of the most disgraceful performances by an American president in memory",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 0,
+          "subcategory": "Exaggeration",
+          "text": "tragic mistake",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 0,
+          "subcategory": "Name-Calling",
+          "text": "naiveté, egotism, false equivalence, and sympathy for autocrats",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "tyrant",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "spew propaganda and lies to the world",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Doubt",
+          "text": "his delusions of a warm relationship with Putin's regime",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Demonization",
+          "text": "complicity in the slaughter of the Syrian people",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Name-Calling",
+          "text": "his assault on democratic institutions throughout the world",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 1,
+          "subcategory": "Exaggeration",
+          "text": "marks a recent low point in the history of the American Presidency",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 1,
+          "subcategory": "Demonization",
+          "text": "his assault on democratic institutions throughout the world",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        },
+        {
+          "category": "Persuasive_Propaganda",
+          "paragraphIndex": 2,
+          "subcategory": "Exaggeration",
+          "text": "No prior president has ever abased himself more abjectly before a tyrant",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        },
+        {
+          "category": "Inflammatory_Language",
+          "paragraphIndex": 2,
+          "subcategory": "Name-Calling",
+          "text": "tyrant",
+          "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"
+        }
+      ]
+    ],
+    "timestamp": "2026-06-22T10:13:25.977Z"
+  }
+}

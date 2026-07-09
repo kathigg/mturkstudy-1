@@ -1,0 +1,44 @@
+{
+  "prediction_set": "bagozzi_polarizing_only",
+  "gold_set": "final_inhouse_adjudicated_polarizing_only",
+  "span": {
+    "tp": 70,
+    "fp": 47,
+    "fn": 97,
+    "pred_total": 117,
+    "gold_total": 167,
+    "precision": 0.598,
+    "recall": 0.419,
+    "f1": 0.493
+  },
+  "category": {
+    "tp": 58,
+    "fp": 59,
+    "fn": 109,
+    "pred_total": 117,
+    "gold_total": 167,
+    "precision": 0.496,
+    "recall": 0.347,
+    "f1": 0.408
+  },
+  "subcategory": {
+    "tp": 52,
+    "fp": 65,
+    "fn": 115,
+    "pred_total": 117,
+    "gold_total": 167,
+    "precision": 0.444,
+    "recall": 0.311,
+    "f1": 0.366
+  },
+  "category_and_subcategory": {
+    "tp": 52,
+    "fp": 65,
+    "fn": 115,
+    "pred_total": 117,
+    "gold_total": 167,
+    "precision": 0.444,
+    "recall": 0.311,
+    "f1": 0.366
+  }
+}

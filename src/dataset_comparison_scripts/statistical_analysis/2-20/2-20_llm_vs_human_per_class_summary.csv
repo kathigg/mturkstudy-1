@@ -1,0 +1,4 @@
+class,precision,recall,f1,support,tp,fp,fn,disagreement_rate
+no polarizing language,1.0,1.0,1.0,29,29,0,0,0.0
+persuasive propaganda,0.76,0.704,0.731,27,19,6,8,0.269
+inflammatory language,0.636,0.7,0.667,20,14,8,6,0.333

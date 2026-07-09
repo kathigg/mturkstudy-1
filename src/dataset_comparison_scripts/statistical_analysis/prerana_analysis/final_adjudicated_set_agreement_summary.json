@@ -3,25 +3,26 @@
   "input_sheet": "Final_adjudicated set",
   "baseline_csv": "src/dataset_comparison_scripts/statistical_analysis/live/in_house_live_validation_three_way_split_clusters.csv",
   "raw_sheet_summary": {
-    "row_count": 106,
-    "eligible_unit_count": 106,
+    "row_count": 107,
+    "eligible_unit_count": 107,
     "status_counts": {
-      "majority_accept": 77,
+      "majority_accept": 78,
       "majority_deny": 29
     },
     "vote_pattern_counts": {
       "46054.0": 77,
-      "46024.0": 29
+      "46024.0": 29,
+      "2-1": 1
     },
-    "accept_total": 183,
-    "deny_total": 135,
-    "accept_rate": 0.575,
+    "accept_total": 185,
+    "deny_total": 136,
+    "accept_rate": 0.576,
     "pairwise_percent_agreement": 0.333,
-    "krippendorff_alpha_nominal": -0.362,
+    "krippendorff_alpha_nominal": -0.363,
     "exact_consensus_count": 0,
     "exact_consensus_rate": 0.0,
     "subcategory_counts": {
-      "bandwagon": 4,
+      "bandwagon": 5,
       "casual oversimplification": 6,
       "demonization": 12,
       "doubt": 13,
@@ -33,24 +34,24 @@
     }
   },
   "normalized_cleaned_summary": {
-    "row_count": 106,
-    "eligible_unit_count": 106,
+    "row_count": 107,
+    "eligible_unit_count": 107,
     "status_counts": {
-      "majority_accept": 106
+      "majority_accept": 107
     },
     "vote_pattern_counts": {
-      "2-1": 77,
+      "2-1": 78,
       "3-0": 29
     },
-    "accept_total": 241,
-    "deny_total": 77,
-    "accept_rate": 0.758,
-    "pairwise_percent_agreement": 0.516,
-    "krippendorff_alpha_nominal": -0.317,
+    "accept_total": 243,
+    "deny_total": 78,
+    "accept_rate": 0.757,
+    "pairwise_percent_agreement": 0.514,
+    "krippendorff_alpha_nominal": -0.319,
     "exact_consensus_count": 29,
-    "exact_consensus_rate": 0.274,
+    "exact_consensus_rate": 0.271,
     "subcategory_counts": {
-      "bandwagon": 4,
+      "bandwagon": 5,
       "casual oversimplification": 6,
       "demonization": 12,
       "doubt": 13,
@@ -62,25 +63,25 @@
     }
   },
   "baseline_three_way_split_summary": {
-    "row_count": 192,
-    "eligible_unit_count": 192,
+    "row_count": 193,
+    "eligible_unit_count": 193,
     "status_counts": {
-      "majority_accept": 79,
+      "majority_accept": 80,
       "majority_deny": 113
     },
     "vote_pattern_counts": {
-      "2-1": 79,
+      "2-1": 80,
       "1-2": 113
     },
-    "accept_total": 271,
-    "deny_total": 305,
-    "accept_rate": 0.47,
+    "accept_total": 273,
+    "deny_total": 306,
+    "accept_rate": 0.472,
     "pairwise_percent_agreement": 0.333,
     "krippendorff_alpha_nominal": -0.337,
     "exact_consensus_count": 0,
     "exact_consensus_rate": 0.0,
     "subcategory_counts": {
-      "bandwagon": 8,
+      "bandwagon": 9,
       "casual oversimplification": 19,
       "demonization": 21,
       "doubt": 21,
@@ -95,21 +96,21 @@
     "row_count": 0,
     "accept_total": 58,
     "deny_total": -58,
-    "accept_rate": 0.182,
-    "pairwise_percent_agreement": 0.182,
-    "krippendorff_alpha_nominal": 0.045,
+    "accept_rate": 0.181,
+    "pairwise_percent_agreement": 0.181,
+    "krippendorff_alpha_nominal": 0.044,
     "exact_consensus_count": 29,
-    "exact_consensus_rate": 0.274
+    "exact_consensus_rate": 0.271
   },
   "delta_vs_full_three_way_split": {
     "row_count": -86,
     "accept_total": -30,
     "deny_total": -228,
-    "accept_rate": 0.287,
-    "pairwise_percent_agreement": 0.182,
-    "krippendorff_alpha_nominal": 0.019,
+    "accept_rate": 0.286,
+    "pairwise_percent_agreement": 0.181,
+    "krippendorff_alpha_nominal": 0.018,
     "exact_consensus_count": 29,
-    "exact_consensus_rate": 0.274
+    "exact_consensus_rate": 0.271
   },
   "notes": [
     "Rows retained in the adjudicated sheet with status 'majority_deny' are normalized to unanimous agreement cases.",

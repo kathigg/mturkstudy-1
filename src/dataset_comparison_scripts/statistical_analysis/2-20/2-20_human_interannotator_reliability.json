@@ -33,60 +33,60 @@
       "27": 3
     },
     "worker_paragraph_units": 291,
-    "raw_annotations": 515
+    "raw_annotations": 516
   },
   "density": {
     "category": {
       "inflammatory language": {
         "count": 148,
-        "share_of_annotations": 0.2874,
+        "share_of_annotations": 0.2868,
         "annotations_per_worker_paragraph": 0.5086
       },
       "no polarizing language": {
         "count": 137,
-        "share_of_annotations": 0.266,
+        "share_of_annotations": 0.2655,
         "annotations_per_worker_paragraph": 0.4708
       },
       "persuasive propaganda": {
-        "count": 230,
-        "share_of_annotations": 0.4466,
-        "annotations_per_worker_paragraph": 0.7904
+        "count": 231,
+        "share_of_annotations": 0.4477,
+        "annotations_per_worker_paragraph": 0.7938
       }
     },
     "subcategory": {
       "bandwagon": {
-        "count": 20,
-        "share_of_annotations": 0.0388,
-        "annotations_per_worker_paragraph": 0.0687
+        "count": 21,
+        "share_of_annotations": 0.0407,
+        "annotations_per_worker_paragraph": 0.0722
       },
       "casual oversimplification": {
         "count": 24,
-        "share_of_annotations": 0.0466,
+        "share_of_annotations": 0.0465,
         "annotations_per_worker_paragraph": 0.0825
       },
       "demonization": {
         "count": 54,
-        "share_of_annotations": 0.1049,
+        "share_of_annotations": 0.1047,
         "annotations_per_worker_paragraph": 0.1856
       },
       "doubt": {
         "count": 49,
-        "share_of_annotations": 0.0951,
+        "share_of_annotations": 0.095,
         "annotations_per_worker_paragraph": 0.1684
       },
       "exaggeration": {
         "count": 106,
-        "share_of_annotations": 0.2058,
+        "share_of_annotations": 0.2054,
         "annotations_per_worker_paragraph": 0.3643
       },
       "name-calling": {
         "count": 89,
-        "share_of_annotations": 0.1728,
+        "share_of_annotations": 0.1725,
         "annotations_per_worker_paragraph": 0.3058
       },
       "no polarizing language": {
         "count": 137,
-        "share_of_annotations": 0.266,
+        "share_of_annotations": 0.2655,
         "annotations_per_worker_paragraph": 0.4708
       },
       "scapegoating": {
@@ -96,7 +96,7 @@
       },
       "slogans": {
         "count": 31,
-        "share_of_annotations": 0.0602,
+        "share_of_annotations": 0.0601,
         "annotations_per_worker_paragraph": 0.1065
       }
     }
@@ -104,13 +104,13 @@
   "span_overlap": {
     "including_npl": {
       "pair_count": 81,
-      "macro_dice_f1": 0.33,
-      "macro_jaccard": 0.223,
-      "micro_dice_f1": 0.305,
-      "micro_jaccard": 0.18,
-      "matched_spans": 157,
-      "total_annotations_a": 372,
-      "total_annotations_b": 658,
+      "macro_dice_f1": 0.331,
+      "macro_jaccard": 0.224,
+      "micro_dice_f1": 0.306,
+      "micro_jaccard": 0.181,
+      "matched_spans": 158,
+      "total_annotations_a": 373,
+      "total_annotations_b": 659,
       "pair_examples": [
         {
           "article_id": "1",
@@ -216,13 +216,13 @@
     },
     "polarizing_only": {
       "pair_count": 81,
-      "macro_dice_f1": 0.205,
-      "macro_jaccard": 0.132,
-      "micro_dice_f1": 0.249,
-      "micro_jaccard": 0.142,
-      "matched_spans": 94,
-      "total_annotations_a": 207,
-      "total_annotations_b": 549,
+      "macro_dice_f1": 0.208,
+      "macro_jaccard": 0.133,
+      "micro_dice_f1": 0.251,
+      "micro_jaccard": 0.143,
+      "matched_spans": 95,
+      "total_annotations_a": 208,
+      "total_annotations_b": 550,
       "pair_examples": [
         {
           "article_id": "1",
@@ -469,22 +469,22 @@
       "krippendorff_alpha_nominal": 0.035
     },
     "subcategory": {
-      "pairwise_percent_agreement": 0.278,
+      "pairwise_percent_agreement": 0.268,
       "pairwise_cohen_kappa": {
         "pair_count": 81,
-        "weighted_mean_kappa": 0.071,
+        "weighted_mean_kappa": 0.076,
         "pair_examples": [
           {
             "worker_a": "-OmAAP2V6LfMLcW1xcaJ",
             "worker_b": "-OmPcs4ctnzMqZagJ_Qz",
             "shared_units": 3,
-            "kappa": 0.4
+            "kappa": 0.143
           },
           {
             "worker_a": "-OmAAP2V6LfMLcW1xcaJ",
             "worker_b": "-OmPsA4Z969wr4Bi5lRq",
             "shared_units": 3,
-            "kappa": 0.0
+            "kappa": -0.125
           },
           {
             "worker_a": "-OmPcs4ctnzMqZagJ_Qz",
@@ -502,7 +502,7 @@
             "worker_a": "-OmABt79XPWN83TU-zKD",
             "worker_b": "-OmjTDiPPtdHTRJrd3DB",
             "shared_units": 4,
-            "kappa": -0.333
+            "kappa": -0.231
           },
           {
             "worker_a": "-OmNRRp4yQtmcpKlQTRa",
@@ -520,7 +520,7 @@
             "worker_a": "-OmACmWrDqnnwFl0oo7D",
             "worker_b": "-OmSH3JAjvhyCq1ZE9k3",
             "shared_units": 3,
-            "kappa": 0.0
+            "kappa": 0.25
           },
           {
             "worker_a": "-OmN7xgAKKQ9_wcmT7qq",
@@ -536,7 +536,7 @@
           }
         ]
       },
-      "krippendorff_alpha_nominal": -0.034
+      "krippendorff_alpha_nominal": 0.033
     },
     "category_one_vs_rest": {
       "no polarizing language": {
@@ -974,12 +974,12 @@
         "krippendorff_alpha_nominal": 0.226
       },
       "bandwagon": {
-        "positive_ratings": 17,
-        "positive_share_of_worker_paragraph_units": 0.0584,
-        "pairwise_percent_agreement": 0.89,
+        "positive_ratings": 18,
+        "positive_share_of_worker_paragraph_units": 0.0619,
+        "pairwise_percent_agreement": 0.883,
         "pairwise_cohen_kappa": {
           "pair_count": 81,
-          "weighted_mean_kappa": 0.662,
+          "weighted_mean_kappa": 0.635,
           "pair_examples": [
             {
               "worker_a": "-OmAAP2V6LfMLcW1xcaJ",
@@ -1043,7 +1043,7 @@
             }
           ]
         },
-        "krippendorff_alpha_nominal": 0.002
+        "krippendorff_alpha_nominal": -0.005
       },
       "casual oversimplification": {
         "positive_ratings": 23,

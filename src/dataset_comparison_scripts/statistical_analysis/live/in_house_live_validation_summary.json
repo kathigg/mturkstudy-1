@@ -1,38 +1,38 @@
 {
   "raw_proposal_level": {
-    "proposal_count": 515,
-    "vote_eligible_proposal_count": 495,
+    "proposal_count": 516,
+    "vote_eligible_proposal_count": 496,
     "no_vote_proposal_count": 20,
-    "vote_total": 1492,
-    "accept_total": 801,
-    "deny_total": 691,
-    "accept_rate": 0.5368632707774799,
+    "vote_total": 1495,
+    "accept_total": 803,
+    "deny_total": 692,
+    "accept_rate": 0.537123745819398,
     "status_counts": {
-      "majority_accept": 251,
+      "majority_accept": 252,
       "majority_deny": 231,
       "tie": 13,
       "no_votes": 20
     },
     "status_rates": {
-      "majority_accept": 0.5070707070707071,
-      "majority_deny": 0.4666666666666667,
-      "no_votes": 0.038834951456310676,
-      "tie": 0.026262626262626262
+      "majority_accept": 0.5080645161290323,
+      "majority_deny": 0.4657258064516129,
+      "no_votes": 0.03875968992248062,
+      "tie": 0.02620967741935484
     },
     "binary_reliability": {
-      "eligible_unit_count": 495,
-      "krippendorff_alpha_nominal": 0.3114700713855916,
-      "mean_pairwise_percent_agreement": 0.6622895622895623,
+      "eligible_unit_count": 496,
+      "krippendorff_alpha_nominal": 0.31016091954022984,
+      "mean_pairwise_percent_agreement": 0.6616263440860215,
       "exact_consensus_count": 244,
-      "exact_consensus_rate": 0.49292929292929294
+      "exact_consensus_rate": 0.49193548387096775
     },
     "by_subcategory": {
       "bandwagon": {
-        "accept": 30,
-        "deny": 26,
-        "instances": 20,
-        "total_votes": 56,
-        "accept_rate": 0.5357142857142857
+        "accept": 32,
+        "deny": 27,
+        "instances": 21,
+        "total_votes": 59,
+        "accept_rate": 0.5423728813559322
       },
       "casual oversimplification": {
         "accept": 35,
@@ -107,20 +107,20 @@
         "accept_rate": 0.41131105398457585
       },
       "persuasive propaganda": {
-        "accept": 404,
-        "deny": 266,
-        "instances": 230,
-        "total_votes": 670,
-        "accept_rate": 0.6029850746268657
+        "accept": 406,
+        "deny": 267,
+        "instances": 231,
+        "total_votes": 673,
+        "accept_rate": 0.6032689450222882
       }
     },
     "by_meta": {
       "Aarush": {
-        "accept": 126,
-        "deny": 156,
-        "instances": 97,
-        "total_votes": 282,
-        "accept_rate": 0.44680851063829785
+        "accept": 128,
+        "deny": 157,
+        "instances": 98,
+        "total_votes": 285,
+        "accept_rate": 0.44912280701754387
       },
       "Ashrey": {
         "accept": 286,
@@ -146,32 +146,32 @@
     }
   },
   "consolidated_cluster_level": {
-    "cluster_count": 409,
-    "vote_eligible_cluster_count": 394,
+    "cluster_count": 410,
+    "vote_eligible_cluster_count": 395,
     "no_vote_cluster_count": 15,
     "status_counts": {
-      "majority_accept": 180,
+      "majority_accept": 181,
       "majority_deny": 203,
       "tie": 11,
       "no_votes": 15
     },
     "status_rates": {
-      "majority_accept": 0.45685279187817257,
-      "majority_deny": 0.5152284263959391,
-      "no_votes": 0.03667481662591687,
-      "tie": 0.027918781725888325
+      "majority_accept": 0.4582278481012658,
+      "majority_deny": 0.5139240506329114,
+      "no_votes": 0.036585365853658534,
+      "tie": 0.027848101265822784
     },
     "binary_reliability": {
-      "eligible_unit_count": 394,
-      "krippendorff_alpha_nominal": 0.2860992020959867,
-      "mean_pairwise_percent_agreement": 0.6476311336717427,
+      "eligible_unit_count": 395,
+      "krippendorff_alpha_nominal": 0.28460200157281823,
+      "mean_pairwise_percent_agreement": 0.6468354430379747,
       "exact_consensus_count": 186,
-      "exact_consensus_rate": 0.4720812182741117
+      "exact_consensus_rate": 0.4708860759493671
     },
-    "final_majority_approved_annotation_count": 180,
+    "final_majority_approved_annotation_count": 181,
     "by_subcategory": {
       "bandwagon": {
-        "majority_accept": 10,
+        "majority_accept": 11,
         "majority_deny": 9,
         "tie": 0,
         "no_votes": 0
@@ -239,7 +239,7 @@
         "no_votes": 4
       },
       "persuasive propaganda": {
-        "majority_accept": 103,
+        "majority_accept": 104,
         "majority_deny": 88,
         "tie": 5,
         "no_votes": 4
@@ -399,12 +399,12 @@
         "approved_final_annotations": 8
       },
       "george conway urges trump to resign over aborted iran strike": {
-        "cluster_count": 20,
-        "majority_accept": 12,
+        "cluster_count": 21,
+        "majority_accept": 13,
         "majority_deny": 8,
         "tie": 0,
         "no_votes": 0,
-        "approved_final_annotations": 12
+        "approved_final_annotations": 13
       },
       "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.": {
         "cluster_count": 20,

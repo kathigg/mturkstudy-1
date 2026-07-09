@@ -611,6 +611,16 @@
       },
       {
         "category": "persuasive propaganda",
+        "subcategory": "bandwagon",
+        "text": "whose judgment no serious, intelligent person trusts",
+        "paragraphIndex": 3,
+        "representativeMeta": "Aarush",
+        "accept": 2,
+        "deny": 1,
+        "clusterMemberCount": 1
+      },
+      {
+        "category": "persuasive propaganda",
         "subcategory": "exaggeration",
         "text": "slamming the commander in chief",
         "paragraphIndex": 3,

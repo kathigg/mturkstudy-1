@@ -1,0 +1,7 @@
+round,scope,units,pairwise_agreement,krippendorff_alpha,exact_consensus_rate,cohen_weighted_mean,notes
+1_initial_collection,paragraph-level open-form (binary),97,0.498,-0.02,0.247,0.19,"97 paragraph units, 3 raters each"
+1_initial_collection,paragraph-level open-form (category),97,0.375,0.035,0.144,0.101,same units as above
+1_initial_collection,paragraph-level open-form (subcategory),97,0.268,0.033,0.082,0.076,same units as above
+2_validation_tool,proposal-level accept/deny (tool voting),495,0.662,0.311,0.493,n/a,495 vote-eligible rows from live validation node
+3_manual_group_resolution,adjudicated subset accept/deny (final cleaned set),106,0.516,-0.317,0.274,n/a,"106 retained rows after discussion (77x2-1, 29x3-0)"
+3_manual_group_resolution_projected,paragraph-level binary (projected onto same 97 units),97,0.512,-0.016,0.268,0.065,Reconstructed post-adjudication binary votes on original 97 paragraph units
