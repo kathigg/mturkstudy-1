@@ -9,7 +9,73 @@ import Papa from "papaparse";
 
 import { database, ref, push } from "../../firebaseConfig";
 import { get, runTransaction } from "firebase/database";
+import instructionVid from "../../Videos/Instruction-Video.mov";
 
+
+
+function IntroScreen({ onDone }) {
+  const [videoDuration, setVideoDuration] = useState(0);
+  const [watchedEnough, setWatchedEnough] = useState(false);
+  const videoRef = useRef(null);
+  const watchedSecondsRef = useRef(new Set());
+
+  const handleTimeUpdate = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    const t = Math.floor(v.currentTime);
+    watchedSecondsRef.current.add(t);
+    if (videoDuration > 0) {
+      const ratio =
+        watchedSecondsRef.current.size / Math.max(1, Math.floor(videoDuration));
+      if (ratio >= 0.98) setWatchedEnough(true);
+    }
+  };
+
+  const handleLoadedMeta = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    setVideoDuration(v.duration || 0);
+  };
+
+  return (
+    <div className="min-h-screen w-full flex items-center justify-center bg-gray-100">
+      <div className="w-full max-w-3xl bg-white rounded-xl shadow p-6">
+        <h1 className="text-2xl font-bold text-center mb-4">
+          Video Tool Guide (Please watch before continuing)
+        </h1>
+
+        <video
+          ref={videoRef}
+          src={instructionVid}
+          controls
+          playsInline
+          className="block mx-auto w-full rounded-lg"
+          onLoadedMetadata={handleLoadedMeta}
+          onTimeUpdate={handleTimeUpdate}
+          onEnded={() => setWatchedEnough(true)}
+        />
+
+        <div className="mt-6 flex justify-center">
+          <button
+            className={
+              watchedEnough
+                ? "px-5 py-2 rounded text-white bg-blue-600 hover:bg-blue-700"
+                : "px-5 py-2 rounded text-white bg-gray-400 cursor-not-allowed"
+            }
+            disabled={!watchedEnough}
+            onClick={onDone}
+          >
+            Next: Select Article Index
+          </button>
+        </div>
+
+        <p className="mt-3 text-xs text-center text-gray-500">
+          You must watch the full video before continuing.
+        </p>
+      </div>
+    </div>
+  );
+}
 
 function TaskClosedScreen() {
   return (
@@ -29,7 +95,7 @@ function TaskClosedScreen() {
 }
 
 // --- Selection constraints ---
-const MIN_WORDS = 4;
+const MIN_WORDS = 1;
 const MAX_WORDS = 25;
 
 const countWords = (t = "") => (t.trim() ? t.trim().split(/\s+/).length : 0);
@@ -150,6 +216,7 @@ const DropdownItem = ({ icon, title, children, openTitle, setOpenTitle, color })
 
 function ToolMain() {
     console.log("YAY Loaded NewsAnnotationTool");
+    const [introDone, setIntroDone] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(null); 
     const [showNoPolarizingPopup, setShowNoPolarizingPopup] = useState(false);
     const [pendingNoPolarizingConfirm, setPendingNoPolarizingConfirm] = useState(false); // commented out the variable pendingNoPolarizingConfirm
@@ -871,6 +938,7 @@ const handleNextArticle = async () => {
   );
 }
       if (articles.length === 0) {
+        if (!introDone) return <IntroScreen onDone={() => setIntroDone(true)} />;
         return (
           <div className="min-h-screen w-full flex items-center justify-center bg-gray-100">
             <div className="w-full max-w-md bg-white rounded-xl shadow p-6 text-center">
@@ -878,6 +946,26 @@ const handleNextArticle = async () => {
               <p className="text-sm text-gray-700 mb-4">
                 Enter an article index from 0 to {Math.max(0, allArticles.length - 1)}.
               </p>
+
+<div className="mt-5 bg-gray-50 border border-gray-200 rounded-lg p-4 text-left">
+  <p className="text-sm font-semibold text-gray-800 mb-2">
+    Please read these definitions carefully before starting:
+  </p>
+
+  <div className="mb-4">
+    <p className="font-bold text-yellow-700 mb-1">Persuasive Propaganda</p>
+    <p className="text-sm text-gray-700 leading-relaxed">
+      Uses repeated, agenda-driven messaging to shape people’s beliefs or loyalty over time. It often relies on selective facts, framing, slogans, or repetition. The main goal is persuasion.
+    </p>
+  </div>
+
+  <div>
+    <p className="font-bold text-red-700 mb-1">Inflammatory Language</p>
+    <p className="text-sm text-gray-700 leading-relaxed">
+      Uses hostile, charged, or insulting words to trigger an immediate emotional reaction. It is meant to spark anger, fear, outrage, or division. The main goal is provocation.
+    </p>
+  </div>
+</div>
               <input
                 type="number"
                 min="0"
@@ -1047,6 +1135,8 @@ const handleNextArticle = async () => {
     Persuasive Propaganda
   </strong>
 
+  <p className="category-definition-pp text-sm text-gray-700 text-left mt-3 mb-4 leading-relaxed">Uses repeated, agenda-driven messaging to shape people’s beliefs or loyalty over time. It often relies on selective facts, framing, slogans, or repetition. The main goal is persuasion.</p>
+
   <DropdownItem title="Exaggeration" openTitle={openDropdown} setOpenTitle={setOpenDropdown} color="yellow">
     <div className="mt-2 ml-4 text-left text-gray-800 space-y-2 py-3">
       <p className="text-base leading-relaxed">
@@ -1141,6 +1231,8 @@ const handleNextArticle = async () => {
   <strong className="text-red-700 text-center block mb-4 text-lg font-semibold">
     Inflammatory Language
   </strong>
+
+  <p className="category-definition-il text-sm text-gray-700 text-left mt-3 mb-4 leading-relaxed">Uses hostile, charged, or insulting words to trigger an immediate emotional reaction. It is meant to spark anger, fear, outrage, or division. The main goal is provocation.</p>
 
   <DropdownItem title="Name-Calling" openTitle={openDropdown} setOpenTitle={setOpenDropdown} color="red">
     <div className="mt-2 ml-4 text-left text-gray-800 space-y-2 py-3">
@@ -1403,15 +1495,44 @@ const handleNextArticle = async () => {
     <p className="text-sm ml-3 text-left">
     You will annotate <strong>1 news article</strong>. Please follow these steps for each paragraph:
   </p>
+
+<div className="mt-4">
+  <DropdownItem
+    title="Category Definitions"
+    openTitle={openDropdown}
+    setOpenTitle={setOpenDropdown}
+    color="blue"
+  >
+    <div className="mt-2 ml-1 text-left text-gray-800 space-y-4 py-2">
+      <div>
+        <p className="font-bold text-yellow-700 mb-1">Persuasive Propaganda</p>
+        <p className="text-sm text-gray-700 leading-relaxed">
+          Uses repeated, agenda-driven messaging to shape people’s beliefs or loyalty over time. It often relies on selective facts, framing, slogans, or repetition. The main goal is persuasion.
+        </p>
+      </div>
+
+      <div>
+        <p className="font-bold text-red-700 mb-1">Inflammatory Language</p>
+        <p className="text-sm text-gray-700 leading-relaxed">
+          Uses hostile, charged, or insulting words to trigger an immediate emotional reaction. It is meant to spark anger, fear, outrage, or division. The main goal is provocation.
+        </p>
+      </div>
+
+      <p className="text-xs text-gray-500">
+        Please read these carefully before making decisions.
+      </p>
+    </div>
+  </DropdownItem>
+</div>
   <div className="h-4 text-left" />
   <div className="h-4 text-left" />
   <ul className="list-decimal text-left ml-5 list-inside text-sm space-y-1">
     <li>
-      <strong>Highlight a section of text</strong> between 4 and 25 words that you want to annotate.
+      <strong>Highlight a section of text</strong> between 1 and 25 words that you want to annotate. Only highlight the most prominent category.
     </li>
     <div className="h-3" />
     <li>
-      Scroll down and <strong>select a category</strong> using either the buttons or the dropdown menu (e.g., <em>Flame Rhetoric</em> or <em>Persuasive Propaganda</em>).
+      Scroll down and <strong>select a category</strong> using either the buttons or the dropdown menu (e.g., <em>Imflammatory Language</em> or <em>Persuasive Propaganda</em>).
     </li>
     <div className="h-3" />
     <li>
@@ -1423,7 +1544,7 @@ const handleNextArticle = async () => {
     </li>
     <div className="h-3" />
     <li>
-      After making at least 1 annotation per paragraph select <strong>"Submit"</strong> to move on to the post-annotation survey.
+      After making 1 annotation per paragraph select <strong>"Submit"</strong> to move on to the post-annotation survey.
     </li>
     <div className="h-3" />
     <li>
