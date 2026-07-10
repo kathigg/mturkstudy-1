@@ -1,0 +1,66 @@
+{
+  "source_files": {
+    "raw_precision_recall": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/bagozzi_vs_original_unadjudicated_inhouse_precision_recall.json",
+    "final_inhouse": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/final_inhouse_adjudicated_gold_standard_output.json",
+    "bagozzi": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/bagozzi_27_human_min_one_gold_standard_output.json",
+    "agreed_spans": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/inhouse_bagozzi_agreed_polarizing_spans.csv",
+    "live_three_way": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/live/in_house_live_validation_three_way_split_clusters.csv",
+    "four_articles": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/turker_training_set_four_articles_consensus_final.json"
+  },
+  "definitions": {
+    "started_inhouse": "raw individual polarizing in-house annotations",
+    "final_2of3_label": "final in-house polarizing annotations with vote_pattern == 2-1",
+    "bagozzi_annotations": "Dr. Bagozzi polarizing annotations",
+    "sankey_overlap": "greedy retained agreed polarizing spans with inhouse_vote_pattern == 2-1",
+    "agreement_overlap": "direct existence overlap from live three-way validation clusters against Dr. Bagozzi polarizing annotations",
+    "exact_overlap": "normalized span text is identical",
+    "partial_overlap": "repo spans_match returned true, but normalized span text was not identical"
+  },
+  "sankey_counts": {
+    "inhouse_started_polarizing_raw_individual": 379,
+    "final_inhouse_polarizing": 167,
+    "final_inhouse_2of3_polarizing": 69,
+    "bagozzi_polarizing": 117,
+    "greedy_2of3_inhouse_bagozzi_agreed_spans": 20
+  },
+  "overlap_counts": {
+    "2-1": {
+      "total": 71,
+      "exact": 5,
+      "partial": 18,
+      "overlap_total": 23,
+      "none": 48
+    },
+    "1-2": {
+      "total": 95,
+      "exact": 4,
+      "partial": 16,
+      "overlap_total": 20,
+      "none": 75
+    }
+  },
+  "four_article_annotation_counts": {
+    "George Conway Urges Trump To Resign Over Aborted Iran Strike": 7,
+    "Trump Rips 'Horrible' New York Times, Washington Post, Wonders If People Will 'Demand' He Stay In White House": 8,
+    "'Every American Is Entitled To Health Care': Sen. Bernie Sanders": 3,
+    "'We Are Livid!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized": 5
+  },
+  "four_article_spans_mean": 5.75,
+  "four_article_spans_median": 6.0,
+  "four_article_subcategory_counts": {
+    "name-calling": 10,
+    "exaggeration": 5,
+    "doubt": 2,
+    "bandwagon": 1,
+    "slogans": 1,
+    "demonization": 1,
+    "scapegoating": 2,
+    "casual oversimplification": 1
+  },
+  "figures": {
+    "sankey": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/figures/sankey_inhouse_bagozzi_annotation_funnel.png",
+    "agreement_overlap": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/figures/agreement_exact_vs_partial_span_overlap.png",
+    "heatmap": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/figures/four_article_category_subcategory_heatmap.png",
+    "coverage": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/figures/four_article_coverage_by_annotation_category.png"
+  }
+}
