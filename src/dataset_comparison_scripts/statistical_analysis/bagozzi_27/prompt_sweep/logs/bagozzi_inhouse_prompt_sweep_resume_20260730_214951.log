@@ -1,0 +1,186 @@
+{
+  "definition": "Consolidated Bagozzi/final in-house overlap gold. Includes only polarizing spans where Dr. Bagozzi and final in-house adjudicated annotations overlap. Labels use the agreed CSV category/subcategory, which is Bagozzi-priority when labels differ.",
+  "article_count": 27,
+  "articles_with_annotations": 25,
+  "annotation_count": 70,
+  "category_counts": {
+    "Persuasive Propaganda": 37,
+    "Inflammatory Language": 33
+  },
+  "subcategory_counts": {
+    "exaggeration": 18,
+    "name-calling": 26,
+    "demonization": 5,
+    "slogans": 6,
+    "doubt": 10,
+    "scapegoating": 2,
+    "casual oversimplification": 2,
+    "bandwagon": 1
+  },
+  "unmatched_overlap_titles": [],
+  "inputs": {
+    "articles_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv",
+    "agreed_spans_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/inhouse_bagozzi_agreed_polarizing_spans.csv"
+  },
+  "output": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
+  "summary": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_summary.json"
+}
+  0%|          | 0/27 [00:00<?, ?it/s] 15%|█▍        | 4/27 [01:01<05:53, 15.37s/it] 19%|█▊        | 5/27 [01:38<07:41, 20.98s/it] 22%|██▏       | 6/27 [02:23<09:38, 27.57s/it] 22%|██▏       | 6/27 [03:11<11:09, 31.89s/it]
+Traceback (most recent call last):
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1546, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1464, in main
+    obj_c, raw_c = annotate_with_openai(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 832, in annotate_with_openai
+    raise ValueError(f"OpenAI returned JSON failed schema validation: {err}\n\n{json_str}")
+ValueError: OpenAI returned JSON failed schema validation: 'annotations' is a required property
+
+Failed validating 'required' in schema:
+    {'type': 'object',
+     'properties': {'title': {'type': 'string'},
+                    'topic': {'type': 'string'},
+                    'source': {'type': 'string'},
+                    'rating': {'type': 'string'},
+                    'annotations': {'type': 'array',
+                                    'minItems': 1,
+                                    'items': {'type': 'object',
+                                              'properties': {'category': {'type': 'string',
+                                                                          'enum': ['Persuasive '
+                                                                                   'Propaganda',
+                                                                                   'Inflammatory '
+                                                                                   'Language',
+                                                                                   'No '
+                                                                                   'Polarizing '
+                                                                                   'language']},
+                                                             'subcategory': {'type': 'string',
+                                                                             'enum': ['exaggeration',
+                                                                                      'slogans',
+                                                                                      'bandwagon',
+                                                                                      'causal '
+                                                                                      'oversimplification',
+                                                                                      'casual '
+                                                                                      'oversimplification',
+                                                                                      'doubt',
+                                                                                      'name-calling',
+                                                                                      'demonization',
+                                                                                      'scapegoating',
+                                                                                      'no '
+                                                                                      'polarizing '
+                                                                                      'language']},
+                                                             'text': {'type': 'string',
+                                                                      'minLength': 4,
+                                                                      'maxLength': 600},
+                                                             'openFeedback': {'type': 'string',
+                                                                              'minLength': 1},
+                                                             'paragraphIndex': {'type': 'integer'}},
+                                              'required': ['category',
+                                                           'subcategory',
+                                                           'text',
+                                                           'openFeedback',
+                                                           'paragraphIndex'],
+                                              'additionalProperties': False}}},
+     'required': ['title', 'topic', 'source', 'rating', 'annotations'],
+     'additionalProperties': False}
+
+On instance:
+    {'paragraphAnnotations': [{'text': "you're even more of an idiot than "
+                                       'people think you are',
+                               'category': 'Inflammatory Language',
+                               'subcategory': 'Name-Calling',
+                               'paragraphIndex': 0},
+                              {'text': 'To say this is amateur hour would '
+                                       'defame amateurs',
+                               'category': 'Inflammatory Language',
+                               'subcategory': 'Name-Calling',
+                               'paragraphIndex': 0},
+                              {'text': "you're even more of an idiot than "
+                                       'people think you are',
+                               'category': 'Inflammatory Language',
+                               'subcategory': 'Name-Calling',
+                               'paragraphIndex': 1},
+                              {'text': 'To say this is amateur hour would '
+                                       'defame amateurs',
+                               'category': 'Inflammatory Language',
+                               'subcategory': 'Name-Calling',
+                               'paragraphIndex': 1},
+                              {'text': 'no polarizing language selected',
+                               'category': 'No Polarizing language',
+                               'subcategory': 'no polarizing language',
+                               'paragraphIndex': 2},
+                              {'text': 'no polarizing language selected',
+                               'category': 'No Polarizing language',
+                               'subcategory': 'no polarizing language',
+                               'paragraphIndex': 3},
+                              {'text': 'erratic, unstable, incompetent, '
+                                       'ignorant, intellectually lazy, '
+                                       'narcissistic, and sociopathic man',
+                               'category': 'Inflammatory Language',
+                               'subcategory': 'Name-Calling',
+                               'paragraphIndex': 4}],
+     'title': 'george conway urges trump to resign over aborted iran '
+              'strike',
+     'topic': 'science',
+     'source': 'The Boston Globe',
+     'rating': 'left'}
+
+{
+  "paragraphAnnotations": [
+    {
+      "text": "you're even more of an idiot than people think you are",
+      "category": "Inflammatory Language",
+      "subcategory": "Name-Calling",
+      "paragraphIndex": 0
+    },
+    {
+      "text": "To say this is amateur hour would defame amateurs",
+      "category": "Inflammatory Language",
+      "subcategory": "Name-Calling",
+      "paragraphIndex": 0
+    },
+    {
+      "text": "you're even more of an idiot than people think you are",
+      "category": "Inflammatory Language",
+      "subcategory": "Name-Calling",
+      "paragraphIndex": 1
+    },
+    {
+      "text": "To say this is amateur hour would defame amateurs",
+      "category": "Inflammatory Language",
+      "subcategory": "Name-Calling",
+      "paragraphIndex": 1
+    },
+    {
+      "text": "no polarizing language selected",
+      "category": "No Polarizing language",
+      "subcategory": "no polarizing language",
+      "paragraphIndex": 2
+    },
+    {
+      "text": "no polarizing language selected",
+      "category": "No Polarizing language",
+      "subcategory": "no polarizing language",
+      "paragraphIndex": 3
+    },
+    {
+      "text": "erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man",
+      "category": "Inflammatory Language",
+      "subcategory": "Name-Calling",
+      "paragraphIndex": 4
+    }
+  ]
+}
+/Users/kathleenhiggins/miniforge3/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/build_consolidated_bagozzi_inhouse_gold.py --output /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json
+/Users/kathleenhiggins/miniforge3/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv --results-csv /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/raw_results.csv --final-json /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/final_annotations.json --final-jsonl /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/bagozzi_inhouse_fewshot/prompt_v1_conservative.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 2 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
+Traceback (most recent call last):
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py", line 360, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py", line 306, in main
+    run_command(cmd)
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py", line 191, in run_command
+    subprocess.run(cmd, check=True)
+  File "/Users/kathleenhiggins/miniforge3/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/kathleenhiggins/miniforge3/bin/python', '/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py', '--input', '/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv', '--results-csv', '/Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/raw_results.csv', '--final-json', '/Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/final_annotations.json', '--final-jsonl', '/Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/final_annotations.jsonl', '--prompt-addendum-file', '/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/bagozzi_inhouse_fewshot/prompt_v1_conservative.md', '--temperature', '0.0', '--paragraph-policy', 'min-one', '--checkpoint-every', '1', '--max-retries', '2', '--openai-model', 'gpt-5.1', '--gemini-model', 'gemini-3.1-pro-preview', '--claude-model', 'claude-sonnet-5', '--claude-adjudicator-model', 'claude-opus-4-8', '--annotator-b-provider', 'gemini', '--annotator-c-provider', 'anthropic', '--adjudicator-provider', 'anthropic', '--resume']' returned non-zero exit status 1.

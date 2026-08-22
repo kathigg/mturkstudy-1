@@ -1,0 +1,74 @@
+{
+  "method": "MTurk-style binary validation: model sees article text and candidate span only; hidden true/ringer labels are not included in the prompt.",
+  "candidate_source": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/turker_training_set_four_articles_with_ringers.json",
+  "model": "gpt-5-mini",
+  "temperature": 0.0,
+  "model_visible_items": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/gpt5_mini_binary_validation_with_ringers/study_items_for_model_no_gold.json",
+  "hidden_gold_key": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/gpt5_mini_binary_validation_with_ringers/hidden_gold_key.json",
+  "raw_responses": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/gpt5_mini_binary_validation_with_ringers/raw_gpt5_mini_responses.jsonl",
+  "results_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/gpt5_mini_binary_validation_with_ringers/gpt5_mini_binary_validation_results.csv",
+  "scores": {
+    "total_items": 31,
+    "gold_polarizing_items": 23,
+    "gold_not_polarizing_ringers": 8,
+    "correct": 28,
+    "incorrect": 3,
+    "accuracy": 0.903,
+    "confusion_matrix": {
+      "true_positive": 20,
+      "false_negative": 3,
+      "true_negative": 8,
+      "false_positive": 0
+    },
+    "polarizing_precision": 1.0,
+    "polarizing_recall_sensitivity": 0.87,
+    "not_polarizing_specificity": 1.0,
+    "negative_predictive_value": 0.727,
+    "by_source_annotation_type": {
+      "true_annotation": {
+        "total": 23,
+        "correct": 20,
+        "accuracy": 0.87,
+        "marked_polarizing": 20,
+        "marked_not_polarizing": 3
+      },
+      "false_annotation_ringer": {
+        "total": 8,
+        "correct": 8,
+        "accuracy": 1.0,
+        "marked_polarizing": 0,
+        "marked_not_polarizing": 8
+      }
+    },
+    "by_article": {
+      "'Every American Is Entitled To Health Care': Sen. Bernie Sanders": {
+        "total": 5,
+        "correct": 5,
+        "accuracy": 1.0,
+        "true_annotations": 3,
+        "ringers": 2
+      },
+      "'We Are Livid!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized": {
+        "total": 7,
+        "correct": 5,
+        "accuracy": 0.714,
+        "true_annotations": 5,
+        "ringers": 2
+      },
+      "George Conway Urges Trump To Resign Over Aborted Iran Strike": {
+        "total": 9,
+        "correct": 8,
+        "accuracy": 0.889,
+        "true_annotations": 7,
+        "ringers": 2
+      },
+      "Trump Rips 'Horrible' New York Times, Washington Post, Wonders If People Will 'Demand' He Stay In White House": {
+        "total": 10,
+        "correct": 10,
+        "accuracy": 1.0,
+        "true_annotations": 8,
+        "ringers": 2
+      }
+    }
+  }
+}

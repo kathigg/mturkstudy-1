@@ -4,7 +4,7 @@ Multiple LLM Annotations Script (Python CLI)
 This is a cleaned, runnable version of the Colab notebook export.
 It:
   - Reads a CSV of articles (Headline, News body, Topic, News Source, Rating)
-  - Runs 3 annotators (OpenAI A, Gemini B, OpenAI C) + an OpenAI adjudicator
+  - Runs LLM annotators (OpenAI A, Gemini B, optional OpenAI C) + an adjudicator
   - Saves per-article raw JSON strings to a CSV
   - Saves final adjudicated annotations to a JSON file
 
@@ -12,7 +12,7 @@ Requirements:
   pip install -r src/dataset_comparison_scripts/requirements_llm_notebook.txt
 
 Environment variables:
-  OPENAI_API_KEY, GEMINI_API_KEY (required unless --dry-run)
+  OPENAI_API_KEY, GEMINI_API_KEY, ANTHROPIC_API_KEY as needed by selected providers (required unless --dry-run)
 
 Example:
   python "src/dataset_comparison_scripts/multiple_llm_annotations_script (1).py" \
@@ -121,6 +121,67 @@ ANNOTATION RULES
 - Return valid JSON ONLY; no backticks, no extra prose.
 """
 
+PROMPT_ADDENDUM = ""
+DEFAULT_PROMPT_VERSION = "v1_current"
+PROMPT_VERSION_ADDENDA: dict[str, str] = {
+    "v1_current": "",
+    "v2_fewshot_conservative": """
+FEW-SHOT CALIBRATION: CONSERVATIVE HUMAN-ALIGNED SPAN SELECTION
+
+Accepted examples:
+- "virtual act of treason" -> Inflammatory Language / demonization
+- "even more of an idiot than people think you are" -> Inflammatory Language / name-calling
+- "Suppression Polls (they suppress the numbers)" -> Persuasive Propaganda / doubt
+- "whose judgment no serious, intelligent person trusts" -> Persuasive Propaganda / bandwagon
+
+Rejected examples:
+- "Trump lashed out at Pelosi" -> neutral reporting of a conflict; do not annotate unless the quoted words are loaded.
+- "they have got to talk to the needs of the working class" -> ordinary political appeal without clear bandwagon pressure.
+- "a question that unions and companies frequently spar over" -> neutral context, not manipulative wording.
+- "before a tyrant" -> too short and too context-dependent by itself.
+
+Calibration rule: prefer fewer, clearer spans. The selected span itself must contain the persuasive or inflammatory move.
+""",
+    "v3_fewshot_bagozzi_inhouse": """
+FEW-SHOT CALIBRATION: BAGOZZI + FINAL IN-HOUSE CONSENSUS
+
+Use the stricter interpretation implied by the Bagozzi/final in-house overlap set.
+
+Accepted examples:
+- "a disgrace to our Country" -> Inflammatory Language / name-calling
+- "the Enemy of the People" -> Inflammatory Language / demonization
+- "fake news" -> Inflammatory Language / name-calling
+- "dysfunctional system" -> Persuasive Propaganda / exaggeration
+- "private corporations to make billions of dollars in profits off Americans' health care" -> Persuasive Propaganda / exaggeration
+
+Rejected examples:
+- Neutral narration that someone criticized, attacked, mocked, claimed, or responded.
+- Broad policy disagreement without a loaded phrase in the selected span.
+- Background context about controversy when the language itself is descriptive.
+- Duplicative overlapping spans when a shorter exact span captures the same cue.
+
+Calibration rule: select the shortest exact span that preserves the cue. When labels are ambiguous, prefer Dr. Bagozzi-style labels: direct insults are name-calling, threat/evil/corruption framing is demonization, uncertainty-undermining claims are doubt, and popularity/social-pressure appeals are bandwagon.
+""",
+}
+
+
+def set_prompt_addendum(text: str | None) -> None:
+    global PROMPT_ADDENDUM
+    PROMPT_ADDENDUM = (text or "").strip()
+
+
+def set_prompt_version(prompt_version: str) -> None:
+    if prompt_version not in PROMPT_VERSION_ADDENDA:
+        allowed = ", ".join(sorted(PROMPT_VERSION_ADDENDA))
+        raise ValueError(f"Unknown prompt version {prompt_version!r}; choose one of: {allowed}")
+    set_prompt_addendum(PROMPT_VERSION_ADDENDA[prompt_version])
+
+
+def get_system_instructions() -> str:
+    if not PROMPT_ADDENDUM:
+        return SYSTEM_INSTRUCTIONS
+    return SYSTEM_INSTRUCTIONS.rstrip() + "\n\n=====================\nPROMPT VERSION ADDENDUM\n=====================\n" + PROMPT_ADDENDUM
+
 
 ANNOTATION_SCHEMA: dict[str, Any] = {
     "type": "object",
@@ -178,13 +239,34 @@ def validate_annotation(obj: dict[str, Any]) -> tuple[bool, str | None]:
 
 def extract_json_from_text(text: str) -> str:
     text = (text or "").strip()
-    if text.startswith("{") and text.endswith("}"):
-        return text
     start = text.find("{")
-    end = text.rfind("}")
-    if start == -1 or end == -1 or end <= start:
+    if start == -1:
         raise ValueError("No JSON object found in model output.")
-    return text[start : end + 1]
+
+    depth = 0
+    in_string = False
+    escaped = False
+    for pos in range(start, len(text)):
+        char = text[pos]
+        if escaped:
+            escaped = False
+            continue
+        if char == "\\" and in_string:
+            escaped = True
+            continue
+        if char == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if char == "{":
+            depth += 1
+        elif char == "}":
+            depth -= 1
+            if depth == 0:
+                return text[start : pos + 1]
+
+    raise ValueError("No complete JSON object found in model output.")
 
 
 def load_json_with_backslash_repair(text: str) -> dict[str, Any]:
@@ -197,6 +279,34 @@ def load_json_with_backslash_repair(text: str) -> dict[str, Any]:
     # Some model outputs include a stray backslash inside normal prose.
     repaired = re.sub(r'\\(?!["\\/bfnrtu])', r"\\\\", text)
     return json.loads(repaired)
+
+
+def coerce_article_annotation_object(obj: dict[str, Any], *, title: str, topic: str, source: str, rating: str) -> dict[str, Any]:
+    if isinstance(obj.get("annotations"), list):
+        return obj
+    if isinstance(obj.get("paragraphAnnotations"), list):
+        obj["annotations"] = obj.pop("paragraphAnnotations")
+        return obj
+    if isinstance(obj.get("paragraphs"), list):
+        obj["annotations"] = obj.pop("paragraphs")
+        return obj
+
+    annotation_keys = {"category", "subcategory", "text", "paragraphIndex"}
+    if annotation_keys & set(obj):
+        annotation = {
+            key: value
+            for key, value in obj.items()
+            if key not in {"title", "topic", "source", "rating", "annotations"}
+        }
+        return {
+            "title": title,
+            "topic": topic,
+            "source": source,
+            "rating": rating,
+            "annotations": [annotation],
+        }
+
+    return obj
 
 
 def normalize_annotation_enums(obj: dict[str, Any]) -> dict[str, Any]:
@@ -616,10 +726,14 @@ def build_user_prompt_for_annotation(article_block: str) -> str:
 class ModelConfig:
     openai_model: str
     gemini_model: str
+    claude_model: str
     adjudicator_model: str
     paragraph_policy: str = "exact-one"
     temperature: float = 0.1
     annotator_b_provider: str = "gemini"  # "gemini" (default) or "openai"
+    annotator_c_provider: str = "openai"  # "openai" (default), "anthropic", or "none"
+    adjudicator_provider: str = "openai"  # "openai" (default) or "anthropic"
+    prompt_version: str = DEFAULT_PROMPT_VERSION
 
 
 def _retry(call, *, max_retries: int, base_sleep_s: float = 1.0):
@@ -636,19 +750,27 @@ def _retry(call, *, max_retries: int, base_sleep_s: float = 1.0):
     raise last_exc  # pragma: no cover
 
 
-def _require_keys(unless_dry_run: bool, *, require_gemini: bool = True):
+def _require_keys(unless_dry_run: bool, *, require_gemini: bool = True, require_anthropic: bool = False):
     if unless_dry_run:
         return
     if not os.environ.get("OPENAI_API_KEY"):
         raise RuntimeError("Missing OPENAI_API_KEY env var.")
     if require_gemini and not os.environ.get("GEMINI_API_KEY"):
         raise RuntimeError("Missing GEMINI_API_KEY env var.")
+    if require_anthropic and not os.environ.get("ANTHROPIC_API_KEY"):
+        raise RuntimeError("Missing ANTHROPIC_API_KEY env var.")
 
 
 def _openai_client():
     from openai import OpenAI
 
     return OpenAI()
+
+
+def _anthropic_openai_compat_client():
+    from openai import OpenAI
+
+    return OpenAI(api_key=os.environ.get("ANTHROPIC_API_KEY"), base_url="https://api.anthropic.com/v1/")
 
 
 def _gemini_client():
@@ -682,24 +804,27 @@ def annotate_dry_run(title: str, topic: str, source: str, rating: str, body: str
     return obj, raw
 
 
-def annotate_with_openai(client, role_desc: str, article_block: str, title: str, topic: str, source: str, rating: str, *, body: str, model: str, temperature: float, max_retries: int):
+def annotate_with_openai(client, role_desc: str, article_block: str, title: str, topic: str, source: str, rating: str, *, body: str, model: str, temperature: float | None, max_retries: int):
     user_prompt = build_user_prompt_for_annotation(article_block)
 
     def _call():
-        return client.chat.completions.create(
-            model=model,
-            temperature=temperature,
-            messages=[
-                {"role": "system", "content": SYSTEM_INSTRUCTIONS + "\n\n" + role_desc},
+        request_kwargs = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": get_system_instructions() + "\n\n" + role_desc},
                 {"role": "user", "content": user_prompt},
             ],
-        )
+        }
+        if temperature is not None:
+            request_kwargs["temperature"] = temperature
+        return client.chat.completions.create(**request_kwargs)
 
     completion = _retry(_call, max_retries=max_retries)
     raw = completion.choices[0].message.content.strip()
     json_str = extract_json_from_text(raw)
     obj = load_json_with_backslash_repair(json_str)
 
+    obj = coerce_article_annotation_object(obj, title=title, topic=topic, source=source, rating=rating)
     obj.setdefault("title", title)
     obj.setdefault("topic", topic)
     obj.setdefault("source", source)
@@ -718,7 +843,7 @@ def annotate_with_gemini(client, role_desc: str, article_block: str, title: str,
     user_prompt = build_user_prompt_for_annotation(article_block)
     prompt = (
         "SYSTEM INSTRUCTIONS:\n"
-        + SYSTEM_INSTRUCTIONS
+        + get_system_instructions()
         + "\n\nJSON SCHEMA (YOU MUST FOLLOW THIS EXACTLY):\n"
         + json.dumps(ANNOTATION_SCHEMA)
         + "\n\nROLE:\n"
@@ -739,6 +864,7 @@ def annotate_with_gemini(client, role_desc: str, article_block: str, title: str,
     json_str = extract_json_from_text(raw)
     obj = load_json_with_backslash_repair(json_str)
 
+    obj = coerce_article_annotation_object(obj, title=title, topic=topic, source=source, rating=rating)
     obj.setdefault("title", title)
     obj.setdefault("topic", topic)
     obj.setdefault("source", source)
@@ -761,38 +887,38 @@ def adjudicate_with_openai(
     rating: str,
     obj_a: dict[str, Any],
     obj_b: dict[str, Any],
-    obj_c: dict[str, Any],
+    obj_c: dict[str, Any] | None,
     *,
     body: str,
     model: str,
-    temperature: float,
+    temperature: float | None,
     max_retries: int,
     paragraph_policy: str,
 ):
     adjudicator_system = """
-You are the Adjudicator, a methods-oriented political scientist overseeing three annotators.
+You are the Adjudicator, a methods-oriented political scientist overseeing independent annotators.
 
 Your goal: produce ONE final set of annotations.
 Constraints:
 - Output must strictly match the provided JSON schema.
-- You may only select from the annotations that appear in the three annotator JSON objects.
+- You may only select from the annotations that appear in the provided annotator JSON objects.
 - You may merge only exact duplicates (same category, same subcategory, same text, same paragraphIndex).
 - Do NOT invent new spans.
 - Be conservative: if unsure, choose No Polarizing language.
 """
 
+    annotator_blocks = [
+        "ANNOTATOR_A_JSON:\n" + json.dumps(obj_a, ensure_ascii=False),
+        "ANNOTATOR_B_JSON:\n" + json.dumps(obj_b, ensure_ascii=False),
+    ]
+    if obj_c is not None:
+        annotator_blocks.append("ANNOTATOR_C_JSON:\n" + json.dumps(obj_c, ensure_ascii=False))
+
     user_prompt = f"""
 ARTICLE:
 {article_block}
 
-ANNOTATOR_A_JSON:
-{json.dumps(obj_a, ensure_ascii=False)}
-
-ANNOTATOR_B_JSON:
-{json.dumps(obj_b, ensure_ascii=False)}
-
-ANNOTATOR_C_JSON:
-{json.dumps(obj_c, ensure_ascii=False)}
+{chr(10).join(annotator_blocks)}
 
 Return ONLY the final JSON object.
 Meta fields must be set to:
@@ -800,20 +926,23 @@ Meta fields must be set to:
 """
 
     def _call():
-        return client.chat.completions.create(
-            model=model,
-            temperature=temperature,
-            messages=[
-                {"role": "system", "content": adjudicator_system + "\n\nJSON_SCHEMA:\n" + json.dumps(ANNOTATION_SCHEMA)},
+        request_kwargs = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": adjudicator_system + "\n\n" + get_system_instructions() + "\n\nJSON_SCHEMA:\n" + json.dumps(ANNOTATION_SCHEMA)},
                 {"role": "user", "content": user_prompt},
             ],
-        )
+        }
+        if temperature is not None:
+            request_kwargs["temperature"] = temperature
+        return client.chat.completions.create(**request_kwargs)
 
     completion = _retry(_call, max_retries=max_retries)
     raw = completion.choices[0].message.content.strip()
     json_str = extract_json_from_text(raw)
     obj = load_json_with_backslash_repair(json_str)
 
+    obj = coerce_article_annotation_object(obj, title=title, topic=topic, source=source, rating=rating)
     obj.setdefault("title", title)
     obj.setdefault("topic", topic)
     obj.setdefault("source", source)
@@ -830,10 +959,15 @@ Meta fields must be set to:
 def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retries: int):
     openai_client = None
     gemini_client = None
+    anthropic_client = None
+    adjudicator_client = None
     if not dry_run:
         openai_client = _openai_client()
         if cfg.annotator_b_provider == "gemini":
             gemini_client = _gemini_client()
+        if cfg.annotator_c_provider == "anthropic" or cfg.adjudicator_provider == "anthropic":
+            anthropic_client = _anthropic_openai_compat_client()
+        adjudicator_client = anthropic_client if cfg.adjudicator_provider == "anthropic" else openai_client
 
     results: list[dict[str, Any]] = []
     final_annotations: list[dict[str, Any]] = []
@@ -844,7 +978,10 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
         if dry_run:
             obj_a, raw_a = annotate_dry_run(title, topic, source, rating, body)
             obj_b, raw_b = annotate_dry_run(title, topic, source, rating, body)
-            obj_c, raw_c = annotate_dry_run(title, topic, source, rating, body)
+            if cfg.annotator_c_provider == "none":
+                obj_c, raw_c = None, ""
+            else:
+                obj_c, raw_c = annotate_dry_run(title, topic, source, rating, body)
             final_obj, final_raw = annotate_dry_run(title, topic, source, rating, body)
         else:
             obj_a, raw_a = annotate_with_openai(
@@ -891,22 +1028,41 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
             else:
                 raise ValueError(f"Unknown annotator_b_provider: {cfg.annotator_b_provider!r}")
 
-            obj_c, raw_c = annotate_with_openai(
-                openai_client,
-                "You are Annotator C, a conservative/high-precision media psychology expert. Be conservative: only label when explicit; if unsure, choose No Polarizing language.",
-                article_block,
-                title,
-                topic,
-                source,
-                rating,
-                body=body,
-                model=cfg.openai_model,
-                temperature=cfg.temperature,
-                max_retries=max_retries,
-            )
+            if cfg.annotator_c_provider == "openai":
+                obj_c, raw_c = annotate_with_openai(
+                    openai_client,
+                    "You are Annotator C, a conservative/high-precision media psychology expert. Be conservative: only label when explicit; if unsure, choose No Polarizing language.",
+                    article_block,
+                    title,
+                    topic,
+                    source,
+                    rating,
+                    body=body,
+                    model=cfg.openai_model,
+                    temperature=cfg.temperature,
+                    max_retries=max_retries,
+                )
+            elif cfg.annotator_c_provider == "anthropic":
+                obj_c, raw_c = annotate_with_openai(
+                    anthropic_client,
+                    "You are Annotator C, a conservative/high-precision media psychology expert. Be conservative: only label when explicit; if unsure, choose No Polarizing language.",
+                    article_block,
+                    title,
+                    topic,
+                    source,
+                    rating,
+                    body=body,
+                    model=cfg.claude_model,
+                    temperature=None,
+                    max_retries=max_retries,
+                )
+            elif cfg.annotator_c_provider == "none":
+                obj_c, raw_c = None, ""
+            else:
+                raise ValueError(f"Unknown annotator_c_provider: {cfg.annotator_c_provider!r}")
 
             final_obj, final_raw = adjudicate_with_openai(
-                openai_client,
+                adjudicator_client,
                 article_block,
                 title,
                 topic,
@@ -917,7 +1073,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                 obj_c,
                 body=body,
                 model=cfg.adjudicator_model,
-                temperature=cfg.temperature,
+                temperature=None if cfg.adjudicator_provider == "anthropic" else cfg.temperature,
                 max_retries=max_retries,
                 paragraph_policy=cfg.paragraph_policy,
             )
@@ -929,6 +1085,15 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                 "topic": topic,
                 "source": source,
                 "rating": rating,
+                "prompt_version": cfg.prompt_version,
+                "temperature": cfg.temperature,
+                "openai_model": cfg.openai_model,
+                "gemini_model": cfg.gemini_model,
+                "claude_model": cfg.claude_model,
+                "adjudicator_provider": cfg.adjudicator_provider,
+                "adjudicator_model": cfg.adjudicator_model,
+                "annotator_b_provider": cfg.annotator_b_provider,
+                "annotator_c_provider": cfg.annotator_c_provider,
                 "annotator_A_json": raw_a,
                 "annotator_B_json": raw_b,
                 "annotator_C_json": raw_c,
@@ -947,6 +1112,15 @@ def _results_csv_fieldnames() -> list[str]:
         "topic",
         "source",
         "rating",
+        "prompt_version",
+        "temperature",
+        "openai_model",
+        "gemini_model",
+        "claude_model",
+        "adjudicator_provider",
+        "adjudicator_model",
+        "annotator_b_provider",
+        "annotator_c_provider",
         "annotator_A_json",
         "annotator_B_json",
         "annotator_C_json",
@@ -1065,12 +1239,42 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--final-json", default="src/llm_annotation_results/final_annotations_3annotators.json")
     parser.add_argument("--openai-model", default="gpt-5.1")
     parser.add_argument("--adjudicator-model", default=None)
-    parser.add_argument("--gemini-model", default="gemini-3-pro-preview")
+    parser.add_argument("--gemini-model", default="gemini-3.1-pro-preview")
+    parser.add_argument("--claude-model", default="claude-sonnet-5", help="Claude model used for Anthropic annotator roles.")
+    parser.add_argument(
+        "--claude-adjudicator-model",
+        default="claude-opus-4-8",
+        help="Default Claude model used when --adjudicator-provider anthropic and --adjudicator-model is omitted.",
+    )
+    parser.add_argument("--temperature", type=float, default=0.1)
+    parser.add_argument(
+        "--prompt-version",
+        default=DEFAULT_PROMPT_VERSION,
+        choices=sorted(PROMPT_VERSION_ADDENDA),
+        help="Named prompt addendum to apply on top of the base codebook.",
+    )
+    parser.add_argument(
+        "--prompt-addendum-file",
+        default=None,
+        help="Optional text/markdown file appended to the system prompt for prompt-version sweeps.",
+    )
     parser.add_argument(
         "--annotator-b-provider",
         default="gemini",
         choices=["gemini", "openai"],
         help="Which provider to use for Annotator B. Use 'openai' if your Gemini quota is exhausted/unavailable.",
+    )
+    parser.add_argument(
+        "--annotator-c-provider",
+        default="openai",
+        choices=["openai", "anthropic", "none"],
+        help="Which provider to use for Annotator C. Use 'anthropic' for Claude or 'none' for the GPT + Gemini + adjudicator-only setup.",
+    )
+    parser.add_argument(
+        "--adjudicator-provider",
+        default="openai",
+        choices=["openai", "anthropic"],
+        help="Which provider to use for final adjudication.",
     )
     parser.add_argument(
         "--paragraph-policy",
@@ -1105,14 +1309,36 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--dry-run", action="store_true", help="No network calls; emits placeholder outputs.")
     args = parser.parse_args(argv)
 
-    _require_keys(unless_dry_run=args.dry_run, require_gemini=(args.annotator_b_provider == "gemini"))
+    active_prompt_version = args.prompt_version
+    set_prompt_version(args.prompt_version)
+    if args.prompt_addendum_file:
+        prompt_addendum_path = Path(args.prompt_addendum_file)
+        if not prompt_addendum_path.exists():
+            raise FileNotFoundError(f"Prompt addendum file not found: {prompt_addendum_path}")
+        set_prompt_addendum(prompt_addendum_path.read_text(encoding="utf-8"))
+        active_prompt_version = prompt_addendum_path.stem
+
+    _require_keys(
+        unless_dry_run=args.dry_run,
+        require_gemini=(args.annotator_b_provider == "gemini"),
+        require_anthropic=(args.annotator_c_provider == "anthropic" or args.adjudicator_provider == "anthropic"),
+    )
+
+    adjudicator_model = args.adjudicator_model
+    if adjudicator_model is None:
+        adjudicator_model = args.claude_adjudicator_model if args.adjudicator_provider == "anthropic" else args.openai_model
 
     cfg = ModelConfig(
         openai_model=args.openai_model,
-        adjudicator_model=args.adjudicator_model or args.openai_model,
         gemini_model=args.gemini_model,
+        claude_model=args.claude_model,
+        adjudicator_model=adjudicator_model,
         paragraph_policy=args.paragraph_policy,
+        temperature=args.temperature,
         annotator_b_provider=args.annotator_b_provider,
+        annotator_c_provider=args.annotator_c_provider,
+        adjudicator_provider=args.adjudicator_provider,
+        prompt_version=active_prompt_version,
     )
 
     input_path = Path(args.input)
@@ -1150,10 +1376,15 @@ def main(argv: list[str] | None = None) -> int:
 
     openai_client = None
     gemini_client = None
+    anthropic_client = None
+    adjudicator_client = None
     if not args.dry_run:
         openai_client = _openai_client()
         if cfg.annotator_b_provider == "gemini":
             gemini_client = _gemini_client()
+        if cfg.annotator_c_provider == "anthropic" or cfg.adjudicator_provider == "anthropic":
+            anthropic_client = _anthropic_openai_compat_client()
+        adjudicator_client = anthropic_client if cfg.adjudicator_provider == "anthropic" else openai_client
 
     processed_since_materialize = 0
 
@@ -1171,7 +1402,10 @@ def main(argv: list[str] | None = None) -> int:
             if args.dry_run:
                 obj_a, raw_a = annotate_dry_run(title, topic, source, rating, body)
                 obj_b, raw_b = annotate_dry_run(title, topic, source, rating, body)
-                obj_c, raw_c = annotate_dry_run(title, topic, source, rating, body)
+                if cfg.annotator_c_provider == "none":
+                    obj_c, raw_c = None, ""
+                else:
+                    obj_c, raw_c = annotate_dry_run(title, topic, source, rating, body)
                 final_obj, final_raw = annotate_dry_run(title, topic, source, rating, body)
             else:
                 obj_a, raw_a = annotate_with_openai(
@@ -1218,22 +1452,41 @@ def main(argv: list[str] | None = None) -> int:
                 else:
                     raise ValueError(f"Unknown annotator_b_provider: {cfg.annotator_b_provider!r}")
 
-                obj_c, raw_c = annotate_with_openai(
-                    openai_client,
-                    "You are Annotator C, a conservative/high-precision media psychology expert. Be conservative: only label when explicit; if unsure, choose No Polarizing language.",
-                    article_block,
-                    title,
-                    topic,
-                    source,
-                    rating,
-                    body=body,
-                    model=cfg.openai_model,
-                    temperature=cfg.temperature,
-                    max_retries=args.max_retries,
-                )
+                if cfg.annotator_c_provider == "openai":
+                    obj_c, raw_c = annotate_with_openai(
+                        openai_client,
+                        "You are Annotator C, a conservative/high-precision media psychology expert. Be conservative: only label when explicit; if unsure, choose No Polarizing language.",
+                        article_block,
+                        title,
+                        topic,
+                        source,
+                        rating,
+                        body=body,
+                        model=cfg.openai_model,
+                        temperature=cfg.temperature,
+                        max_retries=args.max_retries,
+                    )
+                elif cfg.annotator_c_provider == "anthropic":
+                    obj_c, raw_c = annotate_with_openai(
+                        anthropic_client,
+                        "You are Annotator C, a conservative/high-precision media psychology expert. Be conservative: only label when explicit; if unsure, choose No Polarizing language.",
+                        article_block,
+                        title,
+                        topic,
+                        source,
+                        rating,
+                        body=body,
+                        model=cfg.claude_model,
+                        temperature=None,
+                        max_retries=args.max_retries,
+                    )
+                elif cfg.annotator_c_provider == "none":
+                    obj_c, raw_c = None, ""
+                else:
+                    raise ValueError(f"Unknown annotator_c_provider: {cfg.annotator_c_provider!r}")
 
                 final_obj, final_raw = adjudicate_with_openai(
-                    openai_client,
+                    adjudicator_client,
                     article_block,
                     title,
                     topic,
@@ -1244,7 +1497,7 @@ def main(argv: list[str] | None = None) -> int:
                     obj_c,
                     body=body,
                     model=cfg.adjudicator_model,
-                    temperature=cfg.temperature,
+                    temperature=None if cfg.adjudicator_provider == "anthropic" else cfg.temperature,
                     max_retries=args.max_retries,
                     paragraph_policy=cfg.paragraph_policy,
                 )
@@ -1257,6 +1510,15 @@ def main(argv: list[str] | None = None) -> int:
                     "topic": topic,
                     "source": source,
                     "rating": rating,
+                    "prompt_version": cfg.prompt_version,
+                    "temperature": cfg.temperature,
+                    "openai_model": cfg.openai_model,
+                    "gemini_model": cfg.gemini_model,
+                    "claude_model": cfg.claude_model,
+                    "adjudicator_provider": cfg.adjudicator_provider,
+                    "adjudicator_model": cfg.adjudicator_model,
+                    "annotator_b_provider": cfg.annotator_b_provider,
+                    "annotator_c_provider": cfg.annotator_c_provider,
                     "annotator_A_json": raw_a,
                     "annotator_B_json": raw_b,
                     "annotator_C_json": raw_c,

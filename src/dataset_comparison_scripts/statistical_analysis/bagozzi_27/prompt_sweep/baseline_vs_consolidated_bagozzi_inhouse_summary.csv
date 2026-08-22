@@ -1,0 +1,3 @@
+run_id,span_precision,span_recall,span_f1,matched_spans,prediction_total,gold_total,prediction_only,gold_only,category_agreement_on_matched,subcategory_agreement_on_matched,comparison_json
+original_ai,0.29,0.757,0.419,53,183,70,130,17,0.83,0.717,src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/prompt_sweep/original_ai_vs_consolidated_bagozzi_inhouse_comparison.json
+bagozzi_prompt_chatgpt,0.277,0.729,0.402,51,184,70,133,19,0.784,0.647,src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/prompt_sweep/bagozzi_prompt_chatgpt_vs_consolidated_bagozzi_inhouse_comparison.json

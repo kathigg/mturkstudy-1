@@ -1,0 +1,25 @@
+{
+  "definition": "Consolidated Bagozzi/final in-house overlap gold. Includes only polarizing spans where Dr. Bagozzi and final in-house adjudicated annotations overlap. Labels use the agreed CSV category/subcategory, which is Bagozzi-priority when labels differ.",
+  "article_count": 27,
+  "articles_with_annotations": 25,
+  "annotation_count": 70,
+  "category_counts": {
+    "Persuasive Propaganda": 37,
+    "Inflammatory Language": 33
+  },
+  "subcategory_counts": {
+    "exaggeration": 18,
+    "name-calling": 26,
+    "demonization": 5,
+    "slogans": 6,
+    "doubt": 10,
+    "scapegoating": 2,
+    "casual oversimplification": 2,
+    "bandwagon": 1
+  },
+  "unmatched_overlap_titles": [],
+  "inputs": {
+    "articles_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv",
+    "agreed_spans_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/inhouse_bagozzi_agreed_polarizing_spans.csv"
+  }
+}

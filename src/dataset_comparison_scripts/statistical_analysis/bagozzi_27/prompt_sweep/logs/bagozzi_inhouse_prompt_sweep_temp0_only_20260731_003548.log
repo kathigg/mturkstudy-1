@@ -1,0 +1,48 @@
+{
+  "definition": "Consolidated Bagozzi/final in-house overlap gold. Includes only polarizing spans where Dr. Bagozzi and final in-house adjudicated annotations overlap. Labels use the agreed CSV category/subcategory, which is Bagozzi-priority when labels differ.",
+  "article_count": 27,
+  "articles_with_annotations": 25,
+  "annotation_count": 70,
+  "category_counts": {
+    "Persuasive Propaganda": 37,
+    "Inflammatory Language": 33
+  },
+  "subcategory_counts": {
+    "exaggeration": 18,
+    "name-calling": 26,
+    "demonization": 5,
+    "slogans": 6,
+    "doubt": 10,
+    "scapegoating": 2,
+    "casual oversimplification": 2,
+    "bandwagon": 1
+  },
+  "unmatched_overlap_titles": [],
+  "inputs": {
+    "articles_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv",
+    "agreed_spans_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/inhouse_bagozzi_agreed_polarizing_spans.csv"
+  },
+  "output": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
+  "summary": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_summary.json"
+}
+  0%|          | 0/27 [00:00<?, ?it/s]100%|██████████| 27/27 [00:00<00:00, 22653.77it/s]
+Wrote results CSV: /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/raw_results.csv
+Wrote final JSON: /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/final_annotations.json
+Wrote final JSONL (checkpoint): /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/final_annotations.jsonl
+  0%|          | 0/27 [00:00<?, ?it/s]100%|██████████| 27/27 [00:00<00:00, 20251.47it/s]
+Wrote results CSV: /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v2_fewshot_boundaries_temp0p0_run1/raw_results.csv
+Wrote final JSON: /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v2_fewshot_boundaries_temp0p0_run1/final_annotations.json
+Wrote final JSONL (checkpoint): /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v2_fewshot_boundaries_temp0p0_run1/final_annotations.jsonl
+  0%|          | 0/27 [00:00<?, ?it/s] 44%|████▍     | 12/27 [00:37<00:47,  3.14s/it] 48%|████▊     | 13/27 [01:17<01:38,  7.07s/it] 52%|█████▏    | 14/27 [02:08<02:46, 12.81s/it] 56%|█████▌    | 15/27 [02:41<03:12, 16.07s/it] 59%|█████▉    | 16/27 [04:05<05:14, 28.58s/it] 63%|██████▎   | 17/27 [04:45<05:09, 30.93s/it] 67%|██████▋   | 18/27 [05:31<05:09, 34.38s/it] 70%|███████   | 19/27 [06:19<05:03, 37.90s/it] 74%|███████▍  | 20/27 [07:14<04:55, 42.25s/it] 78%|███████▊  | 21/27 [08:00<04:19, 43.27s/it] 81%|████████▏ | 22/27 [08:47<03:41, 44.34s/it] 85%|████████▌ | 23/27 [09:52<03:20, 50.07s/it] 89%|████████▉ | 24/27 [10:23<02:13, 44.57s/it] 93%|█████████▎| 25/27 [11:25<01:39, 49.79s/it] 96%|█████████▋| 26/27 [12:16<00:50, 50.23s/it]100%|██████████| 27/27 [12:57<00:00, 47.33s/it]100%|██████████| 27/27 [12:57<00:00, 28.79s/it]
+Wrote results CSV: /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v3_high_precision_adjudicated_temp0p0_run1/raw_results.csv
+Wrote final JSON: /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v3_high_precision_adjudicated_temp0p0_run1/final_annotations.json
+Wrote final JSONL (checkpoint): /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v3_high_precision_adjudicated_temp0p0_run1/final_annotations.jsonl
+/Users/kathleenhiggins/miniforge3/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/build_consolidated_bagozzi_inhouse_gold.py --output /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json
+/Users/kathleenhiggins/miniforge3/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv --results-csv /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/raw_results.csv --final-json /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/final_annotations.json --final-jsonl /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/bagozzi_inhouse_fewshot/prompt_v1_conservative.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 2 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
+/Users/kathleenhiggins/miniforge3/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv --results-csv /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v2_fewshot_boundaries_temp0p0_run1/raw_results.csv --final-json /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v2_fewshot_boundaries_temp0p0_run1/final_annotations.json --final-jsonl /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v2_fewshot_boundaries_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/bagozzi_inhouse_fewshot/prompt_v2_fewshot_boundaries.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 2 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
+/Users/kathleenhiggins/miniforge3/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv --results-csv /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v3_high_precision_adjudicated_temp0p0_run1/raw_results.csv --final-json /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v3_high_precision_adjudicated_temp0p0_run1/final_annotations.json --final-jsonl /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v3_high_precision_adjudicated_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/bagozzi_inhouse_fewshot/prompt_v3_high_precision_adjudicated.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 2 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
+Wrote summary CSV: /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/prompt_sweep/bagozzi_inhouse_prompt_sweep_summary.csv
+{
+  "runs_compared": 3,
+  "summary_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/prompt_sweep/bagozzi_inhouse_prompt_sweep_summary.csv"
+}

@@ -1,0 +1,169 @@
+{
+  "definition": "Consolidated Bagozzi/final in-house overlap gold. Includes only polarizing spans where Dr. Bagozzi and final in-house adjudicated annotations overlap. Labels use the agreed CSV category/subcategory, which is Bagozzi-priority when labels differ.",
+  "article_count": 27,
+  "articles_with_annotations": 25,
+  "annotation_count": 70,
+  "category_counts": {
+    "Persuasive Propaganda": 37,
+    "Inflammatory Language": 33
+  },
+  "subcategory_counts": {
+    "exaggeration": 18,
+    "name-calling": 26,
+    "demonization": 5,
+    "slogans": 6,
+    "doubt": 10,
+    "scapegoating": 2,
+    "casual oversimplification": 2,
+    "bandwagon": 1
+  },
+  "unmatched_overlap_titles": [],
+  "inputs": {
+    "articles_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv",
+    "agreed_spans_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/inhouse_bagozzi_agreed_polarizing_spans.csv"
+  },
+  "output": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
+  "summary": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_summary.json"
+}
+  0%|          | 0/27 [00:00<?, ?it/s]100%|██████████| 27/27 [00:00<00:00, 23726.42it/s]
+Wrote results CSV: /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/raw_results.csv
+Wrote final JSON: /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/final_annotations.json
+Wrote final JSONL (checkpoint): /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/final_annotations.jsonl
+  0%|          | 0/27 [00:00<?, ?it/s]  4%|▎         | 1/27 [01:18<34:13, 78.97s/it]  7%|▋         | 2/27 [02:18<28:01, 67.27s/it] 11%|█         | 3/27 [03:15<25:02, 62.61s/it] 15%|█▍        | 4/27 [04:01<21:28, 56.01s/it] 19%|█▊        | 5/27 [04:32<17:21, 47.33s/it] 22%|██▏       | 6/27 [05:35<18:23, 52.56s/it] 26%|██▌       | 7/27 [06:25<17:13, 51.67s/it] 30%|██▉       | 8/27 [07:09<15:33, 49.14s/it] 33%|███▎      | 9/27 [08:07<15:36, 52.01s/it] 37%|███▋      | 10/27 [10:05<20:30, 72.37s/it] 41%|████      | 11/27 [11:19<19:25, 72.82s/it] 44%|████▍     | 12/27 [11:55<15:26, 61.77s/it] 48%|████▊     | 13/27 [13:08<15:11, 65.08s/it] 52%|█████▏    | 14/27 [13:51<12:37, 58.29s/it] 56%|█████▌    | 15/27 [14:32<10:39, 53.32s/it] 59%|█████▉    | 16/27 [16:05<11:55, 65.08s/it] 63%|██████▎   | 17/27 [16:38<09:16, 55.61s/it] 67%|██████▋   | 18/27 [17:14<07:26, 49.57s/it] 70%|███████   | 19/27 [18:04<06:37, 49.75s/it] 74%|███████▍  | 20/27 [18:44<05:27, 46.82s/it] 78%|███████▊  | 21/27 [19:32<04:42, 47.10s/it] 81%|████████▏ | 22/27 [20:41<04:28, 53.72s/it] 85%|████████▌ | 23/27 [22:08<04:15, 63.83s/it] 89%|████████▉ | 24/27 [22:47<02:48, 56.28s/it] 93%|█████████▎| 25/27 [23:46<01:53, 56.92s/it] 96%|█████████▋| 26/27 [24:35<00:54, 54.62s/it]100%|██████████| 27/27 [25:24<00:00, 53.09s/it]100%|██████████| 27/27 [25:24<00:00, 56.47s/it]
+Wrote results CSV: /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v2_fewshot_boundaries_temp0p0_run1/raw_results.csv
+Wrote final JSON: /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v2_fewshot_boundaries_temp0p0_run1/final_annotations.json
+Wrote final JSONL (checkpoint): /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v2_fewshot_boundaries_temp0p0_run1/final_annotations.jsonl
+  0%|          | 0/27 [00:00<?, ?it/s]  4%|▎         | 1/27 [01:11<30:46, 71.03s/it]  7%|▋         | 2/27 [02:07<25:58, 62.33s/it] 11%|█         | 3/27 [02:51<21:42, 54.29s/it] 15%|█▍        | 4/27 [03:54<22:03, 57.52s/it] 19%|█▊        | 5/27 [04:25<17:33, 47.90s/it] 22%|██▏       | 6/27 [05:12<16:41, 47.67s/it] 26%|██▌       | 7/27 [05:47<14:30, 43.52s/it] 30%|██▉       | 8/27 [06:35<14:12, 44.84s/it] 33%|███▎      | 9/27 [07:24<13:54, 46.36s/it] 37%|███▋      | 10/27 [08:36<15:18, 54.02s/it] 41%|████      | 11/27 [09:49<15:58, 59.91s/it] 41%|████      | 11/27 [10:28<15:14, 57.15s/it]
+Traceback (most recent call last):
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1549, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1467, in main
+    obj_c, raw_c = annotate_with_openai(
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 835, in annotate_with_openai
+    raise ValueError(f"OpenAI returned JSON failed schema validation: {err}\n\n{json_str}")
+ValueError: OpenAI returned JSON failed schema validation: 'annotations' is a required property
+
+Failed validating 'required' in schema:
+    {'type': 'object',
+     'properties': {'title': {'type': 'string'},
+                    'topic': {'type': 'string'},
+                    'source': {'type': 'string'},
+                    'rating': {'type': 'string'},
+                    'annotations': {'type': 'array',
+                                    'minItems': 1,
+                                    'items': {'type': 'object',
+                                              'properties': {'category': {'type': 'string',
+                                                                          'enum': ['Persuasive '
+                                                                                   'Propaganda',
+                                                                                   'Inflammatory '
+                                                                                   'Language',
+                                                                                   'No '
+                                                                                   'Polarizing '
+                                                                                   'language']},
+                                                             'subcategory': {'type': 'string',
+                                                                             'enum': ['exaggeration',
+                                                                                      'slogans',
+                                                                                      'bandwagon',
+                                                                                      'causal '
+                                                                                      'oversimplification',
+                                                                                      'casual '
+                                                                                      'oversimplification',
+                                                                                      'doubt',
+                                                                                      'name-calling',
+                                                                                      'demonization',
+                                                                                      'scapegoating',
+                                                                                      'no '
+                                                                                      'polarizing '
+                                                                                      'language']},
+                                                             'text': {'type': 'string',
+                                                                      'minLength': 4,
+                                                                      'maxLength': 600},
+                                                             'openFeedback': {'type': 'string',
+                                                                              'minLength': 1},
+                                                             'paragraphIndex': {'type': 'integer'}},
+                                              'required': ['category',
+                                                           'subcategory',
+                                                           'text',
+                                                           'openFeedback',
+                                                           'paragraphIndex'],
+                                              'additionalProperties': False}}},
+     'required': ['title', 'topic', 'source', 'rating', 'annotations'],
+     'additionalProperties': False}
+
+On instance:
+    {'paragraphs': [{'text': 'Recognize the BuzzFeed Union!!',
+                     'category': 'Persuasive Propaganda',
+                     'subcategory': 'Slogans',
+                     'paragraphIndex': 0},
+                    {'text': 'no polarizing language selected',
+                     'category': 'No Polarizing language',
+                     'subcategory': 'no polarizing language',
+                     'paragraphIndex': 1},
+                    {'text': 'skyrocketing health insurance costs',
+                     'category': 'Persuasive Propaganda',
+                     'subcategory': 'Exaggeration',
+                     'paragraphIndex': 2},
+                    {'text': 'no polarizing language selected',
+                     'category': 'No Polarizing language',
+                     'subcategory': 'no polarizing language',
+                     'paragraphIndex': 3},
+                    {'text': 'no polarizing language selected',
+                     'category': 'No Polarizing language',
+                     'subcategory': 'no polarizing language',
+                     'paragraphIndex': 4}],
+     'title': 'BuzzFeed Journalists Protest in Push for Union Recognition',
+     'topic': 'politics',
+     'source': 'Bloomberg',
+     'rating': 'center'}
+
+{
+  "paragraphs": [
+    {
+      "text": "Recognize the BuzzFeed Union!!",
+      "category": "Persuasive Propaganda",
+      "subcategory": "Slogans",
+      "paragraphIndex": 0
+    },
+    {
+      "text": "no polarizing language selected",
+      "category": "No Polarizing language",
+      "subcategory": "no polarizing language",
+      "paragraphIndex": 1
+    },
+    {
+      "text": "skyrocketing health insurance costs",
+      "category": "Persuasive Propaganda",
+      "subcategory": "Exaggeration",
+      "paragraphIndex": 2
+    },
+    {
+      "text": "no polarizing language selected",
+      "category": "No Polarizing language",
+      "subcategory": "no polarizing language",
+      "paragraphIndex": 3
+    },
+    {
+      "text": "no polarizing language selected",
+      "category": "No Polarizing language",
+      "subcategory": "no polarizing language",
+      "paragraphIndex": 4
+    }
+  ]
+}
+/Users/kathleenhiggins/miniforge3/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/build_consolidated_bagozzi_inhouse_gold.py --output /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json
+/Users/kathleenhiggins/miniforge3/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv --results-csv /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/raw_results.csv --final-json /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/final_annotations.json --final-jsonl /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v1_conservative_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/bagozzi_inhouse_fewshot/prompt_v1_conservative.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 2 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
+/Users/kathleenhiggins/miniforge3/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv --results-csv /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v2_fewshot_boundaries_temp0p0_run1/raw_results.csv --final-json /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v2_fewshot_boundaries_temp0p0_run1/final_annotations.json --final-jsonl /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v2_fewshot_boundaries_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/bagozzi_inhouse_fewshot/prompt_v2_fewshot_boundaries.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 2 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
+/Users/kathleenhiggins/miniforge3/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv --results-csv /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v3_high_precision_adjudicated_temp0p0_run1/raw_results.csv --final-json /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v3_high_precision_adjudicated_temp0p0_run1/final_annotations.json --final-jsonl /Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v3_high_precision_adjudicated_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/bagozzi_inhouse_fewshot/prompt_v3_high_precision_adjudicated.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 2 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
+Traceback (most recent call last):
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py", line 360, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py", line 306, in main
+    run_command(cmd)
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py", line 191, in run_command
+    subprocess.run(cmd, check=True)
+  File "/Users/kathleenhiggins/miniforge3/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/kathleenhiggins/miniforge3/bin/python', '/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py', '--input', '/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv', '--results-csv', '/Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v3_high_precision_adjudicated_temp0p0_run1/raw_results.csv', '--final-json', '/Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v3_high_precision_adjudicated_temp0p0_run1/final_annotations.json', '--final-jsonl', '/Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/2-20/bagozzi_inhouse_prompt_sweep/prompt_v3_high_precision_adjudicated_temp0p0_run1/final_annotations.jsonl', '--prompt-addendum-file', '/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/bagozzi_inhouse_fewshot/prompt_v3_high_precision_adjudicated.md', '--temperature', '0.0', '--paragraph-policy', 'min-one', '--checkpoint-every', '1', '--max-retries', '2', '--openai-model', 'gpt-5.1', '--gemini-model', 'gemini-3.1-pro-preview', '--claude-model', 'claude-sonnet-5', '--claude-adjudicator-model', 'claude-opus-4-8', '--annotator-b-provider', 'gemini', '--annotator-c-provider', 'anthropic', '--adjudicator-provider', 'anthropic', '--resume']' returned non-zero exit status 1.

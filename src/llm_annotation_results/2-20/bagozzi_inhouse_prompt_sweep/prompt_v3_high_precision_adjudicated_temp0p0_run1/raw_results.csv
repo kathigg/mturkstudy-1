@@ -1,0 +1,3410 @@
+index,title,topic,source,rating,prompt_version,temperature,openai_model,gemini_model,claude_model,adjudicator_provider,adjudicator_model,annotator_b_provider,annotator_c_provider,annotator_A_json,annotator_B_json,annotator_C_json,final_json
+0,"'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki",legal arguments,The Washington Post,left,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""one of the most disgraceful performances by an American president in memory"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""defend a tyrant against the fair questions of a free press"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""a pathetic rout as an illustration of the perils of under-preparation and inexperience"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""his violent disregard for the sovereignty of his neighbors, his complicity in the slaughter of the Syrian people"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""bombastic and erratic conduct towards our closest friends and allies"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""his blunders and capitulations all the more painful and inexplicable"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""No prior president has ever abased himself more abjectly before a tyrant"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""a tyrant"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""failed to defend all that makes us who we are a republic of free people dedicated to the cause of liberty"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""Get breaking news alerts and more from Roll Call on your iPhone or your Android"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 6
+    }
+  ]
+}","{
+  ""title"": ""'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"",
+  ""topic"": ""legal arguments"",
+  ""source"": ""The Washington Post"",
+  ""rating"": ""left"",
+  ""annotations"": [
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""naiveté, egotism, false equivalence, and sympathy for autocrats"",
+      ""openFeedback"": ""Uses a series of loaded negative labels to attack the president's character and shape a highly critical view of his actions."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""his complicity in the slaughter of the Syrian people"",
+      ""openFeedback"": ""Portrays the foreign leader as an evil and dangerous figure by explicitly linking him to the mass slaughter of citizens."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""No prior president has ever abased himself more abjectly before a tyrant."",
+      ""openFeedback"": ""Uses extreme, absolute language ('No prior president has ever abased himself more abjectly') to inflate the intensity and historical magnitude of the criticism."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""accused President Donald Trump of making a \""tragic mistake\"" in his meetings"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""one of the most disgraceful performances by an American president in memory"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""naiveté, egotism, false equivalence, and sympathy for autocrats"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""defend a tyrant against the fair questions of a free press"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""grant Putin an uncontested platform to spew propaganda and lies to the world"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""describe the press conference as a pathetic rout"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""his complicity in the slaughter of the Syrian people"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""his violent disregard for the sovereignty of his neighbors"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""President Trump's bombastic and erratic conduct towards our closest friends and allies"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""his blunders and capitulations all the more painful and inexplicable"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""No prior president has ever abased himself more abjectly before a tyrant"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 8
+    }
+  ]
+}","{""title"": ""'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki"", ""topic"": ""legal arguments"", ""source"": ""The Washington Post"", ""rating"": ""left"", ""annotations"": [{""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""one of the most disgraceful performances by an American president in memory"", ""openFeedback"": ""Loaded moral condemnation portraying the president's conduct as disgraceful."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""naiveté, egotism, false equivalence, and sympathy for autocrats"", ""openFeedback"": ""Series of loaded negative labels attacking the president's character."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""defend a tyrant against the fair questions of a free press"", ""openFeedback"": ""Portrays the foreign leader as a tyrant and the president as defending him."", ""paragraphIndex"": 1}, {""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""his complicity in the slaughter of the Syrian people"", ""openFeedback"": ""Portrays the foreign leader as evil by linking him to mass slaughter."", ""paragraphIndex"": 1}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""describe the press conference as a pathetic rout"", ""openFeedback"": ""Loaded label demeaning the event."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""No prior president has ever abased himself more abjectly before a tyrant"", ""openFeedback"": ""Extreme absolute language inflating the historical magnitude of the criticism."", ""paragraphIndex"": 2}]}"
+1,"trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house",legal arguments,The Washington Post,left,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""more dishonest and deceitful"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""the Failing New York Times or the Amazon (lobbyist) Washington Post"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""They are both a disgrace to our Country, the Enemy of the People"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""both of these horrible papers will quickly go out of business & be forever gone"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""do you think the people would demand that I stay longer?"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Bandwagon"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""KEEP AMERICA GREAT"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""both of these horrible papers"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""enemy of the people"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""virtual act of treason"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""once great paper so desperate for a story, any story, even if bad for our Country"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""lashed out at the media"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""denounced the \""fake news \"" and \""fake polling\"""",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""The Fake News has never been more dishonest than it is today"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{
+  ""title"": ""trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"",
+  ""topic"": ""legal arguments"",
+  ""source"": ""The Washington Post"",
+  ""rating"": ""left"",
+  ""annotations"": [
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""the Failing New York Times"",
+      ""openFeedback"": ""Uses a loaded negative label to discredit the publication."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""the Enemy of the People"",
+      ""openFeedback"": ""Frames the press as a direct threat and danger to society."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""bandwagon"",
+      ""text"": ""do you think the people would demand that I stay longer?"",
+      ""openFeedback"": ""Appeals to collective demand and popularity to validate the idea of staying longer."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""the Failing New York Times"",
+      ""openFeedback"": ""Repeats the loaded negative label to attack the newspaper's credibility."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""virtual act of Treason by a once great paper"",
+      ""openFeedback"": ""Inflates the severity of a standard news report by equating it to the extreme moral and legal stake of treason."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""The Fake News has never been more dishonest"",
+      ""openFeedback"": ""Uses a loaded negative label ('The Fake News') to attack the media collectively."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph reports factual polling data without polarizing language."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""the more dishonest and deceitful newspaper, the Failing New York Times or the Amazon (lobbyist) Washington Post"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""They are both a disgrace to our Country, the Enemy of the People"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""both of these horrible papers will quickly go out of business & be forever gone"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""KEEP AMERICA GREAT"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""this is a virtual act of Treason by a once great paper"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""often referring to it as the \""enemy of the people.\"""",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""The Fake News has never been more dishonest than it is today"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""There new weapon of choice is Fake Polling, sometimes referred to as Suppression Polls"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 7
+    }
+  ]
+}","{""title"": ""trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house"", ""topic"": ""legal arguments"", ""source"": ""The Washington Post"", ""rating"": ""left"", ""annotations"": [{""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""the Failing New York Times or the Amazon (lobbyist) Washington Post"", ""openFeedback"": ""Uses loaded negative labels to discredit the publications."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""They are both a disgrace to our Country, the Enemy of the People"", ""openFeedback"": ""Frames the press as a direct threat and danger to society."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""both of these horrible papers will quickly go out of business & be forever gone"", ""openFeedback"": ""Loaded negative labeling of the newspapers."", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""bandwagon"", ""text"": ""do you think the people would demand that I stay longer?"", ""openFeedback"": ""Appeals to collective demand and popularity."", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""KEEP AMERICA GREAT"", ""openFeedback"": ""Compact campaign-like slogan."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""virtual act of treason"", ""openFeedback"": ""Frames a news report as a dangerous betrayal of the country."", ""paragraphIndex"": 1}, {""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""once great paper so desperate for a story, any story, even if bad for our Country"", ""openFeedback"": ""Portrays the paper as harmful to the nation."", ""paragraphIndex"": 1}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""The Fake News has never been more dishonest than it is today"", ""openFeedback"": ""Uses a loaded negative label to attack the media collectively."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Reports factual polling data without polarizing language."", ""paragraphIndex"": 3}]}"
+2,'Every American is entitled to health care': Sen. Bernie Sanders,health,ABC News,left,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""end the international embarrassment of not guaranteeing health care as a right"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""end the greed of the health insurance and pharmaceutical industries"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""our dysfunctional system"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""make billions of dollars in profits off Americans' health care"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""they have got to talk to the needs of the working class of this country"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Bandwagon"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""everybody said our ideas are crazy and wild and extreme"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""title"": ""'Every American is entitled to health care': Sen. Bernie Sanders"",
+  ""topic"": ""health"",
+  ""source"": ""ABC News"",
+  ""rating"": ""left"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph reports on statements made by Sanders and debate context without using explicitly inflammatory language or propaganda."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""end the greed of the health insurance and pharmaceutical industries"",
+      ""openFeedback"": ""By broadly attributing 'greed' to entire industries, the speaker frames these groups as corrupt, predatory, and harmful to society in order to rally opposition against them."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The speaker's description of his ideas being called 'crazy and wild and extreme' is rhetorical hyperbole, but in the context of summarizing past political opposition, it falls short of the strict threshold for persuasive propaganda."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""Critics say Sanders' plan would dramatically increase taxes"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""end the greed of the health insurance and pharmaceutical industries"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no longer private corporations to make billions of dollars in profits off Americans' health care"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""everybody said our ideas are crazy and wild and extreme"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 5
+    }
+  ]
+}","{""title"": ""'Every American is entitled to health care': Sen. Bernie Sanders"", ""topic"": ""health"", ""source"": ""ABC News"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph reports on statements made by Sanders and debate context without using explicitly inflammatory language or propaganda."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""end the greed of the health insurance and pharmaceutical industries"", ""openFeedback"": ""By broadly attributing 'greed' to entire industries, the speaker frames these groups as corrupt, predatory, and harmful."", ""paragraphIndex"": 1}, {""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""make billions of dollars in profits off Americans' health care"", ""openFeedback"": ""Frames corporations as predatory and exploitative of Americans' health."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""everybody said our ideas are crazy and wild and extreme"", ""openFeedback"": ""Inflated framing of past political opposition using hyperbolic language."", ""paragraphIndex"": 2}]}"
+3,Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets,crime,CBS News,left,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    }
+  ]
+}","{""title"": ""Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets"", ""topic"": ""crime"", ""source"": ""CBS News"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Paragraph primarily consists of factual reporting on the protest, the status of the officers, and direct quotes from activists regarding their grievances. No explicit propaganda or inflammatory language definitions are clearly met."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph covers statements from activists and an embedded sub-headline without clear use of polarizing propaganda techniques or inflammatory language that meets the strict definitions."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""excessive to take over 6,000 police officers off the street"", ""openFeedback"": ""The speaker uses exaggeration to inflate the scale of the demands, suggesting the removal of over 6,000 officers (the entirety of the force) when the actual demand was targeted at the 328 officers implicated in the social media scandal."", ""paragraphIndex"": 2}]}","{
+  ""annotations"": [
+    {
+      ""text"": ""the racist police who posted on Facebook"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""said openly that they hate the people whose communities they patrol"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""Get Them Off The Streets"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""We think the investigation is far too broad."",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""the more vulnerable the city becomes to the crime wave they say it's already experiencing"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{""title"": ""Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets"", ""topic"": ""crime"", ""source"": ""CBS News"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Paragraph primarily consists of factual reporting on the protest and direct quotes from activists."", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""Get Them Off The Streets"", ""openFeedback"": ""Compact rally-like slogan."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""excessive to take over 6,000 police officers off the street"", ""openFeedback"": ""Exaggeration inflating the scale of the demands beyond the actual implicated officers."", ""paragraphIndex"": 2}]}"
+4,the latest: nadler says panel will move quickly on mcgahn,politics,Louisville Courier Journal,left,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""He called her \""Nervous Nancy\"""",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""title"": ""the latest: nadler says panel will move quickly on mcgahn"",
+  ""topic"": ""politics"",
+  ""source"": ""Louisville Courier Journal"",
+  ""rating"": ""left"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Paragraph 0 consists of straightforward political reporting on a House resolution and Mueller's report without any inflammatory or propagandistic language."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Paragraph 1 describes legislative processes and political strategies factually, quoting Pelosi's policy statements without employing persuasive propaganda or inflammatory terms."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""He called her \""Nervous Nancy\"""",
+      ""openFeedback"": ""The article quotes Trump using a loaded, derogatory nickname aimed at discrediting Speaker Pelosi, which is a textbook example of name-calling."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Paragraph 3 is a brief, factual explanation of the legal and procedural necessity of the House votes."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""He called her \""Nervous Nancy\"""",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 6
+    }
+  ]
+}","{""title"": ""the latest: nadler says panel will move quickly on mcgahn"", ""topic"": ""politics"", ""source"": ""Louisville Courier Journal"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Straightforward political reporting without inflammatory language."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Factual legislative reporting."", ""paragraphIndex"": 1}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""He called her \""Nervous Nancy\"""", ""openFeedback"": ""Quotes Trump using a loaded, derogatory nickname aimed at discrediting Pelosi."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Factual explanation of procedural necessity."", ""paragraphIndex"": 3}]}"
+5,'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized,crime,CBS,left,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""some low-life would deface the mural"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""The ignorance and disrespect shown toward police is at an all time high"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""backdoor plea"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""tarnish the efforts and life of a slain officer while backing criminals"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""as minuscule as a slap on the wrist"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""WE ARE LIVID!"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{
+  ""title"": ""'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized"",
+  ""topic"": ""crime"",
+  ""source"": ""CBS"",
+  ""rating"": ""left"",
+  ""annotations"": [
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""sickening and disgusting that some low-life"",
+      ""openFeedback"": ""Uses the highly negative and emotionally charged label 'low-life' along with 'sickening and disgusting' to discredit and insult the unknown vandal."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph mostly consists of a quote expressing emotional distress and a tribute to the fallen officer, lacking clear inflammatory language or propaganda."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""top persecutor of this city"",
+      ""openFeedback"": ""Intentionally alters the title of 'prosecutor' to 'persecutor' as a loaded negative label to attack the District Attorney."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The text contains strong personal expressions of grief and appeals for respect, but does not cross the threshold into explicit propaganda or inflammatory categories."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""some low-life would deface the mural of hero and fallen-officer"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""The ignorance and disrespect shown toward police is at an all time high"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""WE ARE LIVID!"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""the DA, top persecutor of this city, can tarnish the efforts and life of a slain officer while backing criminals"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    }
+  ]
+}","{""title"": ""'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized"", ""topic"": ""crime"", ""source"": ""CBS"", ""rating"": ""left"", ""annotations"": [{""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""some low-life would deface the mural"", ""openFeedback"": ""Uses the highly negative label 'low-life' to discredit the vandal."", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""The ignorance and disrespect shown toward police is at an all time high"", ""openFeedback"": ""Inflated claim of scale/intensity."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""WE ARE LIVID!"", ""openFeedback"": ""Compact rally-like phrase."", ""paragraphIndex"": 1}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""top persecutor of this city"", ""openFeedback"": ""Loaded label attacking the District Attorney."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Personal expressions of grief without explicit propaganda."", ""paragraphIndex"": 2}]}"
+6,george conway urges trump to resign over aborted iran strike,science,The Boston Globe,left,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""you're even more of an idiot than people think you are"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""an \""erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man\"""",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 5
+    }
+  ]
+}","{
+  ""title"": ""george conway urges trump to resign over aborted iran strike"",
+  ""topic"": ""science"",
+  ""source"": ""The Boston Globe"",
+  ""rating"": ""left"",
+  ""annotations"": [
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""To say this is amateur hour would defame amateurs."",
+      ""openFeedback"": ""The speaker uses a highly loaded derogatory phrase ('amateur hour') to label and discredit the actions/person without providing substantive evidence in the phrase."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""you're even more of an idiot than people think you are"",
+      ""openFeedback"": ""Directly labeling the target with the pejorative term 'idiot' to insult and diminish credibility."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph consists of standard news reporting, military quotes, and official statements without overt polarizing language."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man"",
+      ""openFeedback"": ""A dense string of loaded, disparaging labels aimed at shaping a strongly negative perception of the target."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""you're even more of an idiot than people think you are"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""To say this is amateur hour would defame amateurs"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""you're even more of an idiot than people think you are"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{""title"": ""george conway urges trump to resign over aborted iran strike"", ""topic"": ""science"", ""source"": ""The Boston Globe"", ""rating"": ""left"", ""annotations"": [{""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""you're even more of an idiot than people think you are"", ""openFeedback"": ""Directly labeling the target with the pejorative term 'idiot' to insult and diminish credibility."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""To say this is amateur hour would defame amateurs"", ""openFeedback"": ""Loaded derogatory phrase used to discredit the target."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Standard news reporting and official statements without polarizing language."", ""paragraphIndex"": 2}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man"", ""openFeedback"": ""A dense string of loaded, disparaging labels aimed at shaping a strongly negative perception of the target."", ""paragraphIndex"": 3}]}"
+7,Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings,legal arguments,Newsweek,left,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""Jared Kushner has repeatedly benefited from special treatment; as with his many deceptions regarding his security clearance"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""Jared Kushner lied on his SF-86 form and must lose his security clearance"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""title"": ""Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings"",
+  ""topic"": ""legal arguments"",
+  ""source"": ""Newsweek"",
+  ""rating"": ""left"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph consists of factual reporting and direct quotes regarding requests for a probe, without relying on inflammatory or propagandistic language."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Although the paragraph contains strong political accusations (e.g., 'many deceptions' and 'benefited from special treatment'), these are standard political critiques quoting a politician, and lack the extremity required for clear Demonization or Name-Calling."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The text includes standard political statements, a quote from the president defending a staffer, and boilerplate article links. No explicit persuasive propaganda or inflammatory language is present."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""his many deceptions regarding his security clearance"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""Jared Kushner lied on his SF-86 form and must lose his security clearance"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""#RevokeKushner"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{""title"": ""Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings"", ""topic"": ""legal arguments"", ""source"": ""Newsweek"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Factual reporting on requests for a probe."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Standard political critiques quoting a politician; lacks extremity for clear demonization."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Standard political statements and quotes; no explicit inflammatory language."", ""paragraphIndex"": 2}]}"
+8,"ron desantis signs amendment 4 bill, limiting felon voting",environmental issues,The Sacramento Bee,left,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""one of the most racist and enduring policies of Florida's Jim Crow era"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""meant to keep black people off the voter rolls"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""the Republicans' approach is confusing and expensive"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""title"": ""ron desantis signs amendment 4 bill, limiting felon voting"",
+  ""topic"": ""environmental issues"",
+  ""source"": ""The Sacramento Bee"",
+  ""rating"": ""left"",
+  ""annotations"": [
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""called a \""poll tax\"" by critics"",
+      ""openFeedback"": ""The article introduces a highly loaded historical label, 'poll tax', to negatively frame the new legislation."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph provides historical background and describes the impact of the policy without relying on explicit inflammatory or propaganda techniques."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph neutrally outlines the differing legal interpretations of the amendment's language by supporters and Republican lawmakers."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph discusses the practical challenges, costs, and timeline of the policy without using polarizing language that meets the definitions."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""one of the most racist and enduring policies of Florida's Jim Crow era"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{""title"": ""ron desantis signs amendment 4 bill, limiting felon voting"", ""topic"": ""environmental issues"", ""source"": ""The Sacramento Bee"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral reporting of the bill signing and its provisions."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""one of the most racist and enduring policies of Florida's Jim Crow era"", ""openFeedback"": ""Loaded moral framing of the policy as racist and enduring."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral outline of legal interpretations."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Discusses practical challenges and costs without polarizing language."", ""paragraphIndex"": 3}]}"
+9,"senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'",science,Business Insider,center,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""record of hostility toward LGBTQ rights and abortion rights"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""because of his extreme views on both fronts"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""called being transgender \""a delusion.\"""",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""\""a celestial phenomenon invisible to the non-lawyer eye.\"""",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""\""public affirmation of the lie that the human person is an autonomous blob of Silly Putty, unconstrained by nature or biology"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""Why would my colleagues want to drape black robes over these bigoted views?"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""a right-wing Christian advocacy group"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""young, right-wing ideologues , the vast majority of whom are white men"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""He is one of Trump's most extreme nominees"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""funneling anti-abortion and anti-LGBTQ nominees to the White House"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{
+  ""title"": ""senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"",
+  ""topic"": ""science"",
+  ""source"": ""Business Insider"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph objectively reports on the Senate vote, the vote tally, and the opposition from various rights groups without employing explicit propaganda or inflammatory terms."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph consists of direct quotes from the subject and a political critic. Following conservative annotation guidelines, reported quotes without authorial endorsement are not labeled as the article's polarizing language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""young, right-wing ideologues"",
+      ""openFeedback"": ""In the author's own voice, Trump's other judicial nominees are labeled with the loaded, derogatory term 'ideologues' to cast them in a negative, partisan light."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph provides statistical and factual context regarding the number of judicial confirmations without any polarizing phrasing."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""his extreme views on both fronts"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""called being transgender \""a delusion.\"""",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""bizarre comments Kacsmaryk has made about the Equality Act"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""wondered aloud how anyone could expect Kacsmaryk to be a fair and impartial judge"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""drape black robes over these bigoted views"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""young, right-wing ideologues , the vast majority of whom are white men"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""He is one of Trump's most extreme nominees"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""funneling anti-abortion and anti-LGBTQ nominees to the White House"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 7
+    }
+  ]
+}","{""title"": ""senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"", ""topic"": ""science"", ""source"": ""Business Insider"", ""rating"": ""center"", ""annotations"": [{""text"": ""his extreme views on both fronts"", ""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""paragraphIndex"": 0, ""openFeedback"": ""Inflated characterization in author's voice""}, {""text"": ""called being transgender \""a delusion.\"""", ""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""paragraphIndex"": 1, ""openFeedback"": ""Portrays transgender identity as a delusion""}, {""text"": ""young, right-wing ideologues , the vast majority of whom are white men"", ""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""paragraphIndex"": 2, ""openFeedback"": ""Loaded label in author's own voice""}, {""text"": ""He is one of Trump's most extreme nominees"", ""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""paragraphIndex"": 2, ""openFeedback"": ""Inflated characterization""}, {""text"": ""funneling anti-abortion and anti-LGBTQ nominees to the White House"", ""category"": ""Persuasive Propaganda"", ""subcategory"": ""casual oversimplification"", ""paragraphIndex"": 2, ""openFeedback"": ""Reduces process to simple funneling framing""}, {""text"": ""no polarizing language selected"", ""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""paragraphIndex"": 3, ""openFeedback"": ""Factual statistics without polarizing phrasing""}]}"
+10,"editorial: six months after california's landmark police transparency law, many agencies still won't release their records",crime,USA TODAY,center,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""many police departments believe that compliance with the law is optional"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""So many police departments are resisting compliance"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""This is lawless conduct, and it's depriving the public from the right to know"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""their attempts to deny the public this information"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""this fight isn't going away anytime soon"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""Becerra's obvious bias toward the police groups"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""doing nothing is not an acceptable option"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""No one least of all the agencies that have sworn to protect and serve the public should be allowed to thwart the law"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""title"": ""editorial: six months after california's landmark police transparency law, many agencies still won't release their records"",
+  ""topic"": ""crime"",
+  ""source"": ""USA TODAY"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Paragraph 0 features standard editorial critique. While 'believe that compliance with the law is optional' is rhetorical, it functions as standard opinion rather than an explicit, independently recognizable exaggeration."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Paragraph 1 contains strong criticism such as 'lawless conduct' and a quote describing 'deliberately sandbagging', but this aligns with typical editorial characterizations of the discussed actions rather than clear, definitional propaganda or inflammatory language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Paragraph 2 raises concerns about 'obvious bias' and legal delays, representing typical editorial commentary without crossing the threshold into explicit doubt or other propaganda categories."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Paragraph 3 concludes the editorial with standard civic rhetoric calling for transparency and adherence to the law, with no polarizing language present."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""Law enforcement in San Francisco is deliberately sandbagging the release of these records"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""This is lawless conduct, and it's depriving the public"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""Becerra's obvious bias toward the police groups could prove an obstacle"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""No one least of all the agencies that have sworn to protect and serve the public should be allowed to thwart the law"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{""title"": ""editorial: six months after california's landmark police transparency law, many agencies still won't release their records"", ""topic"": ""crime"", ""source"": ""USA TODAY"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Paragraph 0 features standard editorial critique without explicit propaganda."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""This is lawless conduct, and it's depriving the public from the right to know"", ""openFeedback"": ""Characterizes police departments as engaged in lawless conduct depriving the public."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""doubt"", ""text"": ""Becerra's obvious bias toward the police groups could prove an obstacle"", ""openFeedback"": ""Undermines the Attorney General's credibility by asserting obvious bias without direct evidence."", ""paragraphIndex"": 2}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""No one least of all the agencies that have sworn to protect and serve the public should be allowed to thwart the law"", ""openFeedback"": ""Inflates moral stakes with strong rhetorical framing."", ""paragraphIndex"": 3}]}"
+11,BuzzFeed Journalists Protest in Push for Union Recognition,politics,Bloomberg,center,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 7
+    }
+  ]
+}","{
+  ""title"": ""BuzzFeed Journalists Protest in Push for Union Recognition"",
+  ""topic"": ""politics"",
+  ""source"": ""Bloomberg"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph provides objective reporting on a labor walkout without injecting any inflammatory language or propaganda."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph contains direct quotes from union representatives and management, reporting their positions objectively without endorsing polarizing language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph details the business context and labor agreements in a neutral, factual manner without polarizing rhetoric."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""skyrocketing health insurance costs, diversity, and more"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{""title"": ""BuzzFeed Journalists Protest in Push for Union Recognition"", ""topic"": ""politics"", ""source"": ""Bloomberg"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph provides objective reporting on a labor walkout without injecting any inflammatory language or propaganda."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph reports union and management positions objectively without polarizing language."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph details business context and labor agreements neutrally without polarizing rhetoric."", ""paragraphIndex"": 2}]}"
+12,DC mayor says Trump's Fourth of July celebration emptied security fund,politics,USA TODAY,center,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{
+  ""title"": ""DC mayor says Trump's Fourth of July celebration emptied security fund"",
+  ""topic"": ""politics"",
+  ""source"": ""USA TODAY"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph reports on the parade and municipal costs neutrally."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph quotes financial concerns and requests from an official letter, lacking explicit polarizing rhetoric."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph consists of embedded article links and direct quotes regarding municipal expenditures."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The text relays the mayor's requests, details about the event, and descriptions of the protests without using manipulative persuasive propaganda."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Standard news reporting describing physical altercations and listing the groups involved. While 'extremists' can be a label, it functions here as a standard journalistic descriptor rather than explicit name-calling."",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This is standard boilerplate text for a news application."",
+      ""paragraphIndex"": 5
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""Nothing America cannot do"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""Far-right extremists Proud Boys outnumbered by counter-protesters"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 8
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 9
+    }
+  ]
+}","{""title"": ""DC mayor says Trump's Fourth of July celebration emptied security fund"", ""topic"": ""politics"", ""source"": ""USA TODAY"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph reports on the parade and municipal costs neutrally."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph quotes financial concerns and requests from an official letter, lacking explicit polarizing rhetoric."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Standard news reporting describing altercations and listing the groups involved."", ""paragraphIndex"": 2}]}"
+13,Protest in Madrid as conservatives suspend ban on most polluting cars,environmental issues,Reuters,center,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""raising fears that environmental rollbacks seen in the United States may be spreading to Europe"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""We have to save (the planet) starting at the local and small level"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    }
+  ]
+}","{
+  ""title"": ""Protest in Madrid as conservatives suspend ban on most polluting cars"",
+  ""topic"": ""environmental issues"",
+  ""source"": ""Reuters"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""slogans"",
+      ""text"": ""\""Yes we can, I do want Madrid central,\"""",
+      ""openFeedback"": ""This quoted chant from the protesters serves as a compact, repeated rally cry, which fits the definition of a slogan."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph consists of factual reporting and direct quotes without explicit propaganda or inflammatory language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph reports on the city hall's actions and European Commission warnings neutrally."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""Yes we can, I do want Madrid central"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""I want to breathe free"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""We aspire to have a Madrid without smoke"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    }
+  ]
+}","{""title"": ""Protest in Madrid as conservatives suspend ban on most polluting cars"", ""topic"": ""environmental issues"", ""source"": ""Reuters"", ""rating"": ""center"", ""annotations"": [{""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""Yes we can, I do want Madrid central"", ""openFeedback"": ""Compact, repeated rally chant from protesters fitting the slogan definition."", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""I want to breathe free"", ""openFeedback"": ""Rally-like banner slogan."", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""We aspire to have a Madrid without smoke"", ""openFeedback"": ""Rally-like banner slogan."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph consists of factual reporting and direct quotes without explicit propaganda or inflammatory language."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph reports on the city hall's actions and European Commission warnings neutrally."", ""paragraphIndex"": 2}]}"
+14,tutankhamun sculpture's london auction sparks egyptian outcry,health,Associated Press,center,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""the late Egyptian strongman"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    }
+  ]
+}","{
+  ""title"": ""tutankhamun sculpture's london auction sparks egyptian outcry"",
+  ""topic"": ""health"",
+  ""source"": ""Associated Press"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Objective reporting of the auction and diplomatic objections."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Contains quotes regarding an ownership dispute, which is standard legal/diplomatic reporting rather than propaganda."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Provides historical background and statements from auction house authorities without inflammatory language."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Factual reporting on Egypt's campaign to recover lost art; 'strongman' is standard journalistic terminology here rather than name-calling."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{""title"": ""tutankhamun sculpture's london auction sparks egyptian outcry"", ""topic"": ""health"", ""source"": ""Associated Press"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Objective reporting of the auction and diplomatic objections."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Standard legal/diplomatic reporting of ownership dispute."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Historical background without inflammatory language."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Factual reporting; 'strongman' is standard journalistic terminology."", ""paragraphIndex"": 3}]}"
+15,meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.,crime,Chicago Tribune,center,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""Disparaging a member of the royal family for having too many ideas or caring too much about charity work is ridiculous"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""sexism that often demonizes driven women as \""abrasive\"" or \""bossy\"" while men are praised for being \""aggressive.\"" People love tearing down powerful women by dismissing them as difficult divas"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""volatile \"" wave of abuse and harassment \"" from members of the press and anonymous trolls"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""the \""outright sexism and racism\"" she faced"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""The scrutiny has only intensified since the royal couple married last year and welcomed their son Archie in May, thrusting them even further into the public eye"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""Disparaging Markle for having too many ideas or caring too much about charity work rings of the sexism that often demonizes driven women"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""sound like a woman with ambition. What's truly \""difficult\"" is why people feel the need to ridicule her for it"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""text"": ""feel the need to ridicule her for it"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 8
+    }
+  ]
+}","{""title"": ""meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."", ""topic"": ""crime"", ""source"": ""Chicago Tribune"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph quotes tabloids and makes sociological arguments but lacks explicit inflammatory language or propaganda from the author."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph describes rumors and reports without using polarizing language."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph quotes a royal biographer and a communications secretary, keeping the tone objective and reporting-based."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph cites studies to support a point about gender bias and does not contain inflammatory or persuasive propaganda."", ""paragraphIndex"": 3}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The conclusion recaps the points in a neutral manner and lists other articles, avoiding any polarizing language."", ""paragraphIndex"": 4}]}","{
+  ""annotations"": [
+    {
+      ""text"": ""has been branded 'difficult' by tabloids"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""duchess difficult, Me-Gain, and Hurricane Meghan"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""dismissing them as difficult divas"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""unflattering nicknames for the Duchess of Sussex such as duchess difficult"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""Markle is not popular among Prince Harry's friends because they seem to think that she's running the show"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""such a volatile wave of abuse and harassment from members of the press and anonymous trolls"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""text"": ""Markle is being labeled difficult and unpopular because it seems that she's running the show"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 8
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 9
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 10
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 11
+    },
+    {
+      ""text"": ""All of Markle's supposed transgressions - waking up early, sending ideas and delegating tasks to her staff"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 12
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 13
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 14
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 15
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 16
+    }
+  ]
+}","{""title"": ""meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."", ""topic"": ""crime"", ""source"": ""Chicago Tribune"", ""rating"": ""center"", ""annotations"": [{""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""duchess difficult, Me-Gain, and Hurricane Meghan"", ""openFeedback"": ""Loaded nicknames used to disparage the subject."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""dismissing them as difficult divas"", ""openFeedback"": ""Loaded label aimed at powerful women."", ""paragraphIndex"": 0}]}"
+16,Biden criticizes Amazon for paying $0 in corporate taxes,politics,The Hill,center,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""dangerous working conditions"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""treated inhumanely at the facilities"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""wielding its corporate power to the detriment of other companies and workers"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""Amazon crushes small companies"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""taken Amazon to task over its working conditions"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""insulted CEO Jeff Bezos"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""accused Amazon of colluding with Democrats to \""discriminate\"" against him"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{
+  ""title"": ""Biden criticizes Amazon for paying $0 in corporate taxes"",
+  ""topic"": ""politics"",
+  ""source"": ""The Hill"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""slogans"",
+      ""text"": ""We need to reward work, not just wealth."",
+      ""openFeedback"": ""This phrase operates as a compact, campaign-style political slogan used by Biden to concisely summarize his policy stance in a memorable, repetitive way."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph primarily consists of corporate defense statements, legal claims, and casual campaign rhetoric without reaching the threshold for explicit polarizing language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""While Senator Warren's phrase 'crushes small companies' is strong and vivid, it functions as standard political critique of corporate monopoly practices rather than overt demonization or exaggeration."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph neutrally reports on allegations made by President Trump without adopting or explicitly amplifying inflammatory language or persuasive propaganda."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""Amazon crushes small companies by copying the goods they sell on the Amazon Marketplace"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""accused Amazon of colluding with Democrats to \""discriminate\"" against him"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{""title"": ""Biden criticizes Amazon for paying $0 in corporate taxes"", ""topic"": ""politics"", ""source"": ""The Hill"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Reporting on tax criticism without explicit polarizing wording."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Corporate defense and allegations reported neutrally."", ""paragraphIndex"": 1}, {""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""Amazon crushes small companies"", ""openFeedback"": ""Vivid predatory framing portraying Amazon as harming others."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Reports Trump's allegations without amplifying inflammatory language."", ""paragraphIndex"": 3}]}"
+17,trump vows to cure cancer and eradicate aids,legal arguments,USA TODAY,center,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""mocked Democratic presidential candidate and former Vice President Joe Biden"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""Wow, why the hell didn't you do that over the last 50 years, Joe?"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""Some observers couldn't help but wonder about the feasibility of the president's big promises"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    }
+  ]
+}","{
+  ""title"": ""trump vows to cure cancer and eradicate aids"",
+  ""topic"": ""legal arguments"",
+  ""source"": ""USA TODAY"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph neutrally reports on campaign promises without introducing inflammatory language or propaganda."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph provides direct quotes and statistics neutrally, without polarizing language from the author."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph neutrally details budget proposals and quoted political statements."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph neutrally reports on the political figure's statements regarding Mars."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""two of mankind's most dreaded diseases"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""We will come up with the cures to many, many problems"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""why the hell didn't you do that over the last 50 years, Joe?"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""We will eradicate AIDS in America once and for all and we are really close"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 8
+    },
+    {
+      ""text"": ""Some observers couldn't help but wonder about the feasibility of the president's big promises"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 9
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 10
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 11
+    }
+  ]
+}","{""title"": ""trump vows to cure cancer and eradicate aids"", ""topic"": ""legal arguments"", ""source"": ""USA TODAY"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph neutrally reports on campaign promises without introducing inflammatory language or propaganda."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""why the hell didn't you do that over the last 50 years, Joe?"", ""openFeedback"": ""Mocking, loaded rhetorical attack directed at Joe Biden."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""doubt"", ""text"": ""Some observers couldn't help but wonder about the feasibility of the president's big promises"", ""openFeedback"": ""Language questioning the credibility of the promises without direct evidence."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph neutrally reports on the political figure's statements regarding Mars."", ""paragraphIndex"": 3}]}"
+18,donald trump's criminal justice reform shows results,politics,National Review,right,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""The president deserves kudos for his latest efforts in tackling long overdue needs of the criminal justice system in America"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""extreme and morally damaging sentencing practices of the modern era"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""it is little more than a system for warehousing human beings"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""The First Step Act is a great start"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""title"": ""donald trump's criminal justice reform shows results"",
+  ""topic"": ""politics"",
+  ""source"": ""National Review"",
+  ""rating"": ""right"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph introduces the First Step Act and advocates for rehabilitation without using inflammatory language or clear persuasive propaganda."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph uses an anecdote to highlight the difficulties former inmates face upon release. The language is descriptive and lacks polarizing terminology."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The text discusses sentencing practices and the political pressures judges face. Quotes like 'soft on crime' are analyzed in context rather than used as direct name-calling."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""While phrases like 'warehousing human beings' show strong opinion, they function as standard op-ed critique rather than high-confidence inflammatory propaganda."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph provides statistical comparisons and an author biography without any polarizing or propagandistic language."",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""It is a major achievement in improving the criminal justice system, long overdue"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""A death knell against winning at the polls is to appear \""soft on crime,\"" generally measured in sentencing practices"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    }
+  ]
+}","{""title"": ""donald trump's criminal justice reform shows results"", ""topic"": ""politics"", ""source"": ""National Review"", ""rating"": ""right"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph introduces the First Step Act and advocates for rehabilitation without clear polarizing language."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Descriptive anecdote without polarizing terminology."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Discusses sentencing and political pressures in context."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Strong op-ed critique but not high-confidence inflammatory propaganda."", ""paragraphIndex"": 3}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Statistical comparisons and author biography without polarizing language."", ""paragraphIndex"": 4}]}"
+19,GOP lawmaker suggests Colin Kaepernick move to a different country,politics,Breitbart News,right,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""some \""very radical people in the United States of America who don't like America.\"""",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""very radical people in the United States of America who don't like America."",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""I would put Mr. Kaepernick in that category"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""All of these things that we enjoy he seems to frown upon, and so I just assume he'd leave."",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{""title"": ""GOP lawmaker suggests Colin Kaepernick move to a different country"", ""topic"": ""politics"", ""source"": ""Breitbart News"", ""rating"": ""right"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph reports on the controversy and quotes the lawmaker's suggestion without using explicit polarizing language as defined by the guidelines."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""very radical people in the United States of America who don't like America"", ""openFeedback"": ""The speaker applies the loaded negative label 'very radical people' to discredit the target and shape the audience's perception."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""All of these things that we enjoy he seems to frown upon"", ""openFeedback"": ""The speaker inflates the scale of Kaepernick's opposition by making the sweeping claim that he frowns upon 'all' of the things Americans enjoy."", ""paragraphIndex"": 2}]}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""very radical people in the United States of America who don't like America"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    }
+  ]
+}","{""title"": ""GOP lawmaker suggests Colin Kaepernick move to a different country"", ""topic"": ""politics"", ""source"": ""Breitbart News"", ""rating"": ""right"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph reports on the controversy without explicit polarizing language."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""very radical people in the United States of America who don't like America"", ""openFeedback"": ""The speaker applies the loaded negative label 'very radical people' to discredit the target."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""All of these things that we enjoy he seems to frown upon"", ""openFeedback"": ""The speaker inflates the scale of Kaepernick's opposition with a sweeping claim."", ""paragraphIndex"": 2}]}"
+20,Trump hits polling on Fox News: 'Something weird going on at Fox',politics,Fox News,right,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""Crooked Hillary"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""More Fake News"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""\""only fake polls\"""",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""referring to them as a \""Motley Crew.\"""",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""MAKE AMERICA GREAT AGAIN!"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""\""wasting airtime\"""",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""Fox is moving more and more to the losing (wrong) side"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{
+  ""title"": ""Trump hits polling on Fox News: 'Something weird going on at Fox'"",
+  ""topic"": ""politics"",
+  ""source"": ""Fox News"",
+  ""rating"": ""right"",
+  ""annotations"": [
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""They were against Crooked Hillary also."",
+      ""openFeedback"": ""Uses the loaded, negative label 'Crooked Hillary' to discredit a political opponent."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""referring to them as a \""Motley Crew.\"""",
+      ""openFeedback"": ""Employs a loaded label to characterize and dismiss the group of Democratic candidates."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""slogans"",
+      ""text"": ""\""Much work to do! MAKE AMERICA GREAT AGAIN!\"""",
+      ""openFeedback"": ""Directly uses a compact, repeated campaign slogan."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No clear inflammatory language or persuasive propaganda meets the strict threshold in this paragraph."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""saying \""something weird\"" is happening at the network favored by conservatives"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""Crooked Hillary"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""Something weird going on at Fox"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""More Fake News @BretBaier"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""referring to them as a \""Motley Crew\"""",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""only fake polls"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""MAKE AMERICA GREAT AGAIN!"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 8
+    },
+    {
+      ""text"": ""was \""wasting airtime\"" by hosting a town hall with Buttigieg"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 9
+    },
+    {
+      ""text"": ""Fox is moving more and more to the losing (wrong) side in covering the Dems"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 9
+    }
+  ]
+}","{""title"": ""Trump hits polling on Fox News: 'Something weird going on at Fox'"", ""topic"": ""politics"", ""source"": ""Fox News"", ""rating"": ""right"", ""annotations"": [{""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""Crooked Hillary"", ""openFeedback"": ""Uses the loaded, negative label 'Crooked Hillary' to discredit a political opponent."", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""doubt"", ""text"": ""More Fake News"", ""openFeedback"": ""Undermines the network's credibility without evidence."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""referring to them as a \""Motley Crew.\"""", ""openFeedback"": ""Employs a loaded label to characterize and dismiss the group of Democratic candidates."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""doubt"", ""text"": ""\""only fake polls\"""", ""openFeedback"": ""Undermines credibility of polling without evidence."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""MAKE AMERICA GREAT AGAIN!"", ""openFeedback"": ""Directly uses a compact, repeated campaign slogan."", ""paragraphIndex"": 1}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""\""wasting airtime\"""", ""openFeedback"": ""Loaded characterization aimed at Fox News host coverage."", ""paragraphIndex"": 2}]}"
+21,"'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar",politics,Boston Herald,right,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""politicians involved in 'spreading hate' should consider dining at home"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""If you're an unsavory individual - of whatever persuasion or affiliation"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""an administration that has made its name trashing norms and breaking backs"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""You can't call people your enemies by day and expect hospitality from them in the evening"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""If you're directly complicit in spreading hate or perpetuating suffering, maybe you should consider dining at home"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 6
+    }
+  ]
+}","{
+  ""title"": ""'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar"",
+  ""topic"": ""politics"",
+  ""source"": ""Boston Herald"",
+  ""rating"": ""right"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph neutrally reports on the quotes and actions of a restaurant owner without directly employing inflammatory language or persuasive propaganda."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""an administration that has made its name trashing norms and breaking backs"",
+      ""openFeedback"": ""The quoted language uses inflated intensity and dramatic metaphor ('breaking backs') to exaggerate the actions and impact of the administration."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""directly complicit in spreading hate or perpetuating suffering"",
+      ""openFeedback"": ""This phrase characterizes political opponents as evil, framing them as active contributors to societal harm, hate, and suffering."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph provides a straightforward factual account of the incident and contains no polarizing language."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""an administration that has made its name trashing norms and breaking backs"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""You can't call people your enemies by day and expect hospitality from them in the evening"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""If you're directly complicit in spreading hate or perpetuating suffering, maybe you should consider dining at home"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    }
+  ]
+}","{""title"": ""'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar"", ""topic"": ""politics"", ""source"": ""Boston Herald"", ""rating"": ""right"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Paragraph reports quotes and events neutrally."", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""an administration that has made its name trashing norms and breaking backs"", ""openFeedback"": ""Inflated dramatic metaphor exaggerating the administration's actions."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""casual oversimplification"", ""text"": ""You can't call people your enemies by day and expect hospitality from them in the evening"", ""openFeedback"": ""Reduces a complex situation to a simple cause-and-effect claim."", ""paragraphIndex"": 1}, {""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""If you're directly complicit in spreading hate or perpetuating suffering, maybe you should consider dining at home"", ""openFeedback"": ""Frames political opponents as complicit in hate and suffering."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Factual account of the incident."", ""paragraphIndex"": 3}]}"
+22,"Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud",politics,Fox News,right,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""took another shot at Alabama Judge Roy Moore"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""This can't be real... can it?"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""This is pure fake news"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""he's doing a disservice to all conservatives across the country"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""You're literally the only candidate who could lose a GOP seat"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""If you actually care about #MAGA more than your own ego"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""time to ride off into the sunset, Judge"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""title"": ""Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud"",
+  ""topic"": ""politics"",
+  ""source"": ""Fox News"",
+  ""rating"": ""right"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No clear polarizing language identified in this paragraph; mostly direct quotes and standard reporting."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""slogans"",
+      ""text"": ""This is pure fake news."",
+      ""openFeedback"": ""The phrase 'fake news' is a compact, repeated campaign-style slogan used to dismiss or discredit statements."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No polarizing language identified; the paragraph reports on political strategies and quotes a metaphor ('gift wrapping'), which does not meet the strict definitions."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""Based on the allegations I'd stay away from that but hey I'm new to this"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""This is pure fake news"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""he's doing a disservice to all conservatives across the country"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""You're literally the only candidate who could lose a GOP seat in pro-Trump, pro-USA ALABAMA"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""it's time to ride off into the sunset, Judge"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""You're literally the only candidate who could lose a GOP seat in pro-Trump, pro-USA ALABAMA"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""it's time to ride off into the sunset, Judge"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""which stands for \""anyone but Roy Moore\"""",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""gift wrapping this Senate seat for Chuck Schumer"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""whether Moore can escape his baggage without his candidacy collapsing under its own weight"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 7
+    }
+  ]
+}","{""title"": ""Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud"", ""topic"": ""politics"", ""source"": ""Fox News"", ""rating"": ""right"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""No clear polarizing language; mostly direct quotes and standard reporting."", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""This is pure fake news."", ""openFeedback"": ""The phrase 'fake news' is a compact, repeated campaign-style slogan used to dismiss statements."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""he's doing a disservice to all conservatives across the country"", ""openFeedback"": ""Inflated moral stakes and scale attributed to a single candidacy."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""You're literally the only candidate who could lose a GOP seat in pro-Trump, pro-USA ALABAMA"", ""openFeedback"": ""Inflated certainty and scale using 'literally the only'."", ""paragraphIndex"": 1}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""it's time to ride off into the sunset, Judge"", ""openFeedback"": ""Loaded mocking label aimed at the candidate."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Reports political strategy and quotes a metaphor; does not meet strict definitions."", ""paragraphIndex"": 2}]}"
+23,"RMV Fail: 546 license suspensions, more to come",legal arguments,Boston Herald,right,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""deadly bureaucratic failure"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""deadly oversight"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+  ""title"": ""RMV Fail: 546 license suspensions, more to come"",
+  ""topic"": ""legal arguments"",
+  ""source"": ""Boston Herald"",
+  ""rating"": ""right"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph reports on an administrative failure and its tragic consequences factually without relying on propaganda or inflammatory language."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph objectively reports statements made during a press conference and details the official response to the backlog."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph reports on steps taken to fix the registry and lists related headlines. No explicit persuasive propaganda or inflammatory language is used."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph neutrally covers legislative response and accountability measures with no polarizing rhetoric."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""in a deadly bureaucratic failure that Gov. Charlie Baker admits"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""In a stunning press conference detailing the scope of the crisis"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""This failure is completely unacceptable to me"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{""title"": ""RMV Fail: 546 license suspensions, more to come"", ""topic"": ""legal arguments"", ""source"": ""Boston Herald"", ""rating"": ""right"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph reports on an administrative failure factually."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Objectively reports statements from a press conference."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Reports on steps taken to fix the registry."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutrally covers legislative response."", ""paragraphIndex"": 3}]}"
+24,Killer of 16-year-old New York girl in 1980 released on parole despite outrage,crime,Fox News,right,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""brutally murdering a 16-year-old girl"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""SO HIDEOUS' THAT 16-YEAR-OLD NEW YORK GIRL'S KILLER IS BEING RELEASED"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""hit in the head with a concrete block, raped twice, strangled and stabbed five times"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""the most brutal murder he had ever seen"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""walked silently in the dark, with candles illuminating the same path Bohovesky walked on that fateful night"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""this man should not be out in the streets"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""this release of this rapist and murderer is so hideous to me"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""so that first, hopefully, it won't happen, but if it sadly does, that it won't happen again"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 6
+    }
+  ]
+}","{
+  ""title"": ""Killer of 16-year-old New York girl in 1980 released on parole despite outrage"",
+  ""topic"": ""crime"",
+  ""source"": ""Fox News"",
+  ""rating"": ""right"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph reports factual details of a crime and its judicial outcome, including direct quotes, without using author-driven inflammatory language or propaganda."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The text details legal filings and parole board proceedings in a neutral, factual manner."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph describes protests and includes quotes from a former governor expressing an opinion, but contains no explicitly polarizing propaganda adopted by the author."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph relies entirely on direct quotes from individuals involved in the story to convey their perspective; there is no explicitly manipulative or polarizing language used by the author."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""'SO HIDEOUS' THAT 16-YEAR-OLD NEW YORK GIRL'S KILLER IS BEING RELEASED, PATAKI SAYS IN PLEA TO CUOMO"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""the parole board filled with the governor's appointees"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""this release of this rapist and murderer is so hideous to me"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{""title"": ""Killer of 16-year-old New York girl in 1980 released on parole despite outrage"", ""topic"": ""crime"", ""source"": ""Fox News"", ""rating"": ""right"", ""annotations"": [{""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""the most brutal murder he had ever seen"", ""openFeedback"": ""Inflated moral stakes framing."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral factual reporting of legal proceedings."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Describes protests and quotes without author-driven polarizing language."", ""paragraphIndex"": 2}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""this release of this rapist and murderer is so hideous to me"", ""openFeedback"": ""Inflated emotional/moral intensity in quoted statement."", ""paragraphIndex"": 3}]}"
+25,"Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal",environmental issues,Fox News,right,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""a radical, top-down, socialist makeover of the entire U.S. economy"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""phony national emergencies"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""title"": ""Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal"",
+  ""topic"": ""environmental issues"",
+  ""source"": ""Fox News"",
+  ""rating"": ""right"",
+  ""annotations"": [
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""doubt"",
+      ""text"": ""how to address the so-called emergency"",
+      ""openFeedback"": ""The author uses the phrase 'so-called' to actively undermine the credibility and legitimacy of the climate emergency declaration."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""a radical, top-down, socialist makeover of the entire U.S. economy"",
+      ""openFeedback"": ""This phrase uses a string of loaded negative labels to shape how the audience feels about the Green New Deal, attempting to discredit it."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""devastate the economy and trigger massive tax increases"",
+      ""openFeedback"": ""The terms 'devastate' and 'massive' inflate the scale and intensity of the proposed policy's potential consequences."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""it doesn't make any exact recommendations how to address the so-called emergency"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""demands a national, social, industrial, and economic mobilization of the resources and labor of the United States at a massive-scale"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""a radical, top-down, socialist makeover of the entire U.S. economy"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""saying it would devastate the economy and trigger massive tax increases"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""President Trump has routinely declared phony national emergencies to advance his deeply unpopular agenda"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{""title"": ""Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal"", ""topic"": ""environmental issues"", ""source"": ""Fox News"", ""rating"": ""right"", ""annotations"": [{""category"": ""Persuasive Propaganda"", ""subcategory"": ""doubt"", ""text"": ""how to address the so-called emergency"", ""openFeedback"": ""The phrase 'so-called' actively undermines the legitimacy of the climate emergency declaration."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""a radical, top-down, socialist makeover of the entire U.S. economy"", ""openFeedback"": ""String of loaded negative labels used to discredit the Green New Deal."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""saying it would devastate the economy and trigger massive tax increases"", ""openFeedback"": ""Terms 'devastate' and 'massive' inflate the scale of the policy's potential consequences."", ""paragraphIndex"": 2}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""phony national emergencies"", ""openFeedback"": ""Loaded label aimed at discrediting Trump's declarations."", ""paragraphIndex"": 2}]}"
+26,Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time,politics,Fox News,right,prompt_v3_high_precision_adjudicated,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""this president and his chicken hawk cabinet have led us to the brink of war with Iran"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""slamming MSNBC for favoring Warren"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""It\'s clear who MSNBC wants to be president: Elizabeth Warren"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""They\'re giving her more time than all the other candidates combined"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 6
+    }
+  ]
+}","{
+  ""title"": ""Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time"",
+  ""topic"": ""politics"",
+  ""source"": ""Fox News"",
+  ""rating"": ""right"",
+  ""annotations"": [
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""this president and his chicken hawk cabinet"",
+      ""openFeedback"": ""The term 'chicken hawk' is a loaded, derogatory label used to disparage the president's cabinet and shape a negative emotional response."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph contains quotes from a political debate and commentary on the debate performance, but lacks clear examples of persuasive propaganda or inflammatory language meeting the strict definitions."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""giving her more time than all the other candidates combined"",
+      ""openFeedback"": ""This claim hyper-inflates the scale of the speaking time discrepancy (as earlier text shows other candidates had more time individually) to emphasize the speaker's frustration with perceived network bias."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""this president and his chicken hawk cabinet have led us to the brink of war with Iran"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 8
+    },
+    {
+      ""text"": ""It's clear who MSNBC wants to be president: Elizabeth Warren"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 9
+    }
+  ]
+}","{""title"": ""Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time"", ""topic"": ""politics"", ""source"": ""Fox News"", ""rating"": ""right"", ""annotations"": [{""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""this president and his chicken hawk cabinet have led us to the brink of war with Iran"", ""openFeedback"": ""The term 'chicken hawk' is a loaded, derogatory label used to disparage the president's cabinet."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Auto-filled: No Polarizing language / no polarizing language"", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""exaggeration"", ""text"": ""They're giving her more time than all the other candidates combined"", ""openFeedback"": ""This inflates the scale of the speaking time discrepancy to emphasize perceived network bias."", ""paragraphIndex"": 2}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""doubt"", ""text"": ""It's clear who MSNBC wants to be president: Elizabeth Warren"", ""openFeedback"": ""Undermines the credibility of MSNBC by asserting bias without evidence."", ""paragraphIndex"": 2}]}"

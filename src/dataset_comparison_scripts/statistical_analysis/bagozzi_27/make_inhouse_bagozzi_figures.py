@@ -133,6 +133,28 @@ def draw_flow(ax, x0, y0, h0, x1, y1, h1, color, alpha=0.42):
     ax.add_patch(PathPatch(MplPath(verts, codes), facecolor=color, edgecolor="none", alpha=alpha, zorder=1))
 
 
+def draw_flow_highlight(ax, x0, y0, x1, y1, color, linewidth=14):
+    verts = [
+        (x0, y0),
+        ((x0 + x1) / 2, y0),
+        ((x0 + x1) / 2, y1),
+        (x1, y1),
+    ]
+    codes = [MplPath.MOVETO, MplPath.CURVE4, MplPath.CURVE4, MplPath.CURVE4]
+    ax.add_patch(
+        PathPatch(
+            MplPath(verts, codes),
+            facecolor="none",
+            edgecolor=color,
+            linewidth=linewidth,
+            alpha=0.95,
+            capstyle="round",
+            joinstyle="round",
+            zorder=2,
+        )
+    )
+
+
 def sankey_figure(metrics: dict) -> Path:
     counts = metrics["sankey_counts"]
     fig, ax = plt.subplots(figsize=(13.5, 5.8), facecolor="white")
@@ -240,7 +262,17 @@ def sankey_figure(metrics: dict) -> Path:
 
     h_b_agree = counts["greedy_2of3_inhouse_bagozzi_agreed_spans"] * scale
     h_b_no = (counts["bagozzi_polarizing"] - counts["greedy_2of3_inhouse_bagozzi_agreed_spans"]) * scale
-    draw_flow(ax, xb + 0.06, yb + hb - h_b_agree, h_b_agree, xa, ya, h_b_agree, colors["agree"], 0.62)
+    expert_overlap_y0 = yb + hb - h_b_agree
+    expert_overlap_y1 = ya
+    draw_flow(ax, xb + 0.06, expert_overlap_y0, h_b_agree, xa, expert_overlap_y1, h_b_agree, colors["bagozzi"], 0.72)
+    draw_flow_highlight(
+        ax,
+        xb + 0.06,
+        expert_overlap_y0 + h_b_agree / 2,
+        xa,
+        expert_overlap_y1 + h_b_agree / 2,
+        colors["bagozzi"],
+    )
     draw_flow(ax, xb + 0.06, yb, h_b_no, xe, ye, he, colors["bagozzi_other"], 0.58)
 
     ax.set_title(
@@ -388,8 +420,6 @@ def coverage_figure(four_articles: list[dict], metrics: dict) -> Path:
     for idx, total in enumerate(bottoms):
         ax.text(idx, total + 0.25, str(int(total)), ha="center", va="bottom", fontsize=10, fontweight="bold")
 
-    ax.axhline(metrics["four_article_spans_mean"], color="#334155", linestyle="--", linewidth=1.2, label=f"Mean spans/article = {metrics['four_article_spans_mean']:.2f}")
-    ax.axhline(metrics["four_article_spans_median"], color="#64748b", linestyle=":", linewidth=1.8, label=f"Median spans/article = {metrics['four_article_spans_median']:.2f}")
     ax.set_xticks(x, article_labels, rotation=18, ha="right")
     ax.set_ylabel("Final agreed annotations")
     ax.set_title("Coverage by Article: Final Annotation Subcategories", fontsize=15, fontweight="bold")
@@ -455,7 +485,6 @@ def main():
         }
 
     four_articles = json.loads(FOUR_ARTICLES.read_text(encoding="utf-8"))
-    spans_per_article = [len(article.get("annotations", [])) for article in four_articles]
 
     metrics = {
         "source_files": {
@@ -486,8 +515,6 @@ def main():
         "four_article_annotation_counts": {
             article["title"]: len(article.get("annotations", [])) for article in four_articles
         },
-        "four_article_spans_mean": float(np.mean(spans_per_article)),
-        "four_article_spans_median": float(np.median(spans_per_article)),
         "four_article_subcategory_counts": dict(
             Counter(
                 normalize_label(ann["subcategory"])
