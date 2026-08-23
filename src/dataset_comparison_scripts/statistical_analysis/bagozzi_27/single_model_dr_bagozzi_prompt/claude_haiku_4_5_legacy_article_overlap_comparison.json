@@ -1,0 +1,698 @@
+{
+  "prediction_path": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/single_model_dr_bagozzi_prompt/claude_haiku_4_5_polarizing_only.json",
+  "gold_path": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
+  "overall": {
+    "article_match": {
+      "precision": 0.235,
+      "recall": 0.078,
+      "f1": 0.118,
+      "correct_matches": 4,
+      "total_llm": 17,
+      "total_gold": 51
+    },
+    "category_match": {
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "correct_matches": 2,
+      "total_matches": 4
+    },
+    "category_match_per_class": {
+      "inflammatory language": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.857,
+        "support": 3,
+        "tp": 3,
+        "fp": 1,
+        "fn": 0
+      },
+      "persuasive propaganda": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "subcategory_match_per_class": {
+      "demonization": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "exaggeration": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "name-calling": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.667,
+        "support": 2,
+        "tp": 2,
+        "fp": 2,
+        "fn": 0
+      }
+    },
+    "weighted_article_match": {
+      "precision": 0.235,
+      "recall": 0.078,
+      "f1": 0.118,
+      "tp_weight": 4.0,
+      "total_gold_weight": 51.0,
+      "fp": 13
+    }
+  },
+  "per_article": {
+    "Biden criticizes Amazon for paying $0 in corporate taxes": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 1.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 1.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "donald trump's criminal justice reform shows results": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 1.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "'Every American is entitled to health care': Sen. Bernie Sanders": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 3.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 3.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "george conway urges trump to resign over aborted iran strike": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 7
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 7.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 7
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "GOP lawmaker suggests Colin Kaepernick move to a different country": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 1.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.667,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.667,
+        "tp_weight": 1.0,
+        "total_gold_weight": 2.0,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "demonization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "name-calling": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        }
+      }
+    },
+    "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 1.0,
+        "total_gold_weight": 1.0,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "name-calling": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 3.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.167,
+        "f1": 0.286,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 6
+      },
+      "category_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.167,
+        "f1": 0.286,
+        "tp_weight": 1.0,
+        "total_gold_weight": 6.0,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 6
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "persuasive propaganda": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "subcategory_match_per_class": {
+        "exaggeration": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "name-calling": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        }
+      }
+    },
+    "Protest in Madrid as conservatives suspend ban on most polluting cars": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 1.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "ron desantis signs amendment 4 bill, limiting felon voting": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 2.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333,
+        "tp_weight": 1.0,
+        "total_gold_weight": 5.0,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "name-calling": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "Trump hits polling on Fox News: 'Something weird going on at Fox'": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 5.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 8
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 8.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 8
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "trump vows to cure cancer and eradicate aids": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 1.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    }
+  },
+  "n_articles_compared": 17
+}
