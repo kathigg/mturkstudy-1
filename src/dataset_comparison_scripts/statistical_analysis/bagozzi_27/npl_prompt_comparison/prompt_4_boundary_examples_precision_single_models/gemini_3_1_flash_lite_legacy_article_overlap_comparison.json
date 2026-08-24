@@ -1,0 +1,1117 @@
+{
+  "prediction_path": "src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models/gemini_3_1_flash_lite_polarizing_only.json",
+  "gold_path": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
+  "overall": {
+    "article_match": {
+      "precision": 0.615,
+      "recall": 0.393,
+      "f1": 0.48,
+      "correct_matches": 24,
+      "total_llm": 39,
+      "total_gold": 61
+    },
+    "category_match": {
+      "precision": 0.542,
+      "recall": 0.542,
+      "f1": 0.542,
+      "correct_matches": 13,
+      "total_matches": 24
+    },
+    "category_match_per_class": {
+      "inflammatory language": {
+        "precision": 0.75,
+        "recall": 0.833,
+        "f1": 0.789,
+        "support": 18,
+        "tp": 15,
+        "fp": 5,
+        "fn": 3
+      },
+      "persuasive propaganda": {
+        "precision": 0.25,
+        "recall": 0.167,
+        "f1": 0.2,
+        "support": 6,
+        "tp": 1,
+        "fp": 3,
+        "fn": 5
+      }
+    },
+    "subcategory_match_per_class": {
+      "casual oversimplification": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1
+      },
+      "demonization": {
+        "precision": 0.333,
+        "recall": 0.333,
+        "f1": 0.333,
+        "support": 3,
+        "tp": 1,
+        "fp": 2,
+        "fn": 2
+      },
+      "doubt": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "exaggeration": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 3,
+        "tp": 0,
+        "fp": 2,
+        "fn": 3
+      },
+      "name-calling": {
+        "precision": 0.688,
+        "recall": 0.786,
+        "f1": 0.733,
+        "support": 14,
+        "tp": 11,
+        "fp": 5,
+        "fn": 3
+      },
+      "scapegoating": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1
+      },
+      "slogans": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "weighted_article_match": {
+      "precision": 0.615,
+      "recall": 0.393,
+      "f1": 0.48,
+      "tp_weight": 24.0,
+      "total_gold_weight": 61.0,
+      "fp": 15
+    }
+  },
+  "per_article": {
+    "DC mayor says Trump's Fourth of July celebration emptied security fund": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 2.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 2
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings": {
+      "article_match": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.667,
+        "correct_matches": 1,
+        "total_llm": 2,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.667,
+        "tp_weight": 1.0,
+        "total_gold_weight": 1.0,
+        "fp": 1,
+        "matched": 1,
+        "total_llm": 2,
+        "total_gold": 1
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "persuasive propaganda": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "subcategory_match_per_class": {
+        "doubt": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "name-calling": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        }
+      }
+    },
+    "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 3.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "editorial: six months after california's landmark police transparency law, many agencies still won't release their records": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 4
+      },
+      "category_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "tp_weight": 1.0,
+        "total_gold_weight": 4.0,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 4
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "persuasive propaganda": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "subcategory_match_per_class": {
+        "demonization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "exaggeration": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      }
+    },
+    "'Every American is entitled to health care': Sen. Bernie Sanders": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.667,
+        "f1": 0.8,
+        "correct_matches": 2,
+        "total_llm": 2,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 2
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.667,
+        "f1": 0.8,
+        "tp_weight": 2.0,
+        "total_gold_weight": 3.0,
+        "fp": 0,
+        "matched": 2,
+        "total_llm": 2,
+        "total_gold": 3
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.667,
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        "persuasive propaganda": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "subcategory_match_per_class": {
+        "demonization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "exaggeration": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "name-calling": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "scapegoating": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      }
+    },
+    "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.333,
+        "f1": 0.5,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.333,
+        "f1": 0.5,
+        "tp_weight": 1.0,
+        "total_gold_weight": 3.0,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "name-calling": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "george conway urges trump to resign over aborted iran strike": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.429,
+        "f1": 0.6,
+        "correct_matches": 3,
+        "total_llm": 3,
+        "total_gold": 7
+      },
+      "category_match": {
+        "precision": 0.667,
+        "recall": 0.667,
+        "f1": 0.667,
+        "correct_matches": 2,
+        "total_matches": 3
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.429,
+        "f1": 0.6,
+        "tp_weight": 3.0,
+        "total_gold_weight": 7.0,
+        "fp": 0,
+        "matched": 3,
+        "total_llm": 3,
+        "total_gold": 7
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 0.667,
+          "recall": 1.0,
+          "f1": 0.8,
+          "support": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        },
+        "persuasive propaganda": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "subcategory_match_per_class": {
+        "exaggeration": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "name-calling": {
+          "precision": 0.667,
+          "recall": 1.0,
+          "f1": 0.8,
+          "support": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0
+        }
+      }
+    },
+    "GOP lawmaker suggests Colin Kaepernick move to a different country": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 1.0,
+        "total_gold_weight": 1.0,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "name-calling": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar": {
+      "article_match": {
+        "precision": 0.333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "correct_matches": 1,
+        "total_llm": 3,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 0.333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "tp_weight": 1.0,
+        "total_gold_weight": 2.0,
+        "fp": 2,
+        "matched": 1,
+        "total_llm": 3,
+        "total_gold": 2
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "demonization": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.": {
+      "article_match": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.667,
+        "correct_matches": 1,
+        "total_llm": 2,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.667,
+        "tp_weight": 1.0,
+        "total_gold_weight": 1.0,
+        "fp": 1,
+        "matched": 1,
+        "total_llm": 2,
+        "total_gold": 1
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "name-calling": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.667,
+        "f1": 0.8,
+        "correct_matches": 2,
+        "total_llm": 2,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 2,
+        "total_matches": 2
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.667,
+        "f1": 0.8,
+        "tp_weight": 2.0,
+        "total_gold_weight": 3.0,
+        "fp": 0,
+        "matched": 2,
+        "total_llm": 2,
+        "total_gold": 3
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "name-calling": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 6
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 6.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 6
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "Protest in Madrid as conservatives suspend ban on most polluting cars": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 1.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333,
+        "tp_weight": 1.0,
+        "total_gold_weight": 5.0,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 5
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "demonization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "name-calling": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        }
+      }
+    },
+    "the latest: nadler says panel will move quickly on mcgahn": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 1.0,
+        "total_gold_weight": 1.0,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 1
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "name-calling": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "Trump hits polling on Fox News: 'Something weird going on at Fox'": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 5,
+        "total_llm": 5,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1": 0.6,
+        "correct_matches": 3,
+        "total_matches": 5
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp_weight": 5.0,
+        "total_gold_weight": 5.0,
+        "fp": 0,
+        "matched": 5,
+        "total_llm": 5,
+        "total_gold": 5
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.667,
+          "support": 4,
+          "tp": 2,
+          "fp": 0,
+          "fn": 2
+        },
+        "persuasive propaganda": {
+          "precision": 0.333,
+          "recall": 1.0,
+          "f1": 0.5,
+          "support": 1,
+          "tp": 1,
+          "fp": 2,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "exaggeration": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 0
+        },
+        "name-calling": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.667,
+          "support": 4,
+          "tp": 2,
+          "fp": 0,
+          "fn": 2
+        },
+        "slogans": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house": {
+      "article_match": {
+        "precision": 0.25,
+        "recall": 0.25,
+        "f1": 0.25,
+        "correct_matches": 2,
+        "total_llm": 8,
+        "total_gold": 8
+      },
+      "category_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 2
+      },
+      "weighted_article_match": {
+        "precision": 0.25,
+        "recall": 0.25,
+        "f1": 0.25,
+        "tp_weight": 2.0,
+        "total_gold_weight": 8.0,
+        "fp": 6,
+        "matched": 2,
+        "total_llm": 8,
+        "total_gold": 8
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.667,
+          "support": 2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        },
+        "persuasive propaganda": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "casual oversimplification": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "demonization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "name-calling": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1
+        }
+      }
+    },
+    "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized": {
+      "article_match": {
+        "precision": 0.667,
+        "recall": 0.4,
+        "f1": 0.5,
+        "correct_matches": 2,
+        "total_llm": 3,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "correct_matches": 1,
+        "total_matches": 2
+      },
+      "weighted_article_match": {
+        "precision": 0.667,
+        "recall": 0.4,
+        "f1": 0.5,
+        "tp_weight": 2.0,
+        "total_gold_weight": 5.0,
+        "fp": 1,
+        "matched": 2,
+        "total_llm": 3,
+        "total_gold": 5
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.667,
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        "persuasive propaganda": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "subcategory_match_per_class": {
+        "casual oversimplification": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "name-calling": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "scapegoating": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        }
+      }
+    }
+  },
+  "n_articles_compared": 18
+}

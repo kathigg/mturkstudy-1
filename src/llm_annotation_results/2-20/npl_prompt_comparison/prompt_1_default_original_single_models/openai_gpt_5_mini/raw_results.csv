@@ -1,0 +1,1057 @@
+index,title,topic,source,rating,provider,model,prompt_file,temperature,raw_json
+0,"'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki",legal arguments,The Washington Post,left,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""one of the most disgraceful performances by an American president in memory"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""naiveté, egotism, false equivalence, and sympathy for autocrats"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""defend a tyrant against the fair questions of a free press"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""describe the press conference as a pathetic rout as an illustration"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""his complicity in the slaughter of the Syrian people"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""President Trump's bombastic and erratic conduct towards our closest friends and allies"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""marks a recent low point in the history of the American Presidency"",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""text"": ""abased himself more abjectly before a tyrant"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 8
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 9
+    }
+  ]
+}"
+1,"trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house",legal arguments,The Washington Post,left,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""the more dishonest and deceitful newspaper, the Failing New York Times"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""They are both a disgrace to our Country, the Enemy of the People"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""(do you think the people would demand that I stay longer? KEEP AMERICA GREAT)"",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""the Failing New York Times just did a story stating"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""This is a virtual act of Treason by a once great paper so desperate for a story, any story, even if bad for our Country."",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""the \""fake news \"" and \""fake polling\"" after reports surfaced"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""The Fake News has never been more dishonest than it is today."",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}"
+2,'Every American is entitled to health care': Sen. Bernie Sanders,health,ABC News,left,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""international embarrassment of not guaranteeing health care"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""would dramatically increase taxes"",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""end the greed of the health insurance and pharmaceutical industries"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""our ideas are crazy and wild and extreme"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    }
+  ]
+}"
+3,Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets,crime,CBS News,left,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""the racist police who posted on Facebook"",
+      ""category"": ""Name-Calling"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""Get Them Off The Streets"",
+      ""category"": ""Slogans"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""the more vulnerable the city becomes to the crime wave"",
+      ""category"": ""Causal Oversimplification"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 2
+    }
+  ]
+}"
+4,the latest: nadler says panel will move quickly on mcgahn,politics,Louisville Courier Journal,left,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""He called her \""Nervous Nancy\"" after it was reported she privately"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 7
+    }
+  ]
+}"
+5,'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized,crime,CBS,left,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""some low-life would deface the mural"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""The ignorance and disrespect shown toward police is at an all time high"",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""set this tone of disrespect for the city by slighting Sgt. Wilson, III"",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""the DA, top persecutor of this city"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    }
+  ]
+}"
+6,george conway urges trump to resign over aborted iran strike,science,The Boston Globe,left,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""To say this is amateur hour would defame amateurs."",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""Resign. If you didn't know this until it was almost too late, you're even more of an idiot than people think you are."",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man whose judgment no serious, intelligent person trusts."",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}"
+7,Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings,legal arguments,Newsweek,left,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""many deceptions regarding his security clearance"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""Jared Kushner lied on his SF-86 form"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}"
+8,"ron desantis signs amendment 4 bill, limiting felon voting",environmental issues,The Sacramento Bee,left,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""was called a \""poll tax\"" by critics"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""one of the most racist and enduring policies of Florida's Jim Crow era"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""the Republicans' approach is confusing and expensive"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}"
+9,"senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'",science,Business Insider,center,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""his extreme views on both fronts."",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""called being transgender \""a delusion.\"""",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""drape black robes over these bigoted views?"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}"
+10,"editorial: six months after california's landmark police transparency law, many agencies still won't release their records",crime,USA TODAY,center,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""many police departments believe that compliance with the law is optional"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Scapegoating"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""deliberately sandbagging the release of these records"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""This is lawless conduct"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""Becerra's obvious bias toward the police groups"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}"
+11,BuzzFeed Journalists Protest in Push for Union Recognition,politics,Bloomberg,center,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""Recognize the BuzzFeed Union!!"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""skyrocketing health insurance costs"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}"
+12,DC mayor says Trump's Fourth of July celebration emptied security fund,politics,USA TODAY,center,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""the cost of President Donald Trump's Fourth of July celebration and the cost of addressing recent protests has emptied out"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""a \""Dump Trump\"" robot to protest the president"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 0
+    }
+  ]
+}"
+13,Protest in Madrid as conservatives suspend ban on most polluting cars,environmental issues,Reuters,center,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""Yes we can, I do want Madrid central"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""I want to breathe free"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""We aspire to have a Madrid without smoke"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    }
+  ]
+}"
+14,tutankhamun sculpture's london auction sparks egyptian outcry,health,Associated Press,center,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""The owners have given false information"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}"
+15,meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.,crime,Chicago Tribune,center,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""known among palace staff as \""duchess difficult,\"" Me-Gain,\"" and \""Hurricane Meghan.\"""",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""demonizes driven women as \""abrasive\"" or \""bossy\"""",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""such as \"" duchess difficult, \"" \"" Me-Gain, \"" and \"" Hurricane Meghan .\"""",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""being labeled \""difficult\"" and unpopular"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""sexism that often demonizes driven women"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""women are more often called \""abrasive\"" and \""bossy\"" in performance reviews"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""What's truly \""difficult\"" is why people feel the need to ridicule her"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""'one steps out with actresses, one doesn't marry them'"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 7
+    }
+  ]
+}"
+16,Biden criticizes Amazon for paying $0 in corporate taxes,politics,The Hill,center,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""We need to reward work, not just wealth."",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""treated inhumanely at the facilities"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""Amazon crushes small companies by copying the goods they sell"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""colluding with Democrats to \""discriminate\"" against him"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 6
+    }
+  ]
+}"
+17,trump vows to cure cancer and eradicate aids,legal arguments,USA TODAY,center,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""\""We will come up with the cures to many, many problems, to many, many diseases including cancer and others.\"""",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""\""Wow, why the hell didn't you do that over the last 50 years, Joe?\"""",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""you're going to see the single most important thing that changes America we're going to cure cancer."",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""\""We will eradicate AIDS in America once and for all and we are really close,\"""",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}"
+18,donald trump's criminal justice reform shows results,politics,National Review,right,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""imposing extreme sentences on people who will spend 20 to 50 years behind bars does nothing to rehabilitate."",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Causal Oversimplification"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""appear \""soft on crime,\"" generally measured in sentencing practices."",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""little more than a system for warehousing human beings."",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    }
+  ]
+}"
+19,GOP lawmaker suggests Colin Kaepernick move to a different country,politics,Breitbart News,right,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""very radical people in the United States of America who don't like America."",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}"
+20,Trump hits polling on Fox News: 'Something weird going on at Fox',politics,Fox News,right,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""Polls are always bad for me. They were against Crooked Hillary also."",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""Something weird going on at Fox"",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""the president tweeted earlier Monday that \""only fake polls\"" showed him behind 2020 Democrats"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""referring to them as a \""Motley Crew.\"""",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""MAKE AMERICA GREAT AGAIN!"",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""text"": ""was \""wasting airtime\"" by hosting a town hall with Buttigieg."",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""text"": ""Fox is moving more and more to the losing (wrong) side in covering the Dems"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 6
+    }
+  ]
+}"
+21,"'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar",politics,Boston Herald,right,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""politicians involved in 'spreading hate' should consider dining at home"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""If you're an unsavory individual - of whatever persuasion or affiliation - we have no legal or moral obligation to do business with you"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""an administration that has made its name trashing norms and breaking backs"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""If you're directly complicit in spreading hate or perpetuating suffering"",
+      ""category"": ""INFLAMMATORY_LANGUAGE"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}"
+22,"Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud",politics,Fox News,right,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""This can't be real... can it? Based on the allegations I'd stay away from that"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""This is pure fake news."",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""You're literally the only candidate who could lose a GOP seat in pro-Trump, pro-USA ALABAMA"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""\""ABRM,\"" which stands for \""anyone but Roy Moore.\"""",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Slogans"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""nominating Roy Moore would be gift wrapping this Senate seat for Chuck Schumer"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}"
+23,"RMV Fail: 546 license suspensions, more to come",legal arguments,Boston Herald,right,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    }
+  ]
+}"
+24,Killer of 16-year-old New York girl in 1980 released on parole despite outrage,crime,Fox News,right,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""this man should not be out in the streets"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Demonization"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""the parole board filled with the governor's appointees"",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""this rapist and murderer is so hideous to me"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""text"": ""I don't think he's sorry."",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 5
+    }
+  ]
+}"
+25,"Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal",environmental issues,Fox News,right,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""how to address the so-called emergency."",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""a radical, top-down, socialist makeover of the entire U.S. economy."",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""it would devastate the economy and trigger massive tax increases."",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Exaggeration"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""phony national emergencies to advance his deeply unpopular agenda,"",
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""On the existential threat of climate change, Trump insists on calling it a hoax."",
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 2
+    }
+  ]
+}"
+26,Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time,politics,Fox News,right,openai,gpt-5-mini,/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md,0.0,"{
+  ""annotations"": [
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""text"": ""this president and his chicken hawk cabinet"",
+      ""category"": ""INFLAMMATORY LANGUAGE"",
+      ""subcategory"": ""Name-Calling"",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""text"": ""no polarizing language selected"",
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""text"": ""They're giving her more time than all the other candidates combined"",
+      ""category"": ""PERSUASIVE PROPAGANDA"",
+      ""subcategory"": ""Doubt"",
+      ""paragraphIndex"": 4
+    }
+  ]
+}"

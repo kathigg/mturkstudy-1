@@ -1,0 +1,5 @@
+run,provider,model,n_shared_titles_compared,prediction_total,prediction_npl,prediction_polarizing,gold_total,gold_npl,gold_polarizing,polarization_match_precision,polarization_match_recall,polarization_match_f1,polarization_match_correct_matches,category_match_precision,category_match_recall,category_match_f1,category_match_correct_matches,category_match_total_polarization_matches,subcategory_match_precision,subcategory_match_recall,subcategory_match_f1,subcategory_match_correct_matches,subcategory_match_total_polarization_matches
+GPT-5 mini,openai,gpt-5-mini,26,157,28,129,86,16,70,0.441,0.779,0.563,67,0.851,0.851,0.851,57,67,0.701,0.701,0.701,47,67
+Gemini 3.1 Flash Lite,gemini,gemini-3.1-flash-lite,26,110,47,63,86,16,70,0.491,0.605,0.542,52,0.712,0.712,0.712,37,52,0.596,0.596,0.596,31,52
+Claude Haiku 4.5,anthropic,claude-haiku-4-5,26,93,74,19,86,16,70,0.225,0.233,0.229,20,0.95,0.95,0.95,19,20,0.9,0.9,0.9,18,20
+Previous adjudicated V3,multi_model_adjudicated,gpt-5.1 + gemini + claude -> claude adjudicator,26,119,51,68,86,16,70,0.478,0.64,0.547,55,0.836,0.836,0.836,46,55,0.764,0.764,0.764,42,55

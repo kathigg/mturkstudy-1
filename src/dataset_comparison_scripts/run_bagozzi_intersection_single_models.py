@@ -543,6 +543,8 @@ def compare_outputs(output_root: Path, analysis_root: Path, include_previous: bo
 
 
 def main() -> int:
+    global PROMPT_FILE
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--providers", default="openai,gemini,claude")
     parser.add_argument("--output-root", default=str(OUTPUT_ROOT))
@@ -561,6 +563,7 @@ def main() -> int:
     prompt_path = Path(args.prompt_file)
     if not prompt_path.exists():
         raise FileNotFoundError(f"Prompt file not found: {prompt_path}")
+    PROMPT_FILE = prompt_path
     base.set_prompt_addendum(prompt_path.read_text(encoding="utf-8"))
 
     output_root = Path(args.output_root)

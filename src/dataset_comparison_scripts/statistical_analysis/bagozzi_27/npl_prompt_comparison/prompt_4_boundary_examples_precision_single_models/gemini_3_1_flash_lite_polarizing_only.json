@@ -1,0 +1,482 @@
+[
+  {
+    "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki",
+    "topic": "legal arguments",
+    "source": "The Washington Post",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "pathetic rout",
+        "openFeedback": "The term 'pathetic' serves as a loaded negative label to discredit the event.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house",
+    "topic": "legal arguments",
+    "source": "The Washington Post",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "dishonest and deceitful",
+        "openFeedback": "The text uses loaded negative labels to discredit the newspapers.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "Enemy of the People",
+        "openFeedback": "The text characterizes the news organizations as a fundamental threat to society.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "enemy of the people",
+        "openFeedback": "The text characterizes the press as a fundamental threat to society.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "KEEP AMERICA GREAT",
+        "openFeedback": "Use of a political slogan to garner support.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "keep America great",
+        "openFeedback": "Use of a political slogan to garner support.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "virtual act of treason",
+        "openFeedback": "The text assigns a loaded criminal label to the reporting of a news organization.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "casual oversimplification",
+        "text": "The Fake News has never been more dishonest than it is today.",
+        "openFeedback": "Uses broad, simplistic categorization of media to explain political friction.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "casual oversimplification",
+        "text": "There new weapon of choice is Fake Polling",
+        "openFeedback": "Reduces the complexity of polling data and media reporting to a single malicious intent.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "'Every American is entitled to health care': Sen. Bernie Sanders",
+    "topic": "health",
+    "source": "ABC News",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "end the greed of the health insurance and pharmaceutical industries",
+        "openFeedback": "The term 'greed' is used as a loaded negative label to discredit the industries without evidence.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "transforming our dysfunctional system",
+        "openFeedback": "While 'dysfunctional' is critical, this instance is on the borderline of description; however, it frames the system as inherently broken to build a case for total replacement.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets",
+    "topic": "crime",
+    "source": "CBS News",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "the latest: nadler says panel will move quickly on mcgahn",
+    "topic": "politics",
+    "source": "Louisville Courier Journal",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Nervous Nancy",
+        "openFeedback": "This is a loaded, emotionally charged nickname used by a political figure to label an opponent.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized",
+    "topic": "crime",
+    "source": "CBS",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "some low-life",
+        "openFeedback": "Using the derogatory label 'low-life' constitutes name-calling.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "scapegoating",
+        "text": "the DA of this city set this tone of disrespect for the city by slighting Sgt. Wilson, III by offering a backdoor plea and denying him a trial.",
+        "openFeedback": "The speaker blames the District Attorney for a broad societal problem of 'disrespect' toward police.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "If the DA, top persecutor of this city, can tarnish the efforts and life of a slain officer while backing criminals",
+        "openFeedback": "The language accuses the official of 'backing criminals', framing them as a dangerous and corrupt actor.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "george conway urges trump to resign over aborted iran strike",
+    "topic": "science",
+    "source": "The Boston Globe",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "you're even more of an idiot than people think you are",
+        "openFeedback": "The term 'idiot' is a direct personal insult intended to discredit the subject.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "amateur hour",
+        "openFeedback": "The term 'amateur hour' is used as a derogatory label to discredit the president's professional capability.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man",
+        "openFeedback": "This string of negative, emotionally charged labels functions as name-calling to discredit the subject.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings",
+    "topic": "legal arguments",
+    "source": "Newsweek",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "many deceptions regarding his security clearance",
+        "openFeedback": "This uses a loaded, negative label regarding the subject's honesty.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "poor track record of compliance",
+        "openFeedback": "This uses a pejorative label to characterize Kushner's professional conduct.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "ron desantis signs amendment 4 bill, limiting felon voting",
+    "topic": "environmental issues",
+    "source": "The Sacramento Bee",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'",
+    "topic": "science",
+    "source": "Business Insider",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "bigoted views",
+        "openFeedback": "The term 'bigoted views' is a loaded label used to characterize the nominee's beliefs rather than relying on evidence of the beliefs themselves.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "editorial: six months after california's landmark police transparency law, many agencies still won't release their records",
+    "topic": "crime",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "This is lawless conduct",
+        "openFeedback": "The author characterizes the actions of police departments as 'lawless', which is an inflammatory description framing them as fundamentally corrupt and acting against the law.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "BuzzFeed Journalists Protest in Push for Union Recognition",
+    "topic": "politics",
+    "source": "Bloomberg",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "DC mayor says Trump's Fourth of July celebration emptied security fund",
+    "topic": "politics",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Baby Trump",
+        "openFeedback": "The term is used as a derogatory label for the President.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+    "topic": "environmental issues",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "Yes we can, I do want Madrid central",
+        "openFeedback": "This is a rhythmic, memorable chant used by the protesters to simplify their cause and build unity.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "tutankhamun sculpture's london auction sparks egyptian outcry",
+    "topic": "health",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.",
+    "topic": "crime",
+    "source": "Chicago Tribune",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "duchess difficult, \" \" Me-Gain, \" and \" Hurricane Meghan .\"",
+        "openFeedback": "These are loaded labels used to discredit the subject.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "duchess difficult,\" Me-Gain,\" and \"Hurricane Meghan.\"",
+        "openFeedback": "These are loaded, emotionally charged labels assigned to a person.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Biden criticizes Amazon for paying $0 in corporate taxes",
+    "topic": "politics",
+    "source": "The Hill",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "trump vows to cure cancer and eradicate aids",
+    "topic": "legal arguments",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "donald trump's criminal justice reform shows results",
+    "topic": "politics",
+    "source": "National Review",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "GOP lawmaker suggests Colin Kaepernick move to a different country",
+    "topic": "politics",
+    "source": "Breitbart News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "very radical people",
+        "openFeedback": "The speaker assigns a loaded, negative label to a group of people without evidence to shape audience perception.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Crooked Hillary",
+        "openFeedback": "Using a loaded negative label to discredit a political opponent.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "Fake News",
+        "openFeedback": "Using a loaded label to discredit the media organization.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "MAKE AMERICA GREAT AGAIN",
+        "openFeedback": "A well-known short, memorable phrase used to spark political loyalty.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "only fake polls",
+        "openFeedback": "Characterizing all unfavorable polling data as fake to dismiss them.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Motley Crew",
+        "openFeedback": "Using a derogatory label to disparage political opponents.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar",
+    "topic": "politics",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "an administration that has made its name trashing norms and breaking backs",
+        "openFeedback": "The language characterizes the administration as fundamentally destructive and threatening to societal norms.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "call people your enemies",
+        "openFeedback": "The speaker assigns the loaded identity of 'enemies' to people.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "directly complicit in spreading hate or perpetuating suffering",
+        "openFeedback": "The language frames a group as fundamentally harmful and dangerous to society.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "#MAGA",
+        "openFeedback": "This is a commonly used political slogan.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "RMV Fail: 546 license suspensions, more to come",
+    "topic": "legal arguments",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Killer of 16-year-old New York girl in 1980 released on parole despite outrage",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal",
+    "topic": "environmental issues",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "radical, top-down, socialist makeover",
+        "openFeedback": "The term 'socialist makeover' is used as a loaded negative label to discredit the proposal.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "phony national emergencies",
+        "openFeedback": "The label 'phony' is a loaded negative term used to delegitimize the actions of a political opponent.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "chicken hawk cabinet",
+        "openFeedback": "The term 'chicken hawk' is a loaded, derogatory label used to discredit the administration's foreign policy credibility.",
+        "paragraphIndex": 0
+      }
+    ]
+  }
+]
