@@ -692,5 +692,184 @@
         "paragraphIndex": 3
       }
     ]
+  },
+  {
+    "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.",
+    "topic": "crime",
+    "source": "Chicago Tribune",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "casual oversimplification",
+        "text": "Disparaging Markle for having too many ideas or caring too much about charity work rings of the sexism that often demonizes driven women",
+        "openFeedback": "Attributes tabloid criticism to a single cause: sexism.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Meghan Markle is known among palace staff as \"duchess difficult,\" Me-Gain,\" and \"Hurricane Meghan.\"",
+        "openFeedback": "Loaded negative labels used to shape audience perception.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Biden criticizes Amazon for paying $0 in corporate taxes",
+    "topic": "politics",
+    "source": "The Hill",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "no company pulling in billions of dollars of profits should pay a lower tax rate than firefighters and teachers",
+        "openFeedback": "Emotive comparison to amplify the point.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "We need to reward work, not just wealth.",
+        "openFeedback": "Brief, striking political catchphrase contrasting two ideas.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "treated inhumanely at the facilities",
+        "openFeedback": "Charged framing of mistreatment.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "Amazon crushes small companies by copying the goods they sell on the Amazon Marketplace",
+        "openFeedback": "Strong metaphor amplifying corporate harm.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "Factual reporting of accusations without polarizing language.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "trump vows to cure cancer and eradicate aids",
+    "topic": "legal arguments",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "We will come up with the cures to many, many problems, to many, many diseases including cancer and others",
+        "openFeedback": "Grand overstated claim of curing many diseases.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "sweeping promises to tackle two of mankind's most dreaded diseases",
+        "openFeedback": "Exaggerated framing of campaign promises.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "the single most important thing that changes America we're going to cure cancer",
+        "openFeedback": "Exaggerated claim about impact.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Wow, why the hell didn't you do that over the last 50 years, Joe?",
+        "openFeedback": "Loaded, mocking rhetorical attack.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "couldn't help but wonder about the feasibility of the president's big promises",
+        "openFeedback": "Casts doubt on feasibility of promises.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "We will eradicate AIDS in America once and for all and we are really close",
+        "openFeedback": "Overstated absolute claim.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "Neutral reporting of further remarks.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "donald trump's criminal justice reform shows results",
+    "topic": "politics",
+    "source": "National Review",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "imposing extreme sentences on people who will spend 20 to 50 years behind bars does nothing to rehabilitate",
+        "openFeedback": "Absolute claim framed as exaggeration.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "a major achievement in improving the criminal justice system, long overdue",
+        "openFeedback": "Exaggerated framing of the law's achievement.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "The president deserves kudos for his latest efforts in tackling long overdue needs of the criminal justice system in America",
+        "openFeedback": "Praise-laden framing.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "an 18-year-old makes a mistake for which he will pay until he's 90 years old",
+        "openFeedback": "Exaggerated framing of sentencing.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "the extreme and morally damaging sentencing practices of the modern era",
+        "openFeedback": "Exaggerated characterization.",
+        "paragraphIndex": 3
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "little more than a system for warehousing human beings",
+        "openFeedback": "Dehumanizing framing of prison system.",
+        "paragraphIndex": 3
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "We need to do better",
+        "openFeedback": "Slogan-like call to action.",
+        "paragraphIndex": 4
+      }
+    ]
   }
 ]

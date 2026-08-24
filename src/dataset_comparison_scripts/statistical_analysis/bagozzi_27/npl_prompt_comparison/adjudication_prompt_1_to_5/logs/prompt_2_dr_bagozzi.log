@@ -1,6 +1,5 @@
-[prompt_1_default_original] starting/resuming
-  0%|          | 0/27 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-  4%|▎         | 1/27 [01:07<29:12, 67.42s/it]  7%|▋         | 2/27 [02:08<26:28, 63.54s/it] 11%|█         | 3/27 [02:54<22:10, 55.42s/it] 15%|█▍        | 4/27 [03:52<21:38, 56.46s/it] 19%|█▊        | 5/27 [04:26<17:45, 48.44s/it] 22%|██▏       | 6/27 [05:20<17:38, 50.38s/it] 26%|██▌       | 7/27 [05:57<15:17, 45.87s/it] 30%|██▉       | 8/27 [06:42<14:32, 45.90s/it] 33%|███▎      | 9/27 [07:41<14:58, 49.90s/it] 37%|███▋      | 10/27 [09:09<17:28, 61.67s/it] 41%|████      | 11/27 [10:14<16:41, 62.60s/it] 44%|████▍     | 12/27 [10:44<13:12, 52.86s/it] 48%|████▊     | 13/27 [11:40<12:30, 53.63s/it] 52%|█████▏    | 14/27 [12:37<11:49, 54.61s/it] 56%|█████▌    | 15/27 [13:24<10:28, 52.35s/it] 59%|█████▉    | 16/27 [14:51<11:32, 62.95s/it] 63%|██████▎   | 17/27 [15:40<09:45, 58.52s/it] 67%|██████▋   | 18/27 [16:34<08:35, 57.24s/it] 70%|███████   | 19/27 [17:25<07:23, 55.45s/it] 70%|███████   | 19/27 [49:57<21:02, 157.75s/it]
+[prompt_2_dr_bagozzi] starting/resuming
+  0%|          | 0/27 [00:00<?, ?it/s]  0%|          | 0/27 [00:09<?, ?it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
     yield
@@ -74,21 +73,21 @@ Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1552, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1488, in main
-    final_obj, final_raw = adjudicate_with_openai(
-                           ~~~~~~~~~~~~~~~~~~~~~~^
-        adjudicator_client,
-        ^^^^^^^^^^^^^^^^^^^
-    ...<12 lines>...
-        paragraph_policy=cfg.paragraph_policy,
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1411, in main
+    obj_a, raw_a = annotate_with_openai(
+                   ~~~~~~~~~~~~~~~~~~~~^
+        openai_client,
+        ^^^^^^^^^^^^^^
+    ...<9 lines>...
+        max_retries=args.max_retries,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     )
     ^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 940, in adjudicate_with_openai
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 822, in annotate_with_openai
     completion = _retry(_call, max_retries=max_retries)
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 743, in _retry
     return call()
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 938, in _call
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 820, in _call
     return client.chat.completions.create(**request_kwargs)
            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 298, in wrapper
