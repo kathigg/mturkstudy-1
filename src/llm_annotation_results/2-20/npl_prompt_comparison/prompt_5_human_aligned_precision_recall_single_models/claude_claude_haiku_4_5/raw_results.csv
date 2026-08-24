@@ -1,0 +1,190 @@
+index,title,topic,source,rating,provider,model,prompt_file,temperature,raw_json
+0,"'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki",legal arguments,The Washington Post,left,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Persuasive Propaganda"",
+    ""subcategory"": ""exaggeration"",
+    ""text"": ""one of the most disgraceful performances by an American president in memory"",
+    ""openFeedback"": ""This is an exaggerated characterization that overstates the severity of the event by claiming it ranks among the worst presidential performances in living memory without supporting evidence."",
+    ""paragraphIndex"": 1
+  }"
+1,"trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house",legal arguments,The Washington Post,left,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Inflammatory Language"",
+    ""subcategory"": ""name-calling"",
+    ""text"": ""horrible papers"",
+    ""openFeedback"": ""Trump uses the loaded negative label 'horrible' to describe the newspapers, shaping audience perception without evidence."",
+    ""paragraphIndex"": 0
+  }"
+2,'Every American is entitled to health care': Sen. Bernie Sanders,health,ABC News,left,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Persuasive Propaganda"",
+    ""subcategory"": ""exaggeration"",
+    ""text"": ""international embarrassment of not guaranteeing health care"",
+    ""openFeedback"": ""Overstatement characterizing lack of universal healthcare guarantee as an 'international embarrassment'—emotionally charged framing that exaggerates the severity beyond factual description."",
+    ""paragraphIndex"": 0
+  }"
+3,Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets,crime,CBS News,left,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Inflammatory Language"",
+    ""subcategory"": ""name-calling"",
+    ""text"": ""the racist police who posted on Facebook"",
+    ""openFeedback"": ""Direct labeling of officers as 'racist police' - a loaded negative label applied to the group based on their social media posts."",
+    ""paragraphIndex"": 2
+  }"
+4,the latest: nadler says panel will move quickly on mcgahn,politics,Louisville Courier Journal,left,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""No Polarizing language"",
+    ""subcategory"": ""no polarizing language"",
+    ""text"": ""no polarizing language selected"",
+    ""openFeedback"": ""Paragraph 0 contains neutral journalistic framing of Congressional action and Mueller report findings without polarizing language."",
+    ""paragraphIndex"": 0
+  }"
+5,'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized,crime,CBS,left,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Inflammatory Language"",
+    ""subcategory"": ""name-calling"",
+    ""text"": ""some low-life would deface the mural"",
+    ""openFeedback"": ""The phrase 'low-life' is a loaded negative label applied to the vandal. It's emotionally charged name-calling rather than neutral description."",
+    ""paragraphIndex"": 1
+  }"
+6,george conway urges trump to resign over aborted iran strike,science,The Boston Globe,left,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Inflammatory Language"",
+    ""subcategory"": ""name-calling"",
+    ""text"": ""you're even more of an idiot than people think you are"",
+    ""openFeedback"": ""Direct insult using loaded label 'idiot' assigned to Trump."",
+    ""paragraphIndex"": 1
+  }"
+7,Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings,legal arguments,Newsweek,left,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Inflammatory Language"",
+    ""subcategory"": ""name-calling"",
+    ""text"": ""his many deceptions regarding his security clearance"",
+    ""openFeedback"": ""Loaded negative characterization of Kushner's actions using 'deceptions' as a name-calling label without providing evidence within the article itself."",
+    ""paragraphIndex"": 1
+  }"
+8,"ron desantis signs amendment 4 bill, limiting felon voting",environmental issues,The Sacramento Bee,left,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Persuasive Propaganda"",
+    ""subcategory"": ""exaggeration"",
+    ""text"": ""one of the most racist and enduring policies of Florida's Jim Crow era"",
+    ""openFeedback"": ""Exaggerated characterization using superlative framing ('one of the most') to amplify the severity of the historical policy."",
+    ""paragraphIndex"": 1
+  }"
+9,"senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'",science,Business Insider,center,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Inflammatory Language"",
+    ""subcategory"": ""name-calling"",
+    ""text"": ""bigoted views"",
+    ""openFeedback"": ""Loaded negative label applied to Kacsmaryk's views on LGBTQ rights and abortion."",
+    ""paragraphIndex"": 2
+  }"
+10,"editorial: six months after california's landmark police transparency law, many agencies still won't release their records",crime,USA TODAY,center,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""No Polarizing language"",
+    ""subcategory"": ""no polarizing language"",
+    ""text"": ""no polarizing language selected"",
+    ""openFeedback"": ""Paragraph 0 contains factual descriptions of police misconduct incidents and the law's requirements without polarizing rhetorical language."",
+    ""paragraphIndex"": 0
+  }"
+11,BuzzFeed Journalists Protest in Push for Union Recognition,politics,Bloomberg,center,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Persuasive Propaganda"",
+    ""subcategory"": ""slogans"",
+    ""text"": ""Recognize the BuzzFeed Union!!"",
+    ""openFeedback"": ""Short, memorable mobilizing phrase used on protest signs."",
+    ""paragraphIndex"": 0
+  }"
+12,DC mayor says Trump's Fourth of July celebration emptied security fund,politics,USA TODAY,center,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""No Polarizing language"",
+    ""subcategory"": ""no polarizing language"",
+    ""text"": ""no polarizing language selected"",
+    ""openFeedback"": ""The opening paragraph reports factually on Bowser's statement and the cost figures without loaded rhetoric."",
+    ""paragraphIndex"": 0
+  }"
+13,Protest in Madrid as conservatives suspend ban on most polluting cars,environmental issues,Reuters,center,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Persuasive Propaganda"",
+    ""subcategory"": ""exaggeration"",
+    ""text"": ""raising fears that environmental rollbacks seen in the United States may be spreading to Europe"",
+    ""openFeedback"": ""The phrase 'raising fears' combined with 'may be spreading' presents a speculative concern as a significant threat without established evidence, exaggerating the scope and certainty of the comparison."",
+    ""paragraphIndex"": 0
+  }"
+14,tutankhamun sculpture's london auction sparks egyptian outcry,health,Associated Press,center,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""No Polarizing language"",
+    ""subcategory"": ""no polarizing language"",
+    ""text"": ""no polarizing language selected"",
+    ""openFeedback"": ""The opening describes the sculpture and Christie's auction expectations factually. 'Outcry' is neutral reporting of emotional response."",
+    ""paragraphIndex"": 0
+  }"
+15,meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.,crime,Chicago Tribune,center,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Inflammatory Language"",
+    ""subcategory"": ""name-calling"",
+    ""text"": ""duchess difficult"",
+    ""openFeedback"": ""Direct quoted derogatory nickname used to label Meghan Markle."",
+    ""paragraphIndex"": 0
+  }"
+16,Biden criticizes Amazon for paying $0 in corporate taxes,politics,The Hill,center,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""No Polarizing language"",
+    ""subcategory"": ""no polarizing language"",
+    ""text"": ""no polarizing language selected"",
+    ""openFeedback"": ""Biden's criticism of Amazon's tax rate is framed as a factual policy disagreement. The phrase 'no company pulling in billions of dollars of profits should pay a lower tax rate than firefighters and teachers' is a normative policy claim, not a loaded label or exaggeration."",
+    ""paragraphIndex"": 0
+  }"
+17,trump vows to cure cancer and eradicate aids,legal arguments,USA TODAY,center,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Persuasive Propaganda"",
+    ""subcategory"": ""exaggeration"",
+    ""text"": ""sweeping promises to tackle two of mankind's most dreaded diseases"",
+    ""openFeedback"": ""The framing of Trump's promises as 'sweeping' overstates the scope and certainty of campaign pledges about complex medical challenges."",
+    ""paragraphIndex"": 0
+  }"
+18,donald trump's criminal justice reform shows results,politics,National Review,right,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Persuasive Propaganda"",
+    ""subcategory"": ""exaggeration"",
+    ""text"": ""long overdue"",
+    ""openFeedback"": ""Characterization of First Step Act as 'long overdue' is an evaluative exaggeration that overstates the urgency/necessity without evidence."",
+    ""paragraphIndex"": 0
+  }"
+19,GOP lawmaker suggests Colin Kaepernick move to a different country,politics,Breitbart News,right,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Inflammatory Language"",
+    ""subcategory"": ""name-calling"",
+    ""text"": ""very radical people in the United States of America"",
+    ""openFeedback"": ""Brooks uses the loaded label 'radical' to negatively characterize people who disagree with his patriotic views."",
+    ""paragraphIndex"": 1
+  }"
+20,Trump hits polling on Fox News: 'Something weird going on at Fox',politics,Fox News,right,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Persuasive Propaganda"",
+    ""subcategory"": ""doubt"",
+    ""text"": ""@FoxNews Polls are always bad for me. They were against Crooked Hillary also. Something weird going on at Fox."",
+    ""openFeedback"": ""Trump casts doubt on Fox News polling credibility by suggesting something suspicious is happening, undermining trust in the network's methods."",
+    ""paragraphIndex"": 1
+  }"
+21,"'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar",politics,Boston Herald,right,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Inflammatory Language"",
+    ""subcategory"": ""name-calling"",
+    ""text"": ""unsavory individual"",
+    ""openFeedback"": ""Wilkinson uses a loaded negative label to describe people she believes should be denied service, characterizing them as inherently disreputable without specific evidence."",
+    ""paragraphIndex"": 1
+  }"
+22,"Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud",politics,Fox News,right,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""No Polarizing language"",
+    ""subcategory"": ""no polarizing language"",
+    ""text"": ""no polarizing language selected"",
+    ""openFeedback"": ""The headline uses 'mocks' which is neutral journalistic framing of Trump Jr.'s criticism. The article reports on the exchange factually."",
+    ""paragraphIndex"": 0
+  }"
+23,"RMV Fail: 546 license suspensions, more to come",legal arguments,Boston Herald,right,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Persuasive Propaganda"",
+    ""subcategory"": ""exaggeration"",
+    ""text"": ""deadly bureaucratic failure"",
+    ""openFeedback"": ""The phrase 'deadly bureaucratic failure' uses charged language to describe the RMV's administrative oversight. While the consequences were serious, the word 'deadly' is an exaggeration of the bureaucratic nature of the failure itself."",
+    ""paragraphIndex"": 0
+  }"
+24,Killer of 16-year-old New York girl in 1980 released on parole despite outrage,crime,Fox News,right,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Inflammatory Language"",
+    ""subcategory"": ""name-calling"",
+    ""text"": ""Killer of 16-year-old New York girl"",
+    ""openFeedback"": ""The title uses 'Killer' as a loaded label, though it reflects the conviction. However, in the context of the headline's framing emphasizing outrage, it serves a rhetorical purpose beyond neutral reporting."",
+    ""paragraphIndex"": 0
+  }"
+25,"Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal",environmental issues,Fox News,right,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""Persuasive Propaganda"",
+    ""subcategory"": ""exaggeration"",
+    ""text"": ""failed to take off the ground"",
+    ""openFeedback"": ""The phrase 'failed to take off the ground' is an exaggerated characterization of the Green New Deal's Senate performance. The resolution received 43 votes in support (Ocasio-Cortez, Sanders, and 41 others), which is a substantive showing, not a complete failure. The language overstates the outcome."",
+    ""paragraphIndex"": 0
+  }"
+26,Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time,politics,Fox News,right,anthropic,claude-haiku-4-5,src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md,0.0,"{
+    ""category"": ""No Polarizing language"",
+    ""subcategory"": ""no polarizing language"",
+    ""text"": ""no polarizing language selected"",
+    ""openFeedback"": ""Paragraph 0 contains factual reporting about debate performance and search trends without polarizing rhetoric."",
+    ""paragraphIndex"": 0
+  }"
