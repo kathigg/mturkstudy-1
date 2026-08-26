@@ -1162,3 +1162,402 @@ index,title,topic,source,rating,prompt_version,temperature,openai_model,gemini_m
     ""openFeedback"": ""The term 'poll tax' is a historically loaded label used to cast doubt on the legitimacy of the bill."",
     ""paragraphIndex"": 0
   }","{""title"": ""ron desantis signs amendment 4 bill, limiting felon voting"", ""topic"": ""environmental issues"", ""source"": ""The Sacramento Bee"", ""rating"": ""left"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The term 'poll tax' is attributed to critics and falls under routine political reporting."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Describing Jim Crow policies as racist is historically factual, not inflammatory demonization."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph contains objective reporting on legislative interpretations."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The criticism of the approach as 'confusing and expensive' is ordinary disagreement/criticism, not persuasive propaganda."", ""paragraphIndex"": 3}]}"
+9,"senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'",science,Business Insider,center,prompt_3_precision_short_spans,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""record of hostility toward LGBTQ rights and abortion rights"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""because of his extreme views on both fronts"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""a delusion"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""a celestial phenomenon invisible to the non-lawyer eye"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""doubt"",
+      ""text"": ""wondered aloud how anyone could expect Kacsmaryk to be a fair and impartial judge"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""an autonomous blob of Silly Putty"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""the erotic desires of liberated adults"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""these bigoted views"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""a right-wing Christian advocacy group"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""young, right-wing ideologues"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""He is one of Trump's most extreme nominees"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""doubt"",
+      ""text"": ""litigants will have difficulty believing that he will fairly resolve their cases"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""casual oversimplification"",
+      ""text"": ""which has been driving Trump's judicial selection process and funneling anti-abortion and anti-LGBTQ nominees to the White House"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""has made judicial confirmations his top priority"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""That's more circuit judges than any president has gotten through by this point in a first term"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{
+  ""title"": ""senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"",
+  ""topic"": ""science"",
+  ""source"": ""Business Insider"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. The paragraph reports on controversial statements using quotes, which falls under routine political reporting."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""other judicial nominees young, right-wing ideologues"",
+      ""openFeedback"": ""The author uses the loaded term 'ideologues' to negatively label and dismiss the judicial nominees, stepping outside objective reporting."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+    ""category"": ""No Polarizing language"",
+    ""subcategory"": ""no polarizing language"",
+    ""text"": ""no polarizing language selected"",
+    ""openFeedback"": ""This paragraph reports the vote result and procedural facts without loaded language."",
+    ""paragraphIndex"": 0
+  }","{""title"": ""senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'"", ""topic"": ""science"", ""source"": ""Business Insider"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph reports the vote result and procedural facts without loaded language."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. The paragraph reports on controversial statements using quotes."", ""paragraphIndex"": 1}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""young, right-wing ideologues"", ""openFeedback"": ""Loaded term 'ideologues' used to negatively label nominees."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."", ""paragraphIndex"": 3}]}"
+10,"editorial: six months after california's landmark police transparency law, many agencies still won't release their records",crime,USA TODAY,center,prompt_3_precision_short_spans,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""many police departments believe that compliance with the law is optional"",
+      ""openFeedback"": ""Frames police departments as willfully disregarding the law, portraying them as lawless actors."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""So many police departments are resisting compliance"",
+      ""openFeedback"": ""Portrays police departments collectively as defiant toward legal obligations, contributing to a negative, threatening image."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""This is lawless conduct"",
+      ""openFeedback"": ""Describes the behavior of police agencies as “lawless,” casting them as fundamentally opposed to the rule of law."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""it's depriving the public from the right to know"",
+      ""openFeedback"": ""Depicts police agencies as actively depriving the public of rights, heightening a sense of wrongdoing and threat."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph mainly reports on noncompliance and quotes a criticism; the wording itself is largely descriptive."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""doubt"",
+      ""text"": ""Becerra's obvious bias toward the police groups could prove an obstacle, too"",
+      ""openFeedback"": ""Asserts “obvious bias” to undermine trust in the Attorney General’s neutrality, encouraging doubt about his motives."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""slogans"",
+      ""text"": ""doing nothing is not an acceptable option"",
+      ""openFeedback"": ""A concise, absolutist phrase urging action, functioning as a motivational slogan."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""No one least of all the agencies that have sworn to protect and serve the public should be allowed to thwart the law"",
+      ""openFeedback"": ""Uses sweeping language (“No one… should be allowed to thwart the law”) to dramatize opposition and urgency."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""title"": ""editorial: six months after california's landmark police transparency law, many agencies still won't release their records"",
+  ""topic"": ""crime"",
+  ""source"": ""USA TODAY"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""The paragraph lists specific documented incidents and states a claim about compliance without using clearly loaded or exaggerated language."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph describes the legal requirements of SB1421 in neutral, factual terms."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph makes a factual claim about resistance to compliance without inflammatory framing."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""Law enforcement in San Francisco is deliberately sandbagging the release of these records"",
+      ""openFeedback"": ""This quoted statement uses a loaded negative label ('sandbagging') to characterize law enforcement's actions rather than a neutral description."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""This is lawless conduct, and it's depriving the public from the right to know"",
+      ""openFeedback"": ""The editorial characterizes the police departments' actions as 'lawless conduct,' a strongly loaded term meant to frame the agencies as acting outside legal and moral bounds."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""doubt"",
+      ""text"": ""Becerra's obvious bias toward the police groups could prove an obstacle"",
+      ""openFeedback"": ""This statement asserts bias as an established fact without supporting evidence, casting doubt on the Attorney General's impartiality."",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This closing paragraph expresses an editorial opinion in general terms without meeting the threshold for explicit inflammatory or propagandistic language."",
+      ""paragraphIndex"": 5
+    }
+  ]
+}","{""title"": ""editorial: six months after california's landmark police transparency law, many agencies still won't release their records"", ""topic"": ""crime"", ""source"": ""USA TODAY"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""The paragraph lists specific documented incidents and states a claim about compliance without clearly loaded language."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""demonization"", ""text"": ""This is lawless conduct"", ""openFeedback"": ""Describes the behavior of police agencies as lawless, casting them as fundamentally opposed to the rule of law."", ""paragraphIndex"": 1}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""doubt"", ""text"": ""Becerra's obvious bias toward the police groups could prove an obstacle, too"", ""openFeedback"": ""Asserts obvious bias to undermine trust in the Attorney General's neutrality, encouraging doubt about his motives."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This closing paragraph expresses an editorial opinion in general terms without meeting the threshold for explicit polarizing language."", ""paragraphIndex"": 3}]}"
+11,BuzzFeed Journalists Protest in Push for Union Recognition,politics,Bloomberg,center,prompt_3_precision_short_spans,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""slogans"",
+      ""text"": ""Recognize the BuzzFeed Union!!"",
+      ""openFeedback"": ""Protest chant on signs functions as a slogan."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 8
+    }
+  ]
+}","{
+  ""title"": ""BuzzFeed Journalists Protest in Push for Union Recognition"",
+  ""topic"": ""politics"",
+  ""source"": ""Bloomberg"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral factual reporting on the walkout."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral quoted statement about workplace disputes."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral reporting on layoffs and industry trends."", ""paragraphIndex"": 2}]}","{""title"": ""BuzzFeed Journalists Protest in Push for Union Recognition"", ""topic"": ""politics"", ""source"": ""Bloomberg"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral factual reporting on the walkout."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral quoted statement about workplace disputes."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral reporting on layoffs and industry trends."", ""paragraphIndex"": 2}]}"

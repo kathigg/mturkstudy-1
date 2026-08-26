@@ -117,13 +117,6 @@
         "text": "The Fake News has never been more dishonest than it is today",
         "openFeedback": "Overstates the media's dishonesty as unprecedented.",
         "paragraphIndex": 2
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "This paragraph simply reports on poll results without inflammatory or propagandistic language.",
-        "paragraphIndex": 3
       }
     ]
   },
@@ -191,13 +184,6 @@
         "paragraphIndex": 0
       },
       {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "No polarizing language detected in this paragraph.",
-        "paragraphIndex": 1
-      },
-      {
         "category": "Persuasive Propaganda",
         "subcategory": "casual oversimplification",
         "text": "the more vulnerable the city becomes to the crime wave they say it's already experiencing",
@@ -220,32 +206,11 @@
     "rating": "left",
     "annotations": [
       {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Paragraph 0 contains standard political reporting with no inflammatory language or persuasive propaganda.",
-        "paragraphIndex": 0
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Paragraph 1 reports on legislative maneuvers without polarizing language.",
-        "paragraphIndex": 1
-      },
-      {
         "category": "Inflammatory Language",
         "subcategory": "name-calling",
         "text": "He called her \"Nervous Nancy\"",
         "openFeedback": "The quoted nickname \"Nervous Nancy\" is a clear example of name-calling, using a loaded negative label to discredit a political opponent.",
         "paragraphIndex": 2
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Paragraph 3 strictly covers procedural explanations regarding the House vote and lawsuits.",
-        "paragraphIndex": 3
       }
     ]
   },
@@ -313,20 +278,6 @@
         "paragraphIndex": 0
       },
       {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "No polarizing language detected in this paragraph.",
-        "paragraphIndex": 1
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "This paragraph reports statements from officials in a neutral, informative manner.",
-        "paragraphIndex": 2
-      },
-      {
         "category": "Inflammatory Language",
         "subcategory": "name-calling",
         "text": "erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man",
@@ -348,13 +299,6 @@
     "source": "Newsweek",
     "rating": "left",
     "annotations": [
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "The paragraph reports on the official request for an investigation and cites legal rules and media reports without inflammatory language.",
-        "paragraphIndex": 0
-      },
       {
         "category": "Persuasive Propaganda",
         "subcategory": "doubt",
@@ -390,13 +334,6 @@
         "text": "one of the most racist and enduring policies of Florida's Jim Crow era",
         "openFeedback": "Loaded label characterizing the policy.",
         "paragraphIndex": 1
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "The paragraph explains differing interpretations objectively.",
-        "paragraphIndex": 2
       },
       {
         "category": "Inflammatory Language",
@@ -482,13 +419,6 @@
         "text": "He is one of Trump's most extreme nominees",
         "openFeedback": "Superlative framing.",
         "paragraphIndex": 2
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Statistics on judicial confirmations, neutral reporting.",
-        "paragraphIndex": 3
       }
     ]
   },
@@ -568,13 +498,6 @@
         "text": "We have legitimate grievances about unfair pay disparities, mismanaged pivots and layoffs, weak benefits, skyrocketing health insurance costs",
         "openFeedback": "Charged framing emphasizing severity of grievances.",
         "paragraphIndex": 1
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Factual reporting without polarizing language.",
-        "paragraphIndex": 2
       }
     ]
   },
@@ -584,13 +507,6 @@
     "source": "USA TODAY",
     "rating": "center",
     "annotations": [
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Objective reporting about the parade and mayor's statements.",
-        "paragraphIndex": 0
-      },
       {
         "category": "Persuasive Propaganda",
         "subcategory": "exaggeration",
@@ -661,13 +577,6 @@
         "subcategory": "exaggeration",
         "paragraphIndex": 1,
         "openFeedback": "Elevates a local policy to planet-saving scale."
-      },
-      {
-        "text": "no polarizing language selected",
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "paragraphIndex": 2,
-        "openFeedback": "Factual reporting with neutral quotes and warnings."
       }
     ]
   },
@@ -676,36 +585,7 @@
     "topic": "health",
     "source": "Associated Press",
     "rating": "center",
-    "annotations": [
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Neutral factual background information about the auction.",
-        "paragraphIndex": 0
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Reports on legal and provenance dispute using standard attribution and quotes.",
-        "paragraphIndex": 1
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Historical context and factual statements about the auction market.",
-        "paragraphIndex": 2
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Discusses campaign to recover lost art in a factual manner.",
-        "paragraphIndex": 3
-      }
-    ]
+    "annotations": []
   },
   {
     "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.",
@@ -755,27 +635,6 @@
         "text": "We need to reward work, not just wealth.",
         "openFeedback": "Brief, memorable campaign catchphrase used to spark emotion and summarize a policy platform.",
         "paragraphIndex": 0
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "The paragraph describes statements, responses, and legal actions without explicit propaganda or inflammatory language.",
-        "paragraphIndex": 1
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Standard reporting of anti-competitive criticism; no clear explicit polarizing language on the author's part.",
-        "paragraphIndex": 2
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "The paragraph neutrally reports on accusations without using polarizing language.",
-        "paragraphIndex": 3
       }
     ]
   },
@@ -812,13 +671,6 @@
         "text": "We will eradicate AIDS in America once and for all and we are really close",
         "openFeedback": "Exaggerated claim about eradicating AIDS.",
         "paragraphIndex": 2
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "The paragraph simply relates statements about space travel without polarizing rhetoric.",
-        "paragraphIndex": 3
       }
     ]
   },
@@ -843,13 +695,6 @@
         "openFeedback": "Overstates the significance of the law."
       },
       {
-        "text": "no polarizing language selected",
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "paragraphIndex": 1,
-        "openFeedback": "Narrative without explicit propaganda."
-      },
-      {
         "text": "Too often, an 18-year-old makes a mistake for which he will pay until he's 90 years old",
         "category": "Persuasive Propaganda",
         "subcategory": "exaggeration",
@@ -869,13 +714,6 @@
         "subcategory": "exaggeration",
         "paragraphIndex": 3,
         "openFeedback": "Reduces the prison system to a warehouse to persuade."
-      },
-      {
-        "text": "no polarizing language selected",
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "paragraphIndex": 4,
-        "openFeedback": "Statistics and bio without polarizing language."
       }
     ]
   },
@@ -886,25 +724,11 @@
     "rating": "right",
     "annotations": [
       {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "This paragraph reports the statements objectively without using polarizing language.",
-        "paragraphIndex": 0
-      },
-      {
         "category": "Inflammatory Language",
         "subcategory": "name-calling",
         "text": "very radical people in the United States of America who don't like America",
         "openFeedback": "The speaker uses a loaded negative label ('very radical people') to discredit the target.",
         "paragraphIndex": 1
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "While the speaker expresses personal disapproval, it does not strictly meet the threshold for the defined categories.",
-        "paragraphIndex": 2
       }
     ]
   },
@@ -984,13 +808,6 @@
         "text": "If you're directly complicit in spreading hate or perpetuating suffering",
         "openFeedback": "Characterizes targets as causing hate and suffering.",
         "paragraphIndex": 2
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Objective reporting of events.",
-        "paragraphIndex": 3
       }
     ]
   },
@@ -1084,27 +901,6 @@
         "text": "In a stunning press conference detailing the scope of the crisis Monday",
         "openFeedback": "Dramatizing language.",
         "paragraphIndex": 0
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Standard reporting of officials' statements.",
-        "paragraphIndex": 1
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Factual updates.",
-        "paragraphIndex": 2
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Factual reporting.",
-        "paragraphIndex": 3
       }
     ]
   },
@@ -1120,20 +916,6 @@
         "text": "what the local medical examiner described as the most brutal murder he had ever seen",
         "openFeedback": "Emphasizes severity via superlative framing.",
         "paragraphIndex": 0
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Factual legal proceedings.",
-        "paragraphIndex": 1
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Describes protests and statements without clear propaganda markers.",
-        "paragraphIndex": 2
       },
       {
         "category": "Inflammatory Language",
@@ -1192,13 +974,6 @@
         "text": "this president and his chicken hawk cabinet have led us to the brink of war with Iran",
         "openFeedback": "The term 'chicken hawk' is a loaded, emotionally charged label used to discredit the president's cabinet.",
         "paragraphIndex": 0
-      },
-      {
-        "category": "No Polarizing language",
-        "subcategory": "no polarizing language",
-        "text": "no polarizing language selected",
-        "openFeedback": "Factual reporting and direct quotes with no explicit polarizing language.",
-        "paragraphIndex": 1
       },
       {
         "category": "Persuasive Propaganda",
