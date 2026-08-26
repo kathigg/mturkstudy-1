@@ -1561,3 +1561,535 @@ index,title,topic,source,rating,prompt_version,temperature,openai_model,gemini_m
     }
   ]
 }","{""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral factual reporting on the walkout."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral quoted statement about workplace disputes."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral reporting on layoffs and industry trends."", ""paragraphIndex"": 2}]}","{""title"": ""BuzzFeed Journalists Protest in Push for Union Recognition"", ""topic"": ""politics"", ""source"": ""Bloomberg"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral factual reporting on the walkout."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral quoted statement about workplace disputes."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral reporting on layoffs and industry trends."", ""paragraphIndex"": 2}]}"
+12,DC mayor says Trump's Fourth of July celebration emptied security fund,politics,USA TODAY,center,prompt_3_precision_short_spans,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""Far-right extremists Proud Boys"",
+      ""openFeedback"": ""The phrase applies a strongly negative ideological label (“Far-right extremists”) to the Proud Boys, functioning as name-calling rather than neutral description."",
+      ""paragraphIndex"": 1
+    }
+  ]
+}","{
+  ""title"": ""DC mayor says Trump's Fourth of July celebration emptied security fund"",
+  ""topic"": ""politics"",
+  ""source"": ""USA TODAY"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. It is routine reporting on municipal funding."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. The text neutrally reports the contents of a letter."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. The text reports a direct quote and lists headlines."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. The text continues to report direct quotes from the mayor."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. Routine political quoting."",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. While 'Dump Trump' and 'Baby Trump' are mentioned, they are used as factual descriptors of protest items, not as authorial inflammatory language."",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. The term 'extremists' is used here as standard journalistic reporting on group designations."",
+      ""paragraphIndex"": 6
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Neutral video caption describing the parade with no loaded language."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Factual reporting on the mayor's statement regarding fund depletion."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Neutral recounting of letter contents and figures."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Neutral description of Bowser's request for federal assistance."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Direct quote presenting budgetary facts without inflammatory framing."",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Neutral quote about future inauguration cost estimates."",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Reports critics' views and describes protest props factually without adopting inflammatory framing itself."",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Headline references to named groups are used as established journalistic labels rather than explicit inflammatory rhetoric within this article."",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Factual account of protest events without emotionally loaded language."",
+      ""paragraphIndex"": 8
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Promotional app text with no polarizing content."",
+      ""paragraphIndex"": 9
+    }
+  ]
+}","{""title"": ""DC mayor says Trump's Fourth of July celebration emptied security fund"", ""topic"": ""politics"", ""source"": ""USA TODAY"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Factual reporting on the mayor's statement regarding fund depletion."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Headline references to named groups are used as established journalistic labels rather than explicit inflammatory rhetoric within this article."", ""paragraphIndex"": 2}]}"
+13,Protest in Madrid as conservatives suspend ban on most polluting cars,environmental issues,Reuters,center,prompt_3_precision_short_spans,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""Thousands protested in Madrid on Saturday"",
+      ""openFeedback"": ""Uses a large round number to emphasize scale and impact of the protest."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""raising fears that environmental rollbacks seen in the United States may be spreading to Europe"",
+      ""openFeedback"": ""Frames a local policy change as part of a broader, fear-inducing international trend."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""a fresh sign of growing divisions in Spain"",
+      ""openFeedback"": ""Suggests broad and intensifying national divisions based on a single policy dispute."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""slogans"",
+      ""text"": ""\""Yes we can, I do want Madrid central,\"""",
+      ""openFeedback"": ""A chant functioning as a rallying slogan for the policy."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""slogans"",
+      ""text"": ""\""I want to breathe free\"""",
+      ""openFeedback"": ""Short, emotionally charged phrase used on banners as a slogan."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""slogans"",
+      ""text"": ""\""We aspire to have a Madrid without smoke\"""",
+      ""openFeedback"": ""A concise aspirational phrase used as a protest slogan."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""This paragraph mainly reports a quote and contextual information without clear propagandistic techniques."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""forced the city of Paris to ban more than half of all registered cars from its roads"",
+      ""openFeedback"": ""Dramatic phrasing that emphasizes compulsion and scale to underscore severity of conditions."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""as they seek to phase out all fossil fuel cars in the coming decade"",
+      ""openFeedback"": ""Sweeping claim about completely phasing out fossil fuel cars within a decade."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""slashed air pollution levels from car emissions in the center to record lows"",
+      ""openFeedback"": ""Uses strong language to emphasize the magnitude of pollution reduction."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""doubt"",
+      ""text"": ""“As far as I know at the European level there's no precedent in ending a car traffic restriction,”"",
+      ""openFeedback"": ""Invokes uncertainty about precedent to implicitly question or cast doubt on the policy reversal."",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{
+  ""title"": ""Protest in Madrid as conservatives suspend ban on most polluting cars"",
+  ""topic"": ""environmental issues"",
+  ""source"": ""Reuters"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""slogans"",
+      ""text"": ""Yes we can, I do want Madrid central"",
+      ""openFeedback"": ""This is a chanted political slogan used by protesters to rally support."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""slogans"",
+      ""text"": ""I want to breathe free"",
+      ""openFeedback"": ""A protest banner slogan used to evoke emotional support for the cause."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""slogans"",
+      ""text"": ""We aspire to have a Madrid without smoke"",
+      ""openFeedback"": ""A protest banner slogan used to evoke emotional support for the cause."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{""title"": ""Protest in Madrid as conservatives suspend ban on most polluting cars"", ""topic"": ""environmental issues"", ""source"": ""Reuters"", ""rating"": ""center"", ""annotations"": [{""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""\""I want to breathe free\"""", ""openFeedback"": ""Short, emotionally charged phrase used on banners as a slogan."", ""paragraphIndex"": 0}, {""category"": ""Persuasive Propaganda"", ""subcategory"": ""slogans"", ""text"": ""\""We aspire to have a Madrid without smoke\"""", ""openFeedback"": ""A concise aspirational phrase used as a protest slogan."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""This paragraph mainly reports a quote and contextual information without clear propagandistic techniques."", ""paragraphIndex"": 2}]}"
+14,tutankhamun sculpture's london auction sparks egyptian outcry,health,Associated Press,center,prompt_3_precision_short_spans,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""the late Egyptian strongman"",
+      ""openFeedback"": ""The term “strongman” is a loaded label often used pejoratively for authoritarian leaders, fitting name-calling."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 2
+    }
+  ]
+}","{
+  ""title"": ""tutankhamun sculpture's london auction sparks egyptian outcry"",
+  ""topic"": ""health"",
+  ""source"": ""Associated Press"",
+  ""rating"": ""center"",
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. The text provides standard reporting on an upcoming auction and an international request to halt it."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. The quotes regarding 'stolen' artifacts and 'false information' are standard reporting of claims in a legal or historical dispute, not editorial propaganda."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. The paragraph offers objective historical context about the artifact's discovery and international antiquities conventions."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language. While 'strongman' is used to describe Hosni Mubarak, it is a standard journalistic and political term for authoritarian leaders in this context, lacking the clear intent of Name-Calling."",
+      ""paragraphIndex"": 3
+    }
+  ]
+}","{
+  ""annotations"": [
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Neutral factual reporting on the auction and its background."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Quoted statements from officials reporting a dispute; not explicit inflammatory language by the article itself."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Neutral quoting of Christie's official statement."",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Historical and factual context without polarizing framing."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""Factual account of Egypt's antiquities recovery efforts, no explicit polarizing language."",
+      ""paragraphIndex"": 4
+    }
+  ]
+}","{""title"": ""tutankhamun sculpture's london auction sparks egyptian outcry"", ""topic"": ""health"", ""source"": ""Associated Press"", ""rating"": ""center"", ""annotations"": [{""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral factual reporting on the auction and its background."", ""paragraphIndex"": 0}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Quoted statements from officials reporting a dispute; not explicit inflammatory language by the article itself."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Neutral quoting of Christie's official statement."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""Historical and factual context without polarizing framing."", ""paragraphIndex"": 3}]}"
+15,meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.,crime,Chicago Tribune,center,prompt_3_precision_short_spans,0.0,gpt-5.1,gemini-3.1-pro-preview,claude-sonnet-5,anthropic,claude-opus-4-8,gemini,anthropic,"{
+  ""annotations"": [
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""\""duchess difficult,\"" Me-Gain,\"" and \""Hurricane Meghan.\"""",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""sexism that often demonizes driven women as \""abrasive\"" or \""bossy\"""",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""People love tearing down powerful women by dismissing them as difficult divas."",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 1
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""unflattering nicknames for the Duchess of Sussex such as \"" duchess difficult, \"" \"" Me-Gain, \"" and \"" Hurricane Meghan .\"""",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 2
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""they seem to think that she's running the show."",
+      ""openFeedback"": ""This phrase is used pejoratively to characterize her behavior."",
+      ""paragraphIndex"": 3
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""perhaps enough to ruffle some feathers in British high society."",
+      ""openFeedback"": ""This frames her traits as provocatively disruptive to a group."",
+      ""paragraphIndex"": 4
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""such a volatile \"" wave of abuse and harassment \"" from members of the press and anonymous trolls"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""condemning the \""outright sexism and racism\"" she faced."",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 5
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""Markle is being labeled \""difficult\"" and unpopular"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 6
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""demonization"",
+      ""text"": ""sexism that often demonizes driven women"",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 7
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 8
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""women are more often called \""abrasive\"" and \""bossy\"""",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 9
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""\"" Women who check detailed progress every day are seen as micromanaging and bossy \"""",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 10
+    },
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""What's truly \""difficult\"" is why people feel the need to ridicule her for it."",
+      ""openFeedback"": """",
+      ""paragraphIndex"": 11
+    },
+    {
+      ""category"": ""No Polarizing language"",
+      ""subcategory"": ""no polarizing language"",
+      ""text"": ""no polarizing language selected"",
+      ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."",
+      ""paragraphIndex"": 12
+    }
+  ]
+}","{""title"": ""meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."", ""topic"": ""crime"", ""source"": ""Chicago Tribune"", ""rating"": ""center"", ""annotations"": [{""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""\""duchess difficult,\"" Me-Gain,\"" and \""Hurricane Meghan.\"""", ""openFeedback"": ""The text quotes tabloids using loaded negative labels to disparage the subject."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""\"" duchess difficult, \"" \"" Me-Gain, \"" and \"" Hurricane Meghan .\"""", ""openFeedback"": ""The text repeats these loaded negative nicknames used to disparage the subject."", ""paragraphIndex"": 1}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."", ""paragraphIndex"": 2}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."", ""paragraphIndex"": 3}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""members of the press and anonymous trolls"", ""openFeedback"": ""The term 'trolls' is used as a negative label to discredit the anonymous individuals harassing her."", ""paragraphIndex"": 4}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."", ""paragraphIndex"": 5}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."", ""paragraphIndex"": 6}, {""category"": ""No Polarizing language"", ""subcategory"": ""no polarizing language"", ""text"": ""no polarizing language selected"", ""openFeedback"": ""No exact span in this paragraph clearly qualifies as polarizing language."", ""paragraphIndex"": 7}]}","{
+  ""annotations"": [
+    {
+      ""category"": ""Inflammatory Language"",
+      ""subcategory"": ""name-calling"",
+      ""text"": ""\""duchess difficult,\"" Me-Gain,\"" and \""Hurricane Meghan.\"""",
+      ""openFeedback"": ""These are loaded, mocking nicknames applied to a specific person, fitting the name-calling definition even though the article is critiquing their use."",
+      ""paragraphIndex"": 0
+    },
+    {
+      ""category"": ""Persuasive Propaganda"",
+      ""subcategory"": ""exaggeration"",
+      ""text"": ""People love tearing down powerful women by dismissing them as difficult divas."",
+      ""openFeedback"": ""This is a sweeping, unqualified generalization about 'people' that exaggerates a broad social pattern without evidence for the scope of the claim."",
+      ""paragraphIndex"": 0
+    }
+  ]
+}","{""title"": ""meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace."", ""topic"": ""crime"", ""source"": ""Chicago Tribune"", ""rating"": ""center"", ""annotations"": [{""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""\""duchess difficult,\"" Me-Gain,\"" and \""Hurricane Meghan.\"""", ""openFeedback"": ""These are loaded, mocking nicknames applied to a specific person, fitting the name-calling definition."", ""paragraphIndex"": 0}, {""category"": ""Inflammatory Language"", ""subcategory"": ""name-calling"", ""text"": ""unflattering nicknames for the Duchess of Sussex such as \"" duchess difficult, \"" \"" Me-Gain, \"" and \"" Hurricane Meghan .\"""", ""openFeedback"": ""Loaded negative nicknames used to disparage the subject."", ""paragraphIndex"": 0}]}"
