@@ -6,6 +6,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 from typing import Any
 
@@ -191,6 +192,33 @@ def run_command(cmd: list[str]) -> None:
     subprocess.run(cmd, check=True)
 
 
+def run_command_with_resumable_retries(cmd: list[str], *, attempts: int, run_id: str) -> None:
+    last_exc: subprocess.CalledProcessError | None = None
+    for attempt in range(1, attempts + 1):
+        retry_cmd = list(cmd)
+        if attempt > 1 and "--resume" not in retry_cmd:
+            retry_cmd.append("--resume")
+
+        print(f"[{run_id}] wrapper attempt {attempt}/{attempts}")
+        try:
+            run_command(retry_cmd)
+            return
+        except subprocess.CalledProcessError as exc:
+            last_exc = exc
+            if attempt >= attempts:
+                raise
+            sleep_s = min(90, 10 * attempt)
+            print(
+                f"[{run_id}] wrapper failed with exit code {exc.returncode}; "
+                f"sleeping {sleep_s}s and resuming from checkpoint.",
+                file=sys.stderr,
+            )
+            time.sleep(sleep_s)
+
+    if last_exc is not None:
+        raise last_exc
+
+
 def build_gold() -> None:
     cmd = [
         sys.executable,
@@ -220,6 +248,12 @@ def main() -> int:
     parser.add_argument("--stochastic-runs", type=int, default=1)
     parser.add_argument("--max-retries", type=int, default=2)
     parser.add_argument("--checkpoint-every", type=int, default=1)
+    parser.add_argument(
+        "--wrapper-attempts",
+        type=int,
+        default=1,
+        help="Number of times to relaunch a failed per-prompt wrapper command with --resume.",
+    )
     parser.add_argument("--prompt-version", action="append", help="Optional prompt file stem to run, e.g. prompt_v3_high_precision_adjudicated.")
     parser.add_argument("--compare-only", action="store_true")
     parser.add_argument("--resume", action="store_true")
@@ -303,7 +337,11 @@ def main() -> int:
                     if final_json.exists() and not args.resume and not args.overwrite:
                         print(f"Skipping existing run: {run_id}")
                     else:
-                        run_command(cmd)
+                        run_command_with_resumable_retries(
+                            cmd,
+                            attempts=max(1, args.wrapper_attempts),
+                            run_id=run_id,
+                        )
 
                 if not final_json.exists():
                     print(f"Skipping comparison; missing final JSON: {final_json}")
