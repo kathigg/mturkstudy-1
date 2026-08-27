@@ -1,0 +1,609 @@
+cluster_id,validator,decision,confidence,weight,reason,matching_span
+pathetic rout tragic mistake and painful john mc__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,one of the most disgraceful performances by an American president
+pathetic rout tragic mistake and painful john mc__p0__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,one of the most disgraceful performances by an American president in memory
+pathetic rout tragic mistake and painful john mc__p0__c1,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,one of the most disgraceful performances by an American president in memory
+pathetic rout tragic mistake and painful john mc__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,one of the most disgraceful performances by an American president in memory
+pathetic rout tragic mistake and painful john mc__p0__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"accused President Donald Trump of making a ""tragic mistake"""
+pathetic rout tragic mistake and painful john mc__p0__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,tragic mistake
+pathetic rout tragic mistake and painful john mc__p0__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p0__c2,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p0__c3,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"President Trump's naiveté, egotism, false equivalence"
+pathetic rout tragic mistake and painful john mc__p0__c3,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p0__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p0__c3,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p0__c4,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,incalculable damage to U.S. foreign policy
+pathetic rout tragic mistake and painful john mc__p0__c4,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p0__c4,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p0__c4,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,bombastic and erratic conduct towards our closest friends and allies
+pathetic rout tragic mistake and painful john mc__p1__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,bombastic and erratic conduct towards our closest friends and allies
+pathetic rout tragic mistake and painful john mc__p1__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,marks a recent low point in the history of the American Presidency
+pathetic rout tragic mistake and painful john mc__p1__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,recent low point in the history of the American Presidency
+pathetic rout tragic mistake and painful john mc__p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p1__c2,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p1__c3,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,defend a tyrant against the fair questions of a free press
+pathetic rout tragic mistake and painful john mc__p1__c3,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p1__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p1__c3,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,defend a tyrant against the fair questions of a free press
+pathetic rout tragic mistake and painful john mc__p1__c4,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,his complicity in the slaughter of the Syrian people
+pathetic rout tragic mistake and painful john mc__p1__c4,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p1__c4,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p1__c4,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,his complicity in the slaughter of the Syrian people
+pathetic rout tragic mistake and painful john mc__p1__c5,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,describe the press conference as a pathetic rout
+pathetic rout tragic mistake and painful john mc__p1__c5,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,pathetic rout
+pathetic rout tragic mistake and painful john mc__p1__c5,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p1__c5,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,a pathetic rout as an illustration of the perils of under-preparation and inexperience
+pathetic rout tragic mistake and painful john mc__p1__c6,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,to spew propaganda and lies to the world
+pathetic rout tragic mistake and painful john mc__p1__c6,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p1__c6,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p1__c6,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,No prior president has ever abased himself more abjectly before a tyrant
+pathetic rout tragic mistake and painful john mc__p2__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,No prior president has ever abased himself more abjectly before a tyrant
+pathetic rout tragic mistake and painful john mc__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+pathetic rout tragic mistake and painful john mc__p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,No prior president has ever abased himself more abjectly before a tyrant
+trump rips horrible new york times washington po__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,both of these horrible papers will quickly go out of business & be forever gone | both of these horrible papers
+trump rips horrible new york times washington po__p0__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,both of these horrible papers
+trump rips horrible new york times washington po__p0__c1,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,horrible papers
+trump rips horrible new york times washington po__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,both of these horrible papers will quickly go out of business & be forever gone
+trump rips horrible new york times washington po__p0__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,the Failing New York Times or the Amazon (lobbyist) Washington Post
+trump rips horrible new york times washington po__p0__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,Failing New York Times or the Amazon (lobbyist) Washington Post | Failing New York Times
+trump rips horrible new york times washington po__p0__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump rips horrible new york times washington po__p0__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,the Failing New York Times or the Amazon (lobbyist) Washington Post
+trump rips horrible new york times washington po__p0__c3,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,America has been made GREAT again
+trump rips horrible new york times washington po__p0__c3,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,America has been made GREAT again
+trump rips horrible new york times washington po__p0__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump rips horrible new york times washington po__p0__c3,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump rips horrible new york times washington po__p0__c4,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,more dishonest and deceitful
+trump rips horrible new york times washington po__p0__c4,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+trump rips horrible new york times washington po__p0__c4,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump rips horrible new york times washington po__p0__c4,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump rips horrible new york times washington po__p0__c5,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"the ""enemy of the people"" | the Enemy of the People"
+trump rips horrible new york times washington po__p0__c5,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,the Enemy of the People | enemy of the people
+trump rips horrible new york times washington po__p0__c5,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump rips horrible new york times washington po__p0__c5,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"They are both a disgrace to our Country, the Enemy of the People"
+trump rips horrible new york times washington po__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,the Failing New York Times just did a story
+trump rips horrible new york times washington po__p1__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+trump rips horrible new york times washington po__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump rips horrible new york times washington po__p1__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump rips horrible new york times washington po__p1__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"a ""virtual act of Treason"""
+trump rips horrible new york times washington po__p1__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,virtual act of treason
+trump rips horrible new york times washington po__p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump rips horrible new york times washington po__p1__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"This is a virtual act of Treason by a once great paper so desperate for a story | claimed that The Times committed a ""virtual act of treason"""
+trump rips horrible new york times washington po__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,The Fake News has never been more dishonest than it is today
+trump rips horrible new york times washington po__p2__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,fake news
+trump rips horrible new york times washington po__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump rips horrible new york times washington po__p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"denounced the ""fake news "" and ""fake polling"" after reports surfaced | The Fake News has never been more dishonest than it is today"
+trump rips horrible new york times washington po__p2__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"""fake news"" and ""fake polling"""
+trump rips horrible new york times washington po__p2__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+trump rips horrible new york times washington po__p2__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump rips horrible new york times washington po__p2__c2,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+every american is entitled to health care sen be__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,international embarrassment of not guaranteeing health care
+every american is entitled to health care sen be__p0__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,international embarrassment
+every american is entitled to health care sen be__p0__c1,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,international embarrassment of not guaranteeing health care
+every american is entitled to health care sen be__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,the international embarrassment of not guaranteeing health care as a right
+every american is entitled to health care sen be__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,end the greed of the health insurance and pharmaceutical industries
+every american is entitled to health care sen be__p1__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,end the greed of the health insurance and pharmaceutical industries
+every american is entitled to health care sen be__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+every american is entitled to health care sen be__p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,end the greed of the health insurance and pharmaceutical industries
+every american is entitled to health care sen be__p1__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,make billions of dollars in profits off Americans' health care
+every american is entitled to health care sen be__p1__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+every american is entitled to health care sen be__p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+every american is entitled to health care sen be__p1__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,make billions of dollars in profits off Americans' health care
+every american is entitled to health care sen be__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,crazy and wild and extreme
+every american is entitled to health care sen be__p2__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+every american is entitled to health care sen be__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+every american is entitled to health care sen be__p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"everybody said our ideas are crazy and wild and extreme and now it turns out, all of the other candidates are saying what we said four years ago"
+protesters want all philadelphia police officers__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,hearings on the racist police who posted on Facebook
+protesters want all philadelphia police officers__p0__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,racist police who posted on Facebook
+protesters want all philadelphia police officers__p0__c1,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,the racist police who posted on Facebook
+protesters want all philadelphia police officers__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,calling for hearings on the racist police who posted on Facebook
+protesters want all philadelphia police officers__p0__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,they hate the people whose communities they patrol
+protesters want all philadelphia police officers__p0__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+protesters want all philadelphia police officers__p0__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+protesters want all philadelphia police officers__p0__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,said openly that they hate the people whose communities they patrol
+protesters want all philadelphia police officers__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,Get Them Off The Streets
+protesters want all philadelphia police officers__p1__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+protesters want all philadelphia police officers__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+protesters want all philadelphia police officers__p1__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+protesters want all philadelphia police officers__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,the crime wave they say it's already experiencing
+protesters want all philadelphia police officers__p2__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+protesters want all philadelphia police officers__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+protesters want all philadelphia police officers__p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,the more vulnerable the city becomes to the crime wave they say it's already experiencing
+the latest nadler says panel will move quickly o__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"He called her ""Nervous Nancy"" after it was reported"
+the latest nadler says panel will move quickly o__p2__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,Nervous Nancy
+the latest nadler says panel will move quickly o__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+the latest nadler says panel will move quickly o__p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"He called her ""Nervous Nancy"""
+we are livid mural honoring philadelphia police __p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,some low-life would deface the mural
+we are livid mural honoring philadelphia police __p0__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,some low-life would deface the mural
+we are livid mural honoring philadelphia police __p0__c1,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,some low-life would deface the mural
+we are livid mural honoring philadelphia police __p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,It's sickening and disgusting that some low-life would deface the mural
+we are livid mural honoring philadelphia police __p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,The ignorance and disrespect shown toward police is at an all time high
+we are livid mural honoring philadelphia police __p1__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+we are livid mural honoring philadelphia police __p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+we are livid mural honoring philadelphia police __p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,The ignorance and disrespect shown toward police is at an all time high
+we are livid mural honoring philadelphia police __p1__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,top persecutor of this city
+we are livid mural honoring philadelphia police __p1__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,"the DA, top persecutor of this city"
+we are livid mural honoring philadelphia police __p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+we are livid mural honoring philadelphia police __p1__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"the DA of this city set this tone of disrespect for the city by slighting Sgt. Wilson | the DA, top persecutor of this city"
+we are livid mural honoring philadelphia police __p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,ignorance and disrespect shown toward our officers
+we are livid mural honoring philadelphia police __p2__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+we are livid mural honoring philadelphia police __p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+we are livid mural honoring philadelphia police __p2__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+george conway urges trump to resign over aborted__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"Go back to real estate, where the worst you can do is kill banks"
+george conway urges trump to resign over aborted__p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+george conway urges trump to resign over aborted__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+george conway urges trump to resign over aborted__p0__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+george conway urges trump to resign over aborted__p0__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,you're even more of an idiot than people think you are
+george conway urges trump to resign over aborted__p0__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,you're even more of an idiot than people think you are
+george conway urges trump to resign over aborted__p0__c2,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,you're even more of an idiot than people think you are
+george conway urges trump to resign over aborted__p0__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,you're even more of an idiot than people think you are
+george conway urges trump to resign over aborted__p0__c3,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,To say this is amateur hour would defame amateurs
+george conway urges trump to resign over aborted__p0__c3,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,To say this is amateur hour would defame amateurs.
+george conway urges trump to resign over aborted__p0__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+george conway urges trump to resign over aborted__p0__c3,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,To say this is amateur hour would defame amateurs
+george conway urges trump to resign over aborted__p3__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man"
+george conway urges trump to resign over aborted__p3__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,"erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man"
+george conway urges trump to resign over aborted__p3__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+george conway urges trump to resign over aborted__p3__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man"
+george conway urges trump to resign over aborted__p3__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"whose judgment no serious, intelligent person trusts"
+george conway urges trump to resign over aborted__p3__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,"whose judgment no serious, intelligent person trusts"
+george conway urges trump to resign over aborted__p3__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+george conway urges trump to resign over aborted__p3__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"whose judgment no serious, intelligent person trusts"
+did jared kushner violate the hatch act democrat__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,his many deceptions regarding his security clearance
+did jared kushner violate the hatch act democrat__p1__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,as with his many deceptions regarding his security clearance
+did jared kushner violate the hatch act democrat__p1__c1,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,his many deceptions regarding his security clearance
+did jared kushner violate the hatch act democrat__p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,as with his many deceptions regarding his security clearance this is something no rank-and-file federal employee would get away with
+did jared kushner violate the hatch act democrat__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,National security is more important than party
+did jared kushner violate the hatch act democrat__p2__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+did jared kushner violate the hatch act democrat__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+did jared kushner violate the hatch act democrat__p2__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+did jared kushner violate the hatch act democrat__p2__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,Jared Kushner lied on his SF-86 form
+did jared kushner violate the hatch act democrat__p2__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+did jared kushner violate the hatch act democrat__p2__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+did jared kushner violate the hatch act democrat__p2__c2,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+ron desantis signs amendment 4 bill limiting fel__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"called a ""poll tax"" by critics"
+ron desantis signs amendment 4 bill limiting fel__p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+ron desantis signs amendment 4 bill limiting fel__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+ron desantis signs amendment 4 bill limiting fel__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"was called a ""poll tax"" by critics because it requires all felons to pay back their financial obligations"
+ron desantis signs amendment 4 bill limiting fel__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,one of the most racist and enduring policies
+ron desantis signs amendment 4 bill limiting fel__p1__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,one of the most racist and enduring policies of Florida's Jim Crow era
+ron desantis signs amendment 4 bill limiting fel__p1__c1,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,one of the most racist and enduring policies of Florida's Jim Crow era
+ron desantis signs amendment 4 bill limiting fel__p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,one of the most racist and enduring policies of Florida's Jim Crow era
+senate confirms judge who attacked roe v wade ca__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,his extreme views on both fronts
+senate confirms judge who attacked roe v wade ca__p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,because of his extreme views on both fronts
+senate confirms judge who attacked roe v wade ca__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"called being transgender ""a delusion."""
+senate confirms judge who attacked roe v wade ca__p1__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"He signed a 2016 letter that called being transgender ""a delusion."""
+senate confirms judge who attacked roe v wade ca__p1__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,autonomous blob of Silly Putty
+senate confirms judge who attacked roe v wade ca__p1__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p1__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"the human person is an autonomous blob of Silly Putty, unconstrained by nature or biology"
+senate confirms judge who attacked roe v wade ca__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"other judicial nominees young, right-wing ideologues"
+senate confirms judge who attacked roe v wade ca__p2__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"young, right-wing ideologues , the vast majority of whom are white men"
+senate confirms judge who attacked roe v wade ca__p2__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,drape black robes over these bigoted views
+senate confirms judge who attacked roe v wade ca__p2__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,bigoted views
+senate confirms judge who attacked roe v wade ca__p2__c2,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,bigoted views
+senate confirms judge who attacked roe v wade ca__p2__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,drape black robes over these bigoted views
+senate confirms judge who attacked roe v wade ca__p2__c3,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,one of Trump's most extreme nominees
+senate confirms judge who attacked roe v wade ca__p2__c3,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,one of the most extreme nominees
+senate confirms judge who attacked roe v wade ca__p2__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p2__c3,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,He is one of Trump's most extreme nominees
+editorial six months after californias landmark __p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,Law enforcement in San Francisco is deliberately sandbagging the release of these records
+editorial six months after californias landmark __p1__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,deliberately sandbagging the release of these records
+editorial six months after californias landmark __p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+editorial six months after californias landmark __p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,Law enforcement in San Francisco is deliberately sandbagging the release of these records
+editorial six months after californias landmark __p1__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,This is lawless conduct
+editorial six months after californias landmark __p1__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,This is lawless conduct
+editorial six months after californias landmark __p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+editorial six months after californias landmark __p1__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"This is lawless conduct, and it's depriving the public from the right to know about the activities of police in their communities."
+editorial six months after californias landmark __p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,Becerra's obvious bias toward the police groups
+editorial six months after californias landmark __p2__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,Becerra's obvious bias toward the police groups
+editorial six months after californias landmark __p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+editorial six months after californias landmark __p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"Becerra's obvious bias toward the police groups could prove an obstacle, too."
+buzzfeed journalists protest in push for union r__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,Recognize the BuzzFeed Union!!
+buzzfeed journalists protest in push for union r__p0__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,Recognize the BuzzFeed Union!!
+buzzfeed journalists protest in push for union r__p0__c1,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,Recognize the BuzzFeed Union!!
+buzzfeed journalists protest in push for union r__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"signs that said ""Recognize the BuzzFeed Union!!"""
+buzzfeed journalists protest in push for union r__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,skyrocketing health insurance costs
+buzzfeed journalists protest in push for union r__p1__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+buzzfeed journalists protest in push for union r__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+buzzfeed journalists protest in push for union r__p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"We have legitimate grievances about unfair pay disparities, mismanaged pivots and layoffs, weak benefits, skyrocketing health insurance costs"
+dc mayor says trumps fourth of july celebration __p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"a ""Baby Trump"" balloon"
+dc mayor says trumps fourth of july celebration __p1__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+dc mayor says trumps fourth of july celebration __p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+dc mayor says trumps fourth of july celebration __p1__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+dc mayor says trumps fourth of july celebration __p1__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"a ""Dump Trump"" robot"
+dc mayor says trumps fourth of july celebration __p1__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,Dump Trump
+dc mayor says trumps fourth of july celebration __p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+dc mayor says trumps fourth of july celebration __p1__c2,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+dc mayor says trumps fourth of july celebration __p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,Far-right extremists Proud Boys
+dc mayor says trumps fourth of july celebration __p2__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+dc mayor says trumps fourth of july celebration __p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+dc mayor says trumps fourth of july celebration __p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"Far-right extremists Proud Boys outnumbered by counter-protesters at Washington, DC, rally"
+protest in madrid as conservatives suspend ban o__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,We aspire to have a Madrid without smoke
+protest in madrid as conservatives suspend ban o__p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,We aspire to have a Madrid without smoke
+protest in madrid as conservatives suspend ban o__p0__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"Yes we can, I do want Madrid central"
+protest in madrid as conservatives suspend ban o__p0__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p0__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p0__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"""Yes we can, I do want Madrid central,"" chanted the protesters"
+protest in madrid as conservatives suspend ban o__p0__c3,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,I want to breathe free
+protest in madrid as conservatives suspend ban o__p0__c3,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p0__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p0__c3,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,I want to breathe free
+protest in madrid as conservatives suspend ban o__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,slashed air pollution levels from car emissions in the center to record lows
+protest in madrid as conservatives suspend ban o__p1__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,slashed air pollution levels from car emissions in the center to record lows
+tutankhamun sculptures london auction sparks egy__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"appears to have been ""stolen"" in the 1970s"
+tutankhamun sculptures london auction sparks egy__p1__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+tutankhamun sculptures london auction sparks egy__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+tutankhamun sculptures london auction sparks egy__p1__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+tutankhamun sculptures london auction sparks egy__p1__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,They have given false information
+tutankhamun sculptures london auction sparks egy__p1__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+tutankhamun sculptures london auction sparks egy__p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+tutankhamun sculptures london auction sparks egy__p1__c2,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"unflattering nicknames for the Duchess of Sussex such as "" duchess difficult, "" "" Me-Gain, "" and "" Hurricane Meghan ."" | known among palace staff as ""duchess difficult,"" Me-Gain,"" and ""Hurricane Meghan."""
+meghan markle has been branded difficult by tabl__p0__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,"duchess difficult, "" "" Me-Gain, "" and "" Hurricane Meghan ."" | duchess difficult,"" Me-Gain,"" and ""Hurricane Meghan."""
+meghan markle has been branded difficult by tabl__p0__c1,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,duchess difficult
+meghan markle has been branded difficult by tabl__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"unflattering nicknames for the Duchess of Sussex such as "" duchess difficult, "" "" Me-Gain, "" and "" Hurricane Meghan ."""
+meghan markle has been branded difficult by tabl__p0__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"labeled ""difficult"" and unpopular because it seems that she's ""running the show."""
+meghan markle has been branded difficult by tabl__p0__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c2,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c3,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"women are more often called ""abrasive"" and ""bossy"" in performance reviews"
+meghan markle has been branded difficult by tabl__p0__c3,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c3,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c4,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,tearing down powerful women by dismissing them as difficult divas
+meghan markle has been branded difficult by tabl__p0__c4,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,difficult divas
+meghan markle has been branded difficult by tabl__p0__c4,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c4,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,People love tearing down powerful women by dismissing them as difficult divas.
+meghan markle has been branded difficult by tabl__p0__c5,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"demonizes driven women as ""abrasive"" or ""bossy"" | sexism that often demonizes driven women"
+meghan markle has been branded difficult by tabl__p0__c5,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,"sexism that often demonizes driven women as ""abrasive"" or ""bossy"" | sexism that often demonizes driven women"
+meghan markle has been branded difficult by tabl__p0__c5,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c5,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,Disparaging Markle for having too many ideas or caring too much about charity work rings of the sexism that often demonizes driven women
+biden criticizes amazon for paying 0 in corporat__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,treated inhumanely at the facilities
+biden criticizes amazon for paying 0 in corporat__p1__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,treated inhumanely
+biden criticizes amazon for paying 0 in corporat__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+biden criticizes amazon for paying 0 in corporat__p1__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+biden criticizes amazon for paying 0 in corporat__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,Amazon crushes small companies by copying the goods they sell
+biden criticizes amazon for paying 0 in corporat__p2__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,Amazon crushes small companies
+biden criticizes amazon for paying 0 in corporat__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+biden criticizes amazon for paying 0 in corporat__p2__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+biden criticizes amazon for paying 0 in corporat__p3__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"colluding with Democrats to ""discriminate"" against him"
+biden criticizes amazon for paying 0 in corporat__p3__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+biden criticizes amazon for paying 0 in corporat__p3__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+biden criticizes amazon for paying 0 in corporat__p3__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,We will come up with the cures
+trump vows to cure cancer and eradicate aids__p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p0__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,you're going to see the single most important thing that changes America
+trump vows to cure cancer and eradicate aids__p1__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p1__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,We will eradicate AIDS in America once and for all
+trump vows to cure cancer and eradicate aids__p2__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,We will eradicate AIDS in America once and for all and we are really close
+donald trumps criminal justice reform shows resu__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,does nothing to rehabilitate.
+donald trumps criminal justice reform shows resu__p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trumps criminal justice reform shows resu__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trumps criminal justice reform shows resu__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,imposing extreme sentences on people who will spend 20 to 50 years behind bars does nothing to rehabilitate
+donald trumps criminal justice reform shows resu__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"to appear ""soft on crime,"""
+donald trumps criminal justice reform shows resu__p2__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trumps criminal justice reform shows resu__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trumps criminal justice reform shows resu__p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"A death knell against winning at the polls is to appear ""soft on crime,"""
+donald trumps criminal justice reform shows resu__p3__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,little more than a system for warehousing human beings.
+donald trumps criminal justice reform shows resu__p3__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,it is little more than a system for warehousing human beings
+donald trumps criminal justice reform shows resu__p3__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trumps criminal justice reform shows resu__p3__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,it is little more than a system for warehousing human beings
+gop lawmaker suggests colin kaepernick move to a__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,very radical people in the United States of America who don't like America
+gop lawmaker suggests colin kaepernick move to a__p1__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,very radical people
+gop lawmaker suggests colin kaepernick move to a__p1__c1,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,very radical people in the United States of America
+gop lawmaker suggests colin kaepernick move to a__p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,very radical people in the United States of America who don't like America
+trump hits polling on fox news something weird g__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"""something weird"" is happening at the network"
+trump hits polling on fox news something weird g__p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+trump hits polling on fox news something weird g__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump hits polling on fox news something weird g__p0__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump hits polling on fox news something weird g__p0__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,They were against Crooked Hillary also.
+trump hits polling on fox news something weird g__p0__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,Crooked Hillary
+trump hits polling on fox news something weird g__p0__c2,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,@FoxNews Polls are always bad for me. They were against Crooked Hillary also. Something weird going on at Fox.
+trump hits polling on fox news something weird g__p0__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,They were against Crooked Hillary also | Something weird going on at Fox.
+trump hits polling on fox news something weird g__p0__c3,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,Something weird going on at Fox.
+trump hits polling on fox news something weird g__p0__c3,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,Something weird going on at Fox
+trump hits polling on fox news something weird g__p0__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump hits polling on fox news something weird g__p0__c3,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump hits polling on fox news something weird g__p0__c4,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,More Fake News @BretBaier
+trump hits polling on fox news something weird g__p0__c4,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,More Fake News
+trump hits polling on fox news something weird g__p0__c4,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump hits polling on fox news something weird g__p0__c4,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump hits polling on fox news something weird g__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"that ""only fake polls"" showed him behind 2020 Democrats"
+trump hits polling on fox news something weird g__p1__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,only fake polls
+trump hits polling on fox news something weird g__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump hits polling on fox news something weird g__p1__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump hits polling on fox news something weird g__p1__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"referring to them as a ""Motley Crew."""
+trump hits polling on fox news something weird g__p1__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,Motley Crew
+trump hits polling on fox news something weird g__p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump hits polling on fox news something weird g__p1__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"referring to them as a ""Motley Crew."""
+trump hits polling on fox news something weird g__p1__c3,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,MAKE AMERICA GREAT AGAIN!
+trump hits polling on fox news something weird g__p1__c3,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,MAKE AMERICA GREAT AGAIN!
+trump hits polling on fox news something weird g__p1__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump hits polling on fox news something weird g__p1__c3,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,MAKE AMERICA GREAT AGAIN!
+if youre directly complicit in spreading hate co__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,politicians involved in 'spreading hate'
+if youre directly complicit in spreading hate co__p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+if youre directly complicit in spreading hate co__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+if youre directly complicit in spreading hate co__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,politicians involved in 'spreading hate' should consider dining at home
+if youre directly complicit in spreading hate co__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,If you're an unsavory individual - of whatever persuasion or affiliation - we have no legal or moral obligation to do business with you
+if youre directly complicit in spreading hate co__p1__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,unsavory individual
+if youre directly complicit in spreading hate co__p1__c1,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,unsavory individual
+if youre directly complicit in spreading hate co__p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,If you're an unsavory individual - of whatever persuasion or affiliation
+if youre directly complicit in spreading hate co__p1__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,trashing norms and breaking backs
+if youre directly complicit in spreading hate co__p1__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,an administration that has made its name trashing norms and breaking backs
+if youre directly complicit in spreading hate co__p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+if youre directly complicit in spreading hate co__p1__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,an administration that has made its name trashing norms and breaking backs
+if youre directly complicit in spreading hate co__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,directly complicit in spreading hate or perpetuating suffering
+if youre directly complicit in spreading hate co__p2__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,directly complicit in spreading hate or perpetuating suffering
+if youre directly complicit in spreading hate co__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+if youre directly complicit in spreading hate co__p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,If you're directly complicit in spreading hate or perpetuating suffering
+donald trump jr mocks roy moore after campaign a__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,Based on the allegations I'd stay away from that
+donald trump jr mocks roy moore after campaign a__p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,Based on the allegations I'd stay away from that but hey I'm new to this
+donald trump jr mocks roy moore after campaign a__p0__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,This can't be real... can it?
+donald trump jr mocks roy moore after campaign a__p0__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p0__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p0__c2,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"You're literally the only candidate who could lose a GOP seat in pro-Trump, pro-USA ALABAMA"
+donald trump jr mocks roy moore after campaign a__p1__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"You're literally the only candidate who could lose a GOP seat in pro-Trump, pro-USA ALABAMA"
+donald trump jr mocks roy moore after campaign a__p1__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,he's doing a disservice to all conservatives across the country
+donald trump jr mocks roy moore after campaign a__p1__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,he's doing a disservice to all conservatives across the country in the process
+donald trump jr mocks roy moore after campaign a__p1__c3,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,This is pure fake news.
+donald trump jr mocks roy moore after campaign a__p1__c3,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,This is pure fake news
+donald trump jr mocks roy moore after campaign a__p1__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c3,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,This is pure fake news
+donald trump jr mocks roy moore after campaign a__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,gift wrapping this Senate seat for Chuck Schumer
+donald trump jr mocks roy moore after campaign a__p2__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,nominating Roy Moore would be gift wrapping this Senate seat for Chuck Schumer
+donald trump jr mocks roy moore after campaign a__p2__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,collapsing under its own weight
+donald trump jr mocks roy moore after campaign a__p2__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p2__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p2__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,whether Moore can escape his baggage without his candidacy collapsing under its own weight
+donald trump jr mocks roy moore after campaign a__p2__c3,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,anyone but Roy Moore
+donald trump jr mocks roy moore after campaign a__p2__c3,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p2__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p2__c3,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"its motto in the race is ""ABRM,"" which stands for ""anyone but Roy Moore."""
+rmv fail 546 license suspensions more to come__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,in a deadly bureaucratic failure that Gov. Charlie Baker admits
+rmv fail 546 license suspensions more to come__p0__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,deadly bureaucratic failure
+rmv fail 546 license suspensions more to come__p0__c1,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,deadly bureaucratic failure
+rmv fail 546 license suspensions more to come__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,in a deadly bureaucratic failure that Gov. Charlie Baker admits has tested public confidence
+rmv fail 546 license suspensions more to come__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,Timeline of the RMV's fatal failure
+rmv fail 546 license suspensions more to come__p2__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+rmv fail 546 license suspensions more to come__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+rmv fail 546 license suspensions more to come__p2__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+rmv fail 546 license suspensions more to come__p3__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,whether any RMV employees have been disciplined for the deadly oversight or why
+rmv fail 546 license suspensions more to come__p3__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+rmv fail 546 license suspensions more to come__p3__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+rmv fail 546 license suspensions more to come__p3__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+killer of 16yearold new york girl in 1980 releas__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,the most brutal murder he had ever seen
+killer of 16yearold new york girl in 1980 releas__p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+killer of 16yearold new york girl in 1980 releas__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+killer of 16yearold new york girl in 1980 releas__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,what the local medical examiner described as the most brutal murder he had ever seen
+killer of 16yearold new york girl in 1980 releas__p3__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,this release of this rapist and murderer is so hideous to me
+killer of 16yearold new york girl in 1980 releas__p3__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,this release of this rapist and murderer is so hideous to me
+killer of 16yearold new york girl in 1980 releas__p3__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+killer of 16yearold new york girl in 1980 releas__p3__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,this release of this rapist and murderer is so hideous to me
+ocasiocortez sanders call for climate change eme__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,address the so-called emergency
+ocasiocortez sanders call for climate change eme__p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+ocasiocortez sanders call for climate change eme__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+ocasiocortez sanders call for climate change eme__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,it doesn't make any exact recommendations how to address the so-called emergency
+ocasiocortez sanders call for climate change eme__p1__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,"a radical, top-down, socialist makeover of the entire U.S. economy"
+ocasiocortez sanders call for climate change eme__p1__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,"radical, top-down, socialist makeover"
+ocasiocortez sanders call for climate change eme__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+ocasiocortez sanders call for climate change eme__p1__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"a radical, top-down, socialist makeover of the entire U.S. economy"
+ocasiocortez sanders call for climate change eme__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,devastate the economy and trigger massive tax increases
+ocasiocortez sanders call for climate change eme__p2__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+ocasiocortez sanders call for climate change eme__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+ocasiocortez sanders call for climate change eme__p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,saying it would devastate the economy and trigger massive tax increases
+ocasiocortez sanders call for climate change eme__p2__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,routinely declared phony national emergencies
+ocasiocortez sanders call for climate change eme__p2__c2,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,phony national emergencies
+ocasiocortez sanders call for climate change eme__p2__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+ocasiocortez sanders call for climate change eme__p2__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,President Trump has routinely declared phony national emergencies to advance his deeply unpopular agenda
+ocasiocortez sanders call for climate change eme__p2__c3,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,calling it a hoax
+ocasiocortez sanders call for climate change eme__p2__c3,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+ocasiocortez sanders call for climate change eme__p2__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+ocasiocortez sanders call for climate change eme__p2__c3,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+gabbard was most searched democratic candidate a__p0__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,this president and his chicken hawk cabinet
+gabbard was most searched democratic candidate a__p0__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,this president and his chicken hawk cabinet
+gabbard was most searched democratic candidate a__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+gabbard was most searched democratic candidate a__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,this president and his chicken hawk cabinet have led us to the brink of war with Iran
+gabbard was most searched democratic candidate a__p0__c2,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,have led us to the brink of war with Iran
+gabbard was most searched democratic candidate a__p0__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+gabbard was most searched democratic candidate a__p0__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+gabbard was most searched democratic candidate a__p0__c2,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+gabbard was most searched democratic candidate a__p2__c1,gpt5mini_prompt5,polarizing,1.0,1.1,source proposed a matching span,It's clear who MSNBC wants to be president: Elizabeth Warren
+gabbard was most searched democratic candidate a__p2__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+gabbard was most searched democratic candidate a__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+gabbard was most searched democratic candidate a__p2__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump rips horrible new york times washington po__p0__c6,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump rips horrible new york times washington po__p0__c6,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,KEEP AMERICA GREAT
+trump rips horrible new york times washington po__p0__c6,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump rips horrible new york times washington po__p0__c6,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,KEEP AMERICA GREAT
+trump rips horrible new york times washington po__p2__c3,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump rips horrible new york times washington po__p2__c3,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,Suppression Polls (they suppress the numbers)
+trump rips horrible new york times washington po__p2__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump rips horrible new york times washington po__p2__c3,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+every american is entitled to health care sen be__p1__c3,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+every american is entitled to health care sen be__p1__c3,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,dysfunctional system
+every american is entitled to health care sen be__p1__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+every american is entitled to health care sen be__p1__c3,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+we are livid mural honoring philadelphia police __p1__c3,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+we are livid mural honoring philadelphia police __p1__c3,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,"the DA of this city set this tone of disrespect for the city by slighting Sgt. Wilson, III by offering a backdoor plea"
+we are livid mural honoring philadelphia police __p1__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+we are livid mural honoring philadelphia police __p1__c3,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+did jared kushner violate the hatch act democrat__p2__c3,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+did jared kushner violate the hatch act democrat__p2__c3,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,#RevokeKushner
+did jared kushner violate the hatch act democrat__p2__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+did jared kushner violate the hatch act democrat__p2__c3,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c6,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c6,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,"volatile "" wave of abuse and harassment """
+meghan markle has been branded difficult by tabl__p0__c6,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c6,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump hits polling on fox news something weird g__p2__c1,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump hits polling on fox news something weird g__p2__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,Fox is moving more and more to the losing (wrong) side
+trump hits polling on fox news something weird g__p2__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump hits polling on fox news something weird g__p2__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,Fox is moving more and more to the losing (wrong) side in covering the Dems
+if youre directly complicit in spreading hate co__p1__c3,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+if youre directly complicit in spreading hate co__p1__c3,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,You can't call people your enemies by day
+if youre directly complicit in spreading hate co__p1__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+if youre directly complicit in spreading hate co__p1__c3,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c4,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c4,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,more than your own ego
+donald trump jr mocks roy moore after campaign a__p1__c4,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c4,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c5,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c5,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,#MAGA
+donald trump jr mocks roy moore after campaign a__p1__c5,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c5,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p2__c4,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p2__c4,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,ABRM
+donald trump jr mocks roy moore after campaign a__p2__c4,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p2__c4,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+rmv fail 546 license suspensions more to come__p1__c1,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+rmv fail 546 license suspensions more to come__p1__c1,gemini_flash_prompt5,polarizing,1.0,1.0,source proposed a matching span,filed and forgotten in 53 bins
+rmv fail 546 license suspensions more to come__p1__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+rmv fail 546 license suspensions more to come__p1__c1,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p0__c4,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p0__c4,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p0__c4,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,raising fears that environmental rollbacks seen in the United States may be spreading to Europe
+protest in madrid as conservatives suspend ban o__p0__c4,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,raising fears that environmental rollbacks seen in the United States may be spreading to Europe
+trump vows to cure cancer and eradicate aids__p0__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p0__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p0__c2,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,sweeping promises to tackle two of mankind's most dreaded diseases
+trump vows to cure cancer and eradicate aids__p0__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,he made sweeping promises to tackle two of mankind's most dreaded diseases
+donald trumps criminal justice reform shows resu__p0__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+donald trumps criminal justice reform shows resu__p0__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trumps criminal justice reform shows resu__p0__c2,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,long overdue
+donald trumps criminal justice reform shows resu__p0__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"It is a major achievement in improving the criminal justice system, long overdue"
+killer of 16yearold new york girl in 1980 releas__p0__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+killer of 16yearold new york girl in 1980 releas__p0__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+killer of 16yearold new york girl in 1980 releas__p0__c2,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,Killer of 16-year-old New York girl
+killer of 16yearold new york girl in 1980 releas__p0__c2,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+ocasiocortez sanders call for climate change eme__p0__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+ocasiocortez sanders call for climate change eme__p0__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+ocasiocortez sanders call for climate change eme__p0__c2,claude_haiku_prompt5,polarizing,1.0,0.7,source proposed a matching span,failed to take off the ground
+ocasiocortez sanders call for climate change eme__p0__c2,adjudicated_prompt2,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump rips horrible new york times washington po__p1__c3,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump rips horrible new york times washington po__p1__c3,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+trump rips horrible new york times washington po__p1__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump rips horrible new york times washington po__p1__c3,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"often referring to it as the ""enemy of the people."""
+every american is entitled to health care sen be__p2__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+every american is entitled to health care sen be__p2__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+every american is entitled to health care sen be__p2__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+every american is entitled to health care sen be__p2__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,New Hampshire and 21 other states that supported our agenda
+protesters want all philadelphia police officers__p2__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+protesters want all philadelphia police officers__p2__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+protesters want all philadelphia police officers__p2__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+protesters want all philadelphia police officers__p2__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"excessive to take over 6,000 police officers off the street"
+we are livid mural honoring philadelphia police __p2__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+we are livid mural honoring philadelphia police __p2__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+we are livid mural honoring philadelphia police __p2__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+we are livid mural honoring philadelphia police __p2__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,the consequences of such are as minuscule as a slap on the wrist
+did jared kushner violate the hatch act democrat__p2__c4,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+did jared kushner violate the hatch act democrat__p2__c4,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+did jared kushner violate the hatch act democrat__p2__c4,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+did jared kushner violate the hatch act democrat__p2__c4,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,they're trying to take away her right to free speech
+ron desantis signs amendment 4 bill limiting fel__p3__c1,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+ron desantis signs amendment 4 bill limiting fel__p3__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+ron desantis signs amendment 4 bill limiting fel__p3__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+ron desantis signs amendment 4 bill limiting fel__p3__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,the Republicans' approach is confusing and expensive
+senate confirms judge who attacked roe v wade ca__p1__c3,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p1__c3,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p1__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p1__c3,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,wondered aloud how anyone could expect Kacsmaryk to be a fair and impartial judge
+senate confirms judge who attacked roe v wade ca__p1__c4,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p1__c4,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p1__c4,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p1__c4,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"a celestial phenomenon invisible to the non-lawyer eye."" (What?)"
+senate confirms judge who attacked roe v wade ca__p2__c4,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p2__c4,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p2__c4,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p2__c4,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,funneling anti-abortion and anti-LGBTQ nominees to the White House
+senate confirms judge who attacked roe v wade ca__p2__c5,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p2__c5,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p2__c5,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+senate confirms judge who attacked roe v wade ca__p2__c5,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,Why on earth is this man a nominee for a lifetime appointment?
+editorial six months after californias landmark __p0__c1,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+editorial six months after californias landmark __p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+editorial six months after californias landmark __p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+editorial six months after californias landmark __p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,many police departments believe that compliance with the law is optional | So many police departments are resisting compliance
+editorial six months after californias landmark __p2__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+editorial six months after californias landmark __p2__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+editorial six months after californias landmark __p2__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+editorial six months after californias landmark __p2__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,these groups have had a powerful champion in their attempts to deny the public this information
+editorial six months after californias landmark __p3__c1,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+editorial six months after californias landmark __p3__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+editorial six months after californias landmark __p3__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+editorial six months after californias landmark __p3__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,No one least of all the agencies that have sworn to protect and serve the public should be allowed to thwart the law.
+dc mayor says trumps fourth of july celebration __p1__c3,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+dc mayor says trumps fourth of july celebration __p1__c3,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+dc mayor says trumps fourth of july celebration __p1__c3,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+dc mayor says trumps fourth of july celebration __p1__c3,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,Trump's critics had argued the speech threatened to politicize what had previously been a nonpartisan holiday tradition
+protest in madrid as conservatives suspend ban o__p0__c5,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p0__c5,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p0__c5,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p0__c5,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,a fresh sign of growing divisions in Spain after a series of inconclusive elections
+protest in madrid as conservatives suspend ban o__p1__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p1__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+protest in madrid as conservatives suspend ban o__p1__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"""We have to save (the planet) starting at the local and small level"
+meghan markle has been branded difficult by tabl__p0__c7,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c7,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c7,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+meghan markle has been branded difficult by tabl__p0__c7,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,members of the press and anonymous trolls
+biden criticizes amazon for paying 0 in corporat__p0__c1,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+biden criticizes amazon for paying 0 in corporat__p0__c1,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+biden criticizes amazon for paying 0 in corporat__p0__c1,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+biden criticizes amazon for paying 0 in corporat__p0__c1,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"We need to reward work, not just wealth."
+trump vows to cure cancer and eradicate aids__p1__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p1__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p1__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p1__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"Wow, why the hell didn't you do that over the last 50 years, Joe?"
+trump vows to cure cancer and eradicate aids__p2__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p2__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p2__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+trump vows to cure cancer and eradicate aids__p2__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,Some observers couldn't help but wonder about the feasibility of the president's big promises
+donald trumps criminal justice reform shows resu__p2__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+donald trumps criminal justice reform shows resu__p2__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trumps criminal justice reform shows resu__p2__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trumps criminal justice reform shows resu__p2__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"Too often, an 18-year-old makes a mistake for which he will pay until he's 90 years old"
+donald trump jr mocks roy moore after campaign a__p1__c6,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c6,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c6,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c6,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,If you actually care about #MAGA more than your own ego
+donald trump jr mocks roy moore after campaign a__p1__c7,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c7,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c7,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+donald trump jr mocks roy moore after campaign a__p1__c7,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,"it's time to ride off into the sunset, Judge"
+rmv fail 546 license suspensions more to come__p0__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+rmv fail 546 license suspensions more to come__p0__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+rmv fail 546 license suspensions more to come__p0__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+rmv fail 546 license suspensions more to come__p0__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,In a stunning press conference detailing the scope of the crisis Monday
+gabbard was most searched democratic candidate a__p2__c2,gpt5mini_prompt5,not_polarizing,1.0,1.1,source did not propose a matching span,
+gabbard was most searched democratic candidate a__p2__c2,gemini_flash_prompt5,not_polarizing,1.0,1.0,source did not propose a matching span,
+gabbard was most searched democratic candidate a__p2__c2,claude_haiku_prompt5,not_polarizing,1.0,0.7,source did not propose a matching span,
+gabbard was most searched democratic candidate a__p2__c2,adjudicated_prompt2,polarizing,1.0,1.1,source proposed a matching span,They're giving her more time than all the other candidates combined.

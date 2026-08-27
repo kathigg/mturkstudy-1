@@ -281,14 +281,37 @@ def load_json_with_backslash_repair(text: str) -> dict[str, Any]:
     return json.loads(repaired)
 
 
+def flatten_annotation_list(annotations: list[Any]) -> list[dict[str, Any]]:
+    flattened: list[dict[str, Any]] = []
+    for item in annotations:
+        if not isinstance(item, dict):
+            continue
+
+        nested = item.get("annotations")
+        if isinstance(nested, list):
+            parent_paragraph = item.get("paragraphIndex")
+            for nested_item in nested:
+                if not isinstance(nested_item, dict):
+                    continue
+                ann = dict(nested_item)
+                if "paragraphIndex" not in ann and isinstance(parent_paragraph, int):
+                    ann["paragraphIndex"] = parent_paragraph
+                flattened.append(ann)
+            continue
+
+        flattened.append(item)
+    return flattened
+
+
 def coerce_article_annotation_object(obj: dict[str, Any], *, title: str, topic: str, source: str, rating: str) -> dict[str, Any]:
     if isinstance(obj.get("annotations"), list):
+        obj["annotations"] = flatten_annotation_list(obj["annotations"])
         return obj
     if isinstance(obj.get("paragraphAnnotations"), list):
-        obj["annotations"] = obj.pop("paragraphAnnotations")
+        obj["annotations"] = flatten_annotation_list(obj.pop("paragraphAnnotations"))
         return obj
     if isinstance(obj.get("paragraphs"), list):
-        obj["annotations"] = obj.pop("paragraphs")
+        obj["annotations"] = flatten_annotation_list(obj.pop("paragraphs"))
         return obj
 
     annotation_keys = {"category", "subcategory", "text", "paragraphIndex"}
@@ -730,6 +753,7 @@ class ModelConfig:
     adjudicator_model: str
     paragraph_policy: str = "exact-one"
     temperature: float = 0.1
+    request_timeout_s: float = 240.0
     annotator_b_provider: str = "gemini"  # "gemini" (default) or "openai"
     annotator_c_provider: str = "openai"  # "openai" (default), "anthropic", or "none"
     adjudicator_provider: str = "openai"  # "openai" (default) or "anthropic"
@@ -746,6 +770,12 @@ def _retry(call, *, max_retries: int, base_sleep_s: float = 1.0):
             if attempt >= max_retries:
                 raise
             sleep_s = base_sleep_s * (2**attempt) + random.random() * 0.25
+            print(
+                f"Provider call failed on attempt {attempt + 1}/{max_retries + 1}: {type(exc).__name__}: {exc}; "
+                f"retrying in {sleep_s:.1f}s",
+                file=sys.stderr,
+                flush=True,
+            )
             time.sleep(sleep_s)
     raise last_exc  # pragma: no cover
 
@@ -761,22 +791,30 @@ def _require_keys(unless_dry_run: bool, *, require_gemini: bool = True, require_
         raise RuntimeError("Missing ANTHROPIC_API_KEY env var.")
 
 
-def _openai_client():
+def _openai_client(*, request_timeout_s: float):
     from openai import OpenAI
 
-    return OpenAI()
+    return OpenAI(timeout=request_timeout_s)
 
 
-def _anthropic_openai_compat_client():
+def _anthropic_openai_compat_client(*, request_timeout_s: float):
     from openai import OpenAI
 
-    return OpenAI(api_key=os.environ.get("ANTHROPIC_API_KEY"), base_url="https://api.anthropic.com/v1/")
+    return OpenAI(
+        api_key=os.environ.get("ANTHROPIC_API_KEY"),
+        base_url="https://api.anthropic.com/v1/",
+        timeout=request_timeout_s,
+    )
 
 
-def _gemini_client():
+def _gemini_client(*, request_timeout_s: float):
     from google import genai
 
-    return genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+    # google-genai HttpOptions timeout is in milliseconds.
+    return genai.Client(
+        api_key=os.environ.get("GEMINI_API_KEY"),
+        http_options={"timeout": int(request_timeout_s * 1000)},
+    )
 
 
 def annotate_dry_run(title: str, topic: str, source: str, rating: str, body: str) -> tuple[dict[str, Any], str]:
@@ -804,7 +842,21 @@ def annotate_dry_run(title: str, topic: str, source: str, rating: str, body: str
     return obj, raw
 
 
-def annotate_with_openai(client, role_desc: str, article_block: str, title: str, topic: str, source: str, rating: str, *, body: str, model: str, temperature: float | None, max_retries: int):
+def annotate_with_openai(
+    client,
+    role_desc: str,
+    article_block: str,
+    title: str,
+    topic: str,
+    source: str,
+    rating: str,
+    *,
+    body: str,
+    model: str,
+    temperature: float | None,
+    max_retries: int,
+    request_timeout_s: float,
+):
     user_prompt = build_user_prompt_for_annotation(article_block)
 
     def _call():
@@ -817,7 +869,7 @@ def annotate_with_openai(client, role_desc: str, article_block: str, title: str,
         }
         if temperature is not None:
             request_kwargs["temperature"] = temperature
-        return client.chat.completions.create(**request_kwargs)
+        return client.chat.completions.create(**request_kwargs, timeout=request_timeout_s)
 
     completion = _retry(_call, max_retries=max_retries)
     raw = completion.choices[0].message.content.strip()
@@ -839,7 +891,19 @@ def annotate_with_openai(client, role_desc: str, article_block: str, title: str,
     return obj, json_str
 
 
-def annotate_with_gemini(client, role_desc: str, article_block: str, title: str, topic: str, source: str, rating: str, *, body: str, model: str, max_retries: int):
+def annotate_with_gemini(
+    client,
+    role_desc: str,
+    article_block: str,
+    title: str,
+    topic: str,
+    source: str,
+    rating: str,
+    *,
+    body: str,
+    model: str,
+    max_retries: int,
+):
     user_prompt = build_user_prompt_for_annotation(article_block)
     prompt = (
         "SYSTEM INSTRUCTIONS:\n"
@@ -894,6 +958,7 @@ def adjudicate_with_openai(
     temperature: float | None,
     max_retries: int,
     paragraph_policy: str,
+    request_timeout_s: float,
 ):
     adjudicator_system = """
 You are the Adjudicator, a methods-oriented political scientist overseeing independent annotators.
@@ -935,7 +1000,7 @@ Meta fields must be set to:
         }
         if temperature is not None:
             request_kwargs["temperature"] = temperature
-        return client.chat.completions.create(**request_kwargs)
+        return client.chat.completions.create(**request_kwargs, timeout=request_timeout_s)
 
     completion = _retry(_call, max_retries=max_retries)
     raw = completion.choices[0].message.content.strip()
@@ -962,11 +1027,11 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
     anthropic_client = None
     adjudicator_client = None
     if not dry_run:
-        openai_client = _openai_client()
+        openai_client = _openai_client(request_timeout_s=cfg.request_timeout_s)
         if cfg.annotator_b_provider == "gemini":
-            gemini_client = _gemini_client()
+            gemini_client = _gemini_client(request_timeout_s=cfg.request_timeout_s)
         if cfg.annotator_c_provider == "anthropic" or cfg.adjudicator_provider == "anthropic":
-            anthropic_client = _anthropic_openai_compat_client()
+            anthropic_client = _anthropic_openai_compat_client(request_timeout_s=cfg.request_timeout_s)
         adjudicator_client = anthropic_client if cfg.adjudicator_provider == "anthropic" else openai_client
 
     results: list[dict[str, Any]] = []
@@ -996,6 +1061,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                 model=cfg.openai_model,
                 temperature=cfg.temperature,
                 max_retries=max_retries,
+                request_timeout_s=cfg.request_timeout_s,
             )
 
             if cfg.annotator_b_provider == "gemini":
@@ -1024,6 +1090,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                     model=cfg.openai_model,
                     temperature=cfg.temperature,
                     max_retries=max_retries,
+                    request_timeout_s=cfg.request_timeout_s,
                 )
             else:
                 raise ValueError(f"Unknown annotator_b_provider: {cfg.annotator_b_provider!r}")
@@ -1041,6 +1108,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                     model=cfg.openai_model,
                     temperature=cfg.temperature,
                     max_retries=max_retries,
+                    request_timeout_s=cfg.request_timeout_s,
                 )
             elif cfg.annotator_c_provider == "anthropic":
                 obj_c, raw_c = annotate_with_openai(
@@ -1055,6 +1123,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                     model=cfg.claude_model,
                     temperature=None,
                     max_retries=max_retries,
+                    request_timeout_s=cfg.request_timeout_s,
                 )
             elif cfg.annotator_c_provider == "none":
                 obj_c, raw_c = None, ""
@@ -1076,6 +1145,7 @@ def run_pipeline(df: pd.DataFrame, cfg: ModelConfig, *, dry_run: bool, max_retri
                 temperature=None if cfg.adjudicator_provider == "anthropic" else cfg.temperature,
                 max_retries=max_retries,
                 paragraph_policy=cfg.paragraph_policy,
+                request_timeout_s=cfg.request_timeout_s,
             )
 
         results.append(
@@ -1287,6 +1357,12 @@ def main(argv: list[str] | None = None) -> int:
         ),
     )
     parser.add_argument("--max-retries", type=int, default=2)
+    parser.add_argument(
+        "--request-timeout-s",
+        type=float,
+        default=240.0,
+        help="Hard timeout, in seconds, for each provider request before retrying.",
+    )
     parser.add_argument("--start-index", type=int, default=0, help="Start row index (0-based, inclusive) to process.")
     parser.add_argument("--end-index", type=int, default=None, help="End row index (0-based, exclusive) to process.")
     parser.add_argument("--resume", action="store_true", help="Resume from an existing --results-csv/--final-jsonl (skips completed indices).")
@@ -1335,6 +1411,7 @@ def main(argv: list[str] | None = None) -> int:
         adjudicator_model=adjudicator_model,
         paragraph_policy=args.paragraph_policy,
         temperature=args.temperature,
+        request_timeout_s=args.request_timeout_s,
         annotator_b_provider=args.annotator_b_provider,
         annotator_c_provider=args.annotator_c_provider,
         adjudicator_provider=args.adjudicator_provider,
@@ -1379,11 +1456,11 @@ def main(argv: list[str] | None = None) -> int:
     anthropic_client = None
     adjudicator_client = None
     if not args.dry_run:
-        openai_client = _openai_client()
+        openai_client = _openai_client(request_timeout_s=cfg.request_timeout_s)
         if cfg.annotator_b_provider == "gemini":
-            gemini_client = _gemini_client()
+            gemini_client = _gemini_client(request_timeout_s=cfg.request_timeout_s)
         if cfg.annotator_c_provider == "anthropic" or cfg.adjudicator_provider == "anthropic":
-            anthropic_client = _anthropic_openai_compat_client()
+            anthropic_client = _anthropic_openai_compat_client(request_timeout_s=cfg.request_timeout_s)
         adjudicator_client = anthropic_client if cfg.adjudicator_provider == "anthropic" else openai_client
 
     processed_since_materialize = 0
@@ -1420,6 +1497,7 @@ def main(argv: list[str] | None = None) -> int:
                     model=cfg.openai_model,
                     temperature=cfg.temperature,
                     max_retries=args.max_retries,
+                    request_timeout_s=cfg.request_timeout_s,
                 )
 
                 if cfg.annotator_b_provider == "gemini":
@@ -1448,6 +1526,7 @@ def main(argv: list[str] | None = None) -> int:
                         model=cfg.openai_model,
                         temperature=cfg.temperature,
                         max_retries=args.max_retries,
+                        request_timeout_s=cfg.request_timeout_s,
                     )
                 else:
                     raise ValueError(f"Unknown annotator_b_provider: {cfg.annotator_b_provider!r}")
@@ -1465,6 +1544,7 @@ def main(argv: list[str] | None = None) -> int:
                         model=cfg.openai_model,
                         temperature=cfg.temperature,
                         max_retries=args.max_retries,
+                        request_timeout_s=cfg.request_timeout_s,
                     )
                 elif cfg.annotator_c_provider == "anthropic":
                     obj_c, raw_c = annotate_with_openai(
@@ -1479,6 +1559,7 @@ def main(argv: list[str] | None = None) -> int:
                         model=cfg.claude_model,
                         temperature=None,
                         max_retries=args.max_retries,
+                        request_timeout_s=cfg.request_timeout_s,
                     )
                 elif cfg.annotator_c_provider == "none":
                     obj_c, raw_c = None, ""
@@ -1500,6 +1581,7 @@ def main(argv: list[str] | None = None) -> int:
                     temperature=None if cfg.adjudicator_provider == "anthropic" else cfg.temperature,
                     max_retries=args.max_retries,
                     paragraph_policy=cfg.paragraph_policy,
+                    request_timeout_s=cfg.request_timeout_s,
                 )
 
             _append_results_row(

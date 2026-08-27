@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "run_id": "claude_claude_sonnet_5",
+  "prompt_file": "src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_3_precision_short_spans.md",
+  "gold_article_source": "src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json",
+  "final_json": "src/llm_annotation_results/2-20/npl_prompt_comparison/prompt_3_precision_short_spans_strong_single_models/claude_claude_sonnet_5/final_annotations.json",
+  "results_csv": "src/llm_annotation_results/2-20/npl_prompt_comparison/prompt_3_precision_short_spans_strong_single_models/claude_claude_sonnet_5/raw_results.csv",
+  "article_count": 27
+}

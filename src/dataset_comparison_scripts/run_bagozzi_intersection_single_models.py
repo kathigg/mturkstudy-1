@@ -17,6 +17,7 @@ sys.path.insert(0, str(REPO))
 
 import src.dataset_comparison_scripts.run_wrapper_multiple_llm_annotations as base  # noqa: E402
 import src.dataset_comparison_scripts.run_bagozzi_inhouse_prompt_sweep as sweep  # noqa: E402
+import src.dataset_comparison_scripts.run_decision_point_adjudication as decision_point  # noqa: E402
 
 
 GOLD_JSON = (
@@ -81,13 +82,13 @@ def provider_key_is_present(provider: str) -> bool:
     raise ValueError(provider)
 
 
-def make_client(provider: str) -> Any:
+def make_client(provider: str, *, request_timeout_s: float) -> Any:
     if provider == "openai":
-        return base._openai_client()
+        return base._openai_client(request_timeout_s=request_timeout_s)
     if provider == "gemini":
-        return base._gemini_client()
+        return base._gemini_client(request_timeout_s=request_timeout_s)
     if provider == "anthropic":
-        return base._anthropic_openai_compat_client()
+        return base._anthropic_openai_compat_client(request_timeout_s=request_timeout_s)
     raise ValueError(provider)
 
 
@@ -104,6 +105,7 @@ def annotate_one(
     article_block: str,
     temperature: float | None,
     max_retries: int,
+    request_timeout_s: float,
 ) -> tuple[dict[str, Any], str]:
     if provider == "openai":
         # Some GPT-5-family chat models only accept the default temperature.
@@ -120,6 +122,7 @@ def annotate_one(
             model=model,
             temperature=openai_temperature,
             max_retries=max_retries,
+            request_timeout_s=request_timeout_s,
         )
     if provider == "gemini":
         return base.annotate_with_gemini(
@@ -147,6 +150,7 @@ def annotate_one(
             model=model,
             temperature=None,
             max_retries=max_retries,
+            request_timeout_s=request_timeout_s,
         )
     raise ValueError(provider)
 
@@ -188,6 +192,7 @@ def run_model(
     output_root: Path,
     temperature: float,
     max_retries: int,
+    request_timeout_s: float,
     resume: bool,
     overwrite: bool,
 ) -> dict[str, Any]:
@@ -217,7 +222,7 @@ def run_model(
         metadata_json.write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
         return metadata
 
-    client = make_client(provider)
+    client = make_client(provider, request_timeout_s=request_timeout_s)
     done = completed_indices(results_csv) if resume else set()
     fieldnames = [
         "index",
@@ -258,6 +263,7 @@ def run_model(
                 article_block=article_block,
                 temperature=temperature,
                 max_retries=max_retries,
+                request_timeout_s=request_timeout_s,
             )
             obj = base.apply_paragraph_policy(obj, body=body, paragraph_policy="min-one")
             ok, err = base.validate_annotation(obj)
@@ -402,7 +408,7 @@ def compute_legacy_article_overlap_metrics(prediction_path: Path, gold_path: Pat
     gold = json.loads(gold_path.read_text(encoding="utf-8"))
     import src.dataset_comparison_scripts.paragraph_llm_human_comparison as article_comp
 
-    article_comp.USE_CONFIDENCE_WEIGHTING = True
+    article_comp.USE_CONFIDENCE_WEIGHTING = False
     article_comp.ENFORCE_ONE_ANNOTATION_PER_PARAGRAPH = False
     comparison = article_comp.compare_all(prediction, gold)
     payload = {
@@ -414,6 +420,25 @@ def compute_legacy_article_overlap_metrics(prediction_path: Path, gold_path: Pat
     }
     output_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return payload
+
+
+def compute_npl_inclusive_metrics(prediction_path: Path, gold_path: Path, output_path: Path) -> dict[str, Any]:
+    prediction = json.loads(prediction_path.read_text(encoding="utf-8"))
+    gold = json.loads(gold_path.read_text(encoding="utf-8"))
+    metrics = decision_point.compare_predictions(
+        prediction,
+        gold,
+        include_npl=True,
+        title_policy="gold_nonempty",
+    )
+    payload = {
+        "prediction_path": str(prediction_path),
+        "gold_path": str(gold_path),
+        "rule": "NPL matches only NPL in the same article and paragraph; polarizing spans use the existing overlap logic.",
+        "overall": metrics,
+    }
+    output_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return metrics
 
 
 def compare_run(
@@ -430,8 +455,10 @@ def compare_run(
     polarizing_json = analysis_root / f"{safe_label}_polarizing_only.json"
     span_comparison_json = analysis_root / f"{safe_label}_span_comparison.json"
     article_comparison_json = analysis_root / f"{safe_label}_article_comparison.json"
+    npl_inclusive_json = analysis_root / f"{safe_label}_npl_inclusive_comparison.json"
 
     filter_counts = write_polarizing_only(final_json, polarizing_json)
+    npl_inclusive = compute_npl_inclusive_metrics(final_json, gold_json, npl_inclusive_json)
     span_comparison = sweep.compare_prediction_to_gold(polarizing_json, gold_json, span_comparison_json)
     article_comparison = compute_article_metrics(polarizing_json, gold_json, article_comparison_json)
     legacy_article_comparison_json = analysis_root / f"{safe_label}_legacy_article_overlap_comparison.json"
@@ -448,6 +475,9 @@ def compare_run(
     fp = pred_total - tp
     fn = gold_total - tp
     span_iou = round(tp / (tp + fp + fn), 3) if (tp + fp + fn) else 0.0
+    npl_polarization = npl_inclusive["polarization_match"]
+    npl_category = npl_inclusive["category_match"]
+    npl_subcategory = npl_inclusive["subcategory_match"]
     return {
         "run": label,
         "provider": provider,
@@ -474,6 +504,17 @@ def compare_run(
         "span_recall": span["recall"],
         "span_f1": span["f1"],
         "span_iou": span_iou,
+        "npl_polarization_precision": npl_polarization["precision"],
+        "npl_polarization_recall": npl_polarization["recall"],
+        "npl_polarization_f1": npl_polarization["f1"],
+        "npl_category_precision": npl_category["precision"],
+        "npl_category_recall": npl_category["recall"],
+        "npl_category_f1": npl_category["f1"],
+        "npl_subcategory_precision": npl_subcategory["precision"],
+        "npl_subcategory_recall": npl_subcategory["recall"],
+        "npl_subcategory_f1": npl_subcategory["f1"],
+        "npl_category_agreement_on_matched": npl_inclusive["label_agreement_on_matched"]["category"],
+        "npl_subcategory_agreement_on_matched": npl_inclusive["label_agreement_on_matched"]["subcategory"],
         "total_model_annotations_before_npl_filter": filter_counts["input_annotations"],
         "npl_dropped": filter_counts["dropped_npl"],
         "final_json": str(final_json),
@@ -481,6 +522,7 @@ def compare_run(
         "span_comparison_json": str(span_comparison_json),
         "article_comparison_json": str(article_comparison_json),
         "legacy_article_overlap_comparison_json": str(legacy_article_comparison_json),
+        "npl_inclusive_comparison_json": str(npl_inclusive_json),
     }
 
 
@@ -501,7 +543,7 @@ def compare_outputs(output_root: Path, analysis_root: Path, include_previous: bo
                 final_json=final_json,
                 gold_json=GOLD_JSON,
                 analysis_root=analysis_root,
-                prompt_label="Dr. Bagozzi codebook addendum",
+                prompt_label=PROMPT_FILE.stem,
             )
             )
         elif metadata_json.exists():
@@ -543,15 +585,23 @@ def compare_outputs(output_root: Path, analysis_root: Path, include_previous: bo
 
 
 def main() -> int:
-    global PROMPT_FILE
+    global GOLD_JSON, PROMPT_FILE
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--providers", default="openai,gemini,claude")
     parser.add_argument("--output-root", default=str(OUTPUT_ROOT))
     parser.add_argument("--analysis-root", default=str(ANALYSIS_ROOT))
     parser.add_argument("--prompt-file", default=str(PROMPT_FILE))
+    parser.add_argument("--gold-json", default=str(GOLD_JSON))
+    parser.add_argument("--openai-model", default=MODEL_SPECS["openai"]["model"])
+    parser.add_argument("--gemini-model", default=MODEL_SPECS["gemini"]["model"])
+    parser.add_argument("--claude-model", default=MODEL_SPECS["claude"]["model"])
+    parser.add_argument("--openai-label", default=MODEL_SPECS["openai"]["label"])
+    parser.add_argument("--gemini-label", default=MODEL_SPECS["gemini"]["label"])
+    parser.add_argument("--claude-label", default=MODEL_SPECS["claude"]["label"])
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--max-retries", type=int, default=2)
+    parser.add_argument("--request-timeout-s", type=float, default=240.0)
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument("--compare-only", action="store_true")
@@ -564,7 +614,11 @@ def main() -> int:
     if not prompt_path.exists():
         raise FileNotFoundError(f"Prompt file not found: {prompt_path}")
     PROMPT_FILE = prompt_path
+    GOLD_JSON = Path(args.gold_json)
     base.set_prompt_addendum(prompt_path.read_text(encoding="utf-8"))
+    MODEL_SPECS["openai"].update({"model": args.openai_model, "label": args.openai_label})
+    MODEL_SPECS["gemini"].update({"model": args.gemini_model, "label": args.gemini_label})
+    MODEL_SPECS["claude"].update({"model": args.claude_model, "label": args.claude_label})
 
     output_root = Path(args.output_root)
     analysis_root = Path(args.analysis_root)
@@ -588,6 +642,7 @@ def main() -> int:
                         output_root=output_root,
                         temperature=args.temperature,
                         max_retries=args.max_retries,
+                        request_timeout_s=args.request_timeout_s,
                         resume=args.resume,
                         overwrite=args.overwrite,
                     )
