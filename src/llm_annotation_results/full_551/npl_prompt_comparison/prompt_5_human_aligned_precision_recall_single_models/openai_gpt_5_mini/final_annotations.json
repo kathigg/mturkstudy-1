@@ -266,5 +266,77 @@
     "topic": "health",
     "source": "AP",
     "rating": "center"
+  },
+  {
+    "annotations": [
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "No exact span in this paragraph clearly qualifies as polarizing language.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "No exact span in this paragraph clearly qualifies as polarizing language.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "No exact span in this paragraph clearly qualifies as polarizing language.",
+        "paragraphIndex": 2
+      }
+    ],
+    "title": "Ridgecrest earthquakes caused damage to the earth's crust seen from satellite",
+    "topic": "science",
+    "source": "Los Angeles Times",
+    "rating": "left"
+  },
+  {
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "We aspire to have a Madrid without smoke",
+        "openFeedback": "Banner slogan used by protesters; short, memorable phrase.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "Yes we can, I do want Madrid central",
+        "openFeedback": "Chanted slogan by protesters; short mobilizing phrase.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "I want to breathe free",
+        "openFeedback": "Banner slogan used by protesters; short, memorable phrase.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "No exact span in this paragraph clearly qualifies as polarizing language.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "No Polarizing language",
+        "subcategory": "no polarizing language",
+        "text": "no polarizing language selected",
+        "openFeedback": "No exact span in this paragraph clearly qualifies as polarizing language.",
+        "paragraphIndex": 2
+      }
+    ],
+    "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+    "topic": "environmental issues",
+    "source": "Reuters",
+    "rating": "center"
   }
 ]
