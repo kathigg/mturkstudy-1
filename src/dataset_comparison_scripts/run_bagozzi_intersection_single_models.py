@@ -72,6 +72,10 @@ def load_articles_from_gold(path: Path) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def load_articles_from_csv(path: Path) -> pd.DataFrame:
+    return pd.read_csv(path)
+
+
 def provider_key_is_present(provider: str) -> bool:
     if provider == "openai":
         return bool(os.environ.get("OPENAI_API_KEY"))
@@ -588,6 +592,11 @@ def main() -> int:
     global GOLD_JSON, PROMPT_FILE
 
     parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--input",
+        default=None,
+        help="Optional article CSV. If omitted, articles are reconstructed from --gold-json for the 27-article setup.",
+    )
     parser.add_argument("--providers", default="openai,gemini,claude")
     parser.add_argument("--output-root", default=str(OUTPUT_ROOT))
     parser.add_argument("--analysis-root", default=str(ANALYSIS_ROOT))
@@ -627,7 +636,7 @@ def main() -> int:
     if unknown:
         raise ValueError(f"Unknown providers: {unknown}; valid choices are {sorted(MODEL_SPECS)}")
 
-    df = load_articles_from_gold(GOLD_JSON)
+    df = load_articles_from_csv(Path(args.input)) if args.input else load_articles_from_gold(GOLD_JSON)
     output_root.mkdir(parents=True, exist_ok=True)
 
     run_metadata = []
