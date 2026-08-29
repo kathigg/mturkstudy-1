@@ -1,0 +1,44 @@
+{
+  "prediction_set": "final_inhouse_adjudicated",
+  "gold_set": "bagozzi",
+  "span": {
+    "tp": 84,
+    "fp": 110,
+    "fn": 73,
+    "pred_total": 194,
+    "gold_total": 157,
+    "precision": 0.433,
+    "recall": 0.535,
+    "f1": 0.479
+  },
+  "category": {
+    "tp": 72,
+    "fp": 122,
+    "fn": 85,
+    "pred_total": 194,
+    "gold_total": 157,
+    "precision": 0.371,
+    "recall": 0.459,
+    "f1": 0.41
+  },
+  "subcategory": {
+    "tp": 66,
+    "fp": 128,
+    "fn": 91,
+    "pred_total": 194,
+    "gold_total": 157,
+    "precision": 0.34,
+    "recall": 0.42,
+    "f1": 0.376
+  },
+  "category_and_subcategory": {
+    "tp": 66,
+    "fp": 128,
+    "fn": 91,
+    "pred_total": 194,
+    "gold_total": 157,
+    "precision": 0.34,
+    "recall": 0.42,
+    "f1": 0.376
+  }
+}

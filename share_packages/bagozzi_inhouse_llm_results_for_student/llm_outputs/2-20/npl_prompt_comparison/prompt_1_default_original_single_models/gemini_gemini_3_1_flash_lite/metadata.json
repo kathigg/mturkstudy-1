@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "run_id": "gemini_gemini_3_1_flash_lite",
+  "prompt_file": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md",
+  "gold_article_source": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
+  "final_json": "src/llm_annotation_results/2-20/npl_prompt_comparison/prompt_1_default_original_single_models/gemini_gemini_3_1_flash_lite/final_annotations.json",
+  "results_csv": "src/llm_annotation_results/2-20/npl_prompt_comparison/prompt_1_default_original_single_models/gemini_gemini_3_1_flash_lite/raw_results.csv",
+  "article_count": 27
+}

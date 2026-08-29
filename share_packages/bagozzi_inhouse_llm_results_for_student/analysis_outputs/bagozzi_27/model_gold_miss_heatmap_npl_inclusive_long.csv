@@ -1,0 +1,316 @@
+family,system,subcategory,gold_count,missed_count,miss_rate
+strong single,Claude Sonnet - P1 default,no polarizing language,16,5,0.312
+strong single,Claude Sonnet - P1 default,exaggeration,18,5,0.278
+strong single,Claude Sonnet - P1 default,casual oversimplification,2,0,0.0
+strong single,Claude Sonnet - P1 default,doubt,10,9,0.9
+strong single,Claude Sonnet - P1 default,bandwagon,1,0,0.0
+strong single,Claude Sonnet - P1 default,slogans,6,5,0.833
+strong single,Claude Sonnet - P1 default,scapegoating,2,0,0.0
+strong single,Claude Sonnet - P1 default,name-calling,26,6,0.231
+strong single,Claude Sonnet - P1 default,demonization,5,0,0.0
+strong single,Gemini Pro - P1 default,no polarizing language,16,0,0.0
+strong single,Gemini Pro - P1 default,exaggeration,18,15,0.833
+strong single,Gemini Pro - P1 default,casual oversimplification,2,1,0.5
+strong single,Gemini Pro - P1 default,doubt,10,9,0.9
+strong single,Gemini Pro - P1 default,bandwagon,1,1,1.0
+strong single,Gemini Pro - P1 default,slogans,6,4,0.667
+strong single,Gemini Pro - P1 default,scapegoating,2,1,0.5
+strong single,Gemini Pro - P1 default,name-calling,26,10,0.385
+strong single,Gemini Pro - P1 default,demonization,5,2,0.4
+strong single,GPT-5.1 - P1 default,no polarizing language,16,7,0.438
+strong single,GPT-5.1 - P1 default,exaggeration,18,1,0.056
+strong single,GPT-5.1 - P1 default,casual oversimplification,2,1,0.5
+strong single,GPT-5.1 - P1 default,doubt,10,5,0.5
+strong single,GPT-5.1 - P1 default,bandwagon,1,1,1.0
+strong single,GPT-5.1 - P1 default,slogans,6,3,0.5
+strong single,GPT-5.1 - P1 default,scapegoating,2,0,0.0
+strong single,GPT-5.1 - P1 default,name-calling,26,5,0.192
+strong single,GPT-5.1 - P1 default,demonization,5,0,0.0
+strong single,Claude Sonnet - P2 Bagozzi,no polarizing language,16,6,0.375
+strong single,Claude Sonnet - P2 Bagozzi,exaggeration,18,5,0.278
+strong single,Claude Sonnet - P2 Bagozzi,casual oversimplification,2,1,0.5
+strong single,Claude Sonnet - P2 Bagozzi,doubt,10,2,0.2
+strong single,Claude Sonnet - P2 Bagozzi,bandwagon,1,1,1.0
+strong single,Claude Sonnet - P2 Bagozzi,slogans,6,2,0.333
+strong single,Claude Sonnet - P2 Bagozzi,scapegoating,2,0,0.0
+strong single,Claude Sonnet - P2 Bagozzi,name-calling,26,5,0.192
+strong single,Claude Sonnet - P2 Bagozzi,demonization,5,1,0.2
+strong single,Gemini Pro - P2 Bagozzi,no polarizing language,16,1,0.062
+strong single,Gemini Pro - P2 Bagozzi,exaggeration,18,11,0.611
+strong single,Gemini Pro - P2 Bagozzi,casual oversimplification,2,1,0.5
+strong single,Gemini Pro - P2 Bagozzi,doubt,10,5,0.5
+strong single,Gemini Pro - P2 Bagozzi,bandwagon,1,1,1.0
+strong single,Gemini Pro - P2 Bagozzi,slogans,6,3,0.5
+strong single,Gemini Pro - P2 Bagozzi,scapegoating,2,1,0.5
+strong single,Gemini Pro - P2 Bagozzi,name-calling,26,8,0.308
+strong single,Gemini Pro - P2 Bagozzi,demonization,5,2,0.4
+strong single,GPT-5.1 - P2 Bagozzi,no polarizing language,16,7,0.438
+strong single,GPT-5.1 - P2 Bagozzi,exaggeration,18,2,0.111
+strong single,GPT-5.1 - P2 Bagozzi,casual oversimplification,2,1,0.5
+strong single,GPT-5.1 - P2 Bagozzi,doubt,10,2,0.2
+strong single,GPT-5.1 - P2 Bagozzi,bandwagon,1,1,1.0
+strong single,GPT-5.1 - P2 Bagozzi,slogans,6,1,0.167
+strong single,GPT-5.1 - P2 Bagozzi,scapegoating,2,1,0.5
+strong single,GPT-5.1 - P2 Bagozzi,name-calling,26,9,0.346
+strong single,GPT-5.1 - P2 Bagozzi,demonization,5,0,0.0
+strong single,Claude Sonnet - P3 short spans,no polarizing language,16,1,0.062
+strong single,Claude Sonnet - P3 short spans,exaggeration,18,11,0.611
+strong single,Claude Sonnet - P3 short spans,casual oversimplification,2,1,0.5
+strong single,Claude Sonnet - P3 short spans,doubt,10,7,0.7
+strong single,Claude Sonnet - P3 short spans,bandwagon,1,1,1.0
+strong single,Claude Sonnet - P3 short spans,slogans,6,4,0.667
+strong single,Claude Sonnet - P3 short spans,scapegoating,2,2,1.0
+strong single,Claude Sonnet - P3 short spans,name-calling,26,16,0.615
+strong single,Claude Sonnet - P3 short spans,demonization,5,5,1.0
+strong single,Gemini Pro - P3 short spans,no polarizing language,16,0,0.0
+strong single,Gemini Pro - P3 short spans,exaggeration,18,15,0.833
+strong single,Gemini Pro - P3 short spans,casual oversimplification,2,1,0.5
+strong single,Gemini Pro - P3 short spans,doubt,10,10,1.0
+strong single,Gemini Pro - P3 short spans,bandwagon,1,1,1.0
+strong single,Gemini Pro - P3 short spans,slogans,6,3,0.5
+strong single,Gemini Pro - P3 short spans,scapegoating,2,1,0.5
+strong single,Gemini Pro - P3 short spans,name-calling,26,14,0.538
+strong single,Gemini Pro - P3 short spans,demonization,5,2,0.4
+strong single,GPT-5.1 - P3 short spans,no polarizing language,16,5,0.312
+strong single,GPT-5.1 - P3 short spans,exaggeration,18,10,0.556
+strong single,GPT-5.1 - P3 short spans,casual oversimplification,2,2,1.0
+strong single,GPT-5.1 - P3 short spans,doubt,10,8,0.8
+strong single,GPT-5.1 - P3 short spans,bandwagon,1,1,1.0
+strong single,GPT-5.1 - P3 short spans,slogans,6,3,0.5
+strong single,GPT-5.1 - P3 short spans,scapegoating,2,0,0.0
+strong single,GPT-5.1 - P3 short spans,name-calling,26,11,0.423
+strong single,GPT-5.1 - P3 short spans,demonization,5,3,0.6
+strong single,Claude Sonnet - P4 boundary,no polarizing language,16,1,0.062
+strong single,Claude Sonnet - P4 boundary,exaggeration,18,14,0.778
+strong single,Claude Sonnet - P4 boundary,casual oversimplification,2,2,1.0
+strong single,Claude Sonnet - P4 boundary,doubt,10,6,0.6
+strong single,Claude Sonnet - P4 boundary,bandwagon,1,0,0.0
+strong single,Claude Sonnet - P4 boundary,slogans,6,4,0.667
+strong single,Claude Sonnet - P4 boundary,scapegoating,2,2,1.0
+strong single,Claude Sonnet - P4 boundary,name-calling,26,10,0.385
+strong single,Claude Sonnet - P4 boundary,demonization,5,3,0.6
+strong single,Gemini Pro - P4 boundary,no polarizing language,16,0,0.0
+strong single,Gemini Pro - P4 boundary,exaggeration,18,15,0.833
+strong single,Gemini Pro - P4 boundary,casual oversimplification,2,1,0.5
+strong single,Gemini Pro - P4 boundary,doubt,10,8,0.8
+strong single,Gemini Pro - P4 boundary,bandwagon,1,0,0.0
+strong single,Gemini Pro - P4 boundary,slogans,6,3,0.5
+strong single,Gemini Pro - P4 boundary,scapegoating,2,1,0.5
+strong single,Gemini Pro - P4 boundary,name-calling,26,12,0.462
+strong single,Gemini Pro - P4 boundary,demonization,5,3,0.6
+strong single,GPT-5.1 - P4 boundary,no polarizing language,16,4,0.25
+strong single,GPT-5.1 - P4 boundary,exaggeration,18,6,0.333
+strong single,GPT-5.1 - P4 boundary,casual oversimplification,2,1,0.5
+strong single,GPT-5.1 - P4 boundary,doubt,10,7,0.7
+strong single,GPT-5.1 - P4 boundary,bandwagon,1,1,1.0
+strong single,GPT-5.1 - P4 boundary,slogans,6,2,0.333
+strong single,GPT-5.1 - P4 boundary,scapegoating,2,0,0.0
+strong single,GPT-5.1 - P4 boundary,name-calling,26,6,0.231
+strong single,GPT-5.1 - P4 boundary,demonization,5,0,0.0
+strong single,Claude Sonnet - P5 human aligned,no polarizing language,16,1,0.062
+strong single,Claude Sonnet - P5 human aligned,exaggeration,18,7,0.389
+strong single,Claude Sonnet - P5 human aligned,casual oversimplification,2,2,1.0
+strong single,Claude Sonnet - P5 human aligned,doubt,10,6,0.6
+strong single,Claude Sonnet - P5 human aligned,bandwagon,1,0,0.0
+strong single,Claude Sonnet - P5 human aligned,slogans,6,1,0.167
+strong single,Claude Sonnet - P5 human aligned,scapegoating,2,1,0.5
+strong single,Claude Sonnet - P5 human aligned,name-calling,26,8,0.308
+strong single,Claude Sonnet - P5 human aligned,demonization,5,0,0.0
+strong single,Gemini Pro - P5 human aligned,no polarizing language,16,0,0.0
+strong single,Gemini Pro - P5 human aligned,exaggeration,18,10,0.556
+strong single,Gemini Pro - P5 human aligned,casual oversimplification,2,1,0.5
+strong single,Gemini Pro - P5 human aligned,doubt,10,4,0.4
+strong single,Gemini Pro - P5 human aligned,bandwagon,1,0,0.0
+strong single,Gemini Pro - P5 human aligned,slogans,6,3,0.5
+strong single,Gemini Pro - P5 human aligned,scapegoating,2,1,0.5
+strong single,Gemini Pro - P5 human aligned,name-calling,26,11,0.423
+strong single,Gemini Pro - P5 human aligned,demonization,5,0,0.0
+strong single,GPT-5.1 - P5 human aligned,no polarizing language,16,2,0.125
+strong single,GPT-5.1 - P5 human aligned,exaggeration,18,6,0.333
+strong single,GPT-5.1 - P5 human aligned,casual oversimplification,2,1,0.5
+strong single,GPT-5.1 - P5 human aligned,doubt,10,9,0.9
+strong single,GPT-5.1 - P5 human aligned,bandwagon,1,0,0.0
+strong single,GPT-5.1 - P5 human aligned,slogans,6,2,0.333
+strong single,GPT-5.1 - P5 human aligned,scapegoating,2,0,0.0
+strong single,GPT-5.1 - P5 human aligned,name-calling,26,8,0.308
+strong single,GPT-5.1 - P5 human aligned,demonization,5,3,0.6
+small single,GPT-5 mini - P1 default,no polarizing language,16,3,0.188
+small single,GPT-5 mini - P1 default,exaggeration,18,6,0.333
+small single,GPT-5 mini - P1 default,casual oversimplification,2,1,0.5
+small single,GPT-5 mini - P1 default,doubt,10,3,0.3
+small single,GPT-5 mini - P1 default,bandwagon,1,1,1.0
+small single,GPT-5 mini - P1 default,slogans,6,2,0.333
+small single,GPT-5 mini - P1 default,scapegoating,2,1,0.5
+small single,GPT-5 mini - P1 default,name-calling,26,7,0.269
+small single,GPT-5 mini - P1 default,demonization,5,0,0.0
+small single,Gemini 3.1 Flash Lite - P1 default,no polarizing language,16,1,0.062
+small single,Gemini 3.1 Flash Lite - P1 default,exaggeration,18,11,0.611
+small single,Gemini 3.1 Flash Lite - P1 default,casual oversimplification,2,1,0.5
+small single,Gemini 3.1 Flash Lite - P1 default,doubt,10,8,0.8
+small single,Gemini 3.1 Flash Lite - P1 default,bandwagon,1,1,1.0
+small single,Gemini 3.1 Flash Lite - P1 default,slogans,6,4,0.667
+small single,Gemini 3.1 Flash Lite - P1 default,scapegoating,2,1,0.5
+small single,Gemini 3.1 Flash Lite - P1 default,name-calling,26,7,0.269
+small single,Gemini 3.1 Flash Lite - P1 default,demonization,5,2,0.4
+small single,Claude Haiku 4.5 - P1 default,no polarizing language,16,1,0.062
+small single,Claude Haiku 4.5 - P1 default,exaggeration,18,17,0.944
+small single,Claude Haiku 4.5 - P1 default,casual oversimplification,2,2,1.0
+small single,Claude Haiku 4.5 - P1 default,doubt,10,10,1.0
+small single,Claude Haiku 4.5 - P1 default,bandwagon,1,1,1.0
+small single,Claude Haiku 4.5 - P1 default,slogans,6,6,1.0
+small single,Claude Haiku 4.5 - P1 default,scapegoating,2,2,1.0
+small single,Claude Haiku 4.5 - P1 default,name-calling,26,25,0.962
+small single,Claude Haiku 4.5 - P1 default,demonization,5,5,1.0
+small single,GPT-5 mini - P2 Bagozzi,no polarizing language,16,3,0.188
+small single,GPT-5 mini - P2 Bagozzi,exaggeration,18,6,0.333
+small single,GPT-5 mini - P2 Bagozzi,casual oversimplification,2,1,0.5
+small single,GPT-5 mini - P2 Bagozzi,doubt,10,4,0.4
+small single,GPT-5 mini - P2 Bagozzi,bandwagon,1,0,0.0
+small single,GPT-5 mini - P2 Bagozzi,slogans,6,2,0.333
+small single,GPT-5 mini - P2 Bagozzi,scapegoating,2,0,0.0
+small single,GPT-5 mini - P2 Bagozzi,name-calling,26,3,0.115
+small single,GPT-5 mini - P2 Bagozzi,demonization,5,0,0.0
+small single,Gemini 3.1 Flash Lite - P2 Bagozzi,no polarizing language,16,1,0.062
+small single,Gemini 3.1 Flash Lite - P2 Bagozzi,exaggeration,18,11,0.611
+small single,Gemini 3.1 Flash Lite - P2 Bagozzi,casual oversimplification,2,1,0.5
+small single,Gemini 3.1 Flash Lite - P2 Bagozzi,doubt,10,6,0.6
+small single,Gemini 3.1 Flash Lite - P2 Bagozzi,bandwagon,1,1,1.0
+small single,Gemini 3.1 Flash Lite - P2 Bagozzi,slogans,6,4,0.667
+small single,Gemini 3.1 Flash Lite - P2 Bagozzi,scapegoating,2,0,0.0
+small single,Gemini 3.1 Flash Lite - P2 Bagozzi,name-calling,26,8,0.308
+small single,Gemini 3.1 Flash Lite - P2 Bagozzi,demonization,5,2,0.4
+small single,Claude Haiku 4.5 - P2 Bagozzi,no polarizing language,16,0,0.0
+small single,Claude Haiku 4.5 - P2 Bagozzi,exaggeration,18,17,0.944
+small single,Claude Haiku 4.5 - P2 Bagozzi,casual oversimplification,2,2,1.0
+small single,Claude Haiku 4.5 - P2 Bagozzi,doubt,10,10,1.0
+small single,Claude Haiku 4.5 - P2 Bagozzi,bandwagon,1,1,1.0
+small single,Claude Haiku 4.5 - P2 Bagozzi,slogans,6,6,1.0
+small single,Claude Haiku 4.5 - P2 Bagozzi,scapegoating,2,2,1.0
+small single,Claude Haiku 4.5 - P2 Bagozzi,name-calling,26,24,0.923
+small single,Claude Haiku 4.5 - P2 Bagozzi,demonization,5,4,0.8
+small single,GPT-5 mini - P3 short spans,no polarizing language,16,1,0.062
+small single,GPT-5 mini - P3 short spans,exaggeration,18,9,0.5
+small single,GPT-5 mini - P3 short spans,casual oversimplification,2,1,0.5
+small single,GPT-5 mini - P3 short spans,doubt,10,5,0.5
+small single,GPT-5 mini - P3 short spans,bandwagon,1,0,0.0
+small single,GPT-5 mini - P3 short spans,slogans,6,2,0.333
+small single,GPT-5 mini - P3 short spans,scapegoating,2,1,0.5
+small single,GPT-5 mini - P3 short spans,name-calling,26,6,0.231
+small single,GPT-5 mini - P3 short spans,demonization,5,0,0.0
+small single,Gemini 3.1 Flash Lite - P3 short spans,no polarizing language,16,0,0.0
+small single,Gemini 3.1 Flash Lite - P3 short spans,exaggeration,18,15,0.833
+small single,Gemini 3.1 Flash Lite - P3 short spans,casual oversimplification,2,2,1.0
+small single,Gemini 3.1 Flash Lite - P3 short spans,doubt,10,9,0.9
+small single,Gemini 3.1 Flash Lite - P3 short spans,bandwagon,1,1,1.0
+small single,Gemini 3.1 Flash Lite - P3 short spans,slogans,6,5,0.833
+small single,Gemini 3.1 Flash Lite - P3 short spans,scapegoating,2,1,0.5
+small single,Gemini 3.1 Flash Lite - P3 short spans,name-calling,26,8,0.308
+small single,Gemini 3.1 Flash Lite - P3 short spans,demonization,5,2,0.4
+small single,Claude Haiku 4.5 - P3 short spans,no polarizing language,16,0,0.0
+small single,Claude Haiku 4.5 - P3 short spans,exaggeration,18,16,0.889
+small single,Claude Haiku 4.5 - P3 short spans,casual oversimplification,2,2,1.0
+small single,Claude Haiku 4.5 - P3 short spans,doubt,10,9,0.9
+small single,Claude Haiku 4.5 - P3 short spans,bandwagon,1,1,1.0
+small single,Claude Haiku 4.5 - P3 short spans,slogans,6,6,1.0
+small single,Claude Haiku 4.5 - P3 short spans,scapegoating,2,2,1.0
+small single,Claude Haiku 4.5 - P3 short spans,name-calling,26,21,0.808
+small single,Claude Haiku 4.5 - P3 short spans,demonization,5,4,0.8
+small single,GPT-5 mini - P4 boundary,no polarizing language,16,0,0.0
+small single,GPT-5 mini - P4 boundary,exaggeration,18,7,0.389
+small single,GPT-5 mini - P4 boundary,casual oversimplification,2,2,1.0
+small single,GPT-5 mini - P4 boundary,doubt,10,5,0.5
+small single,GPT-5 mini - P4 boundary,bandwagon,1,0,0.0
+small single,GPT-5 mini - P4 boundary,slogans,6,2,0.333
+small single,GPT-5 mini - P4 boundary,scapegoating,2,1,0.5
+small single,GPT-5 mini - P4 boundary,name-calling,26,10,0.385
+small single,GPT-5 mini - P4 boundary,demonization,5,2,0.4
+small single,Gemini 3.1 Flash Lite - P4 boundary,no polarizing language,16,0,0.0
+small single,Gemini 3.1 Flash Lite - P4 boundary,exaggeration,18,15,0.833
+small single,Gemini 3.1 Flash Lite - P4 boundary,casual oversimplification,2,1,0.5
+small single,Gemini 3.1 Flash Lite - P4 boundary,doubt,10,9,0.9
+small single,Gemini 3.1 Flash Lite - P4 boundary,bandwagon,1,1,1.0
+small single,Gemini 3.1 Flash Lite - P4 boundary,slogans,6,5,0.833
+small single,Gemini 3.1 Flash Lite - P4 boundary,scapegoating,2,1,0.5
+small single,Gemini 3.1 Flash Lite - P4 boundary,name-calling,26,12,0.462
+small single,Gemini 3.1 Flash Lite - P4 boundary,demonization,5,2,0.4
+small single,Claude Haiku 4.5 - P4 boundary,no polarizing language,16,0,0.0
+small single,Claude Haiku 4.5 - P4 boundary,exaggeration,18,17,0.944
+small single,Claude Haiku 4.5 - P4 boundary,casual oversimplification,2,2,1.0
+small single,Claude Haiku 4.5 - P4 boundary,doubt,10,10,1.0
+small single,Claude Haiku 4.5 - P4 boundary,bandwagon,1,1,1.0
+small single,Claude Haiku 4.5 - P4 boundary,slogans,6,6,1.0
+small single,Claude Haiku 4.5 - P4 boundary,scapegoating,2,2,1.0
+small single,Claude Haiku 4.5 - P4 boundary,name-calling,26,19,0.731
+small single,Claude Haiku 4.5 - P4 boundary,demonization,5,4,0.8
+OG adjudication,OG adj - P1 default,no polarizing language,16,2,0.125
+OG adjudication,OG adj - P1 default,exaggeration,18,3,0.167
+OG adjudication,OG adj - P1 default,casual oversimplification,2,1,0.5
+OG adjudication,OG adj - P1 default,doubt,10,7,0.7
+OG adjudication,OG adj - P1 default,bandwagon,1,1,1.0
+OG adjudication,OG adj - P1 default,slogans,6,4,0.667
+OG adjudication,OG adj - P1 default,scapegoating,2,1,0.5
+OG adjudication,OG adj - P1 default,name-calling,26,7,0.269
+OG adjudication,OG adj - P1 default,demonization,5,1,0.2
+OG adjudication,OG adj - P2 Bagozzi,no polarizing language,16,1,0.062
+OG adjudication,OG adj - P2 Bagozzi,exaggeration,18,5,0.278
+OG adjudication,OG adj - P2 Bagozzi,casual oversimplification,2,1,0.5
+OG adjudication,OG adj - P2 Bagozzi,doubt,10,3,0.3
+OG adjudication,OG adj - P2 Bagozzi,bandwagon,1,0,0.0
+OG adjudication,OG adj - P2 Bagozzi,slogans,6,2,0.333
+OG adjudication,OG adj - P2 Bagozzi,scapegoating,2,0,0.0
+OG adjudication,OG adj - P2 Bagozzi,name-calling,26,7,0.269
+OG adjudication,OG adj - P2 Bagozzi,demonization,5,0,0.0
+OG adjudication,OG adj - P3 short spans,no polarizing language,16,1,0.062
+OG adjudication,OG adj - P3 short spans,exaggeration,18,10,0.556
+OG adjudication,OG adj - P3 short spans,casual oversimplification,2,1,0.5
+OG adjudication,OG adj - P3 short spans,doubt,10,7,0.7
+OG adjudication,OG adj - P3 short spans,bandwagon,1,1,1.0
+OG adjudication,OG adj - P3 short spans,slogans,6,3,0.5
+OG adjudication,OG adj - P3 short spans,scapegoating,2,1,0.5
+OG adjudication,OG adj - P3 short spans,name-calling,26,7,0.269
+OG adjudication,OG adj - P3 short spans,demonization,5,2,0.4
+OG adjudication,OG adj - P4 boundary,no polarizing language,16,0,0.0
+OG adjudication,OG adj - P4 boundary,exaggeration,18,10,0.556
+OG adjudication,OG adj - P4 boundary,casual oversimplification,2,2,1.0
+OG adjudication,OG adj - P4 boundary,doubt,10,4,0.4
+OG adjudication,OG adj - P4 boundary,bandwagon,1,0,0.0
+OG adjudication,OG adj - P4 boundary,slogans,6,3,0.5
+OG adjudication,OG adj - P4 boundary,scapegoating,2,1,0.5
+OG adjudication,OG adj - P4 boundary,name-calling,26,8,0.308
+OG adjudication,OG adj - P4 boundary,demonization,5,2,0.4
+OG adjudication,OG adj - P5 human aligned,no polarizing language,16,1,0.062
+OG adjudication,OG adj - P5 human aligned,exaggeration,18,6,0.333
+OG adjudication,OG adj - P5 human aligned,casual oversimplification,2,2,1.0
+OG adjudication,OG adj - P5 human aligned,doubt,10,5,0.5
+OG adjudication,OG adj - P5 human aligned,bandwagon,1,0,0.0
+OG adjudication,OG adj - P5 human aligned,slogans,6,2,0.333
+OG adjudication,OG adj - P5 human aligned,scapegoating,2,1,0.5
+OG adjudication,OG adj - P5 human aligned,name-calling,26,9,0.346
+OG adjudication,OG adj - P5 human aligned,demonization,5,0,0.0
+decision point,Decision point - full,no polarizing language,16,0,0.0
+decision point,Decision point - full,exaggeration,18,7,0.389
+decision point,Decision point - full,casual oversimplification,2,2,1.0
+decision point,Decision point - full,doubt,10,5,0.5
+decision point,Decision point - full,bandwagon,1,0,0.0
+decision point,Decision point - full,slogans,6,1,0.167
+decision point,Decision point - full,scapegoating,2,0,0.0
+decision point,Decision point - full,name-calling,26,7,0.269
+decision point,Decision point - full,demonization,5,0,0.0
+decision point,Decision point - candidate union,no polarizing language,16,3,0.188
+decision point,Decision point - candidate union,exaggeration,18,2,0.111
+decision point,Decision point - candidate union,casual oversimplification,2,1,0.5
+decision point,Decision point - candidate union,doubt,10,1,0.1
+decision point,Decision point - candidate union,bandwagon,1,0,0.0
+decision point,Decision point - candidate union,slogans,6,1,0.167
+decision point,Decision point - candidate union,scapegoating,2,0,0.0
+decision point,Decision point - candidate union,name-calling,26,5,0.192
+decision point,Decision point - candidate union,demonization,5,0,0.0
+decision point,Decision point - binary filter,no polarizing language,16,0,0.0
+decision point,Decision point - binary filter,exaggeration,18,6,0.333
+decision point,Decision point - binary filter,casual oversimplification,2,2,1.0
+decision point,Decision point - binary filter,doubt,10,5,0.5
+decision point,Decision point - binary filter,bandwagon,1,0,0.0
+decision point,Decision point - binary filter,slogans,6,1,0.167
+decision point,Decision point - binary filter,scapegoating,2,0,0.0
+decision point,Decision point - binary filter,name-calling,26,7,0.269
+decision point,Decision point - binary filter,demonization,5,0,0.0

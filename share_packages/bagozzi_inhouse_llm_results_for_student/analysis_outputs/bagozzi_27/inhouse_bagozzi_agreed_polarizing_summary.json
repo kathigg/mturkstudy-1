@@ -1,0 +1,212 @@
+{
+  "inputs": {
+    "inhouse_adjudicated_csv": "src/dataset_comparison_scripts/statistical_analysis/2-20/adjudicated_full_final_inhouse/Final_consolidated_with_adjudication_subbed_in_set_inhouse - Final set from adjudicated labels_April 24.csv",
+    "bagozzi_gold_json": "src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/bagozzi_27_human_min_one_gold_standard_output.json"
+  },
+  "matching_logic": {
+    "source": "src/dataset_comparison_scripts/paragraph_llm_human_comparison.py::spans_match",
+    "same_article": true,
+    "same_paragraph": true,
+    "non_stopword_overlap_threshold": ">= 2 shared unique non-stopword tokens",
+    "span_shape_condition": "substring containment OR longest common token run >= 3"
+  },
+  "gold_span_logic": {
+    "source": "src/dataset_comparison_scripts/paragraph_turk_annotation_aggregator.py::extract_intersection_with_padding",
+    "pad": 2,
+    "label_precedence": "Bagozzi category/subcategory used for agreed rows"
+  },
+  "totals": {
+    "articles": 27,
+    "inhouse_polarizing_annotations": 167,
+    "bagozzi_polarizing_annotations": 117,
+    "greedy_agreed_polarizing_spans": 70,
+    "existence_complete_articles": 1,
+    "greedy_complete_articles": 1
+  },
+  "existence_complete_articles": [
+    {
+      "article_title": "Ron Desantis Signs Amendment 4 Bill, Limiting Felon Voting",
+      "inhouse_polarizing_count": 2,
+      "bagozzi_polarizing_count": 2,
+      "all_matching_pairs_count": 2,
+      "greedy_agreed_span_count": 2,
+      "inhouse_with_any_bagozzi_match": 2,
+      "bagozzi_with_any_inhouse_match": 2,
+      "inhouse_unmatched_existence": 0,
+      "bagozzi_unmatched_existence": 0,
+      "greedy_unmatched_inhouse": 0,
+      "greedy_unmatched_bagozzi": 0,
+      "existence_complete": true,
+      "greedy_complete": true
+    }
+  ],
+  "greedy_complete_articles": [
+    {
+      "article_title": "Ron Desantis Signs Amendment 4 Bill, Limiting Felon Voting",
+      "inhouse_polarizing_count": 2,
+      "bagozzi_polarizing_count": 2,
+      "all_matching_pairs_count": 2,
+      "greedy_agreed_span_count": 2,
+      "inhouse_with_any_bagozzi_match": 2,
+      "bagozzi_with_any_inhouse_match": 2,
+      "inhouse_unmatched_existence": 0,
+      "bagozzi_unmatched_existence": 0,
+      "greedy_unmatched_inhouse": 0,
+      "greedy_unmatched_bagozzi": 0,
+      "existence_complete": true,
+      "greedy_complete": true
+    }
+  ],
+  "top_articles_by_greedy_coverage": [
+    {
+      "article_title": "Trump Rips 'Horrible' New York Times, Washington Post, Wonders If People Will 'Demand' He Stay In White House",
+      "inhouse_polarizing_count": 10,
+      "bagozzi_polarizing_count": 15,
+      "all_matching_pairs_count": 11,
+      "greedy_agreed_span_count": 8,
+      "inhouse_with_any_bagozzi_match": 9,
+      "bagozzi_with_any_inhouse_match": 10,
+      "inhouse_unmatched_existence": 1,
+      "bagozzi_unmatched_existence": 5,
+      "greedy_unmatched_inhouse": 2,
+      "greedy_unmatched_bagozzi": 7,
+      "existence_complete": false,
+      "greedy_complete": false
+    },
+    {
+      "article_title": "George Conway Urges Trump To Resign Over Aborted Iran Strike",
+      "inhouse_polarizing_count": 13,
+      "bagozzi_polarizing_count": 7,
+      "all_matching_pairs_count": 10,
+      "greedy_agreed_span_count": 7,
+      "inhouse_with_any_bagozzi_match": 9,
+      "bagozzi_with_any_inhouse_match": 7,
+      "inhouse_unmatched_existence": 4,
+      "bagozzi_unmatched_existence": 0,
+      "greedy_unmatched_inhouse": 6,
+      "greedy_unmatched_bagozzi": 0,
+      "existence_complete": false,
+      "greedy_complete": false
+    },
+    {
+      "article_title": "'Pathetic Rout,' 'Tragic Mistake' And 'Painful' John Mccain Holds Little Back In Describing Helsinki",
+      "inhouse_polarizing_count": 11,
+      "bagozzi_polarizing_count": 11,
+      "all_matching_pairs_count": 6,
+      "greedy_agreed_span_count": 6,
+      "inhouse_with_any_bagozzi_match": 6,
+      "bagozzi_with_any_inhouse_match": 6,
+      "inhouse_unmatched_existence": 5,
+      "bagozzi_unmatched_existence": 5,
+      "greedy_unmatched_inhouse": 5,
+      "greedy_unmatched_bagozzi": 5,
+      "existence_complete": false,
+      "greedy_complete": false
+    },
+    {
+      "article_title": "'We Are Livid!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized",
+      "inhouse_polarizing_count": 10,
+      "bagozzi_polarizing_count": 9,
+      "all_matching_pairs_count": 10,
+      "greedy_agreed_span_count": 5,
+      "inhouse_with_any_bagozzi_match": 7,
+      "bagozzi_with_any_inhouse_match": 7,
+      "inhouse_unmatched_existence": 3,
+      "bagozzi_unmatched_existence": 2,
+      "greedy_unmatched_inhouse": 5,
+      "greedy_unmatched_bagozzi": 4,
+      "existence_complete": false,
+      "greedy_complete": false
+    },
+    {
+      "article_title": "Senate Confirms Judge Who Attacked Roe V. Wade, Called Being Transgender 'A Delusion'",
+      "inhouse_polarizing_count": 9,
+      "bagozzi_polarizing_count": 8,
+      "all_matching_pairs_count": 5,
+      "greedy_agreed_span_count": 5,
+      "inhouse_with_any_bagozzi_match": 5,
+      "bagozzi_with_any_inhouse_match": 5,
+      "inhouse_unmatched_existence": 4,
+      "bagozzi_unmatched_existence": 3,
+      "greedy_unmatched_inhouse": 4,
+      "greedy_unmatched_bagozzi": 3,
+      "existence_complete": false,
+      "greedy_complete": false
+    },
+    {
+      "article_title": "Trump Hits Polling On Fox News: 'Something Weird Going On At Fox'",
+      "inhouse_polarizing_count": 8,
+      "bagozzi_polarizing_count": 6,
+      "all_matching_pairs_count": 6,
+      "greedy_agreed_span_count": 5,
+      "inhouse_with_any_bagozzi_match": 5,
+      "bagozzi_with_any_inhouse_match": 5,
+      "inhouse_unmatched_existence": 3,
+      "bagozzi_unmatched_existence": 1,
+      "greedy_unmatched_inhouse": 3,
+      "greedy_unmatched_bagozzi": 1,
+      "existence_complete": false,
+      "greedy_complete": false
+    },
+    {
+      "article_title": "Editorial: Six Months After California'S Landmark Police Transparency Law, Many Agencies Still Won'T Release Their Records",
+      "inhouse_polarizing_count": 8,
+      "bagozzi_polarizing_count": 4,
+      "all_matching_pairs_count": 4,
+      "greedy_agreed_span_count": 4,
+      "inhouse_with_any_bagozzi_match": 4,
+      "bagozzi_with_any_inhouse_match": 4,
+      "inhouse_unmatched_existence": 4,
+      "bagozzi_unmatched_existence": 0,
+      "greedy_unmatched_inhouse": 4,
+      "greedy_unmatched_bagozzi": 0,
+      "existence_complete": false,
+      "greedy_complete": false
+    },
+    {
+      "article_title": "'Every American Is Entitled To Health Care': Sen. Bernie Sanders",
+      "inhouse_polarizing_count": 4,
+      "bagozzi_polarizing_count": 5,
+      "all_matching_pairs_count": 3,
+      "greedy_agreed_span_count": 3,
+      "inhouse_with_any_bagozzi_match": 3,
+      "bagozzi_with_any_inhouse_match": 3,
+      "inhouse_unmatched_existence": 1,
+      "bagozzi_unmatched_existence": 2,
+      "greedy_unmatched_inhouse": 1,
+      "greedy_unmatched_bagozzi": 2,
+      "existence_complete": false,
+      "greedy_complete": false
+    },
+    {
+      "article_title": "Donald Trump Jr. Mocks Roy Moore After Campaign Announcement, Reigniting Feud",
+      "inhouse_polarizing_count": 9,
+      "bagozzi_polarizing_count": 7,
+      "all_matching_pairs_count": 3,
+      "greedy_agreed_span_count": 3,
+      "inhouse_with_any_bagozzi_match": 3,
+      "bagozzi_with_any_inhouse_match": 3,
+      "inhouse_unmatched_existence": 6,
+      "bagozzi_unmatched_existence": 4,
+      "greedy_unmatched_inhouse": 6,
+      "greedy_unmatched_bagozzi": 4,
+      "existence_complete": false,
+      "greedy_complete": false
+    },
+    {
+      "article_title": "Gabbard Was Most Searched Democratic Candidate After Debate Despite Getting Third-Lowest Speaking Time",
+      "inhouse_polarizing_count": 4,
+      "bagozzi_polarizing_count": 5,
+      "all_matching_pairs_count": 5,
+      "greedy_agreed_span_count": 3,
+      "inhouse_with_any_bagozzi_match": 4,
+      "bagozzi_with_any_inhouse_match": 4,
+      "inhouse_unmatched_existence": 0,
+      "bagozzi_unmatched_existence": 1,
+      "greedy_unmatched_inhouse": 1,
+      "greedy_unmatched_bagozzi": 2,
+      "existence_complete": false,
+      "greedy_complete": false
+    }
+  ]
+}

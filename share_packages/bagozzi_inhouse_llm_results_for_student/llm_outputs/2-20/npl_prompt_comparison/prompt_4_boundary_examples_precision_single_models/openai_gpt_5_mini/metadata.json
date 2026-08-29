@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run_id": "openai_gpt_5_mini",
+  "prompt_file": "src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_4_boundary_examples_precision.md",
+  "gold_article_source": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
+  "final_json": "src/llm_annotation_results/2-20/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models/openai_gpt_5_mini/final_annotations.json",
+  "results_csv": "src/llm_annotation_results/2-20/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models/openai_gpt_5_mini/raw_results.csv",
+  "article_count": 27
+}

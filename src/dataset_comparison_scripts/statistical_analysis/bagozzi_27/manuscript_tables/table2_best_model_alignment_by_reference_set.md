@@ -1,0 +1,5 @@
+| Rank | Reference set | Definition | Gold units | Polarizing | NPL | Matched units | Pol. precision | Pol. recall | Pol. F1 | Category agreement | Subcategory agreement | Mean |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Expert reference | Dr. Bagozzi full set | 157 | 117 | 40 | 94 | 0.752 | 0.599 | **0.667** | **0.904** | **0.862** | **0.811** |
+| 2 | Consensus intersection | Spans where expert and in-house overlap; conservative NPL paragraphs | 86 | 70 | 16 | 65 | 0.537 | 0.756 | 0.628 | 0.892 | 0.846 | 0.789 |
+| 3 | In-house reference | Final adjudicated in-house full set | 194 | 167 | 27 | 79 | 0.632 | 0.407 | 0.495 | 0.810 | 0.658 | 0.654 |

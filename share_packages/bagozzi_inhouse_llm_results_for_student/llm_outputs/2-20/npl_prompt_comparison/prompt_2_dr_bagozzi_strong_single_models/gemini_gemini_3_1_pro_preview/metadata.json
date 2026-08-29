@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "provider": "gemini",
+  "model": "gemini-3.1-pro-preview",
+  "run_id": "gemini_gemini_3_1_pro_preview",
+  "prompt_file": "src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_2_dr_bagozzi.md",
+  "gold_article_source": "src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json",
+  "final_json": "src/llm_annotation_results/2-20/npl_prompt_comparison/prompt_2_dr_bagozzi_strong_single_models/gemini_gemini_3_1_pro_preview/final_annotations.json",
+  "results_csv": "src/llm_annotation_results/2-20/npl_prompt_comparison/prompt_2_dr_bagozzi_strong_single_models/gemini_gemini_3_1_pro_preview/raw_results.csv",
+  "article_count": 27
+}

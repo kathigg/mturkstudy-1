@@ -1,0 +1,397 @@
+[
+  {
+    "title": "George Conway Urges Trump To Resign Over Aborted Iran Strike",
+    "source_title": "george conway urges trump to resign over aborted iran strike",
+    "news_body": "George Conway blasted President Trump and called for him to resign from office after he walked back a planned military strike against Iran in response to the downing of a U.S. surveillance drone. \"Trump didn't realize UNTIL TEN MINUTES BEFOREHAND that a planned airstrike would kill over a hundred people and would therefore be grossly disproportionate to the loss of a UAV?\" Conway, lawyer and husband of White House counselor Kellyanne Conway, tweeted Friday. \"To say this is amateur hour would defame amateurs.\" \"Resign. If you didn't know this until it was almost too late, you're even more of an idiot than people think you are,\" Conway tweeted in response to Trump. \"Do the country and the world a favor. Go back to real estate, where the worst you can do is kill banks.\" Trump didn't realize UNTIL TEN MINUTES BEFOREHAND that a planned airstrike would kill over a hundred people and would therefore be grossly disproportionate to the loss of a UAV? To say this is amateur hour would defame amateurs.\\n- George Conway (@gtconway3d) June 21, 2019 Resign. If you didn't know this until it was almost too late, you're even more of an idiot than people think you are. Do the country and the world a favor. Go back to real estate, where the worst you can do is kill banks. https://t.co/k7z9KW4Elt - George Conway (@gtconway3d) June 21, 2019 Conway's comments came after Trump confirmed via Twitter that the U.S. had been \"cocked and loaded\" to retaliate against Iran, but that he called off the mission at the last minute after learning that 150 Iranians would die. \"We were cocked & loaded to retaliate last night on 3 different sights when I asked, how many will die. 150 people, sir, was the answer from a General. 10 minutes before the strike I stopped it, not proportionate to shooting down an unmanned drone,\" Trump tweeted. Iranian officials said Friday that Trump warned them that an attack was imminent.\\nThe officials also said Friday that they were informed of the planned attack in a \"short period\" before it was initially scheduled to be carried out. \"In his message, Trump said he was against any war with Iran and wanted to talk to Tehran about various issues,\" one Iranian official said. U.S. and Iranian officials are disputing the location of the drone when it was shot down late Wednesday, with Iran arguing that it had entered the country's airspace. The U.S. Central Command (Centcom) said the U.S. Navy RQ-4A Global Hawk drone was shot down by an Iranian missile system in an \"unprovoked attack.\" Centcom denied claims from Iranian officials stating that the drone had flown over Hormozgan Province in southern Iran. \"This attack is an attempt to disrupt our ability to monitor the area following recent threats to international shipping and free flow of commerce, \" Lt. Gen. Joseph Guastella, commander of U.S.\\nAir Forces Central Command, said in a statement. The New York Times reported late Thursday that Trump had ordered a strike overnight against Iran, but pulled back. Following that report, Conway railed against Trump in a late-night tweet that he has since pinned to his Twitter page , slamming the commander in chief as an \"erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man whose judgment no serious, intelligent person trusts.\"",
+    "topic": "science",
+    "news_source": "The Boston Globe",
+    "rating": "left",
+    "annotations": [
+      {
+        "paragraph_index": 0,
+        "text": "even more of an idiot than people think you are",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "even more of an idiot than people think you are",
+        "inhouse_text": "Resign. If you didn't know this until it was almost too late, you're even more of an idiot than people think you are",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "name-calling",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 0,
+        "text": "to say this is amateur hour would defame amateurs",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "To say this is amateur hour would defame amateurs",
+        "inhouse_text": "To say this is amateur hour would defame amateurs.\"",
+        "inhouse_category": "persuasive propaganda",
+        "inhouse_subcategory": "doubt",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 0,
+        "text": "trump didn't realize until ten minutes beforehand that a planned airstrike would kill over a hundred people",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "trump didn't realize until ten minutes beforehand that a planned airstrike would kill over a hundred people",
+        "inhouse_text": "Trump didn't realize UNTIL TEN MINUTES BEFOREHAND that a planned airstrike would kill over a hundred people",
+        "inhouse_category": "persuasive propaganda",
+        "inhouse_subcategory": "doubt",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 1,
+        "text": "even more of an idiot than people think you are",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "even more of an idiot than people think you are",
+        "inhouse_text": "If you didn't know this until it was almost too late, you're even more of an idiot than people think you are.",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "name-calling",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 1,
+        "text": "to say this is amateur hour would defame amateurs",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "To say this is amateur hour would defame amateurs",
+        "inhouse_text": "To say this is amateur hour would defame amateurs",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "name-calling",
+        "inhouse_vote_pattern": "2-1"
+      },
+      {
+        "paragraph_index": 3,
+        "text": "erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man",
+        "inhouse_text": "\"erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man whose judgment no serious, intelligent person trusts",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "demonization",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 3,
+        "text": "whose judgment no serious, intelligent person trusts",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "whose judgment no serious, intelligent person trusts",
+        "inhouse_text": "whose judgment no serious, intelligent person trusts",
+        "inhouse_category": "persuasive propaganda",
+        "inhouse_subcategory": "bandwagon",
+        "inhouse_vote_pattern": "2-1"
+      }
+    ],
+    "false_annotations": [
+      {
+        "paragraph_index": 1,
+        "text": "150 people, sir, was the answer from a General.",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling"
+      },
+      {
+        "paragraph_index": 1,
+        "text": "Iranian officials said Friday that Trump warned them that an attack was imminent.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt"
+      }
+    ]
+  },
+  {
+    "title": "Trump Rips 'Horrible' New York Times, Washington Post, Wonders If People Will 'Demand' He Stay In White House",
+    "source_title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house",
+    "news_body": "President Trump on Sunday ramped up his attacks against the nation's biggest newspapers, saying that a poll should be done to see whether The New York Times or The Washington Post is \"more dishonest and deceitful.\" \"A poll should be done on which is the more dishonest and deceitful newspaper, the Failing New York Times or the Amazon (lobbyist) Washington Post!\" he said on Twitter. \"They are both a disgrace to our Country, the Enemy of the People, but I just can't seem to figure out which is worse?\" .....news is that at the end of 6 years, after America has been made GREAT again and I leave the beautiful White House (do you think the people would demand that I stay longer? KEEP AMERICA GREAT), both of these horrible papers will quickly go out of business & be forever gone! - Donald J. Trump (@realDonaldTrump) June 16, 2019 \"The good news is that at the end of 6 years, after America has been made GREAT again and I leave the beautiful White House both of these horrible papers will quickly go out of business & be forever gone,\" Trump continued.\\nHe also asked if \"people would demand that I stay longer\" to \"keep America great\" after two terms in the White House. Trump has repeatedly criticized the press corps during his two years in the White House, often referring to it as the \"enemy of the people.\" His Twitter latest tirade came just a day after he claimed that The Times committed a \"virtual act of treason\" by reporting on the administration's digital attacks against Russia. \"Do you believe that the Failing New York Times just did a story stating that the United States is substantially increasing Cyber Attacks on Russia,\" Trump tweeted, before claiming that the report was \"not true.\" \"This is a virtual act of Treason by a once great paper so desperate for a story, any story, even if bad for our Country.\" The Times on Saturday published a report about the United States' efforts to penetrate Russia's power grid.\\nThe Times, citing current and former government officials, noted that the actions are a warning to Moscow on how the Trump administration is using new authorities to unleash cyber tools in an aggressive manner. Two administration officials told the newspaper that they do not think Trump was briefed about the plans. The newspaper added that some Pentagon and intelligence officials said there was a hesitation about addressing the operations with Trump. Trump has also lashed out at the media over reports about his internal polling. He d enounced the \"fake news \" and \"fake polling\" after reports surfaced that he was trailing Vice President Joe Biden in a hypothetical 2020 matchup. \"The Fake News has never been more dishonest than it is today. Thank goodness we can fight back on Social Media. There new weapon of choice is Fake Polling, sometimes referred to as Suppression Polls (they suppress the numbers),\" Trump tweeted.\\nPolls released in the past week have shown Trump trailing multiple Democratic presidential contenders in hypothetical 2020 matchups. A Quinnipiac University survey released last week found Trump trailing six candidates by healthy margins.",
+    "topic": "legal arguments",
+    "news_source": "The Washington Post",
+    "rating": "left",
+    "annotations": [
+      {
+        "paragraph_index": 0,
+        "text": "a disgrace to our country",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "a disgrace to our Country",
+        "inhouse_text": "They are both a disgrace to our Country, the Enemy of the People, but I just can't seem to figure out which is worse?",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "demonization",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 0,
+        "text": "america has been made great again",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "america has been made great again",
+        "inhouse_text": "news is that at the end of 6 years, after America has been made GREAT again and I leave the beautiful White House",
+        "inhouse_category": "persuasive propaganda",
+        "inhouse_subcategory": "slogans",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 0,
+        "text": "both of these horrible papers",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "both of these horrible papers",
+        "inhouse_text": "both of these horrible papers will quickly go out of business & be forever gone,",
+        "inhouse_category": "persuasive propaganda",
+        "inhouse_subcategory": "exaggeration",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 0,
+        "text": "e amazon (lobbyist) washington",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "the Amazon (lobbyist) Washington Post",
+        "inhouse_text": "e Amazon (lobbyist) Washington",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "name-calling",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 1,
+        "text": "the failing new york times",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "the Failing New York Times",
+        "inhouse_text": "the Failing New York Times",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "name-calling",
+        "inhouse_vote_pattern": "2-1"
+      },
+      {
+        "paragraph_index": 1,
+        "text": "virtual act of treason",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "virtual act of treason",
+        "inhouse_text": "committed a \"virtual act of treason\" by",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "demonization",
+        "inhouse_vote_pattern": "2-1"
+      },
+      {
+        "paragraph_index": 2,
+        "text": "fake news",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "fake news",
+        "inhouse_text": "The Fake News has never been more dishonest than it is today",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "name-calling",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 2,
+        "text": "suppression polls (they suppress the numbers)",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Doubt",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "Suppression Polls (they suppress the numbers)",
+        "inhouse_text": "There new weapon of choice is Fake Polling, sometimes referred to as Suppression Polls (they suppress the numbers)",
+        "inhouse_category": "persuasive propaganda",
+        "inhouse_subcategory": "doubt",
+        "inhouse_vote_pattern": "3-0"
+      }
+    ],
+    "false_annotations": [
+      {
+        "paragraph_index": 3,
+        "text": "A Quinnipiac University survey released last week found Trump trailing six candidates",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Slogans"
+      },
+      {
+        "paragraph_index": 1,
+        "text": "The Times on Saturday published a report about the United States' efforts to penetrate Russia's power grid.",
+        "category": "Inflammatory Language",
+        "subcategory": "Demonization"
+      }
+    ]
+  },
+  {
+    "title": "'Every American Is Entitled To Health Care': Sen. Bernie Sanders",
+    "source_title": "'Every American is entitled to health care': Sen. Bernie Sanders",
+    "news_body": "The United States must end the international embarrassment of not guaranteeing health care as a right, Sen. Bernie Sanders , I-Vt., said ABC's \"This Week\" Sunday. Sanders spoke with ABC News Chief Anchor George Stephanopoulos, days after the first Democratic presidential debates , where many of his progressive policies were front and center . His proposal for Medicare for all would dismantle President Barack Obama's Affordable Care Act, eliminate private insurance and create a single-payer program, in which all Americans would participate in a single, government-run plan that does not include deductibles and out-of-out pocket costs. Critics say Sanders' plan would dramatically increase taxes. Following his push for the policy in 2016, the policy has become a progressive litmus test for candidates this election cycle. During the debate on Thursday , the 10 candidates were asked to raise their hands if they would eliminate private insurance to implement Medicare for all.\\nSen. Kamala Harris, D-Calif., was one of two candidates to raise her hand in favor of eliminating private insurance. The following morning she walked back her support of eliminating private insurance on MSNBC , saying that she had misunderstood the question and she would not eliminate private insurance in favor of Medicare for all, but does support Sanders' proposal for a single-payer government-run insurance plan. (MORE: Bernie Sanders details plan to cancel $1.6 trillion in student loan debt for everyone) Sanders' responded to Harris' backtracking Friday in a statement, writing that he \"demanded that all candidates be clear about their stance on Medicare for all.\" \"If you support Medicare for all, you have to be willing to end the greed of the health insurance and pharmaceutical industries. That means boldly transforming our dysfunctional system by ending the use of private health insurance\" Sanders wrote. \"It is imperative that we remain steadfast in our commitment to guarantee health care as a human right and no longer private corporations to make billions of dollars in profits off Americans' health care.\" (MORE: Democratic debate night 2: Fact-checking the candidates on the issues) Referencing a Wall Street Journal editorial claiming that he has \"set the Democratic agenda,\" the senator touted both nights of the debate as a victory during a campaign stop in Hudson, New Hampshire.\\n\"So how did we win a debate that we weren't even participating in? Because of New Hampshire and 21 other states that supported our agenda, other Democratic candidates now understand that they have got to talk to the needs of the working class of this country,\" he said. \"So we came here to New Hampshire and everybody said our ideas are crazy and wild and extreme and now it turns out, all of the other candidates are saying what we said four years ago.\" This is a developing news story. Please check back for updates.",
+    "topic": "health",
+    "news_source": "ABC News",
+    "rating": "left",
+    "annotations": [
+      {
+        "paragraph_index": 1,
+        "text": "dysfunctional system",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "dysfunctional system",
+        "inhouse_text": "That means boldly transforming our dysfunctional system by ending the use of private health insurance",
+        "inhouse_category": "persuasive propaganda",
+        "inhouse_subcategory": "doubt",
+        "inhouse_vote_pattern": "2-1"
+      },
+      {
+        "paragraph_index": 1,
+        "text": "private corporations to make billions of dollars in profits off americans' health care",
+        "category": "Inflammatory Language",
+        "subcategory": "Scapegoating",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "private corporations to make billions of dollars in profits off Americans' health care",
+        "inhouse_text": "no longer private corporations to make billions of dollars in profits off Americans' health care.",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "demonization",
+        "inhouse_vote_pattern": "2-1"
+      },
+      {
+        "paragraph_index": 1,
+        "text": "the greed of the health insurance and pharmaceutical industries",
+        "category": "Inflammatory Language",
+        "subcategory": "Scapegoating",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "the greed of the health insurance and pharmaceutical industries",
+        "inhouse_text": "f you support Medicare for all, you have to be willing to end the greed of the health insurance and pharmaceutical industries",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "demonization",
+        "inhouse_vote_pattern": "2-1"
+      }
+    ],
+    "false_annotations": [
+      {
+        "paragraph_index": 1,
+        "text": "Sen. Kamala Harris, D-Calif., was one of two candidates to raise her hand in favor of eliminating private insurance.",
+        "category": "Inflammatory Language",
+        "subcategory": "Scapegoating"
+      },
+      {
+        "paragraph_index": 0,
+        "text": "Critics say Sanders' plan would dramatically increase taxes.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Bandwagon"
+      }
+    ]
+  },
+  {
+    "title": "'We Are Livid!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized",
+    "source_title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized",
+    "news_body": "PHILADELPHIA (CBS) Neighbors are upset after a mural honoring a fallen Philadelphia police officer was vandalized on Thursday. The mural was dedicated to Sgt. Robert Wilson in 2017. Wilson was killed in the line of duty when he walked in on an attempted robbery at a North Philadelphia GameStop in 2015. Wilson went to the store to buy a gift for his son's birthday. The Philadelphia FOP is offering a $10,000 reward for any information that leads to the arrest of the vandal. \"It's sickening and disgusting that some low-life would deface the mural of hero and fallen-officer, Robert Wilson III,\" said FOP Lodge #5 President John McNesby. \"We will never forget Rob's bravery, courage and valor when he saved lives inside that GameStop store.\" 'I'm Disgusted': Family Of Murdered Philadelphia Police Sgt. Robert Wilson III Frustrated With Killers' Plea Deal Denise Hooks, the owner of the Strawberry Mansion building where the mural is painted, is speaking out.\\n\"I don't know if this is a racial slur against the police, or if it's a slur because they want this neighborhood back, but there's something going on around here,\" Hooks said. \"It's terrible because I feel like his mother got to see this, his son got to see this, his sister has to see this and they already buried their son, their father, their brother. We loved Officer Wilson, he was a hero.\" Shaki'ra Wilson-Burroughs, the sister of officer Wilson released a statement Thursday night. \"The ignorance and disrespect shown toward police is at an all time high. Learning of the blatant disrespect that has been repeatedly shown toward my brother has resulted in an indescribable emotional reaction. In other words, WE ARE LIVID! One year ago, the DA of this city set this tone of disrespect for the city by slighting Sgt. Wilson, III by offering a backdoor plea and denying him a trial. \"If the DA, top persecutor of this city, can tarnish the efforts and life of a slain officer while backing criminals then, why should any other layman warrant any real respect and keep their memory alive? Stating this is not to take away from the shaming and defacement of Sgt.\\nWilson's mural. It has enhanced the ignorance and disrespect shown toward our officers as the consequences of such are as minuscule as a slap on the wrist. \"Yes, my brother was an officer of the Philadelphia Police Department. He was also a man who put his life on the line to protect and save the lives of those in that GameStop. He lost his life and, in any capacity, that should be enough to warrant respect.\" If you know anything about this graffiti, call police.",
+    "topic": "crime",
+    "news_source": "CBS",
+    "rating": "left",
+    "annotations": [
+      {
+        "paragraph_index": 0,
+        "text": "hero and fallen-officer",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "hero and fallen-officer",
+        "inhouse_text": "f hero and fallen-officer,",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "name-calling",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 0,
+        "text": "some low-life",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "some low-life",
+        "inhouse_text": "It's sickening and disgusting that some low-life would deface the mural of hero and fallen-officer, Robert Wilson III,",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "name-calling",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 1,
+        "text": "da of this city set this tone of disrespect for the city",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Casual Oversimplification",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "DA of this city set this tone of disrespect for the city",
+        "inhouse_text": "If the DA, top persecutor of this city, can tarnish the efforts and life of a slain officer while backing criminals then,",
+        "inhouse_category": "inflammatory language",
+        "inhouse_subcategory": "demonization",
+        "inhouse_vote_pattern": "3-0"
+      },
+      {
+        "paragraph_index": 1,
+        "text": "orance and disrespect shown toward police is at an al",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "ignorance and disrespect shown toward police is at an all time high",
+        "inhouse_text": "orance and disrespect shown toward police is at an al",
+        "inhouse_category": "persuasive propaganda",
+        "inhouse_subcategory": "exaggeration",
+        "inhouse_vote_pattern": "2-1"
+      },
+      {
+        "paragraph_index": 2,
+        "text": "as minuscule as a slap on the wrist",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration",
+        "label_source": "dr_bagozzi",
+        "match_basis": "span overlap between Dr. Bagozzi and final in-house adjudicated annotations",
+        "bagozzi_text": "as minuscule as a slap on the wrist",
+        "inhouse_text": "as the consequences of such are as minuscule as a slap on the wrist.",
+        "inhouse_category": "persuasive propaganda",
+        "inhouse_subcategory": "casual oversimplification",
+        "inhouse_vote_pattern": "3-0"
+      }
+    ],
+    "false_annotations": [
+      {
+        "paragraph_index": 0,
+        "text": "The Philadelphia FOP is offering a $10,000 reward for any information that leads to the arrest of the vandal.",
+        "category": "Persuasive Propaganda",
+        "subcategory": "Exaggeration"
+      },
+      {
+        "paragraph_index": 0,
+        "text": "Wilson was killed in the line of duty when he walked in on an attempted robbery",
+        "category": "Inflammatory Language",
+        "subcategory": "Name-Calling"
+      }
+    ]
+  }
+]

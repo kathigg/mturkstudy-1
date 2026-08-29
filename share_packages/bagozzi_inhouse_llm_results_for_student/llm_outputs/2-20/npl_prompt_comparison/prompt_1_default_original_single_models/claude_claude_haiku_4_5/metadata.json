@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "provider": "anthropic",
+  "model": "claude-haiku-4-5",
+  "run_id": "claude_claude_haiku_4_5",
+  "prompt_file": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/prompt_versions/dr_bagozzi_codebook_addendum.md",
+  "gold_article_source": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
+  "final_json": "src/llm_annotation_results/2-20/npl_prompt_comparison/prompt_1_default_original_single_models/claude_claude_haiku_4_5/final_annotations.json",
+  "results_csv": "src/llm_annotation_results/2-20/npl_prompt_comparison/prompt_1_default_original_single_models/claude_claude_haiku_4_5/raw_results.csv",
+  "article_count": 27
+}

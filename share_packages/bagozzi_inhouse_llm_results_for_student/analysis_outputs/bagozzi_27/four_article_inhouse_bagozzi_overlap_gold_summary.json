@@ -1,0 +1,51 @@
+{
+  "output_file": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/four_article_inhouse_bagozzi_overlap_gold.json",
+  "article_count": 4,
+  "annotation_count": 23,
+  "source_article_text_file": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv",
+  "source_overlap_file": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/inhouse_bagozzi_agreed_polarizing_spans.csv",
+  "label_rule": "Use Dr. Bagozzi category/subcategory for every retained span.",
+  "subcategory_counts": {
+    "name-calling": 10,
+    "exaggeration": 5,
+    "doubt": 2,
+    "bandwagon": 1,
+    "slogans": 1,
+    "demonization": 1,
+    "scapegoating": 2,
+    "casual oversimplification": 1
+  },
+  "category_counts": {
+    "inflammatory language": 13,
+    "persuasive propaganda": 10
+  },
+  "expected_eight_polarizing_subcategories": [
+    "exaggeration",
+    "casual oversimplification",
+    "doubt",
+    "bandwagon",
+    "slogans",
+    "scapegoating",
+    "name-calling",
+    "demonization"
+  ],
+  "coverage_of_eight": {
+    "exaggeration": 5,
+    "casual oversimplification": 1,
+    "doubt": 2,
+    "bandwagon": 1,
+    "slogans": 1,
+    "scapegoating": 2,
+    "name-calling": 10,
+    "demonization": 1
+  },
+  "contains_all_eight": true,
+  "missing_subcategories": [],
+  "article_annotation_counts": {
+    "George Conway Urges Trump To Resign Over Aborted Iran Strike": 7,
+    "Trump Rips 'Horrible' New York Times, Washington Post, Wonders If People Will 'Demand' He Stay In White House": 8,
+    "'Every American Is Entitled To Health Care': Sen. Bernie Sanders": 3,
+    "'We Are Livid!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized": 5
+  },
+  "article_text_missing": []
+}

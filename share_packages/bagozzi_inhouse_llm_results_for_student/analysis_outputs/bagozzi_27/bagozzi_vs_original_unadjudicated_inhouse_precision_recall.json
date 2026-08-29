@@ -1,0 +1,179 @@
+{
+  "sources": {
+    "bagozzi": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/bagozzi_27_human_min_one_gold_standard_output.json",
+    "raw_inhouse": "/Users/kathleenhiggins/mturkstudy-3/src/mturk_results/2-20/cisc475database-default-rtdb-submissions-export.json"
+  },
+  "shared_article_count": 27,
+  "counts": {
+    "bagozzi_all": 157,
+    "bagozzi_polarizing": 117,
+    "raw_inhouse_all_individual": 516,
+    "raw_inhouse_polarizing_individual": 379,
+    "raw_inhouse_all_clusters": 355,
+    "raw_inhouse_polarizing_clusters": 275
+  },
+  "polarizing_only": {
+    "raw_individual_span": {
+      "tp": 90,
+      "fp": 289,
+      "fn": 27,
+      "pred_total": 379,
+      "gold_total": 117,
+      "precision": 0.237,
+      "recall": 0.769,
+      "f1": 0.363
+    },
+    "raw_individual_category": {
+      "tp": 76,
+      "fp": 303,
+      "fn": 41,
+      "pred_total": 379,
+      "gold_total": 117,
+      "precision": 0.201,
+      "recall": 0.65,
+      "f1": 0.306
+    },
+    "raw_individual_subcategory": {
+      "tp": 62,
+      "fp": 317,
+      "fn": 55,
+      "pred_total": 379,
+      "gold_total": 117,
+      "precision": 0.164,
+      "recall": 0.53,
+      "f1": 0.25
+    },
+    "raw_individual_category_and_subcategory": {
+      "tp": 62,
+      "fp": 317,
+      "fn": 55,
+      "pred_total": 379,
+      "gold_total": 117,
+      "precision": 0.164,
+      "recall": 0.53,
+      "f1": 0.25
+    },
+    "raw_cluster_span": {
+      "tp": 81,
+      "fp": 194,
+      "fn": 36,
+      "pred_total": 275,
+      "gold_total": 117,
+      "precision": 0.295,
+      "recall": 0.692,
+      "f1": 0.413
+    },
+    "raw_cluster_category": {
+      "tp": 63,
+      "fp": 212,
+      "fn": 54,
+      "pred_total": 275,
+      "gold_total": 117,
+      "precision": 0.229,
+      "recall": 0.538,
+      "f1": 0.321
+    },
+    "raw_cluster_subcategory": {
+      "tp": 51,
+      "fp": 224,
+      "fn": 66,
+      "pred_total": 275,
+      "gold_total": 117,
+      "precision": 0.185,
+      "recall": 0.436,
+      "f1": 0.26
+    },
+    "raw_cluster_category_and_subcategory": {
+      "tp": 50,
+      "fp": 225,
+      "fn": 67,
+      "pred_total": 275,
+      "gold_total": 117,
+      "precision": 0.182,
+      "recall": 0.427,
+      "f1": 0.255
+    }
+  },
+  "all_annotations_including_npl": {
+    "raw_individual_span": {
+      "tp": 127,
+      "fp": 389,
+      "fn": 30,
+      "pred_total": 516,
+      "gold_total": 157,
+      "precision": 0.246,
+      "recall": 0.809,
+      "f1": 0.377
+    },
+    "raw_individual_category": {
+      "tp": 113,
+      "fp": 403,
+      "fn": 44,
+      "pred_total": 516,
+      "gold_total": 157,
+      "precision": 0.219,
+      "recall": 0.72,
+      "f1": 0.336
+    },
+    "raw_individual_subcategory": {
+      "tp": 99,
+      "fp": 417,
+      "fn": 58,
+      "pred_total": 516,
+      "gold_total": 157,
+      "precision": 0.192,
+      "recall": 0.631,
+      "f1": 0.294
+    },
+    "raw_individual_category_and_subcategory": {
+      "tp": 99,
+      "fp": 417,
+      "fn": 58,
+      "pred_total": 516,
+      "gold_total": 157,
+      "precision": 0.192,
+      "recall": 0.631,
+      "f1": 0.294
+    },
+    "raw_cluster_span": {
+      "tp": 118,
+      "fp": 237,
+      "fn": 39,
+      "pred_total": 355,
+      "gold_total": 157,
+      "precision": 0.332,
+      "recall": 0.752,
+      "f1": 0.461
+    },
+    "raw_cluster_category": {
+      "tp": 100,
+      "fp": 255,
+      "fn": 57,
+      "pred_total": 355,
+      "gold_total": 157,
+      "precision": 0.282,
+      "recall": 0.637,
+      "f1": 0.391
+    },
+    "raw_cluster_subcategory": {
+      "tp": 88,
+      "fp": 267,
+      "fn": 69,
+      "pred_total": 355,
+      "gold_total": 157,
+      "precision": 0.248,
+      "recall": 0.561,
+      "f1": 0.344
+    },
+    "raw_cluster_category_and_subcategory": {
+      "tp": 87,
+      "fp": 268,
+      "fn": 70,
+      "pred_total": 355,
+      "gold_total": 157,
+      "precision": 0.245,
+      "recall": 0.554,
+      "f1": 0.34
+    }
+  }
+}

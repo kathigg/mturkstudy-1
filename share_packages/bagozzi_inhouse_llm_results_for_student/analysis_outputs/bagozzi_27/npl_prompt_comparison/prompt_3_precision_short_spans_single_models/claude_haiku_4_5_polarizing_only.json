@@ -1,0 +1,343 @@
+[
+  {
+    "title": "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki",
+    "topic": "legal arguments",
+    "source": "The Washington Post",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "the most disgraceful performances by an American president in memory",
+        "openFeedback": "Uses loaded negative label 'disgraceful' to characterize Trump's performance rather than providing evidence-based analysis.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house",
+    "topic": "legal arguments",
+    "source": "The Washington Post",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "the more dishonest and deceitful newspaper, the Failing New York Times",
+        "openFeedback": "Uses loaded negative labels 'dishonest and deceitful' and 'Failing' to discredit the newspaper without evidence.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "'Every American is entitled to health care': Sen. Bernie Sanders",
+    "topic": "health",
+    "source": "ABC News",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "The United States must end the international embarrassment of not guaranteeing health care as a right",
+        "openFeedback": "Describes lack of universal healthcare as an 'international embarrassment,' which exaggerates the characterization to amplify emotional response.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets",
+    "topic": "crime",
+    "source": "CBS News",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "casual oversimplification",
+        "text": "72 Philadelphia Police Officers On Administrative Duty Over Alleged Racist And Violent Social Media Posts",
+        "openFeedback": "The headline presents a simplified causal connection between social media posts and administrative duty, without acknowledging complexity of investigation or due process considerations.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "the latest: nadler says panel will move quickly on mcgahn",
+    "topic": "politics",
+    "source": "Louisville Courier Journal",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized",
+    "topic": "crime",
+    "source": "CBS",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "some low-life would deface the mural of hero and fallen-officer",
+        "openFeedback": "Uses emotionally charged label 'low-life' to describe the vandal without evidence, shaping audience perception negatively.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "george conway urges trump to resign over aborted iran strike",
+    "topic": "science",
+    "source": "The Boston Globe",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "you're even more of an idiot than people think you are",
+        "openFeedback": "Direct name-calling using 'idiot' to attack Trump's intelligence.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings",
+    "topic": "legal arguments",
+    "source": "Newsweek",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Jared Kushner has repeatedly benefited from special treatment; as with his many deceptions regarding his security clearance",
+        "openFeedback": "The phrase 'many deceptions' uses a loaded negative label to characterize Kushner's actions without providing specific evidence.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "ron desantis signs amendment 4 bill, limiting felon voting",
+    "topic": "environmental issues",
+    "source": "The Sacramento Bee",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "undercutting much of the promise of last year's historic Amendment 4",
+        "openFeedback": "Characterizes the bill as severely undermining Amendment 4 in emphatic terms without quantifying the actual scope of limitation.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'",
+    "topic": "science",
+    "source": "Business Insider",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "bigoted views",
+        "openFeedback": "Schumer uses 'bigoted' as a loaded label to describe Kacsmaryk's views without providing evidence, relying on emotionally charged wording.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "editorial: six months after california's landmark police transparency law, many agencies still won't release their records",
+    "topic": "crime",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "many police departments believe that compliance with the law is optional",
+        "openFeedback": "Characterizes police departments as dismissive of legal obligations without evidence, using loaded framing.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "BuzzFeed Journalists Protest in Push for Union Recognition",
+    "topic": "politics",
+    "source": "Bloomberg",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "DC mayor says Trump's Fourth of July celebration emptied security fund",
+    "topic": "politics",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Protest in Madrid as conservatives suspend ban on most polluting cars",
+    "topic": "environmental issues",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "raising fears that environmental rollbacks seen in the United States may be spreading to Europe",
+        "openFeedback": "The phrase 'raising fears that...may be spreading' uses speculative language to create doubt about future consequences without concrete evidence.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "tutankhamun sculpture's london auction sparks egyptian outcry",
+    "topic": "health",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.",
+    "topic": "crime",
+    "source": "Chicago Tribune",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "duchess difficult, Me-Gain, and Hurricane Meghan",
+        "openFeedback": "These are loaded negative labels used to describe Markle, designed to shape how the audience feels about her.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Biden criticizes Amazon for paying $0 in corporate taxes",
+    "topic": "politics",
+    "source": "The Hill",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "trump vows to cure cancer and eradicate aids",
+    "topic": "legal arguments",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "he made sweeping promises to tackle two of mankind's most dreaded diseases",
+        "openFeedback": "The characterization of promises as 'sweeping' and diseases as 'mankind's most dreaded' uses hyperbolic language to amplify the significance of the campaign promises.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "donald trump's criminal justice reform shows results",
+    "topic": "politics",
+    "source": "National Review",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "GOP lawmaker suggests Colin Kaepernick move to a different country",
+    "topic": "politics",
+    "source": "Breitbart News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "very radical people in the United States of America who don't like America",
+        "openFeedback": "Brooks uses the loaded negative label 'very radical people' to describe those who disagree with him, shaping how the audience feels about them without providing substantive evidence.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Crooked Hillary",
+        "openFeedback": "Trump uses a loaded negative label ('Crooked') to discredit Hillary Clinton rather than providing evidence.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar",
+    "topic": "politics",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "directly complicit in spreading hate",
+        "openFeedback": "Loaded negative label used to characterize political figures without evidence, designed to shape audience feeling.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "RMV Fail: 546 license suspensions, more to come",
+    "topic": "legal arguments",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "deadly bureaucratic failure",
+        "openFeedback": "Uses emotionally charged language ('deadly bureaucratic failure') to describe the RMV's conduct, shaping audience perception negatively.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Killer of 16-year-old New York girl in 1980 released on parole despite outrage",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "this rapist and murderer",
+        "openFeedback": "Pataki uses loaded labels 'rapist and murderer' to describe LaBarbera in emotionally charged language rather than neutral description.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal",
+    "topic": "environmental issues",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "a sweeping Democratic proposal for dealing with climate change, failed a test vote",
+        "openFeedback": "The characterization of the vote outcome uses 'failed' which is a loaded term; a test vote where 42 Democrats voted 'present' is presented as categorical failure rather than a strategic procedural vote.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  }
+]

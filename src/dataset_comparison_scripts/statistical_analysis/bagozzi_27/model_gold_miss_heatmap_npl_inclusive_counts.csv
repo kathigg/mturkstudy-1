@@ -1,0 +1,36 @@
+family,system,prediction_total,gold_total,matched_total,missed_total,miss_rate,polarization_precision,polarization_recall,polarization_f1,no polarizing language,exaggeration,casual oversimplification,doubt,bandwagon,slogans,scapegoating,name-calling,demonization
+strong single,Claude Sonnet - P1 default,144,86,56,30,0.349,0.389,0.651,0.487,5,5,0,9,0,5,0,6,0
+strong single,Gemini Pro - P1 default,100,86,43,43,0.5,0.43,0.5,0.462,0,15,1,9,1,4,1,10,2
+strong single,GPT-5.1 - P1 default,203,86,63,23,0.267,0.31,0.733,0.436,7,1,1,5,1,3,0,5,0
+strong single,Claude Sonnet - P2 Bagozzi,165,86,63,23,0.267,0.382,0.733,0.502,6,5,1,2,1,2,0,5,1
+strong single,Gemini Pro - P2 Bagozzi,102,86,53,33,0.384,0.52,0.616,0.564,1,11,1,5,1,3,1,8,2
+strong single,GPT-5.1 - P2 Bagozzi,212,86,62,24,0.279,0.292,0.721,0.416,7,2,1,2,1,1,1,9,0
+strong single,Claude Sonnet - P3 short spans,106,86,38,48,0.558,0.358,0.442,0.396,1,11,1,7,1,4,2,16,5
+strong single,Gemini Pro - P3 short spans,104,86,39,47,0.547,0.375,0.453,0.411,0,15,1,10,1,3,1,14,2
+strong single,GPT-5.1 - P3 short spans,182,86,43,43,0.5,0.236,0.5,0.321,5,10,2,8,1,3,0,11,3
+strong single,Claude Sonnet - P4 boundary,121,86,44,42,0.488,0.364,0.512,0.425,1,14,2,6,0,4,2,10,3
+strong single,Gemini Pro - P4 boundary,105,86,43,43,0.5,0.41,0.5,0.45,0,15,1,8,0,3,1,12,3
+strong single,GPT-5.1 - P4 boundary,195,86,59,27,0.314,0.303,0.686,0.42,4,6,1,7,1,2,0,6,0
+strong single,Claude Sonnet - P5 human aligned,142,86,60,26,0.302,0.423,0.698,0.526,1,7,2,6,0,1,1,8,0
+strong single,Gemini Pro - P5 human aligned,111,86,56,30,0.349,0.505,0.651,0.569,0,10,1,4,0,3,1,11,0
+strong single,GPT-5.1 - P5 human aligned,193,86,55,31,0.36,0.285,0.64,0.394,2,6,1,9,0,2,0,8,3
+small single,GPT-5 mini - P1 default,128,86,62,24,0.279,0.484,0.721,0.579,3,6,1,3,1,2,1,7,0
+small single,Gemini 3.1 Flash Lite - P1 default,112,86,50,36,0.419,0.446,0.581,0.505,1,11,1,8,1,4,1,7,2
+small single,Claude Haiku 4.5 - P1 default,93,86,17,69,0.802,0.183,0.198,0.19,1,17,2,10,1,6,2,25,5
+small single,GPT-5 mini - P2 Bagozzi,157,86,67,19,0.221,0.427,0.779,0.551,3,6,1,4,0,2,0,3,0
+small single,Gemini 3.1 Flash Lite - P2 Bagozzi,110,86,52,34,0.395,0.473,0.605,0.531,1,11,1,6,1,4,0,8,2
+small single,Claude Haiku 4.5 - P2 Bagozzi,93,86,20,66,0.767,0.215,0.233,0.223,0,17,2,10,1,6,2,24,4
+small single,GPT-5 mini - P3 short spans,135,86,61,25,0.291,0.452,0.709,0.552,1,9,1,5,0,2,1,6,0
+small single,Gemini 3.1 Flash Lite - P3 short spans,108,86,43,43,0.5,0.398,0.5,0.443,0,15,2,9,1,5,1,8,2
+small single,Claude Haiku 4.5 - P3 short spans,93,86,25,61,0.709,0.269,0.291,0.279,0,16,2,9,1,6,2,21,4
+small single,GPT-5 mini - P4 boundary,126,86,57,29,0.337,0.452,0.663,0.538,0,7,2,5,0,2,1,10,2
+small single,Gemini 3.1 Flash Lite - P4 boundary,107,86,40,46,0.535,0.374,0.465,0.415,0,15,1,9,1,5,1,12,2
+small single,Claude Haiku 4.5 - P4 boundary,93,86,25,61,0.709,0.269,0.291,0.279,0,17,2,10,1,6,2,19,4
+OG adjudication,OG adj - P1 default,132,86,59,27,0.314,0.447,0.686,0.541,2,3,1,7,1,4,1,7,1
+OG adjudication,OG adj - P2 Bagozzi,142,86,67,19,0.221,0.472,0.779,0.588,1,5,1,3,0,2,0,7,0
+OG adjudication,OG adj - P3 short spans,124,86,53,33,0.384,0.427,0.616,0.505,1,10,1,7,1,3,1,7,2
+OG adjudication,OG adj - P4 boundary,135,86,56,30,0.349,0.415,0.651,0.507,0,10,2,4,0,3,1,8,2
+OG adjudication,OG adj - P5 human aligned,122,86,60,26,0.302,0.492,0.698,0.577,1,6,2,5,0,2,1,9,0
+decision point,Decision point - full,125,86,64,22,0.256,0.512,0.744,0.607,0,7,2,5,0,1,0,7,0
+decision point,Decision point - candidate union,176,86,73,13,0.151,0.415,0.849,0.557,3,2,1,1,0,1,0,5,0
+decision point,Decision point - binary filter,125,86,65,21,0.244,0.52,0.756,0.616,0,6,2,5,0,1,0,7,0

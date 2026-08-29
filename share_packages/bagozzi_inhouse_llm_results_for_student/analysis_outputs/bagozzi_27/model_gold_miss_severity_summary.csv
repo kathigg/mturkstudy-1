@@ -1,0 +1,10 @@
+severity_rank,subcategory,gold_count,model_configurations,total_ai_misses,avg_ai_misses_per_model,miss_rate_across_model_opportunities
+0,no polarizing language,16,35,58,1.657,0.104
+1,exaggeration,18,35,329,9.4,0.522
+2,casual oversimplification,2,35,47,1.343,0.671
+3,doubt,10,35,222,6.343,0.634
+4,bandwagon,1,35,20,0.571,0.571
+5,slogans,6,35,110,3.143,0.524
+6,scapegoating,2,35,29,0.829,0.414
+7,name-calling,26,35,346,9.886,0.38
+8,demonization,5,35,56,1.6,0.32

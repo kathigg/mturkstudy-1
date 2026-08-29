@@ -1,0 +1,97 @@
+{
+  "method": "MTurk-style binary validation: model sees article context and candidate span only; hidden gold label is not included in prompt.",
+  "candidate_source": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/inhouse_bagozzi_agreed_polarizing_top3_articles_relaxed.csv",
+  "article_source": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv",
+  "model": "gpt-5-mini",
+  "model_visible_items": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/gpt5_mini_binary_validation/study_items_for_model_no_gold.json",
+  "hidden_gold_key": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/gpt5_mini_binary_validation/hidden_gold_key.json",
+  "raw_responses": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/gpt5_mini_binary_validation/raw_gpt5_mini_responses.jsonl",
+  "results_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/gpt5_mini_binary_validation/gpt5_mini_binary_validation_results.csv",
+  "scores": {
+    "total_items": 21,
+    "gold_positive_items": 21,
+    "correct": 18,
+    "incorrect": 3,
+    "accuracy": 0.857,
+    "accept_rate": 0.857,
+    "deny_rate": 0.143,
+    "accepted_as_polarizing": 18,
+    "denied_as_not_polarizing": 3,
+    "by_article": {
+      "'Pathetic Rout,' 'Tragic Mistake' And 'Painful' John Mccain Holds Little Back In Describing Helsinki": {
+        "total": 6,
+        "correct": 4,
+        "accepted": 4,
+        "denied": 2,
+        "accuracy": 0.667,
+        "accept_rate": 0.667
+      },
+      "George Conway Urges Trump To Resign Over Aborted Iran Strike": {
+        "total": 7,
+        "correct": 6,
+        "accepted": 6,
+        "denied": 1,
+        "accuracy": 0.857,
+        "accept_rate": 0.857
+      },
+      "Trump Rips 'Horrible' New York Times, Washington Post, Wonders If People Will 'Demand' He Stay In White House": {
+        "total": 8,
+        "correct": 8,
+        "accepted": 8,
+        "denied": 0,
+        "accuracy": 1.0,
+        "accept_rate": 1.0
+      }
+    },
+    "by_gold_subcategory": {
+      "Bandwagon": {
+        "total": 1,
+        "correct": 1,
+        "accepted": 1,
+        "denied": 0,
+        "accuracy": 1.0,
+        "accept_rate": 1.0
+      },
+      "Demonization": {
+        "total": 2,
+        "correct": 2,
+        "accepted": 2,
+        "denied": 0,
+        "accuracy": 1.0,
+        "accept_rate": 1.0
+      },
+      "Doubt": {
+        "total": 2,
+        "correct": 1,
+        "accepted": 1,
+        "denied": 1,
+        "accuracy": 0.5,
+        "accept_rate": 0.5
+      },
+      "Exaggeration": {
+        "total": 6,
+        "correct": 4,
+        "accepted": 4,
+        "denied": 2,
+        "accuracy": 0.667,
+        "accept_rate": 0.667
+      },
+      "Name-Calling": {
+        "total": 9,
+        "correct": 9,
+        "accepted": 9,
+        "denied": 0,
+        "accuracy": 1.0,
+        "accept_rate": 1.0
+      },
+      "Slogans": {
+        "total": 1,
+        "correct": 1,
+        "accepted": 1,
+        "denied": 0,
+        "accuracy": 1.0,
+        "accept_rate": 1.0
+      }
+    }
+  }
+}

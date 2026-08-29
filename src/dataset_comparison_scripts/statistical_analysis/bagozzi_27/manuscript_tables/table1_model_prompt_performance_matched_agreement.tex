@@ -1,0 +1,50 @@
+\begin{table*}[t]
+\centering
+\caption{Model and prompt performance against the consolidated human consensus reference. Category and subcategory agreement are computed only for matched spans or NPL paragraphs.}
+\label{tab:model\_prompt\_performance}
+\small
+\begin{tabular}{rlllrrrrr}
+\toprule
+Rank & Architecture & Model/config & System prompt/configuration & Matched units & Polarization F1 & Category agreement & Subcategory agreement & Mean \\
+\midrule
+1 & decision point & Decision point binary filter & P5 candidates + P2 adjudication + P4 label refinement & 65 & \textbf{0.628} & 0.892 & 0.846 & \textbf{0.789} \\
+2 & single model & Gemini 3.1 Pro Preview & P3 short spans & 39 & 0.419 & \textbf{1.000} & \textbf{0.949} & \textbf{0.789} \\
+3 & single model & Gemini 3.1 Pro Preview & P2 Bagozzi & 53 & 0.576 & 0.925 & 0.849 & 0.783 \\
+4 & single model & Gemini 3.1 Pro Preview & P5 human aligned & 56 & 0.580 & 0.893 & 0.857 & 0.777 \\
+5 & OG adjudication & GPT-5.1 + Gemini Pro + Claude Sonnet -> Claude Opus & P4 boundary & 56 & 0.516 & 0.929 & 0.875 & 0.773 \\
+6 & single model & Gemini 3.1 Pro Preview & P1 default & 43 & 0.473 & 0.953 & 0.884 & 0.770 \\
+7 & decision point & Decision point candidate union & P5 candidates + P2 adjudication + P4 label refinement & 73 & 0.568 & 0.890 & 0.849 & 0.769 \\
+8 & single model & Claude Sonnet 5 & P5 human aligned & 60 & 0.538 & 0.917 & 0.850 & 0.768 \\
+9 & OG adjudication & GPT-5.1 + Gemini Pro + Claude Sonnet -> Claude Opus & P5 human aligned & 60 & 0.588 & 0.883 & 0.817 & 0.763 \\
+10 & single model & Gemini 3.1 Pro Preview & P4 boundary & 43 & 0.460 & 0.930 & 0.884 & 0.758 \\
+11 & OG adjudication & GPT-5.1 + Gemini Pro + Claude Sonnet -> Claude Opus & P2 Bagozzi & 67 & 0.598 & 0.881 & 0.791 & 0.757 \\
+12 & single model & GPT-5 mini & P3 short spans & 61 & 0.562 & 0.885 & 0.820 & 0.756 \\
+13 & single model & GPT-5 mini & P5 human aligned & 68 & 0.602 & 0.868 & 0.794 & 0.755 \\
+14 & decision point & Decision point full & P5 candidates + P2 adjudication + P4 label refinement & 64 & 0.618 & 0.859 & 0.781 & 0.753 \\
+15 & OG adjudication & GPT-5.1 + Gemini Pro + Claude Sonnet -> Claude Opus & P3 short spans & 53 & 0.515 & 0.868 & 0.811 & 0.731 \\
+16 & single model & Claude Sonnet 5 & P4 boundary & 44 & 0.433 & 0.909 & 0.841 & 0.728 \\
+17 & single model & Claude Haiku 4.5 & P4 boundary & 25 & 0.286 & 0.960 & 0.920 & 0.722 \\
+18 & single model & GPT-5 mini & P1 default & 62 & 0.596 & 0.823 & 0.742 & 0.720 \\
+19 & single model & Claude Haiku 4.5 & P5 human aligned & 28 & 0.320 & 0.929 & 0.893 & 0.714 \\
+20 & single model & Claude Sonnet 5 & P3 short spans & 38 & 0.404 & 0.868 & 0.868 & 0.713 \\
+21 & OG adjudication & GPT-5.1 + Gemini Pro + Claude Sonnet -> Claude Opus & P1 default & 59 & 0.551 & 0.831 & 0.746 & 0.709 \\
+22 & single model & Gemini 3.1 Flash Lite & P5 human aligned & 55 & 0.542 & 0.800 & 0.764 & 0.702 \\
+23 & single model & GPT-5 mini & P4 boundary & 57 & 0.548 & 0.825 & 0.719 & 0.697 \\
+24 & single model & Claude Sonnet 5 & P1 default & 56 & 0.498 & 0.839 & 0.750 & 0.696 \\
+25 & single model & GPT-5 mini & P2 Bagozzi & 67 & 0.563 & 0.836 & 0.687 & 0.695 \\
+26 & single model & Claude Haiku 4.5 & P2 Bagozzi & 20 & 0.229 & 0.950 & 0.900 & 0.693 \\
+27 & single model & Claude Haiku 4.5 & P1 default & 17 & 0.194 & 0.941 & 0.941 & 0.692 \\
+28 & single model & Claude Sonnet 5 & P2 Bagozzi & 63 & 0.510 & 0.841 & 0.714 & 0.688 \\
+29 & single model & GPT-5.1 & P2 Bagozzi & 62 & 0.431 & 0.855 & 0.742 & 0.676 \\
+30 & single model & GPT-5.1 & P5 human aligned & 55 & 0.404 & 0.818 & 0.800 & 0.674 \\
+31 & single model & Claude Haiku 4.5 & P3 short spans & 25 & 0.286 & 0.880 & 0.840 & 0.669 \\
+32 & single model & GPT-5.1 & P4 boundary & 59 & 0.431 & 0.831 & 0.729 & 0.664 \\
+33 & single model & Gemini 3.1 Flash Lite & P1 default & 50 & 0.515 & 0.760 & 0.680 & 0.652 \\
+34 & single model & GPT-5.1 & P1 default & 63 & 0.448 & 0.825 & 0.683 & 0.652 \\
+35 & single model & Gemini 3.1 Flash Lite & P4 boundary & 40 & 0.423 & 0.800 & 0.725 & 0.649 \\
+36 & single model & Gemini 3.1 Flash Lite & P3 short spans & 43 & 0.453 & 0.767 & 0.698 & 0.639 \\
+37 & single model & GPT-5.1 & P3 short spans & 43 & 0.331 & 0.837 & 0.744 & 0.637 \\
+38 & single model & Gemini 3.1 Flash Lite & P2 Bagozzi & 52 & 0.542 & 0.712 & 0.596 & 0.617 \\
+\bottomrule
+\end{tabular}
+\end{table*}

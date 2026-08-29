@@ -1,0 +1,5 @@
+ablation,npl_polarization_precision,npl_polarization_recall,npl_polarization_f1,npl_category_precision,npl_category_recall,npl_category_f1,npl_subcategory_precision,npl_subcategory_recall,npl_subcategory_f1,polarizing_span_precision,polarizing_span_recall,polarizing_span_f1,polarizing_category_agreement_on_matched,polarizing_subcategory_agreement_on_matched
+candidate_union_no_binary_filter,0.427,0.849,0.568,0.38,0.756,0.506,0.363,0.721,0.482,0.417,0.857,0.561,0.867,0.817
+binary_filter_no_label_refinement,0.537,0.756,0.628,0.479,0.674,0.56,0.455,0.64,0.531,0.59,0.7,0.641,0.857,0.796
+full_decision_point_pipeline,0.529,0.744,0.618,0.455,0.64,0.531,0.413,0.581,0.483,0.578,0.686,0.627,0.812,0.708
+current_broad_prompt2_adjudication,0.486,0.779,0.598,0.428,0.686,0.527,0.384,0.616,0.473,0.491,0.743,0.591,0.846,0.731

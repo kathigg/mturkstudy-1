@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "provider": "openai",
+  "model": "gpt-5.1",
+  "run_id": "openai_gpt_5_1",
+  "prompt_file": "src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md",
+  "gold_article_source": "src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json",
+  "final_json": "src/llm_annotation_results/2-20/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_strong_single_models/openai_gpt_5_1/final_annotations.json",
+  "results_csv": "src/llm_annotation_results/2-20/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_strong_single_models/openai_gpt_5_1/raw_results.csv",
+  "article_count": 27
+}

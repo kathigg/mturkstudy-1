@@ -1,0 +1,24 @@
+{
+  "rule": "Relaxed: discard unmatched annotations from either annotator group; retain only cross-group matched polarizing spans.",
+  "matching_source": "src/dataset_comparison_scripts/paragraph_llm_human_comparison.py::spans_match",
+  "gold_text_source": "src/dataset_comparison_scripts/paragraph_turk_annotation_aggregator.py::extract_intersection_with_padding(pad=2)",
+  "label_rule": "Use Bagozzi category/subcategory for retained agreed spans.",
+  "articles_total": 27,
+  "articles_with_at_least_one_agreed_polarizing_span": 25,
+  "agreed_polarizing_spans_total": 70,
+  "top3_articles": [
+    {
+      "article_title": "Trump Rips 'Horrible' New York Times, Washington Post, Wonders If People Will 'Demand' He Stay In White House",
+      "agreed_polarizing_span_count": 8
+    },
+    {
+      "article_title": "George Conway Urges Trump To Resign Over Aborted Iran Strike",
+      "agreed_polarizing_span_count": 7
+    },
+    {
+      "article_title": "'Pathetic Rout,' 'Tragic Mistake' And 'Painful' John Mccain Holds Little Back In Describing Helsinki",
+      "agreed_polarizing_span_count": 6
+    }
+  ],
+  "answer": "Yes, under the relaxed agreed-only rule there is a group of 3 articles. The top-coverage group contains 21 agreed polarizing spans total."
+}
