@@ -1,0 +1,294 @@
++ set -euo pipefail
+++ dirname src/dataset_comparison_scripts/run_full_551_decision_point_pipeline.sh
++ cd src/dataset_comparison_scripts/../..
++ PYTHON=.venv/bin/python
++ INPUT=public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv
++ GOLD=src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json
++ RESULT_ROOT=src/llm_annotation_results/full_551/decision_point_adjudication_v1
++ ANALYSIS_ROOT=src/dataset_comparison_scripts/statistical_analysis/full_551/decision_point_adjudication_v1
++ NPL_ROOT=src/llm_annotation_results/full_551/npl_prompt_comparison
++ NPL_ANALYSIS_ROOT=src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison
++ PROMPT_DIR=src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison
++ COMMON_SINGLE_ARGS=(--input "$INPUT" --gold-json "$GOLD" --temperature 0 --max-retries 4 --request-timeout-s 300 --resume --no-previous-adjudicated)
++ run_unless_json_complete 551 src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/final_annotations.json .venv/bin/python src/dataset_comparison_scripts/run_bagozzi_intersection_single_models.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --gold-json src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json --temperature 0 --max-retries 4 --request-timeout-s 300 --resume --no-previous-adjudicated --prompt-file src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md --output-root src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models --analysis-root src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models
++ local expected_rows=551
++ local checkpoint=src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/final_annotations.json
++ shift 2
++ local current_rows
+++ json_articles src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/final_annotations.json
+++ local path=src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/final_annotations.json
+++ '[' '!' -f src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/final_annotations.json ']'
+++ .venv/bin/python -c 'import json,sys; print(len(json.load(open(sys.argv[1], encoding="utf-8"))))' src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/final_annotations.json
++ current_rows=551
++ '[' 551 -ge 551 ']'
++ echo '[full-551] skipping complete stage: src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/final_annotations.json has 551/551 rows'
+[full-551] skipping complete stage: src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/final_annotations.json has 551/551 rows
++ return 0
++ run_unless_json_complete 551 src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models/openai_gpt_5_mini/final_annotations.json .venv/bin/python src/dataset_comparison_scripts/run_bagozzi_intersection_single_models.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --gold-json src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json --temperature 0 --max-retries 4 --request-timeout-s 300 --resume --no-previous-adjudicated --providers openai --prompt-file src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_4_boundary_examples_precision.md --output-root src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models --analysis-root src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models
++ local expected_rows=551
++ local checkpoint=src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models/openai_gpt_5_mini/final_annotations.json
++ shift 2
++ local current_rows
+++ json_articles src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models/openai_gpt_5_mini/final_annotations.json
+++ local path=src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models/openai_gpt_5_mini/final_annotations.json
+++ '[' '!' -f src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models/openai_gpt_5_mini/final_annotations.json ']'
+++ .venv/bin/python -c 'import json,sys; print(len(json.load(open(sys.argv[1], encoding="utf-8"))))' src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models/openai_gpt_5_mini/final_annotations.json
++ current_rows=551
++ '[' 551 -ge 551 ']'
++ echo '[full-551] skipping complete stage: src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models/openai_gpt_5_mini/final_annotations.json has 551/551 rows'
+[full-551] skipping complete stage: src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models/openai_gpt_5_mini/final_annotations.json has 551/551 rows
++ return 0
++ run_unless_json_complete 551 src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_2_dr_bagozzi_temp0p0_run1/final_annotations.json .venv/bin/python src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --prompt-dir src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison --output-root src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5 --analysis-root src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5 --gold-json src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json --prompt-version prompt_2_dr_bagozzi --temperatures 0 --max-retries 4 --checkpoint-every 1 --wrapper-attempts 5 --resume
++ local expected_rows=551
++ local checkpoint=src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_2_dr_bagozzi_temp0p0_run1/final_annotations.json
++ shift 2
++ local current_rows
+++ json_articles src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_2_dr_bagozzi_temp0p0_run1/final_annotations.json
+++ local path=src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_2_dr_bagozzi_temp0p0_run1/final_annotations.json
+++ '[' '!' -f src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_2_dr_bagozzi_temp0p0_run1/final_annotations.json ']'
+++ .venv/bin/python -c 'import json,sys; print(len(json.load(open(sys.argv[1], encoding="utf-8"))))' src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_2_dr_bagozzi_temp0p0_run1/final_annotations.json
++ current_rows=305
++ '[' 305 -ge 551 ']'
++ echo '[full-551] resuming incomplete stage: src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_2_dr_bagozzi_temp0p0_run1/final_annotations.json has 305/551 rows'
+[full-551] resuming incomplete stage: src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_2_dr_bagozzi_temp0p0_run1/final_annotations.json has 305/551 rows
++ run_with_retries 8 .venv/bin/python src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --prompt-dir src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison --output-root src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5 --analysis-root src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5 --gold-json src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json --prompt-version prompt_2_dr_bagozzi --temperatures 0 --max-retries 4 --checkpoint-every 1 --wrapper-attempts 5 --resume
++ local attempts=8
++ shift
++ local attempt=1
++ true
++ echo '[full-551] attempt 1/8: .venv/bin/python src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --prompt-dir src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison --output-root src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5 --analysis-root src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5 --gold-json src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json --prompt-version prompt_2_dr_bagozzi --temperatures 0 --max-retries 4 --checkpoint-every 1 --wrapper-attempts 5 --resume'
+[full-551] attempt 1/8: .venv/bin/python src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --prompt-dir src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison --output-root src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5 --analysis-root src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5 --gold-json src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json --prompt-version prompt_2_dr_bagozzi --temperatures 0 --max-retries 4 --checkpoint-every 1 --wrapper-attempts 5 --resume
++ .venv/bin/python src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --prompt-dir src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison --output-root src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5 --analysis-root src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5 --gold-json src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json --prompt-version prompt_2_dr_bagozzi --temperatures 0 --max-retries 4 --checkpoint-every 1 --wrapper-attempts 5 --resume
+{
+  "definition": "Consolidated Bagozzi/final in-house overlap gold. Includes only polarizing spans where Dr. Bagozzi and final in-house adjudicated annotations overlap. Labels use the agreed CSV category/subcategory, which is Bagozzi-priority when labels differ.",
+  "article_count": 27,
+  "articles_with_annotations": 25,
+  "annotation_count": 70,
+  "category_counts": {
+    "Persuasive Propaganda": 37,
+    "Inflammatory Language": 33
+  },
+  "subcategory_counts": {
+    "exaggeration": 18,
+    "name-calling": 26,
+    "demonization": 5,
+    "slogans": 6,
+    "doubt": 10,
+    "scapegoating": 2,
+    "casual oversimplification": 2,
+    "bandwagon": 1
+  },
+  "unmatched_overlap_titles": [],
+  "inputs": {
+    "articles_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/2-20/2-20_selected_articles.csv",
+    "agreed_spans_csv": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/inhouse_bagozzi_agreed_polarizing_spans.csv"
+  },
+  "output": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
+  "summary": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_summary.json"
+}
+  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+Provider call failed on attempt 1/5: ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h19m42.416846272s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11982s'}]}}; retrying in 1.1s
+Provider call failed on attempt 2/5: ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h19m41.146502927s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11981s'}]}}; retrying in 2.1s
+Provider call failed on attempt 3/5: ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h19m38.926142456s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11978s'}]}}; retrying in 4.0s
+Provider call failed on attempt 4/5: ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h19m34.696542564s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11974s'}]}}; retrying in 8.1s
+ 55%|█████▌    | 305/551 [00:19<00:15, 16.04it/s]
+Traceback (most recent call last):
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1634, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1504, in main
+    obj_b, raw_b = annotate_with_gemini(
+                   ~~~~~~~~~~~~~~~~~~~~^
+        gemini_client,
+        ^^^^^^^^^^^^^^
+    ...<8 lines>...
+        max_retries=args.max_retries,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 926, in annotate_with_gemini
+    response = _retry(_call, max_retries=max_retries)
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 767, in _retry
+    return call()
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 924, in _call
+    return client.models.generate_content(model=model, contents=prompt)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/models.py", line 6550, in generate_content
+    response = self._generate_content(
+        model=model, contents=contents, config=parsed_config_to_call
+    )
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/models.py", line 4978, in _generate_content
+    response = self._api_client.request(
+        'post', path, request_dict, http_options
+    )
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1747, in request
+    response = self._request(http_request, http_options, stream=False)
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1534, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 371, in iter
+    result = action(retry_state)
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1511, in _request_once
+    errors.APIError.raise_for_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/errors.py", line 173, in raise_for_response
+    cls.raise_error(response.status_code, response_json, response)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/errors.py", line 202, in raise_error
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h19m26.349085068s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11966s'}]}}
+[prompt_2_dr_bagozzi_temp0p0_run1] wrapper failed with exit code 1; sleeping 10s and resuming from checkpoint.
+  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+Provider call failed on attempt 1/5: ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h19m10.944604944s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11950s'}]}}; retrying in 1.1s
+Provider call failed on attempt 2/5: ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h19m9.420432478s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11949s'}]}}; retrying in 2.1s
+Provider call failed on attempt 3/5: ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h19m7.173477682s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11947s'}]}}; retrying in 4.0s
+Provider call failed on attempt 4/5: ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h19m2.952301944s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11942s'}]}}; retrying in 8.0s
+ 55%|█████▌    | 305/551 [00:19<00:15, 15.89it/s]
+Traceback (most recent call last):
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1634, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1504, in main
+    obj_b, raw_b = annotate_with_gemini(
+                   ~~~~~~~~~~~~~~~~~~~~^
+        gemini_client,
+        ^^^^^^^^^^^^^^
+    ...<8 lines>...
+        max_retries=args.max_retries,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 926, in annotate_with_gemini
+    response = _retry(_call, max_retries=max_retries)
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 767, in _retry
+    return call()
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 924, in _call
+    return client.models.generate_content(model=model, contents=prompt)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/models.py", line 6550, in generate_content
+    response = self._generate_content(
+        model=model, contents=contents, config=parsed_config_to_call
+    )
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/models.py", line 4978, in _generate_content
+    response = self._api_client.request(
+        'post', path, request_dict, http_options
+    )
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1747, in request
+    response = self._request(http_request, http_options, stream=False)
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1534, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 371, in iter
+    result = action(retry_state)
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1511, in _request_once
+    errors.APIError.raise_for_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/errors.py", line 173, in raise_for_response
+    cls.raise_error(response.status_code, response_json, response)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/errors.py", line 202, in raise_error
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h18m54.672787624s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11934s'}]}}
+[prompt_2_dr_bagozzi_temp0p0_run1] wrapper failed with exit code 1; sleeping 20s and resuming from checkpoint.
+  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+Provider call failed on attempt 1/5: ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h18m28.491622697s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11908s'}]}}; retrying in 1.1s
+Provider call failed on attempt 2/5: ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h18m27.27498506s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11907s'}]}}; retrying in 2.2s
+Provider call failed on attempt 3/5: ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h18m24.856521115s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11904s'}]}}; retrying in 4.2s
+Provider call failed on attempt 4/5: ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h18m20.455341902s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11900s'}]}}; retrying in 8.0s
+ 55%|█████▌    | 305/551 [00:19<00:15, 15.60it/s]
+Traceback (most recent call last):
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1634, in <module>
+    "topic": topic,
+     ^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1504, in main
+        if cfg.annotator_c_provider == "anthropic" or cfg.adjudicator_provider == "anthropic":
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+                break
+                ^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 926, in annotate_with_gemini
+    obj = normalize_annotation_enums(obj)
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 767, in _retry
+    r"retryDelay['\"]?\s*:\s*['\"](?P<seconds>\d+(?:\.\d+)?)s['\"]",
+               ^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 924, in _call
+    obj.setdefault("source", source)
+               ~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/models.py", line 6550, in generate_content
+    response = self._generate_content(
+        model=model, contents=contents, config=parsed_config_to_call
+    )
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/models.py", line 4978, in _generate_content
+    response = self._api_client.request(
+        'post', path, request_dict, http_options
+    )
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1747, in request
+    response = self._request(http_request, http_options, stream=False)
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1534, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 371, in iter
+    result = action(retry_state)
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1511, in _request_once
+    errors.APIError.raise_for_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/errors.py", line 173, in raise_for_response
+    cls.raise_error(response.status_code, response_json, response)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/google/genai/errors.py", line 202, in raise_error
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h18m12.242489105s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11892s'}]}}
+[prompt_2_dr_bagozzi_temp0p0_run1] wrapper failed with exit code 1; sleeping 30s and resuming from checkpoint.
+  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+Provider requested quota/rate-limit retry delay after ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h17m36.720054765s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11856s'}]}}; sleeping 11871.0s before retrying same call.
+[prompt_2_dr_bagozzi_temp0p0_run1] wrapper failed with exit code -15; sleeping 40s and resuming from checkpoint.
+/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/resource_tracker.py:324: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-s8e3uif0'}
+  warnings.warn(
+  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+Provider requested quota/rate-limit retry delay after ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 3h16m43.365013174s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11803s'}]}}; sleeping 11818.0s before retrying same call.

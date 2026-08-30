@@ -30,6 +30,29 @@ run_with_retries() {
   done
 }
 
+json_articles() {
+  local path="$1"
+  if [ ! -f "$path" ]; then
+    echo 0
+    return 0
+  fi
+  "$PYTHON" -c 'import json,sys; print(len(json.load(open(sys.argv[1], encoding="utf-8"))))' "$path"
+}
+
+run_unless_json_complete() {
+  local expected_rows="$1"
+  local checkpoint="$2"
+  shift 2
+  local current_rows
+  current_rows="$(json_articles "$checkpoint")"
+  if [ "$current_rows" -ge "$expected_rows" ]; then
+    echo "[full-551] skipping complete stage: $checkpoint has $current_rows/$expected_rows rows"
+    return 0
+  fi
+  echo "[full-551] resuming incomplete stage: $checkpoint has $current_rows/$expected_rows rows"
+  run_with_retries 8 "$@"
+}
+
 COMMON_SINGLE_ARGS=(
   --input "$INPUT"
   --gold-json "$GOLD"
@@ -40,20 +63,23 @@ COMMON_SINGLE_ARGS=(
   --no-previous-adjudicated
 )
 
-run_with_retries 8 "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_intersection_single_models.py \
+run_unless_json_complete 551 "$NPL_ROOT/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/final_annotations.json" \
+  "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_intersection_single_models.py \
   "${COMMON_SINGLE_ARGS[@]}" \
   --prompt-file "$PROMPT_DIR/prompt_5_human_aligned_precision_recall.md" \
   --output-root "$NPL_ROOT/prompt_5_human_aligned_precision_recall_single_models" \
   --analysis-root "$NPL_ANALYSIS_ROOT/prompt_5_human_aligned_precision_recall_single_models"
 
-run_with_retries 8 "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_intersection_single_models.py \
+run_unless_json_complete 551 "$NPL_ROOT/prompt_4_boundary_examples_precision_single_models/openai_gpt_5_mini/final_annotations.json" \
+  "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_intersection_single_models.py \
   "${COMMON_SINGLE_ARGS[@]}" \
   --providers openai \
   --prompt-file "$PROMPT_DIR/prompt_4_boundary_examples_precision.md" \
   --output-root "$NPL_ROOT/prompt_4_boundary_examples_precision_single_models" \
   --analysis-root "$NPL_ANALYSIS_ROOT/prompt_4_boundary_examples_precision_single_models"
 
-run_with_retries 8 "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py \
+run_unless_json_complete 551 "$NPL_ROOT/adjudication_prompt_1_to_5/prompt_2_dr_bagozzi_temp0p0_run1/final_annotations.json" \
+  "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py \
   --input "$INPUT" \
   --prompt-dir "$PROMPT_DIR" \
   --output-root "$NPL_ROOT/adjudication_prompt_1_to_5" \
@@ -66,7 +92,8 @@ run_with_retries 8 "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_inhouse_
   --wrapper-attempts 5 \
   --resume
 
-run_with_retries 8 "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py \
+run_unless_json_complete 551 "$NPL_ROOT/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.json" \
+  "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py \
   --input "$INPUT" \
   --prompt-dir "$PROMPT_DIR" \
   --output-root "$NPL_ROOT/adjudication_prompt_1_to_5" \

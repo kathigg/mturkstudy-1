@@ -2390,5 +2390,3778 @@
     "source": "Reuters",
     "rating": "center",
     "annotations": []
+  },
+  {
+    "title": "Aptos camp counselor sentenced to 30 years in prison for producing child porn",
+    "topic": "crime",
+    "source": "San Francisco Chronicle",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Bill Gates says letting Android win mobile was his 'biggest mistake' at Microsoft",
+    "topic": "politics",
+    "source": "CNBC",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Prosecutors: Illinois man carried out plan to kill Chinese grad student",
+    "topic": "crime",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "82 migrants missing at sea day after deadly libya airstrike",
+    "topic": "crime",
+    "source": "Los Angeles Times",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Panic at DC pride parade sends people running",
+    "topic": "crime",
+    "source": "The Washington Post",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "'Because all of our neighbors matter': Respond Now marks 50 years, helps for 14,000 families",
+    "topic": "health",
+    "source": "Chicago Tribune",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Border Patrol searching for missing 2-year-old girl in Rio Grande",
+    "topic": "crime",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "scapegoating",
+        "text": "blaming Democrats for the conditions",
+        "openFeedback": "The president is blaming a specific political group for the broader humanitarian situation.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Cop killer and two-time death row inmate dies in his cell at San Quentin",
+    "topic": "crime",
+    "source": "Los Angeles Times",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Amtrak restores service after coal train derails in Great Dismal Swamp; environmental concerns remain",
+    "topic": "environmental issues",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets",
+    "topic": "crime",
+    "source": "CBS News",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "racist police who posted on Facebook",
+        "openFeedback": "The use of the label 'racist police' serves as an emotionally charged descriptor for a group of individuals.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "Get Them Off The Streets",
+        "openFeedback": "This is a short, mobilizing phrase used by protesters to demand action.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "the crime wave they say it's already experiencing",
+        "openFeedback": "The term 'crime wave' is an exaggerated descriptor for rising crime statistics used here to emphasize a threat.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "His community needed a new road, so this farmer built one by himself",
+    "topic": "environmental issues",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Gavin Newsom agrees to sign California bill restricting vaccine exemptions",
+    "topic": "politics",
+    "source": "The Sacramento Bee",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Two mysterious objects were seen floating above Kansas City. They (probably) weren't aliens",
+    "topic": "science",
+    "source": "CNN",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Lawyer: Flynn will keep cooperating after co-conspirator revelations",
+    "topic": "legal arguments",
+    "source": "The Hill",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "another little truth bomb",
+        "openFeedback": "The term 'truth bomb' is an exaggeration used to frame a legal filing as a sensational or explosive revelation.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Paper or plastic? It's complicated ...",
+    "topic": "environmental issues",
+    "source": "New York Times",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "New agreement means more sheriff's deputies for Chester County schools",
+    "topic": "crime",
+    "source": "The Herald",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "the baby cut from the womb of pregnant chicago teen has died",
+    "topic": "politics",
+    "source": "AP",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Space Experts Visit JFK Library To Celebrate Moon Landing, Explore Future Missions",
+    "topic": "science",
+    "source": "CBS News",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "connecticut-based women's rights and gender equality groups voice support for transgender high school athletes after title ix complaint filed",
+    "topic": "politics",
+    "source": "REUTERS",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "dogs in phoenix looking for their fur-ever homes",
+    "topic": "science",
+    "source": "Business Insider",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "westchester mental health program receives gannett grant",
+    "topic": "environmental issues",
+    "source": "San Francisco Chronicle",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Mayor Lori Lightfoot appoints administrator to lower city's expenses from police lawsuits, other expenses",
+    "topic": "legal arguments",
+    "source": "Chicago Tribune",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Memorial service planned for Sacramento police officer",
+    "topic": "crime",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "US women are working longer hours as their sleep and social lives suffer",
+    "topic": "health",
+    "source": "CNBC",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Team USA star Ali Krieger rips Trump: 'I refuse to respect a man that warrants no respect'",
+    "topic": "politics",
+    "source": "CNN",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "an abuser, a bully",
+        "openFeedback": "The subject uses direct name-calling labels to describe a public figure.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "women who you cannot control or grope",
+        "openFeedback": "The subject employs highly loaded, accusatory language as a personal attack.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "kentucky concealed carry 2019: what to know about new law",
+    "topic": "legal arguments",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "don't whine if you shoot yourself in the crotch",
+        "openFeedback": "The use of the word 'whine' serves as a dismissive and loaded term directed at those who might raise safety concerns regarding the law.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "US Soccer star Carli Lloyd was told she wasn't good enough at 21 and was going to quit the sport",
+    "topic": "health",
+    "source": "CNBC",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "elmwood park nj principal: councilman not welcome at graduation",
+    "topic": "environmental issues",
+    "source": "SFGATE",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "The Trump administration's new Europe threat ended a moment of global trade calm after just 2 days",
+    "topic": "politics",
+    "source": "Markets Insider",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "US Open 2019: How to watch Tiger Woods golf at Pebble Beach live without cable",
+    "topic": "sports",
+    "source": "CNET",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "rabbits in los angeles looking for their fur-ever homes",
+    "topic": "politics",
+    "source": "CNN",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Kentucky students lose appeal in chickenpox vaccination case",
+    "topic": "health",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "How visions of the Moon inspired centuries of storytellers",
+    "topic": "science",
+    "source": "BBC News",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Ball in Europe's court on nuclear deal's future: Iranian state TV",
+    "topic": "politics",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "Are Paris, London and Berlin going to again waste a chance under the influence of (U.S. President Donald) Trump",
+        "openFeedback": "The text casts doubt on the independence and reliability of European leaders by characterizing them as being under the influence of a foreign leader.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "correction: tax incentives story",
+    "topic": "politics",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "political witch hunt",
+        "openFeedback": "The term 'political witch hunt' is a loaded label used to discredit the investigation's legitimacy.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'",
+    "topic": "science",
+    "source": "Business Insider",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "drape black robes over these bigoted views",
+        "openFeedback": "The term 'bigoted views' is a loaded negative label used to characterize the judge's beliefs.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "young, right-wing ideologues",
+        "openFeedback": "Labeling nominees as 'ideologues' functions as a loaded negative label to discredit them.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "US maple syrup production up despite shorter season",
+    "topic": "environmental issues",
+    "source": "AP",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "'Sounded Like An Explosion': Dozens Of Bricks Crush Vehicle After Home Partially Collapses In Graduate Hospital, Officials Say",
+    "topic": "environmental issues",
+    "source": "CBS News",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "See how this YouTube star turned her Tesla Model 3 into a pickup truck",
+    "topic": "science",
+    "source": "CNBC",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "California bill limiting vaccine exemptions watered down after Gavin Newsom objects",
+    "topic": "health",
+    "source": "San Francisco Chronicle",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "remington storefront challenge brings a fresh look to a neglected corner",
+    "topic": "science",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Google Maps can now warn you about how crowded buses and trains are",
+    "topic": "environmental issues",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Orphaned Sea Otters Get A New Home At The Shedd Aquarium",
+    "topic": "environmental issues",
+    "source": "CBS",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "FBI got tip about Dallas courthouse shooter in 2016",
+    "topic": "crime",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Yes, there's a total solar eclipse coming next week ... in South America",
+    "topic": "science",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "NY lawmakers eye decriminalization after legal pot stalls",
+    "topic": "legal arguments",
+    "source": "AP",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "U.S. Supreme Court spurns Virginia Republicans in racial gerrymandering case",
+    "topic": "legal arguments",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "judge won't delay sentencing for brendt christensen in murder of chinese scholar yingying zhang",
+    "topic": "politics",
+    "source": "The Hill",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "swannanoa's ex-beacon mill site sold to symmetry financial group",
+    "topic": "politics",
+    "source": "Business Insider",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Paul Manafort confessed to mortgage fraud charges, Manhattan prosecutors say",
+    "topic": "legal arguments",
+    "source": "New York Daily News",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "disgraced former Trump campaign chairman",
+        "openFeedback": "Labeling Manafort as 'disgraced' is a loaded, emotionally charged descriptor used to shape audience perception.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "partisan \"witch hunt\" and a \"hoax.\"",
+        "openFeedback": "These terms are used to directly undermine the legitimacy and honesty of the investigation.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Echo Dot, Google Home Mini and more: Best smart speakers of 2019",
+    "topic": "science",
+    "source": "CNET",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "An Uber driver and her community are working to together to help an 89-year-old veteran in need",
+    "topic": "health",
+    "source": "CNN",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Mother arrested after allegedly leaving baby in hot, locked car to enter store",
+    "topic": "crime",
+    "source": "ABC News",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "CNN's Anderson Cooper remembers mom Gloria Vanderbilt as visitor from 'distant star'",
+    "topic": "health",
+    "source": "CNN",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "ron desantis signs amendment 4 bill, limiting felon voting",
+    "topic": "environmental issues",
+    "source": "The Sacramento Bee",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "one of the most racist and enduring policies of Florida's Jim Crow era",
+        "openFeedback": "The text uses a highly loaded, emotionally charged characterization of the law to frame the discourse.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "U.S. 'gag rule' linked to 40% jump in abortions in parts of Africa",
+    "topic": "health",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "U.S. court urged to throw out 'Pharma Bro' Martin Shkreli's conviction",
+    "topic": "legal arguments",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Judge stops government lawyers quitting census question case",
+    "topic": "legal arguments",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "A Florida city was forced to use pen and paper and pay a $500,000 ransom after hackers took control of its computers",
+    "topic": "crime",
+    "source": "Business Insider",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "San Bruno Police Step Up Crackdown on Illegal Fireworks",
+    "topic": "crime",
+    "source": "KPIX",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "New video shows Jussie Smollett with rope around his neck moments after alleged attack",
+    "topic": "legal arguments",
+    "source": "NBC News",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "took \"advantage of the pain and anger of racism to promote his career.\"",
+        "openFeedback": "The attribution to the Superintendent casts the subject as manipulative and cynical.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Man arrested in connection with death of soccer player Sala",
+    "topic": "crime",
+    "source": "AP",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "25 Dallas Police Officers Under Investigation for Allegedly Posting Racist, Threatening Content on Facebook",
+    "topic": "crime",
+    "source": "Newsweek",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Samsung's Galaxy Note 10 reportedly launching on August 7th",
+    "topic": "science",
+    "source": "CNET",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "judge temporarily throws out wayne state lawsuit",
+    "topic": "legal arguments",
+    "source": "The Boston Globe",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "sore losers",
+        "openFeedback": "The term 'sore losers' is a loaded label used to discredit the plaintiffs.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "engaged in more bullying",
+        "openFeedback": "The term 'bullying' is used here as a loaded characterization to describe the other group's behavior.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Sacramento County's safety net is failing Medi-Cal and uninsured patients, report says",
+    "topic": "health",
+    "source": "The Sacramento Bee",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Family of missing Utah college student pleads for help finding her",
+    "topic": "crime",
+    "source": "ABC News",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Paw Patrol Race to the Rescue live in Louisville: tickets, dates",
+    "topic": "health",
+    "source": "Louisville Courier Journal",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Boston train derails near Fenway Park before Red Sox game, sending 10 to hospital",
+    "topic": "crime",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Hubble Space Telescope spots 'soccer balls' in space",
+    "topic": "science",
+    "source": "CNN",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "george conway urges trump to resign over aborted iran strike",
+    "topic": "science",
+    "source": "The Boston Globe",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "you're even more of an idiot than people think you are",
+        "openFeedback": "This is a direct personal insult directed at the subject.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "To say this is amateur hour would defame amateurs.",
+        "openFeedback": "This uses hyperbole to criticize the administration's competence.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "erratic, unstable, incompetent, ignorant, intellectually lazy, narcissistic, and sociopathic man",
+        "openFeedback": "These are highly loaded, inflammatory character labels.",
+        "paragraphIndex": 3
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "whose judgment no serious, intelligent person trusts",
+        "openFeedback": "This phrase explicitly casts doubt on the subject's legitimacy and trustworthiness by appealing to 'serious, intelligent' people.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "260 guests are taken ill with 'food poisoning' at 90th birthday party for Imelda Marcos after 2,500 people gathered to honour widow of former Philippines dictator",
+    "topic": "health",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "notorious ex-first lady",
+        "openFeedback": "The term 'notorious' serves as a loaded label to color the reader's perception of the subject.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "her husband's brutal dictatorship",
+        "openFeedback": "The word 'brutal' is used here to frame the regime as fundamentally destructive and violent.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "along with his cronies",
+        "openFeedback": "The term 'cronies' is a loaded, derogatory label used to discredit the individuals associated with the subject.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "usc to pay $50 million and apologize to uc san diego for poaching its alzheimer's research program",
+    "topic": "politics",
+    "source": "The Washington Post",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "USC sabotaged our program",
+        "openFeedback": "The word 'sabotaged' is used as a loaded, emotionally charged descriptor to frame the actions of another institution.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Construction on the McKinley sewage and water tank begins. Here's what to expect",
+    "topic": "environmental issues",
+    "source": "The Sacramento Bee",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Investigators recover helicopter that crashed in Bahamas",
+    "topic": "crime",
+    "source": "AP",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "More than 20 reportedly killed in Papua New Guinea violence",
+    "topic": "crime",
+    "source": "AP",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Drizzle and fog: Los Angeles wakes up to a gloomy start to the summer",
+    "topic": "environmental issues",
+    "source": "Los Angeles Times",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Kidnappers Sent Photo Of Camden City Council President's Grandson Tied Up, Demanding Ransom Prior To Murder, Father Says",
+    "topic": "crime",
+    "source": "CBS",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "supreme court faults trump bid to add census citizenship question",
+    "topic": "science",
+    "source": "AP",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "scapegoating",
+        "text": "manufacture a deliberate undercount of areas with high immigrant and Latino populations",
+        "openFeedback": "The text frames the administration's actions as an intentional, targeted effort to harm specific demographic groups.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "concealed his true motives for adding the question",
+        "openFeedback": "This frames the official as acting in a corrupt or duplicitous manner to deceive the public.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "intended to discriminate against racial minorities",
+        "openFeedback": "The text attributes malicious, discriminatory intent to the administration's policy decisions.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "conspiracy theory",
+        "openFeedback": "This term is used to undermine the legitimacy and credibility of the evidence presented by the challengers.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "trump vows to cure cancer and eradicate aids",
+    "topic": "legal arguments",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Texas executes white supremacist convicted in gruesome 1998 hate crime",
+    "topic": "crime",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Philly officials appeal court ruling, seek to stop VisionQuest from moving migrant children into Logan shelter",
+    "topic": "legal arguments",
+    "source": "Philly.com",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "climate crisis: alaska is melting and it's likely to accelerate global heating",
+    "topic": "environmental issues",
+    "source": "AP",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Trump urges appeals court to block subpoena for his accounting records",
+    "topic": "legal arguments",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "A young girl was afraid of IVs. So she invented a teddy bear to disguise them",
+    "topic": "health",
+    "source": "CNN",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house",
+    "topic": "legal arguments",
+    "source": "The Washington Post",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Failing New York Times or the Amazon (lobbyist) Washington Post",
+        "openFeedback": "Uses loaded, derogatory labels to discredit specific news organizations.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "America has been made GREAT again",
+        "openFeedback": "Use of a well-known political slogan to build consensus.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "Enemy of the People",
+        "openFeedback": "Labels the press as an existential threat to the nation.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "enemy of the people",
+        "openFeedback": "Portraying the press as a dangerous entity.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "KEEP AMERICA GREAT",
+        "openFeedback": "Use of a political slogan.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "horrible papers",
+        "openFeedback": "Use of a pejorative adjective to discredit news organizations.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "so desperate for a story, any story, even if bad for our Country",
+        "openFeedback": "Casting doubt on the motivation and loyalty of the press.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "virtual act of treason",
+        "openFeedback": "Characterizing journalism as a dangerous and corrupt act of betrayal.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "Fake Polling, sometimes referred to as Suppression Polls (they suppress the numbers)",
+        "openFeedback": "Attempts to undermine the credibility and methodology of political polling.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "fake news",
+        "openFeedback": "Uses a common loaded label to discredit media organizations.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Here's every single new emoji we're getting in 2019",
+    "topic": "science",
+    "source": "Business Insider",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Memphis man killed by marshals had history of arrests on minor charges",
+    "topic": "crime",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "google assistant is better than alexa or siri at helping patients with their drugs, study finds",
+    "topic": "health",
+    "source": "CNBC",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings",
+    "topic": "legal arguments",
+    "source": "Newsweek",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "as with his many deceptions regarding his security clearance",
+        "openFeedback": "The term 'deceptions' serves as a loaded label attacking the target's honesty and character.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "#RevokeKushner",
+        "openFeedback": "The use of a hashtag functions as a mobilizing slogan for the audience.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "trump makes history in north korea: what we know now",
+    "topic": "environmental issues",
+    "source": "Thomson Reuters Foundation",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "rogue state",
+        "openFeedback": "Used as a loaded negative label to describe the nation.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "tutankhamun sculpture's london auction sparks egyptian outcry",
+    "topic": "health",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "George Tyndall had a gun when he was arrested for alleged sexual assault, police chief says",
+    "topic": "crime",
+    "source": "CNN",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "House Democrats to hold hearing next week on treatment of migrant children",
+    "topic": "politics",
+    "source": "The Hill",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "The Trump Administration's actions at the southern border are grotesque and dehumanizing",
+        "openFeedback": "The quote uses strong loaded language to frame government actions as fundamentally inhumane.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "open contempt for the rule of law and for basic human decency",
+        "openFeedback": "The quote assigns a negative moral characterization to the administration.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "wider center, digital signs: improvements abound in new sound transit light rail cars",
+    "topic": "environmental issues",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "block roads and create mess with construction",
+        "openFeedback": "This phrase frames the organization's activities as a destructive and negative societal burden.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "ap fact check: trump promises not just the moon, but mars",
+    "topic": "science",
+    "source": "The Boston Globe",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Georgia carries out 1,500th U.S. execution since penalty was reinstated",
+    "topic": "crime",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "editorial: six months after california's landmark police transparency law, many agencies still won't release their records",
+    "topic": "crime",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "deliberately sandbagging the release of these records",
+        "openFeedback": "The term 'sandbagging' is a loaded, accusatory label used to characterize the actions of the police department.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "This is lawless conduct",
+        "openFeedback": "Labeling the actions of government agencies as 'lawless' casts them as a corrupt and dangerous threat to society.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "Becerra's obvious bias toward the police groups",
+        "openFeedback": "This statement directly undermines the legitimacy and impartiality of a public official by asserting an 'obvious' bias.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Massive 30-acre project with rowhomes, apartments, planned for waterfront",
+    "topic": "environmental issues",
+    "source": "PlanPhilly",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "report: pg&e ignored repairs on aging power lines",
+    "topic": "crime",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Trendy Chicago Restaurant Is Praised And Put Down After Trump's Son Is Spat Upon",
+    "topic": "crime",
+    "source": "CBS",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "purely disgusting act by somebody who clearly has emotional problems",
+        "openFeedback": "The subject uses loaded, insulting language to characterize the actor.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Owner of Bobo the slain tiger dies at 77",
+    "topic": "environmental issues",
+    "source": "Sun Sentinel",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "Save a tiger, shoot a wildlife officer",
+        "openFeedback": "This is a call for violence directed at a group of public officials, qualifying as demonization.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "'Beyond reprehensible': Fertility doctor who used his own sperm to impregnate 11 women loses license",
+    "topic": "health",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "beyond reprehensible",
+        "openFeedback": "This is a highly charged, loaded evaluative label used to characterize the actions of the doctor.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "tanker collision sends thousands of gallons of gas product leaking into bay",
+    "topic": "legal arguments",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "these everyday items can be dirtier than a toilet seat",
+    "topic": "crime",
+    "source": "ProPublica",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Melinda Gates says this book has had the biggest impact on her life and she reads it every day",
+    "topic": "health",
+    "source": "CNBC",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "William Gray III signs go up at 30th Street Station",
+    "topic": "politics",
+    "source": "Philadelphia Tribune",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "venezuelans rush to peru before new requirements take effect",
+    "topic": "politics",
+    "source": "ProPublica",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Seven climbers and their guide missing in Indian Himalayas",
+    "topic": "crime",
+    "source": "CNN",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Judge releases court details that show speed, scope of Mueller investigation following CNN request",
+    "topic": "legal arguments",
+    "source": "CNN",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "president donald trump suggests busing is just a way \"to get people to schools\"",
+    "topic": "legal arguments",
+    "source": "The Washington Post",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Magician inspired by Houdini drowned after being lowered into river in chains",
+    "topic": "crime",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "What Lost Treasure Would You Most Like to Find?",
+    "topic": "science",
+    "source": "The Atlantic",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Parolee gets 55 years to life behind bars for shootout with gang detective",
+    "topic": "crime",
+    "source": "Los Angeles Times",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "first look: here are university park's 3 newest businesses to open",
+    "topic": "legal arguments",
+    "source": "Center for Public Integrity",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Nipsey Hussle killing: LAPD to investigate why a desk officer turned away a witness",
+    "topic": "legal arguments",
+    "source": "Los Angeles Times",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "Help pouring in to Trona, Calif., after quakes, but officials say recovery will take time",
+    "topic": "environmental issues",
+    "source": "Los Angeles Times",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "career criminal charged in shooting death of 2-year-old st. paul boy",
+    "topic": "legal arguments",
+    "source": "San Francisco Chronicle",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "horses in weld county test positive for vesicular stomatitis",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Duncan Hunter's lawyers seek to block evidence of extramarital affairs in corruption case",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "'Tan Mom' Patricia Krentcil Says She Was 'Proclaimed Dead' During Recent Health Scare",
+    "topic": "health",
+    "source": "New York Post",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Apollo 11 flag, flight plan page and roll of film used on the Moon are up for auction",
+    "topic": "science",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "'Mobster' is shot to death while waiting for coffee at a McDonald's drive thru, three months after his son was wounded in a failed hit",
+    "topic": "crime",
+    "source": "New York Post",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal",
+    "topic": "environmental issues",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "a radical, top-down, socialist makeover of the entire U.S. economy",
+        "openFeedback": "Uses a loaded ideological label to discredit the proposal.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "phony national emergencies",
+        "openFeedback": "Uses a loaded negative label to discredit the nature of the declared emergencies.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "deeply unpopular agenda",
+        "openFeedback": "Uses loaded, subjectively negative framing to characterize the political agenda.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Biologist on uptick in alligator attacks, incident involving corpse: 'The populations have exploded'",
+    "topic": "environmental issues",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Apollo 11 flight plan and NASA memo discussing Neil Armstrong's first words on the Moon up for auction",
+    "topic": "science",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Chris Wallace challenges Giuliani over Trump's 'no obstruction' claim: 'Mayor, that's not true'",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "calling the report infected and \"warped.\"",
+        "openFeedback": "The term 'infected' and 'warped' are used to characterize the report as fundamentally corrupt or damaged, qualifying as demonization.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Oregon deputies pull out 57 electric scooters, bikes out of Portland river",
+    "topic": "environmental issues",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Trump promises not to use Kim Jong Un's family members as intel assets",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Kamala Harris tells Colbert that Senate panel will push on with Trump probe",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "TRUMP DEMANDS END TO 'PHONY INVESTIGATIONS' IN FIERY ROSE GARDEN STATEMENT",
+        "openFeedback": "The use of the phrase 'phony investigations' serves as a mobilizing slogan characterizing the nature of the probes.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "Get these phony investigations over with.",
+        "openFeedback": "The president uses the slogan 'phony investigations' to delegitimize the ongoing probes.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "North Carolina man finds megalodon shark tooth buried on beach: 'I'll probably never find another one'",
+    "topic": "science",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Feds: 81-year-old bank robbery suspect wanted to return to prison because of small Social Security payments",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Pelosi calls for Acosta to step down over Epstein plea deal, hits Trump",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "sweetheart deal",
+        "openFeedback": "The term 'sweetheart deal' is a loaded, informal label used to disparage the legal agreement.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Colorado Christian cakeshop sued a third time for discrimination",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "doubt",
+        "text": "We don't believe they've been honest with the public.",
+        "openFeedback": "The attorney's quote directly attacks the credibility and honesty of the opposing party.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "yet another desperate attempt to harass cake artist Jack Phillips",
+        "openFeedback": "The use of the word 'desperate' is an exaggerated, emotionally charged framing of the legal action.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "latest attack by Scardina",
+        "openFeedback": "Characterizing a civil lawsuit filing as an 'attack' is loaded, emotionally charged language.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Police swarm home of missing Connecticut mother-of-five's estranged husband in late-night search as he remains in custody on suspicion of tampering with evidence",
+    "topic": "crime",
+    "source": "DailyMail.com",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Navy SEAL Edward Gallagher found not guilty on murder and attempted murder charges",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "being terrorized by the government that my husband fought for for 20 years",
+        "openFeedback": "Portrays the government as an active threat or persecutor of the individual.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "A missing YouTuber's backpack and phone were found on the Manhattan Bridge after he posted a disturbing video talking about suicide",
+    "topic": "crime",
+    "source": "The New York Post",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "McCunnell to force vote next week on Trump border funding request",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Whatever he's for they are reflectively against",
+        "openFeedback": "Loaded framing to discredit the group's motives.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Trump derangement syndrome",
+        "openFeedback": "Used as a loaded label to discredit the opposition.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Washington man assaults woman days after being released from jail for raping her last year: prosecutors",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "White House feigns surprise at Pelosi 'prison' comments",
+    "topic": "politics",
+    "source": "FOX News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "The Democrats are radical and out of touch.",
+        "openFeedback": "Labels the opposing party as 'radical and out of touch' to discredit them without evidence.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "casual oversimplification",
+        "text": "The Democrats have continuously refused to work with our administration in solving the major problems we see in our country.",
+        "openFeedback": "Reduces complex legislative gridlock to a simple refusal by the opposition party.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "focused and obsessed with investigation after investigation",
+        "openFeedback": "Characterizes the political opposition as acting out of obsession rather than policy or oversight duties.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "liberal Democrats",
+        "openFeedback": "Uses 'liberal' as a loaded label in this context to dismiss the opposition.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Thousands of ex-prisoners to reunite with their families this month as part of First Step Act",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Trump says he \"made\" Fed Chair Powell and would trade him for Europe's Draghi",
+    "topic": "politics",
+    "source": "Fox Business",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "sucking [money] like from a vacuum cleaner",
+        "openFeedback": "Uses a demeaning and loaded metaphor to characterize the actions of the Fed chairman.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Here's a guy nobody ever heard of him before, and now I made him",
+        "openFeedback": "The speaker uses loaded, dismissive framing to minimize the professional standing of the Fed chairman.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Titanic survivor's unusual light-up walking stick is up for auction",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "This is pure fake news.",
+        "openFeedback": "The term 'fake news' is a loaded label used to discredit the target without providing evidence.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "#MAGA",
+        "openFeedback": "Use of a well-known political slogan used to mobilize or signify partisan alignment.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Albino alligators at Florida animal park produce rare batch of 19 eggs",
+    "topic": "environmental issues",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Crooked cop in NYPD's gun License Division sentenced to 1 year in prison",
+    "topic": "crime",
+    "source": "New York Post",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "crooked cop",
+        "openFeedback": "The term 'crooked' acts as a loaded label to characterize the officer.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "infested throughout with corruption",
+        "openFeedback": "Describes the institution as being completely consumed by a negative, corrupt force.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "sleazy cast of expediters",
+        "openFeedback": "The word 'sleazy' is a loaded, derogatory label applied to a specific group.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Elephant Delivers Tyson-Worthy Jab To U.S. Tourist Taking Photo",
+    "topic": "health",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "NYCHA left dozens of lead-poisoned kids in their contaminated apartments: report",
+    "topic": "health",
+    "source": "New York Post",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "lied about performing required inspections and hid the true conditions",
+        "openFeedback": "The phrasing characterizes the actions of officials as dishonest and deceptive, framing the institution as corrupt.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "put the agency under the thumb of a federal monitor",
+        "openFeedback": "Uses metaphorical, emotionally charged language to describe oversight.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "at first democratic debate these 6 candidates beat warren on authenticity, specifics and guts",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "coastal elites",
+        "openFeedback": "Using a loaded label to characterize a group within the party.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "coastal elitist cloth",
+        "openFeedback": "Using a loaded label to characterize a group within the party.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Norwegian tycoon's wife abduction may have been faked, was likely killed, police say",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "pickup driver pleads not guilty in fatal motorcycle crash",
+    "topic": "environmental issues",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Senate committee OKs $4.6 billion humanitarian aid bill for migrant crisis",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "scapegoating",
+        "text": "humanitarian crisis President Trump has helped create at the border",
+        "openFeedback": "This attributes the broad and complex issue of the border crisis to a single individual, serving to blame the President.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Let's keep the poison pills out.",
+        "openFeedback": "The term 'poison pills' is a loaded rhetorical device used to frame specific legislative provisions negatively.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "number of \"radical\" riders",
+        "openFeedback": "The term 'radical' is used as a loaded label to characterize the political opposition's legislative proposals.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Detectives speak with girlfriend of missing Connecticut mother's estranged husband: authorities",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "New Jersey man, 55, is latest case of tourist's death in Dominican Republic",
+    "topic": "health",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "DNA leads to arrest in 1987 cold case slaying of Fort Carson soldier",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Cruz calls for 'legal action' against Portland mayor after clash between far-right, antifa protesters",
+    "topic": "crime",
+    "source": "The Daily Caller",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "let citizens be attacked by domestic terrorists",
+        "openFeedback": "The use of the label 'domestic terrorists' to characterize the protesters is a form of demonization meant to portray them as an existential threat.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "intolerant radicals",
+        "openFeedback": "The phrase 'intolerant radicals' is used as a loaded label to discredit the group involved in the clash.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Wells Fargo, TD Bank turn over Trump financial records to House Dems",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Mother grizzly bear killed by train, then her 2 cubs struck and killed by another train, Montana officials say",
+    "topic": "environmental issues",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Rand Paul wants Congress involved in Iran decision, says war would be 'a bigger mistake' than Iraq",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "completely wrong-headed and unconstitutional ideas",
+        "openFeedback": "The term 'wrong-headed' functions as a pejorative label to discredit the opposing viewpoint.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "that would be the worst disaster any of us could imagine",
+        "openFeedback": "This is a subjective, hyperbolic prediction used to emphasize the severity of the proposed policy.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Trump: Iran 'better be careful' after backing away further from nuclear deal",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "Iran's regime, armed with nuclear weapons, would pose an even greater danger to the world",
+        "openFeedback": "This characterizes the target as an existential threat to the world.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "the rogue nation",
+        "openFeedback": "The term 'rogue nation' is a loaded label intended to discredit the target.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "the most foolish agreement that you will ever find",
+        "openFeedback": "This is a hyperbolic characterization of a policy agreement.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Jeanine Pirro is off the air at Fox News",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "spreading this false narrative that somehow Muslims hate America",
+        "openFeedback": "The producer is attributing a specific, harmful, and loaded ideological characterization to the host's previous statements.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Thousands of fish perish after fire at Jim Beam warehouse",
+    "topic": "environmental issues",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Upstate New York clerk 'will not be granting drivers' licenses to illegal immigrants,' contrary to new law: report",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Trump defends deal with Mexico to stem migrant flows, prevent tariffs",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "BORDER ARRESTS SKYROCKET IN MAY, AS OFFICIALS DECLARE 'FULL-BLOWN EMERGENCY'",
+        "openFeedback": "Uses alarmist, hyperbolic language to frame the border situation as an existential threat.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "arsonist who created this problem in the first place and the firefighter",
+        "openFeedback": "Uses metaphorical exaggeration to cast the political actor as both destroyer and savior.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "scapegoating",
+        "text": "repeatedly blamed both Congress and Mexico for the migrant surges",
+        "openFeedback": "Blames entire groups for a complex policy problem.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "bold leadership just resulted in a huge win for America's safety and security",
+        "openFeedback": "Uses exaggerated, superlative language for political praise.",
+        "paragraphIndex": 3
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "These 'Fakers are Bad News!'",
+        "openFeedback": "Uses a pejorative label to discredit media organizations.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Killer of 16-year-old New York girl in 1980 released on parole despite outrage",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "this release of this rapist and murderer is so hideous",
+        "openFeedback": "While describing a criminal, the language 'so hideous' is highly emotive and moralizing, leaning into the demonization of the subject.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "new american and more: what's trending on denver's food scene?",
+    "topic": "politics",
+    "source": "The Daily Caller",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Fox's Ed Henry to Kyle Kashuv on past racist, anti-Semitic language: 'What were you thinking?'",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "latin american festivals you've never tried",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "metro council passes controversial budget in 24-1 vote",
+    "topic": "crime",
+    "source": "New York Post",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "city kicks off months-long park closure for washington square water conservation upgrades",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Trump congratulates Navy SEAL for acquittal on war crimes charges: 'Glad I could help!'",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "tried to frame me as a criminal",
+        "openFeedback": "The speaker is using loaded language to characterize the prosecution's case as a malicious setup.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "John Dean on Trump calling him a 'loser' and 'sleazebag': 'I'm honored to be on his enemies list'",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "the threat he is to this country",
+        "openFeedback": "The speaker characterizes the subject as an existential threat.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "flamethrowers",
+        "openFeedback": "Using a loaded label to characterize the political opponents' behavior.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Kentucky police, FBI searching home linked to Savannah Spurlock's disappearance",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "renting in milwaukee: what will $800 get you?",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Kim Jong Un may use summit with Xi to send nuke deal message to Trump, defector says",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Attorney for journalist attacked by Antifa says she plans to 'sue everybody' the law permits",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "right-wing hate group Proud Boys",
+        "openFeedback": "The text uses a loaded label to characterize the group.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "COMPLETE ANARCHY AND LAWLESSNESS",
+        "openFeedback": "Uses extreme, hyperbolic framing to describe the situation.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "empty platitudes",
+        "openFeedback": "Used to dismiss the mayor's statement as having no value or sincerity.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Trump hits polling on Fox News: 'Something weird going on at Fox'",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "Something weird going on at Fox",
+        "openFeedback": "Casting doubt on the credibility and integrity of the news organization's polling.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Crooked Hillary",
+        "openFeedback": "Using a derogatory, loaded nickname to discredit a political opponent.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "More Fake News",
+        "openFeedback": "Using a loaded label to characterize journalistic work as deceitful or unreliable.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "MAKE AMERICA GREAT AGAIN!",
+        "openFeedback": "A well-known mobilizing slogan used in a political context.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "only fake polls",
+        "openFeedback": "Casting doubt on the legitimacy and honesty of polling data.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Motley Crew",
+        "openFeedback": "Using a dismissive, loaded label to characterize a group of political candidates.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Fox News's Shep Smith calls out Trump joking with Putin: Russian treatment of journalists 'not exactly the same'",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Fake news",
+        "openFeedback": "The term 'Fake news' is a loaded label used to discredit the media.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "enemy of the people",
+        "openFeedback": "Labeling the press as the 'enemy of the people' is a loaded, emotionally charged identity label.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "man says he killed black teen for listening to rap music. activists want #justiceforelijah",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "GOP lawmaker suggests Colin Kaepernick move to a different country",
+    "topic": "politics",
+    "source": "Breitbart News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "very radical people",
+        "openFeedback": "The speaker uses a loaded, negative label to categorize individuals to shape audience perception.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Missing Utah girl's uncle linked to disappearance by evidence, been 'quite deceitful,' police say",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "doubt",
+        "text": "Everything he has done has been quite deceitful and we have no reason to believe anything he told us was accurate",
+        "openFeedback": "The police official is explicitly casting doubt on the suspect's credibility and honesty during an investigation.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Eiffel Tower closed 'until further notice' after climber scales iconic Paris attraction",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "california earthquake: fires break out after a second and stronger temblor",
+    "topic": "legal arguments",
+    "source": "FOX News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "NY woman, 53, died on vacation in Dominican Republic; son demands answers",
+    "topic": "health",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Cruz adds 'context' after Kaepernick quotes from Frederick Douglass 'Fourth of July' speech",
+    "topic": "politics",
+    "source": "FOX News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "this president and his chicken hawk cabinet",
+        "openFeedback": "The term 'chicken hawk' is a derogatory label used to discredit the political figures mentioned.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "looking ruff! scamp the tramp wins world's ugliest dog contest beating 18 other pooches who showed off their droopy tongues, bowed legs and perpetually confused looks",
+    "topic": "politics",
+    "source": "National Review",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Trump says any war with Iran 'would not last very long,' but he still hopes for no conflict",
+    "topic": "politics",
+    "source": "Fox Business",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "Iran leadership doesn't understand the words 'nice' or 'compassion,' they never have",
+        "openFeedback": "The text characterizes the Iranian leadership as fundamentally incapable of understanding basic human virtues, which serves to dehumanize and paint them as dangerous.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "suffering from a \"mental illness.\"",
+        "openFeedback": "This is a loaded, derogatory label used to discredit the political actors by implying psychological instability.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "outrageous and idiotic",
+        "openFeedback": "The Iranian President is using pejorative, insulting language to label U.S. policy.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Fox News host Tucker Carlson says Kim Jong Un's atrocities in North Korea are part of the job, as ruling a country 'means killing people'",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "North Korean dictator Kim Jong Un",
+        "openFeedback": "Using the loaded label 'dictator' serves to characterize the individual negatively.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "immigrants have 'plundered' the US and want to steal Americans' wealth",
+        "openFeedback": "This uses loaded, inflammatory language to characterize immigrants as criminals and threats to national wealth.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "It's a disgusting place obviously",
+        "openFeedback": "The use of the term 'disgusting' serves to dehumanize the target country.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "donald trump's criminal justice reform shows results",
+    "topic": "politics",
+    "source": "National Review",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "it is little more than a system for warehousing human beings",
+        "openFeedback": "Uses dehumanizing metaphor to describe the prison system.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Toddler found wandering Florida highway wearing only dirty diaper, 'covered in bug bites:' police",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "'Fox & Friends' host on detained children: 'These aren't our kids'",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "casual oversimplification",
+        "text": "people are treating migrant children as if they are more important than people in our country who pay taxes",
+        "openFeedback": "This presents a false binary choice between migrant children and domestic taxpayers, oversimplifying the ethical debate.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "in case it's MS-13 or drugs",
+        "openFeedback": "This links migrants to violent criminal gangs and drug trafficking to present them as an inherent danger or threat.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "these aren't our kids",
+        "openFeedback": "The host uses a dehumanizing label to differentiate the migrant children from the American public, framing them as outside the scope of moral concern.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Purple Heart Found Among Housewares Donated To Tucson Goodwill",
+    "topic": "crime",
+    "source": "FOX News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Federal judge sides with House Democrats over subpoena for Trump's financial records",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "'It's a fascist statement': Trump swipes back at Pelosi over charges of criminal conduct",
+    "topic": "politics",
+    "source": "FOX News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "she's allowing drug dealers and gang members into our country",
+        "openFeedback": "Portrays the target as a dangerous threat to society by linking them to criminal elements.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "It's a fascist statement, it's a disgraceful statement",
+        "openFeedback": "The speaker uses loaded, emotionally charged labels to discredit a political opponent.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "total fake pile of stuff",
+        "openFeedback": "Undermines the credibility and legitimacy of the dossier using hyperbolic, dismissive language.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "it's outrageous",
+        "openFeedback": "Used as an emotionally charged descriptor to amplify the perceived severity of a statement without evidence.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "conducting one of the biggest cover-ups of any administration in the history of the United States",
+        "openFeedback": "Uses superlative, hyperbolic language to characterize the political situation as the worst in history.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Harlem fire victims' relatives sue NYC for $2.2 billion",
+    "topic": "legal arguments",
+    "source": "New York Post",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Week after debate, Biden and Harris campaigns engage in nasty Twitter feud over school busing",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "WE HAVE A PREDATOR LIVING IN THE WHITE HOUSE",
+        "openFeedback": "The quoted language uses dehumanizing, inflammatory rhetoric ('predator') to describe a political opponent.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Buttigieg proposes national service plan to help unify the country",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "renting in oakland: what will $1,800 get you?",
+    "topic": "politics",
+    "source": "FOX News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Cal Thomas: Censoring the census citizenship question is about politics, not the law",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "some people break our laws to get here and then break them again to remain",
+        "openFeedback": "Labels the group as lawbreakers in a loaded manner.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "It is not only a disgrace, but national suicide.",
+        "openFeedback": "Describes the situation as an existential threat to the nation.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "'Fox & Friends' talks to some of the Trump supporters camped out ahead of Florida rally: 'We are former Dems'",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "those on the left who say the opposite are \"clearly just making that up; it's nonsense.\"",
+        "openFeedback": "The use of 'nonsense' to characterize opposing views functions as a dismissive label.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Police probing mother and toddler's unsolved murder more than 40 years ago find bones and parts of pushchair after draining 100ft deep quarry",
+    "topic": "crime",
+    "source": "Daily Mail",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "house speaker robert deleo silent over nondisclosure agreements",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "It's a shameful practice and an outright abuse of taxpayer dollars.",
+        "openFeedback": "The text characterizes the policy as an 'outright abuse', which demonizes the administrative practice.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "The public should be outraged at such a notion.",
+        "openFeedback": "This creates a call for moral outrage, framing the policy as inherently offensive or corrupt.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "House Oversight Committee to vote on possible Kellyanne Conway subpoena over Hatch Act controversy",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "misinterpret or weaponize the Hatch Act",
+        "openFeedback": "The term 'weaponize' characterizes the government office's actions as a malicious, intentional attack, which constitutes demonization.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "gascón strongly considering running for la district attorney job",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Brother of New Jersey man who was found dead in Dominican Republic hotel room: 'Something is off there'",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "White nationalist group interrupts Detroit pride event, members appear to urinate on Israeli flag",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "schools named after robert e. lee are renaming themselves after other famous lees to avoid spending money on new signs   but that's not the only way districts have rebranded buildings named after confederate leaders",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Trump says Democrats are handing out subpoenas 'like they're cookies'",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "The Democrats fight a dirtier fight.",
+        "openFeedback": "This is an explicit attempt to discredit the opposing political party by labeling their conduct as 'dirtier', using emotionally charged language without supporting evidence.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "putting her 'through hell.'",
+        "openFeedback": "Using the phrase 'through hell' to describe a congressional testimony process is loaded, emotional framing intended to discredit the legitimacy of the investigation.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "iowa workforce development manager to retire amid dispute over bureau",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Myrtle the Turtle in Boston playground has to go!",
+    "topic": "health",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "an accident waiting to happen",
+        "openFeedback": "This phrase is a classic overstatement used to create a sense of impending disaster regarding the playground equipment.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Former CIA spy Valerie Plame set for Senate run as Democrat",
+    "topic": "politics",
+    "source": "Washington Examiner",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "City Council, PWSA and the public weigh in on proposed agreement",
+    "topic": "politics",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "loosey-goosey",
+        "openFeedback": "The term is an informal, dismissive exaggeration used to characterize the previous arrangements.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Video crew from Italy's Gelato University gets the scoop on Pittsburgh",
+    "topic": "health",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Police probing mother and toddler's unsolved murder more than 40 years ago find bones and parts of pushchair after draining 100ft deep quarry",
+    "topic": "crime",
+    "source": "Daily Mail",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Massport won't say who they're looking at for next chief",
+    "topic": "politics",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "a mistake that could come back to haunt the agency",
+        "openFeedback": "Uses hyperbolic language to characterize the decision-making process as a significant, ominous error.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "The super-secret search",
+        "openFeedback": "Uses loaded language to cast doubt on the legitimacy and transparency of the search process.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "one of the most powerful positions in state government",
+        "openFeedback": "The phrasing is an overstatement intended to build up the importance of the role.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "fake heritage claim",
+        "openFeedback": "Uses a loaded, derogatory label regarding a public figure's background.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "search shrouded in secrecy",
+        "openFeedback": "Casts doubt on the integrity and motives of the search process.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "Trial begins in 2017 Plum double-fatal crash",
+    "topic": "legal arguments",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Crowd at Schenley Plaza watches live as U.S. women win World Cup",
+    "topic": "sports",
+    "source": "Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "RMV probe turns to violations the state was obliged to send",
+    "topic": "politics",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "Once you scratch the surface, who knows what will blow up?",
+        "openFeedback": "The phrasing uses hyperbolic, alarmist language to characterize potential administrative findings.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "No, Joe Biden, President Trump is not 'an existential threat to America'",
+    "topic": "politics",
+    "source": "Washington Examiner",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "the world might end tomorrow unless we toss President Trump out of office",
+        "openFeedback": "The text characterizes political opposition as an impending apocalyptic event.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "nightmare scenario Biden describes",
+        "openFeedback": "Uses hyperbolic language to describe political rhetoric.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "In the eyes of sane people",
+        "openFeedback": "Implicitly labels those who disagree with the author as insane.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "apocalyptic argument that Trump's presidency poses a threat to America",
+        "openFeedback": "Uses hyperbolic framing to characterize political disagreement.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "The alarmist rhetoric",
+        "openFeedback": "Describes the opponent's messaging with a hyperbolic label.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Give me a break.",
+        "openFeedback": "Dismissive, emotionally charged phrase used to discredit the subject.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "Is it that Trump's climate policy will doom us to death by global warming? This is quite the stretch.",
+        "openFeedback": "Casts doubt on the severity of the argument by trivializing it.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "President Trump is a buffoon",
+        "openFeedback": "Uses a loaded insult to describe the subject.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "When criticism of Trump becomes extreme and overblown",
+        "openFeedback": "Characterizes political criticism as exaggerated.",
+        "paragraphIndex": 3
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "those of us in touch with reality",
+        "openFeedback": "Implicitly suggests that those who disagree are detached from reality.",
+        "paragraphIndex": 3
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "Trump-alarmism",
+        "openFeedback": "Labels the opposing viewpoint with a loaded, hyperbolic term.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "RMV Fail: 546 license suspensions, more to come",
+    "topic": "legal arguments",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "deadly bureaucratic failure",
+        "openFeedback": "Uses extreme, emotionally charged framing to describe a government failure.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "RMV failed to act on critically important information",
+        "openFeedback": "Used as part of the framing of the RMV as a source of death and failure.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Woodland Hills teen on his busy senior year: 'I wouldn't ask for anything more, anything less'",
+    "topic": "health",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "County Council Democrats interview 12 candidates for District 8 vacancy, ahead of Tuesday vote",
+    "topic": "politics",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "conservation groups ask gov. evers to veto proposed cwd deer farm study",
+    "topic": "legal arguments",
+    "source": "Orange County Register",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "totowa nj quickchek killing started with road rage, witness says",
+    "topic": "politics",
+    "source": "Washington Examiner",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "former port richey mayor found guilty of obstruction",
+    "topic": "environmental issues",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "trump campaign rakes in stunning $25m in single day for re-election launch",
+    "topic": "crime",
+    "source": "Washington Examiner",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "#KeepAmericaGreat",
+        "openFeedback": "Use of campaign slogan.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "perhaps the greatest economy we've had in the history of our country",
+        "openFeedback": "Hyperbolic claim about the state of the economy.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "lapd targets possible ms-13 presence in the valley with early morning raids",
+    "topic": "politics",
+    "source": "Telegraph-Journal",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar",
+    "topic": "politics",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "trashing norms and breaking backs",
+        "openFeedback": "This phrasing portrays the administration as a destructive force.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "call people your enemies",
+        "openFeedback": "Labeling political opponents as 'enemies' is inflammatory language.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "unsavory individual",
+        "openFeedback": "The term 'unsavory individual' is a loaded label used to discredit the target.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "singing doctor retires after serenading more than 8,000 babies",
+    "topic": "politics",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "family of man fatally shot by police in eagan seeks answers",
+    "topic": "health",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "when my brother was executed by law enforcement officers",
+        "openFeedback": "The word 'executed' frames the police action as a criminal, intentional killing rather than a lethal force incident during a standoff.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "atlanta mayor endorses joe biden for president",
+    "topic": "community issues",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "fort worth police hope to alleviate lgbtq community's fears after 2 trans women killed",
+    "topic": "crime",
+    "source": "Deseret News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "feds: cincinnati police captain michael savard facing bribery charge",
+    "topic": "environmental issues",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "metro council passes controversial budget in 24-1 vote",
+    "topic": "crime",
+    "source": "New York Post",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "dems' dream candidate is trump-defeating white man, poll shows",
+    "topic": "politics",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "Democrats' desire to dump Trump",
+        "openFeedback": "The phrase 'dump Trump' is a short, mobilizing slogan.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "at burn camp near kerrville, child survivors can be themselves",
+    "topic": "legal arguments",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "unesco lists iraq's babylon as world heritage site",
+    "topic": "politics",
+    "source": "National Review",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "cuomo's mta board appointment may violate a state law, says ex-assemblyman who wrote it",
+    "topic": "politics",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "trump signs executive order calling for upfront disclosure of hospital costs",
+    "topic": "politics",
+    "source": "The Daily Caller",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "socialist takedown",
+        "openFeedback": "The term 'socialist takedown' is a loaded, emotionally charged label used to discredit the political opposition's policy.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "dogs in miami looking for their fur-ever homes",
+    "topic": "politics",
+    "source": "Washington Examiner",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "dogs in irvine looking for their fur-ever homes",
+    "topic": "politics",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "paul muschick: big name democrats shined but one dazzled in thursday's debate",
+    "topic": "politics",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Andrew Yang and Marianne Williamson are wasting their time and money",
+        "openFeedback": "This dismisses the candidates' participation as a 'waste,' which functions as a negative characterization.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "the children of the filthy rich",
+        "openFeedback": "The term 'filthy rich' is a loaded, derogatory label used to disparage a group.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "this wasn't a debate. It was speed dating.",
+        "openFeedback": "This is an exaggeration used to characterize the event in a disparaging manner.",
+        "paragraphIndex": 3
+      }
+    ]
+  },
+  {
+    "title": "help for nursing homes runs into federal funding rules",
+    "topic": "politics",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Boston ICE chief: Democratic 'concentration camp' slur 'disheartening'",
+    "topic": "politics",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "brutalized with dehumanizing conditions and dying",
+        "openFeedback": "This language portrays the detention centers as sites of extreme, lethal abuse, crossing into demonization of the institution.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "hard-left freshman U.S. Rep.",
+        "openFeedback": "The term 'hard-left' is a loaded political label used to discredit the politician.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "it's really a crime in itself",
+        "openFeedback": "Labeling sanctuary city policies as a 'crime' is a loaded accusation used to discredit the policy.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "The week in photos: June 7-13",
+    "topic": "environmental issues",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Omarosa accuses White House of destroying evidence for Mueller investigation",
+    "topic": "legal arguments",
+    "source": "Washington Examiner",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Shakespeare in the Parks turns 15 with all-female 'Julius Caesar'",
+    "topic": "politics",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Rondon family of Lawrence settles with Columbia Gas over teen's death",
+    "topic": "legal arguments",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Study: An increasing number of Pa. kids living in high-poverty areas",
+    "topic": "health",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Suspect steals 12,000 scratch-off lottery tickets from a convenience store   but they're probably worthless by now",
+    "topic": "crime",
+    "source": "Richmond Times-Dispatch",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Port Authority to buy insurance for T track after last year's Blue Line flooding",
+    "topic": "legal arguments",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Immigrant advocates blast Trump over census citizenship question",
+    "topic": "politics",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "pretending that it is above the law",
+        "openFeedback": "Portrays the administration as corrupt and defiant of legal authority.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "his campaign to terrify and drive out immigrants",
+        "openFeedback": "Characterizes the policy as an act of malicious intent to cause harm.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "ICE raids could start Saturday: 'This is extremely troubling'",
+    "topic": "politics",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "How many millions of taxpayer dollars are being used to terrorize families?",
+        "openFeedback": "Characterizing law enforcement actions as terrorizing families is an attempt to demonize the operation.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "Children will be traumatized by agents storming their homes",
+        "openFeedback": "The use of the word 'storming' is inflammatory and intended to demonize law enforcement actions.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "It institutionalizes destruction and fear.",
+        "openFeedback": "The framing of government operations as institutionalizing destruction is a form of demonization.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "protest the inhumane conditions faced by refugees.",
+        "openFeedback": "Describing conditions as 'inhumane' is inflammatory language used to vilify the handling of the situation.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "It makes you evil.",
+        "openFeedback": "Labeling a public official as 'evil' is a clear instance of name-calling.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "The Michelle Wu train is coming down the tracks!",
+    "topic": "politics",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "unprecedented progressive, minority takeover of City Hall",
+        "openFeedback": "The phrasing 'takeover' carries a loaded, alarmist connotation regarding a political shift.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "bromance fog",
+        "openFeedback": "This is a loaded, informal, and dismissive label used to characterize the relationship between political figures.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Donald Trump Jr. just bought a $4.5 million house in the Hamptons with his girlfriend. Take a look inside the 7-bedroom home that sits in a waterfront gated community.",
+    "topic": "politics",
+    "source": "The New York Post",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Peduto proposes $500k for blue bins, pushing for \"higher-quality\" recycling",
+    "topic": "environmental issues",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "2020 candidate slams DNC for 'arbitrary' rule change that could keep him out of debate",
+    "topic": "politics",
+    "source": "Washington Examiner",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "scapegoating",
+        "text": "The DNC's unmasking of this rule unfairly singles out the only Democratic candidate who won a Trump state and penalizes him for doing his job",
+        "openFeedback": "The campaign is framing the DNC's actions as a targeted attack on a specific candidate, which falls under scapegoating.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Threat on social media leads to 'Drag Queen Story Hour' cancellation at library",
+    "topic": "politics",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "'Ma Rainey' filming takes over North Side streets",
+    "topic": "politics",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Urban fishing group gets funding grant",
+    "topic": "environmental issues",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "McConnell to meet with 9/11 first responders following Jon Stewart criticism: report",
+    "topic": "politics",
+    "source": "The New York Post",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Pelosi feud with AOC, Pressley sows division among Democrats",
+    "topic": "politics",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "attempts by some of the progressive freshman to bully the Democratic Party",
+        "openFeedback": "Uses the loaded term 'bully' to frame the actions of the representatives as aggressive and hostile.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "four women from very left-wing, safe Democratic districts",
+        "openFeedback": "Uses a loaded ideological label to characterize the representatives.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Mackenzie Lueck: Grieving Utah university will hold vigil for slain nursing student from El Segundo",
+    "topic": "crime",
+    "source": "Salt Lake Tribune",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "British paper apologizes to Melania Trump, pays 'substantial damages' over article",
+    "topic": "legal arguments",
+    "source": "The Daily Telegraph",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "'Tan Mom' Patricia Krentcil Says She Was 'Proclaimed Dead' During Recent Health Scare",
+    "topic": "health",
+    "source": "New York Post",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "The test dummies have arrived at Kennywood and are in the Steel Curtain's cars",
+    "topic": "science",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Councilwoman Darlene Harris disapproves of process to pay $45K in city ethics legal fees",
+    "topic": "legal arguments",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "fanciful claims",
+        "openFeedback": "The term 'fanciful' is used to dismiss the opposing argument as imaginative or unreal, serving to undermine the credibility of the claim through exaggeration.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "More oversight needed for addiction recovery houses, Controller Chelsa Wagner says",
+    "topic": "health",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Penn Hills officials outline plans to fight illegal dumping",
+    "topic": "environmental issues",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Workers wanted: Allegheny County lags in gearing up for career-focused jobs",
+    "topic": "education",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "Utterly laughable",
+        "openFeedback": "The author uses a dismissive, loaded term to characterize a societal perception.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Official: Mt. Lebanon deer management program has prevented almost 300 accidents",
+    "topic": "environmental issues",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "The projected cost savings are entirely misleading",
+        "openFeedback": "This statement is used to directly undermine the credibility and honesty of the municipality's data.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "carefully constructed pseudo-scientific report",
+        "openFeedback": "The term 'pseudo-scientific' is used as a loaded label to discredit the official report.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "grossly exaggerates the findings",
+        "openFeedback": "The speaker uses emotionally charged language to characterize the report's methodology as dishonest.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Two bald eagle nestlings fledge at Hays",
+    "topic": "environmental issues",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Part of old Allegheny Dwellings reopens as mixed-income housing in the North Side",
+    "topic": "politics",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Ruling: Highmark members lose UPMC access June 30",
+    "topic": "legal arguments",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "bitter divorce of warring Pittsburgh-based health care systems",
+        "openFeedback": "The use of 'bitter divorce' and 'warring' frames a legal and contractual dispute as a hostile interpersonal conflict, which constitutes loaded language.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "City will now protect gender identity and expression",
+    "topic": "politics",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Rollins declines prosecution of 18 ICE protesters",
+    "topic": "politics",
+    "source": "Boston Herald",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "inhumane detention policies",
+        "openFeedback": "The term 'inhumane' is used to characterize the policies as morally reprehensible/evil.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "Ilhan Omar fined by state for unlawful use of campaign funds",
+    "topic": "legal arguments",
+    "source": "Washington Examiner",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "trampling on campaign finance rules",
+        "openFeedback": "The phrasing uses emotionally charged language to frame the subject's actions as a deliberate, aggressive offense.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "a serial violator of the law",
+        "openFeedback": "The speaker uses a loaded, derogatory label to discredit the subject.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "House GOP leader sides with AOC on pay hike, says Congress at risk of being only for millionaires",
+    "topic": "politics",
+    "source": "Washington Examiner",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Jury convicts East Hills mom in daughter's fentanyl sippy cup death",
+    "topic": "crime",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Leaked memo reveals Boris Johnson called the French 'turds' in comments censored by the BBC",
+    "topic": "politics",
+    "source": "Daily Mail",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Syria Shriners say no circus in Pittsburgh this year",
+    "topic": "environmental issues",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "PennDOT tells Ross officials that Reis Run slide has top priority",
+    "topic": "environmental issues",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Coding camp keeps students engaged while learning necessary skills",
+    "topic": "science",
+    "source": "Pittsburgh Post-Gazette",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "horses in weld county test positive for vesicular stomatitis",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal",
+    "topic": "environmental issues",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "a radical, top-down, socialist makeover",
+        "openFeedback": "The term 'socialist' is used here as a loaded political label to discredit the proposal.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "phony national emergencies",
+        "openFeedback": "Labeling presidential actions as 'phony' is a loaded, derogatory descriptor meant to undermine legitimacy.",
+        "paragraphIndex": 2
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "deeply unpopular agenda",
+        "openFeedback": "Characterizing a political platform as 'deeply unpopular' in this context functions as an inflammatory rhetorical attack on the actor's credibility.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Trump: Iran 'better be careful' after backing away further from nuclear deal",
+    "topic": "politics",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "Iran's regime, armed with nuclear weapons, would pose an even greater danger to the world",
+        "openFeedback": "This frames Iran's regime as an existential, global threat to humanity.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "the rogue nation",
+        "openFeedback": "The term 'rogue nation' is a loaded label used to discredit the state without providing specific evidence for the classification.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "the most foolish agreement that you will ever find",
+        "openFeedback": "The use of 'most foolish' is a loaded characterization aimed at discrediting the deal.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "latin american festivals you've never tried",
+    "topic": "legal arguments",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Eiffel Tower closed 'until further notice' after climber scales iconic Paris attraction",
+    "topic": "crime",
+    "source": "Fox News",
+    "rating": "right",
+    "annotations": []
+  },
+  {
+    "title": "Sotheby's must face Russian billionaire's lawsuit over art fraud - U.S. judge",
+    "topic": "legal arguments",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Ex-GOP Rep: I 'See a Shooter' When I Look at Kyle Kashuv's Racist Posts",
+    "topic": "crime",
+    "source": "The Daily Beast",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "Jolly spotlighted one post in which the teenager seemingly referenced shooting up his high school to speculate that Kashuv could have been a potential shooter himself",
+        "openFeedback": "The speaker characterizes the individual as a potential mass shooter based on social media posts.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "racist messages Kashuv sent to classmates were the hallmarks of a mass shooter",
+        "openFeedback": "The subject is framed as having the inherent characteristics of a mass murderer.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "these are the social media postings we see of a shooter",
+        "openFeedback": "The language equates the subject's behavior with that of a mass shooter.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Hong Kong has been devoured by a 'sea of black' amid protests over extradition plans with China: How the intense blowback inspired a historic apology",
+    "topic": "politics",
+    "source": "Business Insider",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "saudi arabia's mbs is center stage at g-20, only nine months after khashoggi killing",
+    "topic": "sports",
+    "source": "Business Insider",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Expanding roles keeping Catchings busy in post-retirement",
+    "topic": "health",
+    "source": "AP News",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Colorado school officials ask voters to consider tearing down, rebuilding Columbine High School",
+    "topic": "crime",
+    "source": "USA TODAY",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "Columbine High School has a gravitational-pull for these sorts of individuals",
+        "openFeedback": "Uses demonizing rhetoric to frame the school as a dangerous attractor for violence.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "serves as a point of origin for this contagion of school shootings",
+        "openFeedback": "Portrays the location as the active source of an infectious, societal evil.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "Trump's Justice Department says it helped Manafort stay off Rikers Island out of respect for his 'unique' health needs",
+    "topic": "legal arguments",
+    "source": "New York Daily News",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "disgraced Republican politico",
+        "openFeedback": "The term 'disgraced' is a loaded negative label used to characterize the individual.",
+        "paragraphIndex": 1
+      }
+    ]
+  },
+  {
+    "title": "donald trump jr. to be interviewed by senate intelligence committee behind closed doors wednesday",
+    "topic": "politics",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "'sesame street did the trick': abandoned toddler bonds with sacramento firefighter",
+    "topic": "politics",
+    "source": "Roll Call",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "BuzzFeed Journalists Protest in Push for Union Recognition",
+    "topic": "politics",
+    "source": "Bloomberg",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "slogans",
+        "text": "Recognize the BuzzFeed Union!!",
+        "openFeedback": "The text contains a direct slogan used by protesters to mobilize support.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "The 5 best features coming to Apple Maps in iOS 13",
+    "topic": "science",
+    "source": "Business Insider",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Kamala Harris introduces bill to cover HIV prevention drug",
+    "topic": "health",
+    "source": "San Francisco Chronicle",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "35 Chihuahuas found in Phoenix home during attempted eviction",
+    "topic": "animal welfare",
+    "source": "Arizona Republic",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "key moments from jay inslee's 2020 presidential debate appearance",
+    "topic": "environmental issues",
+    "source": "San Francisco Chronicle",
+    "rating": "left",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "coal-loving",
+        "openFeedback": "The term 'coal-loving' is a loaded, emotionally charged label used to characterize the President.",
+        "paragraphIndex": 0
+      }
+    ]
+  },
+  {
+    "title": "N Carolina man pleads guilty to killing 3 Muslim students",
+    "topic": "crime",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "Google knows everywhere you go   here's how to stop it from tracking you and delete the logs",
+    "topic": "privacy issues",
+    "source": "CNBC",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "creepy level of detail",
+        "openFeedback": "The author uses the loaded term 'creepy' to characterize the company's data collection practices.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "doubt",
+        "text": "I never know who might be able to access that data, even if Google promises it's private.",
+        "openFeedback": "The author casts doubt on the company's data privacy promises.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "freaky level of detail",
+        "openFeedback": "The author uses the loaded, emotionally charged term 'freaky' to describe the data collection.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "SF moves toward ending chronic homelessness among military veterans",
+    "topic": "health",
+    "source": "San Francisco Chronicle",
+    "rating": "left",
+    "annotations": []
+  },
+  {
+    "title": "A US ally is furious and demanding answers from China after a 'hit and run' in the South China Sea",
+    "topic": "politics",
+    "source": "Business Insider",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "contemptible and condemnable",
+        "openFeedback": "The official is using emotionally charged labels to describe the actions of the group.",
+        "paragraphIndex": 1
+      },
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "demonization",
+        "text": "barbaric, uncivilized and outrageous actions",
+        "openFeedback": "The language frames the actions as subhuman or inherently malicious to incite a reaction.",
+        "paragraphIndex": 2
+      }
+    ]
+  },
+  {
+    "title": "Bridge defendant freed, another spared prison pending appeal",
+    "topic": "legal arguments",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "North Korean leader's slain half-brother was a CIA informant: Wall Street Journal",
+    "topic": "politics",
+    "source": "Reuters",
+    "rating": "center",
+    "annotations": []
+  },
+  {
+    "title": "'Stupidity and selfishness' led to deaths of two patients who drowned in van",
+    "topic": "legal arguments",
+    "source": "Associated Press",
+    "rating": "center",
+    "annotations": [
+      {
+        "category": "Inflammatory Language",
+        "subcategory": "name-calling",
+        "text": "stupidity and selfishness",
+        "openFeedback": "The speaker uses emotionally charged labels to characterize the deputies' actions.",
+        "paragraphIndex": 0
+      },
+      {
+        "category": "Persuasive Propaganda",
+        "subcategory": "exaggeration",
+        "text": "to say that this is a tragedy is an understatement",
+        "openFeedback": "The speaker is intensifying the nature of the event.",
+        "paragraphIndex": 1
+      }
+    ]
   }
 ]

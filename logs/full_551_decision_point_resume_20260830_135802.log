@@ -1,0 +1,20 @@
++ set -euo pipefail
+++ dirname src/dataset_comparison_scripts/run_full_551_decision_point_pipeline.sh
++ cd src/dataset_comparison_scripts/../..
++ PYTHON=.venv/bin/python
++ INPUT=public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv
++ GOLD=src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json
++ RESULT_ROOT=src/llm_annotation_results/full_551/decision_point_adjudication_v1
++ ANALYSIS_ROOT=src/dataset_comparison_scripts/statistical_analysis/full_551/decision_point_adjudication_v1
++ NPL_ROOT=src/llm_annotation_results/full_551/npl_prompt_comparison
++ NPL_ANALYSIS_ROOT=src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison
++ PROMPT_DIR=src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison
++ COMMON_SINGLE_ARGS=(--input "$INPUT" --gold-json "$GOLD" --temperature 0 --max-retries 4 --request-timeout-s 300 --resume --no-previous-adjudicated)
++ run_unless_complete 551 src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/raw_results.csv .venv/bin/python src/dataset_comparison_scripts/run_bagozzi_intersection_single_models.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --gold-json src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json --temperature 0 --max-retries 4 --request-timeout-s 300 --resume --no-previous-adjudicated --prompt-file src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_5_human_aligned_precision_recall.md --output-root src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models --analysis-root src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models
++ local expected_rows=551
++ local checkpoint=src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/raw_results.csv
++ shift 2
++ local current_rows
+++ raw_rows src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/raw_results.csv
+++ local path=src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/raw_results.csv
+++ .venv/bin/python - src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/raw_results.csv

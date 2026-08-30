@@ -760,13 +760,55 @@ class ModelConfig:
     prompt_version: str = DEFAULT_PROMPT_VERSION
 
 
+def _provider_retry_delay_s(exc: Exception) -> float | None:
+    """Extract provider-specified quota/reset delays from SDK exception text."""
+    text = str(exc)
+    for pattern in (
+        r"retryDelay['\"]?\s*:\s*['\"](?P<seconds>\d+(?:\.\d+)?)s['\"]",
+        r"RetryInfo.*?(?P<seconds>\d+(?:\.\d+)?)s",
+    ):
+        match = re.search(pattern, text, flags=re.IGNORECASE | re.DOTALL)
+        if match:
+            return float(match.group("seconds"))
+
+    match = re.search(
+        r"retry in\s+"
+        r"(?:(?P<hours>\d+(?:\.\d+)?)h)?"
+        r"(?:(?P<minutes>\d+(?:\.\d+)?)m)?"
+        r"(?:(?P<seconds>\d+(?:\.\d+)?)s)?",
+        text,
+        flags=re.IGNORECASE,
+    )
+    if not match:
+        return None
+
+    hours = float(match.group("hours") or 0)
+    minutes = float(match.group("minutes") or 0)
+    seconds = float(match.group("seconds") or 0)
+    total = hours * 3600 + minutes * 60 + seconds
+    return total if total > 0 else None
+
+
 def _retry(call, *, max_retries: int, base_sleep_s: float = 1.0):
     last_exc = None
+    provider_delay_sleeps = 0
     for attempt in range(max_retries + 1):
         try:
             return call()
         except Exception as exc:  # noqa: BLE001 - intentional catch/retry boundary
             last_exc = exc
+            provider_delay = _provider_retry_delay_s(exc)
+            if provider_delay is not None and provider_delay_sleeps < 3:
+                provider_delay_sleeps += 1
+                sleep_s = min(provider_delay + 15, 24 * 60 * 60)
+                print(
+                    f"Provider requested quota/rate-limit retry delay after {type(exc).__name__}: {exc}; "
+                    f"sleeping {sleep_s:.1f}s before retrying same call.",
+                    file=sys.stderr,
+                    flush=True,
+                )
+                time.sleep(sleep_s)
+                continue
             if attempt >= max_retries:
                 raise
             sleep_s = base_sleep_s * (2**attempt) + random.random() * 0.25
