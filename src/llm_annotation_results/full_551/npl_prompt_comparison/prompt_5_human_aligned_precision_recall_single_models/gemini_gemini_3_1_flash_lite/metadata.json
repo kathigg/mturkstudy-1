@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "run_id": "gemini_gemini_3_1_flash_lite",
+  "error_type": "ValueError",
+  "error": "No JSON object found in model output."
+}

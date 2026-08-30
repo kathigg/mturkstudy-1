@@ -13,6 +13,23 @@ NPL_ROOT="src/llm_annotation_results/full_551/npl_prompt_comparison"
 NPL_ANALYSIS_ROOT="src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison"
 PROMPT_DIR="src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison"
 
+run_with_retries() {
+  local attempts="$1"
+  shift
+  local attempt=1
+  while true; do
+    echo "[full-551] attempt ${attempt}/${attempts}: $*"
+    if "$@"; then
+      return 0
+    fi
+    if [ "$attempt" -ge "$attempts" ]; then
+      return 1
+    fi
+    sleep $((attempt * 30))
+    attempt=$((attempt + 1))
+  done
+}
+
 COMMON_SINGLE_ARGS=(
   --input "$INPUT"
   --gold-json "$GOLD"
@@ -23,20 +40,20 @@ COMMON_SINGLE_ARGS=(
   --no-previous-adjudicated
 )
 
-"$PYTHON" src/dataset_comparison_scripts/run_bagozzi_intersection_single_models.py \
+run_with_retries 8 "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_intersection_single_models.py \
   "${COMMON_SINGLE_ARGS[@]}" \
   --prompt-file "$PROMPT_DIR/prompt_5_human_aligned_precision_recall.md" \
   --output-root "$NPL_ROOT/prompt_5_human_aligned_precision_recall_single_models" \
   --analysis-root "$NPL_ANALYSIS_ROOT/prompt_5_human_aligned_precision_recall_single_models"
 
-"$PYTHON" src/dataset_comparison_scripts/run_bagozzi_intersection_single_models.py \
+run_with_retries 8 "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_intersection_single_models.py \
   "${COMMON_SINGLE_ARGS[@]}" \
   --providers openai \
   --prompt-file "$PROMPT_DIR/prompt_4_boundary_examples_precision.md" \
   --output-root "$NPL_ROOT/prompt_4_boundary_examples_precision_single_models" \
   --analysis-root "$NPL_ANALYSIS_ROOT/prompt_4_boundary_examples_precision_single_models"
 
-"$PYTHON" src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py \
+run_with_retries 8 "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py \
   --input "$INPUT" \
   --prompt-dir "$PROMPT_DIR" \
   --output-root "$NPL_ROOT/adjudication_prompt_1_to_5" \
@@ -49,7 +66,7 @@ COMMON_SINGLE_ARGS=(
   --wrapper-attempts 5 \
   --resume
 
-"$PYTHON" src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py \
+run_with_retries 8 "$PYTHON" src/dataset_comparison_scripts/run_bagozzi_inhouse_prompt_sweep.py \
   --input "$INPUT" \
   --prompt-dir "$PROMPT_DIR" \
   --output-root "$NPL_ROOT/adjudication_prompt_1_to_5" \
@@ -62,7 +79,7 @@ COMMON_SINGLE_ARGS=(
   --wrapper-attempts 5 \
   --resume
 
-"$PYTHON" src/dataset_comparison_scripts/run_decision_point_adjudication.py \
+run_with_retries 3 "$PYTHON" src/dataset_comparison_scripts/run_decision_point_adjudication.py \
   --input "$INPUT" \
   --gold-json "$GOLD" \
   --output-root "$RESULT_ROOT" \

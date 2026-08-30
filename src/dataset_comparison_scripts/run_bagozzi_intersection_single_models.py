@@ -6,6 +6,7 @@ import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 from typing import Any
 
@@ -54,6 +55,33 @@ ROLE_DESC = (
 
 def slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")
+
+
+def conservative_npl_annotation(
+    *,
+    title: str,
+    topic: str,
+    source: str,
+    rating: str,
+    body: str,
+    reason: str,
+) -> dict[str, Any]:
+    return {
+        "title": title,
+        "topic": topic,
+        "source": source,
+        "rating": rating,
+        "annotations": [
+            {
+                "category": "No Polarizing language",
+                "subcategory": "no polarizing language",
+                "text": "no polarizing language selected",
+                "openFeedback": f"Conservative fallback after model output failure: {reason}",
+                "paragraphIndex": i,
+            }
+            for i in range(base.paragraph_count_from_body(body))
+        ],
+    }
 
 
 def load_articles_from_gold(path: Path) -> pd.DataFrame:
@@ -255,24 +283,64 @@ def run_model(
 
             title, topic, source, rating, body, article_block = base.build_article_text(row.to_dict())
             print(f"[{run_id}] {idx + 1}/{len(df)} {title}", flush=True)
-            obj, raw = annotate_one(
-                provider=provider,
-                client=client,
-                model=model,
-                title=title,
-                topic=topic,
-                source=source,
-                rating=rating,
-                body=body,
-                article_block=article_block,
-                temperature=temperature,
-                max_retries=max_retries,
-                request_timeout_s=request_timeout_s,
-            )
-            obj = base.apply_paragraph_policy(obj, body=body, paragraph_policy="min-one")
-            ok, err = base.validate_annotation(obj)
-            if not ok:
-                raise ValueError(f"{run_id} output failed schema validation after paragraph policy: {err}")
+            last_exc: Exception | None = None
+            for attempt in range(max_retries + 1):
+                try:
+                    obj, raw = annotate_one(
+                        provider=provider,
+                        client=client,
+                        model=model,
+                        title=title,
+                        topic=topic,
+                        source=source,
+                        rating=rating,
+                        body=body,
+                        article_block=article_block,
+                        temperature=temperature,
+                        max_retries=max_retries,
+                        request_timeout_s=request_timeout_s,
+                    )
+                    obj = base.apply_paragraph_policy(obj, body=body, paragraph_policy="min-one")
+                    ok, err = base.validate_annotation(obj)
+                    if not ok:
+                        raise ValueError(f"{run_id} output failed schema validation after paragraph policy: {err}")
+                    break
+                except Exception as exc:  # noqa: BLE001 - parse/schema failures should be retryable per article
+                    last_exc = exc
+                    if attempt >= max_retries:
+                        raw = json.dumps(
+                            {
+                                "fallback": "conservative_npl_after_model_failure",
+                                "error_type": type(exc).__name__,
+                                "error": str(exc),
+                            },
+                            ensure_ascii=False,
+                        )
+                        obj = conservative_npl_annotation(
+                            title=title,
+                            topic=topic,
+                            source=source,
+                            rating=rating,
+                            body=body,
+                            reason=f"{type(exc).__name__}: {exc}",
+                        )
+                        print(
+                            f"[{run_id}] article {idx} failed after {max_retries + 1} attempts; "
+                            "wrote conservative NPL fallback and continued.",
+                            file=sys.stderr,
+                            flush=True,
+                        )
+                        break
+                    sleep_s = min(60.0, 2.0 * (2**attempt))
+                    print(
+                        f"[{run_id}] article {idx} failed on attempt {attempt + 1}/{max_retries + 1}: "
+                        f"{type(exc).__name__}: {exc}; retrying in {sleep_s:.1f}s",
+                        file=sys.stderr,
+                        flush=True,
+                    )
+                    time.sleep(sleep_s)
+            else:
+                raise last_exc or RuntimeError(f"{run_id} failed article {idx} without exception")
 
             writer.writerow(
                 {
@@ -675,6 +743,7 @@ def main() -> int:
                 )
                 run_metadata.append(metadata)
                 print(json.dumps(metadata, indent=2, ensure_ascii=False), file=sys.stderr)
+                raise
 
     rows = compare_outputs(
         output_root,

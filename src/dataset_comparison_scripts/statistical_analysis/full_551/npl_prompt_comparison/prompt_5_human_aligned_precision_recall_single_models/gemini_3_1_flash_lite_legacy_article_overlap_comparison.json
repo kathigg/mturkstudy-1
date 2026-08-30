@@ -1,0 +1,442 @@
+{
+  "prediction_path": "src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/gemini_3_1_flash_lite_polarizing_only.json",
+  "gold_path": "src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json",
+  "overall": {
+    "article_match": {
+      "precision": 0.467,
+      "recall": 0.412,
+      "f1": 0.437,
+      "correct_matches": 7,
+      "total_llm": 15,
+      "total_gold": 17
+    },
+    "category_match": {
+      "precision": 0.571,
+      "recall": 0.571,
+      "f1": 0.571,
+      "correct_matches": 4,
+      "total_matches": 7
+    },
+    "category_match_per_class": {
+      "inflammatory language": {
+        "precision": 0.571,
+        "recall": 1.0,
+        "f1": 0.727,
+        "support": 4,
+        "tp": 4,
+        "fp": 3,
+        "fn": 0
+      },
+      "persuasive propaganda": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 3,
+        "tp": 0,
+        "fp": 0,
+        "fn": 3
+      }
+    },
+    "subcategory_match_per_class": {
+      "casual oversimplification": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "demonization": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "exaggeration": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.667,
+        "support": 2,
+        "tp": 1,
+        "fp": 0,
+        "fn": 1
+      },
+      "name-calling": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0
+      },
+      "scapegoating": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.667,
+        "support": 1,
+        "tp": 1,
+        "fp": 1,
+        "fn": 0
+      }
+    },
+    "weighted_article_match": {
+      "precision": 0.467,
+      "recall": 0.412,
+      "f1": 0.437,
+      "tp_weight": 7.0,
+      "total_gold_weight": 17.0,
+      "fp": 8
+    }
+  },
+  "per_article": {
+    "Biden criticizes Amazon for paying $0 in corporate taxes": {
+      "article_match": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "correct_matches": 1,
+        "total_llm": 2,
+        "total_gold": 2
+      },
+      "category_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "tp_weight": 1.0,
+        "total_gold_weight": 2.0,
+        "fp": 1,
+        "matched": 1,
+        "total_llm": 2,
+        "total_gold": 2
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "persuasive propaganda": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "subcategory_match_per_class": {
+        "demonization": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        },
+        "exaggeration": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      }
+    },
+    "DC mayor says Trump's Fourth of July celebration emptied security fund": {
+      "article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "correct_matches": 0,
+        "total_matches": 0
+      },
+      "weighted_article_match": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp_weight": 0,
+        "total_gold_weight": 3.0,
+        "fp": 1,
+        "matched": 0,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match_per_class": {},
+      "subcategory_match_per_class": {}
+    },
+    "'Every American is entitled to health care': Sen. Bernie Sanders": {
+      "article_match": {
+        "precision": 0.667,
+        "recall": 0.667,
+        "f1": 0.667,
+        "correct_matches": 2,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "correct_matches": 1,
+        "total_matches": 2
+      },
+      "weighted_article_match": {
+        "precision": 0.667,
+        "recall": 0.667,
+        "f1": 0.667,
+        "tp_weight": 2.0,
+        "total_gold_weight": 3.0,
+        "fp": 1,
+        "matched": 2,
+        "total_llm": 3,
+        "total_gold": 3
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.667,
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        "persuasive propaganda": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "subcategory_match_per_class": {
+        "exaggeration": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "scapegoating": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.": {
+      "article_match": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.333,
+        "correct_matches": 1,
+        "total_llm": 5,
+        "total_gold": 1
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.333,
+        "tp_weight": 1.0,
+        "total_gold_weight": 1.0,
+        "fp": 4,
+        "matched": 1,
+        "total_llm": 5,
+        "total_gold": 1
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "name-calling": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "the latest: nadler says panel will move quickly on mcgahn": {
+      "article_match": {
+        "precision": 1.0,
+        "recall": 0.333,
+        "f1": 0.5,
+        "correct_matches": 1,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct_matches": 1,
+        "total_matches": 1
+      },
+      "weighted_article_match": {
+        "precision": 1.0,
+        "recall": 0.333,
+        "f1": 0.5,
+        "tp_weight": 1.0,
+        "total_gold_weight": 3.0,
+        "fp": 0,
+        "matched": 1,
+        "total_llm": 1,
+        "total_gold": 3
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "subcategory_match_per_class": {
+        "name-calling": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized": {
+      "article_match": {
+        "precision": 0.667,
+        "recall": 0.4,
+        "f1": 0.5,
+        "correct_matches": 2,
+        "total_llm": 3,
+        "total_gold": 5
+      },
+      "category_match": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "correct_matches": 1,
+        "total_matches": 2
+      },
+      "weighted_article_match": {
+        "precision": 0.667,
+        "recall": 0.4,
+        "f1": 0.5,
+        "tp_weight": 2.0,
+        "total_gold_weight": 5.0,
+        "fp": 1,
+        "matched": 2,
+        "total_llm": 3,
+        "total_gold": 5
+      },
+      "category_match_per_class": {
+        "inflammatory language": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.667,
+          "support": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0
+        },
+        "persuasive propaganda": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "subcategory_match_per_class": {
+        "casual oversimplification": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        },
+        "name-calling": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "scapegoating": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0
+        }
+      }
+    }
+  },
+  "n_articles_compared": 6
+}

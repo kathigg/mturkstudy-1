@@ -1,0 +1,1845 @@
+{
+  "prediction_path": "src/dataset_comparison_scripts/statistical_analysis/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/gemini_3_1_flash_lite_polarizing_only.json",
+  "gold_path": "src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json",
+  "metric_definition": "Article-level binary detection: an article is positive if it contains at least one polarizing annotation after NPL filtering.",
+  "overall": {
+    "precision": 0.111,
+    "recall": 0.231,
+    "f1": 0.15,
+    "accuracy": 0.739,
+    "tp": 6,
+    "fp": 48,
+    "fn": 20,
+    "tn": 187,
+    "articles": 261
+  },
+  "per_article": {
+    "1st redo in 35 years for new orleans 60yearold storyland": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "1yearold boy dies in texas after being left in hot car police say 13th death nationally in 2019": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "2 more deputies fired after shooting at florida high school": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "24000 pounds of garbage were just removed from mount everest leading to the discovery of four dead bodies": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "3 cheers miss vals 47 years at chop": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "44 fifth third branches are closing in chicago area": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "50 years later the pen that saved apollo 11": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "7 people charged in connection with vandalism of the bean": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "93yearold woman arrested by uk police to complete her bucket list": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "a child is totally unfazed after being bitten by a 5footlong snake that crawled into his home": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "a dad sent up his drone to get photos of his kids at the beach in florida then things got scary": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "a strange sighting at gay pride gala four men accused of hate crime in miami beach": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "a us air force a10 accidentally dropped bombs on florida after hitting a bird": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "acting border chief will step down as migrant children are returned to texas facility": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "adm ships brazil corn to smithfield foods in the united states amid heavy rains": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "after orlando sentinel reporter is struck at trump rally state rep sabatini responds with maga": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 2,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "air force grounds turkish pilots in arizona over military disagreement": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "airlines allowing passengers to cancel flights to dominican republic without penalties": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "alabama woman charged in fetal death her shooter goes free": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 2,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "alameda county sheriffs office recommending charges against raptors president": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "alcohol was just flooding the aisle ridgecrest market has lots to clean after quake": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "apple is planning to release another iphone that costs less than 1000 this year heres what we know about it": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "aretha franklins youngest son has filed for control over the late singers estate": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "at least seven killed as freak storm lashes greek resorts": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "australian student in north korea reported missing": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "baby born outside chicago police station on easter meets her honorary aunts and uncles": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "best minecraft 114 seeds 7 new seeds to try": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "best states to retire where do pennsylvania new jersey and delaware rank": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "biden camp blasts baseless lies about his health": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 2,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "Biden criticizes Amazon for paying $0 in corporate taxes": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 2,
+      "gold_annotations": 2,
+      "outcome": "tp"
+    },
+    "bill gates if i were starting a company today it would use ai to teach computers how to read": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "billions season 4 finale review the twisty finale reshuffles the deck on the showtime drama spoilers": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "body of texas police chief chris reed who fell overboard from fishing boat found near texas city dike": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "booker shares profoundly alarming stories of women seeking asylum": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "boston globe explains why it hasnt surfaced david ortiz shooting rumors": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "brendt christensens exgirlfriend testifies about wearing a wire in yingying zhang murder case": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "BuzzFeed Journalists Protest in Push for Union Recognition": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 2,
+      "outcome": "fn"
+    },
+    "california couple abused guatemalan immigrants forcing them to work prosecutors say": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "chicago virtual charter school ceo on paid leave as cps watchdog investigates questionable spending": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "community celebrates new spaces at st ann center": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "conservative party members would rather break up the united kingdom than stop brexit": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 3,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "cops found the pit bull on deaths door his owner is in jail for animal cruelty": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "court upholds ruling against washington florist who refused to serve gay couple": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "dallas shooting newspaper photographer came face to face with the active shooter": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "darwin hindman longestserving columbia mayor dead at 86": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "david e kelleys lincoln lawyer tv series in the works at cbs": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "DC mayor says Trump's Fourth of July celebration emptied security fund": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 1,
+      "gold_annotations": 3,
+      "outcome": "tp"
+    },
+    "death of kendall county deputy reminds police officers to use caution during traffic stops": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "democrat robert martwick sworn in as state senator gop taps rosemont mayor brad stephens for house seat": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "demonstrators against phoenix police at city council meeting": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "denver rounding up canada geese to feed the needy": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "deportation raids not happening in twin cities": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 1,
+      "outcome": "fn"
+    },
+    "diplomats shaken for now after britains us ambassador quits": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 3,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "disgraced theranos founder elizabeth holmes criminal trial set for summer 2020": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "dnr ended its frog and toad survey but maplewood volunteers wouldnt quit": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "dominican republic tourist deaths americans are more likely to be killed in the us than in the dr": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 3,
+      "outcome": "fn"
+    },
+    "donald trump nicknames wife melania t as he calls her the jackie o of our time": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "donald trump's criminal justice reform shows results": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 2,
+      "outcome": "fn"
+    },
+    "dozens living in filthy unsafe commercial building are evacuated": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "earthquake researchers look for lessons in trona damage": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "earthquakes ravaged los angeles and san francisco so what spared this city in the california desert": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "editorial: six months after california's landmark police transparency law, many agencies still won't release their records": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 4,
+      "outcome": "fn"
+    },
+    "empty and abandoned haunting pictures show the remains of wooden home on georgia plantation that horrified actress fanny kemble so much it inspired her to publish her famous antislavery journal": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "'Every American is entitled to health care': Sen. Bernie Sanders": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 3,
+      "gold_annotations": 3,
+      "outcome": "tp"
+    },
+    "exarizona lawmaker sentenced in fatal alaska shooting": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "exposen mayor pleads guilty to embezzling village funds": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "fair lawn man who molested his exgirlfriends 15monthold daughter wants new trial": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "faulty wiring blamed for electrocuting boys in solano co irrigation canal": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "federal judges send 2020 census lawsuit back to lower court": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "ferrari set to drop protest seek review of canada penalty": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 2,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "florida cracks down on plastic surgery centers becoming among toughest states": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "flying wallendas make history in crossing times square 25 stories in the air": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "flynns new lawyer is a mueller critic praised by trump": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "former assistant principal charged with murder of florida educator": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "former florida deputy 26 arrested for routinely stopping drivers for minor traffic violations planting drugs in their vehicles and then arresting them": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "four top residencies now offered to local artists thanks to oolite": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "foxconn says it can build enough iphones outside of china to meet us demand report": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "free summer meal program serving thousands of kids kicks off in sacramento city unified": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "from big oranges to bears readers recall roadside gems": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "frozen sperm bank could be set up in space study suggests": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 3,
+      "outcome": "fn"
+    },
+    "gaston restaurateur talks cyber policy in washington": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "george conway urges trump to resign over aborted iran strike": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 8,
+      "outcome": "fn"
+    },
+    "germanys merkel says shes ok after shaking at ceremony": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "get ready for gracepoint a uk whodunit redone": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "get these trending washington restaurants on your radar today": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "ginsburg traveled gorsuch wrote kavanaugh coached thomas taught supreme court justices active in 2018": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "gloria vanderbilt fast facts": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "google maps wants to help you navigate during natural disasters": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "googles new ai can help you speak another language in your own voice": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "GOP lawmaker suggests Colin Kaepernick move to a different country": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 1,
+      "outcome": "fn"
+    },
+    "great white shark tracked heading up jersey shore coast toward ocean city": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "green iguana florida says kill them whenever possible": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "greenpeace activists scale 27000ton oil rig bound for north sea": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "heavy rains in indias mumbai cause wall collapse that kills 13": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "help pouring in to trona after earthquakes but officials warn recovery will take time": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "honduran man dies in ice custody at texas facility": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "how 9yearold riley morrison created real change at under armour": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "how the worlds first nuclearpowered aircraft carrier lives on in other us navy flattops": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "how to set up siri to read your text messages through your airpods in ios 13": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "how to turn off google maps many notifications": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "howell station neighbors call foul on plans for gas station near beltline corridor": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "huge fossil discovery made in china": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "hundreds gather in morgan hill at vigil honoring ford dealership shooting victims": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "i have no power no water its unbelievable strong storms pack quite the punch in philadelphia region": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "i spend almost 800 in subscriptions on my iphone per year heres how to see what you spend and save money": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 3,
+      "outcome": "fn"
+    },
+    "investigators crack cold case murder of south dakota woman": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "iowa politics newsletter candidates return to iowa after first democratic debates": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "is my building vulnerable in a big earthquake heres how to find out": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "its just a shock that somebody did this in broad daylight dognapper snatches senior pooch from prospect park while owners back was turned": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "ivanka trumps awkward presence at the g20 summit didnt go over well": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "jaden smith opens free vegan food truck for the homeless": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "jailed daughter of late uzbek leader says gave state 12 bn": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "jewish leaders share concerns over end of vaccine religious exemptions": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 3,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "jojo siwa responds after her claires makeup set was recalled for testing positive for asbestos": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "judge grants plymouth father equal parenting time after 3 year battle": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "just in time for valentines day newly discovered dinosaur had heartshaped tail": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "kaiser unveils plan for massive national headquarters thrive center in oakland": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "kill zone prosecutions limited by california supreme court": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "Killer of 16-year-old New York girl in 1980 released on parole despite outrage": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "klm to help fund flyingv plane where passengers fly in the wings": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "lawmakers close in on confirming cuomos budget director to mta board say governor is now fully responsible for agency": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "live rat falls from ceiling and lands on table at buffalo wild wings": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "livestream democrats square off in first presidential debate": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "look what i did to her sons trump fires back at barbara bush remarks in new biography": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "luis alvarez 911 responder who advocated with jon stewart dies": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "major disappointment downtown miami fireworks show cut short after bomb scare": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "man arrested for running over pregnant woman 2yearold son police say": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "man arrested in connection to wifes disappearance not the person portrayed in the media": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "man dies after eating white substance while fleeing waukegan police family says officers used excessive force": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "man suspected of arson arrested after massive fireball tears through home in hermosa beach": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "marijuana will soon be legal in illinois what does that mean for iowans": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "marital woes apparent in phone messages between shanann and christopher watts ahead of brutal murders": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "massive solarstorage project is planned for the nevada desert": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "mcconnell to meet with 911 first responders amid public tensions with jon stewart": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 5,
+      "gold_annotations": 1,
+      "outcome": "tp"
+    },
+    "mexican gray wolf pups released": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "michael wolffs claim of draft indictment of trump doesnt exist says muellers office": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "microsoft is cashing in on the biggest biotech ipo of 2019": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "middle school educator dies while rock climbing in yosemite": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "mike pence of course migrant children should have toothbrushes blankets medicine": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "military woman slain with kids became citizen at white house": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "missing hiker found alive after 6 days in woods": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "missouris only abortion clinic to remain open after judges injunction holds": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 2,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "mitsotakis sworn in as greek prime minister after big win": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "mueller agrees to testify before 2 house panels next month": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "naomi wolf faces new questions as us publisher postpones latest book": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "new alaska park bridge aimed at limiting bear encounters": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "new rally called while phoenix police chief promises change": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "new york activists go on hunger strike to advocate for ending solitary confinement": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 2,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "new york open government guru fired for sexual misconduct and inappropriate behavior": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "nurse comes to aid of navy pier stabbing victim security and i were trying to hold him down to get a tourniquet on him": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "nurse denied marathon world record  because she wasnt wearing a skirt": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "nypd trial in eric garners death could be longest in departments history": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 2,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 3,
+      "outcome": "fn"
+    },
+    "one dead as dr congo police break up banned marches": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "oregon democrats set to back down on climate bill that sent gop lawmakers into hiding": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 3,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "pas public library lovers are rejoicing over additional funding": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "pathetic rout tragic mistake and painful   john mccain holds little back in describing helsinki": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 9,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "'pathetic rout,' 'tragic mistake' and 'painful' john mccain holds little back in describing helsinki": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 6,
+      "outcome": "fn"
+    },
+    "pennsylvania department of health appoints temporary manager for hahnemann university hospital": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "pennsylvania woman bitten by venomous copperhead snake while doing laundry": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "person arrested after trying to cross security barrier next to white house": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "pge found problems with lines after cutting power to 22000 during hot june windstorm": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "philadelphia refinery workers sue over abrupt closure layoffs": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "phoenix chief says police response to incident with 4yearold is unacceptable": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "photos of the day june 3": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "photos of the day may 27": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "police charge relative with quadruple family slayings": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "police in california shot 55 times in 35 seconds and killed willie mccoy thats reasonable report says": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "port of la sued after canceling agreement for a shipping container facility": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "priest restored to east lakeview parish post after being cleared of midlothianbased misconduct allegations": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "prospect park nj school official i was forced from my job": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "Protest in Madrid as conservatives suspend ban on most polluting cars": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 2,
+      "outcome": "fn"
+    },
+    "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 1,
+      "outcome": "fn"
+    },
+    "puppies in san antonio looking for their furever homes": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "putin after three days says firehit russian submarine was nuclearpowered": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "quartet nets 60 million plus more top funding news for new yorkbased companies": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "ramapo college nj anglers make waves at national bass tournament": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "renting in detroit what will 900 get you": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "renting in minneapolis what will 1200 get you": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "renting in saint paul what will 1600 get you": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "retirements will bring changes to milwaukee county circuit court": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "ridgecrest earthquakes caused damage to the earths crust seen from satellite": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "RMV Fail: 546 license suspensions, more to come": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 1,
+      "outcome": "fn"
+    },
+    "rocket hits site of foreign oil firms in iraqs basra three hurt": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "ron desantis signs amendment 4 bill, limiting felon voting": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 4,
+      "outcome": "fn"
+    },
+    "rosemount recreation center plan gets positive response so far": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "sample asian fusion flavors at these 3 new san francisco eateries": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "san antonio kids shine at summer drama camp plays": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "scientists amazed as canadian permafrost thaws 70 years early": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 2,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "see how this youtube star turned her tesla model 3 into a pickup truck": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 6,
+      "outcome": "fn"
+    },
+    "shark bites child in third north carolina attack this season": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "shawnee mission school district employee accused of stealing over 12k from district": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "shop that planned to sell cbd vape products wont open in delafield": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "south african woman reunited with son six years after he disappeared and was tracked down 1000 miles away": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "southbridge man hangs nazi flag in yard concerns neighbors": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "spontaneous car fire creates terrifying moment for mom": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "states removed 17 million voters from rolls in two years": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "struggling apple valley golf course targeted for redevelopment": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "summer school starts at huntington beachs edison high after toxic dump prompted air tests": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "supreme court in unanimous ruling moves to limit state and local governments power to impose fines and seize property": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "supreme court wont strip federal agencies of all power to interpret regulations a top priority of conservatives": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 2,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "take a peek at the 5 mansions condos and villas bought by the couple who allegedly scammed warren buffett": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "team usa opens womens world cup campaign e3 2019 5 things to know tuesday": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "teen argentine tourist falls into a coma during dominican republic vacation report": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "teen in medically induced coma after falling from golf cart mother says": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "teenage girl still missing after man wanted in carson killing is arrested in mexico": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "terron clayborn sentenced for killing dpw worker in hitandrun crash": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "the 10 most attractive employers for engineering students": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "the day the reds played a role in the womens suffrage moment": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "the latest: nadler says panel will move quickly on mcgahn": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 1,
+      "gold_annotations": 3,
+      "outcome": "tp"
+    },
+    "the national park service is in a 12b maintenance hole now its diverting millions to trumps fourth of july plans": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "the tree that inspired dr seuss the lorax has fallen over": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "the walkman is turning 40   here are 13 other gadgets you didnt realize were over 20 years old": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "the world trusts science global survey shows": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "there are still caring people out there taco bell employees praised for rushing to help elderly disabled man in drivethru": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "these frenchmen are building an epic medieval castle": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "things to know about the fatal stabbing case of houston 11yearold josue flores": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "third shooting death in four days prompts fear in la puente community": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "to honor the troops pals paint huge american flag on lawn in bourbonnais thats the american spirit": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "top us counterterror official warns of complacency as isis spreads": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "trayvon martins mom says hillary clinton planted the seed for her to run for office in florida": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "truly terrifying 3 people treated for panic attacks after fireworks scare inside dcs union station": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "Trump hits polling on Fox News: 'Something weird going on at Fox'": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 5,
+      "outcome": "fn"
+    },
+    "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 9,
+      "outcome": "fn"
+    },
+    "trump rules out scaramucci as he considers next press secretary": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "trump throws support behind no brainer measure to ban burning of american flag": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "trump vows to cure cancer and eradicate aids": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 2,
+      "outcome": "fn"
+    },
+    "tutankhamun sculpture's london auction sparks egyptian outcry": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 0,
+      "gold_annotations": 3,
+      "outcome": "fn"
+    },
+    "two former state senators found dead in their homes within two days": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "uber eats with guns mike pompeo allegedly had his taxpayerfunded security detail pick up his chinese food and walk his dog": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 3,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "underground terror tunnel dug from gaza into israel discovered military says": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "university of utah student mackenzie lueck took a lyft to meet someone at a park now shes missing": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "us appeals court sides with trump in lawsuit involving hotel": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 2,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "us epa air chief under ethics scrutiny resigns": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "us had open beds as migrant kids languished at texas station": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "us man accused of nkorean embassy theft in madrid to be freed on bail": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "us resident freed by iran to trump get back your hostages": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "us sues omarosa manigaultnewman for ethics violations": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "us wont impose rule to protect against coal ash spill costs": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "venezuelan exelectric chief among 2 indicted in us": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 2,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "verizon now sells a 100 tracking device with one year of free service": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 1,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "viking burial ships uncovered in sensational archaeological find": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "virgin birth a captive anaconda became pregnant by herself and gave birth to two babies": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "virgin will be the fastest train ever in the southern us when orlando service starts": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "volcano erupts on italian island of stromboli kills one person": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "warren jeffs son who spoke out against infamous polygamous leader dies": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": true,
+      "prediction_annotations": 3,
+      "gold_annotations": 5,
+      "outcome": "tp"
+    },
+    "weather officials confirm tornado touches down in mount laurel": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "webuildthewall inc group behind private border wall investigated": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "westchester redlight cameras stalls in legislature": {
+      "prediction_has_polarizing": true,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 2,
+      "gold_annotations": 0,
+      "outcome": "fp"
+    },
+    "white supremacist convicted of charlottesville rally killing asked the judge to reconsider a life sentence because of his young age": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "wisconsin man guilty of not reporting fatal zion hitandrun": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "you can try apples new iphone and ipad software now heres how to get it": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "your 2019 sf pride survival guide how to navigate this years celebration": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    },
+    "youtubers are calling for desmond etika amofahs emotional final video to be restored": {
+      "prediction_has_polarizing": false,
+      "gold_has_polarizing": false,
+      "prediction_annotations": 0,
+      "gold_annotations": 0,
+      "outcome": "tn"
+    }
+  }
+}

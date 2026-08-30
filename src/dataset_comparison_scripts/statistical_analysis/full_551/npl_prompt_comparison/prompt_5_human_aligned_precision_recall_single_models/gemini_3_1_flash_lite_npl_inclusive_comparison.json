@@ -1,0 +1,102 @@
+{
+  "prediction_path": "src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/gemini_gemini_3_1_flash_lite/final_annotations.json",
+  "gold_path": "src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_with_conservative_npl_paragraph_spans.json",
+  "rule": "NPL matches only NPL in the same article and paragraph; polarizing spans use the existing overlap logic.",
+  "overall": {
+    "titles_compared": 7,
+    "polarization_match": {
+      "precision": 0.444,
+      "recall": 0.632,
+      "f1": 0.522,
+      "correct": 12,
+      "prediction_total": 27,
+      "gold_total": 19
+    },
+    "category_match": {
+      "precision": 0.333,
+      "recall": 0.474,
+      "f1": 0.391,
+      "correct": 9,
+      "prediction_total": 27,
+      "gold_total": 19
+    },
+    "subcategory_match": {
+      "precision": 0.37,
+      "recall": 0.526,
+      "f1": 0.435,
+      "correct": 10,
+      "prediction_total": 27,
+      "gold_total": 19
+    },
+    "label_agreement_on_matched": {
+      "category": 0.75,
+      "subcategory": 0.833,
+      "matched": 12
+    },
+    "per_article": {
+      "Biden criticizes Amazon for paying $0 in corporate taxes": {
+        "matched": 2,
+        "prediction_total": 4,
+        "gold_total": 2,
+        "prediction_only": 2,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "DC mayor says Trump's Fourth of July celebration emptied security fund": {
+        "matched": 1,
+        "prediction_total": 3,
+        "gold_total": 3,
+        "prediction_only": 2,
+        "gold_only": 2,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "'Every American is entitled to health care': Sen. Bernie Sanders": {
+        "matched": 2,
+        "prediction_total": 4,
+        "gold_total": 3,
+        "prediction_only": 2,
+        "gold_only": 1,
+        "category_correct": 1,
+        "subcategory_correct": 2
+      },
+      "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.": {
+        "matched": 1,
+        "prediction_total": 5,
+        "gold_total": 1,
+        "prediction_only": 4,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "Protest in Madrid as conservatives suspend ban on most polluting cars": {
+        "matched": 1,
+        "prediction_total": 3,
+        "gold_total": 2,
+        "prediction_only": 2,
+        "gold_only": 1,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "the latest: nadler says panel will move quickly on mcgahn": {
+        "matched": 3,
+        "prediction_total": 4,
+        "gold_total": 3,
+        "prediction_only": 1,
+        "gold_only": 0,
+        "category_correct": 3,
+        "subcategory_correct": 3
+      },
+      "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized": {
+        "matched": 2,
+        "prediction_total": 4,
+        "gold_total": 5,
+        "prediction_only": 2,
+        "gold_only": 3,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      }
+    }
+  }
+}
