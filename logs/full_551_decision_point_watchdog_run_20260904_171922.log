@@ -100,21 +100,20 @@
   "output": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
   "summary": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_summary.json"
 }
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.2s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:39<01:03,  5.38it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
+ 38%|███▊      | 211/551 [00:25<00:41,  8.15it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -144,23 +143,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 10s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.2s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:41<01:06,  5.13it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.51it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -190,23 +188,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 20s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.1s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.2s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.1s
- 38%|███▊      | 211/551 [00:33<00:54,  6.26it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:24<00:40,  8.46it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -236,23 +233,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 30s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.2s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:36<00:58,  5.78it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.62it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -282,23 +278,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 40s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.2s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:32<00:52,  6.46it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
+ 38%|███▊      | 211/551 [00:25<00:40,  8.38it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -328,7 +323,7 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 /Users/kathleenhiggins/mturkstudy-3/.venv/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/build_consolidated_bagozzi_inhouse_gold.py --output /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper attempt 1/5
 /Users/kathleenhiggins/mturkstudy-3/.venv/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --results-csv src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/raw_results.csv --final-json src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.json --final-jsonl src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_4_boundary_examples_precision.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 4 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
@@ -399,21 +394,20 @@ subprocess.CalledProcessError: Command '['/Users/kathleenhiggins/mturkstudy-3/.v
   "output": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
   "summary": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_summary.json"
 }
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.0s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.0s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.0s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.1s
- 38%|███▊      | 211/551 [00:27<00:44,  7.56it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.0s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.58it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -443,23 +437,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 10s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.1s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.0s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.2s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.0s
- 38%|███▊      | 211/551 [00:30<00:48,  6.96it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.0s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.0s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:24<00:38,  8.77it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -489,23 +482,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 20s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.0s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.1s
- 38%|███▊      | 211/551 [00:39<01:03,  5.32it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.0s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.51it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -535,23 +527,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 30s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.0s
- 38%|███▊      | 211/551 [00:34<00:55,  6.11it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.0s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.60it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -581,23 +572,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 40s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.1s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:38<01:01,  5.54it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.0s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:25<00:40,  8.44it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -627,7 +617,7 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 /Users/kathleenhiggins/mturkstudy-3/.venv/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/build_consolidated_bagozzi_inhouse_gold.py --output /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper attempt 1/5
 /Users/kathleenhiggins/mturkstudy-3/.venv/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --results-csv src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/raw_results.csv --final-json src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.json --final-jsonl src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_4_boundary_examples_precision.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 4 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
@@ -698,21 +688,20 @@ subprocess.CalledProcessError: Command '['/Users/kathleenhiggins/mturkstudy-3/.v
   "output": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
   "summary": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_summary.json"
 }
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.2s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:32<00:52,  6.42it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.0s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.58it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -742,23 +731,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 10s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.1s
- 38%|███▊      | 211/551 [00:32<00:51,  6.55it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:24<00:40,  8.45it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -788,23 +776,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 20s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.0s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.2s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.0s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.1s
- 38%|███▊      | 211/551 [00:34<00:55,  6.17it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
+ 38%|███▊      | 211/551 [00:24<00:40,  8.48it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -834,23 +821,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 30s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.0s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.2s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.1s
- 38%|███▊      | 211/551 [00:39<01:03,  5.38it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:25<00:40,  8.36it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -880,23 +866,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 40s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.0s
- 38%|███▊      | 211/551 [00:32<00:52,  6.52it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:25<00:40,  8.44it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -926,7 +911,7 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 /Users/kathleenhiggins/mturkstudy-3/.venv/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/build_consolidated_bagozzi_inhouse_gold.py --output /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper attempt 1/5
 /Users/kathleenhiggins/mturkstudy-3/.venv/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --results-csv src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/raw_results.csv --final-json src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.json --final-jsonl src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_4_boundary_examples_precision.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 4 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
@@ -997,21 +982,20 @@ subprocess.CalledProcessError: Command '['/Users/kathleenhiggins/mturkstudy-3/.v
   "output": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
   "summary": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_summary.json"
 }
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.0s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.1s
- 38%|███▊      | 211/551 [00:33<00:53,  6.31it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
+ 38%|███▊      | 211/551 [00:24<00:40,  8.49it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1041,23 +1025,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 10s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.1s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.2s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.1s
- 38%|███▊      | 211/551 [00:31<00:50,  6.80it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.53it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1087,23 +1070,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 20s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.1s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.0s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:28<00:46,  7.33it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.61it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1133,23 +1115,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 30s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:28<00:45,  7.47it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:24<00:40,  8.48it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1179,23 +1160,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 40s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.1s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.0s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.0s
- 38%|███▊      | 211/551 [00:36<00:58,  5.83it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:25<00:41,  8.24it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1225,7 +1205,7 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 /Users/kathleenhiggins/mturkstudy-3/.venv/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/build_consolidated_bagozzi_inhouse_gold.py --output /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper attempt 1/5
 /Users/kathleenhiggins/mturkstudy-3/.venv/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --results-csv src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/raw_results.csv --final-json src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.json --final-jsonl src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_4_boundary_examples_precision.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 4 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
@@ -1296,21 +1276,20 @@ subprocess.CalledProcessError: Command '['/Users/kathleenhiggins/mturkstudy-3/.v
   "output": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
   "summary": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_summary.json"
 }
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.0s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.2s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.2s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.0s
- 38%|███▊      | 211/551 [00:32<00:52,  6.48it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:25<00:40,  8.38it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1340,23 +1319,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 10s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.0s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.2s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:30<00:48,  6.97it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
+ 38%|███▊      | 211/551 [00:24<00:40,  8.49it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1386,23 +1364,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 20s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.0s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.2s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:31<00:49,  6.80it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
+ 38%|███▊      | 211/551 [00:24<00:38,  8.74it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1432,23 +1409,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 30s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.0s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:36<00:58,  5.78it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.0s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.0s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.63it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1478,23 +1454,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 40s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.1s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.1s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.2s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:39<01:03,  5.32it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.0s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.0s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.52it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1524,7 +1499,7 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 /Users/kathleenhiggins/mturkstudy-3/.venv/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/build_consolidated_bagozzi_inhouse_gold.py --output /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper attempt 1/5
 /Users/kathleenhiggins/mturkstudy-3/.venv/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --results-csv src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/raw_results.csv --final-json src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.json --final-jsonl src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_4_boundary_examples_precision.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 4 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
@@ -1595,21 +1570,20 @@ subprocess.CalledProcessError: Command '['/Users/kathleenhiggins/mturkstudy-3/.v
   "output": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
   "summary": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_summary.json"
 }
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.2s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.2s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.2s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:29<00:46,  7.25it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.0s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
+ 38%|███▊      | 211/551 [00:25<00:40,  8.30it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1639,23 +1613,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 10s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.1s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.0s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.2s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:33<00:53,  6.34it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.0s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.69it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1685,23 +1658,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 20s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.1s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.2s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.0s
- 38%|███▊      | 211/551 [00:34<00:56,  6.06it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
+ 38%|███▊      | 211/551 [00:24<00:40,  8.45it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1731,23 +1703,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 30s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.1s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.0s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.0s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:27<00:45,  7.54it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:24<00:40,  8.50it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1777,24 +1748,22 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 40s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-Provider requested quota/rate-limit retry delay after ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h23m23.831641703s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33803s'}]}}; sleeping 33818.0s before retrying same call.
-Provider call failed on attempt 1/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 1.1s
-Provider call failed on attempt 2/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 2.0s
-Provider call failed on attempt 3/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 4.1s
-Provider call failed on attempt 4/5: BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}; retrying in 8.1s
- 38%|███▊      | 211/551 [27:46:08<44:44:47, 473.79s/it]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.0s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.60it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
                      ~~~~^^
-  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1592, in main
-    obj_c, raw_c = annotate_with_openai(
+  File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1530, in main
+    obj_a, raw_a = annotate_with_openai(
                    ~~~~~~~~~~~~~~~~~~~~^
-        anthropic_client,
-        ^^^^^^^^^^^^^^^^^
+        openai_client,
+        ^^^^^^^^^^^^^^
     ...<10 lines>...
         request_timeout_s=cfg.request_timeout_s,
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1824,7 +1793,7 @@ Traceback (most recent call last):
                            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/kathleenhiggins/mturkstudy-3/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1154, in request
     raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 /Users/kathleenhiggins/mturkstudy-3/.venv/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/build_consolidated_bagozzi_inhouse_gold.py --output /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper attempt 1/5
 /Users/kathleenhiggins/mturkstudy-3/.venv/bin/python /Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py --input public/article_dataset_versions/test3_encoding_fixed_300_700_words_paragraphs.csv --results-csv src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/raw_results.csv --final-json src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.json --final-jsonl src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.jsonl --prompt-addendum-file src/dataset_comparison_scripts/prompt_versions/npl_prompt_comparison/prompt_4_boundary_examples_precision.md --temperature 0.0 --paragraph-policy min-one --checkpoint-every 1 --max-retries 4 --openai-model gpt-5.1 --gemini-model gemini-3.1-pro-preview --claude-model claude-sonnet-5 --claude-adjudicator-model claude-opus-4-8 --annotator-b-provider gemini --annotator-c-provider anthropic --adjudicator-provider anthropic --resume
@@ -1895,11 +1864,11 @@ subprocess.CalledProcessError: Command '['/Users/kathleenhiggins/mturkstudy-3/.v
   "output": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_standard_output.json",
   "summary": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_summary.json"
 }
-  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
-Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
 Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.0s
-Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
- 38%|███▊      | 211/551 [00:27<00:44,  7.57it/s]
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
+ 38%|███▊      | 211/551 [00:25<00:40,  8.40it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
@@ -1943,8 +1912,8 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no cred
   0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
 Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
 Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
-Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:25<00:41,  8.21it/s]
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.55it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
@@ -1985,11 +1954,11 @@ Traceback (most recent call last):
     raise self._make_status_error_from_response(err.response) from None
 openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 20s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
-Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.0s
-Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
 Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
- 38%|███▊      | 211/551 [00:24<00:39,  8.64it/s]
+ 38%|███▊      | 211/551 [00:24<00:39,  8.61it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
@@ -2030,11 +1999,11 @@ Traceback (most recent call last):
     raise self._make_status_error_from_response(err.response) from None
 openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 30s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.0s
-Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.0s
-Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
-Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
- 38%|███▊      | 211/551 [00:24<00:39,  8.68it/s]
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.0s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:24<00:40,  8.49it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
@@ -2075,11 +2044,11 @@ Traceback (most recent call last):
     raise self._make_status_error_from_response(err.response) from None
 openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 40s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.0s
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
 Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.0s
-Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
-Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
- 38%|███▊      | 211/551 [00:24<00:39,  8.67it/s]
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:25<00:40,  8.43it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
@@ -2190,10 +2159,10 @@ subprocess.CalledProcessError: Command '['/Users/kathleenhiggins/mturkstudy-3/.v
   "summary": "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/statistical_analysis/bagozzi_27/consolidated_bagozzi_inhouse_overlap_gold_summary.json"
 }
   0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
-Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
-Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
-Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:24<00:39,  8.52it/s]
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.0s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.0s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:25<00:40,  8.39it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
@@ -2235,10 +2204,10 @@ Traceback (most recent call last):
 openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 10s and resuming from checkpoint.
   0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
-Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
-Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
-Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:24<00:39,  8.69it/s]
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.1s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.63it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
@@ -2281,9 +2250,9 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no cred
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 20s and resuming from checkpoint.
   0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
 Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
-Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
-Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.1s
- 38%|███▊      | 211/551 [00:24<00:39,  8.68it/s]
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.57it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
@@ -2324,11 +2293,11 @@ Traceback (most recent call last):
     raise self._make_status_error_from_response(err.response) from None
 openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 30s and resuming from checkpoint.
-  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.1s
+  0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
 Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
-Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.2s
-Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:24<00:39,  8.56it/s]
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.0s
+Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.0s
+ 38%|███▊      | 211/551 [00:24<00:39,  8.58it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
@@ -2370,10 +2339,10 @@ Traceback (most recent call last):
 openai.RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
 [prompt_4_boundary_examples_precision_temp0p0_run1] wrapper failed with exit code 1; sleeping 40s and resuming from checkpoint.
   0%|          | 0/551 [00:00<?, ?it/s]Provider call failed on attempt 1/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 1.2s
-Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.2s
-Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.1s
+Provider call failed on attempt 2/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 2.0s
+Provider call failed on attempt 3/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 4.0s
 Provider call failed on attempt 4/5: RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}; retrying in 8.2s
- 38%|███▊      | 211/551 [00:24<00:40,  8.50it/s]
+ 38%|███▊      | 211/551 [00:24<00:40,  8.45it/s]
 Traceback (most recent call last):
   File "/Users/kathleenhiggins/mturkstudy-3/src/dataset_comparison_scripts/run_wrapper_multiple_llm_annotations.py", line 1676, in <module>
     raise SystemExit(main())
