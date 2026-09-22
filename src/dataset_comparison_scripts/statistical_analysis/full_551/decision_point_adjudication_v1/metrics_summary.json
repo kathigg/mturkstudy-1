@@ -1,0 +1,557 @@
+{
+  "method": "decision-point adjudication",
+  "validator_mode": "source-votes",
+  "candidate_sources": [
+    {
+      "name": "gpt5mini_prompt5",
+      "path": "/Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/openai_gpt_5_mini/final_annotations.json",
+      "weight": 1.1
+    },
+    {
+      "name": "gemini_flash_prompt5",
+      "path": "/Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/gemini_gemini_3_1_flash_lite/final_annotations.json",
+      "weight": 1.0
+    },
+    {
+      "name": "claude_haiku_prompt5",
+      "path": "/Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_5_human_aligned_precision_recall_single_models/claude_claude_haiku_4_5/final_annotations.json",
+      "weight": 0.7
+    },
+    {
+      "name": "adjudicated_prompt2",
+      "path": "/Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_2_dr_bagozzi_temp0p0_run1/final_annotations.json",
+      "weight": 1.1
+    }
+  ],
+  "label_sources": [
+    {
+      "name": "gpt5mini_prompt4_labeler",
+      "path": "/Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/full_551/npl_prompt_comparison/prompt_4_boundary_examples_precision_single_models/openai_gpt_5_mini/final_annotations.json",
+      "weight": 1.2
+    },
+    {
+      "name": "adjudicated_prompt4_labeler",
+      "path": "/Users/kathleenhiggins/mturkstudy-3/src/llm_annotation_results/full_551/npl_prompt_comparison/adjudication_prompt_1_to_5/prompt_4_boundary_examples_precision_temp0p0_run1/final_annotations.json",
+      "weight": 1.2
+    }
+  ],
+  "threshold_selection": [
+    {
+      "mode": "fixed",
+      "threshold": 0.5
+    }
+  ],
+  "npl_inclusive": {
+    "titles_compared": 25,
+    "polarization_match": {
+      "precision": 0.518,
+      "recall": 0.725,
+      "f1": 0.604,
+      "correct": 58,
+      "prediction_total": 112,
+      "gold_total": 80
+    },
+    "category_match": {
+      "precision": 0.473,
+      "recall": 0.662,
+      "f1": 0.552,
+      "correct": 53,
+      "prediction_total": 112,
+      "gold_total": 80
+    },
+    "subcategory_match": {
+      "precision": 0.438,
+      "recall": 0.613,
+      "f1": 0.51,
+      "correct": 49,
+      "prediction_total": 112,
+      "gold_total": 80
+    },
+    "label_agreement_on_matched": {
+      "category": 0.914,
+      "subcategory": 0.845,
+      "matched": 58
+    },
+    "per_article": {
+      "Biden criticizes Amazon for paying $0 in corporate taxes": {
+        "matched": 2,
+        "prediction_total": 4,
+        "gold_total": 2,
+        "prediction_only": 2,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "BuzzFeed Journalists Protest in Push for Union Recognition": {
+        "matched": 1,
+        "prediction_total": 3,
+        "gold_total": 2,
+        "prediction_only": 2,
+        "gold_only": 1,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "DC mayor says Trump's Fourth of July celebration emptied security fund": {
+        "matched": 1,
+        "prediction_total": 3,
+        "gold_total": 3,
+        "prediction_only": 2,
+        "gold_only": 2,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings": {
+        "matched": 1,
+        "prediction_total": 3,
+        "gold_total": 1,
+        "prediction_only": 2,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud": {
+        "matched": 2,
+        "prediction_total": 6,
+        "gold_total": 3,
+        "prediction_only": 4,
+        "gold_only": 1,
+        "category_correct": 2,
+        "subcategory_correct": 2
+      },
+      "donald trump's criminal justice reform shows results": {
+        "matched": 1,
+        "prediction_total": 5,
+        "gold_total": 2,
+        "prediction_only": 4,
+        "gold_only": 1,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "editorial: six months after california's landmark police transparency law, many agencies still won't release their records": {
+        "matched": 3,
+        "prediction_total": 5,
+        "gold_total": 4,
+        "prediction_only": 2,
+        "gold_only": 1,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "'Every American is entitled to health care': Sen. Bernie Sanders": {
+        "matched": 2,
+        "prediction_total": 4,
+        "gold_total": 3,
+        "prediction_only": 2,
+        "gold_only": 1,
+        "category_correct": 2,
+        "subcategory_correct": 1
+      },
+      "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time": {
+        "matched": 1,
+        "prediction_total": 3,
+        "gold_total": 3,
+        "prediction_only": 2,
+        "gold_only": 2,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "george conway urges trump to resign over aborted iran strike": {
+        "matched": 5,
+        "prediction_total": 6,
+        "gold_total": 8,
+        "prediction_only": 1,
+        "gold_only": 3,
+        "category_correct": 4,
+        "subcategory_correct": 3
+      },
+      "GOP lawmaker suggests Colin Kaepernick move to a different country": {
+        "matched": 1,
+        "prediction_total": 3,
+        "gold_total": 1,
+        "prediction_only": 2,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar": {
+        "matched": 3,
+        "prediction_total": 6,
+        "gold_total": 3,
+        "prediction_only": 3,
+        "gold_only": 0,
+        "category_correct": 3,
+        "subcategory_correct": 2
+      },
+      "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.": {
+        "matched": 1,
+        "prediction_total": 3,
+        "gold_total": 1,
+        "prediction_only": 2,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal": {
+        "matched": 3,
+        "prediction_total": 5,
+        "gold_total": 3,
+        "prediction_only": 2,
+        "gold_only": 0,
+        "category_correct": 3,
+        "subcategory_correct": 3
+      },
+      "Protest in Madrid as conservatives suspend ban on most polluting cars": {
+        "matched": 2,
+        "prediction_total": 4,
+        "gold_total": 2,
+        "prediction_only": 2,
+        "gold_only": 0,
+        "category_correct": 2,
+        "subcategory_correct": 2
+      },
+      "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets": {
+        "matched": 1,
+        "prediction_total": 3,
+        "gold_total": 1,
+        "prediction_only": 2,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "RMV Fail: 546 license suspensions, more to come": {
+        "matched": 1,
+        "prediction_total": 4,
+        "gold_total": 1,
+        "prediction_only": 3,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "ron desantis signs amendment 4 bill, limiting felon voting": {
+        "matched": 3,
+        "prediction_total": 4,
+        "gold_total": 4,
+        "prediction_only": 1,
+        "gold_only": 1,
+        "category_correct": 3,
+        "subcategory_correct": 3
+      },
+      "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'": {
+        "matched": 4,
+        "prediction_total": 6,
+        "gold_total": 6,
+        "prediction_only": 2,
+        "gold_only": 2,
+        "category_correct": 4,
+        "subcategory_correct": 3
+      },
+      "the latest: nadler says panel will move quickly on mcgahn": {
+        "matched": 3,
+        "prediction_total": 4,
+        "gold_total": 3,
+        "prediction_only": 1,
+        "gold_only": 0,
+        "category_correct": 3,
+        "subcategory_correct": 3
+      },
+      "Trump hits polling on Fox News: 'Something weird going on at Fox'": {
+        "matched": 5,
+        "prediction_total": 7,
+        "gold_total": 5,
+        "prediction_only": 2,
+        "gold_only": 0,
+        "category_correct": 4,
+        "subcategory_correct": 4
+      },
+      "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house": {
+        "matched": 5,
+        "prediction_total": 9,
+        "gold_total": 9,
+        "prediction_only": 4,
+        "gold_only": 4,
+        "category_correct": 5,
+        "subcategory_correct": 5
+      },
+      "trump vows to cure cancer and eradicate aids": {
+        "matched": 1,
+        "prediction_total": 4,
+        "gold_total": 2,
+        "prediction_only": 3,
+        "gold_only": 1,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "tutankhamun sculpture's london auction sparks egyptian outcry": {
+        "matched": 3,
+        "prediction_total": 4,
+        "gold_total": 3,
+        "prediction_only": 1,
+        "gold_only": 0,
+        "category_correct": 3,
+        "subcategory_correct": 3
+      },
+      "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized": {
+        "matched": 3,
+        "prediction_total": 4,
+        "gold_total": 5,
+        "prediction_only": 1,
+        "gold_only": 2,
+        "category_correct": 3,
+        "subcategory_correct": 3
+      }
+    }
+  },
+  "polarizing_only": {
+    "titles_compared": 24,
+    "polarization_match": {
+      "precision": 0.573,
+      "recall": 0.672,
+      "f1": 0.619,
+      "correct": 43,
+      "prediction_total": 75,
+      "gold_total": 64
+    },
+    "category_match": {
+      "precision": 0.507,
+      "recall": 0.594,
+      "f1": 0.547,
+      "correct": 38,
+      "prediction_total": 75,
+      "gold_total": 64
+    },
+    "subcategory_match": {
+      "precision": 0.453,
+      "recall": 0.531,
+      "f1": 0.489,
+      "correct": 34,
+      "prediction_total": 75,
+      "gold_total": 64
+    },
+    "label_agreement_on_matched": {
+      "category": 0.884,
+      "subcategory": 0.791,
+      "matched": 43
+    },
+    "per_article": {
+      "Biden criticizes Amazon for paying $0 in corporate taxes": {
+        "matched": 1,
+        "prediction_total": 2,
+        "gold_total": 1,
+        "prediction_only": 1,
+        "gold_only": 0,
+        "category_correct": 0,
+        "subcategory_correct": 0
+      },
+      "BuzzFeed Journalists Protest in Push for Union Recognition": {
+        "matched": 1,
+        "prediction_total": 1,
+        "gold_total": 2,
+        "prediction_only": 0,
+        "gold_only": 1,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "DC mayor says Trump's Fourth of July celebration emptied security fund": {
+        "matched": 0,
+        "prediction_total": 1,
+        "gold_total": 2,
+        "prediction_only": 1,
+        "gold_only": 2,
+        "category_correct": 0,
+        "subcategory_correct": 0
+      },
+      "Did Jared Kushner Violate the Hatch Act? Democrats Request Investigation After Kellyanne Conway Findings": {
+        "matched": 1,
+        "prediction_total": 2,
+        "gold_total": 1,
+        "prediction_only": 1,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "Donald Trump Jr. mocks Roy Moore after campaign announcement, reigniting feud": {
+        "matched": 2,
+        "prediction_total": 6,
+        "gold_total": 3,
+        "prediction_only": 4,
+        "gold_only": 1,
+        "category_correct": 2,
+        "subcategory_correct": 2
+      },
+      "donald trump's criminal justice reform shows results": {
+        "matched": 0,
+        "prediction_total": 2,
+        "gold_total": 1,
+        "prediction_only": 2,
+        "gold_only": 1,
+        "category_correct": 0,
+        "subcategory_correct": 0
+      },
+      "editorial: six months after california's landmark police transparency law, many agencies still won't release their records": {
+        "matched": 3,
+        "prediction_total": 3,
+        "gold_total": 4,
+        "prediction_only": 0,
+        "gold_only": 1,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "'Every American is entitled to health care': Sen. Bernie Sanders": {
+        "matched": 2,
+        "prediction_total": 4,
+        "gold_total": 3,
+        "prediction_only": 2,
+        "gold_only": 1,
+        "category_correct": 2,
+        "subcategory_correct": 1
+      },
+      "Gabbard was most searched Democratic candidate after debate despite getting third-lowest speaking time": {
+        "matched": 1,
+        "prediction_total": 2,
+        "gold_total": 3,
+        "prediction_only": 1,
+        "gold_only": 2,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "george conway urges trump to resign over aborted iran strike": {
+        "matched": 4,
+        "prediction_total": 4,
+        "gold_total": 7,
+        "prediction_only": 0,
+        "gold_only": 3,
+        "category_correct": 3,
+        "subcategory_correct": 2
+      },
+      "GOP lawmaker suggests Colin Kaepernick move to a different country": {
+        "matched": 1,
+        "prediction_total": 1,
+        "gold_total": 1,
+        "prediction_only": 0,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "'if you're directly complicit in spreading hate, consider dining at home': restaurant owner who kicked sarah sanders out last year defends chicago server who spat on eric trump in a cocktail bar": {
+        "matched": 2,
+        "prediction_total": 5,
+        "gold_total": 2,
+        "prediction_only": 3,
+        "gold_only": 0,
+        "category_correct": 2,
+        "subcategory_correct": 1
+      },
+      "meghan markle has been branded 'difficult' by tabloids. it's the same sexism that demonizes driven women in the workplace.": {
+        "matched": 1,
+        "prediction_total": 3,
+        "gold_total": 1,
+        "prediction_only": 2,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "Ocasio-Cortez, Sanders call for climate change emergency mobilization, seeks a re-do of failed Green New Deal": {
+        "matched": 3,
+        "prediction_total": 5,
+        "gold_total": 3,
+        "prediction_only": 2,
+        "gold_only": 0,
+        "category_correct": 3,
+        "subcategory_correct": 3
+      },
+      "Protest in Madrid as conservatives suspend ban on most polluting cars": {
+        "matched": 1,
+        "prediction_total": 2,
+        "gold_total": 1,
+        "prediction_only": 1,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "Protesters Want All Philadelphia Police Officers Connected To Alleged Racist Social Media Posts To Be Removed From Streets": {
+        "matched": 1,
+        "prediction_total": 3,
+        "gold_total": 1,
+        "prediction_only": 2,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "ron desantis signs amendment 4 bill, limiting felon voting": {
+        "matched": 2,
+        "prediction_total": 3,
+        "gold_total": 2,
+        "prediction_only": 1,
+        "gold_only": 0,
+        "category_correct": 2,
+        "subcategory_correct": 2
+      },
+      "senate confirms judge who attacked roe v. wade, called being transgender 'a delusion'": {
+        "matched": 3,
+        "prediction_total": 5,
+        "gold_total": 5,
+        "prediction_only": 2,
+        "gold_only": 2,
+        "category_correct": 3,
+        "subcategory_correct": 2
+      },
+      "the latest: nadler says panel will move quickly on mcgahn": {
+        "matched": 1,
+        "prediction_total": 1,
+        "gold_total": 1,
+        "prediction_only": 0,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "Trump hits polling on Fox News: 'Something weird going on at Fox'": {
+        "matched": 5,
+        "prediction_total": 6,
+        "gold_total": 5,
+        "prediction_only": 1,
+        "gold_only": 0,
+        "category_correct": 4,
+        "subcategory_correct": 4
+      },
+      "trump rips 'horrible' new york times, washington post, wonders if people will 'demand' he stay in white house": {
+        "matched": 4,
+        "prediction_total": 8,
+        "gold_total": 8,
+        "prediction_only": 4,
+        "gold_only": 4,
+        "category_correct": 4,
+        "subcategory_correct": 4
+      },
+      "trump vows to cure cancer and eradicate aids": {
+        "matched": 0,
+        "prediction_total": 1,
+        "gold_total": 1,
+        "prediction_only": 1,
+        "gold_only": 1,
+        "category_correct": 0,
+        "subcategory_correct": 0
+      },
+      "tutankhamun sculpture's london auction sparks egyptian outcry": {
+        "matched": 1,
+        "prediction_total": 1,
+        "gold_total": 1,
+        "prediction_only": 0,
+        "gold_only": 0,
+        "category_correct": 1,
+        "subcategory_correct": 1
+      },
+      "'WE ARE LIVID!': Mural Honoring Philadelphia Police Officer Killed In Line Of Duty Vandalized": {
+        "matched": 3,
+        "prediction_total": 4,
+        "gold_total": 5,
+        "prediction_only": 1,
+        "gold_only": 2,
+        "category_correct": 3,
+        "subcategory_correct": 3
+      }
+    }
+  },
+  "outputs": {
+    "final_annotations": "src/llm_annotation_results/full_551/decision_point_adjudication_v1/final_annotations.json",
+    "final_annotations_polarizing_only": "src/llm_annotation_results/full_551/decision_point_adjudication_v1/final_annotations_polarizing_only.json"
+  }
+}
