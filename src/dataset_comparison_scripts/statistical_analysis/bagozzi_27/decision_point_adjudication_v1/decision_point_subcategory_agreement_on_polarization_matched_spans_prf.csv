@@ -1,0 +1,12 @@
+subcategory,matched_pair_total,tp,fp,fn,predicted_as_subcategory_on_matched_spans,gold_subcategory_on_matched_spans,precision,recall,f1
+no polarizing language,64,16,0,0,16,16,1.0,1.0,1.0
+exaggeration,64,6,2,5,8,11,0.75,0.5454545454545454,0.631578947368421
+casual oversimplification,64,0,0,0,0,0,0.0,0.0,0.0
+doubt,64,4,2,1,6,5,0.6666666666666666,0.8,0.7272727272727272
+bandwagon,64,0,0,1,0,1,0.0,0.0,0.0
+slogans,64,5,0,0,5,5,1.0,1.0,1.0
+scapegoating,64,0,0,2,0,2,0.0,0.0,0.0
+name-calling,64,16,5,3,21,19,0.7619047619047619,0.8421052631578947,0.8
+demonization,64,3,5,2,8,5,0.375,0.6,0.4615384615384615
+micro average,64,50,14,14,64,64,0.78125,0.78125,0.78125
+macro average,64,,,,,,0.5059523809523809,0.5319510898458266,0.5133766817977343
