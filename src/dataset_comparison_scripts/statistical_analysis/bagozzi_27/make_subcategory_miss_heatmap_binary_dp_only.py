@@ -65,6 +65,7 @@ def selected_prediction_specs() -> list[dict[str, str]]:
         specs.append(
             {
                 "family": row["architecture"],
+                "model": row["model"],
                 "system": system,
                 "path": str(path),
             }
@@ -83,6 +84,7 @@ def build_rows(
         f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
         row: dict[str, Any] = {
             "family": spec["family"],
+            "model": spec["model"],
             "system": spec["system"],
             "prediction_total": miss["prediction_total"],
             "gold_total": miss["gold_total"],
@@ -180,19 +182,46 @@ def write_outputs(rows: list[dict[str, Any]], gold_counts: dict[str, int]) -> No
     write_csv(LONG_CSV_PATH, long_rows)
 
 
+def aggregate_plot_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    for row in rows:
+        if row["family"] == "decision point":
+            label = "Decision point"
+        elif row["family"] == "OG adjudication":
+            label = "OG adjudication"
+        else:
+            label = row["model"]
+        grouped.setdefault(label, []).append(row)
+
+    aggregated: list[dict[str, Any]] = []
+    for label, group in grouped.items():
+        item: dict[str, Any] = {
+            "label": label,
+            "polarization_f1": float(np.mean([row["polarization_f1"] for row in group])),
+        }
+        for subcategory in base.SUBCATEGORY_ORDER:
+            item[f"{subcategory}_miss_rate"] = float(
+                np.mean([row[f"{subcategory}_miss_rate"] for row in group])
+            )
+        aggregated.append(item)
+
+    return sorted(
+        aggregated,
+        key=lambda row: (row["label"] != "Decision point", -row["polarization_f1"]),
+    )
+
+
 def render_heatmap(rows: list[dict[str, Any]], gold_counts: dict[str, int]) -> None:
     subcategories = base.SUBCATEGORY_ORDER
+    plot_rows = aggregate_plot_rows(rows)
     matrix = np.array(
-        [[row[f"{subcategory}_miss_rate"] for subcategory in subcategories] for row in rows],
+        [
+            [row[f"{subcategory}_miss_rate"] for subcategory in subcategories]
+            for row in plot_rows
+        ],
         dtype=float,
     )
-    aggregate = matrix.mean(axis=0, keepdims=True)
-    plot_matrix = np.vstack([matrix, aggregate])
-
-    row_labels = [
-        f"{row['system']}   |   F1 {row['polarization_f1']:.3f}"
-        for row in rows
-    ] + ["Across-system mean"]
+    row_labels = [row["label"] for row in plot_rows]
     column_labels = [
         f"{DISPLAY_LABELS[subcategory]}\n(n={gold_counts[subcategory]})"
         for subcategory in subcategories
@@ -209,79 +238,50 @@ def render_heatmap(rows: list[dict[str, Any]], gold_counts: dict[str, int]) -> N
             "axes.facecolor": "white",
         }
     )
-    fig_height = max(12.0, 0.34 * len(row_labels) + 3.0)
-    fig, ax = plt.subplots(figsize=(17.5, fig_height), constrained_layout=True)
-    image = ax.imshow(plot_matrix, cmap=cmap, vmin=0.0, vmax=1.0, aspect="auto", interpolation="nearest")
+    fig, ax = plt.subplots(figsize=(14.5, 5.8), constrained_layout=True)
+    image = ax.imshow(matrix, cmap=cmap, vmin=0.0, vmax=1.0, aspect="auto", interpolation="nearest")
 
     ax.set_xticks(np.arange(len(column_labels)), labels=column_labels)
     ax.set_yticks(np.arange(len(row_labels)), labels=row_labels)
-    ax.tick_params(axis="x", top=True, bottom=False, labeltop=True, labelbottom=False, length=0, pad=10)
-    ax.tick_params(axis="y", length=0, pad=8)
-    plt.setp(ax.get_xticklabels(), fontsize=9.5, fontweight="semibold")
-    plt.setp(ax.get_yticklabels(), fontsize=8.5)
+    ax.tick_params(axis="x", top=True, bottom=False, labeltop=True, labelbottom=False, length=0, pad=8)
+    ax.tick_params(axis="y", length=0, pad=6)
+    plt.setp(ax.get_xticklabels(), fontsize=9, fontweight="semibold")
+    plt.setp(ax.get_yticklabels(), fontsize=9)
     ax.get_yticklabels()[0].set_fontweight("bold")
-    ax.get_yticklabels()[-1].set_fontweight("bold")
 
-    for i in range(plot_matrix.shape[0]):
-        for j in range(plot_matrix.shape[1]):
-            rate = plot_matrix[i, j]
-            if i == len(rows):
-                label = f"{rate:.0%}"
-            else:
-                missed = rows[i][f"{subcategories[j]}_missed"]
-                total = gold_counts[subcategories[j]]
-                label = f"{rate:.0%}\n{missed}/{total}"
+    for i in range(matrix.shape[0]):
+        for j in range(matrix.shape[1]):
+            rate = matrix[i, j]
             ax.text(
                 j,
                 i,
-                label,
+                f"{rate:.0%}",
                 ha="center",
                 va="center",
-                fontsize=7.8,
-                fontweight="semibold" if i in {0, len(rows)} else "normal",
+                fontsize=9,
+                fontweight="semibold" if i == 0 else "normal",
                 color="white" if rate >= 0.55 else "#10243b",
-                linespacing=1.05,
             )
 
-    ax.axhline(0.5, color="#f28e2b", linewidth=2.5)
-    ax.axhline(len(rows) - 0.5, color="#10243b", linewidth=2.0)
     ax.set_xticks(np.arange(-0.5, len(subcategories), 1), minor=True)
     ax.set_yticks(np.arange(-0.5, len(row_labels), 1), minor=True)
-    ax.grid(which="minor", color="white", linewidth=1.2)
+    ax.grid(which="minor", color="white", linewidth=1.5)
     ax.tick_params(which="minor", bottom=False, left=False)
     for spine in ax.spines.values():
         spine.set_visible(False)
 
     ax.set_title(
-        "Gold-Standard Polarization Misses by Subcategory",
+        "Gold Miss Rate by Subcategory",
         loc="left",
-        fontsize=19,
+        fontsize=17,
         fontweight="bold",
-        pad=112,
+        pad=70,
         color="#10243b",
     )
-    ax.text(
-        0.0,
-        1.105,
-        "NPL-inclusive intersection gold set. Columns follow increasing polarization severity; darker cells indicate a higher share of gold annotations missed.",
-        transform=ax.transAxes,
-        fontsize=10.5,
-        color="#4a5b6b",
-        va="bottom",
-    )
-    ax.text(
-        0.0,
-        1.068,
-        "Cells show miss rate and missed/gold count. Only the weighted binary-filter decision-point variant is included; rows are otherwise ordered by polarization F1.",
-        transform=ax.transAxes,
-        fontsize=9.5,
-        color="#667788",
-        va="bottom",
-    )
 
-    colorbar = fig.colorbar(image, ax=ax, orientation="horizontal", fraction=0.025, pad=0.035, aspect=55)
-    colorbar.set_label("Gold annotation miss rate", fontsize=9.5)
-    colorbar.set_ticks([0, 0.25, 0.5, 0.75, 1.0], labels=["0%", "25%", "50%", "75%", "100%"])
+    colorbar = fig.colorbar(image, ax=ax, orientation="horizontal", fraction=0.045, pad=0.06, aspect=45)
+    colorbar.set_label("Miss rate", fontsize=9)
+    colorbar.set_ticks([0, 0.5, 1.0], labels=["0%", "50%", "100%"])
     colorbar.outline.set_visible(False)
 
     PNG_PATH.parent.mkdir(parents=True, exist_ok=True)
