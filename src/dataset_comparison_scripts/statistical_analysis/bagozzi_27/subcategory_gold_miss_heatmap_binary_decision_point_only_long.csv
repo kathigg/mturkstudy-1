@@ -1,0 +1,325 @@
+family,system,polarization_f1,severity_rank,subcategory,gold_support,missed_count,miss_rate
+decision point,Decision point - binary filter,0.628019,0,no polarizing language,16,0,0.0
+decision point,Decision point - binary filter,0.628019,1,exaggeration,18,6,0.333333
+decision point,Decision point - binary filter,0.628019,2,casual oversimplification,2,2,1.0
+decision point,Decision point - binary filter,0.628019,3,doubt,10,5,0.5
+decision point,Decision point - binary filter,0.628019,4,bandwagon,1,0,0.0
+decision point,Decision point - binary filter,0.628019,5,slogans,6,1,0.166667
+decision point,Decision point - binary filter,0.628019,6,scapegoating,2,0,0.0
+decision point,Decision point - binary filter,0.628019,7,name-calling,26,7,0.269231
+decision point,Decision point - binary filter,0.628019,8,demonization,5,0,0.0
+single small model,GPT-5 mini - P5 human aligned,0.60177,0,no polarizing language,16,1,0.0625
+single small model,GPT-5 mini - P5 human aligned,0.60177,1,exaggeration,18,6,0.333333
+single small model,GPT-5 mini - P5 human aligned,0.60177,2,casual oversimplification,2,2,1.0
+single small model,GPT-5 mini - P5 human aligned,0.60177,3,doubt,10,4,0.4
+single small model,GPT-5 mini - P5 human aligned,0.60177,4,bandwagon,1,0,0.0
+single small model,GPT-5 mini - P5 human aligned,0.60177,5,slogans,6,1,0.166667
+single small model,GPT-5 mini - P5 human aligned,0.60177,6,scapegoating,2,0,0.0
+single small model,GPT-5 mini - P5 human aligned,0.60177,7,name-calling,26,4,0.153846
+single small model,GPT-5 mini - P5 human aligned,0.60177,8,demonization,5,0,0.0
+OG adjudication,OG adj - P2 Bagozzi,0.598214,0,no polarizing language,16,1,0.0625
+OG adjudication,OG adj - P2 Bagozzi,0.598214,1,exaggeration,18,5,0.277778
+OG adjudication,OG adj - P2 Bagozzi,0.598214,2,casual oversimplification,2,1,0.5
+OG adjudication,OG adj - P2 Bagozzi,0.598214,3,doubt,10,3,0.3
+OG adjudication,OG adj - P2 Bagozzi,0.598214,4,bandwagon,1,0,0.0
+OG adjudication,OG adj - P2 Bagozzi,0.598214,5,slogans,6,2,0.333333
+OG adjudication,OG adj - P2 Bagozzi,0.598214,6,scapegoating,2,0,0.0
+OG adjudication,OG adj - P2 Bagozzi,0.598214,7,name-calling,26,7,0.269231
+OG adjudication,OG adj - P2 Bagozzi,0.598214,8,demonization,5,0,0.0
+single small model,GPT-5 mini - P1 default,0.596154,0,no polarizing language,16,3,0.1875
+single small model,GPT-5 mini - P1 default,0.596154,1,exaggeration,18,6,0.333333
+single small model,GPT-5 mini - P1 default,0.596154,2,casual oversimplification,2,1,0.5
+single small model,GPT-5 mini - P1 default,0.596154,3,doubt,10,3,0.3
+single small model,GPT-5 mini - P1 default,0.596154,4,bandwagon,1,1,1.0
+single small model,GPT-5 mini - P1 default,0.596154,5,slogans,6,2,0.333333
+single small model,GPT-5 mini - P1 default,0.596154,6,scapegoating,2,1,0.5
+single small model,GPT-5 mini - P1 default,0.596154,7,name-calling,26,7,0.269231
+single small model,GPT-5 mini - P1 default,0.596154,8,demonization,5,0,0.0
+OG adjudication,OG adj - P5 human aligned,0.588235,0,no polarizing language,16,1,0.0625
+OG adjudication,OG adj - P5 human aligned,0.588235,1,exaggeration,18,6,0.333333
+OG adjudication,OG adj - P5 human aligned,0.588235,2,casual oversimplification,2,2,1.0
+OG adjudication,OG adj - P5 human aligned,0.588235,3,doubt,10,5,0.5
+OG adjudication,OG adj - P5 human aligned,0.588235,4,bandwagon,1,0,0.0
+OG adjudication,OG adj - P5 human aligned,0.588235,5,slogans,6,2,0.333333
+OG adjudication,OG adj - P5 human aligned,0.588235,6,scapegoating,2,1,0.5
+OG adjudication,OG adj - P5 human aligned,0.588235,7,name-calling,26,9,0.346154
+OG adjudication,OG adj - P5 human aligned,0.588235,8,demonization,5,0,0.0
+single strong model,Gemini 3.1 Pro Preview - P5 human aligned,0.580311,0,no polarizing language,16,0,0.0
+single strong model,Gemini 3.1 Pro Preview - P5 human aligned,0.580311,1,exaggeration,18,10,0.555556
+single strong model,Gemini 3.1 Pro Preview - P5 human aligned,0.580311,2,casual oversimplification,2,1,0.5
+single strong model,Gemini 3.1 Pro Preview - P5 human aligned,0.580311,3,doubt,10,4,0.4
+single strong model,Gemini 3.1 Pro Preview - P5 human aligned,0.580311,4,bandwagon,1,0,0.0
+single strong model,Gemini 3.1 Pro Preview - P5 human aligned,0.580311,5,slogans,6,3,0.5
+single strong model,Gemini 3.1 Pro Preview - P5 human aligned,0.580311,6,scapegoating,2,1,0.5
+single strong model,Gemini 3.1 Pro Preview - P5 human aligned,0.580311,7,name-calling,26,11,0.423077
+single strong model,Gemini 3.1 Pro Preview - P5 human aligned,0.580311,8,demonization,5,0,0.0
+single strong model,Gemini 3.1 Pro Preview - P2 Bagozzi,0.576087,0,no polarizing language,16,1,0.0625
+single strong model,Gemini 3.1 Pro Preview - P2 Bagozzi,0.576087,1,exaggeration,18,11,0.611111
+single strong model,Gemini 3.1 Pro Preview - P2 Bagozzi,0.576087,2,casual oversimplification,2,1,0.5
+single strong model,Gemini 3.1 Pro Preview - P2 Bagozzi,0.576087,3,doubt,10,5,0.5
+single strong model,Gemini 3.1 Pro Preview - P2 Bagozzi,0.576087,4,bandwagon,1,1,1.0
+single strong model,Gemini 3.1 Pro Preview - P2 Bagozzi,0.576087,5,slogans,6,3,0.5
+single strong model,Gemini 3.1 Pro Preview - P2 Bagozzi,0.576087,6,scapegoating,2,1,0.5
+single strong model,Gemini 3.1 Pro Preview - P2 Bagozzi,0.576087,7,name-calling,26,8,0.307692
+single strong model,Gemini 3.1 Pro Preview - P2 Bagozzi,0.576087,8,demonization,5,2,0.4
+single small model,GPT-5 mini - P2 Bagozzi,0.563025,0,no polarizing language,16,3,0.1875
+single small model,GPT-5 mini - P2 Bagozzi,0.563025,1,exaggeration,18,6,0.333333
+single small model,GPT-5 mini - P2 Bagozzi,0.563025,2,casual oversimplification,2,1,0.5
+single small model,GPT-5 mini - P2 Bagozzi,0.563025,3,doubt,10,4,0.4
+single small model,GPT-5 mini - P2 Bagozzi,0.563025,4,bandwagon,1,0,0.0
+single small model,GPT-5 mini - P2 Bagozzi,0.563025,5,slogans,6,2,0.333333
+single small model,GPT-5 mini - P2 Bagozzi,0.563025,6,scapegoating,2,0,0.0
+single small model,GPT-5 mini - P2 Bagozzi,0.563025,7,name-calling,26,3,0.115385
+single small model,GPT-5 mini - P2 Bagozzi,0.563025,8,demonization,5,0,0.0
+single small model,GPT-5 mini - P3 short spans,0.562212,0,no polarizing language,16,1,0.0625
+single small model,GPT-5 mini - P3 short spans,0.562212,1,exaggeration,18,9,0.5
+single small model,GPT-5 mini - P3 short spans,0.562212,2,casual oversimplification,2,1,0.5
+single small model,GPT-5 mini - P3 short spans,0.562212,3,doubt,10,5,0.5
+single small model,GPT-5 mini - P3 short spans,0.562212,4,bandwagon,1,0,0.0
+single small model,GPT-5 mini - P3 short spans,0.562212,5,slogans,6,2,0.333333
+single small model,GPT-5 mini - P3 short spans,0.562212,6,scapegoating,2,1,0.5
+single small model,GPT-5 mini - P3 short spans,0.562212,7,name-calling,26,6,0.230769
+single small model,GPT-5 mini - P3 short spans,0.562212,8,demonization,5,0,0.0
+OG adjudication,OG adj - P1 default,0.551402,0,no polarizing language,16,2,0.125
+OG adjudication,OG adj - P1 default,0.551402,1,exaggeration,18,3,0.166667
+OG adjudication,OG adj - P1 default,0.551402,2,casual oversimplification,2,1,0.5
+OG adjudication,OG adj - P1 default,0.551402,3,doubt,10,7,0.7
+OG adjudication,OG adj - P1 default,0.551402,4,bandwagon,1,1,1.0
+OG adjudication,OG adj - P1 default,0.551402,5,slogans,6,4,0.666667
+OG adjudication,OG adj - P1 default,0.551402,6,scapegoating,2,1,0.5
+OG adjudication,OG adj - P1 default,0.551402,7,name-calling,26,7,0.269231
+OG adjudication,OG adj - P1 default,0.551402,8,demonization,5,1,0.2
+single small model,GPT-5 mini - P4 boundary,0.548077,0,no polarizing language,16,0,0.0
+single small model,GPT-5 mini - P4 boundary,0.548077,1,exaggeration,18,7,0.388889
+single small model,GPT-5 mini - P4 boundary,0.548077,2,casual oversimplification,2,2,1.0
+single small model,GPT-5 mini - P4 boundary,0.548077,3,doubt,10,5,0.5
+single small model,GPT-5 mini - P4 boundary,0.548077,4,bandwagon,1,0,0.0
+single small model,GPT-5 mini - P4 boundary,0.548077,5,slogans,6,2,0.333333
+single small model,GPT-5 mini - P4 boundary,0.548077,6,scapegoating,2,1,0.5
+single small model,GPT-5 mini - P4 boundary,0.548077,7,name-calling,26,10,0.384615
+single small model,GPT-5 mini - P4 boundary,0.548077,8,demonization,5,2,0.4
+single small model,Gemini 3.1 Flash Lite - P5 human aligned,0.541872,0,no polarizing language,16,1,0.0625
+single small model,Gemini 3.1 Flash Lite - P5 human aligned,0.541872,1,exaggeration,18,8,0.444444
+single small model,Gemini 3.1 Flash Lite - P5 human aligned,0.541872,2,casual oversimplification,2,1,0.5
+single small model,Gemini 3.1 Flash Lite - P5 human aligned,0.541872,3,doubt,10,6,0.6
+single small model,Gemini 3.1 Flash Lite - P5 human aligned,0.541872,4,bandwagon,1,0,0.0
+single small model,Gemini 3.1 Flash Lite - P5 human aligned,0.541872,5,slogans,6,3,0.5
+single small model,Gemini 3.1 Flash Lite - P5 human aligned,0.541872,6,scapegoating,2,1,0.5
+single small model,Gemini 3.1 Flash Lite - P5 human aligned,0.541872,7,name-calling,26,9,0.346154
+single small model,Gemini 3.1 Flash Lite - P5 human aligned,0.541872,8,demonization,5,2,0.4
+single small model,Gemini 3.1 Flash Lite - P2 Bagozzi,0.541667,0,no polarizing language,16,1,0.0625
+single small model,Gemini 3.1 Flash Lite - P2 Bagozzi,0.541667,1,exaggeration,18,11,0.611111
+single small model,Gemini 3.1 Flash Lite - P2 Bagozzi,0.541667,2,casual oversimplification,2,1,0.5
+single small model,Gemini 3.1 Flash Lite - P2 Bagozzi,0.541667,3,doubt,10,6,0.6
+single small model,Gemini 3.1 Flash Lite - P2 Bagozzi,0.541667,4,bandwagon,1,1,1.0
+single small model,Gemini 3.1 Flash Lite - P2 Bagozzi,0.541667,5,slogans,6,4,0.666667
+single small model,Gemini 3.1 Flash Lite - P2 Bagozzi,0.541667,6,scapegoating,2,0,0.0
+single small model,Gemini 3.1 Flash Lite - P2 Bagozzi,0.541667,7,name-calling,26,8,0.307692
+single small model,Gemini 3.1 Flash Lite - P2 Bagozzi,0.541667,8,demonization,5,2,0.4
+single strong model,Claude Sonnet 5 - P5 human aligned,0.538117,0,no polarizing language,16,1,0.0625
+single strong model,Claude Sonnet 5 - P5 human aligned,0.538117,1,exaggeration,18,7,0.388889
+single strong model,Claude Sonnet 5 - P5 human aligned,0.538117,2,casual oversimplification,2,2,1.0
+single strong model,Claude Sonnet 5 - P5 human aligned,0.538117,3,doubt,10,6,0.6
+single strong model,Claude Sonnet 5 - P5 human aligned,0.538117,4,bandwagon,1,0,0.0
+single strong model,Claude Sonnet 5 - P5 human aligned,0.538117,5,slogans,6,1,0.166667
+single strong model,Claude Sonnet 5 - P5 human aligned,0.538117,6,scapegoating,2,1,0.5
+single strong model,Claude Sonnet 5 - P5 human aligned,0.538117,7,name-calling,26,8,0.307692
+single strong model,Claude Sonnet 5 - P5 human aligned,0.538117,8,demonization,5,0,0.0
+OG adjudication,OG adj - P4 boundary,0.516129,0,no polarizing language,16,0,0.0
+OG adjudication,OG adj - P4 boundary,0.516129,1,exaggeration,18,10,0.555556
+OG adjudication,OG adj - P4 boundary,0.516129,2,casual oversimplification,2,2,1.0
+OG adjudication,OG adj - P4 boundary,0.516129,3,doubt,10,4,0.4
+OG adjudication,OG adj - P4 boundary,0.516129,4,bandwagon,1,0,0.0
+OG adjudication,OG adj - P4 boundary,0.516129,5,slogans,6,3,0.5
+OG adjudication,OG adj - P4 boundary,0.516129,6,scapegoating,2,1,0.5
+OG adjudication,OG adj - P4 boundary,0.516129,7,name-calling,26,8,0.307692
+OG adjudication,OG adj - P4 boundary,0.516129,8,demonization,5,2,0.4
+single small model,Gemini 3.1 Flash Lite - P1 default,0.515464,0,no polarizing language,16,1,0.0625
+single small model,Gemini 3.1 Flash Lite - P1 default,0.515464,1,exaggeration,18,11,0.611111
+single small model,Gemini 3.1 Flash Lite - P1 default,0.515464,2,casual oversimplification,2,1,0.5
+single small model,Gemini 3.1 Flash Lite - P1 default,0.515464,3,doubt,10,8,0.8
+single small model,Gemini 3.1 Flash Lite - P1 default,0.515464,4,bandwagon,1,1,1.0
+single small model,Gemini 3.1 Flash Lite - P1 default,0.515464,5,slogans,6,4,0.666667
+single small model,Gemini 3.1 Flash Lite - P1 default,0.515464,6,scapegoating,2,1,0.5
+single small model,Gemini 3.1 Flash Lite - P1 default,0.515464,7,name-calling,26,7,0.269231
+single small model,Gemini 3.1 Flash Lite - P1 default,0.515464,8,demonization,5,2,0.4
+OG adjudication,OG adj - P3 short spans,0.514563,0,no polarizing language,16,1,0.0625
+OG adjudication,OG adj - P3 short spans,0.514563,1,exaggeration,18,10,0.555556
+OG adjudication,OG adj - P3 short spans,0.514563,2,casual oversimplification,2,1,0.5
+OG adjudication,OG adj - P3 short spans,0.514563,3,doubt,10,7,0.7
+OG adjudication,OG adj - P3 short spans,0.514563,4,bandwagon,1,1,1.0
+OG adjudication,OG adj - P3 short spans,0.514563,5,slogans,6,3,0.5
+OG adjudication,OG adj - P3 short spans,0.514563,6,scapegoating,2,1,0.5
+OG adjudication,OG adj - P3 short spans,0.514563,7,name-calling,26,7,0.269231
+OG adjudication,OG adj - P3 short spans,0.514563,8,demonization,5,2,0.4
+single strong model,Claude Sonnet 5 - P2 Bagozzi,0.510121,0,no polarizing language,16,6,0.375
+single strong model,Claude Sonnet 5 - P2 Bagozzi,0.510121,1,exaggeration,18,5,0.277778
+single strong model,Claude Sonnet 5 - P2 Bagozzi,0.510121,2,casual oversimplification,2,1,0.5
+single strong model,Claude Sonnet 5 - P2 Bagozzi,0.510121,3,doubt,10,2,0.2
+single strong model,Claude Sonnet 5 - P2 Bagozzi,0.510121,4,bandwagon,1,1,1.0
+single strong model,Claude Sonnet 5 - P2 Bagozzi,0.510121,5,slogans,6,2,0.333333
+single strong model,Claude Sonnet 5 - P2 Bagozzi,0.510121,6,scapegoating,2,0,0.0
+single strong model,Claude Sonnet 5 - P2 Bagozzi,0.510121,7,name-calling,26,5,0.192308
+single strong model,Claude Sonnet 5 - P2 Bagozzi,0.510121,8,demonization,5,1,0.2
+single strong model,Claude Sonnet 5 - P1 default,0.497778,0,no polarizing language,16,5,0.3125
+single strong model,Claude Sonnet 5 - P1 default,0.497778,1,exaggeration,18,5,0.277778
+single strong model,Claude Sonnet 5 - P1 default,0.497778,2,casual oversimplification,2,0,0.0
+single strong model,Claude Sonnet 5 - P1 default,0.497778,3,doubt,10,9,0.9
+single strong model,Claude Sonnet 5 - P1 default,0.497778,4,bandwagon,1,0,0.0
+single strong model,Claude Sonnet 5 - P1 default,0.497778,5,slogans,6,5,0.833333
+single strong model,Claude Sonnet 5 - P1 default,0.497778,6,scapegoating,2,0,0.0
+single strong model,Claude Sonnet 5 - P1 default,0.497778,7,name-calling,26,6,0.230769
+single strong model,Claude Sonnet 5 - P1 default,0.497778,8,demonization,5,0,0.0
+single strong model,Gemini 3.1 Pro Preview - P1 default,0.472527,0,no polarizing language,16,0,0.0
+single strong model,Gemini 3.1 Pro Preview - P1 default,0.472527,1,exaggeration,18,15,0.833333
+single strong model,Gemini 3.1 Pro Preview - P1 default,0.472527,2,casual oversimplification,2,1,0.5
+single strong model,Gemini 3.1 Pro Preview - P1 default,0.472527,3,doubt,10,9,0.9
+single strong model,Gemini 3.1 Pro Preview - P1 default,0.472527,4,bandwagon,1,1,1.0
+single strong model,Gemini 3.1 Pro Preview - P1 default,0.472527,5,slogans,6,4,0.666667
+single strong model,Gemini 3.1 Pro Preview - P1 default,0.472527,6,scapegoating,2,1,0.5
+single strong model,Gemini 3.1 Pro Preview - P1 default,0.472527,7,name-calling,26,10,0.384615
+single strong model,Gemini 3.1 Pro Preview - P1 default,0.472527,8,demonization,5,2,0.4
+single strong model,Gemini 3.1 Pro Preview - P4 boundary,0.459893,0,no polarizing language,16,0,0.0
+single strong model,Gemini 3.1 Pro Preview - P4 boundary,0.459893,1,exaggeration,18,15,0.833333
+single strong model,Gemini 3.1 Pro Preview - P4 boundary,0.459893,2,casual oversimplification,2,1,0.5
+single strong model,Gemini 3.1 Pro Preview - P4 boundary,0.459893,3,doubt,10,8,0.8
+single strong model,Gemini 3.1 Pro Preview - P4 boundary,0.459893,4,bandwagon,1,0,0.0
+single strong model,Gemini 3.1 Pro Preview - P4 boundary,0.459893,5,slogans,6,3,0.5
+single strong model,Gemini 3.1 Pro Preview - P4 boundary,0.459893,6,scapegoating,2,1,0.5
+single strong model,Gemini 3.1 Pro Preview - P4 boundary,0.459893,7,name-calling,26,12,0.461538
+single strong model,Gemini 3.1 Pro Preview - P4 boundary,0.459893,8,demonization,5,3,0.6
+single small model,Gemini 3.1 Flash Lite - P3 short spans,0.452632,0,no polarizing language,16,0,0.0
+single small model,Gemini 3.1 Flash Lite - P3 short spans,0.452632,1,exaggeration,18,15,0.833333
+single small model,Gemini 3.1 Flash Lite - P3 short spans,0.452632,2,casual oversimplification,2,2,1.0
+single small model,Gemini 3.1 Flash Lite - P3 short spans,0.452632,3,doubt,10,9,0.9
+single small model,Gemini 3.1 Flash Lite - P3 short spans,0.452632,4,bandwagon,1,1,1.0
+single small model,Gemini 3.1 Flash Lite - P3 short spans,0.452632,5,slogans,6,5,0.833333
+single small model,Gemini 3.1 Flash Lite - P3 short spans,0.452632,6,scapegoating,2,1,0.5
+single small model,Gemini 3.1 Flash Lite - P3 short spans,0.452632,7,name-calling,26,8,0.307692
+single small model,Gemini 3.1 Flash Lite - P3 short spans,0.452632,8,demonization,5,2,0.4
+single strong model,GPT-5.1 - P1 default,0.448399,0,no polarizing language,16,7,0.4375
+single strong model,GPT-5.1 - P1 default,0.448399,1,exaggeration,18,1,0.055556
+single strong model,GPT-5.1 - P1 default,0.448399,2,casual oversimplification,2,1,0.5
+single strong model,GPT-5.1 - P1 default,0.448399,3,doubt,10,5,0.5
+single strong model,GPT-5.1 - P1 default,0.448399,4,bandwagon,1,1,1.0
+single strong model,GPT-5.1 - P1 default,0.448399,5,slogans,6,3,0.5
+single strong model,GPT-5.1 - P1 default,0.448399,6,scapegoating,2,0,0.0
+single strong model,GPT-5.1 - P1 default,0.448399,7,name-calling,26,5,0.192308
+single strong model,GPT-5.1 - P1 default,0.448399,8,demonization,5,0,0.0
+single strong model,Claude Sonnet 5 - P4 boundary,0.433498,0,no polarizing language,16,1,0.0625
+single strong model,Claude Sonnet 5 - P4 boundary,0.433498,1,exaggeration,18,14,0.777778
+single strong model,Claude Sonnet 5 - P4 boundary,0.433498,2,casual oversimplification,2,2,1.0
+single strong model,Claude Sonnet 5 - P4 boundary,0.433498,3,doubt,10,6,0.6
+single strong model,Claude Sonnet 5 - P4 boundary,0.433498,4,bandwagon,1,0,0.0
+single strong model,Claude Sonnet 5 - P4 boundary,0.433498,5,slogans,6,4,0.666667
+single strong model,Claude Sonnet 5 - P4 boundary,0.433498,6,scapegoating,2,2,1.0
+single strong model,Claude Sonnet 5 - P4 boundary,0.433498,7,name-calling,26,10,0.384615
+single strong model,Claude Sonnet 5 - P4 boundary,0.433498,8,demonization,5,3,0.6
+single strong model,GPT-5.1 - P4 boundary,0.430657,0,no polarizing language,16,4,0.25
+single strong model,GPT-5.1 - P4 boundary,0.430657,1,exaggeration,18,6,0.333333
+single strong model,GPT-5.1 - P4 boundary,0.430657,2,casual oversimplification,2,1,0.5
+single strong model,GPT-5.1 - P4 boundary,0.430657,3,doubt,10,7,0.7
+single strong model,GPT-5.1 - P4 boundary,0.430657,4,bandwagon,1,1,1.0
+single strong model,GPT-5.1 - P4 boundary,0.430657,5,slogans,6,2,0.333333
+single strong model,GPT-5.1 - P4 boundary,0.430657,6,scapegoating,2,0,0.0
+single strong model,GPT-5.1 - P4 boundary,0.430657,7,name-calling,26,6,0.230769
+single strong model,GPT-5.1 - P4 boundary,0.430657,8,demonization,5,0,0.0
+single strong model,GPT-5.1 - P2 Bagozzi,0.430556,0,no polarizing language,16,7,0.4375
+single strong model,GPT-5.1 - P2 Bagozzi,0.430556,1,exaggeration,18,2,0.111111
+single strong model,GPT-5.1 - P2 Bagozzi,0.430556,2,casual oversimplification,2,1,0.5
+single strong model,GPT-5.1 - P2 Bagozzi,0.430556,3,doubt,10,2,0.2
+single strong model,GPT-5.1 - P2 Bagozzi,0.430556,4,bandwagon,1,1,1.0
+single strong model,GPT-5.1 - P2 Bagozzi,0.430556,5,slogans,6,1,0.166667
+single strong model,GPT-5.1 - P2 Bagozzi,0.430556,6,scapegoating,2,1,0.5
+single strong model,GPT-5.1 - P2 Bagozzi,0.430556,7,name-calling,26,9,0.346154
+single strong model,GPT-5.1 - P2 Bagozzi,0.430556,8,demonization,5,0,0.0
+single small model,Gemini 3.1 Flash Lite - P4 boundary,0.42328,0,no polarizing language,16,0,0.0
+single small model,Gemini 3.1 Flash Lite - P4 boundary,0.42328,1,exaggeration,18,15,0.833333
+single small model,Gemini 3.1 Flash Lite - P4 boundary,0.42328,2,casual oversimplification,2,1,0.5
+single small model,Gemini 3.1 Flash Lite - P4 boundary,0.42328,3,doubt,10,9,0.9
+single small model,Gemini 3.1 Flash Lite - P4 boundary,0.42328,4,bandwagon,1,1,1.0
+single small model,Gemini 3.1 Flash Lite - P4 boundary,0.42328,5,slogans,6,5,0.833333
+single small model,Gemini 3.1 Flash Lite - P4 boundary,0.42328,6,scapegoating,2,1,0.5
+single small model,Gemini 3.1 Flash Lite - P4 boundary,0.42328,7,name-calling,26,12,0.461538
+single small model,Gemini 3.1 Flash Lite - P4 boundary,0.42328,8,demonization,5,2,0.4
+single strong model,Gemini 3.1 Pro Preview - P3 short spans,0.419355,0,no polarizing language,16,0,0.0
+single strong model,Gemini 3.1 Pro Preview - P3 short spans,0.419355,1,exaggeration,18,15,0.833333
+single strong model,Gemini 3.1 Pro Preview - P3 short spans,0.419355,2,casual oversimplification,2,1,0.5
+single strong model,Gemini 3.1 Pro Preview - P3 short spans,0.419355,3,doubt,10,10,1.0
+single strong model,Gemini 3.1 Pro Preview - P3 short spans,0.419355,4,bandwagon,1,1,1.0
+single strong model,Gemini 3.1 Pro Preview - P3 short spans,0.419355,5,slogans,6,3,0.5
+single strong model,Gemini 3.1 Pro Preview - P3 short spans,0.419355,6,scapegoating,2,1,0.5
+single strong model,Gemini 3.1 Pro Preview - P3 short spans,0.419355,7,name-calling,26,14,0.538462
+single strong model,Gemini 3.1 Pro Preview - P3 short spans,0.419355,8,demonization,5,2,0.4
+single strong model,GPT-5.1 - P5 human aligned,0.404412,0,no polarizing language,16,2,0.125
+single strong model,GPT-5.1 - P5 human aligned,0.404412,1,exaggeration,18,6,0.333333
+single strong model,GPT-5.1 - P5 human aligned,0.404412,2,casual oversimplification,2,1,0.5
+single strong model,GPT-5.1 - P5 human aligned,0.404412,3,doubt,10,9,0.9
+single strong model,GPT-5.1 - P5 human aligned,0.404412,4,bandwagon,1,0,0.0
+single strong model,GPT-5.1 - P5 human aligned,0.404412,5,slogans,6,2,0.333333
+single strong model,GPT-5.1 - P5 human aligned,0.404412,6,scapegoating,2,0,0.0
+single strong model,GPT-5.1 - P5 human aligned,0.404412,7,name-calling,26,8,0.307692
+single strong model,GPT-5.1 - P5 human aligned,0.404412,8,demonization,5,3,0.6
+single strong model,Claude Sonnet 5 - P3 short spans,0.404255,0,no polarizing language,16,1,0.0625
+single strong model,Claude Sonnet 5 - P3 short spans,0.404255,1,exaggeration,18,11,0.611111
+single strong model,Claude Sonnet 5 - P3 short spans,0.404255,2,casual oversimplification,2,1,0.5
+single strong model,Claude Sonnet 5 - P3 short spans,0.404255,3,doubt,10,7,0.7
+single strong model,Claude Sonnet 5 - P3 short spans,0.404255,4,bandwagon,1,1,1.0
+single strong model,Claude Sonnet 5 - P3 short spans,0.404255,5,slogans,6,4,0.666667
+single strong model,Claude Sonnet 5 - P3 short spans,0.404255,6,scapegoating,2,2,1.0
+single strong model,Claude Sonnet 5 - P3 short spans,0.404255,7,name-calling,26,16,0.615385
+single strong model,Claude Sonnet 5 - P3 short spans,0.404255,8,demonization,5,5,1.0
+single strong model,GPT-5.1 - P3 short spans,0.330769,0,no polarizing language,16,5,0.3125
+single strong model,GPT-5.1 - P3 short spans,0.330769,1,exaggeration,18,10,0.555556
+single strong model,GPT-5.1 - P3 short spans,0.330769,2,casual oversimplification,2,2,1.0
+single strong model,GPT-5.1 - P3 short spans,0.330769,3,doubt,10,8,0.8
+single strong model,GPT-5.1 - P3 short spans,0.330769,4,bandwagon,1,1,1.0
+single strong model,GPT-5.1 - P3 short spans,0.330769,5,slogans,6,3,0.5
+single strong model,GPT-5.1 - P3 short spans,0.330769,6,scapegoating,2,0,0.0
+single strong model,GPT-5.1 - P3 short spans,0.330769,7,name-calling,26,11,0.423077
+single strong model,GPT-5.1 - P3 short spans,0.330769,8,demonization,5,3,0.6
+single small model,Claude Haiku 4.5 - P5 human aligned,0.32,0,no polarizing language,16,0,0.0
+single small model,Claude Haiku 4.5 - P5 human aligned,0.32,1,exaggeration,18,16,0.888889
+single small model,Claude Haiku 4.5 - P5 human aligned,0.32,2,casual oversimplification,2,2,1.0
+single small model,Claude Haiku 4.5 - P5 human aligned,0.32,3,doubt,10,9,0.9
+single small model,Claude Haiku 4.5 - P5 human aligned,0.32,4,bandwagon,1,1,1.0
+single small model,Claude Haiku 4.5 - P5 human aligned,0.32,5,slogans,6,5,0.833333
+single small model,Claude Haiku 4.5 - P5 human aligned,0.32,6,scapegoating,2,2,1.0
+single small model,Claude Haiku 4.5 - P5 human aligned,0.32,7,name-calling,26,19,0.730769
+single small model,Claude Haiku 4.5 - P5 human aligned,0.32,8,demonization,5,4,0.8
+single small model,Claude Haiku 4.5 - P3 short spans,0.285714,0,no polarizing language,16,0,0.0
+single small model,Claude Haiku 4.5 - P3 short spans,0.285714,1,exaggeration,18,16,0.888889
+single small model,Claude Haiku 4.5 - P3 short spans,0.285714,2,casual oversimplification,2,2,1.0
+single small model,Claude Haiku 4.5 - P3 short spans,0.285714,3,doubt,10,9,0.9
+single small model,Claude Haiku 4.5 - P3 short spans,0.285714,4,bandwagon,1,1,1.0
+single small model,Claude Haiku 4.5 - P3 short spans,0.285714,5,slogans,6,6,1.0
+single small model,Claude Haiku 4.5 - P3 short spans,0.285714,6,scapegoating,2,2,1.0
+single small model,Claude Haiku 4.5 - P3 short spans,0.285714,7,name-calling,26,21,0.807692
+single small model,Claude Haiku 4.5 - P3 short spans,0.285714,8,demonization,5,4,0.8
+single small model,Claude Haiku 4.5 - P4 boundary,0.285714,0,no polarizing language,16,0,0.0
+single small model,Claude Haiku 4.5 - P4 boundary,0.285714,1,exaggeration,18,17,0.944444
+single small model,Claude Haiku 4.5 - P4 boundary,0.285714,2,casual oversimplification,2,2,1.0
+single small model,Claude Haiku 4.5 - P4 boundary,0.285714,3,doubt,10,10,1.0
+single small model,Claude Haiku 4.5 - P4 boundary,0.285714,4,bandwagon,1,1,1.0
+single small model,Claude Haiku 4.5 - P4 boundary,0.285714,5,slogans,6,6,1.0
+single small model,Claude Haiku 4.5 - P4 boundary,0.285714,6,scapegoating,2,2,1.0
+single small model,Claude Haiku 4.5 - P4 boundary,0.285714,7,name-calling,26,19,0.730769
+single small model,Claude Haiku 4.5 - P4 boundary,0.285714,8,demonization,5,4,0.8
+single small model,Claude Haiku 4.5 - P2 Bagozzi,0.228571,0,no polarizing language,16,0,0.0
+single small model,Claude Haiku 4.5 - P2 Bagozzi,0.228571,1,exaggeration,18,17,0.944444
+single small model,Claude Haiku 4.5 - P2 Bagozzi,0.228571,2,casual oversimplification,2,2,1.0
+single small model,Claude Haiku 4.5 - P2 Bagozzi,0.228571,3,doubt,10,10,1.0
+single small model,Claude Haiku 4.5 - P2 Bagozzi,0.228571,4,bandwagon,1,1,1.0
+single small model,Claude Haiku 4.5 - P2 Bagozzi,0.228571,5,slogans,6,6,1.0
+single small model,Claude Haiku 4.5 - P2 Bagozzi,0.228571,6,scapegoating,2,2,1.0
+single small model,Claude Haiku 4.5 - P2 Bagozzi,0.228571,7,name-calling,26,24,0.923077
+single small model,Claude Haiku 4.5 - P2 Bagozzi,0.228571,8,demonization,5,4,0.8
+single small model,Claude Haiku 4.5 - P1 default,0.194286,0,no polarizing language,16,1,0.0625
+single small model,Claude Haiku 4.5 - P1 default,0.194286,1,exaggeration,18,17,0.944444
+single small model,Claude Haiku 4.5 - P1 default,0.194286,2,casual oversimplification,2,2,1.0
+single small model,Claude Haiku 4.5 - P1 default,0.194286,3,doubt,10,10,1.0
+single small model,Claude Haiku 4.5 - P1 default,0.194286,4,bandwagon,1,1,1.0
+single small model,Claude Haiku 4.5 - P1 default,0.194286,5,slogans,6,6,1.0
+single small model,Claude Haiku 4.5 - P1 default,0.194286,6,scapegoating,2,2,1.0
+single small model,Claude Haiku 4.5 - P1 default,0.194286,7,name-calling,26,25,0.961538
+single small model,Claude Haiku 4.5 - P1 default,0.194286,8,demonization,5,5,1.0
